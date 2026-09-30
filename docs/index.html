@@ -339,87 +339,276 @@
     // Embedded Data from seen_repos.json
     const REPO_DATA = [
       {
-        repo: "openclaw/openclaw",
-        stars: 390800,
-        language: "Rust",
-        file: "AGENTS.md",
-        archetype: "Defensive Architect",
-        vibe: "One owner per responsibility, proof scoped, and zero blind retries.",
-        highlight: "Never attempt blind fixes or introduce speculative architectural rework without verification."
+            "repo": "openclaw/openclaw",
+            "folder": "openclaw",
+            "stars": 390800,
+            "language": "Rust / C",
+            "file": "AGENTS.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from openclaw.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "DietrichGebert/ponytail",
-        stars: 148757,
-        language: "JavaScript",
-        file: "AGENTS.md",
-        archetype: "Engineering Craft",
-        vibe: "The laziest senior dev mode: the best code is the code you never wrote.",
-        highlight: "Prefer deletions and stdlib refactors over additive complexity and new npm dependencies."
+            "repo": "multica-ai/andrej-karpathy-skills",
+            "folder": "andrej-karpathy-skills",
+            "stars": 216000,
+            "language": "Python / Markdown",
+            "file": "CLAUDE.md",
+            "archetype": "Anti-Slop Minimalist",
+            "vibe": "Battle-tested developer taste and agent rules from andrej-karpathy-skills.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
       },
       {
-        repo: "debpalash/VoiceStudio",
-        stars: 49880,
-        language: "Python",
-        file: "AGENTS.md",
-        archetype: "Hacker Velocity",
-        vibe: "Explicit token economy; default to shortest response; status updates 1 line max.",
-        highlight: "Every token counts. Answer with the git patch directly. Never apologize or waffle."
+            "repo": "DietrichGebert/ponytail",
+            "folder": "ponytail",
+            "stars": 148700,
+            "language": "JavaScript",
+            "file": "AGENTS.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from ponytail.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "mksglu/context-mode",
-        stars: 24343,
-        language: "TypeScript",
-        file: "CLAUDE.md",
-        archetype: "Engineering Craft",
-        vibe: "Mandatory routing rules to protect context window from flooding.",
-        highlight: "Strict routing via MCP sandbox. 98% token reduction guaranteed."
+            "repo": "debpalash/VoiceStudio",
+            "folder": "VoiceStudio",
+            "stars": 49800,
+            "language": "Python / Electron",
+            "file": "AGENTS.md",
+            "archetype": "Anti-Slop Minimalist",
+            "vibe": "Battle-tested developer taste and agent rules from VoiceStudio.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "NVIDIA/OpenShell",
-        stars: 11600,
-        language: "Rust",
-        file: "AGENTS.md",
-        archetype: "Anti-Slop Minimalist",
-        vibe: "Injected into context on every interaction; forbids unnecessary restructuring.",
-        highlight: "Preserve code formatting and avoid modifying unrequested files under any circumstances."
+            "repo": "agentsmd/agents.md",
+            "folder": "agentsmd",
+            "stars": 24700,
+            "language": "Markdown / Specification",
+            "file": "AGENTS.md",
+            "archetype": "Pragmatic Taste",
+            "vibe": "Battle-tested developer taste and agent rules from agentsmd.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "securego/gosec",
-        stars: 5400,
-        language: "Go",
-        file: "CLAUDE.md",
-        archetype: "Defensive Architect",
-        vibe: "AST walking rules, rule ID stability, and deterministic test invocation.",
-        highlight: "Run tests via make test-unit. Keep AST visitor mutations isolated."
+            "repo": "mksglu/context-mode",
+            "folder": "context-mode",
+            "stars": 24343,
+            "language": "TypeScript",
+            "file": "CLAUDE.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from context-mode.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
       },
       {
-        repo: "leondgarse/keras_cv_attention_models",
-        stars: 1700,
-        language: "Python",
-        file: ".agent/rules.md",
-        archetype: "Hacker Velocity",
-        vibe: "black -l 160, single-line multi-assignments, thin wrapper pattern.",
-        highlight: "Format with 160-char lines; minimize layer wrapping."
+            "repo": "wasp-lang/open-saas",
+            "folder": "open-saas",
+            "stars": 16000,
+            "language": "TypeScript / React",
+            "file": "AGENTS.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from open-saas.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "tidyverse/readr",
-        stars: 1150,
-        language: "R",
-        file: ".claude/CLAUDE.md",
-        archetype: "Defensive Architect",
-        vibe: "Clean boundary between Edition 2 (lazy parsing) and Edition 1 (eager parser).",
-        highlight: "Never mix parser edition memory models. Test using testthat::test_local()."
+            "repo": "NVIDIA/OpenShell",
+            "folder": "nvidia-openshell",
+            "stars": 11600,
+            "language": "Rust",
+            "file": "AGENTS.md",
+            "archetype": "Anti-Slop Minimalist",
+            "vibe": "Battle-tested developer taste and agent rules from nvidia-openshell.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       },
       {
-        repo: "stripe/stripe-java",
-        stars: 600,
-        language: "Java",
-        file: ".claude/CLAUDE.md",
-        archetype: "Engineering Craft",
-        vibe: "Exact test runners, Spotless formatting commands, and HTTP abstraction map.",
-        highlight: "Always run ./gradlew spotlessApply before committing. Never modify generated DTOs directly."
+            "repo": "securego/gosec",
+            "folder": "securego-gosec",
+            "stars": 8950,
+            "language": "Go",
+            "file": "CLAUDE.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from securego-gosec.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "SnailSploit/Claude-Red",
+            "folder": "claude-red",
+            "stars": 7129,
+            "language": "Markdown / Security",
+            "file": "AGENTS.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from claude-red.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "drona23/claude-token-efficient",
+            "folder": "claude-token-efficient",
+            "stars": 6070,
+            "language": "Markdown",
+            "file": "CLAUDE.md",
+            "archetype": "Anti-Slop Minimalist",
+            "vibe": "Battle-tested developer taste and agent rules from claude-token-efficient.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "grapeot/devin.cursorrules",
+            "folder": "devin-cursorrules",
+            "stars": 5960,
+            "language": "Markdown / Rules",
+            "file": ".cursorrules",
+            "archetype": "Hacker Velocity",
+            "vibe": "Battle-tested developer taste and agent rules from devin-cursorrules.",
+            "highlight": "Includes official .cursorrules with production engineering guardrails."
+      },
+      {
+            "repo": "marcobambini/gravity",
+            "folder": "gravity",
+            "stars": 4570,
+            "language": "C",
+            "file": "CLAUDE.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from gravity.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "bergside/awesome-design-skills",
+            "folder": "awesome-design-skills",
+            "stars": 2989,
+            "language": "Markdown / Design",
+            "file": "AGENTS.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from awesome-design-skills.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "Nanako0129/sepia",
+            "folder": "sepia-skills",
+            "stars": 2917,
+            "language": "Markdown / Writing",
+            "file": "AGENTS.md",
+            "archetype": "Anti-Slop Minimalist",
+            "vibe": "Battle-tested developer taste and agent rules from sepia-skills.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "elementalsouls/Claude-OSINT",
+            "folder": "claude-osint",
+            "stars": 2703,
+            "language": "Shell / Python",
+            "file": "AGENTS.md",
+            "archetype": "Hacker Velocity",
+            "vibe": "Battle-tested developer taste and agent rules from claude-osint.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "Andersbakken/rtags",
+            "folder": "rtags",
+            "stars": 1846,
+            "language": "C / C++",
+            "file": "AGENTS.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from rtags.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "leondgarse/keras_cv_attention_models",
+            "folder": "keras-cv-attention-models",
+            "stars": 1700,
+            "language": "Python",
+            "file": "rules.md",
+            "archetype": "Hacker Velocity",
+            "vibe": "Battle-tested developer taste and agent rules from keras-cv-attention-models.",
+            "highlight": "Includes official rules.md with production engineering guardrails."
+      },
+      {
+            "repo": "shift-labs-ai/markit",
+            "folder": "markit",
+            "stars": 1325,
+            "language": "TypeScript / Markdown",
+            "file": "SKILL.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from markit.",
+            "highlight": "Includes official SKILL.md with production engineering guardrails."
+      },
+      {
+            "repo": "graphframes/graphframes",
+            "folder": "graphframes",
+            "stars": 1211,
+            "language": "Scala / Python / Java",
+            "file": "AGENTS.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from graphframes.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "diffblue/cbmc",
+            "folder": "cbmc",
+            "stars": 1138,
+            "language": "C / C++",
+            "file": "AGENTS.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from cbmc.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
+      },
+      {
+            "repo": "tidyverse/readr",
+            "folder": "tidyverse-readr",
+            "stars": 1100,
+            "language": "R / C++",
+            "file": "CLAUDE.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from tidyverse-readr.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "Prismer-AI/Prismer",
+            "folder": "prismer",
+            "stars": 800,
+            "language": "Python / PyTorch",
+            "file": "CLAUDE.md",
+            "archetype": "Pragmatic Taste",
+            "vibe": "Battle-tested developer taste and agent rules from prismer.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "DenisSergeevitch/repo-task-proof-loop",
+            "folder": "repo-task-proof-loop",
+            "stars": 732,
+            "language": "Markdown / Architecture",
+            "file": "SKILL.md",
+            "archetype": "Defensive Architect",
+            "vibe": "Battle-tested developer taste and agent rules from repo-task-proof-loop.",
+            "highlight": "Includes official SKILL.md with production engineering guardrails."
+      },
+      {
+            "repo": "stripe/stripe-java",
+            "folder": "stripe-java",
+            "stars": 600,
+            "language": "Java",
+            "file": "CLAUDE.md",
+            "archetype": "Engineering Craft",
+            "vibe": "Battle-tested developer taste and agent rules from stripe-java.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "BrowserOperator/browser-operator-core",
+            "folder": "browser-operator",
+            "stars": 510,
+            "language": "TypeScript / Python",
+            "file": "CLAUDE.md",
+            "archetype": "Hacker Velocity",
+            "vibe": "Battle-tested developer taste and agent rules from browser-operator.",
+            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
+      },
+      {
+            "repo": "purton-tech/rust-on-nails",
+            "folder": "rust-on-nails",
+            "stars": 444,
+            "language": "Rust",
+            "file": "AGENTS.md",
+            "archetype": "Hacker Velocity",
+            "vibe": "Battle-tested developer taste and agent rules from rust-on-nails.",
+            "highlight": "Includes official AGENTS.md with production engineering guardrails."
       }
-    ];
+];
 
     let currentArchetypeFilter = 'all';
 

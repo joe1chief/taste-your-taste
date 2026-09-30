@@ -13,6 +13,8 @@
   "files": [
     "bin",
     "src",
+    "registry",
+    "skills",
     "README.md",
     "LICENSE"
   ],

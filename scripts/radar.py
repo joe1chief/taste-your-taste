@@ -313,8 +313,8 @@ class TasteRadar:
 
         # Process primary changed file
         fpath, old_sha, new_sha = changed_files[0]
-        safe_dirname = full_name.replace("/", "__")
-        old_file = Path("discovered") / safe_dirname / os.path.basename(fpath)
+        repo_shortname = full_name.split("/")[-1]
+        old_file = Path(repo_shortname) / os.path.basename(fpath)
         old_content = old_file.read_text(encoding="utf-8") if old_file.exists() else ""
         new_content = self.api.get_file_content(full_name, fpath) or ""
 
@@ -331,7 +331,7 @@ class TasteRadar:
 
         # Save new content locally
         if self.save_tastes and not self.dry_run:
-            dest_dir = Path("discovered") / safe_dirname
+            dest_dir = Path(repo_shortname)
             dest_dir.mkdir(parents=True, exist_ok=True)
             (dest_dir / os.path.basename(fpath)).write_text(new_content, encoding="utf-8")
 
@@ -534,7 +534,7 @@ Captured and structured developer taste from [{full_name}](https://github.com/{f
 - **Vibe**: *{analysis.get('one_line_vibe', '')}*
 - **Language**: `{lang}`
 
-All raw rule files and metadata have been staged under `tastes/{lang_dir}/{safe_dirname}/`.
+All raw rule files and metadata have been staged under `{repo_shortname}/`.
 """
             pr_cmd = [
                 "gh", "pr", "create",
@@ -687,9 +687,7 @@ A high-profile repository configuration has been captured and evaluated by **Tas
 ---
 
 ### 📋 Maintainer Review Checklist
-- [ ] Review the configuration file and verify relevance.
-- [ ] Confirm the extracted **Taste Highlights** and key directives.
-- [ ] Move into `tastes/{lang.lower() if lang else 'general'}/{full_name.replace('/', '__')}/`.
+- [ ] Verify rule files in `{full_name.split('/')[-1]}/`.
 - [ ] Add an entry into the main `README.md` Hall of Fame!
 """
             issue_url = self.api.create_issue(

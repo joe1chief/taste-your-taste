@@ -1,78 +1,64 @@
 {
   "NVIDIA/OpenShell": {
+    "dir": "nvidia-openshell",
     "stars": 11600,
     "language": "Rust",
-    "description": "OpenShell: Agent execution runtime for isolation and orchestration",
     "files": [
-      "AGENTS.md",
-      "CLAUDE.md"
+      "AGENTS.md"
     ],
-    "source": "trending",
     "archetype": "Anti-Slop Minimalist",
-    "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
   "stripe/stripe-java": {
+    "dir": "stripe-java",
     "stars": 600,
     "language": "Java",
-    "description": "Java library for the Stripe API.",
-    "files": [
-      ".claude/CLAUDE.md"
-    ],
-    "source": "code_search",
-    "archetype": "Engineering Craft",
-    "discovered_at": "2026-09-30T14:40:00+00:00",
-    "status": "curated"
-  },
-  "leondgarse/keras_cv_attention_models": {
-    "stars": 1700,
-    "language": "Python",
-    "description": "Attention models in Keras & PyTorch",
-    "files": [
-      ".agent/rules.md"
-    ],
-    "source": "code_search",
-    "archetype": "Hacker Velocity",
-    "discovered_at": "2026-09-30T14:40:00+00:00",
-    "status": "curated"
-  },
-  "tidyverse/readr": {
-    "stars": 1150,
-    "language": "R",
-    "description": "Read rectangular text data",
-    "files": [
-      ".claude/CLAUDE.md"
-    ],
-    "source": "code_search",
-    "archetype": "Defensive Architect",
-    "discovered_at": "2026-09-30T14:40:00+00:00",
-    "status": "curated"
-  },
-  "securego/gosec": {
-    "stars": 5400,
-    "language": "Go",
-    "description": "Golang security checker",
     "files": [
       "CLAUDE.md"
     ],
-    "source": "code_search",
+    "archetype": "Engineering Craft",
+    "status": "curated"
+  },
+  "leondgarse/keras_cv_attention_models": {
+    "dir": "keras-cv-attention-models",
+    "stars": 1700,
+    "language": "Python",
+    "files": [
+      "rules.md"
+    ],
+    "archetype": "Hacker Velocity",
+    "status": "curated"
+  },
+  "tidyverse/readr": {
+    "dir": "tidyverse-readr",
+    "stars": 1100,
+    "language": "R / C++",
+    "files": [
+      "CLAUDE.md"
+    ],
     "archetype": "Defensive Architect",
-    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  },
+  "securego/gosec": {
+    "dir": "securego-gosec",
+    "stars": 8950,
+    "language": "Go",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Defensive Architect",
     "status": "curated"
   },
   "debpalash/VoiceStudio": {
-    "stars": 49880,
-    "language": "Python",
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "dir": "VoiceStudio",
+    "stars": 49800,
+    "language": "Python / Electron",
     "files": [
       "AGENTS.md",
       "CLAUDE.md"
     ],
-    "source": "trending",
-    "archetype": "Hacker Velocity",
-    "discovered_at": "2026-09-30T14:43:09.699516+00:00",
-    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/1",
-    "status": "pending_review"
+    "archetype": "Anti-Slop Minimalist",
+    "status": "curated"
   },
   "mksglu/context-mode": {
     "stars": 24343,
@@ -88,16 +74,196 @@
     "status": "pending_review"
   },
   "DietrichGebert/ponytail": {
-    "stars": 148757,
+    "dir": "ponytail",
+    "stars": 148700,
     "language": "JavaScript",
-    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "files": [
       "AGENTS.md"
     ],
-    "source": "trending",
     "archetype": "Engineering Craft",
-    "discovered_at": "2026-09-30T15:03:38.353149+00:00",
-    "issue_url": null,
-    "status": "pending_review"
+    "status": "curated"
+  },
+  "agentsmd/agents.md": {
+    "dir": "agentsmd",
+    "stars": 24700,
+    "language": "Markdown / Specification",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Pragmatic Taste",
+    "status": "curated"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "dir": "andrej-karpathy-skills",
+    "stars": 216000,
+    "language": "Python / Markdown",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Anti-Slop Minimalist",
+    "status": "curated"
+  },
+  "bergside/awesome-design-skills": {
+    "dir": "awesome-design-skills",
+    "stars": 2989,
+    "language": "Markdown / Design",
+    "files": [],
+    "archetype": "Engineering Craft",
+    "status": "curated"
+  },
+  "BrowserOperator/browser-operator-core": {
+    "dir": "browser-operator",
+    "stars": 510,
+    "language": "TypeScript / Python",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Hacker Velocity",
+    "status": "curated"
+  },
+  "diffblue/cbmc": {
+    "dir": "cbmc",
+    "stars": 1138,
+    "language": "C / C++",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "elementalsouls/Claude-OSINT": {
+    "dir": "claude-osint",
+    "stars": 2703,
+    "language": "Shell / Python",
+    "files": [],
+    "archetype": "Hacker Velocity",
+    "status": "curated"
+  },
+  "SnailSploit/Claude-Red": {
+    "dir": "claude-red",
+    "stars": 7129,
+    "language": "Markdown / Security",
+    "files": [],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "drona23/claude-token-efficient": {
+    "dir": "claude-token-efficient",
+    "stars": 6070,
+    "language": "Markdown",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Anti-Slop Minimalist",
+    "status": "curated"
+  },
+  "grapeot/devin.cursorrules": {
+    "dir": "devin-cursorrules",
+    "stars": 5960,
+    "language": "Markdown / Rules",
+    "files": [
+      ".cursorrules"
+    ],
+    "archetype": "Hacker Velocity",
+    "status": "curated"
+  },
+  "graphframes/graphframes": {
+    "dir": "graphframes",
+    "stars": 1211,
+    "language": "Scala / Python / Java",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Engineering Craft",
+    "status": "curated"
+  },
+  "marcobambini/gravity": {
+    "dir": "gravity",
+    "stars": 4570,
+    "language": "C",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "shift-labs-ai/markit": {
+    "dir": "markit",
+    "stars": 1325,
+    "language": "TypeScript / Markdown",
+    "files": [
+      "SKILL.md"
+    ],
+    "archetype": "Engineering Craft",
+    "status": "curated"
+  },
+  "wasp-lang/open-saas": {
+    "dir": "open-saas",
+    "stars": 16000,
+    "language": "TypeScript / React",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "archetype": "Engineering Craft",
+    "status": "curated"
+  },
+  "openclaw/openclaw": {
+    "dir": "openclaw",
+    "stars": 390800,
+    "language": "Rust / C",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "Prismer-AI/Prismer": {
+    "dir": "prismer",
+    "stars": 800,
+    "language": "Python / PyTorch",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "archetype": "Pragmatic Taste",
+    "status": "curated"
+  },
+  "DenisSergeevitch/repo-task-proof-loop": {
+    "dir": "repo-task-proof-loop",
+    "stars": 732,
+    "language": "Markdown / Architecture",
+    "files": [
+      "SKILL.md"
+    ],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "Andersbakken/rtags": {
+    "dir": "rtags",
+    "stars": 1846,
+    "language": "C / C++",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Defensive Architect",
+    "status": "curated"
+  },
+  "purton-tech/rust-on-nails": {
+    "dir": "rust-on-nails",
+    "stars": 444,
+    "language": "Rust",
+    "files": [
+      "AGENTS.md"
+    ],
+    "archetype": "Hacker Velocity",
+    "status": "curated"
+  },
+  "Nanako0129/sepia": {
+    "dir": "sepia-skills",
+    "stars": 2917,
+    "language": "Markdown / Writing",
+    "files": [],
+    "archetype": "Anti-Slop Minimalist",
+    "status": "curated"
   }
 }
