@@ -72,7 +72,7 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 4. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
 5. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
 6. 🪪 **`taste card` & SVG Badge API**: Generates a sleek, embeddable GitHub Profile Taste Card showcasing your Archetype, Taste DNA, and Linus Verdict.
-7. 🏛️ **Curated Star Rules ([`rules/`](./rules))**: Authentic, battle-tested configs harvested from top open-source projects organized in the top-level directory.
+7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 16+ star projects organized directly as first-level directories.
 8. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
 9. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender, Pruner preview, and live Badge Studio.
 
@@ -250,19 +250,28 @@ You can embed your real-time Taste Card directly using the serverless Badge endp
 
 ---
 
-## 🏛️ Curated Star Rules (`rules/`)
+## 🏛️ Star Open-Source Projects (Top-Level Directories)
 
-Organized directly in the top-level [`rules/`](./rules) directory:
+Each open-source project is directly accessible as a first-level directory in the repository:
 
-| Rule File | Repository | Stars | Language | Taste Archetype | Key Highlight |
+| Project Directory | Source Repository | Stars | Language | Taste Archetype | Key Philosophy & Invariants |
 | :--- | :--- | :---: | :---: | :---: | :--- |
-| [`nvidia-openshell.AGENTS.md`](./rules/nvidia-openshell.AGENTS.md) | [NVIDIA / OpenShell](https://github.com/NVIDIA/OpenShell) | ⭐️ 11.6k | Rust | Anti-Slop Minimalist | Injected on every prompt; strictly forbids unsolicited restructuring. |
-| [`stripe-java.CLAUDE.md`](./rules/stripe-java.CLAUDE.md) | [Stripe / stripe-java](https://github.com/stripe/stripe-java) | ⭐️ 600+ | Java | Engineering Craft | Exact `just` test runners, Spotless formatting commands, and HTTP map. |
-| [`tidyverse-readr.CLAUDE.md`](./rules/tidyverse-readr.CLAUDE.md) | [tidyverse / readr](https://github.com/tidyverse/readr) | ⭐️ 1.1k | R / C++ | Defensive Architect | Boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
-| [`securego-gosec.CLAUDE.md`](./rules/securego-gosec.CLAUDE.md) | [securego / gosec](https://github.com/securego/gosec) | ⭐️ 5.4k | Go | Defensive Architect | AST walking rules, rule ID stability, deterministic test invocation. |
-| [`keras-cv.agent.md`](./rules/keras-cv.agent.md) | [keras_cv_attention_models](https://github.com/leondgarse/keras_cv_attention_models) | ⭐️ 1.7k | Python | Hacker Velocity | `black -l 160`, single-line multi-assignments, thin wrapper pattern. |
-| [`voicestudio.CLAUDE.md`](./rules/voicestudio.CLAUDE.md) | [VoiceStudio](https://github.com/debpalash/VoiceStudio) | ⭐️ 49.8k | Python / TS | Anti-Slop Minimalist | Explicit token economy; default to shortest response; status 1 line max. |
-| [`voicestudio.AGENTS.md`](./rules/voicestudio.AGENTS.md) | [VoiceStudio](https://github.com/debpalash/VoiceStudio) | ⭐️ 49.8k | Electron | Engineering Craft | Active desktop Electron only; strict deprecation boundary; local-first. |
+| [📁 `openclaw/`](./openclaw) | [openclaw/openclaw](https://github.com/openclaw/openclaw) | ⭐️ 390.8k | Rust / C | **Defensive Architect** | One owner per responsibility, proof scoped, and zero blind retries. |
+| [📁 `andrej-karpathy-skills/`](./andrej-karpathy-skills) | [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | ⭐️ 216.0k | Python | **Anti-Slop Minimalist** | Karpathy workflow: single-file scripts, stdlib-first, zero dependency bloat, runnable code. |
+| [📁 `ponytail/`](./ponytail) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | ⭐️ 148.7k | JavaScript | **Engineering Craft** | "Lazy senior dev mode: the best code is the code you never wrote." Minimal abstractions. |
+| [📁 `VoiceStudio/`](./VoiceStudio) | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | ⭐️ 49.8k | Python / Electron | **Anti-Slop Minimalist** | Strict token economy: 1-line status updates max, electron desktop only, direct git diffs. |
+| [📁 `agentsmd/`](./agentsmd) | [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | ⭐️ 24.7k | Specification | **Pragmatic Taste** | The open standard specification for guiding coding agents with explicit build & test contracts. |
+| [📁 `open-saas/`](./open-saas) | [wasp-lang/open-saas](https://github.com/wasp-lang/open-saas) | ⭐️ 16.0k | TypeScript / React | **Engineering Craft** | Modern full-stack SaaS boilerplate; strict package boundaries; production-ready TypeScript. |
+| [📁 `nvidia-openshell/`](./nvidia-openshell) | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | ⭐️ 11.6k | Rust | **Anti-Slop Minimalist** | Injected on every prompt; strictly prohibits unsolicited restructuring or stylistic churn. |
+| [📁 `securego-gosec/`](./securego-gosec) | [securego/gosec](https://github.com/securego/gosec) | ⭐️ 8.9k | Go | **Defensive Architect** | AST walking invariants, rule ID stability, and deterministic test invocation. |
+| [📁 `claude-token-efficient/`](./claude-token-efficient) | [claude-token-efficient](https://github.com/drona23/claude-token-efficient) | ⭐️ 6.1k | Markdown | **Anti-Slop Minimalist** | Extreme token reduction; eliminates all conversational preamble; pure diff responses. |
+| [📁 `devin-cursorrules/`](./devin-cursorrules) | [grapeot/devin.cursorrules](https://github.com/grapeot/devin.cursorrules) | ⭐️ 5.9k | Rules | **Hacker Velocity** | Autonomous self-debugging loops, automated verification, diff-first execution. |
+| [📁 `gravity/`](./gravity) | [marcobambini/gravity](https://github.com/marcobambini/gravity) | ⭐️ 4.6k | C | **Defensive Architect** | Memory safety invariants in C, zero memory leak tolerance, strict Valgrind testing. |
+| [📁 `keras-cv-attention-models/`](./keras-cv-attention-models) | [keras_cv_attention_models](https://github.com/leondgarse/keras_cv_attention_models) | ⭐️ 1.7k | Python | **Hacker Velocity** | `black -l 160`, single-line multi-assignments, compact procedural clarity, thin wrapper pattern. |
+| [📁 `tidyverse-readr/`](./tidyverse-readr) | [tidyverse/readr](https://github.com/tidyverse/readr) | ⭐️ 1.1k | R / C++ | **Defensive Architect** | Boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
+| [📁 `prismer/`](./prismer) | [Prismer-AI/Prismer](https://github.com/Prismer-AI/Prismer) | ⭐️ 800+ | Python / PyTorch | **Pragmatic Taste** | Multi-modal vision-language architecture, PyTorch distributed training guardrails. |
+| [📁 `stripe-java/`](./stripe-java) | [stripe/stripe-java](https://github.com/stripe/stripe-java) | ⭐️ 600+ | Java | **Engineering Craft** | Exact `just` test runners, Spotless formatting commands, and HTTP abstraction map. |
+| [📁 `browser-operator/`](./browser-operator) | [browser-operator-core](https://github.com/BrowserOperator/browser-operator-core) | ⭐️ 510+ | TypeScript / Python | **Hacker Velocity** | Headless browser control invariants, DOM extraction resilience, zero flakiness. |
 
 ---
 
@@ -276,7 +285,7 @@ flowchart LR
     B --> C["🔍 scripts/radar.py Engine"]
     C --> D{"Taste Files Found?"}
     D -- Yes --> E["🧠 LLM Architectural & Taste Assessment"]
-    E --> F["📬 Create Review Issue & Stage to rules/"]
+    E --> F["📬 Create Review Issue & Stage to Repo Folder"]
     F --> G["🏆 Maintainer Curates to Hall of Fame"]
     D -- No --> H["Sleep until next cycle"]
 ```

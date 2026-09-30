@@ -1,9 +1,0 @@
-{
-  "repo": "tidyverse/readr",
-  "stars": 1041,
-  "language": "R",
-  "description": "Read flat files (csv, tsv, fwf) into R",
-  "url": "https://github.com/tidyverse/readr",
-  "archetype": "🛡️ Defensive Architect",
-  "file": ".claude/CLAUDE.md"
-}

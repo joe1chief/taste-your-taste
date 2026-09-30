@@ -41,7 +41,7 @@ npm test
 node bin/taste.js --help
 node bin/taste.js list
 node bin/taste.js blend --style antfu --tone karpathy
-node bin/taste.js prune rules/stripe-java.CLAUDE.md
+node bin/taste.js prune stripe-java/CLAUDE.md
 node bin/taste.js diff antfu karpathy
 node bin/taste.js card --user testuser --output taste-card.svg
 ```
@@ -49,7 +49,7 @@ node bin/taste.js card --user testuser --output taste-card.svg
 ---
 
 ## 📁 Repository Organization
-* `rules/`: Curated agent rule files (`CLAUDE.md`, `AGENTS.md`) harvested from star open-source projects.
+* `openclaw/`, `VoiceStudio/`, `stripe-java/`, ...: Curated open-source projects organized as top-level directories.
 * `registry/`: Modular Lego bricks (`styles/`, `tones/`, `presets/`) for taste stacking.
 * `src/`: Core engines (`stacker.js`, `pruner.js`, `differ.js`, `roaster.js`, `card.js`).
 * `api/`: Serverless HTTP badge API endpoint (`api/card.js`).

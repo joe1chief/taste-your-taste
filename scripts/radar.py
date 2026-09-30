@@ -483,10 +483,9 @@ class TasteRadar:
         stars: int,
     ) -> Optional[str]:
         """Automatically create a git branch, commit curated taste, and open a Pull Request."""
-        safe_dirname = full_name.replace("/", "__")
+        repo_shortname = full_name.split("/")[-1]
         branch_name = f"taste-radar/{full_name.replace('/', '-')}"
-        lang_dir = (lang or "general").lower().replace(" ", "-")
-        target_dir = Path("tastes") / lang_dir / safe_dirname
+        target_dir = Path(repo_shortname)
         target_dir.mkdir(parents=True, exist_ok=True)
 
         for fpath, raw_text in file_contents.items():
@@ -600,10 +599,10 @@ All raw rule files and metadata have been staged under `tastes/{lang_dir}/{safe_
         highlights = analysis.get("highlights", [])
         assessment = analysis.get("engineering_assessment", "")
 
-        # Save to local discovered folder if enabled
+        # Save to top-level project directory if enabled
         if self.save_tastes and not self.dry_run:
-            safe_dirname = full_name.replace("/", "__")
-            save_dir = Path("discovered") / safe_dirname
+            repo_shortname = full_name.split("/")[-1]
+            save_dir = Path(repo_shortname)
             save_dir.mkdir(parents=True, exist_ok=True)
             for fpath, raw_text in file_contents.items():
                 dest_file = save_dir / os.path.basename(fpath)
