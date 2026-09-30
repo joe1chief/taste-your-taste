@@ -79,6 +79,71 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 
 ---
 
+## 🏛️ Repository Architecture
+
+All star open-source project configs and modular skill playbooks are structured directly as top-level directories:
+
+```
+taste-your-taste/
+├── 📋 Agent Directives & Specifications
+│   ├── AGENTS.md                  # Autonomous agent operating directives & constraints
+│   └── CLAUDE.md                  # Claude Code repository conventions & style guidelines
+├── 🛠️ Core Engines & CLI
+│   ├── bin/taste                  # Executable CLI entrypoint
+│   ├── src/                       # Zero-dependency modular engines
+│   │   ├── registry.js            # Style & tone brick loader
+│   │   ├── stacker.js             # Marker-based non-destructive injector
+│   │   ├── pruner.js              # Token compactor & de-slop optimizer
+│   │   ├── differ.js              # Philosophy & constraint comparator
+│   │   ├── roaster.js             # Linus Torvalds technical audit engine
+│   │   └── card.js                # GitHub profile taste badge generator
+│   ├── registry/                  # Atomic Lego taste bricks (styles, tones, presets)
+│   └── api/                       # Serverless SVG Profile Card Badge API (api/card.js)
+├── 🧠 Curated Agent Skills Library
+│   └── skills/                    # 7 modular SKILL.md behavioral playbooks
+│       ├── karpathy-guidelines/   # ⭐️ 216k — Simplicity & surgical diffs
+│       ├── offensive-ai-security/ # ⭐️ 7.1k — AI red-teaming & vulnerability assessment
+│       ├── agentic-design/        # ⭐️ 2.9k — Frontend Generative UI & design tokens
+│       ├── sepia-hemingway/       # ⭐️ 2.9k — De-AI humanized writing engine
+│       ├── claude-osint/          # ⭐️ 2.7k — Open-source reconnaissance & intelligence
+│       ├── markit/                # ⭐️ 1.3k — Clean LLM markdown extraction
+│       └── repo-task-proof-loop/  # ⭐️ 732  — Task proof loop with autonomous exit gates
+├── 🌟 Star Open-Source Projects (Top-Level Repositories)
+│   ├── openclaw/                  # ⭐️ 390.8k — AI personal assistant operating system
+│   ├── andrej-karpathy-skills/    # ⭐️ 216.0k — Andrej Karpathy's surgical guidelines
+│   ├── ponytail/                  # ⭐️ 148.7k — Minimalist web framework
+│   ├── VoiceStudio/               # ⭐️ 49.8k  — Production voice synthesis pipeline
+│   ├── agentsmd/                  # ⭐️ 24.7k  — Universal agent guidelines
+│   ├── open-saas/                 # ⭐️ 16.0k  — React & Node SaaS template
+│   ├── cbmc/                      # ⭐️ 12.8k  — C Bounded Model Checker
+│   ├── nvidia-openshell/          # ⭐️ 11.6k  — NVIDIA AI shell automation
+│   ├── securego-gosec/            # ⭐️ 8.9k   — Go security AST checker
+│   ├── rust-on-nails/             # ⭐️ 8.4k   — Rust full-stack production architecture
+│   ├── rtags/                     # ⭐️ 7.6k   — C/C++ indexing engine
+│   ├── claude-red/                # ⭐️ 7.1k   — Offensive AI red-teaming playbook
+│   ├── claude-token-efficient/    # ⭐️ 6.1k   — Token-optimized Claude Code config
+│   ├── devin-cursorrules/         # ⭐️ 5.9k   — Devin-styled cursor rules
+│   ├── stripe-java/               # ⭐️ 4.7k   — Enterprise Java SDK by Stripe
+│   ├── gravity/                   # ⭐️ 4.6k   — Antigravity agentic workflow engine
+│   ├── tidyverse-readr/           # ⭐️ 3.9k   — R data ingest library
+│   ├── awesome-design-skills/     # ⭐️ 2.9k   — Frontend agent design tokens
+│   ├── sepia-skills/              # ⭐️ 2.9k   — Hemingway de-AI writing engine
+│   ├── claude-osint/              # ⭐️ 2.7k   — Cloud OSINT & reconnaissance
+│   ├── graphframes/               # ⭐️ 2.3k   — Graph processing for Apache Spark
+│   ├── keras-cv-attention-models/ # ⭐️ 1.8k   — Deep learning CV architectures
+│   ├── prismer/                   # ⭐️ 1.6k   — Vision-language reasoning model
+│   ├── markit/                    # ⭐️ 1.3k   — Intelligent web content extractor
+│   ├── browser-operator/          # ⭐️ 1.2k   — Autonomous browser automation agent
+│   └── repo-task-proof-loop/      # ⭐️ 732    — Spec-driven task proof loop
+└── 📡 Automation, Data & Gallery
+    ├── scripts/radar.py           # Autonomous LLM Radar & PR Stager
+    ├── data/seen_repos.json       # Discovery & blob hash tracking
+    ├── docs/index.html            # Real-time Web Gallery & Badge Studio
+    └── test/                      # Native Node.js test suites
+```
+
+---
+
 ## 🚀 Key Features
 
 ### 1. 🧙 Interactive Setup Wizard (`taste init`)
@@ -302,6 +367,13 @@ All modular skills are indexed in [`skills/`](./skills):
 | **`markit`** | [`skills/markit/`](./skills/markit/SKILL.md) | ⭐️ 1.3k | Turns messy HTML, PDFs, and rich media into clean LLM markdown context. |
 | **`repo-task-proof-loop`** | [`skills/repo-task-proof-loop/`](./skills/repo-task-proof-loop/SKILL.md) | ⭐️ 732 | Spec-driven task proof loop with autonomous subagent spawning and exit gates. |
 
+#### 💡 How to Load Skills into Your AI Coding Agent:
+* **Claude Code**: Direct Claude to read any skill: `@skills/karpathy-guidelines/SKILL.md` or copy it into `.claude/skills/`.
+* **Google Antigravity**: Place the skill in `.gemini/skills/` or reference via agent directives.
+* **Cursor & Codex**: Reference `skills/<skill-name>/SKILL.md` in prompt context or `.cursorrules`.
+
+---
+
 ## 📡 The Autonomous LLM Radar
 
 Powered by **GitHub Actions** and [`scripts/radar.py`](./scripts/radar.py), this repository monitors trending open-source projects daily using large language models instead of rigid regex heuristics:
@@ -351,4 +423,4 @@ export LLM_MODEL="gpt-4o-mini"
 
 ## 📄 License
 
-Distributed under the [MIT License](./LICENSE). All curated taste files in `rules/` remain the copyright of their respective authors under their original open-source licenses.
+Distributed under the [MIT License](./LICENSE). All curated taste files and skill playbooks remain the copyright of their respective authors under their original open-source licenses.
