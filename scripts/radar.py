@@ -269,7 +269,14 @@ class TasteRadar:
                         sub_path = f"{d}/{sub_name}"
                         sub_sha = sub.get("sha", "")
                         sub_lower = sub_name.lower()
-                        if "claude" in sub_lower or "rule" in sub_lower or "plan" in sub_lower or "goal" in sub_lower or sub_lower.endswith(".md") or sub_lower.endswith(".mdc"):
+                        # Strictly match actual Agent instruction files
+                        if (
+                            sub_lower in {"claude.md", "agents.md", "rules.md"}
+                            or "cursor" in sub_lower
+                            or sub_lower.endswith(".mdc")
+                            or sub_name.startswith("CLAUDE")
+                            or sub_name.startswith("AGENTS")
+                        ):
                             found_files[sub_path] = sub_sha
 
         return found_files
@@ -569,15 +576,15 @@ All raw rule files and metadata have been staged under `tastes/{lang_dir}/{safe_
             print(f"[Radar] ⏩ Skipping {full_name}: {stars} stars < minimum {self.min_stars} (only trending or stars >= {self.min_stars} allowed)")
             return False
 
-        # Fetch contents of the taste files
+        # Fetch contents of the taste files (strictly requiring non-empty Agent rules)
         file_contents: Dict[str, str] = {}
         for fpath in files:
             content = self.api.get_file_content(full_name, fpath)
-            if content:
+            if content and len(content.strip()) >= 50:
                 file_contents[fpath] = content
 
         if not file_contents:
-            print(f"[Radar] ⚠️ Failed to retrieve file contents for {full_name}.")
+            print(f"[Radar] ⚠️ No valid Agent rule file contents (>= 50 chars) found for {full_name}, strictly skipping.")
             return False
 
         primary_file = files[0]
