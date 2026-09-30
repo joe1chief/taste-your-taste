@@ -50,8 +50,8 @@ jobs:
         id: run_roast
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://token-api.yicloud.com/v1' }}
-          LLM_MODEL: ${{ secrets.LLM_MODEL || 'DeepSeek-V4.1-Flash' }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://api.openai.com/v1' }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'gpt-4o-mini' }}
         run: |
           TARGET="${{ inputs.target_file || 'CLAUDE.md' }}"
           if [ ! -f "$TARGET" ]; then

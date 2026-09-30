@@ -12,8 +12,8 @@ const { URL } = require('url');
 const { loadContent, getMeta, getAvailable } = require('./registry');
 const { c, box } = require('./utils');
 
-const DEFAULT_BASE_URL = 'https://token-api.yicloud.com/v1';
-const DEFAULT_MODEL = 'DeepSeek-V4.1-Flash';
+const DEFAULT_BASE_URL = 'https://api.openai.com/v1';
+const DEFAULT_MODEL = 'gpt-4o-mini';
 
 function resolveTasteOrFile(identifier, cwd = process.cwd()) {
   const cleanId = identifier.toLowerCase().trim();

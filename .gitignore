@@ -20,3 +20,13 @@ Thumbs.db
 
 # Temporary files
 *.tmp
+*.bak
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment & Secrets (NEVER COMMIT)
+.env
+.env.*
+*.local

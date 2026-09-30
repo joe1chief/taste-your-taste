@@ -1,6 +1,6 @@
 """
 LLM Client for Taste Radar
-Provider-neutral LLM integration compatible with OpenAI / YiCloud / DashScope.
+OpenAI-compatible LLM integration (OpenAI, DeepSeek, vLLM, Ollama).
 Zero external dependencies (uses standard urllib).
 """
 
@@ -11,8 +11,8 @@ import urllib.error
 import urllib.request
 from typing import Any, Dict, List, Optional
 
-DEFAULT_BASE_URL = "https://token-api.yicloud.com/v1"
-DEFAULT_MODEL = "DeepSeek-V4.1-Flash"
+DEFAULT_BASE_URL = "https://api.openai.com/v1"
+DEFAULT_MODEL = "gpt-4o-mini"
 
 
 def _clean_json_markdown(text: str) -> str:

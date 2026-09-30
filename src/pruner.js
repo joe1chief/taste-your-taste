@@ -10,8 +10,8 @@ const https = require('https');
 const http = require('http');
 const { URL } = require('url');
 
-const DEFAULT_BASE_URL = 'https://token-api.yicloud.com/v1';
-const DEFAULT_MODEL = 'DeepSeek-V4.1-Flash';
+const DEFAULT_BASE_URL = 'https://api.openai.com/v1';
+const DEFAULT_MODEL = 'gpt-4o-mini';
 
 function calcStats(text) {
   const lines = text.split('\n');
