@@ -32,6 +32,7 @@ INTERESTING_ROOT_FILES = {
     ".cursorrules",
     "agents.md",
     ".windsurfrules",
+    "skill.md",
 }
 
 INTERESTING_DIRS = {
@@ -39,11 +40,15 @@ INTERESTING_DIRS = {
     ".agent",
     ".agents",
     ".cursor",
+    ".skills",
+    "skills",
 }
 
 # GitHub Code Search Queries to poll
 SEARCH_QUERIES = [
     "filename:CLAUDE.md",
+    "filename:AGENTS.md",
+    "filename:SKILL.md",
     "path:.claude/ filename:CLAUDE.md",
     "path:.agent/ rules",
     "filename:.cursorrules",
@@ -269,13 +274,14 @@ class TasteRadar:
                         sub_path = f"{d}/{sub_name}"
                         sub_sha = sub.get("sha", "")
                         sub_lower = sub_name.lower()
-                        # Strictly match actual Agent instruction files
+                        # Strictly match actual Agent instruction and Skill files
                         if (
-                            sub_lower in {"claude.md", "agents.md", "rules.md"}
+                            sub_lower in {"claude.md", "agents.md", "rules.md", "skill.md"}
                             or "cursor" in sub_lower
                             or sub_lower.endswith(".mdc")
                             or sub_name.startswith("CLAUDE")
                             or sub_name.startswith("AGENTS")
+                            or sub_name.startswith("SKILL")
                         ):
                             found_files[sub_path] = sub_sha
 

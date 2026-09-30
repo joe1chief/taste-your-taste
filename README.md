@@ -72,9 +72,10 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 4. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
 5. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
 6. 🪪 **`taste card` & SVG Badge API**: Generates a sleek, embeddable GitHub Profile Taste Card showcasing your Archetype, Taste DNA, and Linus Verdict.
-7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 20+ star projects organized directly as first-level directories.
-8. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
-9. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender, Pruner preview, and live Badge Studio.
+7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 26+ star projects organized directly as first-level directories.
+8. 🧠 **Curated Agent Skills Library ([`skills/`](./skills))**: Modular SKILL.md playbooks (Andrej Karpathy guidelines, offensive AI security, de-AI writing, design tokens, etc.).
+9. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
+10. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender, Pruner preview, and live Badge Studio.
 
 ---
 
@@ -272,12 +273,34 @@ Each open-source project is directly accessible as a first-level directory in th
 | [📁 `graphframes/`](./graphframes) | [graphframes/graphframes](https://github.com/graphframes/graphframes) | ⭐️ 1.2k | Scala / Java | **Engineering Craft** | Mission-critical Apache Spark codebase rules: strict backward compatibility, zero regressions. |
 | [📁 `cbmc/`](./cbmc) | [diffblue/cbmc](https://github.com/diffblue/cbmc) | ⭐️ 1.1k | C / C++ | **Defensive Architect** | 28k-char comprehensive AI coding assistant guide: SAT/SMT verification invariants, GOTO pipeline. |
 | [📁 `tidyverse-readr/`](./tidyverse-readr) | [tidyverse/readr](https://github.com/tidyverse/readr) | ⭐️ 1.1k | R / C++ | **Defensive Architect** | Boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
+| [📁 `claude-red/`](./claude-red) | [SnailSploit/Claude-Red](https://github.com/SnailSploit/Claude-Red) | ⭐️ 7.1k | Security / Shell | **Defensive Architect** | Offensive AI red-teaming skills: API security abuse, secret leak audits, exploit simulation. |
+| [📁 `awesome-design-skills/`](./awesome-design-skills) | [awesome-design-skills](https://github.com/bergside/awesome-design-skills) | ⭐️ 2.9k | Design / Tokens | **Engineering Craft** | Agentic UI design skills, design system tokens, typography scales, layout guardrails. |
+| [📁 `sepia-skills/`](./sepia-skills) | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | ⭐️ 2.9k | Writing / Rules | **Anti-Slop Minimalist** | De-AI Hemingway writing skill: strips corporate synthetic filler and platitudes from agent output. |
+| [📁 `claude-osint/`](./claude-osint) | [elementalsouls/Claude-OSINT](https://github.com/elementalsouls/Claude-OSINT) | ⭐️ 2.7k | Shell / Python | **Hacker Velocity** | Autonomous open-source intelligence gathering skill, cloud footprint discovery. |
+| [📁 `markit/`](./markit) | [shift-labs-ai/markit](https://github.com/shift-labs-ai/markit) | ⭐️ 1.3k | TypeScript / MD | **Engineering Craft** | Document to markdown converter skill: transforms complex PDFs and HTML into clean LLM context. |
+| [📁 `repo-task-proof-loop/`](./repo-task-proof-loop) | [repo-task-proof-loop](https://github.com/DenisSergeevitch/repo-task-proof-loop) | ⭐️ 732 | Specification | **Defensive Architect** | Spec-driven task proof loop with autonomous subagent spawning and exit verification. |
 | [📁 `prismer/`](./prismer) | [Prismer-AI/Prismer](https://github.com/Prismer-AI/Prismer) | ⭐️ 800+ | Python / PyTorch | **Pragmatic Taste** | Multi-modal vision-language architecture, PyTorch distributed training guardrails. |
 | [📁 `stripe-java/`](./stripe-java) | [stripe/stripe-java](https://github.com/stripe/stripe-java) | ⭐️ 600+ | Java | **Engineering Craft** | Exact `just` test runners, Spotless formatting commands, and HTTP abstraction map. |
 | [📁 `browser-operator/`](./browser-operator) | [browser-operator-core](https://github.com/BrowserOperator/browser-operator-core) | ⭐️ 510+ | TypeScript / Python | **Hacker Velocity** | Headless browser control invariants, DOM extraction resilience, zero flakiness. |
 | [📁 `rust-on-nails/`](./rust-on-nails) | [purton-tech/rust-on-nails](https://github.com/purton-tech/rust-on-nails) | ⭐️ 444 | Rust | **Hacker Velocity** | Multi-agent separation: documentation agent, CLI agent, architecture boundary validation. |
 
 ---
+
+## 🧠 Curated Agent Skills Library ([`skills/`](./skills))
+
+In addition to whole-repository rules (`CLAUDE.md`, `AGENTS.md`), modern AI coding agents (Claude Code, Google Antigravity, Cursor 2.0, Codex) support specialized **Agent Skills** (`SKILL.md`) — self-contained behavioral playbooks that can be dynamically loaded into context when needed.
+
+All modular skills are indexed in [`skills/`](./skills):
+
+| Modular Skill | Direct Path | Source | Capability |
+| :--- | :--- | :---: | :--- |
+| **`karpathy-guidelines`** | [`skills/karpathy-guidelines/`](./skills/karpathy-guidelines/SKILL.md) | ⭐️ 216k | Andrej Karpathy's guidelines: simplicity first, surgical diffs, no speculative code. |
+| **`offensive-ai-security`** | [`skills/offensive-ai-security/`](./skills/offensive-ai-security/SKILL.md) | ⭐️ 7.1k | Red-teaming and defensive audits: secrets scanning, attack surface analysis. |
+| **`agentic-design`** | [`skills/agentic-design/`](./skills/agentic-design/SKILL.md) | ⭐️ 2.9k | Generative UI & token architectures for web applications. |
+| **`sepia-hemingway`** | [`skills/sepia-hemingway/`](./skills/sepia-hemingway/SKILL.md) | ⭐️ 2.9k | De-AI humanized writing: strips apologies, corporate fluff, and synthetic sycophancy. |
+| **`claude-osint`** | [`skills/claude-osint/`](./skills/claude-osint/SKILL.md) | ⭐️ 2.7k | Open-source intelligence: cloud recon, public DNS & asset mapping. |
+| **`markit`** | [`skills/markit/`](./skills/markit/SKILL.md) | ⭐️ 1.3k | Turns messy HTML, PDFs, and rich media into clean LLM markdown context. |
+| **`repo-task-proof-loop`** | [`skills/repo-task-proof-loop/`](./skills/repo-task-proof-loop/SKILL.md) | ⭐️ 732 | Spec-driven task proof loop with autonomous subagent spawning and exit gates. |
 
 ## 📡 The Autonomous LLM Radar
 
