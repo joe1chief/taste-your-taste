@@ -9,14 +9,17 @@
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml">
     <img src="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml/badge.svg" alt="Taste Radar Status">
   </a>
+  <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/taste-roast.yml">
+    <img src="https://img.shields.io/badge/taste--tested%20by-Linus%20Torvalds-crimson?style=flat&logo=linux" alt="Taste Tested">
+  </a>
+  <a href="https://www.npmjs.com/package/taste-code">
+    <img src="https://img.shields.io/badge/npm-taste--code-blueviolet?style=flat&logo=npm" alt="npm package">
+  </a>
   <a href="https://github.com/joe1chief/taste-your-taste/stargazers">
     <img src="https://img.shields.io/github/stars/joe1chief/taste-your-taste?style=flat&color=yellow" alt="GitHub Stars">
   </a>
   <a href="./LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
-  </a>
-  <a href="https://github.com/joe1chief/taste-your-taste/pulls">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
   </a>
 </p>
 
@@ -25,10 +28,13 @@
 </p>
 
 ```bash
-# Instant Vibe Stacking with npx:
+# 🧙 Interactive Setup Wizard:
+npx taste-code init
+
+# 🍸 Instant Vibe Stacking with npx:
 npx taste-code blend --style antfu --tone karpathy
 
-# LLM-Powered Linus Torvalds Taste Roast:
+# 🌶️ Savage Linus Torvalds Taste Roast:
 npx taste-code roast CLAUDE.md
 ```
 
@@ -48,9 +54,11 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 
 **`taste-your-taste`** is an end-to-end, LLM-first developer ecosystem:
 1. 🛠️ **`taste` CLI**: A zero-dependency Lego-brick stacking tool to blend master developer tastes into your repository.
-2. 🌶️ **Taste Roast**: A Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
-3. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and high-star repositories, evaluating configurations with large language models.
-4. 🏛️ **The Hall of Fame**: Authentic battle-tested configs harvested from top open-source projects.
+2. 🧙 **`taste init` Wizard**: Interactive 10-second TUI to configure CLAUDE.md, Cursor MDC, or Antigravity rules.
+3. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
+4. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
+5. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender studio, and client-side roast tester.
+6. 🏛️ **The Hall of Fame**: Authentic battle-tested configs harvested from top open-source projects.
 
 ---
 
@@ -58,7 +66,13 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 
 Copy-pasting someone else's 300-line prompt is clumsy and brittle. **`taste`** breaks master developer styles and agent tones into atomic, composable Lego bricks.
 
-### 1. View Available Modules
+### 1. Interactive Setup Wizard (`taste init`)
+Run the interactive terminal wizard to pick your target rule format, style, and tone in 10 seconds:
+```bash
+npx taste-code init
+```
+
+### 2. View Available Modules
 ```bash
 npx taste-code list
 ```
@@ -66,24 +80,40 @@ npx taste-code list
 * **Tones**: `karpathy` (anti-slop diff-first), `linus` (anti-overengineering), `terse` (ultra-compact), `teacher` (edge-case pedagogy).
 * **Presets**: `anti-slop`, `solo-hacker`, `enterprise`.
 
-### 2. Stack a Single Flavor
+### 3. Stack a Single Flavor
 ```bash
 # Stack minimalist zero-dependency rules into CLAUDE.md
 npx taste-code add minimalist
 
-# Stack Antfu TypeScript rules into .cursorrules
+# Stack Antfu TypeScript rules into Modern Cursor MDC (.cursor/rules/taste.mdc)
+npx taste-code add antfu --target mdc
+
+# Stack into legacy .cursorrules
 npx taste-code add antfu --target cursor
 
-# Stack into .agent/rules.md
+# Stack into Google Antigravity / Gemini Agent (.agent/rules.md)
 npx taste-code add hacker --target agent
 ```
 
-### 3. Blend Styles & Tones (Taste Stacking)
+### 4. Blend Styles & Tones (Taste Stacking)
 Mix orthogonal aspects — combine **Antfu's TypeScript strictness** with **Karpathy's outcome-driven, anti-slop tone**:
 ```bash
 npx taste-code blend --style antfu --tone karpathy
 ```
 The CLI automatically maintains non-destructive block boundaries (`<!-- TASTE:STYLE:... -->` and `<!-- TASTE:TONE:... -->`), so you can re-run and re-stack without duplicating content or overwriting your own custom rules.
+
+---
+
+### 🌐 Supported Formats & Target Auto-Detection
+The CLI automatically discovers and writes to the correct agent convention in your repository:
+| Target Flag | Generated File | Target Agent / IDE |
+| :--- | :--- | :--- |
+| *(default)* | `CLAUDE.md` | Claude Code (Root) |
+| `--target dotclaude` | `.claude/CLAUDE.md` | Claude Code (Nested) |
+| `--target mdc` | `.cursor/rules/<name>.mdc` | Modern Cursor (with YAML frontmatter) |
+| `--target cursor` | `.cursorrules` | Legacy Cursor |
+| `--target agent` | `.agent/rules.md` | Google Antigravity / Gemini Agent |
+| `--target agents` | `AGENTS.md` | Multi-Agent Specification standard |
 
 ---
 
@@ -148,8 +178,10 @@ flowchart LR
 
 * **LLM Intelligence**: Uses OpenAI-compatible endpoints (DeepSeek, Qwen, or OpenAI) to analyze instruction files, identify taste archetypes, and extract verbatim prompt gems.
 * **Strict Quality Gate**: Only captures repositories that are **either on GitHub Trending** (Daily/Weekly) or **have ⭐️ 1,000+ Stars** (rejecting personal/low-impact repos).
+* **⚡ Prompt Evolution Tracking**: Stores Git Blob SHAs to detect when authors iterate or revise their prompts. When a change is pushed upstream, Radar triggers LLM prompt diff analysis and opens an evolution report issue!
+* **🚀 Automated PR Staging (`--create-pr`)**: Optionally creates git branches and automated Pull Requests to stage newly discovered tastes straight into the repository.
 * **Zero spam**: History is tracked in `data/seen_repos.json` to prevent duplicates.
-* **Mobile Alerts**: GitHub issues are created automatically with preview snippets and review checklists.
+* **Mobile Alerts**: GitHub issues are created automatically with preview snippets and maintainer checklists.
 
 ---
 

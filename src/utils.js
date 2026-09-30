@@ -72,25 +72,42 @@ function box(title, content, borderColor = colors.magenta) {
 /**
  * Determine the destination file path based on user target option or auto-detection.
  */
-function resolveTargetFile(targetOption, cwd = process.cwd()) {
+function resolveTargetFile(targetOption, cwd = process.cwd(), defaultMdcName = 'taste') {
   if (targetOption) {
     const t = targetOption.toLowerCase();
     if (t === 'claude' || t === 'claudemd') return path.join(cwd, 'CLAUDE.md');
     if (t === 'dotclaude' || t === '.claude') return path.join(cwd, '.claude', 'CLAUDE.md');
     if (t === 'cursor' || t === 'cursorrules') return path.join(cwd, '.cursorrules');
+    if (t === 'mdc' || t === 'cursor-mdc' || t === '.cursor/rules' || t === 'cursor/rules') {
+      return path.join(cwd, '.cursor', 'rules', `${defaultMdcName}.mdc`);
+    }
     if (t === 'agent' || t === '.agent') return path.join(cwd, '.agent', 'rules.md');
+    if (t === 'agents' || t === 'agentsmd' || t === 'agents.md') return path.join(cwd, 'AGENTS.md');
     return path.isAbsolute(targetOption) ? targetOption : path.join(cwd, targetOption);
   }
 
   // Auto-detect priority in cwd:
   // 1. CLAUDE.md
   // 2. .claude/CLAUDE.md
-  // 3. .cursorrules
-  // 4. .agent/rules.md
-  // 5. Default to CLAUDE.md
+  // 3. .cursor/rules/*.mdc (Modern Cursor)
+  // 4. .cursorrules (Legacy Cursor)
+  // 5. AGENTS.md
+  // 6. .agent/rules.md
+  // 7. Default to CLAUDE.md
   if (fs.existsSync(path.join(cwd, 'CLAUDE.md'))) return path.join(cwd, 'CLAUDE.md');
   if (fs.existsSync(path.join(cwd, '.claude', 'CLAUDE.md'))) return path.join(cwd, '.claude', 'CLAUDE.md');
+
+  const cursorRulesDir = path.join(cwd, '.cursor', 'rules');
+  if (fs.existsSync(cursorRulesDir) && fs.statSync(cursorRulesDir).isDirectory()) {
+    const mdcFiles = fs.readdirSync(cursorRulesDir).filter((f) => f.endsWith('.mdc'));
+    if (mdcFiles.length > 0) {
+      return path.join(cursorRulesDir, mdcFiles[0]);
+    }
+    return path.join(cursorRulesDir, `${defaultMdcName}.mdc`);
+  }
+
   if (fs.existsSync(path.join(cwd, '.cursorrules'))) return path.join(cwd, '.cursorrules');
+  if (fs.existsSync(path.join(cwd, 'AGENTS.md'))) return path.join(cwd, 'AGENTS.md');
   if (fs.existsSync(path.join(cwd, '.agent', 'rules.md'))) return path.join(cwd, '.agent', 'rules.md');
 
   return path.join(cwd, 'CLAUDE.md');

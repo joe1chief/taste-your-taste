@@ -8,6 +8,7 @@ const { c, banner, box, resolveTargetFile } = require('./utils');
 const { getAvailable, getMeta, METADATA } = require('./registry');
 const { stackFlavor, blendTastes } = require('./stacker');
 const { roastFile } = require('./roaster');
+const { runWizard } = require('./wizard');
 
 function printHelp() {
   banner();
@@ -16,6 +17,7 @@ ${c.bold('USAGE:')}
   ${c.cyan('taste')} ${c.yellow('<command>')} ${c.dim('[options]')}
 
 ${c.bold('COMMANDS:')}
+  ${c.yellow('init')}                               Interactive TUI wizard to set up agent rules
   ${c.yellow('list')}                               List all modular taste flavors, styles, and tones
   ${c.yellow('add')} ${c.green('<flavor>')}                      Stack a style or preset into your project rule file
   ${c.yellow('blend')} ${c.dim('--style <name> --tone <name>')} Mix an engineering style with an agent tone persona
@@ -204,6 +206,9 @@ async function run(argv = process.argv.slice(2)) {
   const args = argv.slice(1);
 
   switch (command) {
+    case 'init':
+      await runWizard();
+      break;
     case 'list':
       handleList();
       break;

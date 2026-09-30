@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { getAvailable, loadContent } = require('../src/registry');
 const { stackFlavor, blendTastes } = require('../src/stacker');
+const { resolveTargetFile } = require('../src/utils');
 const { analyzeContentDeterministic, roastFile } = require('../src/roaster');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
@@ -119,12 +120,36 @@ Thank you for your help!
   console.log('✅ Roaster engine test passed.');
 }
 
+function testCursorMdc() {
+  console.log('Testing Cursor MDC (.cursor/rules/*.mdc) support...');
+  const mdcTarget = resolveTargetFile('mdc', TEMP_DIR);
+  assert(mdcTarget.endsWith(path.join('.cursor', 'rules', 'taste.mdc')), 'Should resolve to .cursor/rules/taste.mdc');
+
+  const res = stackFlavor(mdcTarget, 'antfu');
+  assert(res.isNewFile, 'Should create new MDC file');
+  const content = fs.readFileSync(mdcTarget, 'utf-8');
+  assert(content.startsWith('---'), 'MDC file must start with YAML frontmatter delimiter');
+  assert(content.includes('globs: *'), 'MDC file must include globs');
+  assert(content.includes('alwaysApply: true'), 'MDC file must include alwaysApply');
+  assert(content.includes('<!-- TASTE:STYLES:antfu:START -->'), 'MDC file must contain taste block');
+
+  // Test stacking second flavor into same MDC
+  stackFlavor(mdcTarget, 'minimalist');
+  const updatedContent = fs.readFileSync(mdcTarget, 'utf-8');
+  assert(updatedContent.startsWith('---'), 'MDC frontmatter must remain intact');
+  assert(updatedContent.includes('<!-- TASTE:STYLES:antfu:START -->'), 'Antfu block must remain');
+  assert(updatedContent.includes('<!-- TASTE:STYLES:minimalist:START -->'), 'Minimalist block must be added');
+
+  console.log('✅ Cursor MDC test passed.');
+}
+
 async function runAll() {
   setup();
   try {
     testRegistry();
     testStacker();
     testBlend();
+    testCursorMdc();
     await testRoaster();
     console.log('\n🎉 ALL CLI & ROASTER TESTS PASSED SUCCESFULLY!\n');
   } finally {

@@ -140,3 +140,74 @@ class LLMTasteClient:
             "key_directives": lines[:5],
             "llm_powered": False,
         }
+
+    def analyze_evolution(
+        self,
+        repo: str,
+        filename: str,
+        old_content: str,
+        new_content: str,
+    ) -> Dict[str, Any]:
+        """Analyze how developer taste and agent instructions evolved between two revisions."""
+        if not self.is_enabled:
+            return {
+                "evolution_summary": f"Updated {filename} instructions.",
+                "key_changes": ["File revision detected via Git SHA update."],
+                "vibe_shift": "Iterative refinements.",
+            }
+
+        system_prompt = (
+            "You are an expert AI prompt engineer and code taste critic. Compare two versions of an agent rule file "
+            "(e.g., CLAUDE.md / .cursorrules). Analyze how the author's prompt engineering taste and constraints evolved. "
+            "Return ONLY a valid JSON object with the following keys:\n"
+            "- evolution_summary: string (2-3 sentences explaining what changed and why)\n"
+            "- key_changes: list of strings (bullet points of new rules or deleted rules)\n"
+            "- vibe_shift: string (one sentence describing the direction of the prompt shift, e.g. 'Shifted towards stricter type boundaries')\n"
+            "All responses must be in pure English. Do not include markdown code fences or conversational text."
+        )
+
+        user_prompt = (
+            f"Repository: {repo}\n"
+            f"File: {filename}\n\n"
+            f"=== PREVIOUS VERSION ===\n{old_content[:6000]}\n\n"
+            f"=== NEW VERSION ===\n{new_content[:6000]}\n"
+        )
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "temperature": 0.1,
+            "max_tokens": 800,
+        }
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+            "User-Agent": "Taste-Your-Taste-LLM/1.0",
+        }
+
+        url = f"{self.base_url}/chat/completions"
+        req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers)
+
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                choice = data.get("choices", [{}])[0]
+                content_text = choice.get("message", {}).get("content", "")
+                parsed = json.loads(_clean_json_markdown(content_text))
+                return {
+                    "evolution_summary": parsed.get("evolution_summary", "Updated instructions."),
+                    "key_changes": parsed.get("key_changes", []),
+                    "vibe_shift": parsed.get("vibe_shift", "Iterative prompt evolution."),
+                }
+        except Exception as e:
+            print(f"[LLM Warning] Evolution analysis failed for {repo}: {e}")
+            return {
+                "evolution_summary": f"Updated {filename} instructions.",
+                "key_changes": ["File revision detected via Git SHA update."],
+                "vibe_shift": "Iterative refinements.",
+            }
+

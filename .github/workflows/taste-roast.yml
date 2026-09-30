@@ -1,0 +1,76 @@
+name: "🌶️ Taste Roast Critic"
+
+on:
+  pull_request:
+    paths:
+      - 'CLAUDE.md'
+      - '.claude/**'
+      - '.cursorrules'
+      - '.cursor/rules/**'
+      - '.agent/**'
+      - 'AGENTS.md'
+  push:
+    branches:
+      - main
+    paths:
+      - 'CLAUDE.md'
+      - '.claude/**'
+      - '.cursorrules'
+      - '.cursor/rules/**'
+      - '.agent/**'
+      - 'AGENTS.md'
+  workflow_dispatch:
+    inputs:
+      target_file:
+        description: 'Path to rule file to roast (default: auto-detect)'
+        required: false
+        default: 'CLAUDE.md'
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  roast:
+    name: Roast Developer Taste
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run Linus Torvalds Taste Roast
+        id: run_roast
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://token-api.yicloud.com/v1' }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'DeepSeek-V4.1-Flash' }}
+        run: |
+          TARGET="${{ inputs.target_file || 'CLAUDE.md' }}"
+          if [ ! -f "$TARGET" ]; then
+            if [ -f ".cursorrules" ]; then
+              TARGET=".cursorrules"
+            elif [ -f "AGENTS.md" ]; then
+              TARGET="AGENTS.md"
+            fi
+          fi
+
+          echo "Target file to roast: $TARGET"
+          if [ -f "$TARGET" ]; then
+            ROAST_OUTPUT=$(node bin/taste.js roast "$TARGET")
+            echo "$ROAST_OUTPUT"
+            
+            echo "## 🌶️ Taste Roast by Linus Torvalds" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            echo "$ROAST_OUTPUT" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No agent rule file found in project root." >> $GITHUB_STEP_SUMMARY
+          fi

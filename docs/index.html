@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Your Taste — Developer Taste & Vibe Stacking Engine</title>
+  <meta name="description" content="Curating CLAUDE.md, .cursorrules, and .agent rules from star GitHub repositories. Blend master engineering tastes and roast AI agent prompts.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdf4f8',
+              500: '#ec4899',
+              600: '#db2777',
+              700: '#be185d',
+              900: '#831843',
+            },
+            accent: '#8b5cf6',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    pre, code, .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass { background: rgba(17, 24, 39, 0.75); backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col selection:bg-pink-600 selection:text-white">
+
+  <!-- Navigation Header -->
+  <header class="border-b border-gray-800 glass sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🍷</span>
+        <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-pink-500 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
+          taste-your-taste
+        </span>
+        <span class="hidden sm:inline-block text-xs uppercase px-2 py-0.5 rounded-full bg-pink-950 border border-pink-700 text-pink-300 font-semibold tracking-wide">
+          v1.0.0
+        </span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.npmjs.com/package/taste-code" target="_blank" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-700 hover:border-pink-500 text-gray-300 transition">
+          npx taste-code
+        </a>
+        <a href="https://github.com/joe1chief/taste-your-taste" target="_blank" class="flex items-center space-x-2 text-sm font-medium px-4 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white transition shadow-lg shadow-pink-900/30">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 text-center border-b border-gray-800">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-900/20 via-transparent to-transparent pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto relative z-10">
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
+        Code generation is cheap.<br>
+        <span class="bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent">Taste is rare.</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
+        The developer taste stacking engine for <code class="text-pink-300 bg-pink-950/60 px-2 py-0.5 rounded border border-pink-900 font-mono text-sm">CLAUDE.md</code>, <code class="text-indigo-300 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-900 font-mono text-sm">.cursorrules</code>, and <code class="text-purple-300 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-900 font-mono text-sm">.agent</code> rules.
+      </p>
+
+      <!-- Quick Command Copy -->
+      <div class="inline-flex items-center space-x-3 bg-gray-900 border border-gray-700 hover:border-pink-500 rounded-xl px-5 py-3 font-mono text-sm text-pink-300 shadow-2xl transition cursor-pointer" onclick="copyHeroCmd()">
+        <span class="text-gray-500">$</span>
+        <span id="hero-cmd-text">npx taste-code blend --style antfu --tone karpathy</span>
+        <button class="text-gray-400 hover:text-white pl-2" title="Copy to clipboard">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+        </button>
+      </div>
+      <div id="copy-toast" class="text-xs text-green-400 font-mono mt-2 opacity-0 transition-opacity">✔ Copied to clipboard!</div>
+    </div>
+  </section>
+
+  <!-- Interactive Section Tabs -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow w-full">
+    <div class="flex justify-center border-b border-gray-800 mb-8 space-x-2 sm:space-x-8">
+      <button onclick="switchTab('hall-of-fame')" id="tab-hall-of-fame" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-pink-500 text-pink-400 flex items-center space-x-2">
+        <span>🏛️</span><span>Hall of Fame</span>
+      </button>
+      <button onclick="switchTab('blender')" id="tab-blender" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
+        <span>🍸</span><span>Taste Blender</span>
+      </button>
+      <button onclick="switchTab('roast-playground')" id="tab-roast-playground" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
+        <span>🌶️</span><span>Taste Roast Sandbox</span>
+      </button>
+    </div>
+
+    <!-- TAB 1: Hall of Fame -->
+    <div id="view-hall-of-fame" class="tab-view block">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+        <!-- Search -->
+        <div class="relative w-full sm:w-96">
+          <input type="text" id="search-input" oninput="filterRepos()" placeholder="Search repositories, languages, or vibes..." class="w-full bg-gray-900 border border-gray-800 focus:border-pink-500 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none transition">
+        </div>
+
+        <!-- Archetype filter badges -->
+        <div class="flex flex-wrap gap-2 justify-center" id="archetype-filters">
+          <button onclick="setArchetypeFilter('all')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-pink-900/50 border border-pink-600 text-pink-200" data-filter="all">All</button>
+          <button onclick="setArchetypeFilter('Anti-Slop Minimalist')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Anti-Slop Minimalist">Anti-Slop</button>
+          <button onclick="setArchetypeFilter('Defensive Architect')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Defensive Architect">Defensive</button>
+          <button onclick="setArchetypeFilter('Hacker Velocity')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Hacker Velocity">Hacker</button>
+          <button onclick="setArchetypeFilter('Engineering Craft')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Engineering Craft">Engineering Craft</button>
+        </div>
+      </div>
+
+      <!-- Repo Cards Grid -->
+      <div id="repo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+
+    <!-- TAB 2: Taste Blender -->
+    <div id="view-blender" class="tab-view hidden">
+      <div class="max-w-3xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
+          <span>🍸</span><span>The Taste Blender Studio</span>
+        </h2>
+        <p class="text-sm text-gray-400 mb-6">
+          Stack modular engineering Lego bricks into an unshakeable agent personality.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-2">1. Engineering Style</label>
+            <select id="blend-style" onchange="updateBlendCommand()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-pink-500 font-mono">
+              <option value="antfu">antfu (Strict TS / ESM)</option>
+              <option value="karpathy">karpathy (Minimalist raw)</option>
+              <option value="stripe">stripe (Industrial craft)</option>
+              <option value="minimalist" selected>minimalist (Zero dep)</option>
+              <option value="defensive">defensive (Invariants)</option>
+              <option value="hacker">hacker (High velocity)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-yellow-400 mb-2">2. Persona / Tone</label>
+            <select id="blend-tone" onchange="updateBlendCommand()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-yellow-500 font-mono">
+              <option value="karpathy" selected>karpathy (Diff-first)</option>
+              <option value="linus">linus (Anti-overengineering)</option>
+              <option value="terse">terse (Extreme brevity)</option>
+              <option value="teacher">teacher (Socratic mentor)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-2">3. Target Rule Format</label>
+            <select id="blend-target" onchange="updateBlendCommand()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-indigo-500 font-mono">
+              <option value="claude">CLAUDE.md (Root)</option>
+              <option value="dotclaude">.claude/CLAUDE.md</option>
+              <option value="mdc">Cursor MDC (.cursor/rules/*.mdc)</option>
+              <option value="cursor">.cursorrules (Legacy)</option>
+              <option value="agent">.agent/rules.md (Gemini)</option>
+              <option value="agents">AGENTS.md</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bg-gray-950 border border-gray-800 rounded-xl p-4 mb-6">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs uppercase font-mono text-gray-500">Executable Command:</span>
+            <button onclick="copyBlendCommand()" class="text-xs text-pink-400 hover:text-pink-300 font-mono flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+          <p id="blend-cmd-output" class="font-mono text-sm text-pink-300 break-all select-all">npx taste-code blend --style minimalist --tone karpathy</p>
+        </div>
+
+        <div id="blend-description" class="p-4 rounded-xl bg-gray-950/60 border border-gray-800 text-sm text-gray-300">
+          <!-- Dynamic Description -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: Roast Playground -->
+    <div id="view-roast-playground" class="tab-view hidden">
+      <div class="max-w-4xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
+          <span>🌶️</span><span>Linus Torvalds Taste Roast Playground</span>
+        </h2>
+        <p class="text-sm text-gray-400 mb-6">
+          Test your agent prompt rules for fluff, corporate platitudes, and zero-specificity sins.
+        </p>
+
+        <div class="flex space-x-3 mb-4">
+          <button onclick="loadSample('slop')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-red-950/40 border border-red-800 text-red-300 hover:bg-red-900/60 transition">
+            Load Slop Prompt (Score: ~15)
+          </button>
+          <button onclick="loadSample('taste')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-green-950/40 border border-green-800 text-green-300 hover:bg-green-900/60 transition">
+            Load Master Taste Prompt (Score: ~90)
+          </button>
+        </div>
+
+        <textarea id="roast-input" rows="8" placeholder="Paste your CLAUDE.md or .cursorrules content here..." class="w-full bg-gray-950 border border-gray-800 focus:border-red-500 rounded-xl p-4 font-mono text-sm text-gray-200 focus:outline-none transition mb-4"></textarea>
+
+        <button onclick="runRoast()" class="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-red-900/30 transition flex items-center justify-center space-x-2">
+          <span>🔥</span><span>Roast My Taste Now</span>
+        </button>
+
+        <!-- Roast Output Card -->
+        <div id="roast-results" class="mt-8 hidden">
+          <div class="border border-red-800/60 rounded-xl bg-gray-950 p-6 font-mono text-sm shadow-2xl">
+            <div class="flex justify-between items-center border-b border-gray-800 pb-3 mb-4">
+              <span class="text-red-400 font-bold">🌶️ TASTE ROAST REPORT</span>
+              <span id="roast-score-badge" class="px-3 py-0.5 rounded font-bold text-xs bg-red-950 border border-red-600 text-red-300">SCORE: 15/100</span>
+            </div>
+
+            <div class="mb-4">
+              <span class="text-gray-400">Verdict:</span>
+              <span id="roast-verdict" class="text-red-400 font-bold ml-2">CRIMINAL TOXIC WASTE</span>
+            </div>
+
+            <div class="mb-4">
+              <div class="text-gray-400 font-bold mb-2">🔥 Sins & Pathology:</div>
+              <ul id="roast-sins" class="space-y-1 text-red-300 text-xs pl-2">
+                <!-- Sins list -->
+              </ul>
+            </div>
+
+            <div class="border-t border-gray-800 pt-3">
+              <div class="text-yellow-400 font-bold mb-2">🎙️ Linus Torvalds Savage Critique:</div>
+              <p id="roast-quote" class="text-gray-300 italic text-xs leading-relaxed bg-gray-900 p-3 rounded border border-gray-800">
+                <!-- Linus Quote -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-8 px-4 text-center text-xs text-gray-500">
+    <p>Taste Your Taste • Built for the Vibe Coding Era • Zero External Dependencies</p>
+    <p class="mt-1">Maintained by <a href="https://github.com/joe1chief" target="_blank" class="text-pink-400 hover:underline">@joe1chief</a></p>
+  </footer>
+
+  <script>
+    // Embedded Data from seen_repos.json
+    const REPO_DATA = [
+      {
+        repo: "openclaw/openclaw",
+        stars: 390800,
+        language: "Rust",
+        file: "AGENTS.md",
+        archetype: "Defensive Architect",
+        vibe: "One owner per responsibility, proof scoped, and zero blind retries.",
+        highlight: "Never attempt blind fixes or introduce speculative architectural rework without verification."
+      },
+      {
+        repo: "DietrichGebert/ponytail",
+        stars: 148757,
+        language: "JavaScript",
+        file: "AGENTS.md",
+        archetype: "Engineering Craft",
+        vibe: "The laziest senior dev mode: the best code is the code you never wrote.",
+        highlight: "Prefer deletions and stdlib refactors over additive complexity and new npm dependencies."
+      },
+      {
+        repo: "debpalash/VoiceStudio",
+        stars: 49880,
+        language: "Python",
+        file: "AGENTS.md",
+        archetype: "Hacker Velocity",
+        vibe: "Explicit token economy; default to shortest response; status updates 1 line max.",
+        highlight: "Every token counts. Answer with the git patch directly. Never apologize or waffle."
+      },
+      {
+        repo: "mksglu/context-mode",
+        stars: 24343,
+        language: "TypeScript",
+        file: "CLAUDE.md",
+        archetype: "Engineering Craft",
+        vibe: "Mandatory routing rules to protect context window from flooding.",
+        highlight: "Strict routing via MCP sandbox. 98% token reduction guaranteed."
+      },
+      {
+        repo: "NVIDIA/OpenShell",
+        stars: 11600,
+        language: "Rust",
+        file: "AGENTS.md",
+        archetype: "Anti-Slop Minimalist",
+        vibe: "Injected into context on every interaction; forbids unnecessary restructuring.",
+        highlight: "Preserve code formatting and avoid modifying unrequested files under any circumstances."
+      },
+      {
+        repo: "securego/gosec",
+        stars: 5400,
+        language: "Go",
+        file: "CLAUDE.md",
+        archetype: "Defensive Architect",
+        vibe: "AST walking rules, rule ID stability, and deterministic test invocation.",
+        highlight: "Run tests via make test-unit. Keep AST visitor mutations isolated."
+      },
+      {
+        repo: "leondgarse/keras_cv_attention_models",
+        stars: 1700,
+        language: "Python",
+        file: ".agent/rules.md",
+        archetype: "Hacker Velocity",
+        vibe: "black -l 160, single-line multi-assignments, thin wrapper pattern.",
+        highlight: "Format with 160-char lines; minimize layer wrapping."
+      },
+      {
+        repo: "tidyverse/readr",
+        stars: 1150,
+        language: "R",
+        file: ".claude/CLAUDE.md",
+        archetype: "Defensive Architect",
+        vibe: "Clean boundary between Edition 2 (lazy parsing) and Edition 1 (eager parser).",
+        highlight: "Never mix parser edition memory models. Test using testthat::test_local()."
+      },
+      {
+        repo: "stripe/stripe-java",
+        stars: 600,
+        language: "Java",
+        file: ".claude/CLAUDE.md",
+        archetype: "Engineering Craft",
+        vibe: "Exact test runners, Spotless formatting commands, and HTTP abstraction map.",
+        highlight: "Always run ./gradlew spotlessApply before committing. Never modify generated DTOs directly."
+      }
+    ];
+
+    let currentArchetypeFilter = 'all';
+
+    function renderRepos() {
+      const query = (document.getElementById('search-input')?.value || '').toLowerCase();
+      const grid = document.getElementById('repo-grid');
+      grid.innerHTML = '';
+
+      const filtered = REPO_DATA.filter(item => {
+        const matchesQuery = item.repo.toLowerCase().includes(query) ||
+                             item.language.toLowerCase().includes(query) ||
+                             item.vibe.toLowerCase().includes(query) ||
+                             item.archetype.toLowerCase().includes(query);
+        const matchesArch = (currentArchetypeFilter === 'all') || (item.archetype === currentArchetypeFilter);
+        return matchesQuery && matchesArch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full py-12 text-center text-gray-500 font-mono">No repositories match your filter criteria.</div>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-gray-900 border border-gray-800 hover:border-pink-500/50 rounded-2xl p-6 transition flex flex-col justify-between shadow-xl";
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono px-2 py-0.5 rounded bg-gray-800 text-yellow-400">⭐️ ${(item.stars >= 1000 ? (item.stars / 1000).toFixed(1) + 'k' : item.stars)}</span>
+              <span class="text-xs font-mono text-gray-400 bg-gray-950 px-2 py-0.5 rounded border border-gray-800">${item.language}</span>
+            </div>
+            <a href="https://github.com/${item.repo}" target="_blank" class="text-lg font-bold text-white hover:text-pink-400 transition mb-2 block">
+              ${item.repo}
+            </a>
+            <div class="mb-4">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-pink-950/80 border border-pink-700/60 text-pink-300">
+                ${item.archetype}
+              </span>
+            </div>
+            <p class="text-xs text-gray-300 italic mb-4">"${item.vibe}"</p>
+          </div>
+          <div class="border-t border-gray-800 pt-3">
+            <div class="text-[11px] font-mono text-gray-400">
+              <span class="text-gray-500">File:</span> <span class="text-pink-300">${item.file}</span>
+            </div>
+            <p class="text-[11px] text-gray-400 mt-1 line-clamp-2">${item.highlight}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function filterRepos() {
+      renderRepos();
+    }
+
+    function setArchetypeFilter(arch) {
+      currentArchetypeFilter = arch;
+      document.querySelectorAll('.arch-filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === arch) {
+          btn.className = "arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-pink-900/50 border border-pink-600 text-pink-200";
+        } else {
+          btn.className = "arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200";
+        }
+      });
+      renderRepos();
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-pink-500', 'text-pink-400');
+        btn.classList.add('border-transparent', 'text-gray-400');
+      });
+
+      document.getElementById(`view-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-${tabId}`);
+      activeBtn.classList.remove('border-transparent', 'text-gray-400');
+      activeBtn.classList.add('border-pink-500', 'text-pink-400');
+    }
+
+    function updateBlendCommand() {
+      const style = document.getElementById('blend-style').value;
+      const tone = document.getElementById('blend-tone').value;
+      const target = document.getElementById('blend-target').value;
+
+      let cmd = `npx taste-code blend --style ${style} --tone ${tone}`;
+      if (target !== 'claude') {
+        cmd += ` --target ${target}`;
+      }
+      document.getElementById('blend-cmd-output').textContent = cmd;
+
+      const descMap = {
+        antfu: "Strict TypeScript hygiene, zero-any policy, and modern ESM configuration.",
+        karpathy: "Radical simplicity, raw single-file execution, and zero unnecessary dependencies.",
+        stripe: "Defensive API contracts, explicit HTTP boundaries, and robust idempotency.",
+        minimalist: "Zero-dependency philosophy, vanilla primitives, and zero bloat.",
+        defensive: "Strict boundary assertions, invariant verification, and static checking.",
+        hacker: "Rapid execution, 160-char lines, and thin wrapper patterns."
+      };
+
+      const toneMap = {
+        karpathy: "Diff-first, outcome-driven responses with zero conversational filler.",
+        linus: "Brutally honest, zero fluff, intolerant of over-engineered boilerplate.",
+        terse: "Ultra-compact code-only responses with fewer than 5 lines of commentary.",
+        teacher: "Pedagogical Socratic dialogue explaining invariant trade-offs."
+      };
+
+      document.getElementById('blend-description').innerHTML = `
+        <div class="font-semibold text-white mb-1">Hybrid Personality:</div>
+        <div>Combining <strong class="text-pink-400">${descMap[style]}</strong> with <strong class="text-yellow-400">${toneMap[tone]}</strong></div>
+      `;
+    }
+
+    function copyHeroCmd() {
+      const text = document.getElementById('hero-cmd-text').textContent;
+      navigator.clipboard.writeText(text);
+      const toast = document.getElementById('copy-toast');
+      toast.classList.remove('opacity-0');
+      setTimeout(() => toast.classList.add('opacity-0'), 2000);
+    }
+
+    function copyBlendCommand() {
+      const text = document.getElementById('blend-cmd-output').textContent;
+      navigator.clipboard.writeText(text);
+      alert('Command copied to clipboard: ' + text);
+    }
+
+    // Client-side Roast Engine
+    function loadSample(type) {
+      if (type === 'slop') {
+        document.getElementById('roast-input').value = `# General Rules\nPlease be helpful, polite, and friendly to the user.\nAlways write clean, readable code and follow all industry best practices.\nWe strive for excellence. If you make a mistake, apologize immediately.\nThank you!`;
+      } else {
+        document.getElementById('roast-input').value = `# Repository Operational Contract\n- Test command: pytest -v tests/\n- Formatter: ruff check --fix\n- Zero fluff. Never apologize, never say 'Certainly!'.\n- Deliver git patch immediately.\n- Reject third-party packages for utilities under 20 lines.`;
+      }
+    }
+
+    function runRoast() {
+      const text = document.getElementById('roast-input').value.trim();
+      if (!text) {
+        alert('Please enter or paste your agent instructions first.');
+        return;
+      }
+
+      const lower = text.toLowerCase();
+      let score = 100;
+      const sins = [];
+
+      const politeness = ['please', 'thank you', 'thanks', 'kindly', 'sorry', 'apologize'];
+      let politeCount = 0;
+      politeness.forEach(w => {
+        if (lower.includes(w)) politeCount++;
+      });
+      if (politeCount > 0) {
+        score -= politeCount * 15;
+        sins.push(`Politeness Tax: Found ${politeCount} polite/apologetic words wasting token budget.`);
+      }
+
+      if (lower.includes('clean code') || lower.includes('best practice') || lower.includes('excellence')) {
+        score -= 25;
+        sins.push("Platitude Sin: 'Clean code' and 'best practices' are unmeasurable corporate fluff.");
+      }
+
+      if (lower.includes('be helpful') || lower.includes('friendly')) {
+        score -= 20;
+        sins.push("Ambiguity Sin: 'Be helpful' is a vague vibe, not an operational instruction.");
+      }
+
+      if (!lower.includes('run') && !lower.includes('test') && !lower.includes('npm') && !lower.includes('pytest')) {
+        score -= 20;
+        sins.push("Zero Verification: No executable test or lint command provided.");
+      }
+
+      score = Math.max(5, Math.min(100, score));
+
+      let verdict = 'CHEF\'S TASTE';
+      let quote = '"Now this is how you write instructions. Short, actionable, and doesn\'t waste my afternoon reading apologies."';
+
+      if (score < 40) {
+        verdict = 'CRIMINAL TOXIC WASTE';
+        quote = '"This isn\'t an engineering document, it\'s a corporate greeting card. If I wanted an AI to apologize, I\'d hire a PR firm."';
+      } else if (score < 70) {
+        verdict = 'SLOPPY AMATEUR';
+        quote = '"You have some reasonable ideas buried under useless waffle. Trim the fat before Claude chokes on it."';
+      }
+
+      document.getElementById('roast-score-badge').textContent = `SCORE: ${score}/100`;
+      document.getElementById('roast-verdict').textContent = verdict;
+      document.getElementById('roast-quote').textContent = quote;
+
+      const sinsList = document.getElementById('roast-sins');
+      sinsList.innerHTML = '';
+      if (sins.length === 0) {
+        sinsList.innerHTML = '<li class="text-green-400">✔ Zero conversational fluff detected! Exceptional engineering discipline.</li>';
+      } else {
+        sins.forEach(s => {
+          const li = document.createElement('li');
+          li.textContent = `❌ ${s}`;
+          sinsList.appendChild(li);
+        });
+      }
+
+      document.getElementById('roast-results').classList.remove('hidden');
+    }
+
+    // Init
+    renderRepos();
+    updateBlendCommand();
+  </script>
+</body>
+</html>
