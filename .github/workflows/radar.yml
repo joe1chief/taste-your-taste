@@ -12,9 +12,9 @@ on:
         default: '5'
         type: string
       min_stars:
-        description: 'Minimum star count for code search'
+        description: 'Minimum star count for non-trending projects'
         required: false
-        default: '50'
+        default: '1000'
         type: string
       dry_run:
         description: 'Run in dry-run mode (do not create issues or commit files)'

@@ -149,8 +149,9 @@ flowchart LR
 ```
 
 * **Monitored Target Files**: `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `AGENTS.md`.
-* **Zero spam**: History is tracked in `data/seen_repos.json`.
-* **Mobile Alerts**: GitHub issues are created automatically with preview snippets and checkboxes.
+* **Strict Quality Gate**: Only captures repositories that are **either on GitHub Trending** (Daily/Weekly) or **have ⭐️ 1,000+ Stars** (rejecting personal/low-impact repos).
+* **Zero spam**: History is tracked in `data/seen_repos.json` to prevent duplicates.
+* **Mobile Alerts**: GitHub issues are created automatically with preview snippets and review checklists.
 
 ---
 

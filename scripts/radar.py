@@ -31,6 +31,7 @@ INTERESTING_ROOT_FILES = {
 INTERESTING_DIRS = {
     ".claude",
     ".agent",
+    ".agents",
     ".cursor",
 }
 
@@ -214,7 +215,7 @@ class TasteRadar:
         api: GitHubAPI,
         target_repo: Optional[str] = None,
         db_path: str = "data/seen_repos.json",
-        min_stars: int = 50,
+        min_stars: int = 1000,
         dry_run: bool = False,
         save_tastes: bool = True,
     ):
@@ -293,28 +294,67 @@ class TasteRadar:
 
         return candidates
 
+    def scan_popular_repos(self, max_check: int = 20) -> List[Dict[str, Any]]:
+        """Scan recently active high-star repositories for taste configurations."""
+        print(f"[Radar] ⭐ Scanning recently active high-star repositories (stars >= {self.min_stars})...")
+        candidates: List[Dict[str, Any]] = []
+
+        # Find recently pushed repos with high stars
+        pushed_since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).strftime("%Y-%m-%d")
+        query = f"stars:>={self.min_stars} pushed:>={pushed_since}"
+
+        try:
+            data = self.api.request(
+                "/search/repositories",
+                params={"q": query, "sort": "updated", "order": "desc", "per_page": max_check},
+            )
+            items = data.get("items", [])
+            print(f"[Radar] Checking {len(items)} popular active repos for taste files...")
+            for r in items:
+                full_name = r.get("full_name")
+                if not full_name or full_name in self.db:
+                    continue
+                found_files = self.inspect_repo_taste_files(full_name)
+                if found_files:
+                    stars = r.get("stargazers_count", 0)
+                    print(f"[Radar] 🎯 Match found in high-star repo {full_name} (⭐️ {stars:,}): {found_files}")
+                    candidates.append({
+                        "repo": full_name,
+                        "files": found_files,
+                        "source": "popular_stars",
+                    })
+        except Exception as e:
+            print(f"[Radar] Failed scanning popular repos: {e}", file=sys.stderr)
+
+        return candidates
+
     def scan_code_search(self, max_results: int = 15) -> List[Dict[str, Any]]:
-        """Search GitHub Code Search for taste files in repositories."""
-        print("[Radar] 🔍 Scanning GitHub Code Search for taste files...")
+        """Search GitHub Code Search for taste files, strictly filtering for high-star repositories."""
+        print(f"[Radar] 🔍 Scanning GitHub Code Search for taste files (min stars >= {self.min_stars})...")
         candidates: Dict[str, Dict[str, Any]] = {}
 
         for query in SEARCH_QUERIES:
-            items = self.api.search_code(query, per_page=8)
+            items = self.api.search_code(query, per_page=10)
             for item in items:
                 repo_info = item.get("repository", {})
                 full_name = repo_info.get("full_name")
-                if not full_name or full_name in self.db:
+                if not full_name or full_name in self.db or full_name in candidates:
+                    continue
+
+                # Query repo metadata to verify star threshold before admitting
+                repo_meta = self.api.get_repo(full_name)
+                if not repo_meta:
+                    continue
+                stars = repo_meta.get("stargazers_count", 0)
+                if stars < self.min_stars:
                     continue
 
                 path = item.get("path")
-                if full_name not in candidates:
-                    candidates[full_name] = {
-                        "repo": full_name,
-                        "files": [path] if path else [],
-                        "source": "code_search",
-                    }
-                elif path and path not in candidates[full_name]["files"]:
-                    candidates[full_name]["files"].append(path)
+                candidates[full_name] = {
+                    "repo": full_name,
+                    "files": [path] if path else [],
+                    "source": "code_search",
+                }
 
                 if len(candidates) >= max_results:
                     break
@@ -461,6 +501,9 @@ A new project configuration has been captured by **Taste Radar**.
 
         candidates = self.scan_trending()
         if len(candidates) < max_new:
+            popular_candidates = self.scan_popular_repos(max_check=20)
+            candidates.extend(popular_candidates)
+        if len(candidates) < max_new:
             search_candidates = self.scan_code_search()
             candidates.extend(search_candidates)
 
@@ -486,7 +529,7 @@ def main():
         default=os.environ.get("GITHUB_REPOSITORY"),
     )
     parser.add_argument("--db", default="data/seen_repos.json", help="Path to database tracking seen repos")
-    parser.add_argument("--min-stars", type=int, default=50, help="Minimum stars for code search results")
+    parser.add_argument("--min-stars", type=int, default=1000, help="Minimum stars for non-trending candidate repositories")
     parser.add_argument("--limit", type=int, default=5, help="Maximum number of items to process in one run")
     parser.add_argument("--dry-run", action="store_true", help="Print candidates without modifying state or creating issues")
     parser.add_argument("--no-save", action="store_true", help="Do not save raw files into discovered/")

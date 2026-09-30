@@ -145,6 +145,11 @@ flowchart LR
     D -- 否 --> H["进入下一轮休眠"]
 ```
 
+* **监控目标文件**：`CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `.cursor/rules/`, `AGENTS.md`。
+* **严格双重质量门槛**：只抓取 **GitHub Trending 当日/当周上榜项目** 或 **⭐️ 1,000+ Stars 明星项目**，坚决过滤个人练习生与低星低质小项目。
+* **零噪音与防重**：历史状态记录在 `data/seen_repos.json` 中，已处理项目不重复提醒。
+* **手机端推送**：一旦明星项目新增或更新 Agent 指令，自动在仓库创建包含预览的 Issue，直接推送到你的 GitHub 通知和邮箱！
+
 ---
 
 ## 🏛️ 经典品味名人堂 (Hall of Fame)

@@ -73,5 +73,31 @@
     "discovered_at": "2026-09-30T14:43:09.699516+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/1",
     "status": "pending_review"
+  },
+  "mksglu/context-mode": {
+    "stars": 24343,
+    "language": "TypeScript",
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "source": "trending",
+    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "discovered_at": "2026-09-30T15:03:34.997139+00:00",
+    "issue_url": null,
+    "status": "pending_review"
+  },
+  "DietrichGebert/ponytail": {
+    "stars": 148757,
+    "language": "JavaScript",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "source": "trending",
+    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "discovered_at": "2026-09-30T15:03:38.353149+00:00",
+    "issue_url": null,
+    "status": "pending_review"
   }
 }
