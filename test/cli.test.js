@@ -9,6 +9,9 @@ const { getAvailable, loadContent } = require('../src/registry');
 const { stackFlavor, blendTastes } = require('../src/stacker');
 const { resolveTargetFile } = require('../src/utils');
 const { analyzeContentDeterministic, roastFile } = require('../src/roaster');
+const { pruneContent, pruneFile, pruneDeterministic } = require('../src/pruner');
+const { diffTastes, diffDeterministic } = require('../src/differ');
+const { generateCardSvg, renderCardToFile } = require('../src/card');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
 
@@ -143,6 +146,79 @@ function testCursorMdc() {
   console.log('✅ Cursor MDC test passed.');
 }
 
+async function testPruner() {
+  console.log('Testing Taste Pruner (Token Compactor)...');
+  const slopInput = `
+# Project Rules
+Please be very helpful and friendly to the user.
+Always ensure high quality, clean and readable code following all best practices.
+We strive for excellence in everything we do.
+As an AI assistant, if you make a mistake, kindly apologize.
+- Run tests: npm test
+- Linter: eslint --fix
+- Never introduce any any types in TypeScript.
+Thank you for your assistance!
+`;
+
+  // Test deterministic prune
+  const pruned = pruneDeterministic(slopInput);
+  assert(!pruned.includes('helpful and friendly'), 'Must remove helpful and friendly');
+  assert(!pruned.includes('best practices'), 'Must remove best practices');
+  assert(!pruned.includes('strive for excellence'), 'Must remove strive for excellence');
+  assert(pruned.includes('Run tests: npm test'), 'Must preserve test commands');
+  assert(pruned.includes('eslint --fix'), 'Must preserve lint commands');
+
+  // Test pruneFile
+  const testFile = path.join(TEMP_DIR, 'PRUNE_TARGET.md');
+  fs.writeFileSync(testFile, slopInput, 'utf-8');
+  const res = await pruneFile(testFile, { write: true, backup: true });
+
+  assert(res.written, 'Should write pruned file');
+  assert(res.tokensSaved > 0, 'Should have saved tokens');
+  assert(fs.existsSync(testFile + '.bak'), 'Backup file must be created');
+  const finalContent = fs.readFileSync(testFile, 'utf-8');
+  assert(finalContent.includes('eslint --fix'), 'Pruned file must contain vital rules');
+
+  console.log(`✅ Taste Pruner test passed (~${res.tokensSaved} tokens saved).`);
+}
+
+async function testDiffer() {
+  console.log('Testing Taste Differ (Philosophy Comparator)...');
+  const diffResult = await diffTastes('antfu', 'karpathy');
+
+  assert(diffResult.itemA.name === 'antfu', 'Item A should be antfu');
+  assert(diffResult.itemB.name === 'karpathy', 'Item B should be karpathy');
+  assert(diffResult.analysis.philosophy_clash, 'Should generate philosophy clash');
+  assert(diffResult.analysis.contrasts.length >= 2, 'Should detect contrasts');
+  assert(diffResult.report.includes('The Philosophy Clash'), 'Report should be structured');
+
+  console.log('✅ Taste Differ test passed.');
+}
+
+function testCardGenerator() {
+  console.log('Testing Profile Taste Card Generator...');
+  const svg = generateCardSvg({
+    user: 'testuser',
+    style: 'antfu',
+    tone: 'karpathy',
+    archetype: 'Defensive Architect',
+    score: 95,
+  });
+
+  assert(svg.includes('<svg'), 'Must be valid SVG string');
+  assert(svg.includes('@testuser'), 'Must contain user handle');
+  assert(svg.includes('Defensive Architect'), 'Must contain archetype');
+  assert(svg.includes('95'), 'Must contain score');
+  assert(svg.includes("CHEF'S TASTE"), 'Score 95 must yield CHEF\'S TASTE');
+
+  // Test render to file
+  const cardPath = path.join(TEMP_DIR, 'profile-card.svg');
+  renderCardToFile(cardPath, { user: 'testuser', score: 85 });
+  assert(fs.existsSync(cardPath), 'SVG file must be written to disk');
+
+  console.log('✅ Taste Card Generator test passed.');
+}
+
 async function runAll() {
   setup();
   try {
@@ -151,7 +227,10 @@ async function runAll() {
     testBlend();
     testCursorMdc();
     await testRoaster();
-    console.log('\n🎉 ALL CLI & ROASTER TESTS PASSED SUCCESFULLY!\n');
+    await testPruner();
+    await testDiffer();
+    testCardGenerator();
+    console.log('\n🎉 ALL CLI, ROASTER, PRUNER, DIFFER & CARD TESTS PASSED SUCCESFULLY!\n');
   } finally {
     teardown();
   }

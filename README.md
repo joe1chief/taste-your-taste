@@ -34,8 +34,17 @@ npx taste-code init
 # 🍸 Instant Vibe Stacking with npx:
 npx taste-code blend --style antfu --tone karpathy
 
+# 💧 Token De-slop Compactor (Save 30-70% Context Tokens):
+npx taste-code prune CLAUDE.md --write
+
+# ⚖️ Taste & Philosophy Differ (Antfu vs Karpathy):
+npx taste-code diff antfu karpathy
+
 # 🌶️ Savage Linus Torvalds Taste Roast:
 npx taste-code roast CLAUDE.md
+
+# 🪪 Dynamic Profile Taste Card Badge (GitHub Profile):
+npx taste-code card --output taste-card.svg
 ```
 
 </div>
@@ -55,10 +64,13 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 **`taste-your-taste`** is an end-to-end, LLM-first developer ecosystem:
 1. 🛠️ **`taste` CLI**: A zero-dependency Lego-brick stacking tool to blend master developer tastes into your repository.
 2. 🧙 **`taste init` Wizard**: Interactive 10-second TUI to configure CLAUDE.md, Cursor MDC, or Antigravity rules.
-3. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
-4. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
-5. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender studio, and client-side roast tester.
-6. 🏛️ **The Hall of Fame**: Authentic battle-tested configs harvested from top open-source projects.
+3. 💧 **`taste prune` (De-slop Compactor)**: Strips out polite conversational filler and tautological fluff while preserving 100% of technical rules, reducing context window tax by 30-70%.
+4. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
+5. 🪪 **`taste card` & SVG Badge API**: Generates a sleek, embeddable GitHub Profile Taste Card showcasing your Archetype, Taste DNA, and Linus Verdict.
+6. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
+7. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
+8. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender, Pruner preview, and live Badge Studio.
+9. 🏛️ **The Hall of Fame**: Authentic battle-tested configs harvested from top open-source projects.
 
 ---
 
@@ -158,6 +170,99 @@ npx taste-code roast [path/to/CLAUDE.md]
 │   Run npx taste-code blend --style minimalist --tone terse to replace fluff with discipline. │
 └───────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 💧 Token Compactor: `taste prune`
+
+Agent instructions (`CLAUDE.md`, `.cursorrules`, `AGENTS.md`) are injected into the LLM context on **every single prompt or turn**. Verbose corporate platitudes, excessive politeness, and conversational slop silently inflate your API bills and dilute the model's attention.
+
+**`taste prune`** strips conversational filler and tautological fluff while **preserving 100% of functional engineering commands, linters, and architectural invariants**:
+
+```bash
+# Preview token savings and distilled prompt
+npx taste-code prune CLAUDE.md
+
+# Prune and overwrite file in-place with automatic .bak backup
+npx taste-code prune CLAUDE.md --write --backup
+```
+
+### What It De-slops:
+* 📉 **Politeness Tax**: Removes *"Please"*, *"Kindly"*, *"If you make a mistake apologize immediately"*.
+* 🧽 **Tautological Fluff**: Cuts *"Always write clean, readable code and follow all best practices"*.
+* 🛡️ **Zero Loss of Invariants**: Strictly preserves testing commands (`npm test`, `pytest`), linter commands (`eslint --fix`), and negative constraints (`never introduce 'any'`).
+* ⚡ **Context Economy**: Reduces instruction token overhead by **30% to 70%**.
+
+---
+
+## ⚖️ Taste Philosophy Differ: `taste diff`
+
+Engineering cultures collide. Should an agent be an obsessive TypeScript perfectionist, or a single-file raw PyTorch hacker?
+
+**`taste diff`** runs an architectural and philosophical contrast between two flavors or existing files:
+
+```bash
+# Compare two master archetypes
+npx taste-code diff antfu karpathy
+
+# Compare existing configs
+npx taste-code diff CLAUDE.md .cursorrules
+```
+
+### Sample Output:
+```text
+┌─ ⚡ TASTE PHILOSOPHY DIFF ─────────────────────────────────────────────────────────────────────────┐
+│ 🥊 Comparing: antfu vs karpathy                                                               │
+│                                                                                               │
+│ 💥 The Philosophy Clash:                                                                      │
+│   antfu demands rigorous type safety, modular packages, and modern ESM tooling.               │
+│   karpathy prioritizes raw readability, single-file scripts, zero unnecessary dependencies,   │
+│   and immediate algorithmic transparency over formal abstractions.                            │
+│                                                                                               │
+│ 🔍 Key Contrasts:                                                                             │
+│   • antfu enforces strict TypeScript compilation and automated linting.                      │
+│   • karpathy favors flat script simplicity and zero dependency overhead.                      │
+│                                                                                               │
+│ 🎯 When to choose antfu: Multi-package TS libraries, production enterprise codebases.          │
+│ 🎯 When to choose karpathy: Machine learning experiments, proof-of-concepts, hackathons.      │
+└───────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🪪 Dynamic Profile Taste Card: `taste card` & SVG Badge API
+
+Showcase your developer taste DNA directly on your GitHub Profile README, project documentation, or website with dynamic, dark-mode SVG vector badges.
+
+### 1. Local CLI Vector Card Generator
+```bash
+# Generate local taste-card.svg based on your active rules
+npx taste-code card --user yourname --output taste-card.svg
+
+# Customize styles and tones directly
+npx taste-code card --user yourname --style antfu --tone karpathy
+```
+
+### 2. Live Dynamic Serverless SVG Badge API
+You can embed your real-time Taste Card directly using the serverless Badge endpoint:
+
+```markdown
+[![My Developer Taste](https://taste-your-taste.vercel.app/api/card?user=antfu&style=antfu&tone=linus&score=96&archetype=Defensive+Architect)](https://github.com/joe1chief/taste-your-taste)
+```
+
+<div align="center">
+  <img src="./taste-card.svg" alt="Taste Card Badge Preview" width="495">
+</div>
+
+### Badge API Parameters:
+| Query Parameter | Default | Description |
+| :--- | :--- | :--- |
+| `user` | `developer` | GitHub username displayed on card |
+| `style` | `antfu` | Active developer style module |
+| `tone` | `karpathy` | Active persona / agent tone |
+| `archetype` | `Engineering Craft` | Architectural archetype (Defensive Architect, Hacker Velocity, etc.) |
+| `score` | `92` | Taste score (0 - 100) |
+| `linus` | `Chef's taste.` | Custom Linus Torvalds verdict snippet |
 
 ---
 

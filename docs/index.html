@@ -94,6 +94,9 @@
       <button onclick="switchTab('roast-playground')" id="tab-roast-playground" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
         <span>🌶️</span><span>Taste Roast Sandbox</span>
       </button>
+      <button onclick="switchTab('card-generator')" id="tab-card-generator" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
+        <span>🎨</span><span>Taste Card Badge</span>
+      </button>
     </div>
 
     <!-- TAB 1: Hall of Fame -->
@@ -235,6 +238,92 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: Profile Taste Card Studio -->
+    <div id="view-card-generator" class="tab-view hidden">
+      <div class="max-w-4xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
+          <span>🎨</span><span>Dynamic GitHub Profile Taste Badge</span>
+        </h2>
+        <p class="text-sm text-gray-400 mb-6">
+          Customize and generate your vector SVG card to embed directly into your GitHub Profile README.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
+          <!-- Control Panel -->
+          <div class="space-y-4">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-1">GitHub Username</label>
+              <input type="text" id="card-user" value="joe1chief" oninput="updateLiveCard()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-pink-500 font-mono">
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-purple-400 mb-1">Engineering Style</label>
+                <select id="card-style" onchange="updateLiveCard()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-purple-500 font-mono">
+                  <option value="antfu" selected>antfu</option>
+                  <option value="karpathy">karpathy</option>
+                  <option value="stripe">stripe</option>
+                  <option value="minimalist">minimalist</option>
+                  <option value="defensive">defensive</option>
+                  <option value="hacker">hacker</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-yellow-400 mb-1">Tone Persona</label>
+                <select id="card-tone" onchange="updateLiveCard()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-yellow-500 font-mono">
+                  <option value="karpathy" selected>karpathy</option>
+                  <option value="linus">linus</option>
+                  <option value="terse">terse</option>
+                  <option value="teacher">teacher</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">Archetype</label>
+                <select id="card-archetype" onchange="updateLiveCard()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-indigo-500 font-mono">
+                  <option value="Anti-Slop Minimalist" selected>Anti-Slop Minimalist</option>
+                  <option value="Defensive Architect">Defensive Architect</option>
+                  <option value="Hacker Velocity">Hacker Velocity</option>
+                  <option value="Engineering Craft">Engineering Craft</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-green-400 mb-1">Taste Score (0-100)</label>
+                <input type="number" id="card-score" min="10" max="100" value="94" oninput="updateLiveCard()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-green-500 font-mono">
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Live Preview -->
+          <div class="flex flex-col items-center justify-center p-4 bg-gray-950 border border-gray-800 rounded-2xl">
+            <div class="text-xs uppercase font-mono text-gray-500 mb-2">Live Preview</div>
+            <div id="live-card-container" class="w-full overflow-hidden flex justify-center">
+              <!-- Rendered SVG dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Markdown Embed Code Box -->
+        <div class="bg-gray-950 border border-gray-800 rounded-xl p-4 mb-4">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs uppercase font-mono text-gray-400 font-bold">GitHub Profile README Markdown:</span>
+            <button onclick="copyCardMarkdown()" class="text-xs text-pink-400 hover:text-pink-300 font-mono flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+              <span>Copy Markdown</span>
+            </button>
+          </div>
+          <pre id="card-markdown-output" class="font-mono text-xs text-pink-300 select-all overflow-x-auto whitespace-pre-wrap"></pre>
+        </div>
+
+        <div class="text-xs font-mono text-gray-400 bg-gray-950/60 border border-gray-800 p-3 rounded-lg flex items-center justify-between">
+          <span>Or generate locally via CLI:</span>
+          <code class="text-yellow-300">npx taste-code card --user joe1chief</code>
         </div>
       </div>
     </div>
@@ -536,9 +625,98 @@
       document.getElementById('roast-results').classList.remove('hidden');
     }
 
+    // Card Badge Generator
+    function generateSvgString(user, style, tone, archetype, score) {
+      let ratingLabel = "CHEF'S TASTE";
+      let ratingColor = '#10b981';
+      let barColor = '#ec4899';
+
+      if (score < 40) {
+        ratingLabel = 'CRIMINAL WASTE';
+        ratingColor = '#ef4444';
+        barColor = '#ef4444';
+      } else if (score < 70) {
+        ratingLabel = 'SLOPPY AMATEUR';
+        ratingColor = '#f59e0b';
+        barColor = '#f59e0b';
+      } else if (score < 88) {
+        ratingLabel = 'ACCEPTABLE CRAFT';
+        ratingColor = '#06b6d4';
+        barColor = '#8b5cf6';
+      }
+
+      const barWidth = Math.round((score / 100) * 160);
+
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+        <style>
+          .header { font: 700 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #f43f5e; }
+          .sub { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #8b949e; }
+          .title { font: 600 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #e6edf3; }
+          .stat-label { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #7d8590; }
+          .stat-val { font: 700 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #f0f6fc; }
+          .badge-bg { fill: rgba(244, 63, 94, 0.15); stroke: rgba(244, 63, 94, 0.4); }
+          .badge-txt { font: 700 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #fda4af; }
+        </style>
+        <rect x="0.5" y="0.5" width="494" height="194" rx="14" fill="#0d1117" stroke="#30363d"/>
+        <g transform="translate(25, 32)">
+          <text x="0" y="0" class="header">🍷 TASTE YOUR TASTE</text>
+          <text x="185" y="-1" class="sub">• @${user}</text>
+        </g>
+        <g transform="translate(25, 48)">
+          <rect x="0" y="0" width="165" height="22" rx="6" class="badge-bg"/>
+          <text x="10" y="15" class="badge-txt">${archetype}</text>
+        </g>
+        <g transform="translate(25, 100)">
+          <text x="0" y="0" class="stat-label">Taste Stacking:</text>
+          <text x="0" y="20" class="stat-val">${style} <tspan fill="#8b949e">+</tspan> ${tone}</text>
+          <text x="0" y="52" class="stat-label">Politeness Tax:</text>
+          <text x="0" y="70" class="stat-val" fill="#10b981">0% (Pure Diff)</text>
+        </g>
+        <g transform="translate(260, 100)">
+          <text x="0" y="0" class="stat-label">Taste Score:</text>
+          <text x="0" y="22" class="title" font-weight="700">
+            <tspan font-size="20" fill="${ratingColor}">${score}</tspan><tspan fill="#8b949e" font-size="13"> / 100</tspan>
+          </text>
+          <rect x="0" y="34" width="160" height="7" rx="3.5" fill="#21262d"/>
+          <rect x="0" y="34" width="${barWidth}" height="7" rx="3.5" fill="${barColor}"/>
+          <text x="0" y="66" class="stat-label">Linus Verdict:</text>
+          <text x="90" y="66" class="stat-val" fill="${ratingColor}">${ratingLabel}</text>
+        </g>
+      </svg>`;
+    }
+
+    function updateLiveCard() {
+      const user = document.getElementById('card-user')?.value || 'developer';
+      const style = document.getElementById('card-style')?.value || 'antfu';
+      const tone = document.getElementById('card-tone')?.value || 'karpathy';
+      const archetype = document.getElementById('card-archetype')?.value || 'Anti-Slop Minimalist';
+      const score = Math.max(10, Math.min(100, parseInt(document.getElementById('card-score')?.value, 10) || 94));
+
+      const svgString = generateSvgString(user, style, tone, archetype, score);
+      const container = document.getElementById('live-card-container');
+      if (container) {
+        container.innerHTML = svgString;
+      }
+
+      const md = `[![My AI Developer Taste](https://joe1chief.github.io/taste-your-taste/taste-card.svg)](https://github.com/joe1chief/taste-your-taste)`;
+      const mdOut = document.getElementById('card-markdown-output');
+      if (mdOut) {
+        mdOut.textContent = md;
+      }
+    }
+
+    function copyCardMarkdown() {
+      const md = document.getElementById('card-markdown-output')?.textContent;
+      if (md) {
+        navigator.clipboard.writeText(md);
+        alert('Badge Markdown copied to clipboard!');
+      }
+    }
+
     // Init
     renderRepos();
     updateBlendCommand();
+    updateLiveCard();
   </script>
 </body>
 </html>

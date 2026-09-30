@@ -33,11 +33,11 @@ body:
     attributes:
       label: Taste Archetype
       options:
-        - "⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)"
-        - "🛡️ Defensive Architect (防御洁癖 / 严苛架构)"
-        - "🤠 Hacker Velocity (单兵作战 / 极速狂飙)"
-        - "🏢 Engineering Craft (工程规范 / 工业标准)"
-        - "🎨 Pragmatic Taste (实用主义 / 优雅品味)"
+        - "⚡ Anti-Slop / Minimalist (Direct & Terse)"
+        - "🛡️ Defensive Architect (Strict Invariants & Safety)"
+        - "🤠 Hacker Velocity (High-Speed & Single-File)"
+        - "🏢 Engineering Craft (Industrial Standards & Tooling)"
+        - "🎨 Pragmatic Taste (Balanced & Production-Ready)"
     validations:
       required: true
   - type: textarea
