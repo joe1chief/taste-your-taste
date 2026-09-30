@@ -4,7 +4,7 @@
   "language": "Python",
   "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
   "url": "https://github.com/debpalash/VoiceStudio",
-  "archetype": "🤠 Hacker Velocity (单兵作战 / 极速狂飙)",
+  "archetype": "Hacker Velocity",
   "files": [
     "AGENTS.md",
     "CLAUDE.md"

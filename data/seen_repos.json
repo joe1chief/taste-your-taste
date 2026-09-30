@@ -8,7 +8,7 @@
       "CLAUDE.md"
     ],
     "source": "trending",
-    "archetype": "⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)",
+    "archetype": "Anti-Slop Minimalist",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
@@ -20,7 +20,7 @@
       ".claude/CLAUDE.md"
     ],
     "source": "code_search",
-    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "archetype": "Engineering Craft",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
@@ -32,7 +32,7 @@
       ".agent/rules.md"
     ],
     "source": "code_search",
-    "archetype": "🤠 Hacker Velocity (单兵作战 / 极速狂飙)",
+    "archetype": "Hacker Velocity",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
@@ -44,7 +44,7 @@
       ".claude/CLAUDE.md"
     ],
     "source": "code_search",
-    "archetype": "🛡️ Defensive Architect (防御洁癖 / 严苛架构)",
+    "archetype": "Defensive Architect",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
@@ -56,7 +56,7 @@
       "CLAUDE.md"
     ],
     "source": "code_search",
-    "archetype": "🛡️ Defensive Architect (防御洁癖 / 严苛架构)",
+    "archetype": "Defensive Architect",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
   },
@@ -69,7 +69,7 @@
       "CLAUDE.md"
     ],
     "source": "trending",
-    "archetype": "🤠 Hacker Velocity (单兵作战 / 极速狂飙)",
+    "archetype": "Hacker Velocity",
     "discovered_at": "2026-09-30T14:43:09.699516+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/1",
     "status": "pending_review"
@@ -77,12 +77,12 @@
   "mksglu/context-mode": {
     "stars": 24343,
     "language": "TypeScript",
-    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
     "files": [
       "CLAUDE.md"
     ],
     "source": "trending",
-    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "archetype": "Engineering Craft",
     "discovered_at": "2026-09-30T15:03:34.997139+00:00",
     "issue_url": null,
     "status": "pending_review"
@@ -95,7 +95,7 @@
       "AGENTS.md"
     ],
     "source": "trending",
-    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "archetype": "Engineering Craft",
     "discovered_at": "2026-09-30T15:03:38.353149+00:00",
     "issue_url": null,
     "status": "pending_review"

@@ -158,7 +158,7 @@ function handleBlend(args) {
   }
 }
 
-function handleRoast(args) {
+async function handleRoast(args) {
   let targetPath = args[0] && !args[0].startsWith('-') ? args[0] : null;
   let persona = 'linus';
 
@@ -177,8 +177,9 @@ function handleRoast(args) {
   }
 
   banner();
+  console.log(c.dim('  🧠 Consulting Linus Torvalds via LLM...\n'));
   try {
-    const { report } = roastFile(resolved, persona);
+    const { report } = await roastFile(resolved, persona);
     console.log(box('🌶️ TASTE ROAST REPORT', report, '\x1b[31m'));
     console.log('');
   } catch (err) {
@@ -187,7 +188,7 @@ function handleRoast(args) {
   }
 }
 
-function run(argv = process.argv.slice(2)) {
+async function run(argv = process.argv.slice(2)) {
   if (argv.length === 0 || argv.includes('--help') || argv.includes('-h')) {
     printHelp();
     return;
@@ -213,7 +214,7 @@ function run(argv = process.argv.slice(2)) {
       handleBlend(args);
       break;
     case 'roast':
-      handleRoast(args);
+      await handleRoast(args);
       break;
     default:
       console.error(`${c.red('Unknown command:')} ${command}`);

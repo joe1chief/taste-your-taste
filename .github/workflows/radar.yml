@@ -46,6 +46,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://token-api.yicloud.com/v1' }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'DeepSeek-V4.1-Flash' }}
         run: |
           EXTRA_ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then
@@ -53,7 +56,7 @@ jobs:
           fi
           
           LIMIT="${{ inputs.limit || '5' }}"
-          MIN_STARS="${{ inputs.min_stars || '50' }}"
+          MIN_STARS="${{ inputs.min_stars || '1000' }}"
           
           python3 scripts/radar.py \
             --token "$GITHUB_TOKEN" \

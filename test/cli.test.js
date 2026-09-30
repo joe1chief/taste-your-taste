@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { getAvailable, loadContent } = require('../src/registry');
 const { stackFlavor, blendTastes } = require('../src/stacker');
-const { analyzeContent, roastFile } = require('../src/roaster');
+const { analyzeContentDeterministic, roastFile } = require('../src/roaster');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
 
@@ -82,7 +82,7 @@ function testBlend() {
   console.log('✅ Taste blend test passed.');
 }
 
-function testRoaster() {
+async function testRoaster() {
   console.log('Testing roaster engine...');
 
   // Test 1: Slop-filled prompt
@@ -93,11 +93,9 @@ Always ensure high quality, clean and readable code following all best practices
 We strive for excellence. As an AI assistant, you should apologize if you make a mistake.
 Thank you for your help!
 `;
-  const slopAnalysis = analyzeContent(slopPrompt);
+  const slopAnalysis = analyzeContentDeterministic(slopPrompt);
   assert(slopAnalysis.score < 50, `Slop prompt should get a low score, got ${slopAnalysis.score}`);
-  assert(slopAnalysis.fluffHits.length >= 2, 'Should detect multiple fluff phrases');
-  assert(slopAnalysis.politeHits.length >= 2, 'Should detect politeness waste');
-  assert.strictEqual(slopAnalysis.constraintHits.length, 0, 'Should detect lack of constraints');
+  assert(slopAnalysis.sins.length >= 2, 'Should detect multiple fluff phrases');
 
   // Test 2: High-taste, disciplined prompt
   const tastePrompt = `
@@ -108,28 +106,26 @@ Thank you for your help!
 - Deliver git patch immediately.
 - Do not add third-party dependencies for helpers <= 20 lines.
 `;
-  const tasteAnalysis = analyzeContent(tastePrompt);
+  const tasteAnalysis = analyzeContentDeterministic(tastePrompt);
   assert(tasteAnalysis.score >= 80, `Taste prompt should get a high score, got ${tasteAnalysis.score}`);
-  assert(tasteAnalysis.toolingHits.length >= 2, 'Should detect pytest and ruff');
-  assert(tasteAnalysis.constraintHits.length >= 3, 'Should detect negative constraints');
 
   // Test 3: roastFile with output
   const testFile = path.join(TEMP_DIR, 'ROAST_TARGET.md');
   fs.writeFileSync(testFile, slopPrompt, 'utf-8');
-  const roastResult = roastFile(testFile, 'linus');
+  const roastResult = await roastFile(testFile, 'linus');
   assert(roastResult.report.includes('Linus Torvalds Roasts Your Taste'), 'Roast output must contain Linus quotes');
   assert(roastResult.report.includes('Sins & Pathology Detected'), 'Roast output must list sins');
 
   console.log('✅ Roaster engine test passed.');
 }
 
-function runAll() {
+async function runAll() {
   setup();
   try {
     testRegistry();
     testStacker();
     testBlend();
-    testRoaster();
+    await testRoaster();
     console.log('\n🎉 ALL CLI & ROASTER TESTS PASSED SUCCESFULLY!\n');
   } finally {
     teardown();

@@ -1,9 +1,9 @@
 <div align="center">
 
 # 🍷 Taste Your Taste
-### *Curating Developer Taste & Vibe Stacking Engine for AI Agents*
+### *Autonomous Developer Taste Curation & Vibe Stacking Engine for AI Agents*
 
-**CLAUDE.md • .agent • .cursorrules • AGENTS.md • The Anti-Slop Philosophy**
+**CLAUDE.md • .agent • .cursorrules • AGENTS.md • Powered by LLM Reasoning**
 
 <p align="center">
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml">
@@ -18,9 +18,6 @@
   <a href="https://github.com/joe1chief/taste-your-taste/pulls">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
   </a>
-  <a href="./README_CN.md">
-    <img src="https://img.shields.io/badge/文档-简体中文-red.svg" alt="中文文档">
-  </a>
 </p>
 
 <p align="center">
@@ -31,7 +28,7 @@
 # Instant Vibe Stacking with npx:
 npx taste-code blend --style antfu --tone karpathy
 
-# Linus Torvalds Taste Roast:
+# LLM-Powered Linus Torvalds Taste Roast:
 npx taste-code roast CLAUDE.md
 ```
 
@@ -49,17 +46,17 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 * How do high-velocity solo developers force AI to produce concise, elegant diffs?
 * How do infrastructure projects like NVIDIA, Stripe, and tidyverse instruct Claude Code and Cursor?
 
-**`taste-your-taste`** is a complete ecosystem:
+**`taste-your-taste`** is an end-to-end, LLM-first developer ecosystem:
 1. 🛠️ **`taste` CLI**: A zero-dependency Lego-brick stacking tool to blend master developer tastes into your repository.
-2. 🌶️ **Taste Roast**: A Linus Torvalds-inspired toxic waste detector and taste scorer for agent instructions.
-3. 📡 **Automated Daily Radar**: GitHub Action engine monitoring real-world trending repos daily.
-4. 🏛️ **The Hall of Fame**: Direct curations of real battle-tested configs from top OSS repositories.
+2. 🌶️ **Taste Roast**: A Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
+3. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and high-star repositories, evaluating configurations with large language models.
+4. 🏛️ **The Hall of Fame**: Authentic battle-tested configs harvested from top open-source projects.
 
 ---
 
 ## 🚀 `taste` CLI: Taste Stacking Engine
 
-Copy-pasting someone else's 300-line prompt is clumsy. **`taste`** breaks master developer styles and agent tones into atomic, composable Lego bricks.
+Copy-pasting someone else's 300-line prompt is clumsy and brittle. **`taste`** breaks master developer styles and agent tones into atomic, composable Lego bricks.
 
 ### 1. View Available Modules
 ```bash
@@ -90,7 +87,7 @@ The CLI automatically maintains non-destructive block boundaries (`<!-- TASTE:ST
 
 ---
 
-## 🌶️ Taste Roast: Linus-Style Savage Code Review
+## 🌶️ Taste Roast: LLM-Driven Linus Torvalds Critique
 
 How good are your agent instructions? Are you paying Anthropic to generate verbose corporate apologies?
 
@@ -99,7 +96,8 @@ Run the **Taste Roast**:
 npx taste-code roast [path/to/CLAUDE.md]
 ```
 
-### What It Audits:
+### What It Audits (Powered by LLM):
+* 🧠 **LLM Semantic Evaluation**: Evaluates constraints, actionable commands, and token economics using DeepSeek / OpenAI models.
 * 📉 **Fluff & Platitude Index**: Detects useless corporate clichés (*"write clean code"*, *"strive for excellence"*, *"be helpful"*).
 * 💸 **Politeness Tax**: Calculates token budget wasted on polite greetings and apologies (*"please"*, *"kindly"*, *"sorry"*).
 * 🛡️ **Negative Armor**: Verifies whether you gave the AI explicit boundaries (*"never"*, *"do not"*, *"prohibit"*).
@@ -110,45 +108,45 @@ npx taste-code roast [path/to/CLAUDE.md]
 ```text
 ┌─ 🌶️ TASTE ROAST REPORT ────────────────────────────────────────────────────────────────────────┐
 │ Target File: CLAUDE.md                                                                        │
-│ Lines: 7  |  Tokens: ~61  |  Words: 45                                                        │
+│ Lines: 7  |  Tokens: ~61  |  Words: 45  |  Engine: 🧠 LLM Reasoning                            │
 │                                                                                               │
-│ Taste Score: 8 / 100 [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░]                                         │
-│ Verdict: CRIMINAL TOXIC WASTE (上下文毒药)                                                         │
+│ Taste Score: 12 / 100 [███░░░░░░░░░░░░░░░░░░░░░░░░░░░]                                        │
+│ Verdict:     CRIMINAL TOXIC WASTE                                                             │
 │                                                                                               │
 │ 🔥 Sins & Pathology Detected:                                                                 │
-│   ❌ Platitude Fluff: Found 3 buzzwords (write clean code, ensure high quality)               │
-│   ❌ Politeness Tax: 4 polite words draining context and money                                │
-│   ❌ Spineless Prompt: Zero negative constraints (AI will run wild)                           │
+│   ❌ Zero specificity — 'clean code' is undefined and unmeasurable                            │
+│   ❌ 'Be helpful' is a vibe, not an operational instruction                                  │
+│   ❌ No output contract or verifiable testing commands                                       │
 │                                                                                               │
 │ 🎙️ Linus Torvalds Roasts Your Taste:                                                         │
-│   "You actually wrote 'Please' in a file meant for an LLM? What is this, a Victorian         │
-│    tea party? You are literally burning token budget paying Anthropic to say 'You're welcome!'"│
-│   "Saying 'write clean code' to an AI is like telling water to be wet. What does that mean?   │
-│    Where are your compiler flags? It's hand-waving garbage."                                  │
+│   "This isn't a code review, it's a fortune cookie. 'Write clean code' is what every         │
+│    professor says before assigning homework they won't grade."                                │
+│   "If I followed these rules, I'd write code that's helpful and apologize when I'm wrong.     │
+│    Congratulations, you've described a well-adjusted intern."                                 │
 │                                                                                               │
 │ 💊 Remedy & Prescription:                                                                     │
-│   Run npx taste blend --style minimalist --tone terse to replace fluff with pure discipline. │
+│   Run npx taste-code blend --style minimalist --tone terse to replace fluff with discipline. │
 └───────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📡 The Automated Daily Radar
+## 📡 The Autonomous LLM Radar
 
-Powered by **GitHub Actions** and [`scripts/radar.py`](./scripts/radar.py), this repository monitors trending open-source projects daily:
+Powered by **GitHub Actions** and [`scripts/radar.py`](./scripts/radar.py), this repository monitors trending open-source projects daily using large language models instead of rigid regex heuristics:
 
 ```mermaid
 flowchart LR
-    A["🔥 GitHub Daily Trending & Code Search"] --> B["🤖 GitHub Actions (Daily Cron)"]
+    A["🔥 GitHub Trending & High-Star Repos (⭐️ >= 1000)"] --> B["🤖 GitHub Actions (Daily Cron)"]
     B --> C["🔍 scripts/radar.py Engine"]
     C --> D{"Taste Files Found?"}
-    D -- Yes --> E["⚡ Auto-detect Archetype & Snippet"]
+    D -- Yes --> E["🧠 LLM Architectural & Taste Assessment"]
     E --> F["📬 Create Review Issue & Archive to discovered/"]
     F --> G["🏆 Maintainer Curates to Hall of Fame"]
     D -- No --> H["Sleep until next cycle"]
 ```
 
-* **Monitored Target Files**: `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `AGENTS.md`.
+* **LLM Intelligence**: Uses OpenAI-compatible endpoints (DeepSeek, Qwen, or OpenAI) to analyze instruction files, identify taste archetypes, and extract verbatim prompt gems.
 * **Strict Quality Gate**: Only captures repositories that are **either on GitHub Trending** (Daily/Weekly) or **have ⭐️ 1,000+ Stars** (rejecting personal/low-impact repos).
 * **Zero spam**: History is tracked in `data/seen_repos.json` to prevent duplicates.
 * **Mobile Alerts**: GitHub issues are created automatically with preview snippets and review checklists.
@@ -161,12 +159,15 @@ Curated directly from authentic production repositories:
 
 | Project | Stars | Language | File | Taste Archetype | Key Highlight |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| [**NVIDIA / OpenShell**](tastes/ai-infra/nvidia-openshell) | ⭐️ 11.6k | Rust | `AGENTS.md` | ⚡ Anti-Slop / Minimalist | Injected into context on every interaction; forbids unnecessary restructuring. |
-| [**VoiceStudio**](discovered/debpalash__VoiceStudio) | ⭐️ 49.8k | Python / TS | `AGENTS.md` | 🤠 Hacker Velocity | Explicit token economy; default to shortest response; status updates 1 line max. |
-| [**Stripe / stripe-java**](tastes/fintech/stripe-java) | ⭐️ 600 | Java | `.claude/CLAUDE.md` | 🏢 Engineering Craft | Exact `just` test runners, Spotless formatting commands, and HTTP abstraction map. |
-| [**keras_cv_attention_models**](tastes/machine-learning/keras-cv-attention-models) | ⭐️ 1.7k | Python | `.agent/rules.md` | 🤠 Hacker Velocity | `black -l 160`, single-line multi-assignments, thin wrapper pattern. |
-| [**tidyverse / readr**](tastes/data-science/tidyverse-readr) | ⭐️ 1.1k | R / C++ | `.claude/CLAUDE.md` | 🛡️ Defensive Architect | Clean boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
-| [**securego / gosec**](tastes/security/securego-gosec) | ⭐️ 5.4k | Go | `CLAUDE.md` | 🛡️ Defensive Architect | AST walking rules, rule ID stability, and deterministic test invocation. |
+| [**openclaw / openclaw**](tastes/ai-infra/openclaw) | ⭐️ 390.8k | Rust / C | `AGENTS.md` | Defensive Architect | One owner per responsibility, proof scoped, and no blind retries. |
+| [**DietrichGebert / ponytail**](discovered/DietrichGebert__ponytail) | ⭐️ 148.7k | JavaScript | `AGENTS.md` | Engineering Craft | "Lazy senior dev mode: the best code is the code you never wrote." |
+| [**VoiceStudio**](discovered/debpalash__VoiceStudio) | ⭐️ 49.8k | Python / TS | `AGENTS.md` | Hacker Velocity | Explicit token economy; default to shortest response; status updates 1 line max. |
+| [**mksglu / context-mode**](discovered/mksglu__context-mode) | ⭐️ 24.3k | TypeScript | `CLAUDE.md` | Engineering Craft | Mandatory routing rules to protect context window from flooding. |
+| [**NVIDIA / OpenShell**](tastes/ai-infra/nvidia-openshell) | ⭐️ 11.6k | Rust | `AGENTS.md` | Anti-Slop Minimalist | Injected into context on every interaction; forbids unnecessary restructuring. |
+| [**securego / gosec**](tastes/security/securego-gosec) | ⭐️ 5.4k | Go | `CLAUDE.md` | Defensive Architect | AST walking rules, rule ID stability, and deterministic test invocation. |
+| [**keras_cv_attention_models**](tastes/machine-learning/keras-cv-attention-models) | ⭐️ 1.7k | Python | `.agent/rules.md` | Hacker Velocity | `black -l 160`, single-line multi-assignments, thin wrapper pattern. |
+| [**tidyverse / readr**](tastes/data-science/tidyverse-readr) | ⭐️ 1.1k | R / C++ | `.claude/CLAUDE.md` | Defensive Architect | Clean boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
+| [**Stripe / stripe-java**](tastes/fintech/stripe-java) | ⭐️ 600 | Java | `.claude/CLAUDE.md` | Engineering Craft | Exact `just` test runners, Spotless formatting commands, and HTTP abstraction map. |
 
 ---
 
@@ -177,16 +178,17 @@ quadrantChart
     title Developer Taste Landscape
     x-axis "Low Abstraction / Pragmatic" --> "High Abstraction / Formal"
     y-axis "Exploratory / High Velocity" --> "Defensive / High Reliability"
-    quadrant-1 "🛡️ Defensive Architect"
-    quadrant-2 "🏢 Engineering Craft"
-    quadrant-3 "🤠 Hacker Velocity"
-    quadrant-4 "⚡ Anti-Slop / Minimalist"
+    quadrant-1 "Defensive Architect"
+    quadrant-2 "Engineering Craft"
+    quadrant-3 "Hacker Velocity"
+    quadrant-4 "Anti-Slop Minimalist"
     "tidyverse": [0.65, 0.78]
     "Stripe": [0.72, 0.85]
     "securego": [0.55, 0.82]
     "keras_cv": [0.25, 0.35]
     "NVIDIA OpenShell": [0.35, 0.22]
     "VoiceStudio": [0.28, 0.40]
+    "ponytail": [0.30, 0.15]
 ```
 
 ---
@@ -204,6 +206,21 @@ quadrantChart
 
 > **On Test Integrity:**
 > *"Do not write tautological mock tests that only assert mocks return mocks. Tests must exercise real logic against real data structures."*
+
+---
+
+## ⚙️ Environment Configuration
+
+Both the **`taste` CLI** and **Radar Engine** natively leverage OpenAI-compatible LLM endpoints:
+
+```bash
+# Optional: Set your preferred LLM provider (defaults to OpenAI compatible)
+export OPENAI_API_KEY="your-api-key"
+export OPENAI_BASE_URL="https://token-api.yicloud.com/v1"   # Or https://api.openai.com/v1
+export LLM_MODEL="DeepSeek-V4.1-Flash"                     # Or gpt-4o-mini
+```
+
+If no API key is set, the CLI automatically falls back to an offline deterministic engine without breaking.
 
 ---
 

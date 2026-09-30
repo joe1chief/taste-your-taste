@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Taste Radar - Automatic discovery & monitoring of developer taste files
-(CLAUDE.md, .agent, .cursorrules) across GitHub trending and high-profile repos.
+Taste Radar - Autonomous LLM-powered discovery & curation of developer taste files
+(CLAUDE.md, .agent, .cursorrules, AGENTS.md) across GitHub Trending and high-star repos.
 
 Part of: taste-your-taste (https://github.com/joe1chief/taste-your-taste)
 """
@@ -19,6 +19,12 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
+
+# Try importing LLMTasteClient from local directory
+try:
+    from llm_client import LLMTasteClient
+except ImportError:
+    from scripts.llm_client import LLMTasteClient
 
 # Candidate root files and directories to inspect
 INTERESTING_ROOT_FILES = {
@@ -185,21 +191,6 @@ def fetch_trending_repos(since: str = "daily") -> List[str]:
     return repos
 
 
-def detect_archetype(content: str) -> str:
-    """Infer the vibe/taste archetype based on rules and keywords."""
-    content_lower = content.lower()
-
-    if any(k in content_lower for k in ["no apologies", "don't apologize", "no slop", "concise", "be brief", "no fluff"]):
-        return "⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)"
-    elif any(k in content_lower for k in ["strict", "defensive", "mypy", "never use any", "invariant", "coverage"]):
-        return "🛡️ Defensive Architect (防御洁癖 / 严苛架构)"
-    elif any(k in content_lower for k in ["prototype", "hack", "mvp", "single-line", "fast", "speed"]):
-        return "🤠 Hacker Velocity (单兵作战 / 极速狂飙)"
-    elif any(k in content_lower for k in ["test", "gradle", "mvn", "spotless", "format", "lint"]):
-        return "🏢 Engineering Craft (工程规范 / 工业标准)"
-    return "🎨 Pragmatic Taste (实用主义 / 优雅品味)"
-
-
 def extract_highlights(content: str, max_lines: int = 15) -> str:
     """Extract snippet highlights or first non-empty lines."""
     lines = [line for line in content.splitlines() if line.strip()]
@@ -226,6 +217,7 @@ class TasteRadar:
         self.dry_run = dry_run
         self.save_tastes = save_tastes
         self.db: Dict[str, Any] = self._load_db()
+        self.llm = LLMTasteClient()
 
     def _load_db(self) -> Dict[str, Any]:
         if self.db_path.exists():
@@ -366,7 +358,7 @@ class TasteRadar:
         return list(candidates.values())
 
     def process_candidate(self, candidate: Dict[str, Any]) -> bool:
-        """Fetch details, optionally save content, and file an Issue."""
+        """Fetch details, run LLM analysis, save content, and file a GitHub Issue."""
         full_name = candidate["repo"]
         files = candidate["files"]
         source = candidate.get("source", "unknown")
@@ -384,7 +376,7 @@ class TasteRadar:
         repo_url = repo_meta.get("html_url")
 
         if source != "trending" and stars < self.min_stars:
-            print(f"[Radar] ⏩ Skipping {full_name}: {stars} stars < minimum {self.min_stars}")
+            print(f"[Radar] ⏩ Skipping {full_name}: {stars} stars < minimum {self.min_stars} (only trending or stars >= {self.min_stars} allowed)")
             return False
 
         # Fetch contents of the taste files
@@ -400,8 +392,22 @@ class TasteRadar:
 
         primary_file = files[0]
         primary_content = file_contents[primary_file]
-        archetype = detect_archetype(primary_content)
         snippet = extract_highlights(primary_content)
+
+        # Run LLM-driven taste analysis (no hardcoded heuristics!)
+        print(f"[Radar] 🧠 Running LLM analysis on {full_name}...")
+        analysis = self.llm.analyze_taste(
+            repo=full_name,
+            stars=stars,
+            description=desc,
+            filename=primary_file,
+            content=primary_content,
+        )
+
+        archetype = analysis.get("archetype", "Pragmatic Systems")
+        vibe = analysis.get("one_line_vibe", "")
+        highlights = analysis.get("highlights", [])
+        assessment = analysis.get("engineering_assessment", "")
 
         # Save to local discovered folder if enabled
         if self.save_tastes and not self.dry_run:
@@ -422,6 +428,9 @@ class TasteRadar:
                         "description": desc,
                         "url": repo_url,
                         "archetype": archetype,
+                        "vibe": vibe,
+                        "highlights": highlights,
+                        "assessment": assessment,
                         "files": files,
                         "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
                     },
@@ -430,23 +439,33 @@ class TasteRadar:
                     ensure_ascii=False,
                 )
 
+        highlights_md = "\n".join(f"- {h}" for h in highlights) if highlights else "- Standard operational instructions."
+
         issue_url = None
         if self.target_repo and not self.dry_run:
-            issue_title = f"[Taste Radar] 🌟 {full_name} (⭐️ {stars}) - {primary_file}"
+            issue_title = f"[Taste Radar] 🌟 {full_name} (⭐️ {stars:,}) - {primary_file}"
             issue_body = f"""### 📡 New Developer Taste Discovered!
 
-A new project configuration has been captured by **Taste Radar**.
+A high-profile repository configuration has been captured and evaluated by **Taste Radar**.
 
 | Attribute | Details |
 | :--- | :--- |
 | **Repository** | [{full_name}]({repo_url}) |
 | **Stars** | ⭐️ **{stars:,}** |
 | **Language** | `{lang}` |
-| **Source** | `{source.upper()}` |
+| **Discovery Source** | `{source.upper()}` |
 | **Detected Files** | {', '.join(f'`{f}`' for f in files)} |
-| **Detected Archetype** | **{archetype}** |
+| **Taste Archetype** | **{archetype}** |
 
-> **Description:** {desc}
+> **Vibe:** *{vibe}*
+
+---
+
+### 🧠 LLM Architectural Assessment
+{assessment}
+
+### ⚡ Taste Highlights
+{highlights_md}
 
 ---
 
@@ -459,8 +478,8 @@ A new project configuration has been captured by **Taste Radar**.
 ---
 
 ### 📋 Maintainer Review Checklist
-- [ ] Read the configuration file and verify relevance.
-- [ ] Extract notable **Taste Highlights** (Anti-slop commands, engineering constraints, prompt gems).
+- [ ] Review the configuration file and verify relevance.
+- [ ] Confirm the extracted **Taste Highlights** and key directives.
 - [ ] Move into `tastes/{lang.lower() if lang else 'general'}/{full_name.replace('/', '__')}/`.
 - [ ] Add an entry into the main `README.md` Hall of Fame!
 """
@@ -472,8 +491,9 @@ A new project configuration has been captured by **Taste Radar**.
             )
             print(f"[Radar] ✅ Created Issue: {issue_url}")
         else:
-            print(f"[Radar] [Dry-Run] Would create issue for {full_name} (⭐️ {stars})")
+            print(f"[Radar] [Dry-Run] Would create issue for {full_name} (⭐️ {stars:,})")
             print(f"      Archetype: {archetype}")
+            print(f"      Vibe: {vibe}")
             print(f"      Preview:\n{snippet[:200]}...\n")
 
         # Record in DB
@@ -484,6 +504,7 @@ A new project configuration has been captured by **Taste Radar**.
             "files": files,
             "source": source,
             "archetype": archetype,
+            "vibe": vibe,
             "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "issue_url": issue_url,
             "status": "pending_review",
@@ -493,10 +514,11 @@ A new project configuration has been captured by **Taste Radar**.
 
     def run(self, max_new: int = 5) -> None:
         print("=" * 60)
-        print(" Taste Your Taste - Radar Engine Launching ")
+        print(" Taste Your Taste - LLM Radar Engine Launching ")
         print(f" Time: {datetime.datetime.now(datetime.timezone.utc).isoformat()}")
         print(f" Target Repo: {self.target_repo or '(None / Dry Run)'}")
         print(f" Min Stars: {self.min_stars} | Dry Run: {self.dry_run}")
+        print(f" LLM Active: {self.llm.is_enabled} ({self.llm.model})")
         print("=" * 60)
 
         candidates = self.scan_trending()
