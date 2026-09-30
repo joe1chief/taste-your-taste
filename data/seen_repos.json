@@ -59,5 +59,19 @@
     "archetype": "🛡️ Defensive Architect (防御洁癖 / 严苛架构)",
     "discovered_at": "2026-09-30T14:40:00+00:00",
     "status": "curated"
+  },
+  "debpalash/VoiceStudio": {
+    "stars": 49880,
+    "language": "Python",
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "source": "trending",
+    "archetype": "🤠 Hacker Velocity (单兵作战 / 极速狂飙)",
+    "discovered_at": "2026-09-30T14:43:09.699516+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/1",
+    "status": "pending_review"
   }
 }
