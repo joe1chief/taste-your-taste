@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🍷 Taste Your Taste (品味你的品味)
-### *汇集顶级开源项目中的开发者审美与 Vibe Coding 准则*
+### *汇集顶级开源项目的开发者审美、积木混搭 CLI 与毒舌点评器*
 
 **CLAUDE.md • .agent • .cursorrules • AGENTS.md • 反 AI 油腻哲学 (Anti-Slop)**
 
@@ -24,13 +24,21 @@
   <b>“代码生成变得廉价，审美与品味才是稀缺品。”</b>
 </p>
 
+```bash
+# 一键混搭大师品味：
+npx taste-code blend --style antfu --tone karpathy
+
+# Linus Torvalds 风格毒舌点评你的规则：
+npx taste-code roast CLAUDE.md
+```
+
 </div>
 
 ---
 
 ## 📖 项目起源与宣言
 
-在 AI 时代之前，程序员最喜欢围观黑客大佬们的 `.dotfiles`（`.zshrc`, `.vimrc`, `tmux.conf`），看高手如何调校自己的武器库。
+在 AI 时代之前，程序员最喜欢围观黑客大佬们的 `.dotfiles`（`.zshrc`, `.vimrc`, `tmux.conf`），看高手如何调校自己的工具库。
 
 而在 **Vibe Coding（氛围编程）** 时代，人类程序员不再手敲每一行样板语法。**开发者的审美、品味与技术主权，集中体现在他赋予 AI Agent 的边界、脾气和工程戒律中**：
 
@@ -38,7 +46,87 @@
 * 极速狂飙的独立黑客如何迫使 AI 直接输出短小精炼的 Git Diff？
 * NVIDIA、Stripe、tidyverse 等明星项目在实际生产中是如何写 `CLAUDE.md` 与 `.agent` 的？
 
-**`taste-your-taste`** 既是一座开放的开发者审美博物馆，也是一个**自动化雷达**，致力于持续发现、提炼并分享全球热门开源项目中最顶级的编程品味。
+**`taste-your-taste`** 不仅是一个收集库，更是一个完整的工具链生态：
+1. 🛠️ **`taste` CLI**：乐高积木式品味混搭命令行工具，一键向本地项目注入大师审美。
+2. 🌶️ **Taste Roast（毒舌点评器）**：以 Linus 视角无情痛骂低质规则，分析上下文污染与无用客套。
+3. 📡 **自动化每日雷达**：GitHub Actions 每日持续扫描热门开源项目的新增规则。
+4. 🏛️ **名人堂展馆**：收录来自真实大厂与顶流黑客项目的生产配置。
+
+---
+
+## 🚀 `taste` CLI：品味混搭（Taste Stacking）
+
+从别人仓库里复制粘贴 300 行臃肿规则极其繁琐。**`taste`** 把大师的规则拆分为模块化的“乐高积木”（风格 Style + 脾气 Tone）：
+
+### 1. 查看可用品味积木
+```bash
+npx taste-code list
+```
+* **工程风格 (Styles)**：`antfu` (严苛 TypeScript/现代 ESM)、`karpathy` (极简单文件机器学习)、`stripe` (工业级严谨规范)、`minimalist` (激进零依赖)、`defensive` (防御洁癖与不变量保护)、`hacker` (160 字符单兵极速)。
+* **交互脾气 (Tones)**：`karpathy` (反油腻直给 diff)、`linus` (反过度抽象毒舌极客)、`terse` (极致精简零客套)、`teacher` (启发式注重边界)。
+* **完整预设 (Presets)**：`anti-slop` (反油腻全套护甲)、`solo-hacker` (单兵 MVP 极速)、`enterprise` (企业合规与确定性)。
+
+### 2. 单独添加某一流派
+```bash
+# 将激进极简零依赖规则注入到 CLAUDE.md
+npx taste-code add minimalist
+
+# 将 Antfu 的 TypeScript 严苛洁癖注入到 .cursorrules
+npx taste-code add antfu --target cursor
+
+# 注入到 .agent/rules.md
+npx taste-code add hacker --target agent
+```
+
+### 3. 品味混搭（Taste Blend）
+正交组合不同维度的品味——比如：**Antfu 的 TypeScript 架构洁癖 + Karpathy 的反废话直出 Diff 脾气**：
+```bash
+npx taste-code blend --style antfu --tone karpathy
+```
+CLI 会自动维护边界锚点（`<!-- TASTE:STYLE:... -->`），多次混合或更新不会重复生成，也不会覆盖你自己写的个性化规则！
+
+---
+
+## 🌶️ Taste Roast：代码品味“毒舌点评器”
+
+你写给 AI 的 `CLAUDE.md` 真的管用吗？还是在花钱给 Anthropic 制造废话？
+
+运行毒舌点评：
+```bash
+npx taste-code roast [CLAUDE.md]
+```
+
+### 深度体检指标：
+* 📉 **油腻废话指数 (Fluff Index)**：检测无意义空洞套话（“编写高质量代码”、“遵循最佳实践”、“追求卓越”）。
+* 💸 **客套税 (Politeness Tax)**：统计因礼貌用语（“请”、“麻烦”、“对不起”、“抱歉”）浪费的上下文预算与 Token 费用。
+* 🛡️ **否定约束硬度 (Negative Armor)**：核查是否给予 AI 明确红线（“禁止”、“严禁”、“拒绝”）。
+* ⚙️ **确定性工具链 (Tooling)**：检测是否提供真实可运行的测试与格式化命令（`just`, `pytest`, `cargo`, `ruff`）。
+* 💯 **品味得分 (0-100)**：从 `上下文毒药 (CRIMINAL TOXIC WASTE)` 到 `米其林级别 (CHEF'S TASTE)`。
+
+### 痛骂输出样例：
+```text
+┌─ 🌶️ TASTE ROAST REPORT ────────────────────────────────────────────────────────────────────────┐
+│ Target File: CLAUDE.md                                                                        │
+│ Lines: 7  |  Tokens: ~61  |  Words: 45                                                        │
+│                                                                                               │
+│ Taste Score: 8 / 100 [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░]                                         │
+│ Verdict: CRIMINAL TOXIC WASTE (上下文毒药)                                                         │
+│                                                                                               │
+│ 🔥 Sins & Pathology Detected:                                                                 │
+│   ❌ Platitude Fluff: 发现 3 处空洞套话 (write clean code, ensure high quality)                │
+│   ❌ Politeness Tax: 4 个客套用语正在悄悄烧掉你的上下文预算                                    │
+│   ❌ Spineless Prompt: 0 条否定性约束 (AI 会直接放飞自我重构你的架构)                          │
+│                                                                                               │
+│ 🎙️ Linus Torvalds 正在痛骂你的品味:                                                            │
+│   “你居然在写给大模型的文件里写‘请’？你在搞维多利亚时代茶话会吗？计算机没有感情，Claude          │
+│    不在乎你的礼貌。你是在自费给 Anthropic 送钱让它对你说‘非常荣幸为您服务！’”                 │
+│   “对 AI 说‘写干净的代码’就像告诉水它是湿的一样。这有什么意义？你的编译器参数呢？你的行宽限制呢？  │
+│    这完全是让外行假装有生产力的废话。”                                                        │
+│                                                                                               │
+│ 💊 药方与抢救方案:                                                                             │
+│   运行 npx taste blend --style minimalist --tone terse 用硬核纪律清除所有油腻。                │
+└───────────────────────────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -57,19 +145,14 @@ flowchart LR
     D -- 否 --> H["进入下一轮休眠"]
 ```
 
-* **监控目标文件**：`CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `.cursor/rules/`, `AGENTS.md`。
-* **零噪音与防重**：历史状态记录在 `data/seen_repos.json` 中，已处理项目不重复提醒。
-* **手机端推送**：一旦明星项目新增或更新 Agent 指令，自动在仓库创建包含预览的 Issue，直接推送到你的 GitHub 通知和邮箱！
-
 ---
 
 ## 🏛️ 经典品味名人堂 (Hall of Fame)
 
-以下配置均直接提炼自知名开源项目的真实生产环境：
-
 | 项目 | Stars | 语言 | 配置文件 | 品味流派 | 核心亮点 |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | [**NVIDIA / OpenShell**](tastes/ai-infra/nvidia-openshell) | ⭐️ 11.6k | Rust | `AGENTS.md` | ⚡ 直击要害 / 极简主义 | 每次交互必注入上下文；明令禁止无意义的架构重构。 |
+| [**VoiceStudio**](discovered/debpalash__VoiceStudio) | ⭐️ 49.8k | Python / TS | `AGENTS.md` | 🤠 单兵作战 / 极速狂飙 | 严苛 Token 经济学；状态汇报最多 1 行；默认直接输出最短答案。 |
 | [**Stripe / stripe-java**](tastes/fintech/stripe-java) | ⭐️ 600 | Java | `.claude/CLAUDE.md` | 🏢 工程规范 / 工业标准 | 严谨的 `just` 单测运行指令、Spotless 格式化与清晰的 HTTP 抽象层次。 |
 | [**keras_cv_attention_models**](tastes/machine-learning/keras-cv-attention-models) | ⭐️ 1.7k | Python | `.agent/rules.md` | 🤠 单兵作战 / 极速狂飙 | 允许 `160` 字符单行、推崇单行多变量赋值、主模型只写薄包装。 |
 | [**tidyverse / readr**](tastes/data-science/tidyverse-readr) | ⭐️ 1.1k | R / C++ | `.claude/CLAUDE.md` | 🛡️ 防御洁癖 / 严苛架构 | 清晰划分懒解析架构（Edition 2）与 C++ 快速解析（Edition 1）的边界。 |
@@ -77,31 +160,7 @@ flowchart LR
 
 ---
 
-## 🎭 四大品味流派 (Vibe Archetypes)
-
-我们把 AI 时代开发者的品味划分为四大流派：
-
-### 1. ⚡ 直击要害 / 极简主义 (Anti-Slop / Minimalist)
-* **信条**：*“别道歉，别寒暄。直接给我 diff，绝不引入多余依赖。”*
-* **特征**：极简上下文、零废话输出、偏好原生语言基础能力、严控三方包膨胀。
-
-### 2. 🛡️ 防御洁癖 / 严苛架构 (Defensive Architect)
-* **信条**：*“只要有可能被破坏的不变量，就一定会出 bug。”*
-* **特征**：严苛类型系统、极致的异常捕获与边界测试、严禁无意义的 Mock 单元测试。
-
-### 3. 🤠 单兵作战 / 极速狂飙 (Hacker Velocity)
-* **信条**：*“能跑的软件高于一切形式主义。”*
-* **特征**：单行元组赋值、超宽行宽限制（160+ 字符）、轻量薄包装函数、快速原型验证。
-
-### 4. 🏢 工程规范 / 工业标准 (Engineering Craft)
-* **信条**：*“一致性产生可靠性。”*
-* **特征**：确定性任务脚本（`just`, `make`）、自动格式化强制校验、严格分层解耦。
-
----
-
 ## ⚡ 真实世界中的反油腻禁令 (Anti-Slop Commandments)
-
-从真实开源项目配置中淘出的“驯兽灵丹”：
 
 > **关于废话与客套：**
 > *“严禁说‘好的！’、‘我很乐意为您服务’或进行道歉。直接输出最终解决方案或 Git 补丁代码。”*
@@ -117,30 +176,10 @@ flowchart LR
 
 ---
 
-## 🛠️ 本地运行雷达脚本
-
-你想在本地机器上运行雷达，或者搜索特定仓库？
-
-```bash
-# 克隆仓库
-git clone https://github.com/joe1chief/taste-your-taste.git
-cd taste-your-taste
-
-# 本地试运行（Dry-Run，不会创建 Issue，不修改本地库）
-python3 scripts/radar.py --dry-run --limit 5
-
-# 运行扫描并自动将新发现归档到 discovered/ 目录
-python3 scripts/radar.py --limit 5 --min-stars 100
-```
-
----
-
 ## 🤝 参与贡献
 
-如果你在某个优秀的开源项目里发现了惊艳的 `CLAUDE.md`、`.cursorrules` 或 `.agent/rules.md`：
-
-1. **通过 Issue 提交**：点击 [**✨ 提交一份开发者品味**](https://github.com/joe1chief/taste-your-taste/issues/new?template=taste_submission.yml) 快速填写。
-2. **通过 PR 提交**：在 `tastes/<分类>/<仓库名>/` 下添加对应的文件与 `META.json`，并更新主 README！
+1. **提交你发现的优秀开源规则**：点击 [**✨ 提交一份开发者品味**](https://github.com/joe1chief/taste-your-taste/issues/new?template=taste_submission.yml)。
+2. **贡献新的积木模块**：在 `registry/styles/` 或 `registry/tones/` 下添加新的 Markdown 规则，发起 Pull Request！
 
 ---
 

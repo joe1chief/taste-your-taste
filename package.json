@@ -1,0 +1,37 @@
+{
+  "name": "taste-code",
+  "version": "1.0.0",
+  "description": "Stack and blend developer taste for CLAUDE.md, .cursorrules & .agent files, with Linus-style taste roasting.",
+  "main": "src/index.js",
+  "bin": {
+    "taste": "./bin/taste.js",
+    "taste-code": "./bin/taste.js"
+  },
+  "scripts": {
+    "test": "node test/cli.test.js"
+  },
+  "keywords": [
+    "taste",
+    "claude",
+    "claude-code",
+    "cursor",
+    "cursorrules",
+    "agent",
+    "vibe-coding",
+    "developer-taste",
+    "anti-slop"
+  ],
+  "author": "Chengfeng Zhou (joe1chief)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joe1chief/taste-your-taste.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joe1chief/taste-your-taste/issues"
+  },
+  "homepage": "https://github.com/joe1chief/taste-your-taste#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🍷 Taste Your Taste
-### *Curating Developer Taste from Top Open-Source Projects*
+### *Curating Developer Taste & Vibe Stacking Engine for AI Agents*
 
 **CLAUDE.md • .agent • .cursorrules • AGENTS.md • The Anti-Slop Philosophy**
 
@@ -27,13 +27,21 @@
   <b>"Code generation is cheap. Taste is rare."</b>
 </p>
 
+```bash
+# Instant Vibe Stacking with npx:
+npx taste-code blend --style antfu --tone karpathy
+
+# Linus Torvalds Taste Roast:
+npx taste-code roast CLAUDE.md
+```
+
 </div>
 
 ---
 
 ## 📖 The Manifesto
 
-In the pre-AI era, developers loved exploring the `.dotfiles` (`.zshrc`, `.vimrc`, `tmux.conf`) of legendary hackers to see how they shaped their terminal.
+In the pre-AI era, developers loved exploring the `.dotfiles` (`.zshrc`, `.vimrc`, `tmux.conf`) of legendary hackers to see how they tuned their tools.
 
 In the **Vibe Coding** era, human programmers don't write every line of syntax by hand. Instead, **developer taste** is captured in the behavioral guardrails, engineering constraints, and architectural temperaments we impart to our AI agents:
 
@@ -41,13 +49,93 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 * How do high-velocity solo developers force AI to produce concise, elegant diffs?
 * How do infrastructure projects like NVIDIA, Stripe, and tidyverse instruct Claude Code and Cursor?
 
-**`taste-your-taste`** is a living museum, open archive, and automated daily radar dedicated to discovering and preserving the finest developer tastes from top open-source repositories.
+**`taste-your-taste`** is a complete ecosystem:
+1. 🛠️ **`taste` CLI**: A zero-dependency Lego-brick stacking tool to blend master developer tastes into your repository.
+2. 🌶️ **Taste Roast**: A Linus Torvalds-inspired toxic waste detector and taste scorer for agent instructions.
+3. 📡 **Automated Daily Radar**: GitHub Action engine monitoring real-world trending repos daily.
+4. 🏛️ **The Hall of Fame**: Direct curations of real battle-tested configs from top OSS repositories.
 
 ---
 
-## 📡 The Automated Radar: Self-Updating Daily
+## 🚀 `taste` CLI: Taste Stacking Engine
 
-This repository never goes stale. Powered by **GitHub Actions** and the built-in **Radar Engine** (`scripts/radar.py`), it monitors trending open-source projects daily:
+Copy-pasting someone else's 300-line prompt is clumsy. **`taste`** breaks master developer styles and agent tones into atomic, composable Lego bricks.
+
+### 1. View Available Modules
+```bash
+npx taste-code list
+```
+* **Styles**: `antfu` (strict TS / modern ESM), `karpathy` (minimalist single-file ML), `stripe` (industrial craft), `minimalist` (zero-dependency), `defensive` (invariants & safety), `hacker` (high-velocity 160-char lines).
+* **Tones**: `karpathy` (anti-slop diff-first), `linus` (anti-overengineering), `terse` (ultra-compact), `teacher` (edge-case pedagogy).
+* **Presets**: `anti-slop`, `solo-hacker`, `enterprise`.
+
+### 2. Stack a Single Flavor
+```bash
+# Stack minimalist zero-dependency rules into CLAUDE.md
+npx taste-code add minimalist
+
+# Stack Antfu TypeScript rules into .cursorrules
+npx taste-code add antfu --target cursor
+
+# Stack into .agent/rules.md
+npx taste-code add hacker --target agent
+```
+
+### 3. Blend Styles & Tones (Taste Stacking)
+Mix orthogonal aspects — combine **Antfu's TypeScript strictness** with **Karpathy's outcome-driven, anti-slop tone**:
+```bash
+npx taste-code blend --style antfu --tone karpathy
+```
+The CLI automatically maintains non-destructive block boundaries (`<!-- TASTE:STYLE:... -->` and `<!-- TASTE:TONE:... -->`), so you can re-run and re-stack without duplicating content or overwriting your own custom rules.
+
+---
+
+## 🌶️ Taste Roast: Linus-Style Savage Code Review
+
+How good are your agent instructions? Are you paying Anthropic to generate verbose corporate apologies?
+
+Run the **Taste Roast**:
+```bash
+npx taste-code roast [path/to/CLAUDE.md]
+```
+
+### What It Audits:
+* 📉 **Fluff & Platitude Index**: Detects useless corporate clichés (*"write clean code"*, *"strive for excellence"*, *"be helpful"*).
+* 💸 **Politeness Tax**: Calculates token budget wasted on polite greetings and apologies (*"please"*, *"kindly"*, *"sorry"*).
+* 🛡️ **Negative Armor**: Verifies whether you gave the AI explicit boundaries (*"never"*, *"do not"*, *"prohibit"*).
+* ⚙️ **Verifiable Tooling**: Checks whether the agent was given exact test/linter commands to verify its output.
+* 💯 **Taste Score (0-100)**: From `CRIMINAL TOXIC WASTE` to `CHEF'S TASTE`.
+
+### Sample Output:
+```text
+┌─ 🌶️ TASTE ROAST REPORT ────────────────────────────────────────────────────────────────────────┐
+│ Target File: CLAUDE.md                                                                        │
+│ Lines: 7  |  Tokens: ~61  |  Words: 45                                                        │
+│                                                                                               │
+│ Taste Score: 8 / 100 [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░]                                         │
+│ Verdict: CRIMINAL TOXIC WASTE (上下文毒药)                                                         │
+│                                                                                               │
+│ 🔥 Sins & Pathology Detected:                                                                 │
+│   ❌ Platitude Fluff: Found 3 buzzwords (write clean code, ensure high quality)               │
+│   ❌ Politeness Tax: 4 polite words draining context and money                                │
+│   ❌ Spineless Prompt: Zero negative constraints (AI will run wild)                           │
+│                                                                                               │
+│ 🎙️ Linus Torvalds Roasts Your Taste:                                                         │
+│   "You actually wrote 'Please' in a file meant for an LLM? What is this, a Victorian         │
+│    tea party? You are literally burning token budget paying Anthropic to say 'You're welcome!'"│
+│   "Saying 'write clean code' to an AI is like telling water to be wet. What does that mean?   │
+│    Where are your compiler flags? It's hand-waving garbage."                                  │
+│                                                                                               │
+│ 💊 Remedy & Prescription:                                                                     │
+│   Run npx taste blend --style minimalist --tone terse to replace fluff with pure discipline. │
+└───────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📡 The Automated Daily Radar
+
+Powered by **GitHub Actions** and [`scripts/radar.py`](./scripts/radar.py), this repository monitors trending open-source projects daily:
 
 ```mermaid
 flowchart LR
@@ -60,19 +148,20 @@ flowchart LR
     D -- No --> H["Sleep until next cycle"]
 ```
 
-* **Target files monitored**: `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `.cursor/rules/`, `AGENTS.md`.
-* **Zero spam**: Tracks history in `data/seen_repos.json` to prevent duplicate alerts.
-* **Notification on your phone**: Automatically files a GitHub Issue whenever a high-profile repo adopts or updates its agent instructions!
+* **Monitored Target Files**: `CLAUDE.md`, `.claude/CLAUDE.md`, `.claude/rules.md`, `.agent/rules.md`, `.agent/PLANS.md`, `.cursorrules`, `AGENTS.md`.
+* **Zero spam**: History is tracked in `data/seen_repos.json`.
+* **Mobile Alerts**: GitHub issues are created automatically with preview snippets and checkboxes.
 
 ---
 
 ## 🏛️ The Hall of Fame
 
-Here are exemplary battle-tested configurations harvested directly from production open-source repositories:
+Curated directly from authentic production repositories:
 
 | Project | Stars | Language | File | Taste Archetype | Key Highlight |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | [**NVIDIA / OpenShell**](tastes/ai-infra/nvidia-openshell) | ⭐️ 11.6k | Rust | `AGENTS.md` | ⚡ Anti-Slop / Minimalist | Injected into context on every interaction; forbids unnecessary restructuring. |
+| [**VoiceStudio**](discovered/debpalash__VoiceStudio) | ⭐️ 49.8k | Python / TS | `AGENTS.md` | 🤠 Hacker Velocity | Explicit token economy; default to shortest response; status updates 1 line max. |
 | [**Stripe / stripe-java**](tastes/fintech/stripe-java) | ⭐️ 600 | Java | `.claude/CLAUDE.md` | 🏢 Engineering Craft | Exact `just` test runners, Spotless formatting commands, and HTTP abstraction map. |
 | [**keras_cv_attention_models**](tastes/machine-learning/keras-cv-attention-models) | ⭐️ 1.7k | Python | `.agent/rules.md` | 🤠 Hacker Velocity | `black -l 160`, single-line multi-assignments, thin wrapper pattern. |
 | [**tidyverse / readr**](tastes/data-science/tidyverse-readr) | ⭐️ 1.1k | R / C++ | `.claude/CLAUDE.md` | 🛡️ Defensive Architect | Clean boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser). |
@@ -81,8 +170,6 @@ Here are exemplary battle-tested configurations harvested directly from producti
 ---
 
 ## 🎭 The 4 Vibe Archetypes
-
-Every developer has a distinct coding persona. We classify agent instructions into 4 archetypes:
 
 ```mermaid
 quadrantChart
@@ -98,29 +185,12 @@ quadrantChart
     "securego": [0.55, 0.82]
     "keras_cv": [0.25, 0.35]
     "NVIDIA OpenShell": [0.35, 0.22]
+    "VoiceStudio": [0.28, 0.40]
 ```
-
-### 1. ⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)
-* **Motto**: *"Don't apologize. Give me the diff. No unnecessary dependencies."*
-* **Characteristics**: Zero conversational fluff, strictly constrained token budgets, preference for native platform primitives over heavy packages.
-
-### 2. 🛡️ Defensive Architect (防御洁癖 / 严苛架构)
-* **Motto**: *"If an invariant can break, it will break."*
-* **Characteristics**: Strict type definitions, comprehensive failure modes, deterministic error handling, zero synthetic test mocks.
-
-### 3. 🤠 Hacker Velocity (单兵作战 / 极速狂飙)
-* **Motto**: *"Working software over ceremonies."*
-* **Characteristics**: Single-line tuples, thin wrappers around core engines, wide line limits (`160+ chars`), ruthless velocity.
-
-### 4. 🏢 Engineering Craft (工程规范 / 工业标准)
-* **Motto**: *"Consistency is reliability."*
-* **Characteristics**: Deterministic build tooling (`just`, `make`), explicit spotless/linter commands, layered architecture map.
 
 ---
 
 ## ⚡ The Anti-Slop Commandments (Real-world Gems)
-
-Real directives spotted in the wild that keep AI agents honest and sharp:
 
 > **On Apologies & Conversational Fluff:**
 > *"Never say 'Certainly!', 'I'd be glad to help', or apologize. Answer immediately with the precise solution or git patch."*
@@ -136,39 +206,13 @@ Real directives spotted in the wild that keep AI agents honest and sharp:
 
 ---
 
-## 🛠️ How to Run the Radar Locally
-
-Want to run the radar locally on your machine or search custom repositories?
-
-```bash
-# Clone the repository
-git clone https://github.com/joe1chief/taste-your-taste.git
-cd taste-your-taste
-
-# Run dry-run scan (uses gh auth token or GITHUB_TOKEN)
-python3 scripts/radar.py --dry-run --limit 5
-
-# Scan and automatically save newly discovered taste files to discovered/
-python3 scripts/radar.py --limit 5 --min-stars 100
-```
-
-### Radar CLI Options:
-* `--dry-run`: Search and inspect without modifying files or opening issues.
-* `--limit <N>`: Maximum new discoveries to process per run (default: `5`).
-* `--min-stars <N>`: Minimum star count threshold for code search candidates (default: `50`).
-* `--repo <owner/repo>`: Target repository where review issues are opened.
-
----
-
 ## 🤝 Contributing
 
-Have you found an amazing `CLAUDE.md`, `.cursorrules`, or `.agent/rules.md` in a public repository?
-
-1. **Submit via Issue**: Click [**✨ Submit a Developer Taste**](https://github.com/joe1chief/taste-your-taste/issues/new?template=taste_submission.yml) and fill in the details.
-2. **Submit via Pull Request**: Add the taste file to `tastes/<category>/<repo_name>/` with a `META.json` and a summary in the table above.
+1. **Submit via Issue**: Click [**✨ Submit a Developer Taste**](https://github.com/joe1chief/taste-your-taste/issues/new?template=taste_submission.yml).
+2. **Submit a Taste Lego Brick**: Add a new style or tone to `registry/styles/` or `registry/tones/` and submit a Pull Request!
 
 ---
 
 ## 📄 License
 
-Distributed under the [MIT License](./LICENSE). All curated taste files remain the copyright of their respective authors and open-source projects under their respective open-source licenses.
+Distributed under the [MIT License](./LICENSE). All curated taste files remain the copyright of their respective authors under their original open-source licenses.
