@@ -1,0 +1,9 @@
+{
+  "repo": "NVIDIA/OpenShell",
+  "stars": 11603,
+  "language": "Rust",
+  "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "archetype": "⚡ Anti-Slop / Minimalist",
+  "file": "AGENTS.md"
+}

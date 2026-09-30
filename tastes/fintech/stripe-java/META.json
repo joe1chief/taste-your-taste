@@ -1,0 +1,9 @@
+{
+  "repo": "stripe/stripe-java",
+  "stars": 1006,
+  "language": "Java",
+  "description": "Java library for the Stripe API.    ",
+  "url": "https://github.com/stripe/stripe-java",
+  "archetype": "🏢 Engineering Craft",
+  "file": ".claude/CLAUDE.md"
+}

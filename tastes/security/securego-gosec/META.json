@@ -1,0 +1,9 @@
+{
+  "repo": "securego/gosec",
+  "stars": 8959,
+  "language": "Go",
+  "description": "Go security checker",
+  "url": "https://github.com/securego/gosec",
+  "archetype": "🛡️ Defensive Architect",
+  "file": "CLAUDE.md"
+}

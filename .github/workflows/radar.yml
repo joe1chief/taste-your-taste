@@ -1,0 +1,76 @@
+name: "📡 Taste Radar"
+
+on:
+  schedule:
+    # Run once every 24 hours at 02:00 UTC (10:00 AM CST)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maximum new discoveries to process'
+        required: false
+        default: '5'
+        type: string
+      min_stars:
+        description: 'Minimum star count for code search'
+        required: false
+        default: '50'
+        type: string
+      dry_run:
+        description: 'Run in dry-run mode (do not create issues or commit files)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  radar:
+    name: Scan Trending & Discover Tastes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Taste Radar Engine
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          EXTRA_ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            EXTRA_ARGS="--dry-run"
+          fi
+          
+          LIMIT="${{ inputs.limit || '5' }}"
+          MIN_STARS="${{ inputs.min_stars || '50' }}"
+          
+          python3 scripts/radar.py \
+            --token "$GITHUB_TOKEN" \
+            --repo "$GITHUB_REPOSITORY" \
+            --limit "$LIMIT" \
+            --min-stars "$MIN_STARS" \
+            $EXTRA_ARGS
+
+      - name: Commit & Push New Discoveries
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/seen_repos.json discovered/
+          if git diff --cached --quiet; then
+            echo "No changes to commit. All up-to-date."
+          else
+            git commit -m "chore(radar): auto-archive newly discovered tastes [skip ci]"
+            git push origin main
+          fi

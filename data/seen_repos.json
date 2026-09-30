@@ -1,0 +1,63 @@
+{
+  "NVIDIA/OpenShell": {
+    "stars": 11600,
+    "language": "Rust",
+    "description": "OpenShell: Agent execution runtime for isolation and orchestration",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "source": "trending",
+    "archetype": "⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)",
+    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  },
+  "stripe/stripe-java": {
+    "stars": 600,
+    "language": "Java",
+    "description": "Java library for the Stripe API.",
+    "files": [
+      ".claude/CLAUDE.md"
+    ],
+    "source": "code_search",
+    "archetype": "🏢 Engineering Craft (工程规范 / 工业标准)",
+    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  },
+  "leondgarse/keras_cv_attention_models": {
+    "stars": 1700,
+    "language": "Python",
+    "description": "Attention models in Keras & PyTorch",
+    "files": [
+      ".agent/rules.md"
+    ],
+    "source": "code_search",
+    "archetype": "🤠 Hacker Velocity (单兵作战 / 极速狂飙)",
+    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  },
+  "tidyverse/readr": {
+    "stars": 1150,
+    "language": "R",
+    "description": "Read rectangular text data",
+    "files": [
+      ".claude/CLAUDE.md"
+    ],
+    "source": "code_search",
+    "archetype": "🛡️ Defensive Architect (防御洁癖 / 严苛架构)",
+    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  },
+  "securego/gosec": {
+    "stars": 5400,
+    "language": "Go",
+    "description": "Golang security checker",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "source": "code_search",
+    "archetype": "🛡️ Defensive Architect (防御洁癖 / 严苛架构)",
+    "discovered_at": "2026-09-30T14:40:00+00:00",
+    "status": "curated"
+  }
+}

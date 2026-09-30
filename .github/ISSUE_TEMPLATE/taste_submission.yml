@@ -1,0 +1,61 @@
+name: "✨ Submit a Developer Taste"
+description: "Submit a CLAUDE.md, .agent, or .cursorrules from an impressive open-source repository"
+title: "[Taste Submission]: "
+labels: ["taste-submission", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **taste-your-taste**!
+        Share the instructions, rules, or system prompts that define an exceptional open-source project's engineering taste.
+  - type: input
+    id: repo_url
+    attributes:
+      label: Repository URL
+      description: Link to the GitHub repository.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: file_type
+    attributes:
+      label: Taste File Type
+      options:
+        - "CLAUDE.md / .claude/"
+        - ".agent/rules.md"
+        - ".cursorrules / .cursor/rules/"
+        - "AGENTS.md"
+        - "Other"
+    validations:
+      required: true
+  - type: dropdown
+    id: archetype
+    attributes:
+      label: Taste Archetype
+      options:
+        - "⚡ Anti-Slop / Minimalist (直击要害 / 极简主义)"
+        - "🛡️ Defensive Architect (防御洁癖 / 严苛架构)"
+        - "🤠 Hacker Velocity (单兵作战 / 极速狂飙)"
+        - "🏢 Engineering Craft (工程规范 / 工业标准)"
+        - "🎨 Pragmatic Taste (实用主义 / 优雅品味)"
+    validations:
+      required: true
+  - type: textarea
+    id: taste_highlights
+    attributes:
+      label: Taste Highlights (What makes this special?)
+      description: Which constraints, philosophies, or tone directives stand out? Why does it prevent AI slop?
+      placeholder: |
+        - Disallows any synthetic mock data in unit tests.
+        - Strict command for single-line diffs.
+        - Enforces 160-char black formatter without boilerplate.
+    validations:
+      required: true
+  - type: textarea
+    id: file_content
+    attributes:
+      label: File Content or Excerpt
+      description: Paste the content or relevant section of the rule/prompt file.
+      render: markdown
+    validations:
+      required: true
