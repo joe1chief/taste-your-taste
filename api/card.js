@@ -1,10 +1,10 @@
 /**
- * Serverless API handler for dynamic GitHub Profile Taste Badge
+ * Serverless API handler for dynamic GitHub Profile Taste Card & Badge
  * Compatible with Vercel / Netlify / Node HTTP functions.
  * Returns image/svg+xml with aggressive caching headers.
  */
 
-const { generateCardSvg } = require('../src/card');
+const { generateCardSvg, generateBadgeSvg } = require('../src/card');
 
 module.exports = (req, res) => {
   let query = {};
@@ -15,13 +15,24 @@ module.exports = (req, res) => {
     query = Object.fromEntries(new URLSearchParams(querystring));
   }
 
-  const svg = generateCardSvg({
-    user: query.user || 'developer',
-    style: query.style || 'antfu',
-    tone: query.tone || 'karpathy',
-    archetype: query.archetype || 'Anti-Slop Minimalist',
-    score: query.score || 94,
-  });
+  const isBadge = query.type === 'badge' || query.format === 'badge';
+
+  const svg = isBadge
+    ? generateBadgeSvg({
+        type: query.badgeType || 'score',
+        style: query.style || 'antfu',
+        tone: query.tone || 'karpathy',
+        archetype: query.archetype || 'Anti-Slop Minimalist',
+        score: query.score || 94,
+      })
+    : generateCardSvg({
+        user: query.user || 'developer',
+        style: query.style || 'antfu',
+        tone: query.tone || 'karpathy',
+        archetype: query.archetype || 'Anti-Slop Minimalist',
+        score: query.score || 94,
+        theme: query.theme || 'cyber',
+      });
 
   res.setHeader('Content-Type', 'image/svg+xml');
   res.setHeader('Cache-Control', 'public, max-age=7200, s-maxage=86400, stale-while-revalidate=86400');

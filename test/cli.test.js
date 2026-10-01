@@ -11,7 +11,7 @@ const { resolveTargetFile } = require('../src/utils');
 const { analyzeContentDeterministic, roastFile } = require('../src/roaster');
 const { pruneContent, pruneFile, pruneDeterministic } = require('../src/pruner');
 const { diffTastes, diffDeterministic } = require('../src/differ');
-const { generateCardSvg, renderCardToFile } = require('../src/card');
+const { generateCardSvg, generateBadgeSvg, renderCardToFile, renderBadgeToFile } = require('../src/card');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
 
@@ -211,12 +211,31 @@ function testCardGenerator() {
   assert(svg.includes('95'), 'Must contain score');
   assert(svg.includes("CHEF'S TASTE"), 'Score 95 must yield CHEF\'S TASTE');
 
+  // Test theme support
+  const matrixSvg = generateCardSvg({ user: 'neo', score: 99, theme: 'matrix' });
+  assert(matrixSvg.includes('#10b981'), 'Matrix theme must use emerald color');
+
   // Test render to file
   const cardPath = path.join(TEMP_DIR, 'profile-card.svg');
   renderCardToFile(cardPath, { user: 'testuser', score: 85 });
   assert(fs.existsSync(cardPath), 'SVG file must be written to disk');
 
-  console.log('✅ Taste Card Generator test passed.');
+  // Test Standalone Badge Generator
+  console.log('Testing Profile Taste Badge Generator...');
+  const badgeScore = generateBadgeSvg({ type: 'score', score: 94 });
+  assert(badgeScore.includes('<svg'), 'Badge must be valid SVG');
+  assert(badgeScore.includes('TASTE'), 'Score badge must contain TASTE label');
+  assert(badgeScore.includes("Chef's Taste"), 'Score badge must contain rating label');
+
+  const badgeDna = generateBadgeSvg({ type: 'dna', style: 'antfu', tone: 'karpathy' });
+  assert(badgeDna.includes('TASTE DNA'), 'DNA badge must contain TASTE DNA label');
+  assert(badgeDna.includes('antfu + karpathy'), 'DNA badge must contain style + tone');
+
+  const badgePath = path.join(TEMP_DIR, 'profile-badge.svg');
+  renderBadgeToFile(badgePath, { type: 'archetype', archetype: 'Defensive Architect' });
+  assert(fs.existsSync(badgePath), 'Badge SVG file must be written to disk');
+
+  console.log('✅ Taste Card & Badge Generator tests passed.');
 }
 
 async function runAll() {

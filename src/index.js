@@ -11,7 +11,7 @@ const { roastFile } = require('./roaster');
 const { runWizard } = require('./wizard');
 const { pruneFile } = require('./pruner');
 const { diffTastes } = require('./differ');
-const { renderCardToFile } = require('./card');
+const { renderCardToFile, renderBadgeToFile } = require('./card');
 
 function printHelp() {
   banner();
@@ -27,12 +27,14 @@ ${c.bold('COMMANDS:')}
   ${c.yellow('roast')} ${c.dim('[path/to/CLAUDE.md]')}           Savage Linus-style roast of your agent instructions
   ${c.yellow('prune')} ${c.dim('[file] [--write]')}              Distill and compact prompt to save 40%-80% tokens
   ${c.yellow('diff')} ${c.dim('<tasteA> <tasteB>')}              Compare engineering philosophies and constraints
-  ${c.yellow('card')} ${c.dim('[--user <name>]')}                Generate dynamic GitHub Profile Taste Card SVG
+  ${c.yellow('card')} ${c.dim('[--user <name>] [--theme <name>]')}  Generate dynamic GitHub Profile Taste Card SVG
+  ${c.yellow('badge')} ${c.dim('[--type <score|dna|arch>]')}         Generate sleek vector micro-badge SVG
 
 ${c.bold('OPTIONS:')}
   ${c.dim('--target, -t <file|type>')}           Target file: ${c.cyan('claude')}, ${c.cyan('cursor')}, ${c.cyan('agent')}, or custom path
   ${c.dim('--style, -s <name>')}                 Style to blend (e.g. antfu, karpathy, stripe, minimalist)
   ${c.dim('--tone <name>')}                      Tone to blend (e.g. karpathy, linus, terse, teacher)
+  ${c.dim('--theme <name>')}                     Card colorway: ${c.cyan('cyber')}, ${c.cyan('matrix')}, ${c.cyan('midnight')}, ${c.cyan('sunset')}, ${c.cyan('noir')}
   ${c.dim('--help, -h')}                         Show this help menu
   ${c.dim('--version, -v')}                      Show version
 
@@ -287,6 +289,7 @@ function handleCard(args) {
   let outputPath = 'taste-card.svg';
   let style = 'antfu';
   let tone = 'karpathy';
+  let theme = 'cyber';
   let targetFile = null;
 
   for (let i = 0; i < args.length; i++) {
@@ -302,6 +305,9 @@ function handleCard(args) {
       i++;
     } else if (a === '--tone') {
       tone = args[i + 1] || tone;
+      i++;
+    } else if (a === '--theme') {
+      theme = args[i + 1] || theme;
       i++;
     } else if (a === '--target' || a === '-t') {
       targetFile = args[i + 1];
@@ -322,6 +328,7 @@ function handleCard(args) {
       user,
       style,
       tone,
+      theme,
       file: targetFile,
     });
 
@@ -332,6 +339,7 @@ function handleCard(args) {
           `${c.bold('Output Path:')}  ${c.cyan(resolvedOut)}`,
           `${c.bold('User Handle:')}  @${user}`,
           `${c.bold('Taste DNA:')}    ${style} + ${tone}`,
+          `${c.bold('Theme:')}        ${theme}`,
           '',
           `${c.dim('Embed into your GitHub Profile README.md:')}`,
           c.yellow(`![My Developer Taste](./${path.relative(process.cwd(), resolvedOut) || resolvedOut})`),
@@ -341,6 +349,72 @@ function handleCard(args) {
     );
   } catch (err) {
     console.error(`${c.red('Failed to generate card:')} ${err.message}`);
+    process.exit(1);
+  }
+}
+
+function handleBadge(args) {
+  let user = 'developer';
+  let outputPath = 'taste-badge.svg';
+  let style = 'antfu';
+  let tone = 'karpathy';
+  let type = 'score';
+  let archetype = 'Anti-Slop Minimalist';
+  let targetFile = null;
+
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (a === '--type' || a === '-T') {
+      type = args[i + 1] || type;
+      i++;
+    } else if (a === '--output' || a === '-o') {
+      outputPath = args[i + 1] || outputPath;
+      i++;
+    } else if (a === '--style' || a === '-s') {
+      style = args[i + 1] || style;
+      i++;
+    } else if (a === '--tone') {
+      tone = args[i + 1] || tone;
+      i++;
+    } else if (a === '--user' || a === '-u') {
+      user = args[i + 1] || user;
+      i++;
+    } else if (a === '--archetype') {
+      archetype = args[i + 1] || archetype;
+      i++;
+    } else if (a === '--target' || a === '-t') {
+      targetFile = args[i + 1];
+      i++;
+    }
+  }
+
+  banner();
+  try {
+    const { outputPath: resolvedOut } = renderBadgeToFile(path.resolve(outputPath), {
+      type,
+      user,
+      style,
+      tone,
+      archetype,
+      file: targetFile,
+    });
+
+    console.log(
+      box(
+        '🛡️ Profile Taste Badge Generated',
+        [
+          `${c.bold('Output Path:')}  ${c.cyan(resolvedOut)}`,
+          `${c.bold('Badge Type:')}   ${type}`,
+          `${c.bold('Taste DNA:')}    ${style} + ${tone}`,
+          '',
+          `${c.dim('Embed into your GitHub Profile or README.md:')}`,
+          c.yellow(`![Taste Badge](./${path.relative(process.cwd(), resolvedOut) || resolvedOut})`),
+        ].join('\n'),
+        '\x1b[35m'
+      )
+    );
+  } catch (err) {
+    console.error(`${c.red('Failed to generate badge:')} ${err.message}`);
     process.exit(1);
   }
 }
@@ -384,8 +458,10 @@ async function run(argv = process.argv.slice(2)) {
       await handleDiff(args);
       break;
     case 'card':
-    case 'badge':
       handleCard(args);
+      break;
+    case 'badge':
+      handleBadge(args);
       break;
     default:
       console.error(`${c.red('Unknown command:')} ${command}`);

@@ -7,19 +7,19 @@
 
 <p align="center">
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml">
-    <img src="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml/badge.svg" alt="Taste Radar Status">
+    <img src="https://img.shields.io/badge/taste--radar-active-10b981?style=for-the-badge&logo=githubactions&logoColor=white" alt="Taste Radar Status">
   </a>
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/taste-roast.yml">
-    <img src="https://img.shields.io/badge/taste--tested%20by-Linus%20Torvalds-crimson?style=flat&logo=linux" alt="Taste Tested">
+    <img src="https://img.shields.io/badge/taste--tested%20by-Linus%20Torvalds-f43f5e?style=for-the-badge&logo=linux&logoColor=white" alt="Taste Tested">
   </a>
   <a href="https://www.npmjs.com/package/taste-code">
-    <img src="https://img.shields.io/badge/npm-taste--code-blueviolet?style=flat&logo=npm" alt="npm package">
+    <img src="https://img.shields.io/badge/npm-taste--code-8b5cf6?style=for-the-badge&logo=npm&logoColor=white" alt="npm package">
   </a>
   <a href="https://github.com/joe1chief/taste-your-taste/stargazers">
-    <img src="https://img.shields.io/github/stars/joe1chief/taste-your-taste?style=flat&color=yellow" alt="GitHub Stars">
+    <img src="https://img.shields.io/github/stars/joe1chief/taste-your-taste?style=for-the-badge&color=eab308&logo=github" alt="GitHub Stars">
   </a>
   <a href="./LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/License-MIT-38bdf8?style=for-the-badge" alt="License">
   </a>
 </p>
 
@@ -28,7 +28,9 @@
 </p>
 
 <p align="center">
-  <img src="./taste-card.svg" alt="Developer Taste Card Preview" width="520">
+  <img src="./taste-card.svg" alt="Developer Taste HUD Card Preview" width="520">
+  <br><br>
+  <img src="./taste-badge.svg" alt="Developer Taste Micro-Badge Preview">
 </p>
 
 ```bash
@@ -47,8 +49,11 @@ npx taste-code diff antfu karpathy
 # 🌶️ Savage Linus Torvalds Taste Roast Critic:
 npx taste-code roast CLAUDE.md
 
-# 🪪 Dynamic GitHub Profile Taste Badge Generator:
-npx taste-code card --user yourname --output taste-card.svg
+# 🪪 Dynamic GitHub Profile Taste HUD Card Generator:
+npx taste-code card --user yourname --theme cyber --output taste-card.svg
+
+# 🛡️ Sleek Vector Micro-Badge Generator (Shields style):
+npx taste-code badge --type score --output taste-badge.svg
 ```
 
 </div>
@@ -71,7 +76,7 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 3. 💧 **`taste prune` (De-slop Compactor)**: Strips out polite conversational filler and tautological fluff while preserving 100% of technical rules, reducing context window tax by 30-70%.
 4. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
 5. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
-6. 🪪 **`taste card` & SVG Badge API**: Generates a sleek, embeddable GitHub Profile Taste Card showcasing your Archetype, Taste DNA, and Linus Verdict.
+6. 🪪 **`taste card` & `taste badge`**: Generates aesthetic cyberpunk HUD profile cards (495x195) and sleek vector micro-badges (28px pill) with custom themes and radial gauges.
 7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 26+ star projects organized directly as first-level directories.
 8. 🧠 **Curated Agent Skills Library ([`skills/`](./skills))**: Modular SKILL.md playbooks (Andrej Karpathy guidelines, offensive AI security, de-AI writing, design tokens, etc.).
 9. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
@@ -286,33 +291,54 @@ npx taste-code roast [path/to/CLAUDE.md]
 
 ---
 
-### 6. 🪪 Dynamic Profile Taste Card: `taste card` & SVG Badge API
-Showcase your developer taste DNA directly on your GitHub Profile README, project documentation, or website with dynamic, dark-mode SVG vector badges.
+### 6. 🪪 Dynamic Profile Taste HUD Card & Micro-Badge: `taste card` & `taste badge`
+Showcase your developer taste DNA directly on your GitHub Profile README, project documentation, or website with dynamic, dark-mode SVG HUD vector cards and sleek micro-badges.
 
-#### Local CLI Vector Card Generator
+#### 1. Cyberpunk Profile HUD Card (495x195)
+Features a frosted dark canvas, circular neon radial score gauge, AI Verified live pulse beacon, technical blueprint grid, and multi-theme colorways (`cyber`, `matrix`, `midnight`, `sunset`, `noir`):
+
 ```bash
-# Generate local taste-card.svg based on your active rules
-npx taste-code card --user yourname --output taste-card.svg
+# Generate local taste-card.svg with default Cyberpunk Rose theme
+npx taste-code card --user yourname --theme cyber --output taste-card.svg
 
-# Customize styles and tones directly
-npx taste-code card --user yourname --style antfu --tone karpathy
+# Generate with Matrix Emerald hacker theme
+npx taste-code card --user yourname --theme matrix --output taste-card.svg
 ```
 
-#### Live Dynamic Serverless SVG Badge API
-You can embed your real-time Taste Card directly using the serverless Badge endpoint:
+#### 2. Sleek Vector Micro-Badge (28px Pill)
+For repository headers, status badges, and minimal profile headers:
+```bash
+# Generate Taste Score Badge ([ 🍷 TASTE | 94/100 · Chef's Taste ])
+npx taste-code badge --type score --output taste-badge.svg
+
+# Generate Taste DNA Badge ([ 🍷 TASTE DNA | antfu + karpathy ])
+npx taste-code badge --type dna --output taste-badge.svg
+
+# Generate Archetype Badge ([ 🛡️ ARCHETYPE | Defensive Architect ])
+npx taste-code badge --type archetype --output taste-badge.svg
+```
+
+#### 3. Live Dynamic Serverless HTTP API
+Embed real-time SVG cards and badges directly using the serverless API:
 ```markdown
-[![My Developer Taste](https://taste-your-taste.vercel.app/api/card?user=antfu&style=antfu&tone=linus&score=96&archetype=Defensive+Architect)](https://github.com/joe1chief/taste-your-taste)
+<!-- Full HUD Profile Card -->
+[![My Developer Taste](https://taste-your-taste.vercel.app/api/card?user=antfu&style=antfu&tone=linus&score=96&theme=cyber)](https://github.com/joe1chief/taste-your-taste)
+
+<!-- Vector Micro-Badge -->
+[![My Taste Badge](https://taste-your-taste.vercel.app/api/badge?type=score&score=96)](https://github.com/joe1chief/taste-your-taste)
 ```
 
-#### Badge API Query Parameters:
+#### Card & Badge API Query Parameters:
 | Parameter | Default | Description |
 | :--- | :--- | :--- |
 | `user` | `developer` | GitHub username displayed on card |
 | `style` | `antfu` | Active developer style module |
 | `tone` | `karpathy` | Active persona / agent tone |
-| `archetype` | `Engineering Craft` | Architectural archetype (Defensive Architect, Hacker Velocity, etc.) |
-| `score` | `92` | Taste score (0 - 100) |
-| `linus` | `Chef's taste.` | Custom Linus Torvalds verdict snippet |
+| `archetype` | `Anti-Slop Minimalist` | Architectural archetype (Defensive Architect, Hacker Velocity, etc.) |
+| `score` | `94` | Taste score (0 - 100) |
+| `theme` | `cyber` | HUD colorway: `cyber`, `matrix`, `midnight`, `sunset`, `noir` |
+| `type` | `card` | Display format: `card` (495x195 HUD) or `badge` (28px pill) |
+| `badgeType`| `score` | Micro-badge type: `score`, `dna`, `archetype`, `slop`, `roast` |
 
 ---
 

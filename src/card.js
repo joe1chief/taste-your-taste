@@ -1,6 +1,6 @@
 /**
- * Taste Card Generator: Dynamic GitHub Profile SVG Badge & Card
- * Generates aesthetic developer taste cards for GitHub profile READMEs.
+ * Taste Card & Badge Generator: Dynamic GitHub Profile SVG Cards & Badges
+ * Generates aesthetic developer taste cards and badges for GitHub profile READMEs.
  * Zero external dependencies.
  */
 
@@ -17,89 +17,439 @@ function escapeXml(unsafe) {
     .replace(/'/g, '&apos;');
 }
 
+const THEMES = {
+  cyber: {
+    name: 'Cyberpunk Rose (Default)',
+    primary: '#f43f5e',
+    secondary: '#8b5cf6',
+    accent: '#06b6d4',
+    bg1: '#090d16',
+    bg2: '#0f1422',
+    bg3: '#06080d',
+    border: '#f43f5e',
+  },
+  matrix: {
+    name: 'Matrix Emerald',
+    primary: '#10b981',
+    secondary: '#059669',
+    accent: '#34d399',
+    bg1: '#05110a',
+    bg2: '#0b1f14',
+    bg3: '#030a06',
+    border: '#10b981',
+  },
+  midnight: {
+    name: 'Midnight Electric',
+    primary: '#38bdf8',
+    secondary: '#6366f1',
+    accent: '#a855f7',
+    bg1: '#070d1a',
+    bg2: '#0d1930',
+    bg3: '#04070e',
+    border: '#38bdf8',
+  },
+  sunset: {
+    name: 'Sunset Amber',
+    primary: '#f59e0b',
+    secondary: '#f97316',
+    accent: '#ef4444',
+    bg1: '#140c06',
+    bg2: '#22150a',
+    bg3: '#0b0603',
+    border: '#f59e0b',
+  },
+  noir: {
+    name: 'Monochrome Obsidian',
+    primary: '#e2e8f0',
+    secondary: '#94a3b8',
+    accent: '#cbd5e1',
+    bg1: '#09090b',
+    bg2: '#18181b',
+    bg3: '#040405',
+    border: '#71717a',
+  },
+};
+
+const ARCHETYPE_CONFIG = {
+  'Defensive Architect': {
+    icon: '🛡️',
+    color: '#10b981',
+    bg: 'rgba(16, 185, 129, 0.12)',
+    border: 'rgba(16, 185, 129, 0.4)',
+  },
+  'Anti-Slop Minimalist': {
+    icon: '🧊',
+    color: '#38bdf8',
+    bg: 'rgba(56, 189, 248, 0.12)',
+    border: 'rgba(56, 189, 248, 0.4)',
+  },
+  'Hacker Velocity': {
+    icon: '⚡',
+    color: '#f59e0b',
+    bg: 'rgba(245, 158, 11, 0.12)',
+    border: 'rgba(245, 158, 11, 0.4)',
+  },
+  'Engineering Craft': {
+    icon: '⚙️',
+    color: '#c084fc',
+    bg: 'rgba(192, 132, 252, 0.12)',
+    border: 'rgba(192, 132, 252, 0.4)',
+  },
+  'Pragmatic Taste': {
+    icon: '🎯',
+    color: '#f43f5e',
+    bg: 'rgba(244, 63, 94, 0.12)',
+    border: 'rgba(244, 63, 94, 0.4)',
+  },
+};
+
 function generateCardSvg(options = {}) {
   const user = escapeXml(options.user || 'developer');
   const archetype = escapeXml(options.archetype || 'Anti-Slop Minimalist');
   const style = escapeXml(options.style || 'antfu');
   const tone = escapeXml(options.tone || 'karpathy');
   const score = Math.max(5, Math.min(100, Math.round(Number(options.score) || 94)));
+  const themeKey = options.theme && THEMES[options.theme] ? options.theme : 'cyber';
+  const th = THEMES[themeKey];
 
   let ratingLabel = "CHEF'S TASTE";
-  let ratingColor = '#10b981'; // emerald
-  let barColor = '#ec4899'; // pink
+  let ratingColor = '#10b981';
+  let verdictBg = 'rgba(16, 185, 129, 0.12)';
+  let verdictBorder = 'rgba(16, 185, 129, 0.4)';
 
   if (score < 40) {
     ratingLabel = 'CRIMINAL WASTE';
-    ratingColor = '#ef4444'; // red
-    barColor = '#ef4444';
+    ratingColor = '#ef4444';
+    verdictBg = 'rgba(239, 68, 68, 0.12)';
+    verdictBorder = 'rgba(239, 68, 68, 0.4)';
   } else if (score < 70) {
     ratingLabel = 'SLOPPY AMATEUR';
-    ratingColor = '#f59e0b'; // amber
-    barColor = '#f59e0b';
+    ratingColor = '#f59e0b';
+    verdictBg = 'rgba(245, 158, 11, 0.12)';
+    verdictBorder = 'rgba(245, 158, 11, 0.4)';
   } else if (score < 88) {
     ratingLabel = 'ACCEPTABLE CRAFT';
-    ratingColor = '#06b6d4'; // cyan
-    barColor = '#8b5cf6';
+    ratingColor = '#06b6d4';
+    verdictBg = 'rgba(6, 182, 212, 0.12)';
+    verdictBorder = 'rgba(6, 182, 212, 0.4)';
   }
 
-  const barWidth = Math.round((score / 100) * 160);
+  // Circular gauge: radius = 33, circumference ≈ 207.35
+  const gaugeR = 33;
+  const circumference = 2 * Math.PI * gaugeR;
+  const strokeOffset = (circumference * (1 - score / 100)).toFixed(1);
+
+  // Archetype styling
+  const archConfig = ARCHETYPE_CONFIG[archetype] || {
+    icon: '✨',
+    color: th.primary,
+    bg: 'rgba(244, 63, 94, 0.12)',
+    border: 'rgba(244, 63, 94, 0.4)',
+  };
+
+  const archWidth = Math.max(150, archetype.length * 7.2 + 34);
+
+  // Taste DNA pill dimensions
+  const styleWidth = Math.max(62, style.length * 7.5 + 26);
+  const toneWidth = Math.max(62, tone.length * 7.5 + 26);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${th.bg1}"/>
+      <stop offset="50%" stop-color="${th.bg2}"/>
+      <stop offset="100%" stop-color="${th.bg3}"/>
+    </linearGradient>
+
+    <!-- Neon Rim Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${th.primary}" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="${th.secondary}" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="${th.accent}" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Brand Header Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${th.primary}"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <!-- Score Gauge Arc Gradient -->
+    <linearGradient id="scoreRingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="${th.secondary}"/>
+      <stop offset="50%" stop-color="${th.primary}"/>
+      <stop offset="100%" stop-color="${ratingColor}"/>
+    </linearGradient>
+
+    <!-- Ambient Radial Glows -->
+    <radialGradient id="glowTopRight" cx="88%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="${th.primary}" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="${th.primary}" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBottomLeft" cx="12%" cy="88%" r="45%">
+      <stop offset="0%" stop-color="${th.secondary}" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="${th.secondary}" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- High-tech Grid Pattern -->
+    <pattern id="techGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.035"/>
+      <circle cx="22" cy="0" r="0.8" fill="#ffffff" fill-opacity="0.08"/>
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
   <style>
-    .header { font: 700 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #f43f5e; }
-    .sub { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #8b949e; }
-    .title { font: 600 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #e6edf3; }
-    .value { font: 700 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; fill: #a5f3fc; }
-    .stat-label { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #7d8590; }
-    .stat-val { font: 700 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #f0f6fc; }
-    .badge-bg { fill: rgba(244, 63, 94, 0.15); stroke: rgba(244, 63, 94, 0.4); }
-    .badge-txt { font: 700 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #fda4af; }
+    .brand { font: 800 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: ${th.primary}; letter-spacing: 1.5px; }
+    .user { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #94a3b8; }
+    .status-lbl { font: 700 9px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #34d399; letter-spacing: 0.8px; }
+    .archetype-txt { font: 700 11.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: ${archConfig.color}; }
+    .sec-title { font: 700 9px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; fill: #64748b; letter-spacing: 1px; }
+    .chip-txt { font: 600 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .metric-main { font: 700 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #10b981; }
+    .metric-sub { font: 500 10.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #94a3b8; }
+    .score-txt { font: 800 21px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #f8fafc; }
+    .score-denom { font: 600 10px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #64748b; }
+    .verdict-txt { font: 800 10px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: ${ratingColor}; letter-spacing: 0.6px; }
+    
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.35); }
+    }
+    .pulse-dot {
+      transform-origin: 382px 28px;
+      animation: beaconPulse 2.4s infinite ease-in-out;
+    }
   </style>
 
-  <!-- Background Card -->
-  <rect x="0.5" y="0.5" width="494" height="194" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <!-- Background Base Container -->
+  <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.2"/>
 
-  <!-- Top Decorative Glow -->
-  <circle cx="450" cy="30" r="70" fill="#ec4899" opacity="0.08" filter="blur(30px)"/>
-  <circle cx="50" cy="160" r="50" fill="#8b5cf6" opacity="0.08" filter="blur(30px)"/>
+  <!-- Ambient Light Spills -->
+  <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#glowTopRight)"/>
+  <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#glowBottomLeft)"/>
 
-  <!-- Header -->
-  <g transform="translate(25, 32)">
-    <text x="0" y="0" class="header">🍷 TASTE YOUR TASTE</text>
-    <text x="185" y="-1" class="sub">• @${user}</text>
-  </g>
+  <!-- Blueprint Matrix Texture -->
+  <rect x="1" y="1" width="493" height="193" rx="15" fill="url(#techGrid)"/>
 
-  <!-- Archetype Badge -->
-  <g transform="translate(25, 48)">
-    <rect x="0" y="0" width="165" height="22" rx="6" class="badge-bg"/>
-    <text x="10" y="15" class="badge-txt">${archetype}</text>
-  </g>
+  <!-- High-Tech Corner HUD Accents -->
+  <path d="M 8 16 L 8 8 L 16 8" stroke="${th.primary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
+  <path d="M 487 16 L 487 8 L 479 8" stroke="${th.accent}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
+  <path d="M 8 179 L 8 187 L 16 187" stroke="${th.secondary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
+  <path d="M 487 179 L 487 187 L 479 187" stroke="${th.primary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
 
-  <!-- Left Stats Column -->
-  <g transform="translate(25, 100)">
-    <!-- Taste DNA -->
-    <text x="0" y="0" class="stat-label">Taste Stacking:</text>
-    <text x="0" y="20" class="stat-val">${style} <tspan fill="#8b949e">+</tspan> ${tone}</text>
+  <!-- Top Ambient Glass Beam -->
+  <path d="M 28 1 L 180 1" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
 
-    <!-- Politeness Tax -->
-    <text x="0" y="52" class="stat-label">Politeness Tax:</text>
-    <text x="0" y="70" class="stat-val" fill="#10b981">0% (Pure Diff)</text>
-  </g>
-
-  <!-- Right Score Column -->
-  <g transform="translate(260, 100)">
-    <text x="0" y="0" class="stat-label">Taste Score:</text>
-    <text x="0" y="22" class="title" font-weight="700">
-      <tspan font-size="20" fill="${ratingColor}">${score}</tspan><tspan fill="#8b949e" font-size="13"> / 100</tspan>
+  <!-- ================= HEADER SECTION ================= -->
+  <g transform="translate(24, 18)">
+    <!-- Wine Icon Badge -->
+    <rect x="0" y="0" width="22" height="22" rx="6" fill="${th.primary}" fill-opacity="0.12" stroke="${th.primary}" stroke-opacity="0.3"/>
+    <text x="4" y="15" font-size="13">🍷</text>
+    
+    <!-- Title & Handle -->
+    <text x="30" y="16">
+      <tspan class="brand">TASTE YOUR TASTE</tspan>
+      <tspan class="user"> • @${user}</tspan>
     </text>
+  </g>
 
-    <!-- Progress Bar -->
-    <rect x="0" y="34" width="160" height="7" rx="3.5" fill="#21262d"/>
-    <rect x="0" y="34" width="${barWidth}" height="7" rx="3.5" fill="${barColor}"/>
+  <!-- Top Right Verified Badge -->
+  <g transform="translate(366, 17)">
+    <rect x="0" y="0" width="105" height="22" rx="11" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.3)"/>
+    <circle cx="12" cy="11" r="5" fill="#10b981" opacity="0.4" class="pulse-dot"/>
+    <circle cx="12" cy="11" r="3" fill="#10b981"/>
+    <text x="23" y="14" class="status-lbl">AI VERIFIED</text>
+  </g>
 
-    <!-- Linus Rating -->
-    <text x="0" y="66" class="stat-label">Linus Verdict:</text>
-    <text x="90" y="66" class="stat-val" fill="${ratingColor}">${ratingLabel}</text>
+  <!-- ================= SUBHEADER / ARCHETYPE ================= -->
+  <g transform="translate(24, 48)">
+    <!-- Archetype Chip -->
+    <rect x="0" y="0" width="${archWidth}" height="24" rx="7" fill="${archConfig.bg}" stroke="${archConfig.border}"/>
+    <text x="8" y="16" font-size="12">${archConfig.icon}</text>
+    <text x="26" y="16" class="archetype-txt">${archetype}</text>
+    
+    <!-- Spec Badge -->
+    <text x="${archWidth + 12}" y="16" class="sec-title">SPEC: AGENTS.MD • ZERO SLOP</text>
+  </g>
+
+  <!-- Subtle Horizontal Divider -->
+  <line x1="24" y1="81" x2="471" y2="81" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- ================= LEFT COLUMN: STACKING & POLICING ================= -->
+  <!-- Taste DNA Metric -->
+  <g transform="translate(24, 94)">
+    <text x="0" y="0" class="sec-title">TASTE STACKING DNA</text>
+    
+    <!-- Style Pill -->
+    <g transform="translate(0, 8)">
+      <rect x="0" y="0" width="${styleWidth}" height="22" rx="6" fill="#0e1726" stroke="#1e293b"/>
+      <text x="8" y="15" class="chip-txt" fill="#38bdf8">🎨 ${style}</text>
+    </g>
+
+    <!-- Plus -->
+    <text x="${styleWidth + 6}" y="23" font-size="12" font-weight="700" fill="#64748b">+</text>
+
+    <!-- Tone Pill -->
+    <g transform="translate(${styleWidth + 18}, 8)">
+      <rect x="0" y="0" width="${toneWidth}" height="22" rx="6" fill="#19112a" stroke="#2e1065"/>
+      <text x="8" y="15" class="chip-txt" fill="#c084fc">🎯 ${tone}</text>
+    </g>
+  </g>
+
+  <!-- Context Policing Metric -->
+  <g transform="translate(24, 142)">
+    <text x="0" y="0" class="sec-title">CONTEXT POLICING</text>
+    <g transform="translate(0, 8)">
+      <text x="0" y="14" class="metric-main">0% Politeness Tax</text>
+      <text x="126" y="14" class="metric-sub">• ⚡ Pure surgical diffs</text>
+    </g>
+  </g>
+
+  <!-- Vertical Divider Between Left & Right -->
+  <line x1="268" y1="92" x2="268" y2="175" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- ================= RIGHT COLUMN: SCORE HUD & LINUS AUDIT ================= -->
+  <!-- Circular Radial Score Gauge -->
+  <g transform="translate(288, 92)">
+    <!-- SVG Gauge Center (cx: 34, cy: 42) -->
+    <g transform="translate(34, 42)">
+      <!-- Background Track -->
+      <circle cx="0" cy="0" r="${gaugeR}" fill="none" stroke="#1e293b" stroke-width="6"/>
+      <!-- Value Arc -->
+      <circle cx="0" cy="0" r="${gaugeR}" fill="none" stroke="url(#scoreRingGrad)" stroke-width="6" 
+              stroke-linecap="round" stroke-dasharray="${circumference.toFixed(1)}" stroke-dashoffset="${strokeOffset}"
+              transform="rotate(-90)" filter="url(#neonGlow)"/>
+      <!-- Score In Gauge Center -->
+      <text x="0" y="2" text-anchor="middle" class="score-txt">${score}</text>
+      <text x="0" y="15" text-anchor="middle" class="score-denom">/100</text>
+    </g>
+
+    <!-- Right Side of Gauge: Linus Verdict -->
+    <g transform="translate(86, 12)">
+      <text x="0" y="0" class="sec-title">LINUS AUDIT</text>
+      
+      <!-- Verdict Pill -->
+      <g transform="translate(0, 8)">
+        <rect x="0" y="0" width="102" height="25" rx="6" fill="${verdictBg}" stroke="${verdictBorder}"/>
+        <text x="51" y="16" text-anchor="middle" class="verdict-txt">${ratingLabel}</text>
+      </g>
+
+      <!-- Subtitle -->
+      <text x="0" y="47" class="sec-title">VERDICT: ZERO SLOP</text>
+    </g>
+  </g>
+</svg>`;
+}
+
+function generateBadgeSvg(options = {}) {
+  const type = options.type || 'score';
+  const style = escapeXml(options.style || 'antfu');
+  const tone = escapeXml(options.tone || 'karpathy');
+  const archetype = escapeXml(options.archetype || 'Anti-Slop Minimalist');
+  const score = Math.max(5, Math.min(100, Math.round(Number(options.score) || 94)));
+
+  let ratingLabel = "Chef's Taste";
+  let ratingColor = '#10b981';
+
+  if (score < 40) {
+    ratingLabel = 'Criminal Waste';
+    ratingColor = '#ef4444';
+  } else if (score < 70) {
+    ratingLabel = 'Sloppy Amateur';
+    ratingColor = '#f59e0b';
+  } else if (score < 88) {
+    ratingLabel = 'Acceptable Craft';
+    ratingColor = '#06b6d4';
+  }
+
+  let label = 'taste';
+  let value = `${score} / 100 • ${ratingLabel}`;
+  let valColor = ratingColor;
+  let valBg = 'rgba(16, 185, 129, 0.14)';
+  let valBorder = ratingColor;
+
+  if (type === 'dna') {
+    label = 'taste dna';
+    value = `${style} + ${tone}`;
+    valColor = '#c084fc';
+    valBg = 'rgba(192, 132, 252, 0.12)';
+    valBorder = '#a855f7';
+  } else if (type === 'archetype') {
+    label = 'archetype';
+    value = archetype;
+    valColor = '#38bdf8';
+    valBg = 'rgba(56, 189, 248, 0.12)';
+    valBorder = '#0284c7';
+  } else if (type === 'slop') {
+    label = 'politeness tax';
+    value = '0% • Pure Diff';
+    valColor = '#34d399';
+    valBg = 'rgba(52, 211, 153, 0.12)';
+    valBorder = '#10b981';
+  } else if (type === 'roast') {
+    label = 'linus roast';
+    value = `${ratingLabel} 🔥`;
+    valColor = ratingColor;
+    valBg = 'rgba(244, 63, 94, 0.12)';
+    valBorder = ratingColor;
+  }
+
+  // Calculate approximate widths
+  const labelTextWidth = Math.round(label.length * 6.8 + 26);
+  const labelWidth = labelTextWidth + 16;
+  const valueTextWidth = Math.round(value.length * 6.8);
+  const valueWidth = valueTextWidth + 24;
+  const totalWidth = labelWidth + valueWidth;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="28" viewBox="0 0 ${totalWidth} 28" fill="none">
+  <defs>
+    <linearGradient id="badgeBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="${valBorder}" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="labelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .badge-label { font: 700 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; letter-spacing: 0.5px; }
+    .badge-val { font: 700 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: ${valColor}; }
+  </style>
+
+  <!-- Outer Container Box -->
+  <rect x="0.5" y="0.5" width="${totalWidth - 1}" height="27" rx="6" fill="#090d16" stroke="url(#badgeBorderGrad)"/>
+
+  <!-- Left Label Background -->
+  <path d="M 1 6.5 C 1 3.5 3.5 1 6.5 1 L ${labelWidth} 1 L ${labelWidth} 27 L 6.5 27 C 3.5 27 1 24.5 1 21.5 Z" fill="url(#labelBg)"/>
+
+  <!-- Divider Line -->
+  <line x1="${labelWidth}" y1="1" x2="${labelWidth}" y2="27" stroke="#334155" stroke-width="1"/>
+
+  <!-- Right Value Background Tint -->
+  <path d="M ${labelWidth} 1 L ${totalWidth - 6.5} 1 C ${totalWidth - 3.5} 1 ${totalWidth - 1} 3.5 ${totalWidth - 1} 6.5 L ${totalWidth - 1} 21.5 C ${totalWidth - 1} 24.5 ${totalWidth - 3.5} 27 ${totalWidth - 6.5} 27 L ${labelWidth} 27 Z" fill="${valBg}"/>
+
+  <!-- Left Content: Icon & Label -->
+  <g transform="translate(10, 18)">
+    <text x="0" y="0" font-size="12">🍷</text>
+    <text x="18" y="-1" class="badge-label">${label.toUpperCase()}</text>
+  </g>
+
+  <!-- Right Content: Value -->
+  <g transform="translate(${labelWidth + 12}, 17)">
+    <text x="0" y="0" class="badge-val">${value}</text>
   </g>
 </svg>`;
 }
@@ -141,8 +491,23 @@ function renderCardToFile(outputPath, options = {}) {
   return { outputPath, svg };
 }
 
+function renderBadgeToFile(outputPath, options = {}) {
+  const svg = generateBadgeSvg(options);
+
+  const dir = path.dirname(outputPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+
+  fs.writeFileSync(outputPath, svg, 'utf-8');
+  return { outputPath, svg };
+}
+
 module.exports = {
+  THEMES,
   generateCardSvg,
+  generateBadgeSvg,
   generateCardFromFile,
   renderCardToFile,
+  renderBadgeToFile,
 };
