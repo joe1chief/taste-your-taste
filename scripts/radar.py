@@ -205,6 +205,67 @@ def extract_highlights(content: str, max_lines: int = 15) -> str:
     return snippet
 
 
+def resolve_archive_dir(full_name: str) -> Path:
+    """Resolve an isolated archive, refusing unverified existing directories."""
+    parts = full_name.split("/")
+    if len(parts) != 2 or any(
+        not re.fullmatch(r"[A-Za-z0-9_.-]+", part) or part in {".", ".."}
+        for part in parts
+    ):
+        raise ValueError(f"Invalid repository identity: {full_name!r}")
+    target = Path("discovered") / parts[0].lower() / parts[1].lower()
+    for path in [*reversed(target.parents), target]:
+        if path.is_symlink() or (path.exists() and not path.is_dir()):
+            raise ValueError(f"Unsafe archive directory: {path}")
+    if target.exists() and any(target.iterdir()):
+        read_archive_metadata(target, full_name)
+    return target
+
+
+def read_archive_metadata(directory: Path, full_name: str) -> Dict[str, Any]:
+    """Require META.json to identify the repository before reading or writing."""
+    meta_path = directory / "META.json"
+    if meta_path.is_symlink():
+        raise ValueError(f"Unsafe archive metadata: {meta_path}")
+    try:
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise ValueError(f"Unverified archive directory: {directory}") from exc
+    if not isinstance(meta, dict) or str(meta.get("repo", "")).lower() != full_name.lower():
+        raise ValueError(f"Archive repository mismatch: {directory} ({full_name})")
+    return meta
+
+
+def archive_file(directory: Path, fpath: str) -> Path:
+    """Preserve upstream relative paths without allowing archive escapes."""
+    parts = fpath.split("/")
+    if not fpath or any(part in {"", ".", ".."} for part in parts) or "\\" in fpath:
+        raise ValueError(f"Unsafe archive file: {fpath!r}")
+    if parts[0].lower() == "meta.json":
+        raise ValueError("META.json is reserved for archive identity")
+    dest = directory.joinpath(*parts)
+    for path in [dest, *dest.parents]:
+        if path == directory.parent:
+            break
+        if path.is_symlink():
+            raise ValueError(f"Unsafe archive file: {path}")
+    return dest
+
+
+def write_archive(full_name: str, files: Dict[str, str], meta: Dict[str, Any]) -> Path:
+    """Shared write boundary for intake, evolution, and PR staging."""
+    directory = resolve_archive_dir(full_name)
+    destinations = [(archive_file(directory, path), content) for path, content in files.items()]
+    directory.mkdir(parents=True, exist_ok=True)
+    (directory / "META.json").write_text(
+        json.dumps({**meta, "repo": full_name}, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    for dest, content in destinations:
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(content, encoding="utf-8")
+    return directory
+
+
 class TasteRadar:
     def __init__(
         self,
@@ -313,8 +374,20 @@ class TasteRadar:
 
         # Process primary changed file
         fpath, old_sha, new_sha = changed_files[0]
-        repo_shortname = full_name.split("/")[-1]
-        old_file = Path(repo_shortname) / os.path.basename(fpath)
+        archive_dir = resolve_archive_dir(full_name)
+        old_file = archive_file(archive_dir, fpath)
+        archive_meta = {}
+        if (archive_dir / "META.json").exists():
+            archive_meta = read_archive_metadata(archive_dir, full_name)
+        elif not archive_dir.exists():
+            # Historical top-level archives are read only with verified ownership.
+            legacy_dir = Path(full_name.split("/")[-1])
+            if legacy_dir.is_dir() and not legacy_dir.is_symlink() and (legacy_dir / "META.json").exists():
+                try:
+                    archive_meta = read_archive_metadata(legacy_dir, full_name)
+                    old_file = archive_file(legacy_dir, os.path.basename(fpath))
+                except ValueError:
+                    pass
         old_content = old_file.read_text(encoding="utf-8") if old_file.exists() else ""
         new_content = self.api.get_file_content(full_name, fpath) or ""
 
@@ -331,9 +404,8 @@ class TasteRadar:
 
         # Save new content locally
         if self.save_tastes and not self.dry_run:
-            dest_dir = Path(repo_shortname)
-            dest_dir.mkdir(parents=True, exist_ok=True)
-            (dest_dir / os.path.basename(fpath)).write_text(new_content, encoding="utf-8")
+            archive_meta["file_shas"] = current_files
+            write_archive(full_name, {fpath: new_content}, archive_meta)
 
         # Open GitHub Issue
         if self.target_repo and not self.dry_run:
@@ -361,7 +433,7 @@ class TasteRadar:
 ---
 
 ### 📋 Maintainer Action
-- Review updated prompt in `discovered/{safe_dirname}/{os.path.basename(fpath)}`.
+- Review updated prompt in `{archive_dir.as_posix()}/{fpath}`.
 - Sync latest insights into modular Lego bricks.
 """
             issue_url = self.api.create_issue(
@@ -496,14 +568,8 @@ class TasteRadar:
         stars: int,
     ) -> Optional[str]:
         """Automatically create a git branch, commit curated taste, and open a Pull Request."""
-        repo_shortname = full_name.split("/")[-1]
-        branch_name = f"taste-radar/{full_name.replace('/', '-')}"
-        target_dir = Path(repo_shortname)
-        target_dir.mkdir(parents=True, exist_ok=True)
-
-        for fpath, raw_text in file_contents.items():
-            dest = target_dir / os.path.basename(fpath)
-            dest.write_text(raw_text, encoding="utf-8")
+        target_dir = resolve_archive_dir(full_name)
+        branch_name = f"taste-radar/{target_dir.relative_to('discovered').as_posix()}"
 
         meta = {
             "repo": full_name,
@@ -513,7 +579,9 @@ class TasteRadar:
             "vibe": analysis.get("one_line_vibe", ""),
             "curated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         }
-        (target_dir / "META.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+        if (target_dir / "META.json").exists():
+            meta = {**read_archive_metadata(target_dir, full_name), **meta}
+        write_archive(full_name, file_contents, meta)
 
         try:
             subprocess.run(["git", "checkout", "-B", branch_name], check=True, capture_output=True)
@@ -534,13 +602,14 @@ Captured and structured developer taste from [{full_name}](https://github.com/{f
 - **Vibe**: *{analysis.get('one_line_vibe', '')}*
 - **Language**: `{lang}`
 
-All raw rule files and metadata have been staged under `{repo_shortname}/`.
+All raw rule files and metadata have been staged under `{target_dir.as_posix()}/`.
 """
             pr_cmd = [
                 "gh", "pr", "create",
                 "--repo", self.target_repo,
                 "--title", pr_title,
                 "--body", pr_body,
+                "--draft",
                 "--base", "main",
                 "--head", branch_name,
             ]
@@ -612,36 +681,21 @@ All raw rule files and metadata have been staged under `{repo_shortname}/`.
         highlights = analysis.get("highlights", [])
         assessment = analysis.get("engineering_assessment", "")
 
-        # Save to top-level project directory if enabled
+        archive_dir = resolve_archive_dir(full_name)
         if self.save_tastes and not self.dry_run:
-            repo_shortname = full_name.split("/")[-1]
-            save_dir = Path(repo_shortname)
-            save_dir.mkdir(parents=True, exist_ok=True)
-            for fpath, raw_text in file_contents.items():
-                dest_file = save_dir / os.path.basename(fpath)
-                with open(dest_file, "w", encoding="utf-8") as f:
-                    f.write(raw_text)
-
-            with open(save_dir / "META.json", "w", encoding="utf-8") as f:
-                json.dump(
-                    {
-                        "repo": full_name,
-                        "stars": stars,
-                        "language": lang,
-                        "description": desc,
-                        "url": repo_url,
-                        "archetype": archetype,
-                        "vibe": vibe,
-                        "highlights": highlights,
-                        "assessment": assessment,
-                        "files": files,
-                        "file_shas": file_shas,
-                        "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-                    },
-                    f,
-                    indent=2,
-                    ensure_ascii=False,
-                )
+            write_archive(full_name, file_contents, {
+                "stars": stars,
+                "language": lang,
+                "description": desc,
+                "url": repo_url,
+                "archetype": archetype,
+                "vibe": vibe,
+                "highlights": highlights,
+                "assessment": assessment,
+                "files": files,
+                "file_shas": file_shas,
+                "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            })
 
         highlights_md = "\n".join(f"- {h}" for h in highlights) if highlights else "- Standard operational instructions."
 
@@ -687,7 +741,7 @@ A high-profile repository configuration has been captured and evaluated by **Tas
 ---
 
 ### 📋 Maintainer Review Checklist
-- [ ] Verify rule files in `{full_name.split('/')[-1]}/`.
+- [ ] Verify rule files in `{archive_dir.as_posix()}/`.
 - [ ] Add an entry into the main `README.md` Hall of Fame!
 """
             issue_url = self.api.create_issue(
