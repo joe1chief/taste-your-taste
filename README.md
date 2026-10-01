@@ -392,6 +392,8 @@ flowchart LR
 * **Strict Quality Gate**: Only captures repositories that are **either on GitHub Trending** (Daily/Weekly) or **have ⭐️ 1,000+ Stars** (rejecting personal/low-impact repos).
 * **⚡ Prompt Evolution Tracking**: Stores Git Blob SHAs to detect when authors iterate or revise their prompts. When an author updates their rules, Radar detects the diff and triggers an evolution report issue!
 * **🚀 Automated PR Staging (`--create-pr`)**: Optionally creates git branches and automated Pull Requests to stage newly discovered tastes straight into the repository.
+* **Isolated Archives**: New radar imports live in `discovered/<owner>/<repo>/`, with `META.json` verifying repository ownership before every write. Upstream file paths are preserved. Existing curated top-level directories and `skills/` remain unchanged; evolution can read historical archives only when their metadata matches. The recovered `mattpocock/skills` import is in [`discovered/mattpocock/skills/`](./discovered/mattpocock/skills).
+* **Regression Tests**: Run `python3 -m unittest discover -s test -p "test_*.py"` for offline radar coverage, and `npm test` for the CLI suite.
 * **Zero Spam**: History is tracked in `data/seen_repos.json` to prevent duplicates.
 
 ---
