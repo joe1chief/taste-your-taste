@@ -1,0 +1,26 @@
+{
+  "repo": "mattpocock/skills",
+  "stars": 273258,
+  "language": "Shell",
+  "description": "Skills for Real Engineers. Straight from my .agents directory.",
+  "url": "https://github.com/mattpocock/skills",
+  "archetype": "Pragmatic Systems",
+  "vibe": "A ruthless librarian for AI skills: every file has a place, every place has a rule, and no em-dash survives.",
+  "highlights": [
+    "Bucket taxonomy with strict promotion rules: engineering/ and productivity/ are promoted, misc/, in-progress/, and deprecated/ are not, and the boundary is enforced across README, plugin.json, and docs.",
+    "Manifest and docs synchronization is mandatory: promoted skills must appear in README.md and .claude-plugin/plugin.json, and must have a docs page with four fixed sections.",
+    "The ask-matt router must be updated whenever a user-reachable skill is added, renamed, removed, or reflowed, because a stale router is treated as a lying router.",
+    "Symlink-based local harness linking via scripts/link-skills.sh keeps installed skills current with git pull, with explicit re-run triggers.",
+    "A repo-wide prose ban on em-dashes, with a rewrite instruction that forbids blind character substitution."
+  ],
+  "assessment": "This file treats documentation and packaging as first-class engineering artifacts, not afterthoughts. The constraints are unusually concrete: exact file paths, exact manifest fields, exact section names, and exact commands to run after changes. That specificity is what makes the rules enforceable by both humans and agents, and the em-dash ban shows a rare willingness to legislate prose style at the repository level.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "102513ff25679808515742155bbf564fe2493d43"
+  },
+  "discovered_at": "2026-10-01T07:58:55.579384+00:00"
+}

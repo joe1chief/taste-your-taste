@@ -1,0 +1,24 @@
+{
+  "repo": "firebase/firebase-ios-sdk",
+  "stars": 6789,
+  "language": "C++",
+  "description": "Firebase SDK for Apple App Development",
+  "url": "https://github.com/firebase/firebase-ios-sdk",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship Swift-first APIs with async/await, test everything, and let the formatters handle the rest.",
+  "highlights": [
+    "Swift-first API design: new APIs must be Swift, with Objective-C requiring strong justification.",
+    "Async/await is mandatory for new asynchronous APIs; callbacks need justification.",
+    "Sendable types required for safe concurrency in new APIs.",
+    "Access control discipline: prefer public over open, and final classes unless subclassing is explicitly needed.",
+    "Strict formatting enforced via clang-format and swiftformat, with CI style checks."
+  ],
+  "assessment": "This file reflects a mature, systems-level engineering culture that prioritizes long-term maintainability over short-term convenience. By mandating Swift-first design, async/await, and Sendable types, it ensures the SDK stays modern and concurrency-safe. The emphasis on testing and formatting automation reduces friction and prevents regressions, making it a strong example of pragmatic, quality-focused development.",
+  "files": [
+    "agents.md"
+  ],
+  "file_shas": {
+    "agents.md": "c552260f8a29c23fdf6efebc44693fe528533efe"
+  },
+  "discovered_at": "2026-10-01T07:59:05.481733+00:00"
+}

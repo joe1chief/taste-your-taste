@@ -1,0 +1,24 @@
+{
+  "repo": "modelcontextprotocol/servers",
+  "stars": 90874,
+  "language": "TypeScript",
+  "description": "Model Context Protocol Servers",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Monorepo discipline with protocol precision: build, test, and ship reference servers that speak MCP fluently.",
+  "highlights": [
+    "Strict TypeScript with Zod validation and ES module imports using .js extensions",
+    "Dynamic CI package detection via find + jq matrix strategy for both TS and Python",
+    "Verb-first tool naming convention (e.g., get-file-info, not file-info)",
+    "Explicit MCP tool annotations: readOnlyHint, idempotentHint, destructiveHint",
+    "Selective contribution policy: no new servers, only protocol-feature enhancements"
+  ],
+  "assessment": "This file embodies pragmatic systems thinking by treating the monorepo as a collection of independently publishable packages with shared conventions. The strict typing, Zod schemas, and pyright enforcement create a safety net that scales across languages, while the dynamic CI matrix avoids hardcoded package lists. The contribution guidelines are notably opinionated, steering contributors toward protocol demonstrations rather than server proliferation, which keeps the reference implementations focused and maintainable.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "ad30b915a851b1da2cba5534cd57db890a498915"
+  },
+  "discovered_at": "2026-10-01T07:59:10.000733+00:00"
+}

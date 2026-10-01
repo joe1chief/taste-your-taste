@@ -7,7 +7,11 @@
       "AGENTS.md"
     ],
     "archetype": "Anti-Slop Minimalist",
-    "status": "curated"
+    "status": "curated",
+    "file_shas": {
+      "AGENTS.md": "a590b117ce6898bb2bab0021ddcf7d2b3ba7eb6b",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    }
   },
   "stripe/stripe-java": {
     "dir": "stripe-java",
@@ -58,7 +62,11 @@
       "CLAUDE.md"
     ],
     "archetype": "Anti-Slop Minimalist",
-    "status": "curated"
+    "status": "curated",
+    "file_shas": {
+      "AGENTS.md": "da73ea6f3b5d607f9b2fc0c3a49f8c2703ae7e75",
+      "CLAUDE.md": "259e94fdecba6473525ab544e26894c1a302913d"
+    }
   },
   "mksglu/context-mode": {
     "stars": 24343,
@@ -71,7 +79,10 @@
     "archetype": "Engineering Craft",
     "discovered_at": "2026-09-30T15:03:34.997139+00:00",
     "issue_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "file_shas": {
+      "CLAUDE.md": "c1da17b5b8950d35b49182691d6c4c4c9302610a"
+    }
   },
   "DietrichGebert/ponytail": {
     "dir": "ponytail",
@@ -81,7 +92,10 @@
       "AGENTS.md"
     ],
     "archetype": "Engineering Craft",
-    "status": "curated"
+    "status": "curated",
+    "file_shas": {
+      "AGENTS.md": "bc3595d1a07cff2b135139cadfa4c17ec412667b"
+    }
   },
   "agentsmd/agents.md": {
     "dir": "agentsmd",
@@ -216,7 +230,10 @@
       "AGENTS.md"
     ],
     "archetype": "Defensive Architect",
-    "status": "curated"
+    "status": "curated",
+    "file_shas": {
+      "AGENTS.md": "2a5050bf87f692faf65b07adffdb71c77c0fc420"
+    }
   },
   "Prismer-AI/Prismer": {
     "dir": "prismer",
@@ -265,5 +282,101 @@
     "files": [],
     "archetype": "Anti-Slop Minimalist",
     "status": "curated"
+  },
+  "mattpocock/skills": {
+    "stars": 273258,
+    "language": "Shell",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "102513ff25679808515742155bbf564fe2493d43"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "A ruthless librarian for AI skills: every file has a place, every place has a rule, and no em-dash survives.",
+    "discovered_at": "2026-10-01T07:58:56.039513+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/2",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "heygen-com/hyperframes": {
+    "stars": 54916,
+    "language": "TypeScript",
+    "description": "Write HTML. Render video. Built for agents.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9f2c4245734f0e1751246aea11d092fd4508e429",
+      "CLAUDE.md": "64c77db284086e8ee8b411e039b3873087ffe5c0"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-01T07:59:00.984792+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/3",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "firebase/firebase-ios-sdk": {
+    "stars": 6789,
+    "language": "C++",
+    "description": "Firebase SDK for Apple App Development",
+    "files": [
+      "agents.md"
+    ],
+    "file_shas": {
+      "agents.md": "c552260f8a29c23fdf6efebc44693fe528533efe"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship Swift-first APIs with async/await, test everything, and let the formatters handle the rest.",
+    "discovered_at": "2026-10-01T07:59:05.900201+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/4",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "modelcontextprotocol/servers": {
+    "stars": 90874,
+    "language": "TypeScript",
+    "description": "Model Context Protocol Servers",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "ad30b915a851b1da2cba5534cd57db890a498915"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Monorepo discipline with protocol precision: build, test, and ship reference servers that speak MCP fluently.",
+    "discovered_at": "2026-10-01T07:59:10.410592+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/5",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "colbymchenry/codegraph": {
+    "stars": 72688,
+    "language": "C",
+    "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2abe06c4adbcf66102f43ee54a11678e736d638b",
+      "CLAUDE.md": "217d62d2e535ab7b93136728523e96707f153580"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Deterministic graphs, surgical edits, and a single source of truth for every agent.",
+    "discovered_at": "2026-10-01T07:59:15.306821+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/6",
+    "pr_url": null,
+    "status": "pending_review"
   }
 }
