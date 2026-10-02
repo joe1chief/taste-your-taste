@@ -1,0 +1,25 @@
+{
+  "stars": 9696,
+  "language": "Java",
+  "description": "SeaTunnel is a multimodal, high-performance, distributed, massive data integration tool.",
+  "url": "https://github.com/apache/seatunnel",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "LLM Context Guide for Apache SeaTunnel",
+    "This guide helps AI assistants (LLMs / Agents) make **safe, consistent, and verifiable** changes to the Apache SeaTunnel codebase. It mirrors practices from mature Apache projects and adapts them to SeaTunnel’s **build, testing, architecture, and documentation conventions**.",
+    "⚠️ CRITICAL: Validate Before Proposing Changes",
+    "Agents MUST run verification commands locally before suggesting or finalizing changes."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "25665aa7a49a0c71f923a1d4cd0daf3f6ab7240c",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-02T07:44:48.450962+00:00",
+  "repo": "apache/seatunnel"
+}

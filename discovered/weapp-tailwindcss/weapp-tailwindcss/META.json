@@ -1,0 +1,26 @@
+{
+  "stars": 1863,
+  "language": "TypeScript",
+  "description": "Bring Tailwind CSS to every platform! 把 Tailwind CSS 的原子化开发体验带到全端！",
+  "url": "https://github.com/weapp-tailwindcss/weapp-tailwindcss",
+  "archetype": "Defensive Architect",
+  "vibe": "Build-graph purist who treats filesystem paths, bundler lifecycles, and multi-agent checkouts as sacred contracts.",
+  "highlights": [
+    "Nearest-AGENTS.md discovery is mandatory before any edit, with explicit conflict-pause semantics instead of loose interpretation.",
+    "Bundler plugins are forbidden from using fs to write build output; all mutations must flow through plugin APIs, emitFile, or loader results.",
+    "Strict separation of filesystem paths from module ids/URLs, with mandatory POSIX/Windows/drive-letter regression coverage.",
+    "Multi-agent safety: one writer per checkout, git worktree isolation, and mandatory git status re-checks before every mutating git operation.",
+    "Tailwind CSS generation is monopolized by weapp-tailwindcss; official Tailwind PostCSS/Vite plugins are explicitly banned."
+  ],
+  "assessment": "This file reads like a systems engineer's contract rather than a style guide: it encodes invariants (build-graph provenance, path semantics, plugin lifecycle) that prevent entire classes of subtle bugs before they can be written. The multi-agent and preflight rules show rare operational maturity, treating concurrent AI writers and cross-platform E2E as first-class hazards. The result is a high-trust, low-ambiguity environment where 'just make it work' shortcuts are structurally blocked.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6234e97e972400fb109eeb1188bd1258839a2e88",
+    "CLAUDE.md": "5ed33c0df17d2126fd6f35d509714513ec249edc"
+  },
+  "discovered_at": "2026-10-02T07:45:18.973866+00:00",
+  "repo": "weapp-tailwindcss/weapp-tailwindcss"
+}

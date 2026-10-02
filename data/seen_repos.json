@@ -9,9 +9,19 @@
     "archetype": "Anti-Slop Minimalist",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "a590b117ce6898bb2bab0021ddcf7d2b3ba7eb6b",
+      "AGENTS.md": "b049c28f50eb6a533ce968660989b402862fb0a1",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
-    }
+    },
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "a590b117ce6898bb2bab0021ddcf7d2b3ba7eb6b",
+        "new_sha": "b049c28f50eb6a533ce968660989b402862fb0a1",
+        "vibe_shift": "Shifted from no guidance to a structured, agent-centric instruction set with explicit architectural context and skill boundaries.",
+        "summary": "The file was introduced as a new primary instruction surface for agents, establishing a clear agent-first project identity and a comprehensive architecture overview. It centralizes agent guidance by referencing CONTRIBUTING.md for build instructions and skill tables, while explicitly defining two skill collections and their usage contexts. The addition of a detailed crate table provides agents with immediate structural context, reducing reliance on external documentation.",
+        "timestamp": "2026-10-02T07:42:54.507611+00:00"
+      }
+    ]
   },
   "stripe/stripe-java": {
     "dir": "stripe-java",
@@ -376,6 +386,102 @@
     "vibe": "Deterministic graphs, surgical edits, and a single source of truth for every agent.",
     "discovered_at": "2026-10-01T07:59:15.306821+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/6",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "obra/superpowers": {
+    "stars": 294108,
+    "language": "Shell",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9587a6836b1419138e082a93d2a52850d9476626"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Treat every PR as a reputation bet — if you can't prove a real human felt the pain, don't submit it.",
+    "discovered_at": "2026-10-02T07:43:33.712527+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/9",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "earendil-works/pi": {
+    "stars": 111438,
+    "language": "TypeScript",
+    "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a6a2c708d5810d018719eb6040b4e238959a524c"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Multi-agent-safe, type-strict, no-fluff engineering with explicit guardrails for every destructive action.",
+    "discovered_at": "2026-10-02T07:43:44.958438+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/10",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pbakaus/impeccable": {
+    "stars": 73877,
+    "language": "JavaScript",
+    "description": "The design language that makes your AI harness better at design.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "38afae21fcfa0e852a40813ddc2b1b5e7563e7e4",
+      "CLAUDE.md": "5b618477d0baf4546a76a2de9f2ec41bca9e6f0d"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-02T07:44:16.877471+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/11",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "apache/seatunnel": {
+    "stars": 9696,
+    "language": "Java",
+    "description": "SeaTunnel is a multimodal, high-performance, distributed, massive data integration tool.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "25665aa7a49a0c71f923a1d4cd0daf3f6ab7240c",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-02T07:44:48.997666+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/12",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "weapp-tailwindcss/weapp-tailwindcss": {
+    "stars": 1863,
+    "language": "TypeScript",
+    "description": "Bring Tailwind CSS to every platform! 把 Tailwind CSS 的原子化开发体验带到全端！",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6234e97e972400fb109eeb1188bd1258839a2e88",
+      "CLAUDE.md": "5ed33c0df17d2126fd6f35d509714513ec249edc"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Build-graph purist who treats filesystem paths, bundler lifecycles, and multi-agent checkouts as sacred contracts.",
+    "discovered_at": "2026-10-02T07:45:19.425968+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/13",
     "pr_url": null,
     "status": "pending_review"
   }

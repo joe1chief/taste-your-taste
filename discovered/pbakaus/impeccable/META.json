@@ -1,0 +1,25 @@
+{
+  "stars": 73877,
+  "language": "JavaScript",
+  "description": "The design language that makes your AI harness better at design.",
+  "url": "https://github.com/pbakaus/impeccable",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository Guidelines",
+    "Project Structure & Module Organization",
+    "`skill/` is the source of truth for the Impeccable skill: `SKILL.src.md`, `reference/`, `scripts/`, and `agents/`. `skill/scripts/` holds the launcher (`impeccable`, `impeccable.cmd`), the pinned engine `VERSION`, `command-metadata.json`, and the in-page live-mode JS. Every skill verb (`{{scripts_path}}/impeccable <verb>`) runs in the engine binary, built from this repo's Cargo workspace under `crates/`; the root `ENGINE_VERSION` pins the released binary used by installs. Read `docs/ENGINE.md` before changing runtime code. Build logic lives in `scripts/`, with provider configs in `scripts/lib/transformers/`. `cli/` is the npm shim that runs the same binary, the browser extension lives in `extension/`, and regression coverage lives in the Rust crates and `tests/`, including fixtures under `tests/fixtures/` and behavior goldens under `tests/oracle/`. The website and service live in the separate private `impeccable-site` repo. `dist/` and `build/` are generated and gitignored. The root harness folders (`.agents/`, `.claude/`, `.cursor/`, etc.) and `plugin/` are generated distribution artifacts that are tracked for direct repo installs, not hand-authored source.",
+    "Build, Test, and Development Commands"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "38afae21fcfa0e852a40813ddc2b1b5e7563e7e4",
+    "CLAUDE.md": "5b618477d0baf4546a76a2de9f2ec41bca9e6f0d"
+  },
+  "discovered_at": "2026-10-02T07:44:16.242930+00:00",
+  "repo": "pbakaus/impeccable"
+}

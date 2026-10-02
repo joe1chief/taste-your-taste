@@ -1,0 +1,24 @@
+{
+  "stars": 294108,
+  "language": "Shell",
+  "description": "An agentic skills framework & software development methodology that works.",
+  "url": "https://github.com/obra/superpowers",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Treat every PR as a reputation bet — if you can't prove a real human felt the pain, don't submit it.",
+  "highlights": [
+    "94% PR rejection rate is weaponized as a deterrent against agent-generated slop, with explicit language about 'slop that's made of lies'.",
+    "Mandatory self-disclosure of model, harness, harness version, and installed plugins for every contribution — hiding agent authorship is grounds for closure.",
+    "Zero-dependency plugin by design; third-party dependencies are rejected unless adding new harness support.",
+    "Skills are treated as behavior-shaping code, not prose — changes require adversarial pressure testing and before/after eval evidence.",
+    "New harness integrations must pass a concrete acceptance test: 'Let's make a react todo list' must auto-trigger the brainstorming skill, with a full transcript pasted in the PR."
+  ],
+  "assessment": "This file is unusually effective because it inverts the usual contributor-guidelines genre: instead of inviting contributions, it aggressively filters them, and it does so with concrete, falsifiable criteria (acceptance tests, transcripts, eval results) rather than vague quality language. By naming the failure modes explicitly — spray-and-pray batches, speculative fixes, fabricated problems, fork syncs — it removes the ambiguity that agents exploit to rationalize low-effort output. The insistence on human review of the full diff and disclosure of the authoring environment is a rare and honest acknowledgment that provenance matters for how a change should be weighed.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9587a6836b1419138e082a93d2a52850d9476626"
+  },
+  "discovered_at": "2026-10-02T07:43:33.195034+00:00",
+  "repo": "obra/superpowers"
+}

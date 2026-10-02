@@ -1,0 +1,24 @@
+{
+  "stars": 111438,
+  "language": "TypeScript",
+  "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+  "url": "https://github.com/earendil-works/pi",
+  "archetype": "Defensive Architect",
+  "vibe": "Multi-agent-safe, type-strict, no-fluff engineering with explicit guardrails for every destructive action.",
+  "highlights": [
+    "Multi-session git safety: only stage files you changed, never `git add -A`, never `git reset --hard` or `--no-verify`.",
+    "Erasable TypeScript only (Node strip-only mode): no enums, namespaces, parameter properties, or `import =`.",
+    "No inline/dynamic imports; top-level imports only, and never guess external API types — check node_modules.",
+    "Dependency changes treated as reviewed code: exact pins, `--ignore-scripts`, undici changelog review, shrinkwrap allowlist.",
+    "Never modify generated files directly (`models.generated.ts`); edit the generator script and regenerate."
+  ],
+  "assessment": "This file reads like a senior maintainer's operational contract rather than a style guide: it encodes failure modes (parallel agent sessions stomping git state, lifecycle-script supply-chain risk, non-erasable TS breaking strip-only runtimes) as hard rules. The insistence on reading files in full before wide changes, answering questions before editing, and stating agreement/disagreement explicitly reflects a bias toward correctness and honest communication over velocity theater. It is unusually strong on blast-radius control — every destructive or irreversible action has a named prohibition or an explicit user-confirmation gate.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a6a2c708d5810d018719eb6040b4e238959a524c"
+  },
+  "discovered_at": "2026-10-02T07:43:44.367190+00:00",
+  "repo": "earendil-works/pi"
+}
