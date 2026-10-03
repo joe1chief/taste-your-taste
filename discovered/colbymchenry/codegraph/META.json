@@ -1,0 +1,26 @@
+{
+  "repo": "colbymchenry/codegraph",
+  "stars": 72688,
+  "language": "C",
+  "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+  "url": "https://github.com/colbymchenry/codegraph",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Deterministic graphs, surgical edits, and a single source of truth for every agent.",
+  "highlights": [
+    "Extraction is deterministic — derived from AST, not LLM-summarized.",
+    "A derivation that two callers render must live in src/graph/, not in ToolHandler — two derivations eventually disagree.",
+    "Adding a 5th agent is one new file in targets/ + one entry in registry.ts.",
+    "Any new SQL or grammar wasm must be copied or it won't ship.",
+    "server-instructions.ts is the single source of truth for agent-facing guidance."
+  ],
+  "assessment": "This file treats agent instructions as production infrastructure: it pins exact Node ranges, documents the two-vitest-project split and why it exists, and names the failure mode behind each rule (missing wasm = unhighlighted screen, duplicated derivations = drift). The insistence on deterministic AST extraction over LLM summarization, plus the 'one file + one registry entry' extension contract, shows a systems designer optimizing for reproducibility and low-friction contribution rather than cleverness.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fd5daee8ef4c5d64562498e5dd7a035952762f0f",
+    "CLAUDE.md": "217d62d2e535ab7b93136728523e96707f153580"
+  },
+  "discovered_at": "2026-10-01T07:59:14.919474+00:00"
+}

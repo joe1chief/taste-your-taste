@@ -1,0 +1,26 @@
+{
+  "stars": 52505,
+  "language": "JavaScript",
+  "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+  "url": "https://github.com/coreyhaines31/marketingskills",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship skills like software: versioned, tested, and cross-agent compatible.",
+  "highlights": [
+    "Two-layer versioning system with strict rules: repo release (x.y.z) and per-skill metadata.version, both CI-enforced.",
+    "Zero-dependency Node.js CLI tools with contract tests using mocked fetch — no live API calls in tests.",
+    "Cross-agent compatibility enforced: Claude Code-only syntax like `!`command`` is explicitly banned from SKILL.md files.",
+    "Hard constraints on skill structure: SKILL.md under 500 lines, name must match directory, description 1-1024 chars with trigger phrases.",
+    "Update-check protocol that only prompts users when meaningful (2+ skills updated or major version bump)."
+  ],
+  "assessment": "This file treats marketing content as versioned software artifacts, with CI gates that catch the exact failure modes (unbumped skills invisible to installed users, orphaned reference files) that plague content repos. The explicit separation of cross-agent vs. Claude Code-only patterns shows mature awareness of the multi-runtime reality agents now live in. The versioning rules are unusually precise — distinguishing 'content added to existing skill' from 'new skill' prevents the version inflation that makes changelogs useless.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0d5e1f810382c1bc735e829282f7a124b68d9204",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-03T07:17:13.530896+00:00",
+  "repo": "coreyhaines31/marketingskills"
+}

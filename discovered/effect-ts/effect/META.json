@@ -1,0 +1,24 @@
+{
+  "stars": 16625,
+  "language": "TypeScript",
+  "description": "Build production-ready applications in TypeScript",
+  "url": "https://github.com/Effect-TS/effect",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Precision over brute force: run the narrowest test that proves your change, never the whole suite.",
+  "highlights": [
+    "Validation is mapped to change type via a table, enforcing the narrowest possible test scope.",
+    "Bare `pnpm test` and `pnpm doctest` are explicitly forbidden because they start watch mode.",
+    "Generated files (barrel `index.ts`, `LLMS.md`, migration docs) must be regenerated, never hand-edited.",
+    "Type-system behavior is validated with tstyche (`pnpm test-types`), not runtime tests.",
+    "Ad hoc probes go in `scratchpad/<name>.ts` and must be removed when finished."
+  ],
+  "assessment": "This file reflects a mature monorepo discipline where correctness is proven by the smallest possible command, not by running everything. The explicit mapping from change type to validation command prevents both under-testing and wasteful full-suite runs, while the generated-file rules protect a large codebase from drift. The tone is terse and operational, treating the reader as a competent contributor who needs guardrails, not tutorials.",
+  "files": [
+    ".agents/AGENTS.md"
+  ],
+  "file_shas": {
+    ".agents/AGENTS.md": "e6450c28e1d6d7002e46500f243c2fd06e6f0e52"
+  },
+  "discovered_at": "2026-10-03T07:17:23.444148+00:00",
+  "repo": "Effect-TS/effect"
+}

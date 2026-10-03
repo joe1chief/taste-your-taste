@@ -323,7 +323,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "9f2c4245734f0e1751246aea11d092fd4508e429",
-      "CLAUDE.md": "64c77db284086e8ee8b411e039b3873087ffe5c0"
+      "CLAUDE.md": "a7c5ef381a4b9b918dd681e3c933ea5282b890e3"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -331,7 +331,17 @@
     "discovered_at": "2026-10-01T07:59:00.984792+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/3",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "64c77db284086e8ee8b411e039b3873087ffe5c0",
+        "new_sha": "a7c5ef381a4b9b918dd681e3c933ea5282b890e3",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-03T07:16:21.164338+00:00"
+      }
+    ]
   },
   "firebase/firebase-ios-sdk": {
     "stars": 6789,
@@ -378,7 +388,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2abe06c4adbcf66102f43ee54a11678e736d638b",
+      "AGENTS.md": "fd5daee8ef4c5d64562498e5dd7a035952762f0f",
       "CLAUDE.md": "217d62d2e535ab7b93136728523e96707f153580"
     },
     "source": "trending",
@@ -387,7 +397,17 @@
     "discovered_at": "2026-10-01T07:59:15.306821+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/6",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2abe06c4adbcf66102f43ee54a11678e736d638b",
+        "new_sha": "fd5daee8ef4c5d64562498e5dd7a035952762f0f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-03T07:16:55.483765+00:00"
+      }
+    ]
   },
   "obra/superpowers": {
     "stars": 294108,
@@ -482,6 +502,102 @@
     "vibe": "Build-graph purist who treats filesystem paths, bundler lifecycles, and multi-agent checkouts as sacred contracts.",
     "discovered_at": "2026-10-02T07:45:19.425968+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/13",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Panniantong/Agent-Reach": {
+    "stars": 89031,
+    "language": "Python",
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "ce2492f488ef745551f88e12a32e87babeb34b9b"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Glue, don't rewrite — route cleanly, test everything, and never touch upstream code.",
+    "discovered_at": "2026-10-03T07:17:02.316115+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/16",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "JuliusBrussee/caveman": {
+    "stars": 109218,
+    "language": "Go",
+    "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "85943d4d4f945860183d2674b17b05a7941064e7",
+      "CLAUDE.md": "d3b235eb5e942dadc8230305e1fb754402aace5c"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Why use many token when few token do trick — but route every repo like a paranoid monorepo architect.",
+    "discovered_at": "2026-10-03T07:17:08.156394+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/17",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "coreyhaines31/marketingskills": {
+    "stars": 52505,
+    "language": "JavaScript",
+    "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0d5e1f810382c1bc735e829282f7a124b68d9204",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship skills like software: versioned, tested, and cross-agent compatible.",
+    "discovered_at": "2026-10-03T07:17:13.982444+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/18",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "getsentry/sentry": {
+    "stars": 45074,
+    "language": "Python",
+    "description": "Developer-first error tracking and performance monitoring",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ca4a92502681c111439147d2aa88fc3d149f0ece",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Monorepo discipline: virtualenvs, scoped AGENTS.md files, and never leak a customer slug into git history.",
+    "discovered_at": "2026-10-03T07:17:18.977975+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/19",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Effect-TS/effect": {
+    "stars": 16625,
+    "language": "TypeScript",
+    "description": "Build production-ready applications in TypeScript",
+    "files": [
+      ".agents/AGENTS.md"
+    ],
+    "file_shas": {
+      ".agents/AGENTS.md": "e6450c28e1d6d7002e46500f243c2fd06e6f0e52"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Precision over brute force: run the narrowest test that proves your change, never the whole suite.",
+    "discovered_at": "2026-10-03T07:17:24.112971+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/20",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,26 @@
+{
+  "stars": 109218,
+  "language": "Go",
+  "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+  "url": "https://github.com/JuliusBrussee/caveman",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Why use many token when few token do trick — but route every repo like a paranoid monorepo architect.",
+  "highlights": [
+    "Binding cross-repo routing table: each concern (skills, Engine, MV3 extension, Agent SDK, Browse driver, Pebble) has exactly one owning repository.",
+    "Explicit visibility policy per repo — public, private-during-development, or private commercial — declared up front to prevent accidental leaks.",
+    "Skills are pulled in via @-imports rather than duplicated, keeping the instruction file a thin router instead of a monolith.",
+    "Hard rule to read CLAUDE.md before any repository work, establishing a single source of truth for agent behavior.",
+    "Absolute filesystem paths for sibling repos, removing ambiguity about where work belongs."
+  ],
+  "assessment": "This file treats agent instructions as a routing layer rather than a knowledge dump, which is unusually disciplined for a viral-toy repo. By pinning each workstream to a specific repo and visibility tier, it prevents the classic failure mode of agents editing the wrong codebase or leaking private commercial source into public PRs. The @-import pattern keeps the file short while still composing rich skill definitions, matching the project's own 'few token do trick' ethos.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "85943d4d4f945860183d2674b17b05a7941064e7",
+    "CLAUDE.md": "d3b235eb5e942dadc8230305e1fb754402aace5c"
+  },
+  "discovered_at": "2026-10-03T07:17:07.613716+00:00",
+  "repo": "JuliusBrussee/caveman"
+}

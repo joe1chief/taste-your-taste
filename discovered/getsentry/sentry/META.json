@@ -1,0 +1,26 @@
+{
+  "stars": 45074,
+  "language": "Python",
+  "description": "Developer-first error tracking and performance monitoring",
+  "url": "https://github.com/getsentry/sentry",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Monorepo discipline: virtualenvs, scoped AGENTS.md files, and never leak a customer slug into git history.",
+  "highlights": [
+    "AGENTS.md files are declared the single source of truth for AI agent instructions, explicitly forbidding duplication into CLAUDE.md or Cursor rules.",
+    "Context-aware loading routes agents to the correct AGENTS.md based on file path (backend, tests, frontend), preventing cross-cutting confusion.",
+    "Hard rule against customer information in PRs, commits, or code, with prescribed synthetic placeholders like org-slug and user@example.com.",
+    "Frontend and backend are not atomically deployed, so mixed changes must be split into separate PRs with backend landing first.",
+    "Skills under .agents/skills/ are the home for workflow steering, keeping long guidance out of editor-specific rule files."
+  ],
+  "assessment": "This file reflects mature monorepo hygiene: it treats agent instructions as versioned, scoped artifacts rather than a single dumping ground, and it encodes deployment reality (non-atomic frontend/backend) directly into PR rules. The customer-data prohibition is a rare and valuable anti-slop constraint that protects public git history, and the insistence on running pytest in the virtualenv with specific flags shows hard-won operational knowledge. The result is guidance that is specific, enforceable, and resistant to the usual AI-agent drift toward generic advice.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ca4a92502681c111439147d2aa88fc3d149f0ece",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-03T07:17:18.447097+00:00",
+  "repo": "getsentry/sentry"
+}

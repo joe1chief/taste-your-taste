@@ -1,0 +1,25 @@
+{
+  "repo": "heygen-com/hyperframes",
+  "stars": 54916,
+  "language": "TypeScript",
+  "description": "Write HTML. Render video. Built for agents.",
+  "url": "https://github.com/heygen-com/hyperframes",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Hyperframes",
+    "Open-source video rendering framework: write HTML, render video.",
+    "This repo ships AI agent skills via [vercel-labs/skills](https://github.com/vercel-labs/skills). Install them before writing compositions — they encode framework-specific patterns that generic docs don't cover. **Default to the core set** — the `/hyperframes` router installs each creation workflow on demand; install everything only when the user explicitly asks for the full set.",
+    "npx hyperframes skills update           # default: installs/refreshes the core set — workflows install on demand"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9f2c4245734f0e1751246aea11d092fd4508e429",
+    "CLAUDE.md": "a7c5ef381a4b9b918dd681e3c933ea5282b890e3"
+  },
+  "discovered_at": "2026-10-01T07:59:00.546996+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "stars": 89031,
+  "language": "Python",
+  "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+  "url": "https://github.com/Panniantong/Agent-Reach",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Glue, don't rewrite — route cleanly, test everything, and never touch upstream code.",
+  "highlights": [
+    "Explicit positioning as installer/doctor/config tool, not a wrapper — agents call upstream tools directly after install",
+    "Strict channel contract: every platform file inherits BaseChannel and implements can_handle/read/search/check",
+    "Hard rule against modifying upstream open source projects — Agent Reach is a glue layer only",
+    "Version must match in three places: pyproject.toml, __init__.py, tests/test_cli.py",
+    "Cookie-based auth constrained to Cookie-Editor export only (no QR scan, which hangs for XHS)"
+  ],
+  "assessment": "This file demonstrates mature systems thinking by drawing a sharp architectural boundary: Agent Reach routes and diagnoses but never reimplements upstream tools, which keeps the surface area small and the maintenance burden low. The enforced channel contract and three-place version sync show a bias toward mechanical consistency over cleverness, while the explicit auth workarounds encode hard-won operational knowledge. The result is a codebase that stays honest about its role as infrastructure glue rather than pretending to be a platform.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "ce2492f488ef745551f88e12a32e87babeb34b9b"
+  },
+  "discovered_at": "2026-10-03T07:17:01.874693+00:00",
+  "repo": "Panniantong/Agent-Reach"
+}
