@@ -1,0 +1,26 @@
+{
+  "stars": 24826,
+  "language": "TypeScript",
+  "description": "No description provided.",
+  "url": "https://github.com/pingdotgg/t3code",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Fight complexity, hit every surface, and never kill a process you didn't spawn.",
+  "highlights": [
+    "Explicit 'three ways to hurt yourself' section: no pkill by pattern, no writing to live userdata, no baking origins into dev bundles.",
+    "Mandatory 'hit every surface' checklist covering entry points, clients, providers, agents, contracts, reverse states, connection modes, and docs.",
+    "Performance treated as a first-class constraint with active auditing for websocket payload bloat, GPU spikes, and list rendering.",
+    "Test data must be copied from a read-only snapshot into a sandboxed worktree DB, never pointed at live state.",
+    "Verification is scoped: smallest proof, no repo-wide checks, no sleep-based tests, drain the effect worker instead."
+  ],
+  "assessment": "This file reads like a senior maintainer who has been burned by agents before and has encoded the scars as guardrails. The 'three ways to hurt yourself' framing is unusually honest about the blast radius of an autonomous agent in a shared dev environment, and the 'hit every surface' checklist directly targets the most common defect class in multi-client repos. The refusal to run repo-wide checks and the insistence on draining event workers rather than sleeping shows a mature understanding of where CI ends and local verification begins.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fae5e1c7e21a91f6498889989769b92cd25ce89c",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-04T07:34:06.695843+00:00",
+  "repo": "pingdotgg/t3code"
+}

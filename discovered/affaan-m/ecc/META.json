@@ -1,0 +1,26 @@
+{
+  "stars": 272444,
+  "language": "JavaScript",
+  "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+  "url": "https://github.com/affaan-m/ECC",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship production-grade code through specialized agents, mandatory TDD, and zero tolerance for security shortcuts.",
+  "highlights": [
+    "68 specialized agents mapped to every language, framework, and domain — from Rust to healthcare compliance",
+    "Mandatory TDD workflow with 80% minimum coverage enforced as a hard gate",
+    "Immutability treated as CRITICAL: always create new objects, never mutate existing ones",
+    "Security-first commit checklist covering secrets, SQL injection, XSS, CSRF, auth, rate limiting, and error leakage",
+    "Workflow surface policy: skills/ is canonical, commands/ is legacy compatibility only"
+  ],
+  "assessment": "This instruction file reads like an operations manual for a disciplined engineering org rather than a casual coding assistant prompt. Its strength is the explicit delegation matrix — every class of change has a named reviewer or resolver agent, which removes ambiguity about who owns quality. The combination of hard numeric constraints (80% coverage, <50 line functions, <800 line files, <4 nesting levels) with a security gate before every commit makes the taste unusually enforceable rather than aspirational.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e2e6847c1200674a2e07304ff09ad5fd8f917093",
+    "CLAUDE.md": "d5649ac50594fb5f3e8597d630fd2d6c72bd4a8f"
+  },
+  "discovered_at": "2026-10-04T07:34:00.781981+00:00",
+  "repo": "affaan-m/ECC"
+}

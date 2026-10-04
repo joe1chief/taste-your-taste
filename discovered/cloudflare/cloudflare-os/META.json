@@ -1,0 +1,24 @@
+{
+  "stars": 10657,
+  "language": "TypeScript",
+  "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+  "url": "https://github.com/cloudflare/cloudflare-os",
+  "archetype": "Defensive Architect",
+  "vibe": "Kernel code is sacred: every line reviewed, every capability earned, every provider lie distrusted.",
+  "highlights": [
+    "The backend is the kernel — held to a higher bar, with every line read by reviewers, so diffs must stay small and elegant.",
+    "Capability-based security: a resource becomes ambient only by user/admin configuration; a gatekeeper must never assert its own ambience.",
+    "Never introduce a hand-written interface that mirrors an RPC interface plus an `as unknown as` cast — derive from the real type instead.",
+    "Doc-comment every exported member of the shared public API (types, consts, and functions — not just interfaces).",
+    "Provider behaviours that return wrong-but-plausible data with no error are never trusted; every response is validated, no blind casts."
+  ],
+  "assessment": "This file treats architecture as a trust boundary rather than a folder layout: the kernel is explicitly privileged, ambient capabilities must be granted rather than claimed, and provider responses are assumed hostile until validated. The result is a codebase where security invariants are encoded as review rules and type derivations, making whole classes of privilege-escalation and silent-data-leak bugs structurally hard to introduce.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6533989ba6ed02dabb3446b0d3f2f62b8205b35f"
+  },
+  "discovered_at": "2026-10-04T07:34:16.886148+00:00",
+  "repo": "cloudflare/cloudflare-os"
+}

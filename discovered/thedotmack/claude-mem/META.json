@@ -1,0 +1,24 @@
+{
+  "stars": 95736,
+  "language": "TypeScript",
+  "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+  "url": "https://github.com/thedotmack/claude-mem",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship the memory layer, skip the ceremony.",
+  "highlights": [
+    "Single build command (npm run build-and-sync) bundles build, marketplace sync, and worker restart into one atomic operation.",
+    "Explicit file-location map separates source, built plugin, installed plugin, database, and Chroma paths to prevent path confusion.",
+    "Runtime dependencies (Bun, uv) are auto-installed if missing, removing setup friction for contributors.",
+    "Changelog is explicitly declared auto-generated, eliminating a common source of manual busywork and merge conflicts.",
+    "Docs are split into public MDX source and auto-deployed Mintlify site, keeping documentation and deployment in sync."
+  ],
+  "assessment": "This file reflects a systems-builder's taste: it treats the repository as a pipeline with clear stages (source, build, install, runtime state) rather than a pile of files. By collapsing the build into one command and auto-installing dependencies, it removes the two most common sources of contributor drift. The explicit refusal to touch the changelog is a small but telling anti-slop rule that prevents low-value diffs.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "c11f29adcd1c4074f43b4f020c6a902e245587af"
+  },
+  "discovered_at": "2026-10-04T07:34:11.350634+00:00",
+  "repo": "thedotmack/claude-mem"
+}

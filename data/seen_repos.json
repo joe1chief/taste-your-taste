@@ -435,7 +435,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "a6a2c708d5810d018719eb6040b4e238959a524c"
+      "AGENTS.md": "f10ed3abc55e71d9f4c9ad72fe6580f27f88eb82"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -443,7 +443,17 @@
     "discovered_at": "2026-10-02T07:43:44.958438+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/10",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "a6a2c708d5810d018719eb6040b4e238959a524c",
+        "new_sha": "f10ed3abc55e71d9f4c9ad72fe6580f27f88eb82",
+        "vibe_shift": "Shifted towards updated lockfile terminology while preserving the same strict dependency and git safety constraints.",
+        "summary": "The only substantive change is a rename of the generated lockfile artifact from `packages/coding-agent/npm-shrinkwrap.json` to `packages/coding-agent/install-lock/`, with the corresponding regeneration script renamed from `generate-coding-agent-shrinkwrap.mjs` to `generate-coding-agent-install-lock.mjs`. All other rules, including conversational style, code quality, commands, dependency security, git, and issues/PRs guidance, remain identical. This reflects a terminology and tooling update rather than a shift in prompt engineering taste or constraints.",
+        "timestamp": "2026-10-04T07:33:54.420887+00:00"
+      }
+    ]
   },
   "pbakaus/impeccable": {
     "stars": 73877,
@@ -598,6 +608,102 @@
     "vibe": "Precision over brute force: run the narrowest test that proves your change, never the whole suite.",
     "discovered_at": "2026-10-03T07:17:24.112971+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/20",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "affaan-m/ECC": {
+    "stars": 272444,
+    "language": "JavaScript",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e2e6847c1200674a2e07304ff09ad5fd8f917093",
+      "CLAUDE.md": "d5649ac50594fb5f3e8597d630fd2d6c72bd4a8f"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship production-grade code through specialized agents, mandatory TDD, and zero tolerance for security shortcuts.",
+    "discovered_at": "2026-10-04T07:34:01.129843+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/22",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pingdotgg/t3code": {
+    "stars": 24826,
+    "language": "TypeScript",
+    "description": "No description provided.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fae5e1c7e21a91f6498889989769b92cd25ce89c",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Fight complexity, hit every surface, and never kill a process you didn't spawn.",
+    "discovered_at": "2026-10-04T07:34:07.202278+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/23",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "thedotmack/claude-mem": {
+    "stars": 95736,
+    "language": "TypeScript",
+    "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "c11f29adcd1c4074f43b4f020c6a902e245587af"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship the memory layer, skip the ceremony.",
+    "discovered_at": "2026-10-04T07:34:11.870632+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/24",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "cloudflare/cloudflare-os": {
+    "stars": 10657,
+    "language": "TypeScript",
+    "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6533989ba6ed02dabb3446b0d3f2f62b8205b35f"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Kernel code is sacred: every line reviewed, every capability earned, every provider lie distrusted.",
+    "discovered_at": "2026-10-04T07:34:17.255805+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/25",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "addyosmani/agent-skills": {
+    "stars": 100925,
+    "language": "JavaScript",
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e97670ed868e90b73753fafbe305cdabc7f55ad3",
+      "CLAUDE.md": "97674d0b173c7c25764e11dc816a298a63119594"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Skills are mandatory, personas don't talk to each other, and the user is always the orchestrator.",
+    "discovered_at": "2026-10-04T07:34:21.681089+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/26",
     "pr_url": null,
     "status": "pending_review"
   }

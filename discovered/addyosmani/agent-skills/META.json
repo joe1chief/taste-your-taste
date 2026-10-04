@@ -1,0 +1,26 @@
+{
+  "stars": 100925,
+  "language": "JavaScript",
+  "description": "Production-grade engineering skills for AI coding agents.",
+  "url": "https://github.com/addyosmani/agent-skills",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Skills are mandatory, personas don't talk to each other, and the user is always the orchestrator.",
+  "highlights": [
+    "Skill-first execution model: if a task matches a skill, you MUST invoke it — never implement directly.",
+    "Anti-rationalization rules explicitly forbid 'this is too small for a skill' and 'I'll just quickly implement this'.",
+    "Strict separation of concerns: skills = how, personas = who, slash commands = when.",
+    "Personas cannot invoke other personas; only parallel fan-out with a merge step is endorsed.",
+    "Single source of truth principle: link to docs/skill-anatomy.md and CONTRIBUTING.md instead of restating guidance."
+  ],
+  "assessment": "This file demonstrates mature systems thinking by treating agent behavior as an orchestration problem with explicit layers, lifecycle phases, and anti-patterns. The anti-rationalization section is particularly effective because it preempts the most common failure mode of LLM agents — skipping process for perceived simplicity. By enforcing a single source of truth and forbidding persona-to-persona calls, it prevents the combinatorial explosion of agent interactions that plagues naive multi-agent setups.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e97670ed868e90b73753fafbe305cdabc7f55ad3",
+    "CLAUDE.md": "97674d0b173c7c25764e11dc816a298a63119594"
+  },
+  "discovered_at": "2026-10-04T07:34:21.297891+00:00",
+  "repo": "addyosmani/agent-skills"
+}
