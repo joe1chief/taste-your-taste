@@ -1,0 +1,24 @@
+{
+  "stars": 3550,
+  "language": "TypeScript",
+  "description": "Next generation e2e testing framework for web and mobile apps.",
+  "url": "https://github.com/tester-army/e2e",
+  "archetype": "Defensive Architect",
+  "vibe": "The code is the contract, and every invariant is pinned by a test, a schema, or a grep.",
+  "highlights": [
+    "No separate spec: the emitted .d.ts, JSON schemas, and security tests are the three pinned contracts.",
+    "Core never knows an engine's internals — zero hits for 'Web', 'browser', 'page', 'route', or 'playwright' in src/ is the invariant.",
+    "Wire changes edit the schema, both fixtures, and the producer in one review.",
+    "Behavior changes update the matching docs page and skill in the same change; error codes must be documented and raised.",
+    "When a reviewer corrects the same thing twice, encode it: types or structure first, then lint or test, then a skill line."
+  ],
+  "assessment": "This file treats architecture as enforceable law rather than aspiration: contracts are pinned in three concrete places, invariants are grep-checkable, and drift is caught by scripts in the check pipeline. The 'encode it' rule for repeated review feedback is a rare, mature instinct that converts human attention into permanent structural constraints. The result is a codebase where a fresh reviewer can trust the boundaries without re-deriving them.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "14a0598c1eefe7e219460d031fc9ff60e5fa6640"
+  },
+  "discovered_at": "2026-10-05T07:53:31.345949+00:00",
+  "repo": "tester-army/e2e"
+}

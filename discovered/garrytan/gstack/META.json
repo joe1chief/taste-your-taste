@@ -1,0 +1,28 @@
+{
+  "stars": 135243,
+  "language": "TypeScript",
+  "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+  "url": "https://github.com/garrytan/gstack",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship like a CEO, debug like a detective, and never let a green CI lie to you.",
+  "highlights": [
+    "23 opinionated specialist skills that map to real org roles (CEO, Eng Manager, Designer, QA, Release) rather than generic 'assistant' personas.",
+    "Validation discipline enforces a strict order: inventory failures, diagnose before changing code, reproduce with the smallest test, then run cheap CI before paid work.",
+    "Explicit anti-cheating rules: 'Do not lower thresholds, increase model budgets, skip cases, or rejudge a failure to manufacture a pass.'",
+    "Safety skills (/careful, /freeze, /guard) provide hard blocks on destructive commands and directory-scoped edits, not just warnings.",
+    "Browser skills default to the user's real logged-in Aside browser, falling back to headless Chromium only when necessary — respecting real sessions over synthetic ones."
+  ],
+  "assessment": "This file treats AI agents as accountable engineering roles with explicit failure taxonomies, not as autocomplete. The validation discipline section is unusually rigorous — it distinguishes product defects from test-expectation defects from environment failures, and forbids the classic AI shortcut of weakening tests to get green. The result is a workflow that optimizes for trustworthy signal over fast-looking progress, which is exactly what production teams need from agent tooling.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d2d545325e838b3f9b67794f4b8154e8ea99d6ee",
+    "CLAUDE.md": "1ec9d299c9a1844990afffdd33a487551eca7583",
+    "SKILL.md": "635cf5ef93d1a95de9ab70b97c79fdf23a27f07c"
+  },
+  "discovered_at": "2026-10-05T07:53:52.270321+00:00",
+  "repo": "garrytan/gstack"
+}

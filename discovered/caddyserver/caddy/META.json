@@ -1,0 +1,24 @@
+{
+  "stars": 76703,
+  "language": "Go",
+  "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+  "url": "https://github.com/caddyserver/caddy",
+  "archetype": "Engineering Craft",
+  "vibe": "Security-first Go craftsmanship with strict module discipline and human-only community interactions.",
+  "highlights": [
+    "Module system is the architectural backbone: everything registers via caddy.RegisterModule() with namespaced IDs and lifecycle hooks.",
+    "Compile-time interface guards (var _ caddy.Provisioner = (*MyModule)(nil)) enforce contract compliance.",
+    "AI contributions must be disclosed, fully comprehended by a human, tested, and license-verified.",
+    "Bots are explicitly forbidden from creating PRs, issues, or security reports; they must self-identify in reviews.",
+    "caddyhttp and caddytls require extra scrutiny in code review as security-critical packages."
+  ],
+  "assessment": "This file demonstrates mature engineering taste by codifying Go idioms, module lifecycle patterns, and security-critical review zones into enforceable rules. The explicit AI contribution policy and human-only community interaction rules are unusually principled, protecting open-source integrity without sacrificing automation benefits. The emphasis on generalized solutions over case-specific patches reflects a long-term architectural mindset.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b455cc33bc495a401d756facfc66ba45073919fa"
+  },
+  "discovered_at": "2026-10-05T07:53:46.378029+00:00",
+  "repo": "caddyserver/caddy"
+}

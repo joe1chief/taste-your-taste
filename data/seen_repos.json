@@ -706,5 +706,103 @@
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/26",
     "pr_url": null,
     "status": "pending_review"
+  },
+  "tester-army/e2e": {
+    "stars": 3550,
+    "language": "TypeScript",
+    "description": "Next generation e2e testing framework for web and mobile apps.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "14a0598c1eefe7e219460d031fc9ff60e5fa6640"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "The code is the contract, and every invariant is pinned by a test, a schema, or a grep.",
+    "discovered_at": "2026-10-05T07:53:31.797301+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/27",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "earthtojake/text-to-cad": {
+    "stars": 17013,
+    "language": "Python",
+    "description": "Give your agent CAD superpowers.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7349f381c346805221f82181e8d4d08550785089"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship a plugin that installs cleanly everywhere, or don't ship at all.",
+    "discovered_at": "2026-10-05T07:53:37.581433+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/28",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "calesthio/OpenMontage": {
+    "stars": 63414,
+    "language": "Python",
+    "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+    "files": [
+      ".windsurfrules",
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      ".windsurfrules": "c7f02255b11a981ea1748680de4eff8e5ca1867c",
+      "AGENTS.md": "7649447bc320e098a06e95fe5dbc3e9a7539888b",
+      "CLAUDE.md": "e7d1f3e9fc87a9d54eb4e413545d779fd9637ad8"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "One file to rule them all — read the guide or don't bother.",
+    "discovered_at": "2026-10-05T07:53:42.098914+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/29",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "caddyserver/caddy": {
+    "stars": 76703,
+    "language": "Go",
+    "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b455cc33bc495a401d756facfc66ba45073919fa"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Security-first Go craftsmanship with strict module discipline and human-only community interactions.",
+    "discovered_at": "2026-10-05T07:53:46.787380+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/30",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "garrytan/gstack": {
+    "stars": 135243,
+    "language": "TypeScript",
+    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d2d545325e838b3f9b67794f4b8154e8ea99d6ee",
+      "CLAUDE.md": "1ec9d299c9a1844990afffdd33a487551eca7583",
+      "SKILL.md": "635cf5ef93d1a95de9ab70b97c79fdf23a27f07c"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship like a CEO, debug like a detective, and never let a green CI lie to you.",
+    "discovered_at": "2026-10-05T07:53:52.657004+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/31",
+    "pr_url": null,
+    "status": "pending_review"
   }
 }

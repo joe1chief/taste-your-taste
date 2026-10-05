@@ -1,0 +1,24 @@
+{
+  "stars": 17013,
+  "language": "Python",
+  "description": "Give your agent CAD superpowers.",
+  "url": "https://github.com/earthtojake/text-to-cad",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship a plugin that installs cleanly everywhere, or don't ship at all.",
+  "highlights": [
+    "Ships-alone law: the published cadgen wheel must work in isolation, enforced by a boundary test that forbids references outside the package.",
+    "One launch command everywhere: uvx --no-config --managed-python --python 3.13 --from cadgen==<VERSION>, with every pin asserted equal to VERSION.",
+    "No symlinks in the published tree: installers disagree and Codex silently drops them, so check-builds.sh enforces a hard ban.",
+    "Every test runs in CI: a test no job runs is dead, and a collector finding nothing fails the run.",
+    "README holds the laws; the mechanism lives one link away — read the README, then follow the one link, not the tree."
+  ],
+  "assessment": "This file treats distribution mechanics as first-class architecture: version pinning, daemon identity, symlink behavior across agent installers, and wheel isolation are all specified with enforcement tests rather than prose. The result is a repo where 'it works on my machine' is structurally impossible, because the shipping contract is checked on every push. The discipline around CI budgets, flaky tests, and self-contained fixtures shows a team that has been burned by silent failures and has converted each scar into a rule.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7349f381c346805221f82181e8d4d08550785089"
+  },
+  "discovered_at": "2026-10-05T07:53:37.157010+00:00",
+  "repo": "earthtojake/text-to-cad"
+}

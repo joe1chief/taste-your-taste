@@ -1,0 +1,28 @@
+{
+  "stars": 63414,
+  "language": "Python",
+  "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+  "url": "https://github.com/calesthio/OpenMontage",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "One file to rule them all — read the guide or don't bother.",
+  "highlights": [
+    "Single mandatory entry point: AGENT_GUIDE.md must be read before any response",
+    "Explicit prohibition on acting before reading the guide",
+    "Zero instructions in the rules file itself — pure indirection",
+    "Warning that skipping the guide causes wrong actions",
+    "Routing rules centralized in one external document"
+  ],
+  "assessment": "This is a radical anti-slop move: the rules file contains no rules, only a hard gate to a single source of truth. It eliminates drift between multiple instruction files and forces a deterministic first action, which is exactly what a 700+ skill agentic system needs to avoid chaotic behavior.",
+  "files": [
+    ".windsurfrules",
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    ".windsurfrules": "c7f02255b11a981ea1748680de4eff8e5ca1867c",
+    "AGENTS.md": "7649447bc320e098a06e95fe5dbc3e9a7539888b",
+    "CLAUDE.md": "e7d1f3e9fc87a9d54eb4e413545d779fd9637ad8"
+  },
+  "discovered_at": "2026-10-05T07:53:41.698221+00:00",
+  "repo": "calesthio/OpenMontage"
+}
