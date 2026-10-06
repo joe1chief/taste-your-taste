@@ -640,7 +640,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "fae5e1c7e21a91f6498889989769b92cd25ce89c",
+      "AGENTS.md": "ef6dbcff766a745374ccfd17f477ec778f575024",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -649,7 +649,17 @@
     "discovered_at": "2026-10-04T07:34:07.202278+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/23",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "fae5e1c7e21a91f6498889989769b92cd25ce89c",
+        "new_sha": "ef6dbcff766a745374ccfd17f477ec778f575024",
+        "vibe_shift": "No shift; the prompt remains the same.",
+        "summary": "The two versions are identical, so no evolution occurred. The author's prompt engineering taste and constraints remained unchanged.",
+        "timestamp": "2026-10-06T08:17:38.661738+00:00"
+      }
+    ]
   },
   "thedotmack/claude-mem": {
     "stars": 95736,
@@ -677,7 +687,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6533989ba6ed02dabb3446b0d3f2f62b8205b35f"
+      "AGENTS.md": "5e8311f83c828423f779c55dd5097b745fc42849"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -685,7 +695,17 @@
     "discovered_at": "2026-10-04T07:34:17.255805+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/25",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6533989ba6ed02dabb3446b0d3f2f62b8205b35f",
+        "new_sha": "5e8311f83c828423f779c55dd5097b745fc42849",
+        "vibe_shift": "Shifted towards deeper architectural documentation with emphasis on deterministic storage and versioning invariants.",
+        "summary": "The author expanded the bundled blueprints section with detailed implementation notes on how blueprints are stored, versioned, and installed, emphasizing deterministic snapshot releases and storage mechanisms. This change reflects a shift toward documenting internal architecture and invariants more thoroughly, likely to aid reviewers and maintainers in understanding the kernel's behavior.",
+        "timestamp": "2026-10-06T08:17:46.023485+00:00"
+      }
+    ]
   },
   "addyosmani/agent-skills": {
     "stars": 100925,
@@ -715,7 +735,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "14a0598c1eefe7e219460d031fc9ff60e5fa6640"
+      "AGENTS.md": "e11501f9b0acecee3923c6cc5fc5fc96d19badfe"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -723,7 +743,17 @@
     "discovered_at": "2026-10-05T07:53:31.797301+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/27",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "14a0598c1eefe7e219460d031fc9ff60e5fa6640",
+        "new_sha": "e11501f9b0acecee3923c6cc5fc5fc96d19badfe",
+        "vibe_shift": "Shifted towards broader ecosystem coverage while maintaining strict engine isolation and peer dependency rules.",
+        "summary": "The new version adds detailed descriptions for two new packages: `@e2e-dev/mobile` and `@e2e-dev/decision`, expanding the monorepo's scope to include mobile testing and AI-driven decision-making. The previous version only covered web and kernel packages, so the author now emphasizes the same architectural constraints (peer dependencies, engine isolation) for these additions.",
+        "timestamp": "2026-10-06T08:17:26.896042+00:00"
+      }
+    ]
   },
   "earthtojake/text-to-cad": {
     "stars": 17013,
@@ -733,7 +763,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "7349f381c346805221f82181e8d4d08550785089"
+      "AGENTS.md": "5fa707ff9776657ecc899c47b819c9e3b1ca80ca"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -741,7 +771,17 @@
     "discovered_at": "2026-10-05T07:53:37.581433+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/28",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "7349f381c346805221f82181e8d4d08550785089",
+        "new_sha": "5fa707ff9776657ecc899c47b819c9e3b1ca80ca",
+        "vibe_shift": "Shifted towards a more explicit, branch-centric release process with clearer separation of concerns and stricter gating on user intent.",
+        "summary": "The release workflow was restructured from a two-step manual dispatch and merge process to a more explicit, branch-based model where a release is defined by a pull request that changes VERSION. The new version emphasizes that merging such a PR triggers the release, provides two clear paths for creating release PRs, and adds detailed checks and conditions for the Test and Publish Release workflows. Additionally, the plugin branch strategy shifted from a single 'plugin' branch to 'latest' and 'claude-plugin' branches, with installers following 'latest'.",
+        "timestamp": "2026-10-06T08:17:35.110158+00:00"
+      }
+    ]
   },
   "calesthio/OpenMontage": {
     "stars": 63414,
@@ -802,6 +842,100 @@
     "vibe": "Ship like a CEO, debug like a detective, and never let a green CI lie to you.",
     "discovered_at": "2026-10-05T07:53:52.657004+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/31",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "DuarteSantos8/openGym": {
+    "stars": 4643,
+    "language": "JavaScript",
+    "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "a78a2337e2b486d85d03468cee5ee550e4ef8da8"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship a self-hosted gym tracker with two dependencies and a test for every rep.",
+    "discovered_at": "2026-10-06T08:18:06.579860+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/36",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "OpenSwiftUIProject/OpenSwiftUI": {
+    "stars": 2486,
+    "language": "Swift",
+    "description": "Open source implementation of Apple's SwiftUI.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fd7688573de6bf4a9679d59acd34d13862d40120"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Build less, verify precisely, and let the diff speak for itself.",
+    "discovered_at": "2026-10-06T08:18:11.476081+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/37",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "daangn/stackflow": {
+    "stars": 1026,
+    "language": "TypeScript",
+    "description": "🧱 Mobile-first stack navigator framework with composable plugin system",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "1da3958ee04cca112617dcd367c4373d9fef4f42",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Event-sourced mobile navigation with a plugin-first, type-safe core.",
+    "discovered_at": "2026-10-06T08:18:16.705157+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/38",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "cloudflare/workers-sdk": {
+    "stars": 4605,
+    "language": "TypeScript",
+    "description": "⛅️ Home to Wrangler, the CLI for Cloudflare Workers®",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "56edba193be8f937ea42ef16aec94aca23087019",
+      "CLAUDE.md": "1dba1331ee0fcfef8702f6cd9f40a39e71dd96fd"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Keep the config authoritative, the layers thin, and the AI honest about what it doesn't know.",
+    "discovered_at": "2026-10-06T08:18:22.637354+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/39",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "microsoft/winget-pkgs": {
+    "stars": 11132,
+    "language": "General",
+    "description": "The Microsoft community Windows Package Manager manifest repository",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "3a97b43bd4e50b33ee2c1f22e6791a375d0803b5"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "One package per PR, no blank issues, no scanning the whole manifests tree — keep it surgical.",
+    "discovered_at": "2026-10-06T08:18:27.878015+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/40",
     "pr_url": null,
     "status": "pending_review"
   }

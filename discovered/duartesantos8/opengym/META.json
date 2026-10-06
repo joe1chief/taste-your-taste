@@ -1,0 +1,24 @@
+{
+  "stars": 4643,
+  "language": "JavaScript",
+  "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+  "url": "https://github.com/DuarteSantos8/openGym",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship a self-hosted gym tracker with two dependencies and a test for every rep.",
+  "highlights": [
+    "Dependency-light is a hard constraint, not a preference: React + Router + Zustand on the frontend, two dependencies in the API.",
+    "Anything that decides what you lift next, or reads a logged session back, is a pure helper in src/lib with a unit test beside it.",
+    "Single-file, no-framework Node API with a routes object keyed by 'METHOD /path' and atomic JSON writes.",
+    "Passkeys bind to an exact hostname and HTTPS, so RP_ID/ORIGIN env vars shape auth and self-hosting code.",
+    "No linter, no formatter, no TypeScript — match the existing style by hand."
+  ],
+  "assessment": "This file treats constraints as architecture: two API dependencies, a single Zustand store, and pure helpers with tests beside them. The insistence that training logic is not verifiable by clicking, backed by the note that the progression engine already had two bugs only a test caught, is a mature stance on where correctness lives. It is a rare example of a self-hosted project documenting its operational contract (env vars, passkey hostname binding, mirror-only GitLab) as first-class engineering guidance.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "a78a2337e2b486d85d03468cee5ee550e4ef8da8"
+  },
+  "discovered_at": "2026-10-06T08:18:05.871127+00:00",
+  "repo": "DuarteSantos8/openGym"
+}

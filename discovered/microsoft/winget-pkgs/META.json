@@ -1,0 +1,24 @@
+{
+  "stars": 11132,
+  "language": "General",
+  "description": "The Microsoft community Windows Package Manager manifest repository",
+  "url": "https://github.com/microsoft/winget-pkgs",
+  "archetype": "Pragmatic Systems",
+  "vibe": "One package per PR, no blank issues, no scanning the whole manifests tree — keep it surgical.",
+  "highlights": [
+    "Strict one-package-per-PR rule to keep changes reviewable and reversible.",
+    "Explicit ban on recursively scanning the entire manifests/ directory — work only in the target package folder.",
+    "Mandatory use of structured GitHub issue forms; blank issues are disallowed unless a maintainer asks.",
+    "Clear routing of WinGet client issues to microsoft/winget-cli, keeping this repo scoped to manifests.",
+    "Requires local validation via `winget validate --manifest <path>` or an explicit explanation for skipping it."
+  ],
+  "assessment": "This file reflects mature maintainer discipline: it constrains scope (one package, one folder), enforces structured intake via issue forms, and demands evidence of validation. By explicitly forbidding whole-tree scans and speculative patches in issues, it protects both CI cost and reviewer attention — a pragmatic systems approach to governing a massive community-contributed manifest repository.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "3a97b43bd4e50b33ee2c1f22e6791a375d0803b5"
+  },
+  "discovered_at": "2026-10-06T08:18:27.234328+00:00",
+  "repo": "microsoft/winget-pkgs"
+}

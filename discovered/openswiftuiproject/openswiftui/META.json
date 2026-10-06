@@ -1,0 +1,24 @@
+{
+  "stars": 2486,
+  "language": "Swift",
+  "description": "Open source implementation of Apple's SwiftUI.",
+  "url": "https://github.com/OpenSwiftUIProject/OpenSwiftUI",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Build less, verify precisely, and let the diff speak for itself.",
+  "highlights": [
+    "Verification is scoped to the change, not a ritual: no default package/Xcode/Tuist builds after every edit.",
+    "Throwaway probes live in /tmp and run via `swift <file>`, never polluting Tests/.",
+    "CI fixes require presenting the diff and validation results before any commit or push.",
+    "Documentation follows swift-docc and SwiftUI style, with 4-space indented Swift examples instead of fenced code blocks.",
+    "Commit and PR titles use Conventional Commits, with authoring delegated to skill files."
+  ],
+  "assessment": "This file demonstrates mature engineering taste by treating verification as a targeted, evidence-based activity rather than a reflexive checklist. It explicitly separates investigation from authorization, preventing agents from overstepping into commits or pushes. The anti-slop rules around temporary files and documentation formatting keep the repository clean and consistent with Apple's own conventions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fd7688573de6bf4a9679d59acd34d13862d40120"
+  },
+  "discovered_at": "2026-10-06T08:18:10.917083+00:00",
+  "repo": "OpenSwiftUIProject/OpenSwiftUI"
+}

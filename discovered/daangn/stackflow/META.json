@@ -1,0 +1,26 @@
+{
+  "stars": 1026,
+  "language": "TypeScript",
+  "description": "🧱 Mobile-first stack navigator framework with composable plugin system",
+  "url": "https://github.com/daangn/stackflow",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Event-sourced mobile navigation with a plugin-first, type-safe core.",
+  "highlights": [
+    "Event sourcing drives all state changes through domain events (Pushed, Popped, Replaced, etc.)",
+    "Immutable stack state updated via reducers, with side effects isolated in an effect system",
+    "Framework-agnostic core with React as the first integration, enabling future framework support",
+    "Config-first API design separates activity/route definitions from React components for optimal loading performance",
+    "Strict TypeScript typing with module augmentation via `declare module \"@stackflow/config\"` for activity parameters"
+  ],
+  "assessment": "This instruction file reflects a mature systems mindset: it treats navigation as an event-sourced state machine with clear separation between core logic, framework integration, and UI extensions. The emphasis on immutability, effect isolation, and plugin hooks creates a testable, extensible architecture that scales across hybrid app and webview use cases. The config-first API and strict typing show deliberate attention to performance and developer ergonomics without sacrificing type safety.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1da3958ee04cca112617dcd367c4373d9fef4f42",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-06T08:18:16.154820+00:00",
+  "repo": "daangn/stackflow"
+}

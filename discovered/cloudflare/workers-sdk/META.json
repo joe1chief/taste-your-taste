@@ -1,0 +1,26 @@
+{
+  "stars": 4605,
+  "language": "TypeScript",
+  "description": "⛅️ Home to Wrangler, the CLI for Cloudflare Workers®",
+  "url": "https://github.com/cloudflare/workers-sdk",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Keep the config authoritative, the layers thin, and the AI honest about what it doesn't know.",
+  "highlights": [
+    "Explicitly warns against copying rules into the file because 'copied versions, rule lists, and counts become stale' — a rare anti-duplication stance for agent docs.",
+    "Enforces a layered architecture rule: implement dev features in Miniflare so Wrangler, Vite, and Vitest plugins stay thin consumers.",
+    "Bans `any`, non-null assertions, and floating promises, and requires lint-disable comments to carry a reason after `--`.",
+    "Treats fixtures as user-facing examples, not throwaway test data, and prefers real filesystem ops over mocks.",
+    "Delegates formatting, linting, and validation to checked-in configs and validators rather than restating rules."
+  ],
+  "assessment": "This file demonstrates mature systems thinking by refusing to duplicate authoritative sources — it points to `package.json`, `.oxlintrc.jsonc`, and validators instead of enumerating rules that would rot. The cross-tool development section is particularly strong: it encodes an architectural invariant (shared behavior belongs in Miniflare, integrations stay thin) that prevents the classic drift where three consumers reimplement the same feature. The tone is calm and directive without being preachy, and the anti-slop rules (no `any`, no floating promises, no reasonless lint disables) are concrete and enforceable.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "56edba193be8f937ea42ef16aec94aca23087019",
+    "CLAUDE.md": "1dba1331ee0fcfef8702f6cd9f40a39e71dd96fd"
+  },
+  "discovered_at": "2026-10-06T08:18:22.133963+00:00",
+  "repo": "cloudflare/workers-sdk"
+}
