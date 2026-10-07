@@ -1,0 +1,26 @@
+{
+  "stars": 3441,
+  "language": "PHP",
+  "description": "Shopware 6 is an open commerce platform based on Symfony Framework and Vue and supported by a worldwide community and more than 3.100 community extensions",
+  "url": "https://github.com/shopware/shopware",
+  "archetype": "Defensive Architect",
+  "vibe": "Guard the shared test kernel, prove the work ran, and never let a skill be optional when CI depends on it.",
+  "highlights": [
+    "Explicitly warns that Twig-only template changes must never get PHP integration tests, because rendering without a Storefront request can cache empty request-dependent Twig globals in the shared test kernel and break unrelated later tests.",
+    "Mandates that a CI job must never report success without proving the work ran, with local rules in .github/AGENTS.md.",
+    "States that skills are best-effort and model-decided, not guaranteed, so mandatory steps are duplicated in the always-loaded file.",
+    "Enforces a Definition of Done with behavior-change-implies-tests, conventional commit scopes, follow-up commits after review instead of amend/force-push, and linting every touched file.",
+    "Codifies Shopware's non-Symfony architecture: no Doctrine ORM, no QueryBuilder, no annotations, no Doctrine repositories; prefer events over decorators."
+  ],
+  "assessment": "This file shows unusually mature agent-instruction design: it treats skill triggering as probabilistic and therefore hoists non-negotiable rules into the always-loaded context, which is exactly the right failure model for LLM agents. The Twig/test-kernel warning is a rare, concrete piece of institutional knowledge that prevents a subtle class of cross-test contamination, and the CI 'must prove the work ran' rule encodes a strong anti-greenwashing stance. The result is a defensive but pragmatic contract that keeps agent output aligned with a large, BC-sensitive open-source codebase.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c73e98dc59a3eab8227d5060ab2fb31b82f27dfe",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-07T07:54:02.043943+00:00",
+  "repo": "shopware/shopware"
+}

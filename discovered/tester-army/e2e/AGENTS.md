@@ -87,7 +87,7 @@ suites that consume the built packages the way a user would.
   Expo's GraphQL API with `fetch`, and `@e2e-dev/mobile` is its only peer.
 - `packages/decision` — the published `@e2e-dev/decision` package: a
   `StepExecutor` (`decisionExecutor()`) that drives `agent.act` and
-  `agent.assert` through an AI SDK *evaluation* model answering `choice`
+  `agent.assert` through an AI SDK *decision* model answering `choice`
   questions with probability distributions, plus an optional small language
   model that writes field values when the decision model picks `type`.
   `minProbability` and `minConfidence` gate a chosen operation, target,
@@ -128,12 +128,14 @@ suites that consume the built packages the way a user would.
   diffs against the source minimal, and name no company a scenario was
   distilled from.
 - `examples/` — standalone user-facing projects, one per technology
-  (`with-vite`, `with-next`, `with-expo`, `with-swiftui`), each the same
+  (`with-vite`, `with-next`, `with-expo`, `with-swiftui`, `with-compose`,
+  `with-kotlin-multiplatform`, `with-flutter`), each the same
   one-screen greeter demo with deterministic and agent tests. They install
   the published packages from npm, sit outside the pnpm workspace, commit no
   lockfile, and run in no CI; oxlint and fallow ignore them. A change runs
   the example's suite by hand and updates the "Last checked" line in its
-  README. A SwiftUI example keeps its tests in an `e2e/` folder beside the
+  README. A native or Flutter example (SwiftUI, Compose, Kotlin
+  Multiplatform, Flutter) keeps its tests in an `e2e/` folder beside the
   native project, as a user would.
 - `docs/` (the Mintlify docs site; pages are the `.mdx` files under `docs/`,
   navigation, theme, and redirects in `docs/docs.json`, extra CSS in
@@ -397,7 +399,7 @@ trees, on both platforms, without a device.
   The web benchmark's agent job runs with `--strict-cache`, so a recording a
   change broke fails with `REPLAY_STALE` instead of quietly calling the model.
   That includes a change to the cache key (`REPLAY_POLICY_VERSION`, a new key
-  field, an engine minor): strict lists the file store and fails a step whose
+  field): strict lists the file store and fails a step whose
   key misses while an entry recorded for the same step sits under another key
   (`cache/rekeyed.ts`). Only entries whose `recordedFor` names the whole step
   (params digest, occurrence, agent) count; a `read-write` replay completes
@@ -497,8 +499,9 @@ trees, on both platforms, without a device.
   `npx skills add okwasniewski/dotfiles --skill unslop`.
 - Releases go through changesets: a user-visible change adds a `.changeset/`
   entry. Peer ranges point one way only (engine -> `e2e`, integration ->
-  engine) and read `>=<major.minor.patch> <major+1>` of the sibling the
-  package was built against (`>=0.15.0 <1` on the runner today);
+  engine) and read `>=<major.minor.patch> <major+1>`, the floor the oldest
+  sibling the package works with. Raise it when a package starts relying on a
+  newer sibling's export or contract field;
   `scripts/check-peer-ranges.ts` (`pnpm check`) fails on any other shape for
   every peer one package under `packages/` has on another (vendor SDK peers
   such as `@onkernel/sdk` are not checked). Narrow or exact, every runner minor (exact: every patch too)

@@ -1,0 +1,24 @@
+{
+  "stars": 54587,
+  "language": "Python",
+  "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+  "url": "https://github.com/ayghri/i-have-adhd",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Map the repo, respect the contracts, run only what the task needs.",
+  "highlights": [
+    "Canonical source-of-truth discipline: edit SKILL.md first, then sync the .cursor mirror.",
+    "Manifests and hook declarations treated as runtime contracts that must stay aligned across platforms.",
+    "Explicit AI Agora commenting rules: only own PRs, only labeled issues, one proposal per comment.",
+    "Verification is scoped: run only checks relevant to the change and report exact commands and results.",
+    "Hard boundary against reading secrets, home-directory config, unrelated files, or local caches."
+  ],
+  "assessment": "This file treats the repository as a multi-runtime system with explicit contracts rather than a loose collection of files, which is exactly the right posture for a project shipping the same skill across Claude, Codex, Cursor, OpenCode, Pi, OMP, Qwen, Kimi, and Gemini. The source-of-truth rule plus the mirror-sync requirement prevents the classic drift failure where platform adapters silently diverge. The AI Agora section is unusually mature: it grants read access broadly but gates writes tightly, which keeps agent participation useful without letting it become noise.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "49a84d2088b0943517b199347065f8c45487dac8"
+  },
+  "discovered_at": "2026-10-07T07:53:43.191363+00:00",
+  "repo": "ayghri/i-have-adhd"
+}

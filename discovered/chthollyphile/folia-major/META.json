@@ -1,0 +1,25 @@
+{
+  "stars": 3715,
+  "language": "TypeScript",
+  "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方多平台在线音乐播放器",
+  "url": "https://github.com/chthollyphile/folia-major",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Project Skills",
+    "本仓库不再把项目规则直接堆在 `AGENTS.md` 中，而是改为按 skill 组织。",
+    "1. 如果需要的话，先根据任务选择最相关的 skill。",
+    "2. 读取对应 `skills/<skill-name>/SKILL.md`。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "378f5f0784f8ebf7838a58e059f156d627a97c9e",
+    "CLAUDE.md": "cb9d24dd74ba2ead1b4b7d53b20905f7d0a97cc2"
+  },
+  "discovered_at": "2026-10-07T07:54:07.920445+00:00",
+  "repo": "chthollyphile/folia-major"
+}

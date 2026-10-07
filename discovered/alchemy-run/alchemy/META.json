@@ -1,0 +1,26 @@
+{
+  "stars": 1549,
+  "language": "TypeScript",
+  "description": "Infrastructure as Effects",
+  "url": "https://github.com/alchemy-run/alchemy",
+  "archetype": "Engineering Craft",
+  "vibe": "Infrastructure as Effects: type-safe, composable, and relentlessly correct.",
+  "highlights": [
+    "Infrastructure-as-Effects (IaE) framework that unifies business logic and infrastructure config into a single type-safe program.",
+    "Resource Provider lifecycle operations (Diff, Read, Pre-Create, Reconcile, Delete, Capability) with strict contracts.",
+    "Binding.Service pattern for runtime capabilities, enabling circular dependencies and typed clients.",
+    "Idempotent Delete operations and careful handling of eventual consistency and retryable errors.",
+    "File system conventions enforce co-location of resource contracts and providers, with clear separation of capabilities."
+  ],
+  "assessment": "This instruction file demonstrates exceptional engineering taste by treating infrastructure as a first-class, type-safe program. The emphasis on Effect's type system, composable retry logic, and explicit lifecycle operations ensures reliability and testability. The detailed conventions and anti-slop rules (e.g., idempotent deletes, stable properties) reflect a deep understanding of distributed systems and cloud provider quirks, making the framework robust and maintainable.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "136437deedd7607d634ff85e8b4c5cab5f54e303",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-07T07:53:55.086361+00:00",
+  "repo": "alchemy-run/alchemy"
+}

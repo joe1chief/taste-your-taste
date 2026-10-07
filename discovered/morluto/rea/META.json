@@ -1,0 +1,24 @@
+{
+  "stars": 10787,
+  "language": "TypeScript",
+  "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+  "url": "https://github.com/morluto/rea",
+  "archetype": "Defensive Architect",
+  "vibe": "Treat every boundary as a contract, every failure as a signal, and every guess as a bug.",
+  "highlights": [
+    "Layered ESM TypeScript with strict inward-only dependency flow; provider protocols are forbidden in domain and application layers.",
+    "Boundary contracts must trace values through parsing, normalization, authorization, serialization, and CLI/MCP result, preserving meaningful failure reasons.",
+    "MCP tools start from the analyst question, not the provider API; prefer reusable inspect/search/trace/compare primitives over custom orchestration languages.",
+    "Real-toolchain claims require real verification lanes; mocks, package startup, and capability probes only establish narrower claims.",
+    "Compiler strictness is non-negotiable: strict, exactOptionalPropertyTypes, noUncheckedIndexedAccess, verbatimModuleSyntax, no any, no unchecked casts, no non-null assertions."
+  ],
+  "assessment": "This file reflects unusually mature systems taste: it treats boundaries as semantic contracts rather than type signatures, insists on distinguishing observation from inference from unknown, and refuses to let mocks masquerade as real verification. The anti-slop posture is structural rather than stylistic, banning ignored options, single-value confirmations, generic catches, and plan-only tools that cannot execute. It is the rare instruction file that would actually prevent architectural decay rather than merely describe it.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a3f3e35e4a0024c77ec3c7cac727cbeb2541482c"
+  },
+  "discovered_at": "2026-10-07T07:53:49.086097+00:00",
+  "repo": "morluto/rea"
+}

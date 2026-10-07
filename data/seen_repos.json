@@ -303,7 +303,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "102513ff25679808515742155bbf564fe2493d43"
+      "CLAUDE.md": "2e8878be98e56a4a9c187b37b7fa177e48a88378"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -311,7 +311,17 @@
     "discovered_at": "2026-10-01T07:58:56.039513+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/2",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "102513ff25679808515742155bbf564fe2493d43",
+        "new_sha": "2e8878be98e56a4a9c187b37b7fa177e48a88378",
+        "vibe_shift": "Shifted towards explicit agent triage behavior and scope enforcement.",
+        "summary": "The new version adds a dedicated 'Agent skills' section that introduces triage labels and a scope document, while keeping all previous rules intact. This shifts the prompt from purely structural and stylistic constraints toward explicit agent behavior guidance for issue triage.",
+        "timestamp": "2026-10-07T07:53:12.373192+00:00"
+      }
+    ]
   },
   "heygen-com/hyperframes": {
     "stars": 54916,
@@ -735,7 +745,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e11501f9b0acecee3923c6cc5fc5fc96d19badfe"
+      "AGENTS.md": "385fcec8b969104cf4e3d5e3f3be7795695182d8"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -752,6 +762,14 @@
         "vibe_shift": "Shifted towards broader ecosystem coverage while maintaining strict engine isolation and peer dependency rules.",
         "summary": "The new version adds detailed descriptions for two new packages: `@e2e-dev/mobile` and `@e2e-dev/decision`, expanding the monorepo's scope to include mobile testing and AI-driven decision-making. The previous version only covered web and kernel packages, so the author now emphasizes the same architectural constraints (peer dependencies, engine isolation) for these additions.",
         "timestamp": "2026-10-06T08:17:26.896042+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e11501f9b0acecee3923c6cc5fc5fc96d19badfe",
+        "new_sha": "385fcec8b969104cf4e3d5e3f3be7795695182d8",
+        "vibe_shift": "Shifted towards more precise and consistent terminology.",
+        "summary": "The only change is a terminology update from 'evaluation model' to 'decision model' in the description of the @e2e-dev/decision package. This aligns the documentation with the package's name and clarifies its role in making choices with probability distributions.",
+        "timestamp": "2026-10-07T07:53:08.742009+00:00"
       }
     ]
   },
@@ -763,7 +781,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "5fa707ff9776657ecc899c47b819c9e3b1ca80ca"
+      "AGENTS.md": "7ee59d280ed03e2f30e5d03fd620b40d9b7fa784"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -780,6 +798,14 @@
         "vibe_shift": "Shifted towards a more explicit, branch-centric release process with clearer separation of concerns and stricter gating on user intent.",
         "summary": "The release workflow was restructured from a two-step manual dispatch and merge process to a more explicit, branch-based model where a release is defined by a pull request that changes VERSION. The new version emphasizes that merging such a PR triggers the release, provides two clear paths for creating release PRs, and adds detailed checks and conditions for the Test and Publish Release workflows. Additionally, the plugin branch strategy shifted from a single 'plugin' branch to 'latest' and 'claude-plugin' branches, with installers following 'latest'.",
         "timestamp": "2026-10-06T08:17:35.110158+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "5fa707ff9776657ecc899c47b819c9e3b1ca80ca",
+        "new_sha": "7ee59d280ed03e2f30e5d03fd620b40d9b7fa784",
+        "vibe_shift": "Shifted towards broader plugin standard compliance and explicit manifest inclusion.",
+        "summary": "The update adds the Agent Plugins standard's plugin.json and mcp.json to the list of agent plugin manifests, reflecting a new interoperability requirement. This change expands the plugin packaging surface without altering the core release workflow or branch rules.",
+        "timestamp": "2026-10-07T07:53:15.911319+00:00"
       }
     ]
   },
@@ -936,6 +962,102 @@
     "vibe": "One package per PR, no blank issues, no scanning the whole manifests tree — keep it surgical.",
     "discovered_at": "2026-10-06T08:18:27.878015+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/40",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ayghri/i-have-adhd": {
+    "stars": 54587,
+    "language": "Python",
+    "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "49a84d2088b0943517b199347065f8c45487dac8"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Map the repo, respect the contracts, run only what the task needs.",
+    "discovered_at": "2026-10-07T07:53:43.795884+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/44",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "morluto/rea": {
+    "stars": 10787,
+    "language": "TypeScript",
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a3f3e35e4a0024c77ec3c7cac727cbeb2541482c"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Treat every boundary as a contract, every failure as a signal, and every guess as a bug.",
+    "discovered_at": "2026-10-07T07:53:49.657429+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/45",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "alchemy-run/alchemy": {
+    "stars": 1549,
+    "language": "TypeScript",
+    "description": "Infrastructure as Effects",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "136437deedd7607d634ff85e8b4c5cab5f54e303",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Infrastructure as Effects: type-safe, composable, and relentlessly correct.",
+    "discovered_at": "2026-10-07T07:53:55.800995+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/46",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "shopware/shopware": {
+    "stars": 3441,
+    "language": "PHP",
+    "description": "Shopware 6 is an open commerce platform based on Symfony Framework and Vue and supported by a worldwide community and more than 3.100 community extensions",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c73e98dc59a3eab8227d5060ab2fb31b82f27dfe",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Guard the shared test kernel, prove the work ran, and never let a skill be optional when CI depends on it.",
+    "discovered_at": "2026-10-07T07:54:02.692170+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/47",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "chthollyphile/folia-major": {
+    "stars": 3715,
+    "language": "TypeScript",
+    "description": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方多平台在线音乐播放器",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "378f5f0784f8ebf7838a58e059f156d627a97c9e",
+      "CLAUDE.md": "cb9d24dd74ba2ead1b4b7d53b20905f7d0a97cc2"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-07T07:54:08.449239+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/48",
     "pr_url": null,
     "status": "pending_review"
   }
