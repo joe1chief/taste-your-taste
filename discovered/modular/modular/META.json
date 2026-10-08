@@ -1,0 +1,26 @@
+{
+  "stars": 29933,
+  "language": "Mojo",
+  "description": "The Modular Platform (includes MAX & Mojo)",
+  "url": "https://github.com/modular/modular",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Build fast, test hard, and never let a kernel sync without a benchmark.",
+  "highlights": [
+    "Strict language separation: Mojo for performance kernels, Python for orchestration.",
+    "Hardware abstraction via dispatch tables with device-agnostic APIs.",
+    "Performance improvements must include benchmarks.",
+    "Atomic commits with component-tagged titles enforced by CI.",
+    "LLM-friendly documentation links for MAX and Mojo."
+  ],
+  "assessment": "This file demonstrates strong engineering discipline by enforcing clear architectural boundaries, rigorous testing, and performance accountability. The emphasis on benchmarks for performance changes and atomic commits with component tags ensures maintainability and traceability in a complex, multi-language codebase. The inclusion of LLM-friendly documentation shows forward-thinking developer experience.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "bb43423ccaf5d6edc58d7fa1033912626c6aa01d"
+  },
+  "discovered_at": "2026-10-08T08:09:41.065333+00:00",
+  "repo": "modular/modular"
+}

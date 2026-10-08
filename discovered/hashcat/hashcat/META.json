@@ -1,0 +1,24 @@
+{
+  "stars": 26956,
+  "language": "C",
+  "description": "World's fastest and most advanced password recovery utility",
+  "url": "https://github.com/hashcat/hashcat",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "If you didn't run it, don't paste it — and if you did, paste only that.",
+  "highlights": [
+    "A build is not a result: compiling and passing a self-test vector proves nothing about whether a mode actually cracks.",
+    "Never present output you did not run — no reconstructed hashes, no before/after from different builds, no 'this should now crack'.",
+    "Write less: agent PRs run 2-3x too long; match the sparse comment density of hashcat sources and say why, not what.",
+    "Leave your session out of the patch — no scratch paths, machine names, or status-update filler in the PR.",
+    "Run the strongest self-review your tool offers before submitting, because the maintainers will review at max effort anyway."
+  ],
+  "assessment": "This file is unusually disciplined about the failure modes specific to AI-authored patches: fabricated output, verbose prose, and scope creep. By demanding reproduction commands on both sides of a change and forbidding reconstructed results, it converts 'trust me' into 'here is the run.' The insistence on matching local comment density and stripping session noise shows a maintainer who has already been burned by agent slop and has codified the antidote.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c71330e3208c2519b98abae7d7be4cdd41c6e2be"
+  },
+  "discovered_at": "2026-10-08T08:09:56.461866+00:00",
+  "repo": "hashcat/hashcat"
+}

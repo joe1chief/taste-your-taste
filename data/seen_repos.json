@@ -745,7 +745,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "385fcec8b969104cf4e3d5e3f3be7795695182d8"
+      "AGENTS.md": "2f9a09ee74b683989a3cb29f47f8886f8ddff0ea"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -770,6 +770,14 @@
         "vibe_shift": "Shifted towards more precise and consistent terminology.",
         "summary": "The only change is a terminology update from 'evaluation model' to 'decision model' in the description of the @e2e-dev/decision package. This aligns the documentation with the package's name and clarifies its role in making choices with probability distributions.",
         "timestamp": "2026-10-07T07:53:08.742009+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "385fcec8b969104cf4e3d5e3f3be7795695182d8",
+        "new_sha": "2f9a09ee74b683989a3cb29f47f8886f8ddff0ea",
+        "vibe_shift": "No shift; the prompt remains unchanged.",
+        "summary": "The two versions of AGENTS.md are identical, with no changes in content, structure, or constraints. The author's prompt engineering taste and constraints have not evolved between these versions.",
+        "timestamp": "2026-10-08T08:09:13.886243+00:00"
       }
     ]
   },
@@ -991,7 +999,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "a3f3e35e4a0024c77ec3c7cac727cbeb2541482c"
+      "AGENTS.md": "c12152690e4fd5ce062dbb5d3947061f4e6bf2ad"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -999,7 +1007,17 @@
     "discovered_at": "2026-10-07T07:53:49.657429+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/45",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "a3f3e35e4a0024c77ec3c7cac727cbeb2541482c",
+        "new_sha": "c12152690e4fd5ce062dbb5d3947061f4e6bf2ad",
+        "vibe_shift": "Shifted towards broader platform support and stricter generated-file hygiene.",
+        "summary": "The new version expands the Windows P0 boundary to include x86 PE applications and adds a rule about the build-generated, gitignored MCP tool catalog file. The Boundary Contracts section is truncated in the new version, suggesting a possible removal or incomplete update.",
+        "timestamp": "2026-10-08T08:09:04.133653+00:00"
+      }
+    ]
   },
   "alchemy-run/alchemy": {
     "stars": 1549,
@@ -1058,6 +1076,102 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-10-07T07:54:08.449239+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/48",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "manaflow-ai/cmux": {
+    "stars": 27963,
+    "language": "Swift",
+    "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "f1b061369059e3c39ba7b46f47edfc8c92e60205"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Protect the user's running app, verify scoped, and never let an agent touch what it hasn't earned.",
+    "discovered_at": "2026-10-08T08:09:30.158914+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/51",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "trycua/cua": {
+    "stars": 28915,
+    "language": "Rust",
+    "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "29ff06ccf8f005e9df37368aad3076b6524089c9",
+      "CLAUDE.md": "894bdde5391a6e3369bb0d5403ff9a51f6675397"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Treats GitHub as the source of truth and agents as disciplined workers, not planners.",
+    "discovered_at": "2026-10-08T08:09:36.737716+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/52",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "modular/modular": {
+    "stars": 29933,
+    "language": "Mojo",
+    "description": "The Modular Platform (includes MAX & Mojo)",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "bb43423ccaf5d6edc58d7fa1033912626c6aa01d"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Build fast, test hard, and never let a kernel sync without a benchmark.",
+    "discovered_at": "2026-10-08T08:09:41.564911+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/53",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "hashcat/hashcat": {
+    "stars": 26956,
+    "language": "C",
+    "description": "World's fastest and most advanced password recovery utility",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c71330e3208c2519b98abae7d7be4cdd41c6e2be"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "If you didn't run it, don't paste it — and if you did, paste only that.",
+    "discovered_at": "2026-10-08T08:09:57.049270+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/54",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "duckdb/ducklake": {
+    "stars": 3057,
+    "language": "C++",
+    "description": "DuckLake is an integrated data lake and catalog format",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b640d50d073f5b0a4bdf6971b9a040b8041da182"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Reuse ruthlessly, type precisely, comment sparingly — let the code speak.",
+    "discovered_at": "2026-10-08T08:10:03.837986+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/55",
     "pr_url": null,
     "status": "pending_review"
   }

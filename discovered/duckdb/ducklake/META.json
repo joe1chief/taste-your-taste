@@ -1,0 +1,24 @@
+{
+  "stars": 3057,
+  "language": "C++",
+  "description": "DuckLake is an integrated data lake and catalog format",
+  "url": "https://github.com/duckdb/ducklake",
+  "archetype": "Engineering Craft",
+  "vibe": "Reuse ruthlessly, type precisely, comment sparingly — let the code speak.",
+  "highlights": [
+    "Mandates checking duckdb/ and src/ for existing implementations before writing new code, and refactoring to reuse when possible.",
+    "Enforces strict C++ typing: fixed-width [u]int(8|16|32|64)_t, idx_t for offsets/indices/counts, and a hard ban on const_cast.",
+    "Comment discipline: one short line by default, and explicitly forbids issue-specific comments like 'add +1 to fix an off-by-one error' — those belong in PRs.",
+    "Requires minimal sqltests for all new code and formatting via make format-fix.",
+    "Consistent naming: snake_case files/variables, PascalCase types/functions."
+  ],
+  "assessment": "This file reflects a mature, low-ego engineering culture where code reuse and type precision are non-negotiable, reducing duplication and subtle bugs in a large C++ codebase. The comment policy is particularly sharp: it treats code as the primary documentation and pushes change rationale into commit history, which keeps the source clean and reviewable. The combination of strict formatting, explicit typing, and mandatory minimal tests creates a high-signal, low-noise contribution workflow.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b640d50d073f5b0a4bdf6971b9a040b8041da182"
+  },
+  "discovered_at": "2026-10-08T08:10:03.332057+00:00",
+  "repo": "duckdb/ducklake"
+}

@@ -1,0 +1,26 @@
+{
+  "stars": 27963,
+  "language": "Swift",
+  "description": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
+  "url": "https://github.com/manaflow-ai/cmux",
+  "archetype": "Defensive Architect",
+  "vibe": "Protect the user's running app, verify scoped, and never let an agent touch what it hasn't earned.",
+  "highlights": [
+    "Hard prohibition on killing, relaunching, or replacing the user's running cmux.app, including via Release builds or bundle-ID collisions; CMUX_ALLOW_REPLACING_RUNNING_CMUX is user-only.",
+    "Trust-boundary discipline: repository commands only in trusted checkouts, scoped verification via verify-local.py, and no bare xcodebuild or untagged DEV.app.",
+    "Remote CLI relay defaults to deny; allowlisting requires explicit analysis of local command execution, unowned object access, and local-state exposure, plus policy tests and ID scoping.",
+    "Contribution ethics encoded as rules: search upstream PRs first, credit outside authors with Co-authored-by, never close an outside PR without a human-written explanation.",
+    "License-aware merging: BSL server directories cannot merge while CLA Assistant is red, and outside work cannot be copied there under a Co-authored-by trailer without a signed CLA."
+  ],
+  "assessment": "This file treats agent instructions as a safety and coordination contract rather than a style guide, which is unusually mature for a 28k-star project. The constraints are specific, testable, and tied to real failure modes (killing the user's terminal, leaking remote execution, misattributing contributor work), and the routing table to area skills prevents checklist duplication. It is a strong example of encoding organizational trust boundaries directly into the agent's operating rules.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "f1b061369059e3c39ba7b46f47edfc8c92e60205"
+  },
+  "discovered_at": "2026-10-08T08:09:29.632628+00:00",
+  "repo": "manaflow-ai/cmux"
+}

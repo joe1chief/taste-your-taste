@@ -1,0 +1,26 @@
+{
+  "stars": 28915,
+  "language": "Rust",
+  "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+  "url": "https://github.com/trycua/cua",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Treats GitHub as the source of truth and agents as disciplined workers, not planners.",
+  "highlights": [
+    "Coding agents act as workers within the contribution contract, not as a planning authority; GitHub holds the durable record.",
+    "Each contract gets exactly one owner test at the strongest observable boundary; weaker duplicates are deleted.",
+    "Plain `cargo test` must be hermetic — no real input, clipboard, window, or per-user host state.",
+    "User-visible Cua Driver behavior is a cross-platform contract; platform-specific changes must not silently land as universal.",
+    "Never use GitHub's repository-wide 'Latest' release badge to determine whether a monorepo component has shipped."
+  ],
+  "assessment": "This file reflects unusually mature engineering taste: it separates durable state (GitHub issues/RFCs/PRs) from private tooling, enforces single-owner tests at the strongest boundary, and bans test-only hooks in shipped code. The cross-platform contract rule and the monorepo release-resolution rule show a team that has been burned by silent platform drift and misleading 'latest' badges, and has codified the lessons into enforceable constraints.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "29ff06ccf8f005e9df37368aad3076b6524089c9",
+    "CLAUDE.md": "894bdde5391a6e3369bb0d5403ff9a51f6675397"
+  },
+  "discovered_at": "2026-10-08T08:09:36.266006+00:00",
+  "repo": "trycua/cua"
+}
