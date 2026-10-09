@@ -8,9 +8,14 @@ on:
       - 'bin/**'
       - 'registry/**'
       - 'test/**'
+      - 'docs/**'
+      - 'data/**'
+      - 'discovered/**'
+      - 'README.md'
       - 'package.json'
       - '.github/workflows/tests.yml'
       - '.github/workflows/radar.yml'
+      - '.github/workflows/pages.yml'
   push:
     branches: [main]
     paths:
@@ -19,9 +24,14 @@ on:
       - 'bin/**'
       - 'registry/**'
       - 'test/**'
+      - 'docs/**'
+      - 'data/**'
+      - 'discovered/**'
+      - 'README.md'
       - 'package.json'
       - '.github/workflows/tests.yml'
       - '.github/workflows/radar.yml'
+      - '.github/workflows/pages.yml'
 
 permissions:
   contents: read
@@ -37,7 +47,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Test Radar Archive Boundaries
+      - name: Test Radar and Catalog
         run: python3 -m unittest discover -s test -p "test_*.py"
+      - name: Check Generated Catalog
+        run: python3 scripts/build_catalog.py --check
+      - name: Test Gallery Filtering
+        run: node --test test/gallery.test.js
       - name: Test CLI
         run: npm test

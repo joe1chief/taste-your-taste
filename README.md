@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml">
-    <img src="https://img.shields.io/badge/taste--radar-active-10b981?style=for-the-badge&logo=githubactions&logoColor=white" alt="Taste Radar Status">
+    <img src="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml/badge.svg" alt="Taste Radar Status">
   </a>
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/taste-roast.yml">
     <img src="https://img.shields.io/badge/taste--tested%20by-Linus%20Torvalds-f43f5e?style=for-the-badge&logo=linux&logoColor=white" alt="Taste Tested">
@@ -60,6 +60,35 @@ npx taste-code badge --type score --output taste-badge.svg
 
 ---
 
+<!-- TASTE:LATEST:START -->
+## Latest Radar Activity
+
+Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
+
+**72 tracked projects** | **26 curated** | **46 pending review**
+
+Scan timestamps will be recorded from the next Radar run.
+
+Latest content activity: **2026-10-09 08:09:52 UTC**.
+
+[Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
+
+| Updated (UTC) | Project | Activity | Review status | Rules |
+| :--- | :--- | :--- | :--- | :--- |
+| 2026-10-09 08:09:52 | [jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/63) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/jhipster/generator-jhipster) |
+| 2026-10-09 08:09:44 | [isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/62) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/isaac-sim/isaaclab) |
+| 2026-10-09 08:09:37 | [stablyai/orca](https://github.com/stablyai/orca) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-10-09 08:09:28 | [webiny/webiny-js](https://github.com/webiny/webiny-js) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/60) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/webiny/webiny-js) |
+| 2026-10-09 08:09:19 | [storytold/artcraft](https://github.com/storytold/artcraft) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/59) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/storytold/artcraft) |
+| 2026-10-09 08:09:06 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
+| 2026-10-09 08:08:50 | [mattpocock/skills](https://github.com/mattpocock/skills) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/2) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mattpocock/skills) |
+| 2026-10-09 08:08:42 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
+| 2026-10-08 08:10:03 | [duckdb/ducklake](https://github.com/duckdb/ducklake) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/55) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/duckdb/ducklake) |
+| 2026-10-08 08:09:57 | [hashcat/hashcat](https://github.com/hashcat/hashcat) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/54) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hashcat/hashcat) |
+<!-- TASTE:LATEST:END -->
+
+---
+
 ## 📖 The Manifesto
 
 In the pre-AI era, developers loved exploring the `.dotfiles` (`.zshrc`, `.vimrc`, `tmux.conf`) of legendary hackers to see how they tuned their tools.
@@ -80,7 +109,7 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 26+ star projects organized directly as first-level directories.
 8. 🧠 **Curated Agent Skills Library ([`skills/`](./skills))**: Modular SKILL.md playbooks (Andrej Karpathy guidelines, offensive AI security, de-AI writing, design tokens, etc.).
 9. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
-10. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Real-time explorer, Taste Blender, Pruner preview, and live Badge Studio.
+10. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Daily-updated explorer, Taste Blender, Pruner preview, and live Badge Studio.
 
 ---
 
@@ -410,16 +439,21 @@ flowchart LR
     B --> C["🔍 scripts/radar.py Engine"]
     C --> D{"Taste Files Found?"}
     D -- Yes --> E["🧠 LLM Architectural & Taste Assessment"]
-    E --> F["📬 Create Review Issue & Stage to Repo Folder"]
-    F --> G["🏆 Maintainer Curates to Hall of Fame"]
-    D -- No --> H["Sleep until next cycle"]
+    E --> F["📬 Create Review Issue & Archive Rules"]
+    F --> G["📡 Rebuild README Activity & Gallery Catalog"]
+    G --> I["🌐 Publish Gallery to GitHub Pages"]
+    F --> J["🏆 Maintainer Curates to Hall of Fame"]
+    D -- No --> G
 ```
 
 * **Strict Quality Gate**: Only captures repositories that are **either on GitHub Trending** (Daily/Weekly) or **have ⭐️ 1,000+ Stars** (rejecting personal/low-impact repos).
 * **⚡ Prompt Evolution Tracking**: Stores Git Blob SHAs to detect when authors iterate or revise their prompts. When an author updates their rules, Radar detects the diff and triggers an evolution report issue!
 * **🚀 Automated PR Staging (`--create-pr`)**: Optionally creates git branches and automated Pull Requests to stage newly discovered tastes straight into the repository.
 * **Isolated Archives**: New radar imports live in `discovered/<owner>/<repo>/`, with `META.json` verifying repository ownership before every write. Upstream file paths are preserved. Existing curated top-level directories and `skills/` remain unchanged; evolution can read historical archives only when their metadata matches. The recovered `mattpocock/skills` import is in [`discovered/mattpocock/skills/`](./discovered/mattpocock/skills).
-* **Regression Tests**: Run `python3 -m unittest discover -s test -p "test_*.py"` for offline radar coverage, and `npm test` for the CLI suite.
+* **Daily Visible Updates**: Every completed scan regenerates the latest-activity section above and `docs/catalog.json`, commits them with the archives, and explicitly publishes the gallery. Pending discoveries appear immediately with their review status; curated snapshots remain unchanged. The scan timestamp advances even when no new projects are found.
+* **Rebuild Locally**: Run `python3 scripts/build_catalog.py`. Use `python3 scripts/build_catalog.py --check` to detect stale generated files. Only run `--record-scan --run-url <workflow-run-url>` immediately after a completed Radar scan; local rebuilds retain the existing scan evidence.
+* **Pages Setup**: Select **Settings > Pages > Source > GitHub Actions** once, then run the **Publish Gallery** workflow or push a gallery change to `main`. Radar calls the same publisher after its own commit, since a `GITHUB_TOKEN` push does not trigger another Pages build. Preview locally with `python3 -m http.server 8000 --directory docs`.
+* **Regression Tests**: Run `python3 -m unittest discover -s test -p "test_*.py"` for Radar and catalog coverage, `node --test test/gallery.test.js` for gallery filters, and `npm test` for the CLI suite.
 * **Zero Spam**: History is tracked in `data/seen_repos.json` to prevent duplicates.
 
 ---

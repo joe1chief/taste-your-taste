@@ -26,10 +26,17 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: taste-radar-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   radar:
     name: Scan Trending & Discover Tastes
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    outputs:
+      published_sha: ${{ steps.commit.outputs.sha }}
 
     steps:
       - name: Checkout Repository
@@ -42,7 +49,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Test Archive Boundaries
+      - name: Test Radar and Catalog
         run: python3 -m unittest discover -s test -p "test_*.py"
 
       - name: Run Taste Radar Engine
@@ -68,14 +75,36 @@ jobs:
             --min-stars "$MIN_STARS" \
             $EXTRA_ARGS
 
-      - name: Commit & Push New Discoveries
+      - name: Refresh README and Gallery Catalog
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          python3 scripts/build_catalog.py --record-scan \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          python3 scripts/build_catalog.py --check
+
+      - name: Commit & Push Daily Updates
+        id: commit
         if: ${{ inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
-          git add -A
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/seen_repos.json data/radar_status.json discovered README.md docs/catalog.json
           if git diff --cached --quiet; then
             echo "No changes to commit. All up-to-date."
           else
-            git commit -m "chore(radar): auto-archive newly discovered tastes [skip ci]"
+            git commit -m "chore(radar): refresh daily discoveries and gallery [skip ci]"
             git push origin main
           fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  publish:
+    name: Publish Updated Gallery
+    needs: radar
+    if: ${{ inputs.dry_run != true }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml
+    with:
+      ref: ${{ needs.radar.outputs.published_sha }}

@@ -86,7 +86,7 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow w-full">
     <div class="flex justify-center border-b border-gray-800 mb-8 space-x-2 sm:space-x-8">
       <button onclick="switchTab('hall-of-fame')" id="tab-hall-of-fame" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-pink-500 text-pink-400 flex items-center space-x-2">
-        <span>🏛️</span><span>Hall of Fame</span>
+        <span>🏛️</span><span>Taste Gallery</span>
       </button>
       <button onclick="switchTab('blender')" id="tab-blender" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
         <span>🍸</span><span>Taste Blender</span>
@@ -99,22 +99,40 @@
       </button>
     </div>
 
-    <!-- TAB 1: Hall of Fame -->
+    <!-- TAB 1: Daily Taste Gallery -->
     <div id="view-hall-of-fame" class="tab-view block">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold mb-2">Daily discoveries &amp; curated projects</h2>
+        <p class="text-sm text-gray-400 mb-3">New discoveries and rule changes appear after each daily scan. Radar observations await review; curated labels refer to project selection.</p>
+        <p id="catalog-status" role="status" aria-live="polite" class="text-sm text-pink-300">Loading project catalog...</p>
+        <p id="scan-status" class="text-xs text-gray-400 mt-2"></p>
+        <p id="content-status" class="text-xs text-gray-400 mt-1"></p>
+      </div>
+      <div class="flex flex-wrap gap-4 mb-5">
+        <label class="text-xs text-gray-400">Collection
+          <select id="collection-filter" onchange="filterRepos()" class="ml-2 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
+            <option value="all">All projects</option>
+            <option value="pending_review">New discoveries (pending review)</option>
+            <option value="curated">Curated projects</option>
+          </select>
+        </label>
+        <label class="text-xs text-gray-400">Sort
+          <select id="sort-order" onchange="filterRepos()" class="ml-2 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
+            <option value="latest">Latest activity</option>
+            <option value="stars">Most stars</option>
+            <option value="name">Project name</option>
+          </select>
+        </label>
+        <p id="result-count" aria-live="polite" class="text-xs text-gray-400 self-center"></p>
+      </div>
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
         <!-- Search -->
         <div class="relative w-full sm:w-96">
-          <input type="text" id="search-input" oninput="filterRepos()" placeholder="Search repositories, languages, or vibes..." class="w-full bg-gray-900 border border-gray-800 focus:border-pink-500 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none transition">
+          <input type="text" id="search-input" aria-label="Search projects" oninput="filterRepos()" placeholder="Search repositories, languages, or vibes..." class="w-full bg-gray-900 border border-gray-800 focus:border-pink-500 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none transition">
         </div>
 
         <!-- Archetype filter badges -->
-        <div class="flex flex-wrap gap-2 justify-center" id="archetype-filters">
-          <button onclick="setArchetypeFilter('all')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-pink-900/50 border border-pink-600 text-pink-200" data-filter="all">All</button>
-          <button onclick="setArchetypeFilter('Anti-Slop Minimalist')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Anti-Slop Minimalist">Anti-Slop</button>
-          <button onclick="setArchetypeFilter('Defensive Architect')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Defensive Architect">Defensive</button>
-          <button onclick="setArchetypeFilter('Hacker Velocity')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Hacker Velocity">Hacker</button>
-          <button onclick="setArchetypeFilter('Engineering Craft')" class="arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200" data-filter="Engineering Craft">Engineering Craft</button>
-        </div>
+        <div class="flex flex-wrap gap-2 justify-center" id="archetype-filters"></div>
       </div>
 
       <!-- Repo Cards Grid -->
@@ -365,348 +383,8 @@
     <p class="mt-1">Maintained by <a href="https://github.com/joe1chief" target="_blank" class="text-pink-400 hover:underline">@joe1chief</a></p>
   </footer>
 
+  <script src="gallery.js"></script>
   <script>
-    // Embedded Data from seen_repos.json
-    const REPO_DATA = [
-      {
-            "repo": "openclaw/openclaw",
-            "folder": "openclaw",
-            "stars": 390800,
-            "language": "Rust / C",
-            "file": "AGENTS.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from openclaw.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "multica-ai/andrej-karpathy-skills",
-            "folder": "andrej-karpathy-skills",
-            "stars": 216000,
-            "language": "Python / Markdown",
-            "file": "CLAUDE.md",
-            "archetype": "Anti-Slop Minimalist",
-            "vibe": "Battle-tested developer taste and agent rules from andrej-karpathy-skills.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "DietrichGebert/ponytail",
-            "folder": "ponytail",
-            "stars": 148700,
-            "language": "JavaScript",
-            "file": "AGENTS.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from ponytail.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "debpalash/VoiceStudio",
-            "folder": "VoiceStudio",
-            "stars": 49800,
-            "language": "Python / Electron",
-            "file": "AGENTS.md",
-            "archetype": "Anti-Slop Minimalist",
-            "vibe": "Battle-tested developer taste and agent rules from VoiceStudio.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "agentsmd/agents.md",
-            "folder": "agentsmd",
-            "stars": 24700,
-            "language": "Markdown / Specification",
-            "file": "AGENTS.md",
-            "archetype": "Pragmatic Taste",
-            "vibe": "Battle-tested developer taste and agent rules from agentsmd.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "mksglu/context-mode",
-            "folder": "context-mode",
-            "stars": 24343,
-            "language": "TypeScript",
-            "file": "CLAUDE.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from context-mode.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "wasp-lang/open-saas",
-            "folder": "open-saas",
-            "stars": 16000,
-            "language": "TypeScript / React",
-            "file": "AGENTS.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from open-saas.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "NVIDIA/OpenShell",
-            "folder": "nvidia-openshell",
-            "stars": 11600,
-            "language": "Rust",
-            "file": "AGENTS.md",
-            "archetype": "Anti-Slop Minimalist",
-            "vibe": "Battle-tested developer taste and agent rules from nvidia-openshell.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "securego/gosec",
-            "folder": "securego-gosec",
-            "stars": 8950,
-            "language": "Go",
-            "file": "CLAUDE.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from securego-gosec.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "SnailSploit/Claude-Red",
-            "folder": "claude-red",
-            "stars": 7129,
-            "language": "Markdown / Security",
-            "file": "AGENTS.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from claude-red.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "drona23/claude-token-efficient",
-            "folder": "claude-token-efficient",
-            "stars": 6070,
-            "language": "Markdown",
-            "file": "CLAUDE.md",
-            "archetype": "Anti-Slop Minimalist",
-            "vibe": "Battle-tested developer taste and agent rules from claude-token-efficient.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "grapeot/devin.cursorrules",
-            "folder": "devin-cursorrules",
-            "stars": 5960,
-            "language": "Markdown / Rules",
-            "file": ".cursorrules",
-            "archetype": "Hacker Velocity",
-            "vibe": "Battle-tested developer taste and agent rules from devin-cursorrules.",
-            "highlight": "Includes official .cursorrules with production engineering guardrails."
-      },
-      {
-            "repo": "marcobambini/gravity",
-            "folder": "gravity",
-            "stars": 4570,
-            "language": "C",
-            "file": "CLAUDE.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from gravity.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "bergside/awesome-design-skills",
-            "folder": "awesome-design-skills",
-            "stars": 2989,
-            "language": "Markdown / Design",
-            "file": "AGENTS.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from awesome-design-skills.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "Nanako0129/sepia",
-            "folder": "sepia-skills",
-            "stars": 2917,
-            "language": "Markdown / Writing",
-            "file": "AGENTS.md",
-            "archetype": "Anti-Slop Minimalist",
-            "vibe": "Battle-tested developer taste and agent rules from sepia-skills.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "elementalsouls/Claude-OSINT",
-            "folder": "claude-osint",
-            "stars": 2703,
-            "language": "Shell / Python",
-            "file": "AGENTS.md",
-            "archetype": "Hacker Velocity",
-            "vibe": "Battle-tested developer taste and agent rules from claude-osint.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "Andersbakken/rtags",
-            "folder": "rtags",
-            "stars": 1846,
-            "language": "C / C++",
-            "file": "AGENTS.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from rtags.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "leondgarse/keras_cv_attention_models",
-            "folder": "keras-cv-attention-models",
-            "stars": 1700,
-            "language": "Python",
-            "file": "rules.md",
-            "archetype": "Hacker Velocity",
-            "vibe": "Battle-tested developer taste and agent rules from keras-cv-attention-models.",
-            "highlight": "Includes official rules.md with production engineering guardrails."
-      },
-      {
-            "repo": "shift-labs-ai/markit",
-            "folder": "markit",
-            "stars": 1325,
-            "language": "TypeScript / Markdown",
-            "file": "SKILL.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from markit.",
-            "highlight": "Includes official SKILL.md with production engineering guardrails."
-      },
-      {
-            "repo": "graphframes/graphframes",
-            "folder": "graphframes",
-            "stars": 1211,
-            "language": "Scala / Python / Java",
-            "file": "AGENTS.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from graphframes.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "diffblue/cbmc",
-            "folder": "cbmc",
-            "stars": 1138,
-            "language": "C / C++",
-            "file": "AGENTS.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from cbmc.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      },
-      {
-            "repo": "tidyverse/readr",
-            "folder": "tidyverse-readr",
-            "stars": 1100,
-            "language": "R / C++",
-            "file": "CLAUDE.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from tidyverse-readr.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "Prismer-AI/Prismer",
-            "folder": "prismer",
-            "stars": 800,
-            "language": "Python / PyTorch",
-            "file": "CLAUDE.md",
-            "archetype": "Pragmatic Taste",
-            "vibe": "Battle-tested developer taste and agent rules from prismer.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "DenisSergeevitch/repo-task-proof-loop",
-            "folder": "repo-task-proof-loop",
-            "stars": 732,
-            "language": "Markdown / Architecture",
-            "file": "SKILL.md",
-            "archetype": "Defensive Architect",
-            "vibe": "Battle-tested developer taste and agent rules from repo-task-proof-loop.",
-            "highlight": "Includes official SKILL.md with production engineering guardrails."
-      },
-      {
-            "repo": "stripe/stripe-java",
-            "folder": "stripe-java",
-            "stars": 600,
-            "language": "Java",
-            "file": "CLAUDE.md",
-            "archetype": "Engineering Craft",
-            "vibe": "Battle-tested developer taste and agent rules from stripe-java.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "BrowserOperator/browser-operator-core",
-            "folder": "browser-operator",
-            "stars": 510,
-            "language": "TypeScript / Python",
-            "file": "CLAUDE.md",
-            "archetype": "Hacker Velocity",
-            "vibe": "Battle-tested developer taste and agent rules from browser-operator.",
-            "highlight": "Includes official CLAUDE.md with production engineering guardrails."
-      },
-      {
-            "repo": "purton-tech/rust-on-nails",
-            "folder": "rust-on-nails",
-            "stars": 444,
-            "language": "Rust",
-            "file": "AGENTS.md",
-            "archetype": "Hacker Velocity",
-            "vibe": "Battle-tested developer taste and agent rules from rust-on-nails.",
-            "highlight": "Includes official AGENTS.md with production engineering guardrails."
-      }
-];
-
-    let currentArchetypeFilter = 'all';
-
-    function renderRepos() {
-      const query = (document.getElementById('search-input')?.value || '').toLowerCase();
-      const grid = document.getElementById('repo-grid');
-      grid.innerHTML = '';
-
-      const filtered = REPO_DATA.filter(item => {
-        const matchesQuery = item.repo.toLowerCase().includes(query) ||
-                             item.language.toLowerCase().includes(query) ||
-                             item.vibe.toLowerCase().includes(query) ||
-                             item.archetype.toLowerCase().includes(query);
-        const matchesArch = (currentArchetypeFilter === 'all') || (item.archetype === currentArchetypeFilter);
-        return matchesQuery && matchesArch;
-      });
-
-      if (filtered.length === 0) {
-        grid.innerHTML = `<div class="col-span-full py-12 text-center text-gray-500 font-mono">No repositories match your filter criteria.</div>`;
-        return;
-      }
-
-      filtered.forEach(item => {
-        const card = document.createElement('div');
-        card.className = "bg-gray-900 border border-gray-800 hover:border-pink-500/50 rounded-2xl p-6 transition flex flex-col justify-between shadow-xl";
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-mono px-2 py-0.5 rounded bg-gray-800 text-yellow-400">⭐️ ${(item.stars >= 1000 ? (item.stars / 1000).toFixed(1) + 'k' : item.stars)}</span>
-              <span class="text-xs font-mono text-gray-400 bg-gray-950 px-2 py-0.5 rounded border border-gray-800">${item.language}</span>
-            </div>
-            <a href="https://github.com/${item.repo}" target="_blank" class="text-lg font-bold text-white hover:text-pink-400 transition mb-2 block">
-              ${item.repo}
-            </a>
-            <div class="mb-4">
-              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-pink-950/80 border border-pink-700/60 text-pink-300">
-                ${item.archetype}
-              </span>
-            </div>
-            <p class="text-xs text-gray-300 italic mb-4">"${item.vibe}"</p>
-          </div>
-          <div class="border-t border-gray-800 pt-3">
-            <div class="text-[11px] font-mono text-gray-400">
-              <span class="text-gray-500">File:</span> <span class="text-pink-300">${item.file}</span>
-            </div>
-            <p class="text-[11px] text-gray-400 mt-1 line-clamp-2">${item.highlight}</p>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
-
-    function filterRepos() {
-      renderRepos();
-    }
-
-    function setArchetypeFilter(arch) {
-      currentArchetypeFilter = arch;
-      document.querySelectorAll('.arch-filter-btn').forEach(btn => {
-        if (btn.getAttribute('data-filter') === arch) {
-          btn.className = "arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-pink-900/50 border border-pink-600 text-pink-200";
-        } else {
-          btn.className = "arch-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gray-900 border border-gray-800 text-gray-400 hover:text-gray-200";
-        }
-      });
-      renderRepos();
-    }
-
     function switchTab(tabId) {
       document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -1173,7 +851,6 @@
     }
 
     // Init
-    renderRepos();
     updateBlendCommand();
     updateLiveCard();
   </script>
