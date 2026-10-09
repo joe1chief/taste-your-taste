@@ -1,0 +1,26 @@
+{
+  "stars": 22463,
+  "language": "TypeScript",
+  "description": "JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures.",
+  "url": "https://github.com/jhipster/generator-jhipster",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Trust the source tree, not the prose — and never let an agent touch dist/ or hand-edit a snapshot.",
+  "highlights": [
+    "Explicit trust order: package.json scripts and the current source tree outrank prose docs, which may be stale.",
+    "Hard prohibition on editing dist/ directly — modify source, then rebuild.",
+    "Snapshots are committed artifacts that must be regenerated, never hand-edited.",
+    "Commit message discipline: imperative, lowercase, no trailing dot, ≤100 chars, and no issue references because agents create many commits.",
+    "PR etiquette encoded for agents: open as draft, leave the human-review checkbox unchecked, and never submit a 'request changes' review."
+  ],
+  "assessment": "This file treats the agent as a junior contributor with real blast radius: it pins the trust hierarchy to executable truth, forbids the two classic agent failure modes (editing build output, hand-patching snapshots), and encodes social conventions like commit hygiene and PR review etiquette that agents routinely violate. The result is a constraint set that is unusually specific to the repository's actual workflow rather than generic advice, which makes it far more likely to be followed and far more useful when it is.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "28af71a43880e8bc0de78f4df2998ed665ecf377",
+    "CLAUDE.md": "ab6346753753880e0ff3d343652931818322aa1c"
+  },
+  "discovered_at": "2026-10-09T08:09:51.370467+00:00",
+  "repo": "jhipster/generator-jhipster"
+}

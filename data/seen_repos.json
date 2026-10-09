@@ -242,8 +242,18 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "2a5050bf87f692faf65b07adffdb71c77c0fc420"
-    }
+      "AGENTS.md": "8b72eee7c01560674e0eab64a6cbe56865c7d501"
+    },
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2a5050bf87f692faf65b07adffdb71c77c0fc420",
+        "new_sha": "8b72eee7c01560674e0eab64a6cbe56865c7d501",
+        "vibe_shift": "Shifted from no guidance to a highly structured, ownership-centric, and disciplined engineering culture.",
+        "summary": "The previous version was empty, so the new AGENTS.md establishes a comprehensive set of rules from scratch. It introduces a strong emphasis on clear ownership, minimal core changes, and disciplined execution, reflecting a shift towards structured, maintainable agent behavior.",
+        "timestamp": "2026-10-09T08:09:06.841081+00:00"
+      }
+    ]
   },
   "Prismer-AI/Prismer": {
     "dir": "prismer",
@@ -303,7 +313,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "2e8878be98e56a4a9c187b37b7fa177e48a88378"
+      "CLAUDE.md": "fc5db874293f5e307ebee3f8ca5bd5409d5ea329"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -320,6 +330,14 @@
         "vibe_shift": "Shifted towards explicit agent triage behavior and scope enforcement.",
         "summary": "The new version adds a dedicated 'Agent skills' section that introduces triage labels and a scope document, while keeping all previous rules intact. This shifts the prompt from purely structural and stylistic constraints toward explicit agent behavior guidance for issue triage.",
         "timestamp": "2026-10-07T07:53:12.373192+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "2e8878be98e56a4a9c187b37b7fa177e48a88378",
+        "new_sha": "fc5db874293f5e307ebee3f8ca5bd5409d5ea329",
+        "vibe_shift": "Shifted towards clearer separation of installation channels for different agent ecosystems.",
+        "summary": "The author refined the plugin distribution strategy, shifting from a single-plugin marketplace fallback to a dual-channel approach where non-Claude agents use the repo's marketplace for automatic updates while Claude Code relies on the official marketplace. The ADR reference was also simplified to a direct link, and the rationale for the plugin choice was condensed.",
+        "timestamp": "2026-10-09T08:08:50.369133+00:00"
       }
     ]
   },
@@ -999,7 +1017,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "c12152690e4fd5ce062dbb5d3947061f4e6bf2ad"
+      "AGENTS.md": "e24455c1db786e65e6c013302fdd8f107ababa52"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1016,6 +1034,14 @@
         "vibe_shift": "Shifted towards broader platform support and stricter generated-file hygiene.",
         "summary": "The new version expands the Windows P0 boundary to include x86 PE applications and adds a rule about the build-generated, gitignored MCP tool catalog file. The Boundary Contracts section is truncated in the new version, suggesting a possible removal or incomplete update.",
         "timestamp": "2026-10-08T08:09:04.133653+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "c12152690e4fd5ce062dbb5d3947061f4e6bf2ad",
+        "new_sha": "e24455c1db786e65e6c013302fdd8f107ababa52",
+        "vibe_shift": "Shifted towards stricter process ownership and build artifact hygiene with expanded platform support.",
+        "summary": "The new version expands platform support for Ghidra to Linux arm64, adds explicit guidance on Evidence provenance and snapshot bindings in the application layer, and introduces stricter rules for process ownership and generated artifacts. It also clarifies that CI retains ignored outputs as artifacts and does not push snapshot commits to feature branches, reflecting a shift toward more precise boundary contracts and build hygiene.",
+        "timestamp": "2026-10-09T08:08:42.560944+00:00"
       }
     ]
   },
@@ -1172,6 +1198,108 @@
     "vibe": "Reuse ruthlessly, type precisely, comment sparingly — let the code speak.",
     "discovered_at": "2026-10-08T08:10:03.837986+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/55",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "storytold/artcraft": {
+    "stars": 9125,
+    "language": "Rust",
+    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "20f537cc6478c496ef8b600e710e9bc71b55f0f6",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Readable code is a form of respect—for the next human and the next agent.",
+    "discovered_at": "2026-10-09T08:09:19.634402+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/59",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "webiny/webiny-js": {
+    "stars": 8048,
+    "language": "TypeScript",
+    "description": "Open-source, self-hosted CMS platform on AWS serverless (Lambda, DynamoDB, S3). TypeScript framework with multi-tenancy, lifecycle hooks, GraphQL API, and AI-assisted development via MCP server. Built for developers at large organizations.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      ".claude/CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "1a0ed9b8f6c2ab7b8af3f9c25de012a26285309d",
+      "CLAUDE.md": "4d6d417be307e6cd7ed83fb633b05e516a44ac78",
+      ".claude/CLAUDE.md": "5eaaf23dc16b28ba83029706e10f99c008a46ad3"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-09T08:09:28.832410+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/60",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "stablyai/orca": {
+    "stars": 88175,
+    "language": "TypeScript",
+    "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e41616285030d79af82fd5efd8e370e18936d3d1",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship cross-platform, cross-version, cross-host code that never lies about what it knows.",
+    "discovered_at": "2026-10-09T08:09:37.523885+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/61",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "isaac-sim/IsaacLab": {
+    "stars": 8303,
+    "language": "Python",
+    "description": "Unified framework for robot learning with multi-physics/renderer support",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ad47cdc60a8608ed0f1378e1c6dd1f42e138bc46",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship focused commits, respect the guide, and never let agent artifacts pollute the repo.",
+    "discovered_at": "2026-10-09T08:09:44.314286+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/62",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "jhipster/generator-jhipster": {
+    "stars": 22463,
+    "language": "TypeScript",
+    "description": "JHipster is a development platform to quickly generate, develop, & deploy modern web applications & microservice architectures.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "28af71a43880e8bc0de78f4df2998ed665ecf377",
+      "CLAUDE.md": "ab6346753753880e0ff3d343652931818322aa1c"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Trust the source tree, not the prose — and never let an agent touch dist/ or hand-edit a snapshot.",
+    "discovered_at": "2026-10-09T08:09:52.127557+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/63",
     "pr_url": null,
     "status": "pending_review"
   }

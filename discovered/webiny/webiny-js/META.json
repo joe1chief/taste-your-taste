@@ -1,0 +1,27 @@
+{
+  "stars": 8048,
+  "language": "TypeScript",
+  "description": "Open-source, self-hosted CMS platform on AWS serverless (Lambda, DynamoDB, S3). TypeScript framework with multi-tenancy, lifecycle hooks, GraphQL API, and AI-assisted development via MCP server. Built for developers at large organizations.",
+  "url": "https://github.com/webiny/webiny-js",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Exploration",
+    "DO NOT read code in `dist` folders.",
+    "Persist Learnings",
+    "When new backend features are discovered, update `ai-context/core-features-reference.md` with the new feature reference. DO NOT update this file with React features."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".claude/CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1a0ed9b8f6c2ab7b8af3f9c25de012a26285309d",
+    "CLAUDE.md": "4d6d417be307e6cd7ed83fb633b05e516a44ac78",
+    ".claude/CLAUDE.md": "5eaaf23dc16b28ba83029706e10f99c008a46ad3"
+  },
+  "discovered_at": "2026-10-09T08:09:28.341026+00:00",
+  "repo": "webiny/webiny-js"
+}

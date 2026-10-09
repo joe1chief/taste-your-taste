@@ -1,0 +1,26 @@
+{
+  "stars": 9125,
+  "language": "Rust",
+  "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+  "url": "https://github.com/storytold/artcraft",
+  "archetype": "Engineering Craft",
+  "vibe": "Readable code is a form of respect—for the next human and the next agent.",
+  "highlights": [
+    "Compile-time checked SQLx macros preferred over runtime queries",
+    "Strict file layout optimized for top-to-bottom reading, with private helpers below callers",
+    "No println!/eprintln! outside tests; use log crate macros",
+    "Markdown tables must be space-padded so columns align in plain text",
+    "Repository pruning must preserve untracked and ignored local files"
+  ],
+  "assessment": "This file treats code as a communication artifact, not just an executable one. The insistence on top-to-bottom reading order, compile-time SQL verification, and even space-padded Markdown tables shows a rare consistency of taste across languages and formats. It is effective because it reduces cognitive load for both humans and agents while preventing common slop patterns like runtime SQL errors and unreadable diffs.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "20f537cc6478c496ef8b600e710e9bc71b55f0f6",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-09T08:09:18.961610+00:00",
+  "repo": "storytold/artcraft"
+}

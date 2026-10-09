@@ -1,0 +1,26 @@
+{
+  "stars": 8303,
+  "language": "Python",
+  "description": "Unified framework for robot learning with multi-physics/renderer support",
+  "url": "https://github.com/isaac-sim/IsaacLab",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship focused commits, respect the guide, and never let agent artifacts pollute the repo.",
+  "highlights": [
+    "Single source of truth: the contribution guide owns shared rules; AGENTS.md and skills must not duplicate them.",
+    "Strict commit hygiene: feature branches only, atomic commits, imperative capitalized subjects, no AI attribution.",
+    "Warp kernel discipline: no kernels in `python -c`, no debug output in production kernels.",
+    "Environment consistency: uv-managed env and `uv run python` for all Python scripts.",
+    "Skill governance: repository skills live in `skills/` and are validated with a dedicated CLI check."
+  ],
+  "assessment": "This file demonstrates mature engineering taste by refusing to duplicate shared rules and instead delegating to a maintained contribution guide, which prevents documentation drift. Its constraints are concrete and tool-aware (Warp kernels, uv, SPDX headers), showing deep familiarity with the actual failure modes of agent-assisted development. The anti-slop rules around commits, scratch files, and AI attribution keep the repository history clean and reviewable.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ad47cdc60a8608ed0f1378e1c6dd1f42e138bc46",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-09T08:09:43.716311+00:00",
+  "repo": "isaac-sim/IsaacLab"
+}

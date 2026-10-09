@@ -1,0 +1,26 @@
+{
+  "stars": 88175,
+  "language": "TypeScript",
+  "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+  "url": "https://github.com/stablyai/orca",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship cross-platform, cross-version, cross-host code that never lies about what it knows.",
+  "highlights": [
+    "Design system is linted, not suggested: raw palette colors, restyled primitives, and computed className strings fail CI.",
+    "Never steal monitor focus in tests — no show(), bringToFront(), or app.focus(); use CDP screenshots of hidden renderers.",
+    "Vague module names (helpers, utils, common, misc) are banned; files must be named after the concrete domain concept they contain.",
+    "Remote verdict vocabulary is fixed: live / unverifiable / exited, with no synonyms, because loss of contact is never evidence of process death.",
+    "Git 2.25 is the compatibility floor; every new subcommand needs a version boundary, a fallback, and a capability cache scoped to the executing host."
+  ],
+  "assessment": "This file encodes hard-won operational scars rather than aspirational style: Windows EDR scoring, MSYS path rewriting, glibc floors, and mixed-version wire compatibility are all treated as first-class constraints. The result is an unusually honest architecture doc where every rule traces back to a real failure mode, and enforcement is pushed into lint gates instead of reviewer memory. It is the rare AGENTS.md that would actually prevent a production incident.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e41616285030d79af82fd5efd8e370e18936d3d1",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-09T08:09:36.911558+00:00",
+  "repo": "stablyai/orca"
+}
