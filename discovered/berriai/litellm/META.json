@@ -1,0 +1,24 @@
+{
+  "stars": 60808,
+  "language": "Python",
+  "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+  "url": "https://github.com/BerriAI/litellm",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Write code that reads like prose, test only what you own, and never let AI slop into the repo.",
+  "highlights": [
+    "Comments are treated as tech debt and banned unless they explain complex business logic, serve as tool input, or mark a TODO/FIXME with a reason.",
+    "Tests must fail when the feature breaks, not just when code structure changes; mutation testing should show >90% kill rate.",
+    "Never pin external facts (vendor prices, third-party fields, dates) as literals; assert invariants your code guarantees instead.",
+    "Human-facing text must avoid emojis, em dashes, semicolons, colons, bulleted lists, and AI-sounding patterns like 'It's not X, it's Y'.",
+    "Lint and type suppressions must name the exact rule and include a reason; `# type: ignore` is banned."
+  ],
+  "assessment": "This file enforces a rare discipline: it treats comments as DRY violations, demands mutation-tested regression tests, and bans external fact pinning, which together prevent the slow rot of AI-generated code. The tone is uncompromising but practical, offering concrete alternatives (Pydantic validation over Any, immutable comprehensions over mutation) rather than vague platitudes. It is a masterclass in setting boundaries that keep a large codebase maintainable without sacrificing velocity.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0254893554d28fc68f0fc1c6fd15db55298dbba1"
+  },
+  "discovered_at": "2026-10-10T07:53:54.187954+00:00",
+  "repo": "BerriAI/litellm"
+}

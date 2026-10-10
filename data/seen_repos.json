@@ -1017,7 +1017,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e24455c1db786e65e6c013302fdd8f107ababa52"
+      "AGENTS.md": "6e5a2df446ca4945dfe258651fb5b1bab2d5362b"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1042,6 +1042,14 @@
         "vibe_shift": "Shifted towards stricter process ownership and build artifact hygiene with expanded platform support.",
         "summary": "The new version expands platform support for Ghidra to Linux arm64, adds explicit guidance on Evidence provenance and snapshot bindings in the application layer, and introduces stricter rules for process ownership and generated artifacts. It also clarifies that CI retains ignored outputs as artifacts and does not push snapshot commits to feature branches, reflecting a shift toward more precise boundary contracts and build hygiene.",
         "timestamp": "2026-10-09T08:08:42.560944+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e24455c1db786e65e6c013302fdd8f107ababa52",
+        "new_sha": "6e5a2df446ca4945dfe258651fb5b1bab2d5362b",
+        "vibe_shift": "Shifted from descriptive provider documentation toward stricter ownership, normalization, and evidence-boundary discipline with explicit cleanup and schema-validation constraints.",
+        "summary": "The rule file was restructured from a provider-heavy product description into a tighter authority-and-architecture contract. The author removed verbose provider capability prose, added explicit ownership, brittleness, normalization, and schema-validation rules, and consolidated development commands and tool/test guidance. The new version also introduces a Turborepo agent-rules block and stronger generated-file and commit conventions.",
+        "timestamp": "2026-10-10T07:53:26.088287+00:00"
       }
     ]
   },
@@ -1300,6 +1308,100 @@
     "vibe": "Trust the source tree, not the prose — and never let an agent touch dist/ or hand-edit a snapshot.",
     "discovered_at": "2026-10-09T08:09:52.127557+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/63",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "alibaba/open-code-review": {
+    "stars": 45566,
+    "language": "Go",
+    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "305943432417d5c2d89b208042d57c6b0312a800",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-10T07:53:45.183761+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/65",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "BerriAI/litellm": {
+    "stars": 60808,
+    "language": "Python",
+    "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0254893554d28fc68f0fc1c6fd15db55298dbba1"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Write code that reads like prose, test only what you own, and never let AI slop into the repo.",
+    "discovered_at": "2026-10-10T07:53:54.613138+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/66",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "storytold/designcraft": {
+    "stars": 2253,
+    "language": "Rust",
+    "description": "No description provided.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "bedbfb6e6a212bb955336d0a32361fe26030b091",
+      "CLAUDE.md": "dfe78adb6aabe6004510b204a87c06698b5a9f51"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Never crash, never panic, never copy — build a clean-room InDesign killer with paranoid Rust discipline.",
+    "discovered_at": "2026-10-10T07:54:02.246841+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/67",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Ataraxy-Labs/weave": {
+    "stars": 1318,
+    "language": "Rust",
+    "description": "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
+    "files": [
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "SKILL.md": "1f9fa18002efbe6fd05c4bfc33c595c4a08018d3"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Merge at the entity, not the line — and make every refusal explain itself.",
+    "discovered_at": "2026-10-10T07:54:09.135720+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/68",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "gopasspw/gopass": {
+    "stars": 7256,
+    "language": "Go",
+    "description": "The slightly more awesome standard unix password manager for teams",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4a1cf97aa58a1d87eca5395513c81afde8ad1209"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "A battle-tested Unix password manager that values stability, portability, and disciplined contribution over shiny new toys.",
+    "discovered_at": "2026-10-10T07:54:15.217060+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/69",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,24 @@
+{
+  "stars": 7256,
+  "language": "Go",
+  "description": "The slightly more awesome standard unix password manager for teams",
+  "url": "https://github.com/gopasspw/gopass",
+  "archetype": "Pragmatic Systems",
+  "vibe": "A battle-tested Unix password manager that values stability, portability, and disciplined contribution over shiny new toys.",
+  "highlights": [
+    "Strict closed set of Conventional Commit types with explicit scoping rules for historical misuses.",
+    "Clear separation between CLI-breaking changes (major release) and Go module breaks (PKG-BREAK footer, no major).",
+    "Hard ban on CGo to preserve cross-compilation, and strong preference against new external dependencies.",
+    "Directory-by-directory guidance that tells contributors exactly where to put code and which helpers to prefer.",
+    "Mandatory DCO sign-off and squash-merged PR titles that become the changelog."
+  ],
+  "assessment": "This file reads like a maintainer's field guide: it encodes hard-won operational knowledge (CGo breaks cross-compilation, PR titles become changelogs, context keys are a last resort) rather than generic style advice. The result is a contribution surface that is unusually predictable for a 7k-star project, reducing review churn and release mistakes. It is effective because it treats conventions as load-bearing infrastructure, not bureaucracy.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4a1cf97aa58a1d87eca5395513c81afde8ad1209"
+  },
+  "discovered_at": "2026-10-10T07:54:14.755156+00:00",
+  "repo": "gopasspw/gopass"
+}

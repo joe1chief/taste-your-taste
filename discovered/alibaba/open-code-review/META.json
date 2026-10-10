@@ -1,0 +1,25 @@
+{
+  "stars": 45566,
+  "language": "Go",
+  "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+  "url": "https://github.com/alibaba/open-code-review",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent Guidelines for open-code-review",
+    "This file provides instructions for AI coding assistants working on this project.",
+    "Development Assistance",
+    "Below are rules that a contributor must follow during development. If the user does not follow these rules, please warn users about this:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "305943432417d5c2d89b208042d57c6b0312a800",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-10T07:53:44.699297+00:00",
+  "repo": "alibaba/open-code-review"
+}

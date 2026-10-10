@@ -1,0 +1,26 @@
+{
+  "stars": 2253,
+  "language": "Rust",
+  "description": "No description provided.",
+  "url": "https://github.com/storytold/designcraft",
+  "archetype": "Defensive Architect",
+  "vibe": "Never crash, never panic, never copy — build a clean-room InDesign killer with paranoid Rust discipline.",
+  "highlights": [
+    "Crash prevention outranks feature work: no unwrap/expect/panic/unsafe in non-test code, with a last-resort panic guard for command execution and file I/O.",
+    "Clean-room legal discipline: InDesign may only be observed black-box via screenshots; never read its bundle, copy assets, or touch GPL/AGPL/LGPL code.",
+    "Everything is a command — user-visible behavior must be a command in crates/engine/src/cmd/* with id, label, menu path, shortcut, params, enabled, run, and tests.",
+    "Layering enforced by cargo xtask layers; nothing below L6 may depend on egui/eframe/winit/rfd, keeping the UI crate swappable.",
+    "Quality gates before every commit: cargo xtask ci (fmt, clippy -D warnings, tests, assets, layers, wasm) with one task id per commit."
+  ],
+  "assessment": "This file treats crash-safety as a first-class architectural constraint rather than a code-review afterthought, which is exactly right for a document editor where a panic means lost user work. The clean-room rules are unusually precise about what may and may not be observed or copied, showing mature legal and ethical awareness rare in agent instructions. The command-centric design and enforced layering give agents a single, testable seam for all behavior, making autonomous operation tractable without sacrificing rigor.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "bedbfb6e6a212bb955336d0a32361fe26030b091",
+    "CLAUDE.md": "dfe78adb6aabe6004510b204a87c06698b5a9f51"
+  },
+  "discovered_at": "2026-10-10T07:54:01.744968+00:00",
+  "repo": "storytold/designcraft"
+}

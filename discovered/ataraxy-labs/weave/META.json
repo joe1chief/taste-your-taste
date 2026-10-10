@@ -1,0 +1,24 @@
+{
+  "stars": 1318,
+  "language": "Rust",
+  "description": "Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.",
+  "url": "https://github.com/Ataraxy-Labs/weave",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Merge at the entity, not the line — and make every refusal explain itself.",
+  "highlights": [
+    "Entity-level merge semantics: conflicts are resolved at function/class granularity, so independent edits to different functions never collide.",
+    "Conflict markers carry a machine-readable 'refused_by:' line naming the guard and quoting the exact disputed lines — the failure mode is self-diagnosing.",
+    "weave check always emits a verdict sentence (OK/FOUND), never a bare empty result, and exits 0/1 so it composes with hooks and scripts.",
+    "Explicit honesty about limits: 38 languages supported, but .vue/.svelte/.erb/.hs fall back to git because weave 'does not yet merge well enough to claim'.",
+    "WEAVE_EVENT=1 emits one JSON line per merge (including failures) so 'which files conflicted, on what, and how long' is a single pass, not four stderr channels joined by hand."
+  ],
+  "assessment": "This is a rare case of a tool whose interface is designed around its own failure modes: the conflict marker tells you why it refused, weave explain narrows the blast radius, and weave check verifies the human's fix against the three merge stages. The refusal to overclaim — falling back to git for formats it can parse but not merge well — is the kind of taste that builds trust in a merge driver, where a silent wrong answer is worse than a loud conflict. The event stream and exit-code discipline show the author thinks about weave as a component in a pipeline, not just a CLI.",
+  "files": [
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "SKILL.md": "1f9fa18002efbe6fd05c4bfc33c595c4a08018d3"
+  },
+  "discovered_at": "2026-10-10T07:54:08.741537+00:00",
+  "repo": "Ataraxy-Labs/weave"
+}
