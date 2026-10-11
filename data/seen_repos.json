@@ -125,7 +125,10 @@
       "CLAUDE.md"
     ],
     "archetype": "Anti-Slop Minimalist",
-    "status": "curated"
+    "status": "curated",
+    "file_shas": {
+      "CLAUDE.md": "daced9bd64f25908ebedeb4701fb406985dc8366"
+    }
   },
   "bergside/awesome-design-skills": {
     "dir": "awesome-design-skills",
@@ -1339,7 +1342,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "0254893554d28fc68f0fc1c6fd15db55298dbba1"
+      "AGENTS.md": "7f8e9cedc26be72f85caf31d5afa1dcc35b9908a"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -1347,7 +1350,17 @@
     "discovered_at": "2026-10-10T07:53:54.613138+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/66",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "0254893554d28fc68f0fc1c6fd15db55298dbba1",
+        "new_sha": "7f8e9cedc26be72f85caf31d5afa1dcc35b9908a",
+        "vibe_shift": "No shift; the prompt remains focused on strict code quality, meaningful testing, and realistic proof of fixes.",
+        "summary": "The two versions are identical, so no evolution in prompt engineering taste or constraints occurred. The author's rules remain unchanged, indicating a stable and consistent set of guidelines.",
+        "timestamp": "2026-10-11T08:00:01.169045+00:00"
+      }
+    ]
   },
   "storytold/designcraft": {
     "stars": 2253,
@@ -1402,6 +1415,104 @@
     "vibe": "A battle-tested Unix password manager that values stability, portability, and disciplined contribution over shiny new toys.",
     "discovered_at": "2026-10-10T07:54:15.217060+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/69",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "hugohe3/ppt-master": {
+    "stars": 59832,
+    "language": "Python",
+    "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "488086a725d9a9edcc702681a82cdcbdd9ae1d1c",
+      "CLAUDE.md": "b33287fe96c9bccd86bf21abac95dfa77ad57814"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Route first, never guess, and keep every rule owned by exactly one file.",
+    "discovered_at": "2026-10-11T08:00:08.578314+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/71",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pytorch/pytorch": {
+    "stars": 104214,
+    "language": "Python",
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "3515958311534096178caf18173faee47b3a532b"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Guardrails first: no autonomous GitHub actions, no silent asserts, no unnecessary rebuilds.",
+    "discovered_at": "2026-10-11T08:00:14.546403+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/72",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "huggingface/transformers": {
+    "stars": 167415,
+    "language": "Python",
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b28461c924a4217b9478062bea99d2306d7d4d05",
+      "CLAUDE.md": "b28461c924a4217b9478062bea99d2306d7d4d05"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Guard the shared codebase like a production system, not a personal scratchpad.",
+    "discovered_at": "2026-10-11T08:00:19.847296+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/73",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "MrNeRF/LichtFeld-Studio": {
+    "stars": 3835,
+    "language": "C++",
+    "description": "Train, inspect, edit, automate, and export 3D Gaussian Splatting scenes from a single native application.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "99e02f93a7bab3b9b5375a77b1d66f0a9b7c1c97"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Discover before you code, mutate with intent, and never sleep on a job.",
+    "discovered_at": "2026-10-11T08:00:24.348437+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/74",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "melgarafael/DeskcommCRM": {
+    "stars": 4530,
+    "language": "TypeScript",
+    "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fc7b50bf940621249dfeac4a949ac849f4ff78d7",
+      "CLAUDE.md": "1f2014ab5eaa59450c250409279f2d6de9c980b5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Treats every agent as a potential saboteur and every doc claim as a lie until a test proves it.",
+    "discovered_at": "2026-10-11T08:00:30.474327+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/75",
     "pr_url": null,
     "status": "pending_review"
   }

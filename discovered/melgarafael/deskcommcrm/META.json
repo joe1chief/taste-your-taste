@@ -1,0 +1,26 @@
+{
+  "stars": 4530,
+  "language": "TypeScript",
+  "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+  "url": "https://github.com/melgarafael/DeskcommCRM",
+  "archetype": "Defensive Architect",
+  "vibe": "Treats every agent as a potential saboteur and every doc claim as a lie until a test proves it.",
+  "highlights": [
+    "Documentation is executable: tests fail if AGENTS.md cites a path that doesn't exist or a version that drifts from package.json.",
+    "Explicit precedence chain for conflicting docs (CLAUDE.md > specs > prd > handoff > README) removes ambiguity for any agent.",
+    "Self-host distribution reframes environment drift as a product bug, not a dev-machine quirk.",
+    "Non-cookie attack surfaces are enumerated with their own guards, and the inventory is a git command, not a stale list.",
+    "gov:verify is explicitly declared incomplete, with a decision tree mapping change type to the gate that actually exercises it."
+  ],
+  "assessment": "This file treats documentation as a compiled artifact: paths are validated by tests, versions are checked against package.json, and counts are derived from git rather than written in prose. That inversion — docs that fail CI when they rot — is rare and eliminates the most common failure mode of agent instruction files, which is confident citation of things that no longer exist. The precedence chain and the explicit 'gov:verify does not cover everything' warning show a systems thinker who has been burned by agents trusting the wrong source.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fc7b50bf940621249dfeac4a949ac849f4ff78d7",
+    "CLAUDE.md": "1f2014ab5eaa59450c250409279f2d6de9c980b5"
+  },
+  "discovered_at": "2026-10-11T08:00:29.976992+00:00",
+  "repo": "melgarafael/DeskcommCRM"
+}

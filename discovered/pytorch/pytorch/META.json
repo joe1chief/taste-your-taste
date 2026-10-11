@@ -1,0 +1,26 @@
+{
+  "stars": 104214,
+  "language": "Python",
+  "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+  "url": "https://github.com/pytorch/pytorch",
+  "archetype": "Defensive Architect",
+  "vibe": "Guardrails first: no autonomous GitHub actions, no silent asserts, no unnecessary rebuilds.",
+  "highlights": [
+    "AI agents are explicitly forbidden from acting autonomously on GitHub; all AI-generated content must be labeled and human-reviewed.",
+    "Ruff S101 must never be silenced with noqa; asserts must be rewritten as explicit raises to survive python -O.",
+    "The .ci/docker directory is content-hashed, so any edit triggers a full Docker rebuild and must be avoided unless intended.",
+    "Builds must use exactly `pip install -e . -v --no-build-isolation`; no alternative build commands are allowed.",
+    "Commit messages must include a Test Plan with literal commands, root-cause explanations for bug fixes, and AI-assistance disclosure."
+  ],
+  "assessment": "This file treats agent behavior as a security and correctness surface, not just a style guide. The anti-autonomy GitHub policy, the S101 rewrite rule, and the Docker hash warning all prevent classes of silent, expensive, or irreversible mistakes. The result is a rare example of agent instructions that encode hard-won operational knowledge rather than generic advice.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "3515958311534096178caf18173faee47b3a532b"
+  },
+  "discovered_at": "2026-10-11T08:00:13.925953+00:00",
+  "repo": "pytorch/pytorch"
+}

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**77 tracked projects** | **26 curated** | **51 pending review**
+**82 tracked projects** | **26 curated** | **56 pending review**
 
-Last completed scan: [2026-10-10 07:54:15 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38035960253).
+Last completed scan: [2026-10-11 08:00:30 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38123241346).
 
-Latest content activity: **2026-10-10 07:54:15 UTC**.
+Latest content activity: **2026-10-11 08:00:30 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-11 08:00:30 | [melgarafael/DeskcommCRM](https://github.com/melgarafael/DeskcommCRM) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/75) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/melgarafael/deskcommcrm) |
+| 2026-10-11 08:00:24 | [MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/74) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mrnerf/lichtfeld-studio) |
+| 2026-10-11 08:00:19 | [huggingface/transformers](https://github.com/huggingface/transformers) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/73) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/huggingface/transformers) |
+| 2026-10-11 08:00:14 | [pytorch/pytorch](https://github.com/pytorch/pytorch) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/72) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pytorch/pytorch) |
+| 2026-10-11 08:00:08 | [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/71) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hugohe3/ppt-master) |
+| 2026-10-11 08:00:01 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/66) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/berriai/litellm) |
 | 2026-10-10 07:54:15 | [gopasspw/gopass](https://github.com/gopasspw/gopass) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/69) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/gopasspw/gopass) |
 | 2026-10-10 07:54:09 | [Ataraxy-Labs/weave](https://github.com/Ataraxy-Labs/weave) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/68) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ataraxy-labs/weave) |
 | 2026-10-10 07:54:02 | [storytold/designcraft](https://github.com/storytold/designcraft) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/67) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/storytold/designcraft) |
-| 2026-10-10 07:53:54 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/66) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/berriai/litellm) |
 | 2026-10-10 07:53:45 | [alibaba/open-code-review](https://github.com/alibaba/open-code-review) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/65) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/alibaba/open-code-review) |
-| 2026-10-10 07:53:26 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
-| 2026-10-09 08:09:52 | [jhipster/generator-jhipster](https://github.com/jhipster/generator-jhipster) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/63) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/jhipster/generator-jhipster) |
-| 2026-10-09 08:09:44 | [isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/62) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/isaac-sim/isaaclab) |
-| 2026-10-09 08:09:37 | [stablyai/orca](https://github.com/stablyai/orca) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
-| 2026-10-09 08:09:28 | [webiny/webiny-js](https://github.com/webiny/webiny-js) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/60) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/webiny/webiny-js) |
 <!-- TASTE:LATEST:END -->
 
 ---

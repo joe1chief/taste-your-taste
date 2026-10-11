@@ -1,0 +1,26 @@
+{
+  "stars": 59832,
+  "language": "Python",
+  "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+  "url": "https://github.com/hugohe3/ppt-master",
+  "archetype": "Defensive Architect",
+  "vibe": "Route first, never guess, and keep every rule owned by exactly one file.",
+  "highlights": [
+    "Single-owner rule governance: every cross-file rule has one owner recorded in docs/rules/rule-owners.md, with pointers elsewhere instead of restated procedure.",
+    "Strict route selection authority: routing.md owns exactly three top-level artifact routes; child workflows, profiles, and stages refine but never compete.",
+    "Absolute-path execution anchor: resolve the repo root before the first command and never issue cd into skills/ or projects/.",
+    "Machine-readable stdout discipline: keep stderr separate, never place 2>&1 upstream of a JSON/XML parser, and never batch commands through shell loops.",
+    "Explicit compatibility boundary: this is a workflow/skill package, not an app scaffold—no assumed .worktrees/, CI, or branch setup."
+  ],
+  "assessment": "This file treats prompt engineering as systems engineering: routes are mutually exclusive, rules have single owners, and execution paths are pinned to absolute roots to eliminate ambiguity. The anti-slop discipline is unusually strong—it forbids shell batching, downstream parsers, and restated procedure, which are the usual sources of agent drift. The result is a deterministic, auditable pipeline where every artifact route and every rule has exactly one authoritative home.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "488086a725d9a9edcc702681a82cdcbdd9ae1d1c",
+    "CLAUDE.md": "b33287fe96c9bccd86bf21abac95dfa77ad57814"
+  },
+  "discovered_at": "2026-10-11T08:00:07.943310+00:00",
+  "repo": "hugohe3/ppt-master"
+}

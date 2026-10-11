@@ -1,0 +1,24 @@
+{
+  "stars": 3835,
+  "language": "C++",
+  "description": "Train, inspect, edit, automate, and export 3D Gaussian Splatting scenes from a single native application.",
+  "url": "https://github.com/MrNeRF/LichtFeld-Studio",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Discover before you code, mutate with intent, and never sleep on a job.",
+  "highlights": [
+    "MCP-first workflow: prefer runtime discovery over reading C++ source",
+    "Strict separation of concerns: resources for state, tools for mutations",
+    "Explicit anti-guessing rule for operator ids, menu paths, panel ids, and UI tool ids",
+    "Long-running operations must be paired with job/event tools instead of sleeping",
+    "Post-mutation verification required (e.g., confirm selection writes with selection_get)"
+  ],
+  "assessment": "This guide demonstrates mature systems thinking by treating the MCP surface as the primary interface and enforcing a read-before-write discipline. The explicit prohibition on guessing identifiers and the requirement to verify mutations prevent the most common agent failure modes in complex GUI-driven applications. The playbook structure and job ID catalog give agents concrete, reproducible workflows rather than vague instructions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "99e02f93a7bab3b9b5375a77b1d66f0a9b7c1c97"
+  },
+  "discovered_at": "2026-10-11T08:00:23.859012+00:00",
+  "repo": "MrNeRF/LichtFeld-Studio"
+}

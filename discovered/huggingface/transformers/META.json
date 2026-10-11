@@ -1,0 +1,26 @@
+{
+  "stars": 167415,
+  "language": "Python",
+  "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+  "url": "https://github.com/huggingface/transformers",
+  "archetype": "Defensive Architect",
+  "vibe": "Guard the shared codebase like a production system, not a personal scratchpad.",
+  "highlights": [
+    "Mandates coordination on issues before opening PRs, explicitly forbidding drive-by fixes for others' work without approval.",
+    "Enforces a strict modular-vs-copies model: no new '# Copied from' statements, and generated files must never be hand-edited.",
+    "Warns that modular files can generate multiple downstream models, so 'make fix-repo' must be run and all rewrites inspected.",
+    "Treats 'attr = AttributeError()' as a deliberate converter instruction, not a bug, and forbids substituting 'real' values.",
+    "Requires 'make style' as the final step before any PR, with slow tests gated behind RUN_SLOW=1."
+  ],
+  "assessment": "This file reflects a mature, high-traffic OSS project where the cost of a bad PR is measured in maintainer hours and broken downstream models. The rules are unusually specific about failure modes (stale generated files, silent sharding changes from AttributeError substitution), which shows the constraints were written from real incidents rather than generic best practices. The tone is firm but explanatory, giving agents the 'why' so they can generalize instead of pattern-matching.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b28461c924a4217b9478062bea99d2306d7d4d05",
+    "CLAUDE.md": "b28461c924a4217b9478062bea99d2306d7d4d05"
+  },
+  "discovered_at": "2026-10-11T08:00:19.362268+00:00",
+  "repo": "huggingface/transformers"
+}
