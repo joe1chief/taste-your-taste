@@ -1,0 +1,25 @@
+{
+  "stars": 252918,
+  "language": "Python",
+  "description": "The agent that grows with you",
+  "url": "https://github.com/NousResearch/hermes-agent",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Hermes Agent - Development Guide",
+    "For AI coding assistants and developers working on hermes-agent. This root file is a hub: what",
+    "applies everywhere, then a routing table. Each area's `AGENTS.md` loads automatically when you work",
+    "in that directory; read it before editing there. `python scripts/check` caps this file at 12k chars"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "skills/AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4c4ce5c04528945b372af20f4e86970d40a6db6e",
+    "skills/AGENTS.md": "7e71a19a4022acac42e5be5ed305489e91eb32bd"
+  },
+  "discovered_at": "2026-10-12T08:16:33.187934+00:00",
+  "repo": "NousResearch/hermes-agent"
+}

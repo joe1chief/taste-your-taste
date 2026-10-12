@@ -1,0 +1,24 @@
+{
+  "stars": 1318,
+  "language": "Lean",
+  "description": "A collection of formalized statements of conjectures in Lean.",
+  "url": "https://github.com/google-deepmind/formal-conjectures",
+  "archetype": "Engineering Craft",
+  "vibe": "Formalize the source faithfully, keep the Lean simple, and never let a warning slip through.",
+  "highlights": [
+    "Statement repository, not a proof repository: almost every problem is `sorry` by design.",
+    "Faithfulness to the cited source is the top constraint: quantifier order, scope, bounds, and hypotheses must match.",
+    "`FormalConjecturesForMathlib/` must contain no `sorry`; reusable math lives there, problems live in `FormalConjectures/<Source>/`.",
+    "Build only the changed scope with `lake --wfail build`, treating warnings as failures like CI.",
+    "No global `open Classical`; use `open scoped Classical in` or a local `Decidable` instance."
+  ],
+  "assessment": "This file treats formalization as a precision engineering discipline rather than a coding exercise. By anchoring every rule to the cited mathematical source and enforcing scope-limited, warning-strict builds, it prevents the two most common failure modes in statement repositories: silently misstated theorems and unbounded build churn. The explicit separation between `FormalConjecturesForMathlib/` (sorry-free, reusable) and problem files (sorry-laden, source-faithful) is a clean architectural boundary that keeps the repository maintainable at scale.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7b2593ef0e0d8944c6e32f72c2468079cc04aa3b"
+  },
+  "discovered_at": "2026-10-12T08:17:18.924470+00:00",
+  "repo": "google-deepmind/formal-conjectures"
+}

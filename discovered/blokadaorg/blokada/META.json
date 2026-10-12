@@ -1,0 +1,25 @@
+{
+  "stars": 3267,
+  "language": "Dart",
+  "description": "The official repo for Blokada apps.",
+  "url": "https://github.com/blokadaorg/blokada",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "Agent Notes",
+    "This file is the single source of project context for AI agents. See also",
+    "`docs/domain/` for product-specific behavior rules and `common/docs/` for",
+    "business logic (account types, subscriptions, feature access)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "3345d3cd3b710990ef48ef56220a2136ab1f91e6",
+    "CLAUDE.md": "97865faeeb5ac45ecfae21b814d233e0b557f9e7"
+  },
+  "discovered_at": "2026-10-12T08:16:01.297228+00:00",
+  "repo": "blokadaorg/blokada"
+}

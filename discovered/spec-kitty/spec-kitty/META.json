@@ -1,0 +1,26 @@
+{
+  "stars": 1681,
+  "language": "Python",
+  "description": "Spec-Driven Development with organizational governance. Specs tell AI agents what to build; Charter governs how they build it. Git-native missions, enforceable workflows, and consistent engineering standards across AI coding agents and harnesses.",
+  "url": "https://github.com/spec-kitty/spec-kitty",
+  "archetype": "Defensive Architect",
+  "vibe": "Governance-first engineering where the charter outranks the code and every shortcut is a defect waiting to ship.",
+  "highlights": [
+    "Charter-first mandate: every agent must load .kittify/charter/charter.md before planning, and the charter wins any disagreement with AGENTS.md.",
+    "Pack tier firewall: packs/built-in ships to consumers, packs/internal never does, with a packaging safety test guarding the boundary.",
+    "Canonical sources only: never copy structure from older missions or hand-roll CLI equivalents; trace and file upstream gaps instead.",
+    "Retired-surface discipline: Team Kitty is frozen, sync identifiers are residue, and no # noqa: TID251 for retired modules.",
+    "Calibrated test policy: run your blast radius, never whole-repo suites, and record commands plus counts in the PR."
+  ],
+  "assessment": "This file treats agent instructions as a constitutional layer rather than a style guide, which is unusually mature for AI-assisted development. The explicit precedence rule (charter beats AGENTS.md, flag drift instead of silently resolving it) prevents the classic failure mode where agents improvise around ambiguity. The built-in versus internal pack split, backed by a packaging test, shows the team understands that doctrine leakage to consumers is a real defect class, not a documentation nit.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5178dc09c20b75ddac0e32a83cbd637fbcd1c170",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-12T08:17:42.630754+00:00",
+  "repo": "spec-kitty/spec-kitty"
+}

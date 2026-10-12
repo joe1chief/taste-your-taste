@@ -1020,7 +1020,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6e5a2df446ca4945dfe258651fb5b1bab2d5362b"
+      "AGENTS.md": "6ee0229f2b683cfe2dd91650843dc59c2853439f"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1053,6 +1053,14 @@
         "vibe_shift": "Shifted from descriptive provider documentation toward stricter ownership, normalization, and evidence-boundary discipline with explicit cleanup and schema-validation constraints.",
         "summary": "The rule file was restructured from a provider-heavy product description into a tighter authority-and-architecture contract. The author removed verbose provider capability prose, added explicit ownership, brittleness, normalization, and schema-validation rules, and consolidated development commands and tool/test guidance. The new version also introduces a Turborepo agent-rules block and stronger generated-file and commit conventions.",
         "timestamp": "2026-10-10T07:53:26.088287+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6e5a2df446ca4945dfe258651fb5b1bab2d5362b",
+        "new_sha": "6ee0229f2b683cfe2dd91650843dc59c2853439f",
+        "vibe_shift": "Shifted towards stricter ownership boundaries and more thorough bug-fix cleanup.",
+        "summary": "The new version adds explicit rules about consumers using the owner's parsed facts, keeping proof of ownership separate from validity, and treating unresolved identity as unknown. It also introduces a dedicated bug-fixing workflow that requires inspecting the producing boundary and completing related refactors in the same change. These changes reflect a shift toward stricter ownership boundaries and more disciplined cleanup during bug fixes.",
+        "timestamp": "2026-10-12T08:15:19.490155+00:00"
       }
     ]
   },
@@ -1513,6 +1521,104 @@
     "vibe": "Treats every agent as a potential saboteur and every doc claim as a lie until a test proves it.",
     "discovered_at": "2026-10-11T08:00:30.474327+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/75",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "blokadaorg/blokada": {
+    "stars": 3267,
+    "language": "Dart",
+    "description": "The official repo for Blokada apps.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "3345d3cd3b710990ef48ef56220a2136ab1f91e6",
+      "CLAUDE.md": "97865faeeb5ac45ecfae21b814d233e0b557f9e7"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-10-12T08:16:01.931104+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/77",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "NousResearch/hermes-agent": {
+    "stars": 252918,
+    "language": "Python",
+    "description": "The agent that grows with you",
+    "files": [
+      "AGENTS.md",
+      "skills/AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4c4ce5c04528945b372af20f4e86970d40a6db6e",
+      "skills/AGENTS.md": "7e71a19a4022acac42e5be5ed305489e91eb32bd"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-12T08:16:33.677640+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/78",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "NVIDIA/cccl": {
+    "stars": 2534,
+    "language": "C++",
+    "description": "CUDA Core Compute Libraries",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4afbbad2914de8f922a07854678fea18cca286a9",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Build less, test targeted, and never cancel a full build.",
+    "discovered_at": "2026-10-12T08:17:01.216209+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/79",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "google-deepmind/formal-conjectures": {
+    "stars": 1318,
+    "language": "Lean",
+    "description": "A collection of formalized statements of conjectures in Lean.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7b2593ef0e0d8944c6e32f72c2468079cc04aa3b"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Formalize the source faithfully, keep the Lean simple, and never let a warning slip through.",
+    "discovered_at": "2026-10-12T08:17:19.470844+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/80",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "spec-kitty/spec-kitty": {
+    "stars": 1681,
+    "language": "Python",
+    "description": "Spec-Driven Development with organizational governance. Specs tell AI agents what to build; Charter governs how they build it. Git-native missions, enforceable workflows, and consistent engineering standards across AI coding agents and harnesses.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5178dc09c20b75ddac0e32a83cbd637fbcd1c170",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Governance-first engineering where the charter outranks the code and every shortcut is a defect waiting to ship.",
+    "discovered_at": "2026-10-12T08:17:43.079908+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/81",
     "pr_url": null,
     "status": "pending_review"
   }

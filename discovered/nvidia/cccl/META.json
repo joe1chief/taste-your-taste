@@ -1,0 +1,26 @@
+{
+  "stars": 2534,
+  "language": "C++",
+  "description": "CUDA Core Compute Libraries",
+  "url": "https://github.com/NVIDIA/cccl",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Build less, test targeted, and never cancel a full build.",
+  "highlights": [
+    "Enforces a 9-step iteration cycle from research to build/test, emphasizing consistency with sibling code.",
+    "Warns that full builds take 60+ minutes and tests 30+ minutes, with explicit 'do not cancel once started'.",
+    "Provides targeted build/test examples per subproject to avoid expensive full builds.",
+    "Documents known agent limitations (e.g., Codex cloud cannot run Docker or access GPUs).",
+    "CI override matrix rules: PR merges blocked while active, must reset to empty before merging."
+  ],
+  "assessment": "This file demonstrates mature engineering taste by treating build and test time as a scarce resource, mandating targeted workflows and explicit time budgets. It balances agent autonomy with guardrails—such as the override matrix merge block and GPU test warnings—while insisting on consistency with existing code patterns. The result is a pragmatic, systems-level guide that prevents common agent failure modes like runaway builds or style drift.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4afbbad2914de8f922a07854678fea18cca286a9",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-12T08:17:00.558132+00:00",
+  "repo": "NVIDIA/cccl"
+}
