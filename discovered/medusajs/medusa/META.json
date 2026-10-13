@@ -1,0 +1,23 @@
+{
+  "stars": 36722,
+  "language": "TypeScript",
+  "description": "The world's most flexible commerce platform for agents and developers",
+  "url": "https://github.com/medusajs/medusa",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Medusa Core",
+    "Open-source commerce platform. TypeScript monorepo with 35+ modular commerce packages.",
+    "> When working on the API reference documentation (`www/apps/api-reference`), read [`www/apps/api-reference/CLAUDE.md`](www/apps/api-reference/CLAUDE.md) for its path structure and the OAS → public docs flow.",
+    "> When working on the resources documentation (`www/apps/resources`), read [`www/apps/resources/CLAUDE.md`](www/apps/resources/CLAUDE.md) for details on references and how they're generated and built"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "d7eb901b12716c0c040015508481cfd350b8f9d6"
+  },
+  "discovered_at": "2026-10-13T08:43:37.993562+00:00",
+  "repo": "medusajs/medusa"
+}

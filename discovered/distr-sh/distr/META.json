@@ -1,0 +1,23 @@
+{
+  "stars": 1234,
+  "language": "Go",
+  "description": "The Open Source control plane for self-hosted, BYOC, and on-prem deployments. Everything you need to distribute applications to self-hosted customers out of the box. Supporting Docker Compose, Docker Swarm and Helm based applications.",
+  "url": "https://github.com/distr-sh/distr",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "Guidance for Claude Code (claude.ai/code) and other agents working in this repository.",
+    "Distr distributes applications to self-managed customers. The Distr server runs in the cloud, controllers run in customer environments and an OCI-compatible registry serves the artifacts.",
+    "The component in customer environments is the Distr Controller, never the agent. The name holds for user-facing text, docs, identifiers, file and folder names. Keep the former agent name only where installed controllers or self-hosted configurations depend on it: the deprecated `/api/v1/agent*` routes and the `agent*` fields controllers send to them, the JWT audience `agent`, the Kubernetes label `agent.distr.sh/deployment`, the Helm secrets `sh.distr.agent.v1.*`, the field managers `distr-agent*`, the manifest revisions older than the current one, the resource names and compose service of targets with `LegacyControllerName` (the `controllerName` template variable) and the `AGENT_*` env var aliases of Distr itself. Never add an `agent*` alias to the user-facing API or the SDK."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "28048b8dc4f4717f0a486944a2f8d16ad6cba2ee"
+  },
+  "discovered_at": "2026-10-13T08:42:33.672014+00:00",
+  "repo": "distr-sh/distr"
+}

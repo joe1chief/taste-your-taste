@@ -1,0 +1,25 @@
+{
+  "stars": 11765,
+  "language": "JavaScript",
+  "description": "The Block Editor project for WordPress and beyond. Plugin is available from the official repository.",
+  "url": "https://github.com/WordPress/gutenberg",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Dev environment tips",
+    "nvm use                    # Use the required node version",
+    "npm install && composer install"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "23e622afe20324683c6cb0f7568777a445e0fe2a",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-13T08:44:31.631167+00:00",
+  "repo": "WordPress/gutenberg"
+}

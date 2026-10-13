@@ -1020,7 +1020,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6ee0229f2b683cfe2dd91650843dc59c2853439f"
+      "AGENTS.md": "16a586b18340d2bae8f4b0ecd6b64a463df247ee"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1061,6 +1061,14 @@
         "vibe_shift": "Shifted towards stricter ownership boundaries and more thorough bug-fix cleanup.",
         "summary": "The new version adds explicit rules about consumers using the owner's parsed facts, keeping proof of ownership separate from validity, and treating unresolved identity as unknown. It also introduces a dedicated bug-fixing workflow that requires inspecting the producing boundary and completing related refactors in the same change. These changes reflect a shift toward stricter ownership boundaries and more disciplined cleanup during bug fixes.",
         "timestamp": "2026-10-12T08:15:19.490155+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6ee0229f2b683cfe2dd91650843dc59c2853439f",
+        "new_sha": "16a586b18340d2bae8f4b0ecd6b64a463df247ee",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-13T08:41:45.965757+00:00"
       }
     ]
   },
@@ -1619,6 +1627,100 @@
     "vibe": "Governance-first engineering where the charter outranks the code and every shortcut is a defect waiting to ship.",
     "discovered_at": "2026-10-12T08:17:43.079908+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/81",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "distr-sh/distr": {
+    "stars": 1234,
+    "language": "Go",
+    "description": "The Open Source control plane for self-hosted, BYOC, and on-prem deployments. Everything you need to distribute applications to self-hosted customers out of the box. Supporting Docker Compose, Docker Swarm and Helm based applications.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "28048b8dc4f4717f0a486944a2f8d16ad6cba2ee"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-13T08:42:34.294277+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/83",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Dash-Industry-Forum/dash.js": {
+    "stars": 5551,
+    "language": "JavaScript",
+    "description": "A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2d2fb3f83a3a8d3d0358895550505e65e422543a",
+      "CLAUDE.md": "0c87f0e61e5d07bbcad07b284d1953c20565ea8c"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-13T08:43:06.751104+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/84",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "medusajs/medusa": {
+    "stars": 36722,
+    "language": "TypeScript",
+    "description": "The world's most flexible commerce platform for agents and developers",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "d7eb901b12716c0c040015508481cfd350b8f9d6"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-13T08:43:38.598416+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/85",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Kilo-Org/kilocode": {
+    "stars": 27586,
+    "language": "TypeScript",
+    "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d11275fd5964d1e721ac0fc5314fa65cc9007ca4"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship fast, name short, never swallow an error, and let the typechecker do the talking.",
+    "discovered_at": "2026-10-13T08:44:00.194414+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/86",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "WordPress/gutenberg": {
+    "stars": 11765,
+    "language": "JavaScript",
+    "description": "The Block Editor project for WordPress and beyond. Plugin is available from the official repository.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "23e622afe20324683c6cb0f7568777a445e0fe2a",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-13T08:44:32.194134+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/87",
     "pr_url": null,
     "status": "pending_review"
   }

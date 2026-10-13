@@ -1,0 +1,24 @@
+{
+  "stars": 27586,
+  "language": "TypeScript",
+  "description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+  "url": "https://github.com/Kilo-Org/kilocode",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship fast, name short, never swallow an error, and let the typechecker do the talking.",
+  "highlights": [
+    "Mandatory single-word naming for agent-written code, with explicit good/bad examples like `pid`, `cfg`, `err` versus `inputPID`, `existingClient`, `connectTimeout`.",
+    "Hard ban on empty catch blocks, with a three-step decision tree: remove the try/catch, handle explicitly, or at minimum log via `log.error`.",
+    "Style rules that eliminate whole classes of bugs: no `let` unless reassigning, no `else` after early return, no `any`, no out-of-bounds indexing (`array.at(-1)` over `array[array.length - 1]`).",
+    "CI-enforced guardrails for a fork: `kilocode_change` markers, workflow allowlist, source-link extraction, and an Effect facade ratchet to prevent upstream merge drift.",
+    "Explicit quality-check matrix per package, plus the blunt rule that root `bun test` is forbidden and exits with code 1."
+  ],
+  "assessment": "This file reads like a senior maintainer who has been burned by merge conflicts, silent failures, and verbose agent output. The naming and style rules are unusually opinionated but internally consistent: short names, no `let`, no `else`, no empty catches all reduce surface area for bugs and review noise. The CI guardrails around `kilocode_change` markers and workflow allowlists show real operational maturity for a large fork, treating upstream drift as a first-class engineering problem rather than an afterthought.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d11275fd5964d1e721ac0fc5314fa65cc9007ca4"
+  },
+  "discovered_at": "2026-10-13T08:43:59.635663+00:00",
+  "repo": "Kilo-Org/kilocode"
+}

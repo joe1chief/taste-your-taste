@@ -1,0 +1,25 @@
+{
+  "stars": 5551,
+  "language": "JavaScript",
+  "description": "A reference client implementation for the playback of MPEG DASH via Javascript and compliant browsers.",
+  "url": "https://github.com/Dash-Industry-Forum/dash.js",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "dash.js — DASH Industry Forum reference client. Pure JS (ES2020), ESM, Node >= 20.",
+    "Build & Test",
+    "`npm run build` skips tests/lint.** Use `npm run build-modern` for the full pipeline (clean + tsc + test + lint + webpack)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2d2fb3f83a3a8d3d0358895550505e65e422543a",
+    "CLAUDE.md": "0c87f0e61e5d07bbcad07b284d1953c20565ea8c"
+  },
+  "discovered_at": "2026-10-13T08:43:06.004626+00:00",
+  "repo": "Dash-Industry-Forum/dash.js"
+}

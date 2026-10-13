@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**87 tracked projects** | **26 curated** | **61 pending review**
+**92 tracked projects** | **26 curated** | **66 pending review**
 
-Last completed scan: [2026-10-12 08:17:43 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38222423863).
+Last completed scan: [2026-10-13 08:44:32 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38370940704).
 
-Latest content activity: **2026-10-12 08:17:43 UTC**.
+Latest content activity: **2026-10-13 08:44:32 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-13 08:44:32 | [WordPress/gutenberg](https://github.com/WordPress/gutenberg) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/87) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/wordpress/gutenberg) |
+| 2026-10-13 08:44:00 | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/86) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kilo-org/kilocode) |
+| 2026-10-13 08:43:38 | [medusajs/medusa](https://github.com/medusajs/medusa) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/85) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/medusajs/medusa) |
+| 2026-10-13 08:43:06 | [Dash-Industry-Forum/dash.js](https://github.com/Dash-Industry-Forum/dash.js) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/84) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/dash-industry-forum/dash.js) |
+| 2026-10-13 08:42:34 | [distr-sh/distr](https://github.com/distr-sh/distr) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/83) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/distr-sh/distr) |
+| 2026-10-13 08:41:45 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
 | 2026-10-12 08:17:43 | [spec-kitty/spec-kitty](https://github.com/spec-kitty/spec-kitty) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/81) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spec-kitty/spec-kitty) |
 | 2026-10-12 08:17:19 | [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/80) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/google-deepmind/formal-conjectures) |
 | 2026-10-12 08:17:01 | [NVIDIA/cccl](https://github.com/NVIDIA/cccl) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/79) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvidia/cccl) |
 | 2026-10-12 08:16:33 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/78) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nousresearch/hermes-agent) |
-| 2026-10-12 08:16:01 | [blokadaorg/blokada](https://github.com/blokadaorg/blokada) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/77) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/blokadaorg/blokada) |
-| 2026-10-12 08:15:19 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
-| 2026-10-11 08:00:30 | [melgarafael/DeskcommCRM](https://github.com/melgarafael/DeskcommCRM) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/75) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/melgarafael/deskcommcrm) |
-| 2026-10-11 08:00:24 | [MrNeRF/LichtFeld-Studio](https://github.com/MrNeRF/LichtFeld-Studio) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/74) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mrnerf/lichtfeld-studio) |
-| 2026-10-11 08:00:19 | [huggingface/transformers](https://github.com/huggingface/transformers) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/73) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/huggingface/transformers) |
-| 2026-10-11 08:00:14 | [pytorch/pytorch](https://github.com/pytorch/pytorch) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/72) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pytorch/pytorch) |
 <!-- TASTE:LATEST:END -->
 
 ---
