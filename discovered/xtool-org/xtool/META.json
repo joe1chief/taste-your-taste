@@ -1,0 +1,25 @@
+{
+  "stars": 9778,
+  "language": "Swift",
+  "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+  "url": "https://github.com/xtool-org/xtool",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "xtool is a cross-platform replacement for Xcode (including build system, provisioning, deployment).",
+    "The `xtool` CLI supports macOS, Linux, WSL. The lower-level XKit (provisioning and device interaction) library additionally supports iOS.",
+    "Development",
+    "The majority of the code is in the Swift Package. You can use `swift build` / `swift test` / etc for iteration."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7d9f8f17c051268e93d1745f6321d3d9f8b033b8",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-14T06:54:36.758446+00:00",
+  "repo": "xtool-org/xtool"
+}

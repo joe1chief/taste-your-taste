@@ -1,0 +1,23 @@
+{
+  "stars": 34712,
+  "language": "TypeScript",
+  "description": "The open agent skills tool - npx skills",
+  "url": "https://github.com/vercel-labs/skills",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "This file provides guidance to AI coding agents working on the `skills` CLI codebase.",
+    "Project Overview",
+    "`skills` is the CLI for the open agent skills ecosystem."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6f004bf1f696d8d83b2c1950c40cd8239d66a442"
+  },
+  "discovered_at": "2026-10-14T06:54:04.718871+00:00",
+  "repo": "vercel-labs/skills"
+}

@@ -1,0 +1,23 @@
+{
+  "stars": 2121,
+  "language": "Swift",
+  "description": "📦 A macOS utility to seamlessly migrate applications to external storage and reclaim local disk space.【一款 macOS 工具，无缝迁移应用到外部存储并自动建立链接，释放宝贵的本地空间】",
+  "url": "https://github.com/wzh4869/AppPorts",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AI Assistant Guide",
+    "This file provides guidance to AI coding assistants when working with code in this repository.",
+    "Guiding Principles (MUST FOLLOW)",
+    "Keep it clear**: Write Swift code that is easy to read, maintain, and explain. Prefer clarity over cleverness."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "96d06dc4ae422d28959ee4f86d19abf054ba9190"
+  },
+  "discovered_at": "2026-10-14T06:55:08.518221+00:00",
+  "repo": "wzh4869/AppPorts"
+}

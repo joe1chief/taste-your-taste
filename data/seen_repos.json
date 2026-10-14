@@ -74,9 +74,19 @@
     "archetype": "Anti-Slop Minimalist",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "da73ea6f3b5d607f9b2fc0c3a49f8c2703ae7e75",
-      "CLAUDE.md": "259e94fdecba6473525ab544e26894c1a302913d"
-    }
+      "AGENTS.md": "ac6a71af751e5e5d42b99c5959b3f9443cd92685",
+      "CLAUDE.md": "bcb1a467442bdd236cb15fc7a813144ee7295961"
+    },
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "da73ea6f3b5d607f9b2fc0c3a49f8c2703ae7e75",
+        "new_sha": "ac6a71af751e5e5d42b99c5959b3f9443cd92685",
+        "vibe_shift": "Shifted from no constraints to a strict, deterministic, and automation-enforced operating contract with heavy emphasis on token economy and cross-platform parity.",
+        "summary": "The previous version was empty, so the new version establishes a comprehensive operating contract for AI agents. It introduces strict token economy rules, cross-platform parity definitions, merge protocols, and change management constraints. The author's taste has shifted from no guidance to highly prescriptive, deterministic, and automation-first constraints.",
+        "timestamp": "2026-10-14T06:53:19.993383+00:00"
+      }
+    ]
   },
   "mksglu/context-mode": {
     "stars": 24343,
@@ -1721,6 +1731,100 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-10-13T08:44:32.194134+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/87",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vercel-labs/skills": {
+    "stars": 34712,
+    "language": "TypeScript",
+    "description": "The open agent skills tool - npx skills",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6f004bf1f696d8d83b2c1950c40cd8239d66a442"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-14T06:54:05.419300+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/89",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "xtool-org/xtool": {
+    "stars": 9778,
+    "language": "Swift",
+    "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7d9f8f17c051268e93d1745f6321d3d9f8b033b8",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-14T06:54:37.251073+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/90",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "wzh4869/AppPorts": {
+    "stars": 2121,
+    "language": "Swift",
+    "description": "📦 A macOS utility to seamlessly migrate applications to external storage and reclaim local disk space.【一款 macOS 工具，无缝迁移应用到外部存储并自动建立链接，释放宝贵的本地空间】",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "96d06dc4ae422d28959ee4f86d19abf054ba9190"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-14T06:55:09.211764+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/91",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "lfortran/lfortran": {
+    "stars": 1254,
+    "language": "C++",
+    "description": "Official main repository for LFortran",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "cefc2d0c5bd88d279f2e5dfb806771e54fed8373",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "One toolchain, one bug, one PR — no improvisation allowed.",
+    "discovered_at": "2026-10-14T06:55:35.503193+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/92",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Gaurav-Gosain/tuios": {
+    "stars": 5263,
+    "language": "Go",
+    "description": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5eb1af801be72e8c2a183323be8c4325e019b4b4"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship a terminal OS that survives restarts, and don't melt the maintainer's machine while testing it.",
+    "discovered_at": "2026-10-14T06:55:42.827688+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/93",
     "pr_url": null,
     "status": "pending_review"
   }

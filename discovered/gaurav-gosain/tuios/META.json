@@ -1,0 +1,24 @@
+{
+  "stars": 5263,
+  "language": "Go",
+  "description": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent.",
+  "url": "https://github.com/Gaurav-Gosain/tuios",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship a terminal OS that survives restarts, and don't melt the maintainer's machine while testing it.",
+  "highlights": [
+    "The skill document is embedded in the binary and its commands are tested against the command tree, so printed docs can never drift from the build.",
+    "Test runs are explicitly capped with nice and taskset to half the cores because the maintainer works on the same box; GOMAXPROCS and -p are rejected as insufficient.",
+    "The ghostty backend is a first-class build target with its own test invocation, acknowledging that a plain go test can pass while the shipped backend is broken.",
+    "Go libraries live in the same repo as nested modules with go.work, but replace directives are banned so go install @vX still resolves correctly.",
+    "The web terminal is split into a separate binary for security isolation rather than folded into the main process."
+  ],
+  "assessment": "This file reflects a maintainer who has been burned by the gap between what CI proves and what users actually run, and has closed it with embedded, test-verified docs and a dedicated backend test path. The resource-capping instructions show unusual empathy for the developer's own machine, treating the test suite as a guest rather than an entitled process. The module and pinning rules are the kind of hard-won detail that prevents subtle release breakage, and they are stated as rules rather than suggestions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5eb1af801be72e8c2a183323be8c4325e019b4b4"
+  },
+  "discovered_at": "2026-10-14T06:55:42.298452+00:00",
+  "repo": "Gaurav-Gosain/tuios"
+}

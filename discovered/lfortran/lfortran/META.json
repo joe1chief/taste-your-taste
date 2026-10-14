@@ -1,0 +1,26 @@
+{
+  "stars": 1254,
+  "language": "C++",
+  "description": "Official main repository for LFortran",
+  "url": "https://github.com/lfortran/lfortran",
+  "archetype": "Pragmatic Systems",
+  "vibe": "One toolchain, one bug, one PR — no improvisation allowed.",
+  "highlights": [
+    "Pixi is the only sanctioned toolchain; apt, brew, conda, pip, and standalone CMake/Ninja are explicitly forbidden.",
+    "LLVM 11 is mandatory for all reference tests and updates, pinning the compiler backend to a single known-good version.",
+    "The `build` vs `rebuild` distinction is documented with the exact cost of misuse (15+ minutes for a one-line edit).",
+    "The reproduce → reduce → fix loop enforces 'one bug = one MRE = one PR' as a hard architectural rule.",
+    "Agent skills live once in `.agents/skills/` with symlinks from `.claude/skills`, avoiding vendor-specific duplication."
+  ],
+  "assessment": "This file treats agent behavior as a first-class engineering concern, encoding hard constraints (toolchain, LLVM version, worktree isolation) that prevent the most common failure modes of LLM-driven development: environment drift, stale generated sources, and sprawling multi-bug PRs. The explicit cost model for `build` vs `rebuild` and the batch orchestration rules show a rare level of operational maturity, turning vague 'be careful' advice into enforceable, reproducible procedure.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "cefc2d0c5bd88d279f2e5dfb806771e54fed8373",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-14T06:55:34.954238+00:00",
+  "repo": "lfortran/lfortran"
+}
