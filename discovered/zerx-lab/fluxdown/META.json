@@ -1,0 +1,24 @@
+{
+  "stars": 4490,
+  "language": "Rust",
+  "description": "Rust 驱动的多协议下载管理器，支持 HTTP/FTP/BitTorrent 磁力链接及 HLS/DASH 流媒体，智能多线程加速与浏览器无缝集成。精美界面，极致性能，永久免费，零广告。",
+  "url": "https://github.com/zerx-lab/FluxDown",
+  "archetype": "Defensive Architect",
+  "vibe": "One Rust engine, many hosts, zero drift — every invariant is a contract, every contract has a coordinate.",
+  "highlights": [
+    "Single source of truth discipline: version, schema, routes, and settings keys each have exactly one canonical location, and docs only point to coordinates rather than duplicating enumerations.",
+    "Explicit crate boundary enforcement: engine has zero UI/FFI/axum dependencies, protocol is transport-agnostic, and feature gates guarantee zero behavior change on the main download path when plugins are off.",
+    "Runtime invariants treated as hard law: actor must drain resolve_rx/plugin_retry_rx, pg byte columns must be BIGINT, every console subprocess must be wrapped in no_console_window.",
+    "Compile-time traps documented with rationale: rquickjs feature combinations, panic=abort prohibition, iOS librqbit patch, and gpui-fast retained-mode state rules.",
+    "Knowledge docs confined to .omp/ with a same-turn sync matrix so architecture changes propagate to rules, agents, and skills in one pass."
+  ],
+  "assessment": "This is a rare example of an AGENTS.md that treats itself as a contract rather than a tutorial — it refuses to enumerate what source code already knows and instead pins down the seams, invariants, and coordinates that an agent cannot infer. The same-turn sync matrix and the explicit 'source is the only truth' rule prevent the classic documentation drift that plagues large multi-host repos. The result is a file that stays small, stays accurate, and forces every architectural change to be deliberate across all affected surfaces.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f8f09919e3179e57f3a932e837f3808956d97853"
+  },
+  "discovered_at": "2026-10-15T06:42:30.438906+00:00",
+  "repo": "zerx-lab/FluxDown"
+}

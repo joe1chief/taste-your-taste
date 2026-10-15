@@ -1,0 +1,25 @@
+{
+  "stars": 29916,
+  "language": "Go",
+  "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+  "url": "https://github.com/vxcontrol/pentagi",
+  "archetype": "Engineering Craft",
+  "vibe": "Comments are a budget, not a diary — spend them only on what the code cannot say.",
+  "highlights": [
+    "Comment density targets: 0–2% of a logic file, ~18% of a type-declaration file; hundreds-line function bodies carry none.",
+    "A comment must carry why-this-not-the-obvious, external constraints, or boundary conditions — never restate the code.",
+    "No archaeology: git holds history, so 'it used to be' and 'no longer' are deleted while the invariant they protected stays.",
+    "No dead pointers: no §, no requirement ids like (R37), no references to untracked planning documents.",
+    "GraphQL schema is a public artifact — zero triple-quoted descriptions, fields never commented, names must speak for themselves.",
+    "Comment-only changes are proven by comparing comment-free token streams (go/scanner, ts.createPrinter) rather than reading diffs."
+  ],
+  "assessment": "This file treats comments as a scarce engineering resource with measurable budgets and explicit deletion criteria, which is rare and unusually disciplined. The distinction between machine-read comments (swaggo annotations, sqlc name comments, GraphQL descriptions) and human prose shows a systems-level understanding of where text actually travels. The insistence on proving comment-only changes via token-stream comparison, including validating the checker in both directions, is the kind of rigor that prevents silent regressions in refactors.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "b84519081f75ac3edc8d28f68054f4b66d4a0f08"
+  },
+  "discovered_at": "2026-10-15T06:42:16.434077+00:00",
+  "repo": "vxcontrol/pentagi"
+}

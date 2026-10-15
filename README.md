@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**97 tracked projects** | **26 curated** | **71 pending review**
+**102 tracked projects** | **26 curated** | **76 pending review**
 
-Last completed scan: [2026-10-14 06:55:42 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38524845467).
+Last completed scan: [2026-10-15 06:42:31 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/38693925981).
 
-Latest content activity: **2026-10-14 06:55:42 UTC**.
+Latest content activity: **2026-10-15 06:42:30 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-15 06:42:30 | [zerx-lab/FluxDown](https://github.com/zerx-lab/FluxDown) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/100) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/zerx-lab/fluxdown) |
+| 2026-10-15 06:42:24 | [rust-lang/rust](https://github.com/rust-lang/rust) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/99) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rust-lang/rust) |
+| 2026-10-15 06:42:16 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/98) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vxcontrol/pentagi) |
+| 2026-10-15 06:42:10 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/97) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/k-dense-ai/scientific-agent-skills) |
+| 2026-10-15 06:42:04 | [nvm-sh/nvm](https://github.com/nvm-sh/nvm) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/96) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvm-sh/nvm) |
+| 2026-10-15 06:41:51 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-10-15 06:41:40 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
 | 2026-10-14 06:55:42 | [Gaurav-Gosain/tuios](https://github.com/Gaurav-Gosain/tuios) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/93) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/gaurav-gosain/tuios) |
 | 2026-10-14 06:55:35 | [lfortran/lfortran](https://github.com/lfortran/lfortran) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/92) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lfortran/lfortran) |
 | 2026-10-14 06:55:09 | [wzh4869/AppPorts](https://github.com/wzh4869/AppPorts) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/91) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/wzh4869/appports) |
-| 2026-10-14 06:54:37 | [xtool-org/xtool](https://github.com/xtool-org/xtool) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/90) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/xtool-org/xtool) |
-| 2026-10-14 06:54:05 | [vercel-labs/skills](https://github.com/vercel-labs/skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/89) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/skills) |
-| 2026-10-14 06:53:19 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/debpalash/voicestudio) |
-| 2026-10-13 08:44:32 | [WordPress/gutenberg](https://github.com/WordPress/gutenberg) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/87) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/wordpress/gutenberg) |
-| 2026-10-13 08:44:00 | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/86) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kilo-org/kilocode) |
-| 2026-10-13 08:43:38 | [medusajs/medusa](https://github.com/medusajs/medusa) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/85) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/medusajs/medusa) |
-| 2026-10-13 08:43:06 | [Dash-Industry-Forum/dash.js](https://github.com/Dash-Industry-Forum/dash.js) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/84) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/dash-industry-forum/dash.js) |
 <!-- TASTE:LATEST:END -->
 
 ---

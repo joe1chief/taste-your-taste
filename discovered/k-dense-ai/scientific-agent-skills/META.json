@@ -1,0 +1,24 @@
+{
+  "stars": 49643,
+  "language": "Python",
+  "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+  "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship only what the agent loads, validate everything, and never let a skill smuggle in a test or a secret.",
+  "highlights": [
+    "Strict scope policing: general software-engineering, infrastructure-with-a-science-example, and orchestrator skills are routinely declined to protect selection quality.",
+    "Closed frontmatter contract: only six fields allowed, block-style YAML required because strictyaml rejects JSON flow style and takes name/description down with it.",
+    "Hard separation of concerns: tests and diagrams never live under skills/, tests anchor via explicit path resolution, and one skill per pytest process to avoid _common module collisions.",
+    "Version discipline: metadata.version must be bumped in the same change, and plugin.json version must stay identical to pyproject.toml.",
+    "Security scanning with documented false-positive triage: verify findings against the code before 'fixing' them."
+  ],
+  "assessment": "This file treats the skill directory as a runtime artifact with a strict load contract, not a general-purpose repo folder, which is exactly the right mental model for agent-consumed content. The explicit enumeration of validator failure modes (flow-style YAML, top-level Hermes keys, JSON-string manifest blocks) shows hard-won operational knowledge rather than aspirational style. The one-skill-per-process rule and the _common.py collision story are the kind of concrete, non-obvious constraint that separates a real engineering document from boilerplate.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9d9a12efedffba81a23fe209ef9ce2cc427e7368"
+  },
+  "discovered_at": "2026-10-15T06:42:09.857402+00:00",
+  "repo": "K-Dense-AI/scientific-agent-skills"
+}

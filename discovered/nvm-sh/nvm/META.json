@@ -1,0 +1,24 @@
+{
+  "stars": 95501,
+  "language": "Shell",
+  "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+  "url": "https://github.com/nvm-sh/nvm",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Portability is non-negotiable; every shell, every test, every time.",
+  "highlights": [
+    "POSIX-compliant shell scripting across sh, dash, bash, ksh, and zsh",
+    "Comprehensive test suite with urchin, covering fast, slow, sourcing, and installation tests",
+    "Strict shellcheck linting and EditorConfig compliance enforced in CI",
+    "Internal functions prefixed with nvm_ for clear namespace separation",
+    "Mock files must only be updated via update_test_mocks.sh script"
+  ],
+  "assessment": "This instruction file reflects a deep commitment to portability and reliability, treating shell compatibility as a first-class constraint rather than an afterthought. The emphasis on testing across multiple shells and using dedicated linting tools demonstrates a mature, systems-level engineering discipline that prioritizes correctness over convenience. The clear separation of concerns and detailed function categorization make the codebase navigable even for AI agents.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "55efa27d68c70d6fba9a38ccbf482f0ccd2ee225"
+  },
+  "discovered_at": "2026-10-15T06:42:04.107644+00:00",
+  "repo": "nvm-sh/nvm"
+}

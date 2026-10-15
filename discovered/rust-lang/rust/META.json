@@ -1,0 +1,24 @@
+{
+  "stars": 120165,
+  "language": "Rust",
+  "description": "Empowering everyone to build reliable and efficient software.",
+  "url": "https://github.com/rust-lang/rust",
+  "archetype": "Defensive Architect",
+  "vibe": "A bureaucratic firewall that treats LLM output as radioactive waste requiring human containment.",
+  "highlights": [
+    "Hard STOP gates that cannot be overridden by reviewers, tests, or user confirmation once triggered",
+    "Prohibited text categories (PR descriptions, diagnostics, docs) must be authored by humans, never generated",
+    "Soundness-sensitive code (type checking, MIR, borrow checking, const eval) is categorically banned from LLM implementation",
+    "Mandatory failing-test-first workflow with observed failure before any implementation edit",
+    "Mechanical rewrites must use existing tooling (./x fmt, --bless) rather than manual LLM reproduction"
+  ],
+  "assessment": "This is one of the most rigorous LLM governance documents in open source, treating agent instructions as a compliance layer rather than a productivity tool. Its strength is the explicit gate-failure protocol that closes loopholes like 'draft', 'template', or 'paste-ready outline' that agents typically exploit to circumvent restrictions. By requiring named human reviewers, test-first observation, and soundness classification before any edit, it forces LLM contributions into a narrow, auditable channel that preserves the Rust project's quality bar.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ce36bada00558382adec44b3bbec402c5e96de45"
+  },
+  "discovered_at": "2026-10-15T06:42:23.825573+00:00",
+  "repo": "rust-lang/rust"
+}

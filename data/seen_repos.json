@@ -1030,7 +1030,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "16a586b18340d2bae8f4b0ecd6b64a463df247ee"
+      "AGENTS.md": "6e031b9340c1cc515e268a6ada46977d63017682"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1079,6 +1079,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-13T08:41:45.965757+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "16a586b18340d2bae8f4b0ecd6b64a463df247ee",
+        "new_sha": "6e031b9340c1cc515e268a6ada46977d63017682",
+        "vibe_shift": "No shift; the prompt remains consistent and unchanged.",
+        "summary": "The two versions are identical, so no evolution occurred. The author's prompt engineering taste and constraints remained unchanged. This comparison reveals a stable, well-defined rule set with no additions or deletions.",
+        "timestamp": "2026-10-15T06:41:40.568732+00:00"
       }
     ]
   },
@@ -1289,7 +1297,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e41616285030d79af82fd5efd8e370e18936d3d1",
+      "AGENTS.md": "72d507e69d433ce4a23039759e28b30c83d5bd9d",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "popular_stars",
@@ -1298,7 +1306,17 @@
     "discovered_at": "2026-10-09T08:09:37.523885+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/61",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e41616285030d79af82fd5efd8e370e18936d3d1",
+        "new_sha": "72d507e69d433ce4a23039759e28b30c83d5bd9d",
+        "vibe_shift": "Shifted towards stricter enforcement of design consistency and CI integrity, with explicit anti-bypass rules for agent merges.",
+        "summary": "The new version adds a binding design-system rule for the native-chat component directory and introduces a detailed Merging Pull Requests section that enforces CI verification before agent merges. These changes tighten visual consistency in a specific UI area and prevent agents from bypassing required checks, reflecting a shift toward stricter, more explicit guardrails.",
+        "timestamp": "2026-10-15T06:41:51.270470+00:00"
+      }
+    ]
   },
   "isaac-sim/IsaacLab": {
     "stars": 8303,
@@ -1825,6 +1843,96 @@
     "vibe": "Ship a terminal OS that survives restarts, and don't melt the maintainer's machine while testing it.",
     "discovered_at": "2026-10-14T06:55:42.827688+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/93",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "nvm-sh/nvm": {
+    "stars": 95501,
+    "language": "Shell",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "55efa27d68c70d6fba9a38ccbf482f0ccd2ee225"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Portability is non-negotiable; every shell, every test, every time.",
+    "discovered_at": "2026-10-15T06:42:04.596565+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/96",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "stars": 49643,
+    "language": "Python",
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9d9a12efedffba81a23fe209ef9ce2cc427e7368"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship only what the agent loads, validate everything, and never let a skill smuggle in a test or a secret.",
+    "discovered_at": "2026-10-15T06:42:10.389256+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/97",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vxcontrol/pentagi": {
+    "stars": 29916,
+    "language": "Go",
+    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "b84519081f75ac3edc8d28f68054f4b66d4a0f08"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Comments are a budget, not a diary — spend them only on what the code cannot say.",
+    "discovered_at": "2026-10-15T06:42:16.999217+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/98",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "rust-lang/rust": {
+    "stars": 120165,
+    "language": "Rust",
+    "description": "Empowering everyone to build reliable and efficient software.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ce36bada00558382adec44b3bbec402c5e96de45"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "A bureaucratic firewall that treats LLM output as radioactive waste requiring human containment.",
+    "discovered_at": "2026-10-15T06:42:24.347128+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/99",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "zerx-lab/FluxDown": {
+    "stars": 4490,
+    "language": "Rust",
+    "description": "Rust 驱动的多协议下载管理器，支持 HTTP/FTP/BitTorrent 磁力链接及 HLS/DASH 流媒体，智能多线程加速与浏览器无缝集成。精美界面，极致性能，永久免费，零广告。",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f8f09919e3179e57f3a932e837f3808956d97853"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "One Rust engine, many hosts, zero drift — every invariant is a contract, every contract has a coordinate.",
+    "discovered_at": "2026-10-15T06:42:30.986999+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/100",
     "pr_url": null,
     "status": "pending_review"
   }
