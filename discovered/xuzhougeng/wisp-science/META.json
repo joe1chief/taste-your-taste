@@ -1,0 +1,24 @@
+{
+  "stars": 1043,
+  "language": "Rust",
+  "description": "Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models.",
+  "url": "https://github.com/xuzhougeng/wisp-science",
+  "archetype": "Defensive Architect",
+  "vibe": "Ships durable abstractions one small PR at a time, and never runs a test without asking first.",
+  "highlights": [
+    "Durable product nouns (Project, ExecutionContext, DataAsset, Run, Artifact, Paper, Decision) are treated as the control plane, not incidental UI state.",
+    "Tests must never depend on real SSH hosts, GPUs, SLURM, WSL, API keys, or network — fakes, temp dirs, and mocked Tauri commands only.",
+    "Secrets live in the keyring, never SQLite; SSH private key contents must never be copied into the database.",
+    "Model context/output ceilings come from exact model-ID matching in the baked models.dev catalog — prefix/family matching is explicitly banned.",
+    "Module splitting is forbidden unless tied to a concrete, measured problem; large composition roots are acceptable and line-count targets are not."
+  ],
+  "assessment": "This file reads like a senior systems engineer's contract with future contributors: it names the durable abstractions, forbids the tempting shortcuts (extending shell timeouts, syncing large data locally, prefix-matching model IDs), and enforces a strict test-permission protocol that prevents agents from burning CI or local resources unprompted. The Escape-stack and shared-icon rules show unusually precise UI discipline for an agent file, and the release section encodes a real operational lesson (create the GitHub Release before CI uploads installers) rather than generic advice. The result is a rare combination of product-level vision and low-level guardrails that keeps an AI agent from drifting into speculative refactors or sloppy cross-boundary serde copies.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4f6023c74674c2d233b8eab0c347092801e606c8"
+  },
+  "discovered_at": "2026-10-16T06:33:54.800457+00:00",
+  "repo": "xuzhougeng/wisp-science"
+}

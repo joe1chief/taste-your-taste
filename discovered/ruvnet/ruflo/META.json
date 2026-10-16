@@ -1,0 +1,28 @@
+{
+  "stars": 75278,
+  "language": "TypeScript",
+  "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+  "url": "https://github.com/ruvnet/ruflo",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Orchestration is a ledger, execution is your job — never confuse the two.",
+  "highlights": [
+    "Hard separation of concerns: claude-flow is a coordination ledger, Codex is the executor that writes code and runs commands.",
+    "Explicit anti-pattern warnings: never stop after calling claude-flow; immediately continue with your own work.",
+    "Policy-governed workflow with hard invariants: never run two writers in one worktree, delegation only reduces capabilities, policy denial cancels dependent work.",
+    "Release contract enforces exact package train, clean source state, and version lockstep across latest/alpha/v3alpha.",
+    "Memory-first loop: search memory before starting, store patterns after success, use score > 0.7 as reuse threshold."
+  ],
+  "assessment": "This guide excels by ruthlessly eliminating a common agent failure mode: mistaking orchestration for execution. The repeated, visually distinct warnings and concrete wrong/right examples make the division of labor impossible to misread. The policy invariants and release contract add a layer of safety and reproducibility that is rare in agent instructions, showing a systems mindset that values correctness over convenience.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "68590f47c3a5cd47a0599548bf16ac7e4d0655b9",
+    "CLAUDE.md": "912dd6dcee9cfa559be1b8ddb8ac3b6d7a138ab0",
+    "SKILL.md": "b41415aafb2ca8c073edad92b0bd4f46d231c9a4"
+  },
+  "discovered_at": "2026-10-16T06:33:37.317350+00:00",
+  "repo": "ruvnet/ruflo"
+}

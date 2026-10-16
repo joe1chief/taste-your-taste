@@ -1,0 +1,26 @@
+{
+  "stars": 2568,
+  "language": "Python",
+  "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+  "url": "https://github.com/lightseekorg/tokenspeed",
+  "archetype": "Defensive Architect",
+  "vibe": "One path, no defaults, no hidden state — production inference is a contract, not a convenience.",
+  "highlights": [
+    "Single scheduling and execution path: disaggregation, speculation, CUDA graphs, and overlap are parameters of the same path, never a second path.",
+    "Parameters selecting execution paths, algorithms, or correctness-critical behavior must be explicit with no defaults; convenience alone never justifies defaulting a behavioral choice.",
+    "Per-request state must first be owned by the LCM cache subsystem and C++ scheduler as a cache group; backend-private state is the exception and must implement SlotStateExporter.",
+    "Compile-time kernel parameters are part of the JIT cache key — batch-varying values must be runtime arguments or bucketed, guarded by assert_no_triton_compile.",
+    "Tests must fail only when the code under test is wrong: test behavior through real classes, not structure, mock choreography, or third-party packages."
+  ],
+  "assessment": "This file treats inference serving as a correctness-critical system where hidden state, implicit defaults, and mode-specific branches are the primary sources of production failure. The insistence on one unified path, explicit behavioral parameters, and slot-state export contracts reflects hard-won lessons from debugging retractions and JIT stalls at scale. The anti-slop rules around tests and mocks are unusually rigorous, demanding behavioral verification over structural assertions.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "be4c284c38962c668ec226f988c5caa698e440ab",
+    "CLAUDE.md": "29984d4b22abce74006204d81fb94d36b3d5f0ae"
+  },
+  "discovered_at": "2026-10-16T06:33:43.099939+00:00",
+  "repo": "lightseekorg/tokenspeed"
+}

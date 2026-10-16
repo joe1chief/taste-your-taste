@@ -1,0 +1,24 @@
+{
+  "stars": 5961,
+  "language": "Rust",
+  "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+  "url": "https://github.com/xerj-org/xerj",
+  "archetype": "Engineering Craft",
+  "vibe": "Honest numbers, scoped builds, and field reports — no slop, no speculation, no silent workarounds.",
+  "highlights": [
+    "Every public number must trace to a verified run; link the harness or drop the number.",
+    "Reference-code before writing: retrieve peer solutions, cite file:line, and respect licenses (GPL/ES are approach-only).",
+    "Builds are scoped: `cd engine && cargo build --release -j 32 -p <crate>` — never workspace-wide, never `cargo clean`.",
+    "The ES-YAML conformance suite must stay at 0 failed as a hard gate before any engine change lands.",
+    "Agents must file a field report after using XERJ, and send reproducible defects back as issues or PRs — never silent workarounds."
+  ],
+  "assessment": "This file enforces a rare discipline: it treats honesty about capabilities and performance as a first-class engineering constraint, not a marketing afterthought. By requiring harness-linked numbers, scoped builds, and explicit separation of verified vs. assumed claims, it prevents the most common failure modes of AI-assisted development — hallucinated benchmarks and speculative patches. The field-report and defect-return protocols turn agents from passive consumers into accountable contributors, which is unusually mature for an open-source project.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "75e5778304c1252eeac20fef2fd41502e423f6d8"
+  },
+  "discovered_at": "2026-10-16T06:33:48.550870+00:00",
+  "repo": "xerj-org/xerj"
+}

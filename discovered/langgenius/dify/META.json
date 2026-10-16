@@ -1,0 +1,23 @@
+{
+  "stars": 158610,
+  "language": "Python",
+  "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+  "url": "https://github.com/langgenius/dify",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Monorepo discipline with scoped rules and zero tolerance for local test theater.",
+  "highlights": [
+    "Scoped AGENTS.md files override root guidance based on the nearest file being edited.",
+    "Backend commands must be run through `uv run --project api` to ensure environment consistency.",
+    "Backend integration tests are explicitly CI-only, preventing wasted local cycles.",
+    "Docker env files are strictly partitioned: defaults in `.env.example`, optional settings in `docker/envs/*.env.example`."
+  ],
+  "assessment": "This file demonstrates mature monorepo hygiene by delegating detailed rules to scoped AGENTS.md files, avoiding a monolithic instruction dump. The explicit CI-only test policy and strict env file separation show a team that values reproducibility and clear ownership boundaries over convenience. It is a model of pragmatic constraint-setting for large, multi-service repositories.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "35b1fa3301e103c39817cac636f42ac4ee819180"
+  },
+  "discovered_at": "2026-10-16T06:33:59.166373+00:00",
+  "repo": "langgenius/dify"
+}

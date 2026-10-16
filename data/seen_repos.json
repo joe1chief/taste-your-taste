@@ -584,7 +584,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "85943d4d4f945860183d2674b17b05a7941064e7",
-      "CLAUDE.md": "d3b235eb5e942dadc8230305e1fb754402aace5c"
+      "CLAUDE.md": "3d97d6acbd854ba3c2bccc0cb8f4f51ae953bf77"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -592,7 +592,17 @@
     "discovered_at": "2026-10-03T07:17:08.156394+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/17",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "d3b235eb5e942dadc8230305e1fb754402aace5c",
+        "new_sha": "3d97d6acbd854ba3c2bccc0cb8f4f51ae953bf77",
+        "vibe_shift": "Shifted towards stricter tool-specific configuration boundaries and clearer directory naming.",
+        "summary": "The author renamed the installer directory from 'bin/' to 'installer/' for clearer semantics and added explicit Cursor plugin configuration files with a warning against creating a generic hooks.json. These changes reflect a shift toward more precise file ownership and preventing cross-tool hook conflicts.",
+        "timestamp": "2026-10-16T06:33:16.806814+00:00"
+      }
+    ]
   },
   "coreyhaines31/marketingskills": {
     "stars": 52505,
@@ -661,7 +671,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e2e6847c1200674a2e07304ff09ad5fd8f917093",
+      "AGENTS.md": "f2f049297454806522722b3bbe2b7ebb10811a0b",
       "CLAUDE.md": "d5649ac50594fb5f3e8597d630fd2d6c72bd4a8f"
     },
     "source": "trending",
@@ -670,7 +680,17 @@
     "discovered_at": "2026-10-04T07:34:01.129843+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/22",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e2e6847c1200674a2e07304ff09ad5fd8f917093",
+        "new_sha": "f2f049297454806522722b3bbe2b7ebb10811a0b",
+        "vibe_shift": "Shifted towards broader language and domain coverage while maintaining existing principles.",
+        "summary": "The new version expands the plugin's capabilities by adding three new agents (bengali-reviewer, and two others not fully shown) and increasing the counts of skills and commands. The core principles and existing agent list remain unchanged, indicating a focus on growth and specialization rather than altering fundamental guidelines.",
+        "timestamp": "2026-10-16T06:33:22.642627+00:00"
+      }
+    ]
   },
   "pingdotgg/t3code": {
     "stars": 24826,
@@ -1030,7 +1050,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6e031b9340c1cc515e268a6ada46977d63017682"
+      "AGENTS.md": "1f26ffbe24f3e438da5ec6d7f3f11626d33bde1b"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1087,6 +1107,14 @@
         "vibe_shift": "No shift; the prompt remains consistent and unchanged.",
         "summary": "The two versions are identical, so no evolution occurred. The author's prompt engineering taste and constraints remained unchanged. This comparison reveals a stable, well-defined rule set with no additions or deletions.",
         "timestamp": "2026-10-15T06:41:40.568732+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6e031b9340c1cc515e268a6ada46977d63017682",
+        "new_sha": "1f26ffbe24f3e438da5ec6d7f3f11626d33bde1b",
+        "vibe_shift": "Shifted towards stricter lifecycle correctness and explicit regression coverage.",
+        "summary": "The new version adds a dedicated rule for lifecycle changes, requiring adherence to ownership and completion invariants and selection of applicable lifecycle regressions. This change formalizes lifecycle correctness as a first-class concern, likely in response to past issues with cleanup and finalization. The rest of the document remains largely unchanged, indicating a targeted refinement rather than a broad rewrite.",
+        "timestamp": "2026-10-16T06:33:12.812259+00:00"
       }
     ]
   },
@@ -1933,6 +1961,102 @@
     "vibe": "One Rust engine, many hosts, zero drift — every invariant is a contract, every contract has a coordinate.",
     "discovered_at": "2026-10-15T06:42:30.986999+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/100",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ruvnet/ruflo": {
+    "stars": 75278,
+    "language": "TypeScript",
+    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "68590f47c3a5cd47a0599548bf16ac7e4d0655b9",
+      "CLAUDE.md": "912dd6dcee9cfa559be1b8ddb8ac3b6d7a138ab0",
+      "SKILL.md": "b41415aafb2ca8c073edad92b0bd4f46d231c9a4"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Orchestration is a ledger, execution is your job — never confuse the two.",
+    "discovered_at": "2026-10-16T06:33:37.774758+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/104",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "lightseekorg/tokenspeed": {
+    "stars": 2568,
+    "language": "Python",
+    "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "be4c284c38962c668ec226f988c5caa698e440ab",
+      "CLAUDE.md": "29984d4b22abce74006204d81fb94d36b3d5f0ae"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "One path, no defaults, no hidden state — production inference is a contract, not a convenience.",
+    "discovered_at": "2026-10-16T06:33:43.527152+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/105",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "xerj-org/xerj": {
+    "stars": 5961,
+    "language": "Rust",
+    "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "75e5778304c1252eeac20fef2fd41502e423f6d8"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Honest numbers, scoped builds, and field reports — no slop, no speculation, no silent workarounds.",
+    "discovered_at": "2026-10-16T06:33:48.958277+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/106",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "xuzhougeng/wisp-science": {
+    "stars": 1043,
+    "language": "Rust",
+    "description": "Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4f6023c74674c2d233b8eab0c347092801e606c8"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Ships durable abstractions one small PR at a time, and never runs a test without asking first.",
+    "discovered_at": "2026-10-16T06:33:55.361752+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/107",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "langgenius/dify": {
+    "stars": 158610,
+    "language": "Python",
+    "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "35b1fa3301e103c39817cac636f42ac4ee819180"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Monorepo discipline with scoped rules and zero tolerance for local test theater.",
+    "discovered_at": "2026-10-16T06:33:59.574756+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/108",
     "pr_url": null,
     "status": "pending_review"
   }
