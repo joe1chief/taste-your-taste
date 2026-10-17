@@ -1,0 +1,24 @@
+{
+  "stars": 88580,
+  "language": "TypeScript",
+  "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+  "url": "https://github.com/koala73/worldmonitor",
+  "archetype": "Defensive Architect",
+  "vibe": "Own the outcome, prove the cause, and never let a PR ship without evidence.",
+  "highlights": [
+    "Treats bug reports as implicit fix requests: prove the cause, make a scoped repair, verify it, and deliver a ready PR without waiting for the word 'fix'.",
+    "Enforces a strict browser import direction (types -> config -> services -> components -> app -> App.ts) via lint-boundaries.mjs.",
+    "Requires every UI-changing PR to include uploaded screenshots in the GitHub description before review.",
+    "Maintains a landmark table mapping symbols to files, explicitly forbidding top-to-bottom scanning of large files.",
+    "Separates claims: locally verified, PR ready, merged, deployed, observed in production, and acceptance complete are distinct states."
+  ],
+  "assessment": "This file treats agent instructions as an operational contract rather than a style guide, encoding authorization semantics, evidence requirements, and trust boundaries with unusual precision. The explicit separation of verification claims and the rule that 'an unknown cause alone is not a stopping condition' push agents toward genuine debugging instead of speculative patching. The landmark and test-path tables are a strong anti-slop mechanism, replacing broad file scanning with targeted symbol greps and owning CI jobs.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2c09e49042ac1cb1bfb55902f1691299c7e7dfd1"
+  },
+  "discovered_at": "2026-10-17T06:22:56.356482+00:00",
+  "repo": "koala73/worldmonitor"
+}

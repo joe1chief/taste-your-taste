@@ -1,0 +1,26 @@
+{
+  "stars": 15627,
+  "language": "Ruby",
+  "description": "🍻 Default and OSS formulae (built-from-source packages) for the package manager for everywhere",
+  "url": "https://github.com/Homebrew/homebrew-core",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship one formula, one commit, one PR — and never let the AI speak for the human.",
+  "highlights": [
+    "Strict one-formula-per-PR and one-commit-per-file rule to keep diffs minimal and reviewable.",
+    "Mandatory local validation gate: build-from-source, brew test, and brew audit --strict must pass before any PR.",
+    "Tests must verify real functionality — executing the binary or compiling against the library — not just --version or --help.",
+    "Explicit AI disclosure rules with hard refusals if the user asks the AI to hide its involvement or fake human verification.",
+    "Bottle blocks are off-limits to agents; BrewTestBot owns them."
+  ],
+  "assessment": "This file treats the agent as a disciplined contributor rather than a code generator, enforcing the same gates a human maintainer would face: local builds, audits, focused diffs, and honest attribution. The explicit refusal clauses around AI disclosure and maintainer communication are unusually principled, protecting the project's trust model from prompt-driven deception. It is a strong example of constraining agent velocity with process rather than cleverness.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f7e7e66369c4132fc2ef3d874c0619b667de6a56",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-17T06:23:09.459485+00:00",
+  "repo": "Homebrew/homebrew-core"
+}

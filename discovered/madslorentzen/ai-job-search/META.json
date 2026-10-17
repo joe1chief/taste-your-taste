@@ -1,0 +1,26 @@
+{
+  "stars": 48814,
+  "language": "Python",
+  "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+  "url": "https://github.com/MadsLorentzen/ai-job-search",
+  "archetype": "Pragmatic Systems",
+  "vibe": "One source of truth, zero duplication, every agent runtime reads the same playbook.",
+  "highlights": [
+    "Thin-pointer design eliminates configuration drift across Claude Code, Codex, Cursor, Gemini CLI, and Antigravity.",
+    "Explicit single source of truth: .claude/ is canonical, everything else points to it.",
+    "Portable Agent Skills format under .agents/skills/ with per-portal SKILL.md files.",
+    "Clear separation of concerns: profile in CLAUDE.md, workflows in .claude/, portal CLIs in .agents/skills/.",
+    "Anti-duplication rule stated as a hard constraint, not a suggestion."
+  ],
+  "assessment": "This file demonstrates mature multi-runtime architecture thinking: instead of forking instructions per agent framework, it centralizes canonical specs and treats every other file as a pointer. The explicit 'do not duplicate' rule is the kind of constraint that prevents the slow rot of divergent configs, and the layered directory structure (profile vs. workflow vs. portal skill) keeps responsibilities legible. It is a rare example of agent instructions written with the same discipline as production code.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "64349851a89fcdc93aeed9fb13d821c930b53426",
+    "CLAUDE.md": "d904d0ef470e01d6a0c91398f6062ea9e9a53736"
+  },
+  "discovered_at": "2026-10-17T06:22:44.684014+00:00",
+  "repo": "MadsLorentzen/ai-job-search"
+}

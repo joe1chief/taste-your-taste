@@ -255,7 +255,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "8b72eee7c01560674e0eab64a6cbe56865c7d501"
+      "AGENTS.md": "8347d621b4e7639cf00da511e74dde370c941872"
     },
     "evolution_history": [
       {
@@ -265,6 +265,14 @@
         "vibe_shift": "Shifted from no guidance to a highly structured, ownership-centric, and disciplined engineering culture.",
         "summary": "The previous version was empty, so the new AGENTS.md establishes a comprehensive set of rules from scratch. It introduces a strong emphasis on clear ownership, minimal core changes, and disciplined execution, reflecting a shift towards structured, maintainable agent behavior.",
         "timestamp": "2026-10-09T08:09:06.841081+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8b72eee7c01560674e0eab64a6cbe56865c7d501",
+        "new_sha": "8347d621b4e7639cf00da511e74dde370c941872",
+        "vibe_shift": "Shifted towards pragmatic simplicity and explicit trade-off reasoning, with tighter, more direct language.",
+        "summary": "The new version adds a 'Choose good compromises' section that explicitly guides design trade-offs, emphasizing simplicity and real-world failures over theoretical edge cases. It also tightens language throughout, removing redundant words and adding a note about side requests sharing cache identity. The overall shift is toward more pragmatic, complexity-aware engineering with clearer boundaries.",
+        "timestamp": "2026-10-17T06:22:36.171966+00:00"
       }
     ]
   },
@@ -701,7 +709,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ef6dbcff766a745374ccfd17f477ec778f575024",
+      "AGENTS.md": "810d26e31341319155253aeb6a5e804e5ff94c12",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -719,6 +727,14 @@
         "vibe_shift": "No shift; the prompt remains the same.",
         "summary": "The two versions are identical, so no evolution occurred. The author's prompt engineering taste and constraints remained unchanged.",
         "timestamp": "2026-10-06T08:17:38.661738+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ef6dbcff766a745374ccfd17f477ec778f575024",
+        "new_sha": "810d26e31341319155253aeb6a5e804e5ff94c12",
+        "vibe_shift": "No shift in prompt engineering taste or constraints; only a factual update.",
+        "summary": "The only change between the two versions is the user count in the 'What makes T3 Code special?' section, which increased from 400,000 to 500,000. This update reflects the project's growth and ensures the documentation remains accurate. No other rules or constraints were added or removed.",
+        "timestamp": "2026-10-17T06:22:29.319992+00:00"
       }
     ]
   },
@@ -2057,6 +2073,104 @@
     "vibe": "Monorepo discipline with scoped rules and zero tolerance for local test theater.",
     "discovered_at": "2026-10-16T06:33:59.574756+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/108",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "MadsLorentzen/ai-job-search": {
+    "stars": 48814,
+    "language": "Python",
+    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "64349851a89fcdc93aeed9fb13d821c930b53426",
+      "CLAUDE.md": "d904d0ef470e01d6a0c91398f6062ea9e9a53736"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "One source of truth, zero duplication, every agent runtime reads the same playbook.",
+    "discovered_at": "2026-10-17T06:22:45.359906+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/111",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "wassim249/fastapi-langgraph-agent-production-ready-template": {
+    "stars": 2704,
+    "language": "Python",
+    "description": "A production-ready FastAPI template for building AI agent applications with LangGraph integration. This template provides a robust foundation for building scalable, secure, and maintainable AI agent services.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fd1373571a8e6ad526f9ff026cb77e9b82f3d91f",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Production-grade AI agents built with strict async discipline, structured observability, and zero tolerance for sloppy logging.",
+    "discovered_at": "2026-10-17T06:22:50.524395+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/112",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "koala73/worldmonitor": {
+    "stars": 88580,
+    "language": "TypeScript",
+    "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2c09e49042ac1cb1bfb55902f1691299c7e7dfd1"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Own the outcome, prove the cause, and never let a PR ship without evidence.",
+    "discovered_at": "2026-10-17T06:22:56.888151+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/113",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "HeyPuter/puter": {
+    "stars": 43773,
+    "language": "TypeScript",
+    "description": "🌐 The Internet Computer! Free, Open-Source, and Self-Hostable.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0ea415eb1465a9647d0aba5a8085012cb29bf187",
+      "CLAUDE.md": "4f2fa3032dce3a90ea44db6d34dad875fdb8ea7c"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Layered discipline with zero tolerance for duplicated logic, untyped APIs, or undocumented limits.",
+    "discovered_at": "2026-10-17T06:23:03.533804+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/114",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Homebrew/homebrew-core": {
+    "stars": 15627,
+    "language": "Ruby",
+    "description": "🍻 Default and OSS formulae (built-from-source packages) for the package manager for everywhere",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f7e7e66369c4132fc2ef3d874c0619b667de6a56",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship one formula, one commit, one PR — and never let the AI speak for the human.",
+    "discovered_at": "2026-10-17T06:23:09.933074+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/115",
     "pr_url": null,
     "status": "pending_review"
   }

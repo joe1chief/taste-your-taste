@@ -1,0 +1,26 @@
+{
+  "stars": 43773,
+  "language": "TypeScript",
+  "description": "🌐 The Internet Computer! Free, Open-Source, and Self-Hostable.",
+  "url": "https://github.com/HeyPuter/puter",
+  "archetype": "Engineering Craft",
+  "vibe": "Layered discipline with zero tolerance for duplicated logic, untyped APIs, or undocumented limits.",
+  "highlights": [
+    "Strict layered architecture: controllers → drivers → services → stores → clients, with no sideways calls or cross-layer imports.",
+    "No abstraction without a second caller — no single-implementation interfaces, factories, or forwarding wrappers.",
+    "A table's store owns every query against it; raw SQL/redis outside the store is forbidden.",
+    "Every rate limit, concurrency cap, and quota must be published in the docs in the same PR that changes it.",
+    "Mock data, not methods — prefer the in-memory test server over mocking dependencies."
+  ],
+  "assessment": "This file reads like a senior staff engineer's code review checklist turned into policy: it enforces architectural boundaries, bans speculative abstraction, and treats documentation of limits as a first-class deliverable. The emphasis on 'run it, don't just compile it' and 'understand what you commit' shows a culture that values verified behavior over passing checks. It is unusually effective because it pairs hard rules with clear rationale, making compliance a matter of engineering judgment rather than blind obedience.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0ea415eb1465a9647d0aba5a8085012cb29bf187",
+    "CLAUDE.md": "4f2fa3032dce3a90ea44db6d34dad875fdb8ea7c"
+  },
+  "discovered_at": "2026-10-17T06:23:03.036371+00:00",
+  "repo": "HeyPuter/puter"
+}

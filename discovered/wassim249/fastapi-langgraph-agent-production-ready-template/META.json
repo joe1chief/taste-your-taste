@@ -1,0 +1,26 @@
+{
+  "stars": 2704,
+  "language": "Python",
+  "description": "A production-ready FastAPI template for building AI agent applications with LangGraph integration. This template provides a robust foundation for building scalable, secure, and maintainable AI agent services.",
+  "url": "https://github.com/wassim249/fastapi-langgraph-agent-production-ready-template",
+  "archetype": "Defensive Architect",
+  "vibe": "Production-grade AI agents built with strict async discipline, structured observability, and zero tolerance for sloppy logging.",
+  "highlights": [
+    "All imports must be at the top of the file — no exceptions.",
+    "structlog events must be lowercase_with_underscores and never use f-strings.",
+    "Always use tenacity for retries with exponential backoff.",
+    "Only cache successful responses; never cache errors.",
+    "Every route must have rate limiting decorators and every LLM call must have Langfuse tracing."
+  ],
+  "assessment": "This instruction file enforces a rare level of operational rigor for AI agent templates, treating logging, retries, caching, and tracing as non-negotiable infrastructure rather than afterthoughts. The explicit anti-patterns and '10 Commandments' create a clear contract that prevents common production failures like silent exceptions, blocking I/O, and untraced LLM calls. The result is a template that genuinely lives up to its 'production-ready' claim by baking in observability and resilience from the start.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fd1373571a8e6ad526f9ff026cb77e9b82f3d91f",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-17T06:22:49.975721+00:00",
+  "repo": "wassim249/fastapi-langgraph-agent-production-ready-template"
+}
