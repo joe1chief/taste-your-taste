@@ -1,0 +1,24 @@
+{
+  "stars": 215674,
+  "language": "TypeScript",
+  "description": "The open source coding agent.",
+  "url": "https://github.com/anomalyco/opencode",
+  "archetype": "Engineering Craft",
+  "vibe": "Write code that reads like a well-argued essay: minimal, typed, and honest about its boundaries.",
+  "highlights": [
+    "Strict dependency direction: Schema → Core/Protocol → Server, with Client runtime forbidden from touching Core or Server.",
+    "No speculative complexity: before adding robustness for unlikely races or security edges, explain the concrete failure mode and get user buy-in.",
+    "Validate unknown values once at the boundary that owns them; never defensively revalidate schema-guaranteed values.",
+    "Ban on import aliases, star imports, and type-position import() references — namespaces must be imported by their own exported name.",
+    "Theme tokens chosen by semantic role, not current color; missing roles require extending the theme schema rather than repurposing tokens."
+  ],
+  "assessment": "This file reflects a rare discipline: it treats code as a communication medium and enforces that through concrete, testable rules rather than vague principles. The dependency-direction constraints and boundary-validation rules prevent entire classes of architectural drift, while the anti-speculation clause ('explain the concrete failure mode... and get their buy-in') is a mature guard against over-engineering. The result is a codebase that stays legible under growth because every rule either reduces surface area or preserves a clear ownership boundary.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "18f9020f2b085a51dc056e5640c605fa96c2947b"
+  },
+  "discovered_at": "2026-10-18T06:47:28.279874+00:00",
+  "repo": "anomalyco/opencode"
+}

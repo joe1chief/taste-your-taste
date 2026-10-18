@@ -1,0 +1,26 @@
+{
+  "stars": 1242,
+  "language": "Rust",
+  "description": "Fast PHP language server with deep type intelligence. Generics, Laravel, PHPStan annotations. Ready in an instant.",
+  "url": "https://github.com/PHPantom-dev/phpantom_lsp",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Performance-obsessed Rust engineer who treats the type engine as sacred and the changelog as law.",
+  "highlights": [
+    "Single shared type-resolution path enforced: 'Do not build a second type-resolution path' — the forward walker is the one source of truth for hover, diagnostics, definition, and completion.",
+    "Performance is a first-class constraint: every allocation, clone, and lock matters; prefer &str over String and guard startup/memory regressions.",
+    "Zero-tolerance CI: clippy with -D warnings and fmt must pass with zero warnings, and every CI failure must be fixed rather than suppressed with #[allow].",
+    "Todo files are a backlog, not a graveyard: completed items are deleted entirely, never struck through or annotated with 'Status: Fixed'.",
+    "Demo files are load-bearing test fixtures with intentional diagnostics — any unexpected diagnostic is treated as a regression from your edit."
+  ],
+  "assessment": "This file reflects a maintainer who has been burned by duplicated resolution logic and silent performance regressions, so it encodes architectural invariants as hard rules rather than suggestions. The insistence on a single type engine, root-cause debugging, and no tombstone comments shows a bias toward long-term maintainability over short-term convenience. The unusually detailed demo-file protocol — including the PHP class-hoisting pitfall and runtime assertion requirements — demonstrates that the author treats documentation and examples as executable contracts, not marketing copy.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "da0bdd2cbc8c1e9c471b90f8471c91e3e845df99",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-18T06:47:34.265649+00:00",
+  "repo": "PHPantom-dev/phpantom_lsp"
+}

@@ -1,0 +1,26 @@
+{
+  "stars": 10073,
+  "language": "Rust",
+  "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+  "url": "https://github.com/akitaonrails/ai-memory",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Markdown-in-git is truth, SQLite is just the index, and every retrieved memory is untrusted evidence.",
+  "highlights": [
+    "Markdown-in-git is the source of truth; SQLite is a derived index that can be rebuilt.",
+    "All retrieved memory is treated as untrusted historical data, never as instructions to execute.",
+    "Per-project isolation by construction: every row and page keyed by (workspace_id, project_id, path).",
+    "LLM is strictly opt-in; zero-LLM mode still captures, searches, and writes rule-based summaries.",
+    "One canonical instruction file per repo; CLAUDE.md is only a pointer, never a duplicate."
+  ],
+  "assessment": "This file demonstrates unusually mature taste by separating durable truth (git-backed markdown) from derived state (SQLite), which makes the system auditable and recoverable. Its security posture is notably disciplined: it explicitly refuses to trust retrieved memory as instructions and bounds all sanitization, avoiding the classic prompt-injection trap in agent memory systems. The insistence on a single canonical instruction file and explicit scope routing shows a systems thinker optimizing for cross-harness continuity rather than vendor lock-in.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "405666eaf654060824db248d0b9dad41f3da5cf5",
+    "CLAUDE.md": "29cb31969a2287c488386586b62ed3a82fb7caf5"
+  },
+  "discovered_at": "2026-10-18T06:47:17.543887+00:00",
+  "repo": "akitaonrails/ai-memory"
+}

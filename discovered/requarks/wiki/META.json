@@ -1,0 +1,24 @@
+{
+  "stars": 29048,
+  "language": "TypeScript",
+  "description": "Wiki.js | Next Generation Open Source Wiki",
+  "url": "https://github.com/requarks/wiki",
+  "archetype": "Defensive Architect",
+  "vibe": "Migrations are the only bridge between commits; uncommitted shapes get deleted, not shimmed.",
+  "highlights": [
+    "Committed database state must be brought forward by a migration under backend/db/migrations/, including data rewrites, not just schema changes.",
+    "Uncommitted shapes can be changed freely with no migration shim, legacy fallback, deprecated alias, or 'old data may still contain X' handling.",
+    "The only sanctioned exception is a per-installation value that cannot have a static default, handled in a single startup check under an advisory lock.",
+    "New settings with fixed defaults belong in base.yml, merged under stored settings on every boot, not in startup checks.",
+    "Three independently-installed ESM workspaces (backend, frontend, blocks) with no root package or monorepo tooling."
+  ],
+  "assessment": "This file treats database evolution as a first-class contract: anything committed is presumed live somewhere, so migrations are mandatory and data conversion is the point, not an afterthought. Equally strong is the inverse rule that uncommitted shapes must be deleted outright, which prevents the accumulation of dead fallback code that plagues long-lived projects. The narrow, well-reasoned exception for per-installation secrets shows disciplined constraint rather than dogma.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "8d7673680fccddc81b4a36e8bdabb9cc75f80d33"
+  },
+  "discovered_at": "2026-10-18T06:47:39.433680+00:00",
+  "repo": "requarks/wiki"
+}

@@ -1,0 +1,24 @@
+{
+  "stars": 152035,
+  "language": "TypeScript",
+  "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+  "url": "https://github.com/anthropics/claude-code",
+  "archetype": "Defensive Architect",
+  "vibe": "Lock down the blast radius first, then let the agent move fast inside the fence.",
+  "highlights": [
+    "Three-layer defense for any job that calls Claude: egress-firewall runner, enforced network allow list, and auto permission mode.",
+    "Explicitly forbids moving Claude-calling jobs off the firewall runner or weakening the allow list's `mode: enforce`.",
+    "Requires `--permission-mode auto` in `claude_args` and pins a minimum model (`claude-opus-4-6`) to avoid silent fallback to a weaker default mode.",
+    "Automated hardening check (`workflow-hardening.yml`) fails CI on violations, with a narrow, reason-documented exemption table as the only escape hatch.",
+    "Least-privilege hygiene: minimal `permissions:` blocks and a hard ban on printing tokens or env vars in logs."
+  ],
+  "assessment": "This file treats CI as an attack surface and encodes that stance as enforceable invariants rather than advice. The clever part is the layered redundancy: runner-level egress filtering, an explicit host allow list, and per-tool permission review each catch what the others miss, so a single misconfiguration doesn't become an exfiltration path. Pairing the rules with a CI check and a documented exemption table turns security policy into something the build enforces, which is exactly how you keep agent-driven workflows from quietly eroding their own guardrails.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "410ad0f67663043920889a2b4cc380867acc1e3b"
+  },
+  "discovered_at": "2026-10-18T06:47:22.655973+00:00",
+  "repo": "anthropics/claude-code"
+}

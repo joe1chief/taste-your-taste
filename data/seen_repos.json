@@ -74,8 +74,8 @@
     "archetype": "Anti-Slop Minimalist",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "ac6a71af751e5e5d42b99c5959b3f9443cd92685",
-      "CLAUDE.md": "bcb1a467442bdd236cb15fc7a813144ee7295961"
+      "AGENTS.md": "54e49529732f0dae7302b5a7f7f09a00925587d0",
+      "CLAUDE.md": "caf41fc22a99ef59c5c806ecccd5d227aaf68b5d"
     },
     "evolution_history": [
       {
@@ -85,6 +85,14 @@
         "vibe_shift": "Shifted from no constraints to a strict, deterministic, and automation-enforced operating contract with heavy emphasis on token economy and cross-platform parity.",
         "summary": "The previous version was empty, so the new version establishes a comprehensive operating contract for AI agents. It introduces strict token economy rules, cross-platform parity definitions, merge protocols, and change management constraints. The author's taste has shifted from no guidance to highly prescriptive, deterministic, and automation-first constraints.",
         "timestamp": "2026-10-14T06:53:19.993383+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ac6a71af751e5e5d42b99c5959b3f9443cd92685",
+        "new_sha": "54e49529732f0dae7302b5a7f7f09a00925587d0",
+        "vibe_shift": "Shifted towards explicit multi-platform expansion with strict contract-driven consistency across mobile and desktop.",
+        "summary": "The new version introduces a dedicated section for native mobile apps (iOS and Android), specifying their architecture, shared contract, and code generation requirements. This addition expands the scope from a desktop-only focus to a multi-platform strategy, while reinforcing the existing Electron-only rule for desktop/web UI.",
+        "timestamp": "2026-10-18T06:47:04.139470+00:00"
       }
     ]
   },
@@ -1244,7 +1252,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "bb43423ccaf5d6edc58d7fa1033912626c6aa01d"
+      "CLAUDE.md": "e484eb34b872cede2eeae43d6c611c0e80b0d0e7"
     },
     "source": "popular_stars",
     "archetype": "Pragmatic Systems",
@@ -1252,7 +1260,17 @@
     "discovered_at": "2026-10-08T08:09:41.564911+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/53",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "bb43423ccaf5d6edc58d7fa1033912626c6aa01d",
+        "new_sha": "e484eb34b872cede2eeae43d6c611c0e80b0d0e7",
+        "vibe_shift": "Shifted towards stricter naming consistency and more precise documentation.",
+        "summary": "The update primarily standardizes directory naming from lowercase 'mojo' to capitalized 'Mojo' throughout the document, reflecting a shift in the repository's naming conventions. It also refines the Pixi task list for the Mojo directory and clarifies the docs directory description. These changes improve consistency and accuracy without altering the core guidelines.",
+        "timestamp": "2026-10-18T06:47:08.843440+00:00"
+      }
+    ]
   },
   "hashcat/hashcat": {
     "stars": 26956,
@@ -2171,6 +2189,100 @@
     "vibe": "Ship one formula, one commit, one PR — and never let the AI speak for the human.",
     "discovered_at": "2026-10-17T06:23:09.933074+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/115",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "akitaonrails/ai-memory": {
+    "stars": 10073,
+    "language": "Rust",
+    "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "405666eaf654060824db248d0b9dad41f3da5cf5",
+      "CLAUDE.md": "29cb31969a2287c488386586b62ed3a82fb7caf5"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Markdown-in-git is truth, SQLite is just the index, and every retrieved memory is untrusted evidence.",
+    "discovered_at": "2026-10-18T06:47:17.896718+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/118",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anthropics/claude-code": {
+    "stars": 152035,
+    "language": "TypeScript",
+    "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "410ad0f67663043920889a2b4cc380867acc1e3b"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Lock down the blast radius first, then let the agent move fast inside the fence.",
+    "discovered_at": "2026-10-18T06:47:23.026496+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/119",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anomalyco/opencode": {
+    "stars": 215674,
+    "language": "TypeScript",
+    "description": "The open source coding agent.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "18f9020f2b085a51dc056e5640c605fa96c2947b"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Write code that reads like a well-argued essay: minimal, typed, and honest about its boundaries.",
+    "discovered_at": "2026-10-18T06:47:28.703290+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/120",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "PHPantom-dev/phpantom_lsp": {
+    "stars": 1242,
+    "language": "Rust",
+    "description": "Fast PHP language server with deep type intelligence. Generics, Laravel, PHPStan annotations. Ready in an instant.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "da0bdd2cbc8c1e9c471b90f8471c91e3e845df99",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Performance-obsessed Rust engineer who treats the type engine as sacred and the changelog as law.",
+    "discovered_at": "2026-10-18T06:47:34.583003+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/121",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "requarks/wiki": {
+    "stars": 29048,
+    "language": "TypeScript",
+    "description": "Wiki.js | Next Generation Open Source Wiki",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "8d7673680fccddc81b4a36e8bdabb9cc75f80d33"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Migrations are the only bridge between commits; uncommitted shapes get deleted, not shimmed.",
+    "discovered_at": "2026-10-18T06:47:39.833354+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/122",
     "pr_url": null,
     "status": "pending_review"
   }
