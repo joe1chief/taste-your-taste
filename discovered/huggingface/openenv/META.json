@@ -1,0 +1,26 @@
+{
+  "stars": 2724,
+  "language": "Python",
+  "description": "An interface library for RL post training with environments. ",
+  "url": "https://github.com/huggingface/OpenEnv",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Monorepo pragmatist who knows exactly which tests skip and why.",
+  "highlights": [
+    "Explicitly documents that ~129 tests skip without optional env deps — expected, not a failure.",
+    "Calls out pre-existing lint failures (usort on two test files) so agents don't chase ghosts.",
+    "Clarifies that `openenv serve` is a stub and the real path is running the server module directly.",
+    "Notes Docker is not required for core dev and is not installed by the update script.",
+    "Delegates standard build/test/lint commands to CLAUDE.md rather than duplicating them."
+  ],
+  "assessment": "This file demonstrates mature operational taste: it pre-empts the most common agent failure modes — chasing pre-existing lint errors, misreading skipped tests as regressions, and assuming Docker or a backend is needed. By separating 'what's expected' from 'what's broken,' it lets an agent distinguish signal from noise without trial and error. The delegation to CLAUDE.md keeps a single source of truth for commands while layering cloud-specific context cleanly.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "cd4210ffb05a2ee1f38ee6a3aed8b4f59a2dc458",
+    "CLAUDE.md": "71acc7890693feada06b636b3159c2aab4087373"
+  },
+  "discovered_at": "2026-10-19T07:06:08.157088+00:00",
+  "repo": "huggingface/OpenEnv"
+}

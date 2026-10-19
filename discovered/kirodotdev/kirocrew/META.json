@@ -1,0 +1,26 @@
+{
+  "stars": 4484,
+  "language": "Python",
+  "description": "A persistent workspace for development work that self-improves and continues beyond one session.",
+  "url": "https://github.com/kirodotdev/KiroCrew",
+  "archetype": "Defensive Architect",
+  "vibe": "A router, not a manual — every rule here exists because its violation already caused damage.",
+  "highlights": [
+    "The file is explicitly a ROUTER, not a manual: it carries only rules whose violation causes damage before a pointer could be read, and everything else is a mandatory link to open before touching that subsystem.",
+    "A massive 'Read before you touch' table maps every subsystem (security, config, ACP, sessions, memory, MCP, voice, connectors, tests) to the exact doc that must be loaded first and updated in the same commit.",
+    "Security invariants are stated as OS-layer enforcement, not text matching: the agent cannot write its own ceiling in any sandbox mode, and hiding a ceiling REMOVES it instead of protecting it.",
+    "Every crew-home leaf carries one of three dispositions — HIDDEN, READONLY, or VISIBLE — and which one it has IS the statement of what is guaranteed.",
+    "A test pins the union of the three dispositions equal to the crew-home half of security.sensitive_home_dirs(), so a new leaf cannot land in none of them — that pin, not a regex, keeps the ceiling un-disableable."
+  ],
+  "assessment": "This is a rare example of an agent instruction file that treats its own length as a liability and its own rules as scar tissue. By refusing to be a manual and instead routing to subsystem docs, it keeps the always-loaded context small while making the read-before-touch contract enforceable. The security section is especially strong because it reasons about why pattern-matching fails (a spawned shell's open() never routes through the tool gate) and replaces it with an OS-layer invariant pinned by a test, which is the correct place to put a guarantee.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c3f8edb232d8f7c25c0e9e42979ea00c3b19c910",
+    "CLAUDE.md": "df25292eb1e951374aba704bce3c2831104670f0"
+  },
+  "discovered_at": "2026-10-19T07:06:20.219784+00:00",
+  "repo": "kirodotdev/KiroCrew"
+}

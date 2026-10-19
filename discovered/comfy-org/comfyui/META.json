@@ -1,0 +1,24 @@
+{
+  "stars": 138914,
+  "language": "Python",
+  "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+  "url": "https://github.com/Comfy-Org/ComfyUI",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Surgical, dependency-averse, and allergic to AI slop—fix the narrowest path, delete the rest.",
+  "highlights": [
+    "Change the least amount of files possible; broad PRs need architectural justification, not convenience.",
+    "No internet requests from core ComfyUI—no telemetry, analytics, update checks, or 'anonymized' loopholes.",
+    "State and capability flags live on the object that owns the behavior; no getattr probing of children.",
+    "Use existing optimized Comfy Kitchen / quant_ops kernels before writing any local model math.",
+    "Code must look hand-written for this repo; generic AI-generated patterns are rejected automatically."
+  ],
+  "assessment": "This file reads like a senior maintainer's immune system encoded as prose: it aggressively rejects abstraction, compatibility baggage, and defensive branches that lack a real failure mode. The explicit anti-AI-slop clause and the 'narrowest code path' rule create a strong bias toward small, reviewable, high-signal diffs. The no-internet and state-ownership sections show a rare willingness to make hard product and architectural commitments rather than leaving them to reviewer discretion.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "abee3157f01ef22bb1a16e9f29676f79977ef6dc"
+  },
+  "discovered_at": "2026-10-19T07:06:02.801311+00:00",
+  "repo": "Comfy-Org/ComfyUI"
+}

@@ -754,7 +754,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "CLAUDE.md": "c11f29adcd1c4074f43b4f020c6a902e245587af"
+      "CLAUDE.md": "a1ec3df9a7addc68319ad5b869cab0cdd7b5d38b"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -762,7 +762,17 @@
     "discovered_at": "2026-10-04T07:34:11.870632+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/24",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "c11f29adcd1c4074f43b4f020c6a902e245587af",
+        "new_sha": "a1ec3df9a7addc68319ad5b869cab0cdd7b5d38b",
+        "vibe_shift": "Shifted towards stricter infrastructure cost governance and deployment constraints.",
+        "summary": "The author added a new 'Hosting' section that imposes explicit infrastructure constraints, specifically prohibiting metered Cloudflare compute and requiring cost comparison approval for certain Cloudflare services. This change reflects a shift from purely functional build and documentation instructions to also governing deployment and cost decisions.",
+        "timestamp": "2026-10-19T07:05:54.695200+00:00"
+      }
+    ]
   },
   "cloudflare/cloudflare-os": {
     "stars": 10657,
@@ -2283,6 +2293,102 @@
     "vibe": "Migrations are the only bridge between commits; uncommitted shapes get deleted, not shimmed.",
     "discovered_at": "2026-10-18T06:47:39.833354+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/122",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Comfy-Org/ComfyUI": {
+    "stars": 138914,
+    "language": "Python",
+    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "abee3157f01ef22bb1a16e9f29676f79977ef6dc"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Surgical, dependency-averse, and allergic to AI slop—fix the narrowest path, delete the rest.",
+    "discovered_at": "2026-10-19T07:06:03.301894+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/124",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "huggingface/OpenEnv": {
+    "stars": 2724,
+    "language": "Python",
+    "description": "An interface library for RL post training with environments. ",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "cd4210ffb05a2ee1f38ee6a3aed8b4f59a2dc458",
+      "CLAUDE.md": "71acc7890693feada06b636b3159c2aab4087373"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Monorepo pragmatist who knows exactly which tests skip and why.",
+    "discovered_at": "2026-10-19T07:06:08.694222+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/125",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "androidx/androidx": {
+    "stars": 6112,
+    "language": "Kotlin",
+    "description": "Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "00717260316bea2e1ee222a57b6ec89e137ec4fe"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Scope everything, read the nearest guide, and never configure the whole build.",
+    "discovered_at": "2026-10-19T07:06:13.865012+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/126",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "kirodotdev/KiroCrew": {
+    "stars": 4484,
+    "language": "Python",
+    "description": "A persistent workspace for development work that self-improves and continues beyond one session.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c3f8edb232d8f7c25c0e9e42979ea00c3b19c910",
+      "CLAUDE.md": "df25292eb1e951374aba704bce3c2831104670f0"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "A router, not a manual — every rule here exists because its violation already caused damage.",
+    "discovered_at": "2026-10-19T07:06:20.735279+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/127",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "percona/pmm": {
+    "stars": 1112,
+    "language": "Go",
+    "description": "Percona Monitoring and Management: an open source database monitoring, observability and management tool",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e88160db132731151e5aa14defd5a8e6e445d1dd",
+      "CLAUDE.md": "f57e4132e63a602b57231cd1cddf1e12e1f91298"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "A tool-neutral, hierarchically organized source of truth that keeps AI agents on the rails without drowning them in context.",
+    "discovered_at": "2026-10-19T07:06:26.817309+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/128",
     "pr_url": null,
     "status": "pending_review"
   }

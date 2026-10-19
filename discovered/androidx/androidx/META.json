@@ -1,0 +1,24 @@
+{
+  "stars": 6112,
+  "language": "Kotlin",
+  "description": "Development environment for Android Jetpack extension libraries under the androidx namespace. Synchronized with Android Jetpack's primary development branch on AOSP.",
+  "url": "https://github.com/androidx/androidx",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Scope everything, read the nearest guide, and never configure the whole build.",
+  "highlights": [
+    "Explicitly scopes work to a module and warns that configuring the whole repo is slow.",
+    "Introduces PROJECT_PREFIX env var to cap which Gradle projects get configured.",
+    "Points to per-directory AGENTS.md files and skills rather than duplicating guidance.",
+    "Distinguishes the AOSP Gerrit/Googler path from the GitHub PR flow and declares the latter out of scope.",
+    "Warns against assuming Gradle project paths mirror directories; instructs grepping settings.gradle instead."
+  ],
+  "assessment": "This guide reflects mature monorepo discipline: it treats build configuration cost as a first-class concern and gives concrete levers (PROJECT_PREFIX, ./studiow, targeted tasks) instead of vague advice. By delegating deep workflows to skills and per-module AGENTS.md files, it keeps the top-level file lean while still enforcing required stanzas like Test: and Change-Id:. The explicit 'don't assume, grep settings.gradle' rule is a small but high-leverage anti-slop constraint that prevents a common class of agent errors.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "00717260316bea2e1ee222a57b6ec89e137ec4fe"
+  },
+  "discovered_at": "2026-10-19T07:06:13.340949+00:00",
+  "repo": "androidx/androidx"
+}

@@ -1,0 +1,26 @@
+{
+  "stars": 1112,
+  "language": "Go",
+  "description": "Percona Monitoring and Management: an open source database monitoring, observability and management tool",
+  "url": "https://github.com/percona/pmm",
+  "archetype": "Pragmatic Systems",
+  "vibe": "A tool-neutral, hierarchically organized source of truth that keeps AI agents on the rails without drowning them in context.",
+  "highlights": [
+    "AGENTS.md is the single source of truth, with thin pointer files (CLAUDE.md, GEMINI.md, etc.) routing agents to it.",
+    "Component-specific guides are loaded on demand via nested CLAUDE.md imports, avoiding context bloat.",
+    "Global conventions are deliberately not repeated in component guides to prevent duplication and drift.",
+    "A curated 'PMM-specific choices' section repeats a handful of rules on purpose to catch common agent mistakes.",
+    "Clear decision trees for testing and linting ensure agents run the smallest relevant checks."
+  ],
+  "assessment": "This document demonstrates exceptional engineering taste by treating AI agents as first-class contributors who need precise, non-redundant guidance. The hierarchical structure with on-demand loading is a clever solution to context window limitations, and the explicit anti-duplication rule shows a deep understanding of maintenance costs. The decision trees and 'Don'ts' list provide actionable constraints that prevent common pitfalls without being overly prescriptive.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e88160db132731151e5aa14defd5a8e6e445d1dd",
+    "CLAUDE.md": "f57e4132e63a602b57231cd1cddf1e12e1f91298"
+  },
+  "discovered_at": "2026-10-19T07:06:26.244262+00:00",
+  "repo": "percona/pmm"
+}
