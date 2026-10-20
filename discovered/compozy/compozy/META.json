@@ -1,0 +1,25 @@
+{
+  "stars": 2810,
+  "language": "Go",
+  "description": "An operating system for AI agents. Plug in the agent CLIs you already use (Claude Code, Codex, Gemini CLI, Cursor) and they become a team: they split the work, hand tasks to each other, run automated on jobs and loops, and share one project memory. You steer everything from the browser.",
+  "url": "https://github.com/compozy/compozy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CompozyOS",
+    "CompozyOS is a Go daemon managing ACP agents over JSON-RPC/stdio, SQLite state, HTTP/SSE, UDS, and a web UI. Capabilities must be extensible and manageable by agents through structured CLI/HTTP/UDS surfaces.",
+    "Compatibility Policy",
+    "Real users run every release. Preserve the three regimes from SD-013 and L-040:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "512cfcd3b77e125c813bf6ee919504b07219249c"
+  },
+  "discovered_at": "2026-10-20T06:50:37.183195+00:00",
+  "repo": "compozy/compozy"
+}

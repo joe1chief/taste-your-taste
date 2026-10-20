@@ -1,0 +1,25 @@
+{
+  "stars": 131761,
+  "language": "C++",
+  "description": "LLM inference in C/C++",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Instructions for llama.cpp",
+    "> [!IMPORTANT]",
+    "> AI-generated code is allowed. What is **not** allowed is submitting code you do not understand. You are 100% responsible for every line, however it was produced.",
+    "> Read more: [CONTRIBUTING.md](CONTRIBUTING.md)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "36390a6b4ad6dd96da2557d95bcde4141ea1f553",
+    "CLAUDE.md": "302cdeab99cfd3661740427eb97391e7b573bac1"
+  },
+  "discovered_at": "2026-10-20T06:50:50.788934+00:00",
+  "repo": "ggml-org/llama.cpp"
+}

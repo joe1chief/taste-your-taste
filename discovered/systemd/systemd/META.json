@@ -1,0 +1,25 @@
+{
+  "stars": 16862,
+  "language": "C",
+  "description": "The systemd System and Service Manager ",
+  "url": "https://github.com/systemd/systemd",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "SPDX-License-Identifier: MIT-0",
+    "AGENTS.md",
+    "This file provides guidance to AI coding agents when working with code in this repository. Only add",
+    "instructions to this file if you've seen an AI agent mess up that particular bit of logic in practice."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ca937a699a12573ddcb05f5345bd7d57dd881552",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-20T06:50:58.862221+00:00",
+  "repo": "systemd/systemd"
+}

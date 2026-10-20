@@ -1,0 +1,23 @@
+{
+  "stars": 4906,
+  "language": "TypeScript",
+  "description": "Open-source JavaScript form library for React, Angular, Vue, and plain JavaScript. Render dynamic JSON-driven forms, multi-step form wizards, surveys, quizzes, and other data-entry tools.",
+  "url": "https://github.com/surveyjs/survey-library",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "CLAUDE.md",
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "Repository layout",
+    "This is a monorepo (npm workspaces are *not* used — each package installs and builds independently). The packages under `packages/` are:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "6f1012ade6d3092cda56d6c5f7a22081da8508ef"
+  },
+  "discovered_at": "2026-10-20T06:50:43.005595+00:00",
+  "repo": "surveyjs/survey-library"
+}

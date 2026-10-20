@@ -2019,7 +2019,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "68590f47c3a5cd47a0599548bf16ac7e4d0655b9",
-      "CLAUDE.md": "912dd6dcee9cfa559be1b8ddb8ac3b6d7a138ab0",
+      "CLAUDE.md": "e7c222c224a31bd03b404cb9042b391be1b7cb5e",
       "SKILL.md": "b41415aafb2ca8c073edad92b0bd4f46d231c9a4"
     },
     "source": "trending",
@@ -2028,7 +2028,17 @@
     "discovered_at": "2026-10-16T06:33:37.774758+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/104",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "912dd6dcee9cfa559be1b8ddb8ac3b6d7a138ab0",
+        "new_sha": "e7c222c224a31bd03b404cb9042b391be1b7cb5e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-20T06:50:15.650688+00:00"
+      }
+    ]
   },
   "lightseekorg/tokenspeed": {
     "stars": 2568,
@@ -2114,7 +2124,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "64349851a89fcdc93aeed9fb13d821c930b53426",
-      "CLAUDE.md": "d904d0ef470e01d6a0c91398f6062ea9e9a53736"
+      "CLAUDE.md": "b7b7632365a356f298df854136e93db687bdc079"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -2122,7 +2132,17 @@
     "discovered_at": "2026-10-17T06:22:45.359906+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/111",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "d904d0ef470e01d6a0c91398f6062ea9e9a53736",
+        "new_sha": "b7b7632365a356f298df854136e93db687bdc079",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-20T06:50:10.645535+00:00"
+      }
+    ]
   },
   "wassim249/fastapi-langgraph-agent-production-ready-template": {
     "stars": 2704,
@@ -2389,6 +2409,102 @@
     "vibe": "A tool-neutral, hierarchically organized source of truth that keeps AI agents on the rails without drowning them in context.",
     "discovered_at": "2026-10-19T07:06:26.817309+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/128",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "boykopovar/AnyPS5": {
+    "stars": 44733,
+    "language": "C++",
+    "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7ded821d2814c6cee751ea55ec87115b70e39f4c"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-20T06:50:32.112991+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/131",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "compozy/compozy": {
+    "stars": 2810,
+    "language": "Go",
+    "description": "An operating system for AI agents. Plug in the agent CLIs you already use (Claude Code, Codex, Gemini CLI, Cursor) and they become a team: they split the work, hand tasks to each other, run automated on jobs and loops, and share one project memory. You steer everything from the browser.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "512cfcd3b77e125c813bf6ee919504b07219249c"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-20T06:50:37.656383+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/132",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "surveyjs/survey-library": {
+    "stars": 4906,
+    "language": "TypeScript",
+    "description": "Open-source JavaScript form library for React, Angular, Vue, and plain JavaScript. Render dynamic JSON-driven forms, multi-step form wizards, surveys, quizzes, and other data-entry tools.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "6f1012ade6d3092cda56d6c5f7a22081da8508ef"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-20T06:50:43.560512+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/133",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ggml-org/llama.cpp": {
+    "stars": 131761,
+    "language": "C++",
+    "description": "LLM inference in C/C++",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "36390a6b4ad6dd96da2557d95bcde4141ea1f553",
+      "CLAUDE.md": "302cdeab99cfd3661740427eb97391e7b573bac1"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-20T06:50:51.293439+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/134",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "systemd/systemd": {
+    "stars": 16862,
+    "language": "C",
+    "description": "The systemd System and Service Manager ",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ca937a699a12573ddcb05f5345bd7d57dd881552",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-20T06:50:59.351229+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/135",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**122 tracked projects** | **26 curated** | **96 pending review**
+**127 tracked projects** | **26 curated** | **101 pending review**
 
-Last completed scan: [2026-10-19 07:06:26 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/39213746609).
+Last completed scan: [2026-10-20 06:50:59 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/39382692052).
 
-Latest content activity: **2026-10-19 07:06:26 UTC**.
+Latest content activity: **2026-10-20 06:50:59 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-20 06:50:59 | [systemd/systemd](https://github.com/systemd/systemd) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/135) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/systemd/systemd) |
+| 2026-10-20 06:50:51 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/134) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ggml-org/llama.cpp) |
+| 2026-10-20 06:50:43 | [surveyjs/survey-library](https://github.com/surveyjs/survey-library) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/133) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/surveyjs/survey-library) |
+| 2026-10-20 06:50:37 | [compozy/compozy](https://github.com/compozy/compozy) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/132) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/compozy/compozy) |
+| 2026-10-20 06:50:32 | [boykopovar/AnyPS5](https://github.com/boykopovar/AnyPS5) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/131) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/boykopovar/anyps5) |
+| 2026-10-20 06:50:15 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/104) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ruvnet/ruflo) |
+| 2026-10-20 06:50:10 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/111) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/madslorentzen/ai-job-search) |
 | 2026-10-19 07:06:26 | [percona/pmm](https://github.com/percona/pmm) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/128) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/percona/pmm) |
 | 2026-10-19 07:06:20 | [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/127) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kirodotdev/kirocrew) |
 | 2026-10-19 07:06:13 | [androidx/androidx](https://github.com/androidx/androidx) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/126) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/androidx/androidx) |
-| 2026-10-19 07:06:08 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/125) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/huggingface/openenv) |
-| 2026-10-19 07:06:03 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/124) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comfy-org/comfyui) |
-| 2026-10-19 07:05:54 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/24) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/thedotmack/claude-mem) |
-| 2026-10-18 06:47:39 | [requarks/wiki](https://github.com/requarks/wiki) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/122) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/requarks/wiki) |
-| 2026-10-18 06:47:34 | [PHPantom-dev/phpantom_lsp](https://github.com/PHPantom-dev/phpantom_lsp) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/121) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/phpantom-dev/phpantom_lsp) |
-| 2026-10-18 06:47:28 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/120) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/opencode) |
-| 2026-10-18 06:47:23 | [anthropics/claude-code](https://github.com/anthropics/claude-code) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/119) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anthropics/claude-code) |
 <!-- TASTE:LATEST:END -->
 
 ---

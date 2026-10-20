@@ -1,0 +1,23 @@
+{
+  "stars": 44733,
+  "language": "C++",
+  "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+  "url": "https://github.com/boykopovar/AnyPS5",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "AnyPS5 relinks PS5 executables into native Linux or Windows programs that run against reimplemented system libraries; it is not an emulator. The rules are [CONTRIBUTING.md](CONTRIBUTING.md) and [CONVENTIONS](docs/dev/CONVENTIONS.md); these are the ones agents break.",
+    "No comments in code, except `#endif` and namespace ends.",
+    "An export you cannot implement calls `NotImplemented_nid_no_patch(__func__)`; never return a made-up success."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7ded821d2814c6cee751ea55ec87115b70e39f4c"
+  },
+  "discovered_at": "2026-10-20T06:50:31.585750+00:00",
+  "repo": "boykopovar/AnyPS5"
+}
