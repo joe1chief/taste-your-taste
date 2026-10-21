@@ -18,8 +18,7 @@
     "CLAUDE.md"
   ],
   "file_shas": {
-    "AGENTS.md": "72d507e69d433ce4a23039759e28b30c83d5bd9d",
-    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    "AGENTS.md": "64bea35cf577dd8df71bc51dedfe1e84d05bb29e"
   },
   "discovered_at": "2026-10-09T08:09:36.911558+00:00",
   "repo": "stablyai/orca"

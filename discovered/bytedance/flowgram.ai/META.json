@@ -1,0 +1,25 @@
+{
+  "stars": 8510,
+  "language": "TypeScript",
+  "description": "FlowGram is an extensible workflow development framework with built-in canvas, form, variable, and materials that helps developers build AI workflow platforms faster and simpler.",
+  "url": "https://github.com/bytedance/flowgram.ai",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Repository Guidelines",
+    "Project Structure & Module Organization",
+    "FlowGram is a Rush-managed monorepo. Production-ready libraries live under `packages/*` (canvas engine, node engine, runtime, plugins). Demo UIs and docs sit inside `apps/*` (for example `apps/demo-free-layout`, `apps/docs`). Shared tooling, config, and scripts live under `common/` and `config/`. End-to-end Playwright suites are isolated in `e2e/<scenario>` so they can be installed and run independently. New code should land in the closest existing package; create additional Rush projects only when a module needs its own version and publish cycle.",
+    "Build, Test, and Development Commands"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2fd92a4b39d3a31283dad9ae7fa65d0d05bb2b7f",
+    "CLAUDE.md": "17fdbaf49fadc60f394e308996dbbc9df4ce462b"
+  },
+  "discovered_at": "2026-10-21T06:46:09.144012+00:00",
+  "repo": "bytedance/flowgram.ai"
+}

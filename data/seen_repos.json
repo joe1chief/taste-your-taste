@@ -122,8 +122,18 @@
     "archetype": "Engineering Craft",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "bc3595d1a07cff2b135139cadfa4c17ec412667b"
-    }
+      "AGENTS.md": "ee5d6f1d6c1e4ff197a41d3ff43fa6597dbc81d4"
+    },
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bc3595d1a07cff2b135139cadfa4c17ec412667b",
+        "new_sha": "ee5d6f1d6c1e4ff197a41d3ff43fa6597dbc81d4",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-21T06:45:33.945727+00:00"
+      }
+    ]
   },
   "agentsmd/agents.md": {
     "dir": "agentsmd",
@@ -1369,8 +1379,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "72d507e69d433ce4a23039759e28b30c83d5bd9d",
-      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      "AGENTS.md": "64bea35cf577dd8df71bc51dedfe1e84d05bb29e"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1387,6 +1396,14 @@
         "vibe_shift": "Shifted towards stricter enforcement of design consistency and CI integrity, with explicit anti-bypass rules for agent merges.",
         "summary": "The new version adds a binding design-system rule for the native-chat component directory and introduces a detailed Merging Pull Requests section that enforces CI verification before agent merges. These changes tighten visual consistency in a specific UI area and prevent agents from bypassing required checks, reflecting a shift toward stricter, more explicit guardrails.",
         "timestamp": "2026-10-15T06:41:51.270470+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "72d507e69d433ce4a23039759e28b30c83d5bd9d",
+        "new_sha": "64bea35cf577dd8df71bc51dedfe1e84d05bb29e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-21T06:45:29.504583+00:00"
       }
     ]
   },
@@ -2505,6 +2522,100 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-10-20T06:50:59.351229+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/135",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Graphify-Labs/graphify": {
+    "stars": 130609,
+    "language": "Python",
+    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "38857bdc2d175525367110a814289f9b9bb90f7d"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-10-21T06:45:47.976119+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/138",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "wshobson/agents": {
+    "stars": 41341,
+    "language": "Python",
+    "description": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0f49c42365bfa3a8ba5217fadd45d7f04cb0d838",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-21T06:45:53.226214+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/139",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "sickn33/agentic-awesome-skills": {
+    "stars": 48212,
+    "language": "Python",
+    "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "443dfed383a76b42aea747634eb729086bdadc11"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-21T06:45:58.089907+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/140",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vllm-project/vllm": {
+    "stars": 94551,
+    "language": "Python",
+    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a31d156b4b632b106505108478e1637c3dd77435"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-21T06:46:03.730108+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/141",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "bytedance/flowgram.ai": {
+    "stars": 8510,
+    "language": "TypeScript",
+    "description": "FlowGram is an extensible workflow development framework with built-in canvas, form, variable, and materials that helps developers build AI workflow platforms faster and simpler.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2fd92a4b39d3a31283dad9ae7fa65d0d05bb2b7f",
+      "CLAUDE.md": "17fdbaf49fadc60f394e308996dbbc9df4ce462b"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-21T06:46:09.543144+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/142",
     "pr_url": null,
     "status": "pending_review"
   }

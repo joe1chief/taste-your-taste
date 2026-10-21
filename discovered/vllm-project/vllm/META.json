@@ -1,0 +1,23 @@
+{
+  "stars": 94551,
+  "language": "Python",
+  "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+  "url": "https://github.com/vllm-project/vllm",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agent Instructions for vLLM",
+    "> These instructions apply to **all** AI-assisted contributions to `vllm-project/vllm`.",
+    "> Breaching these guidelines can result in automatic banning.",
+    "1. Contribution Policy (Mandatory)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a31d156b4b632b106505108478e1637c3dd77435"
+  },
+  "discovered_at": "2026-10-21T06:46:03.227123+00:00",
+  "repo": "vllm-project/vllm"
+}

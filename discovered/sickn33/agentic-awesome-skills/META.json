@@ -1,0 +1,23 @@
+{
+  "stars": 48212,
+  "language": "Python",
+  "description": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.",
+  "url": "https://github.com/sickn33/agentic-awesome-skills",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Guidelines",
+    "Project Structure & Module Organization",
+    "This repository publishes an installable library of agent skills and plugin bundles. Canonical skill sources live in `skills/<skill-id>/SKILL.md`; use lowercase, hyphenated skill IDs. Mirrored plugin distributions live under `plugins/`. Contributor and user docs live in `docs/`; localized docs live in `docs_zh-CN/` and `docs/vietnamese/`. Maintenance scripts and tests are in `tools/scripts/` and `tools/scripts/tests/`. The hosted catalog app is in `apps/web-app/`. Registry outputs such as `CATALOG.md`, `skills_index.json`, and `data/catalog.json` are generated artifacts. Editorial inputs in `data/` remain source files; use `tools/scripts/generated_files.js` for the exact generated-file classification.",
+    "Build, Test, and Development Commands"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "443dfed383a76b42aea747634eb729086bdadc11"
+  },
+  "discovered_at": "2026-10-21T06:45:57.643340+00:00",
+  "repo": "sickn33/agentic-awesome-skills"
+}

@@ -1,0 +1,23 @@
+{
+  "stars": 130609,
+  "language": "Python",
+  "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "graphify",
+    "This project has a graphify knowledge graph at graphify-out/.",
+    "When working on Graphify itself, use the repository's existing Graphify guidance. For codebase questions, prefer scoped graph queries where available; use the report for broad orientation. Do not use the graph as evidence when the task concerns the graph's correctness itself.",
+    "If graphify-out/wiki/index.md exists, navigate it instead of reading raw files"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "38857bdc2d175525367110a814289f9b9bb90f7d"
+  },
+  "discovered_at": "2026-10-21T06:45:47.526903+00:00",
+  "repo": "Graphify-Labs/graphify"
+}
