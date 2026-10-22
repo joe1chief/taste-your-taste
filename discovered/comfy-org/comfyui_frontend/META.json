@@ -1,0 +1,23 @@
+{
+  "stars": 2081,
+  "language": "TypeScript",
+  "description": "Official front-end implementation of ComfyUI",
+  "url": "https://github.com/Comfy-Org/ComfyUI_frontend",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository Guidelines",
+    "See @docs/guidance/\\*.md for file-type-specific conventions (auto-loaded by glob):",
+    "`docs/guidance/engineering.md` — general engineering guidelines, project philosophy, code-review checklist, external resource links",
+    "`docs/guidance/vue-components.md` — Vue 3 Composition API best practices"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8c3a083cc3d7ded70952cc2ac53b732da06efc82"
+  },
+  "discovered_at": "2026-10-22T06:49:04.153248+00:00",
+  "repo": "Comfy-Org/ComfyUI_frontend"
+}

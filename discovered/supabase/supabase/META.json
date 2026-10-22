@@ -1,0 +1,25 @@
+{
+  "stars": 113158,
+  "language": "TypeScript",
+  "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+  "url": "https://github.com/supabase/supabase",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Supabase Monorepo",
+    "pnpm 11 + Turborepo monorepo. Requires Node >= 22.13.",
+    "Structure",
+    "| Directory                | Purpose                                                                                                            |"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6b56a9e1e05dc670c95546ee19a35a68d70229e7",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-22T06:48:50.841242+00:00",
+  "repo": "supabase/supabase"
+}

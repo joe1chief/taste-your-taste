@@ -1,0 +1,25 @@
+{
+  "stars": 1100,
+  "language": "Python",
+  "description": "Tool for processing film negatives.",
+  "url": "https://github.com/marcinz606/NegPy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "Guidance for Claude Code in this repository. It holds rules and traps the code does not show; read the code for how a module works.",
+    "> **Keep this file current.** A change that alters stage order, the feature pattern or the commands updates it in the same change.",
+    "> **Keep the user docs current, in the same change.** `docs/USER_GUIDE.md` covers every panel and control and is **rendered in-app**: each panel's ⓘ opens the section marked `<!-- panel:<key> -->`, so a stale doc is a stale in-app guide. Update it when a control is added, renamed, retired or given a new range or default. Retiring a control deletes its prose. **Writing** below sets its voice and budgets. `docs/PIPELINE.md` covers what each stage does to the pixels: update it when stage order, the math, a mirrored constant or a default changes."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "c168b32a497eb246aa3bbe3bef7d8e41095b6ae3"
+  },
+  "discovered_at": "2026-10-22T06:49:10.650116+00:00",
+  "repo": "marcinz606/NegPy"
+}

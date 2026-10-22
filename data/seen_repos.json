@@ -273,7 +273,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "8347d621b4e7639cf00da511e74dde370c941872"
+      "AGENTS.md": "c3deeccdb6b1a4c7137d56297e933bbf19f4d3bf"
     },
     "evolution_history": [
       {
@@ -291,6 +291,14 @@
         "vibe_shift": "Shifted towards pragmatic simplicity and explicit trade-off reasoning, with tighter, more direct language.",
         "summary": "The new version adds a 'Choose good compromises' section that explicitly guides design trade-offs, emphasizing simplicity and real-world failures over theoretical edge cases. It also tightens language throughout, removing redundant words and adding a note about side requests sharing cache identity. The overall shift is toward more pragmatic, complexity-aware engineering with clearer boundaries.",
         "timestamp": "2026-10-17T06:22:36.171966+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8347d621b4e7639cf00da511e74dde370c941872",
+        "new_sha": "c3deeccdb6b1a4c7137d56297e933bbf19f4d3bf",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-22T06:48:44.153343+00:00"
       }
     ]
   },
@@ -1379,7 +1387,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "64bea35cf577dd8df71bc51dedfe1e84d05bb29e"
+      "AGENTS.md": "9e7550b8b3d24e95037bf4f206ba397198b083a4"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1404,6 +1412,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-21T06:45:29.504583+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "64bea35cf577dd8df71bc51dedfe1e84d05bb29e",
+        "new_sha": "9e7550b8b3d24e95037bf4f206ba397198b083a4",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-22T06:48:20.309083+00:00"
       }
     ]
   },
@@ -2248,7 +2264,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "405666eaf654060824db248d0b9dad41f3da5cf5",
+      "AGENTS.md": "cb01573cae6b008e5a2bf519dc54bc61fd3da4db",
       "CLAUDE.md": "29cb31969a2287c488386586b62ed3a82fb7caf5"
     },
     "source": "trending",
@@ -2257,7 +2273,17 @@
     "discovered_at": "2026-10-18T06:47:17.896718+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/118",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "405666eaf654060824db248d0b9dad41f3da5cf5",
+        "new_sha": "cb01573cae6b008e5a2bf519dc54bc61fd3da4db",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-22T06:48:31.054648+00:00"
+      }
+    ]
   },
   "anthropics/claude-code": {
     "stars": 152035,
@@ -2341,7 +2367,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "abee3157f01ef22bb1a16e9f29676f79977ef6dc"
+      "AGENTS.md": "025b9624a9a6da8d2b23cf7c3ac27333b42809c5"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -2349,7 +2375,17 @@
     "discovered_at": "2026-10-19T07:06:03.301894+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/124",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "abee3157f01ef22bb1a16e9f29676f79977ef6dc",
+        "new_sha": "025b9624a9a6da8d2b23cf7c3ac27333b42809c5",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-22T06:48:24.600220+00:00"
+      }
+    ]
   },
   "huggingface/OpenEnv": {
     "stars": 2724,
@@ -2589,7 +2625,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "a31d156b4b632b106505108478e1637c3dd77435"
+      "AGENTS.md": "9b1e26a987ef0eb4e14e41f2d4280042e12a69ca"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -2597,7 +2633,17 @@
     "discovered_at": "2026-10-21T06:46:03.730108+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/141",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "a31d156b4b632b106505108478e1637c3dd77435",
+        "new_sha": "9b1e26a987ef0eb4e14e41f2d4280042e12a69ca",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-22T06:48:17.378209+00:00"
+      }
+    ]
   },
   "bytedance/flowgram.ai": {
     "stars": 8510,
@@ -2616,6 +2662,104 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-10-21T06:46:09.543144+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/142",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "supabase/supabase": {
+    "stars": 113158,
+    "language": "TypeScript",
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6b56a9e1e05dc670c95546ee19a35a68d70229e7",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-22T06:48:51.380059+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/148",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "twentyhq/twenty": {
+    "stars": 59367,
+    "language": "TypeScript",
+    "description": "The open alternative to Salesforce, designed for AI.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "e2a9a4e6a4bc8b677c88df243544acd98e9e5941"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-22T06:48:57.769878+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/149",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Comfy-Org/ComfyUI_frontend": {
+    "stars": 2081,
+    "language": "TypeScript",
+    "description": "Official front-end implementation of ComfyUI",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8c3a083cc3d7ded70952cc2ac53b732da06efc82"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-22T06:49:04.728418+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/150",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "marcinz606/NegPy": {
+    "stars": 1100,
+    "language": "Python",
+    "description": "Tool for processing film negatives.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "c168b32a497eb246aa3bbe3bef7d8e41095b6ae3"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-22T06:49:11.213225+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/151",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "omnigent-ai/omnigent": {
+    "stars": 10976,
+    "language": "Python",
+    "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d41792f0b00a59a88f1bc3fdb648e8e7663f078b",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-22T06:49:18.437919+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/152",
     "pr_url": null,
     "status": "pending_review"
   }

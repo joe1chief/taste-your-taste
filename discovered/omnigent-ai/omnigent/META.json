@@ -1,0 +1,25 @@
+{
+  "stars": 10976,
+  "language": "Python",
+  "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+  "url": "https://github.com/omnigent-ai/omnigent",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent guidance",
+    "Guidance for AI agents (Claude Code, Copilot, Cursor, etc.) working in this",
+    "repository. See `CONTRIBUTING.md` for the full contributor workflow.",
+    "Reuse and design"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d41792f0b00a59a88f1bc3fdb648e8e7663f078b",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-22T06:49:18.048916+00:00",
+  "repo": "omnigent-ai/omnigent"
+}
