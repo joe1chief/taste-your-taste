@@ -1,0 +1,25 @@
+{
+  "stars": 4873,
+  "language": "Java",
+  "description": "Cyberduck is a libre FTP, SFTP, WebDAV, Amazon S3, Backblaze B2, Microsoft Azure & OneDrive and OpenStack Swift file transfer client for Mac and Windows.",
+  "url": "https://github.com/iterate-ch/cyberduck",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "This file provides guidance to coding agents (Claude Code, Codex, Gemini CLI, …) when working with code in this",
+    "repository.",
+    "What this is"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a8aa872525e48abc9350ec39a796b677ba830835",
+    "CLAUDE.md": "5c1be96a4be1aaf0df8ca1c1a7d1b3e733cbd547"
+  },
+  "discovered_at": "2026-10-23T06:43:07.356321+00:00",
+  "repo": "iterate-ch/cyberduck"
+}

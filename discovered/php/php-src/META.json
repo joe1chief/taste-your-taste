@@ -1,0 +1,23 @@
+{
+  "stars": 41321,
+  "language": "C",
+  "description": "The PHP Interpreter",
+  "url": "https://github.com/php/php-src",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "Vulnerability reports",
+    "When scanning php-src for vulnerabilities, please respect our security policy",
+    "summarized in `./SECURITY.md`. You can find the full policy",
+    "[here](https://raw.githubusercontent.com/php/policies/refs/heads/main/security-classification.rst)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2cf3915754b123fb06d9a0cae18e8b0d89b1661b"
+  },
+  "discovered_at": "2026-10-23T06:42:39.587900+00:00",
+  "repo": "php/php-src"
+}

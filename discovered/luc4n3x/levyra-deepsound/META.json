@@ -1,0 +1,25 @@
+{
+  "stars": 1146,
+  "language": "Kotlin",
+  "description": "Made for listening, not logging in. Levyra is an open-source music player for Android and Windows, bringing music discovery, synced lyrics, radio and beautiful artwork together. No ads, no tracking, just music ♫",
+  "url": "https://github.com/LUC4N3X/Levyra-deepsound",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Levyra Engineering Instructions",
+    "This is Levyra's compact always-loaded engineering contract. Keep permanent",
+    "rules here and load detailed procedures only for the current task phase.",
+    "Instruction order:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b463a6948aadac4754127b75669ca5c80d736550",
+    "CLAUDE.md": "1ca3ded48e8881470d41a9668c4d0b9f875b9143"
+  },
+  "discovered_at": "2026-10-23T06:42:50.598982+00:00",
+  "repo": "LUC4N3X/Levyra-deepsound"
+}

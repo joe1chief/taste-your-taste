@@ -1102,7 +1102,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "1f26ffbe24f3e438da5ec6d7f3f11626d33bde1b"
+      "AGENTS.md": "8b6846ea64011b944dcf3344e266410227f3b933"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1167,6 +1167,14 @@
         "vibe_shift": "Shifted towards stricter lifecycle correctness and explicit regression coverage.",
         "summary": "The new version adds a dedicated rule for lifecycle changes, requiring adherence to ownership and completion invariants and selection of applicable lifecycle regressions. This change formalizes lifecycle correctness as a first-class concern, likely in response to past issues with cleanup and finalization. The rest of the document remains largely unchanged, indicating a targeted refinement rather than a broad rewrite.",
         "timestamp": "2026-10-16T06:33:12.812259+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "1f26ffbe24f3e438da5ec6d7f3f11626d33bde1b",
+        "new_sha": "8b6846ea64011b944dcf3344e266410227f3b933",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-23T06:42:31.522346+00:00"
       }
     ]
   },
@@ -2760,6 +2768,100 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-10-22T06:49:18.437919+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/152",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "php/php-src": {
+    "stars": 41321,
+    "language": "C",
+    "description": "The PHP Interpreter",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2cf3915754b123fb06d9a0cae18e8b0d89b1661b"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-10-23T06:42:40.021408+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/154",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "luongnv89/claude-howto": {
+    "stars": 43509,
+    "language": "Python",
+    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "9f714d4a5719a6a361afca683dc77e77a9e5de19"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-23T06:42:44.741606+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/155",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "LUC4N3X/Levyra-deepsound": {
+    "stars": 1146,
+    "language": "Kotlin",
+    "description": "Made for listening, not logging in. Levyra is an open-source music player for Android and Windows, bringing music discovery, synced lyrics, radio and beautiful artwork together. No ads, no tracking, just music ♫",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b463a6948aadac4754127b75669ca5c80d736550",
+      "CLAUDE.md": "1ca3ded48e8881470d41a9668c4d0b9f875b9143"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-23T06:42:51.023495+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/156",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pykeio/ort": {
+    "stars": 2581,
+    "language": "Rust",
+    "description": "Fast ML inference & training for ONNX models in Rust",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "75e1e3648e1caad8868f26d76207bb5103dfd141"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-10-23T06:42:59.489736+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/157",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "iterate-ch/cyberduck": {
+    "stars": 4873,
+    "language": "Java",
+    "description": "Cyberduck is a libre FTP, SFTP, WebDAV, Amazon S3, Backblaze B2, Microsoft Azure & OneDrive and OpenStack Swift file transfer client for Mac and Windows.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a8aa872525e48abc9350ec39a796b677ba830835",
+      "CLAUDE.md": "5c1be96a4be1aaf0df8ca1c1a7d1b3e733cbd547"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-23T06:43:07.816279+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/158",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,23 @@
+{
+  "stars": 43509,
+  "language": "Python",
+  "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+  "url": "https://github.com/luongnv89/claude-howto",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "Tutorial repo. Output is markdown in numbered modules `01-` through `10-`, not an app. Scripts in `scripts/` exist only to validate docs and build the EPUB.",
+    "See also `.claude/CLAUDE.md` for stack/commands and `STYLE_GUIDE.md` for lesson structure.",
+    "Critical commands"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "9f714d4a5719a6a361afca683dc77e77a9e5de19"
+  },
+  "discovered_at": "2026-10-23T06:42:44.308790+00:00",
+  "repo": "luongnv89/claude-howto"
+}
