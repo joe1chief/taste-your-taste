@@ -1,0 +1,23 @@
+{
+  "stars": 122970,
+  "language": "JavaScript",
+  "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+  "url": "https://github.com/nodejs/node",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agents and Automated Tools",
+    "This document outlines rules and requirements for AI automation agents and automated",
+    "tooling that interact with the Node.js project.",
+    "Existing Node.js collaborators (as listed in the README.md) may use AI agents to"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0e00d2fc5496242333d9ae532ed8e3305c9ea32b"
+  },
+  "discovered_at": "2026-10-24T06:40:11.489913+00:00",
+  "repo": "nodejs/node"
+}

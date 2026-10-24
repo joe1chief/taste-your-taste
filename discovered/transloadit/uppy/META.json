@@ -1,0 +1,23 @@
+{
+  "stars": 31035,
+  "language": "TypeScript",
+  "description": "The next open source file uploader for web browsers :dog: ",
+  "url": "https://github.com/transloadit/uppy",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Uppy Repository Guide",
+    "This file provides repository guidance for coding agents. Maintain shared instructions here.",
+    "Repository Overview",
+    "Uppy is a modular JavaScript file uploader that integrates seamlessly with any application. It's"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4af09388b64a1f2c50b9b905930f8f45e0875710"
+  },
+  "discovered_at": "2026-10-24T06:40:34.927924+00:00",
+  "repo": "transloadit/uppy"
+}

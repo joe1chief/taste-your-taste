@@ -1,0 +1,25 @@
+{
+  "stars": 20364,
+  "language": "Go",
+  "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+  "url": "https://github.com/yetone/magpie",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Notes for coding agents",
+    "Subsystem design and review",
+    "Before changing a documented subsystem, read its",
+    "[design reference](docs/subsystems/README.md) and verify the linked source."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9b56ac4aa78f3e78fb721d9f8310746a8ceb9dd5",
+    "CLAUDE.md": "abed7dc1c45eb8842bedc3262321c9d1ef55e72d"
+  },
+  "discovered_at": "2026-10-24T06:40:17.586990+00:00",
+  "repo": "yetone/magpie"
+}

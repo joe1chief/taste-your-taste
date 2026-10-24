@@ -1,0 +1,23 @@
+{
+  "stars": 19764,
+  "language": "Go",
+  "description": "Application Kernel for Containers",
+  "url": "https://github.com/google/gvisor",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "What is gVisor?",
+    "gVisor is a userspace kernel used for sandboxing untrusted programs. It is",
+    "Linux-like kernel implementation in Go.",
+    "NOTE: The project uses [Bazel](https://bazel.build/) as a build system, so paths"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f2c18d15180352e4b5d7c48f0fb694f3f4938623"
+  },
+  "discovered_at": "2026-10-24T06:40:23.465983+00:00",
+  "repo": "google/gvisor"
+}

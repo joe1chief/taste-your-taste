@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**142 tracked projects** | **26 curated** | **116 pending review**
+**147 tracked projects** | **26 curated** | **121 pending review**
 
-Last completed scan: [2026-10-23 06:43:07 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/39913121439).
+Last completed scan: [2026-10-24 06:40:35 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/40071059414).
 
-Latest content activity: **2026-10-23 06:43:07 UTC**.
+Latest content activity: **2026-10-24 06:40:35 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-24 06:40:35 | [transloadit/uppy](https://github.com/transloadit/uppy) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/167) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/transloadit/uppy) |
+| 2026-10-24 06:40:29 | [vastsa/PI-Desktop](https://github.com/vastsa/PI-Desktop) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/166) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vastsa/pi-desktop) |
+| 2026-10-24 06:40:23 | [google/gvisor](https://github.com/google/gvisor) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/165) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/google/gvisor) |
+| 2026-10-24 06:40:18 | [yetone/magpie](https://github.com/yetone/magpie) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/164) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/yetone/magpie) |
+| 2026-10-24 06:40:12 | [nodejs/node](https://github.com/nodejs/node) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/163) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nodejs/node) |
+| 2026-10-24 06:40:03 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-10-24 06:39:59 | [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/127) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kirodotdev/kirocrew) |
+| 2026-10-24 06:39:52 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
+| 2026-10-24 06:39:41 | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvidia/openshell) |
 | 2026-10-23 06:43:07 | [iterate-ch/cyberduck](https://github.com/iterate-ch/cyberduck) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/158) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/iterate-ch/cyberduck) |
-| 2026-10-23 06:42:59 | [pykeio/ort](https://github.com/pykeio/ort) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/157) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pykeio/ort) |
-| 2026-10-23 06:42:51 | [LUC4N3X/Levyra-deepsound](https://github.com/LUC4N3X/Levyra-deepsound) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/156) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/luc4n3x/levyra-deepsound) |
-| 2026-10-23 06:42:44 | [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/155) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/luongnv89/claude-howto) |
-| 2026-10-23 06:42:40 | [php/php-src](https://github.com/php/php-src) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/154) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/php/php-src) |
-| 2026-10-23 06:42:31 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
-| 2026-10-22 06:49:18 | [omnigent-ai/omnigent](https://github.com/omnigent-ai/omnigent) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/152) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/omnigent-ai/omnigent) |
-| 2026-10-22 06:49:11 | [marcinz606/NegPy](https://github.com/marcinz606/NegPy) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/151) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/marcinz606/negpy) |
-| 2026-10-22 06:49:04 | [Comfy-Org/ComfyUI_frontend](https://github.com/Comfy-Org/ComfyUI_frontend) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/150) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comfy-org/comfyui_frontend) |
-| 2026-10-22 06:48:57 | [twentyhq/twenty](https://github.com/twentyhq/twenty) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/149) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/twentyhq/twenty) |
 <!-- TASTE:LATEST:END -->
 
 ---

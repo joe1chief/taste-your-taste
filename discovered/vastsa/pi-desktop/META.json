@@ -1,0 +1,25 @@
+{
+  "stars": 7194,
+  "language": "TypeScript",
+  "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+  "url": "https://github.com/vastsa/PI-Desktop",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Policy-Sync: 2026-09-26.1",
+    "Mandatory rules for AI coding agents working in PI-Desktop.",
+    "`CLAUDE.md` is the Claude Code / Claude Cowork entry point and a condensed"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b06c4e48fa348738f42d9df861173d8a067c1720",
+    "CLAUDE.md": "f4d13738e3e6832ce76725b58bba32cd78fcbda4"
+  },
+  "discovered_at": "2026-10-24T06:40:29.470544+00:00",
+  "repo": "vastsa/PI-Desktop"
+}

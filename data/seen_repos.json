@@ -9,7 +9,7 @@
     "archetype": "Anti-Slop Minimalist",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "b049c28f50eb6a533ce968660989b402862fb0a1",
+      "AGENTS.md": "c82fa39ec058584aa55e084cacca7034fbb4e426",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "evolution_history": [
@@ -20,6 +20,14 @@
         "vibe_shift": "Shifted from no guidance to a structured, agent-centric instruction set with explicit architectural context and skill boundaries.",
         "summary": "The file was introduced as a new primary instruction surface for agents, establishing a clear agent-first project identity and a comprehensive architecture overview. It centralizes agent guidance by referencing CONTRIBUTING.md for build instructions and skill tables, while explicitly defining two skill collections and their usage contexts. The addition of a detailed crate table provides agents with immediate structural context, reducing reliance on external documentation.",
         "timestamp": "2026-10-02T07:42:54.507611+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "b049c28f50eb6a533ce968660989b402862fb0a1",
+        "new_sha": "c82fa39ec058584aa55e084cacca7034fbb4e426",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-24T06:39:41.764863+00:00"
       }
     ]
   },
@@ -273,7 +281,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "c3deeccdb6b1a4c7137d56297e933bbf19f4d3bf"
+      "AGENTS.md": "4fcbdd72bdb9c45e0a43846bfe501121b72d80a8"
     },
     "evolution_history": [
       {
@@ -299,6 +307,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-22T06:48:44.153343+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "c3deeccdb6b1a4c7137d56297e933bbf19f4d3bf",
+        "new_sha": "4fcbdd72bdb9c45e0a43846bfe501121b72d80a8",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-24T06:39:52.899174+00:00"
       }
     ]
   },
@@ -1395,7 +1411,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9e7550b8b3d24e95037bf4f206ba397198b083a4"
+      "AGENTS.md": "2901079247cfdcdd2bbe7e5d517a3173f6c6fb3e"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1428,6 +1444,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-22T06:48:20.309083+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9e7550b8b3d24e95037bf4f206ba397198b083a4",
+        "new_sha": "2901079247cfdcdd2bbe7e5d517a3173f6c6fb3e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-24T06:40:03.644579+00:00"
       }
     ]
   },
@@ -2442,7 +2466,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "c3f8edb232d8f7c25c0e9e42979ea00c3b19c910",
+      "AGENTS.md": "5893dd64de59c14747c45bf0293453f6f5f229ab",
       "CLAUDE.md": "df25292eb1e951374aba704bce3c2831104670f0"
     },
     "source": "popular_stars",
@@ -2451,7 +2475,17 @@
     "discovered_at": "2026-10-19T07:06:20.735279+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/127",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "c3f8edb232d8f7c25c0e9e42979ea00c3b19c910",
+        "new_sha": "5893dd64de59c14747c45bf0293453f6f5f229ab",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-24T06:39:59.874672+00:00"
+      }
+    ]
   },
   "percona/pmm": {
     "stars": 1112,
@@ -2862,6 +2896,100 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-10-23T06:43:07.816279+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/158",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "nodejs/node": {
+    "stars": 122970,
+    "language": "JavaScript",
+    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0e00d2fc5496242333d9ae532ed8e3305c9ea32b"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-24T06:40:12.146035+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/163",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "yetone/magpie": {
+    "stars": 20364,
+    "language": "Go",
+    "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9b56ac4aa78f3e78fb721d9f8310746a8ceb9dd5",
+      "CLAUDE.md": "abed7dc1c45eb8842bedc3262321c9d1ef55e72d"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-24T06:40:18.195546+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/164",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "google/gvisor": {
+    "stars": 19764,
+    "language": "Go",
+    "description": "Application Kernel for Containers",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f2c18d15180352e4b5d7c48f0fb694f3f4938623"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-24T06:40:23.972197+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/165",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vastsa/PI-Desktop": {
+    "stars": 7194,
+    "language": "TypeScript",
+    "description": "Local-first AI coding agent desktop: Electron + Rust host core + pi Agent Harness + user-installable plugins",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b06c4e48fa348738f42d9df861173d8a067c1720",
+      "CLAUDE.md": "f4d13738e3e6832ce76725b58bba32cd78fcbda4"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-24T06:40:29.981157+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/166",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "transloadit/uppy": {
+    "stars": 31035,
+    "language": "TypeScript",
+    "description": "The next open source file uploader for web browsers :dog: ",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4af09388b64a1f2c50b9b905930f8f45e0875710"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-24T06:40:35.469195+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/167",
     "pr_url": null,
     "status": "pending_review"
   }
