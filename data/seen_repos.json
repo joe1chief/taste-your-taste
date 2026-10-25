@@ -555,8 +555,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "38afae21fcfa0e852a40813ddc2b1b5e7563e7e4",
-      "CLAUDE.md": "5b618477d0baf4546a76a2de9f2ec41bca9e6f0d"
+      "AGENTS.md": "d7a74ab0201ff5c22f3e83b8ae764a45cfc747c0",
+      "CLAUDE.md": "25a8d1cbceb3ce2564845bfe944f8e4e2f480bf8"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -564,7 +564,17 @@
     "discovered_at": "2026-10-02T07:44:16.877471+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/11",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "38afae21fcfa0e852a40813ddc2b1b5e7563e7e4",
+        "new_sha": "d7a74ab0201ff5c22f3e83b8ae764a45cfc747c0",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-25T07:05:21.155736+00:00"
+      }
+    ]
   },
   "apache/seatunnel": {
     "stars": 9696,
@@ -2990,6 +3000,102 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-10-24T06:40:35.469195+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/167",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pollen-robotics/microduck": {
+    "stars": 11155,
+    "language": "Rust",
+    "description": "A Tiny biped duck robot 🦆",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7ddaf1b1984bfdfb59c2f18130e05e4628e436f8",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-25T07:05:36.221516+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/169",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "makecindy/cindy": {
+    "stars": 4272,
+    "language": "TypeScript",
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4958bb7700e754f05a9c219a9f103289284a4bd4",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-25T07:05:42.459282+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/170",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pingdotgg/ts-rust": {
+    "stars": 1513,
+    "language": "Rust",
+    "description": "An experimental Rust port of the TypeScript 7 compiler (tsc)",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "41fe5a8cc39bbb2165ee0502368de48d6b53f81c"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-10-25T07:05:48.022238+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/171",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "streetsidesoftware/cspell": {
+    "stars": 1700,
+    "language": "TypeScript",
+    "description": "A Spell Checker for Code!",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a7d24d1512deb5793969c9cd8a8760dc5378832a",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-25T07:05:53.620360+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/172",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Osmantic/ODS": {
+    "stars": 7681,
+    "language": "Python",
+    "description": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "7a867a9a9e26bf738b5c50f782b9133927a269db"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-25T07:05:58.844185+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/173",
     "pr_url": null,
     "status": "pending_review"
   }

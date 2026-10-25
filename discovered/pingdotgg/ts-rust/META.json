@@ -1,0 +1,23 @@
+{
+  "stars": 1513,
+  "language": "Rust",
+  "description": "An experimental Rust port of the TypeScript 7 compiler (tsc)",
+  "url": "https://github.com/pingdotgg/ts-rust",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "Typechecker work rules",
+    "Read before work",
+    "For typechecker work, read these files in this order before editing compiler code or starting a compiler run:",
+    "1. `docs/typechecker-accountability.md`"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "41fe5a8cc39bbb2165ee0502368de48d6b53f81c"
+  },
+  "discovered_at": "2026-10-25T07:05:47.607776+00:00",
+  "repo": "pingdotgg/ts-rust"
+}

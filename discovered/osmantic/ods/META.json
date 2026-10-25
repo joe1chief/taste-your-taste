@@ -1,0 +1,23 @@
+{
+  "stars": 7681,
+  "language": "Python",
+  "description": "ODS V3 Pre-Release: Public testing and refinement ahead of the official V3 launch. Turn your PC, Mac, or Linux box into a private AI server.",
+  "url": "https://github.com/Osmantic/ODS",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "Project Overview",
+    "ODS is a fully local AI stack (LLM inference, chat, voice, agents, workflows, RAG, image generation, privacy tools) deployed on user hardware with a single command. It supports Linux (NVIDIA + AMD), Windows (WSL2), and macOS (Apple Silicon). The project is primarily Bash (installer/CLI), Python (dashboard-api, services), and React/Vite (dashboard UI)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "7a867a9a9e26bf738b5c50f782b9133927a269db"
+  },
+  "discovered_at": "2026-10-25T07:05:58.216536+00:00",
+  "repo": "Osmantic/ODS"
+}

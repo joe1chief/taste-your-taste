@@ -1,0 +1,25 @@
+{
+  "stars": 11155,
+  "language": "Rust",
+  "description": "A Tiny biped duck robot 🦆",
+  "url": "https://github.com/pollen-robotics/microduck",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Working in this repository",
+    "`CONTRIBUTING.md` is the reference: building, testing, layout, conventions, releasing. This page",
+    "is the short list of things that are easy to get backwards, and where the answer lives when they",
+    "are not here."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7ddaf1b1984bfdfb59c2f18130e05e4628e436f8",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-25T07:05:35.413573+00:00",
+  "repo": "pollen-robotics/microduck"
+}

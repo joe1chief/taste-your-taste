@@ -1,0 +1,25 @@
+{
+  "stars": 1700,
+  "language": "TypeScript",
+  "description": "A Spell Checker for Code!",
+  "url": "https://github.com/streetsidesoftware/cspell",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "Instructions for coding agents working in the CSpell monorepo. `CLAUDE.md` imports this file, and",
+    "`.github/copilot-instructions.md` points to it.",
+    "If a command here disagrees with `package.json`, `package.json` wins. Say so rather than working around it."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a7d24d1512deb5793969c9cd8a8760dc5378832a",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-25T07:05:53.182104+00:00",
+  "repo": "streetsidesoftware/cspell"
+}

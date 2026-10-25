@@ -1,0 +1,25 @@
+{
+  "stars": 4272,
+  "language": "TypeScript",
+  "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+  "url": "https://github.com/makecindy/cindy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Cindy 客户端仓：Agent 工作入口",
+    "> 本文件是 Codex 与 Claude Code 共用的项目指令正本。`CLAUDE.md` 只保留",
+    "> `@AGENTS.md`，不要在两处重复维护规则。",
+    "本仓库只负责 desktop、mobile 及其共享 packages。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4958bb7700e754f05a9c219a9f103289284a4bd4",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-25T07:05:42.044603+00:00",
+  "repo": "makecindy/cindy"
+}
