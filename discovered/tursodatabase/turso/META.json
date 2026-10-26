@@ -1,0 +1,25 @@
+{
+  "stars": 25051,
+  "language": "Rust",
+  "description": "A SQL database in Rust: SQLite-compatible, now also speaking Postgres (experimental). The LLVM of databases.",
+  "url": "https://github.com/tursodatabase/turso",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Turso Agent Guidelines",
+    "SQLite rewrite in Rust. 40+ crate workspace.",
+    "Quick Reference",
+    "cargo build                    # build (debug; release builds are slow and double the target dir)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "024eae7ea0c5d6b53f98a9547b1d92bd81ad2846",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-26T07:13:27.986443+00:00",
+  "repo": "tursodatabase/turso"
+}

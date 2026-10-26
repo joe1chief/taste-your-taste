@@ -1,0 +1,25 @@
+{
+  "stars": 21343,
+  "language": "Python",
+  "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+  "url": "https://github.com/AgriciDaniel/claude-seo",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "Claude SEO: Multi-Platform Agent Instructions",
+    "> For **Cursor**, **Cursor Cloud Agents**, **Google Antigravity**, **Gemini CLI**,",
+    "> **Grok Build**,",
+    "> **OpenAI Codex CLI**, **Cline**, **Aider**, and any other agent harness that"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e90b3ffecd60b09c7e466d5087fe1564f90aa14e",
+    "CLAUDE.md": "51719e1757897b4e2592f0df92c475b5e5b0c672"
+  },
+  "discovered_at": "2026-10-26T07:13:21.531824+00:00",
+  "repo": "AgriciDaniel/claude-seo"
+}

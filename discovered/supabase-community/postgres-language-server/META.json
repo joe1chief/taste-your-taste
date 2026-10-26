@@ -1,0 +1,25 @@
+{
+  "stars": 5262,
+  "language": "Rust",
+  "description": "A Language Server for Postgres",
+  "url": "https://github.com/supabase-community/postgres-language-server",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "CLAUDE.md",
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "Project Overview",
+    "This is a Postgres Language Server implementation providing LSP features for SQL development, including autocompletion, syntax error highlighting, type-checking, and linting. The project is built in Rust using a modular crate architecture and includes TypeScript packages for editor integrations."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "55a3c46085b1a137d494442f8559a99a6c034433",
+    "CLAUDE.md": "ec1e25056a9fa2abbba4c6aff6116d7f73020a08"
+  },
+  "discovered_at": "2026-10-26T07:13:34.749122+00:00",
+  "repo": "supabase-community/postgres-language-server"
+}

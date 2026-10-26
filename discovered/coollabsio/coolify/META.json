@@ -1,0 +1,23 @@
+{
+  "stars": 64687,
+  "language": "PHP",
+  "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
+  "url": "https://github.com/coollabsio/coolify",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "AGENTS.md",
+    "This file provides guidance to agentic coding tools when working with code in this repository.",
+    "Project Overview",
+    "Coolify is an open-source, self-hostable PaaS (alternative to Heroku/Netlify/Vercel). It manages servers, applications, databases, and services via SSH. Built with Laravel 12 (using Laravel 10 file structure), Livewire 3, and Tailwind CSS v4."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1ab68ce6b8f9edd7b520140d96beceae35c9db12"
+  },
+  "discovered_at": "2026-10-26T07:13:13.477054+00:00",
+  "repo": "coollabsio/coolify"
+}
