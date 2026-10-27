@@ -1,0 +1,25 @@
+{
+  "stars": 12957,
+  "language": "Rust",
+  "description": "Fast Rust-based bundler for the web with a modernized webpack API 🦀",
+  "url": "https://github.com/web-infra-dev/rspack",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Rspack is a Rust-based JavaScript bundler with a webpack-compatible API.",
+    "Build and validation",
+    "Before testing changed code, build the artifacts those tests consume using the [development commands](.agents/DEVELOPMENT.md#build).",
+    "Adding tests"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    ".agents/SKILLS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "549127fc33a024b423b89c8f861e4d332ab6a1ac",
+    ".agents/SKILLS.md": "200e64d7121e142ea859fcf91be92d6f158dad0d"
+  },
+  "discovered_at": "2026-10-27T07:01:30.530601+00:00",
+  "repo": "web-infra-dev/rspack"
+}

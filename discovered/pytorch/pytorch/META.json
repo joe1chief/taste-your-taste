@@ -19,7 +19,7 @@
   ],
   "file_shas": {
     "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-    "CLAUDE.md": "3515958311534096178caf18173faee47b3a532b"
+    "CLAUDE.md": "d3112bd3df062cab38fb9810343769c4e54a21f2"
   },
   "discovered_at": "2026-10-11T08:00:13.925953+00:00",
   "repo": "pytorch/pytorch"

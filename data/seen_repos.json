@@ -82,8 +82,8 @@
     "archetype": "Anti-Slop Minimalist",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "101bc3dc285469f87875263a8d9126aebfbcfb32",
-      "CLAUDE.md": "903cdb336f8855009f827fe7026cd8e510412b5e"
+      "AGENTS.md": "169bda3206c65fda0788fadaf98aecf719906c1f",
+      "CLAUDE.md": "1aece91b1e28d854b0d0c4585644a0c86f6327e2"
     },
     "evolution_history": [
       {
@@ -109,6 +109,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-26T07:12:19.492940+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "101bc3dc285469f87875263a8d9126aebfbcfb32",
+        "new_sha": "169bda3206c65fda0788fadaf98aecf719906c1f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-27T07:00:23.838224+00:00"
       }
     ]
   },
@@ -563,8 +571,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d7a74ab0201ff5c22f3e83b8ae764a45cfc747c0",
-      "CLAUDE.md": "25a8d1cbceb3ce2564845bfe944f8e4e2f480bf8"
+      "AGENTS.md": "9a3e46f2dafeb28e60d57beb85efbb3dbcc6f6ba",
+      "CLAUDE.md": "7c30d3c9670aa0ebe649676a0e44becbaefbf8b6"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -581,6 +589,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-25T07:05:21.155736+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d7a74ab0201ff5c22f3e83b8ae764a45cfc747c0",
+        "new_sha": "9a3e46f2dafeb28e60d57beb85efbb3dbcc6f6ba",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-27T07:00:16.714991+00:00"
       }
     ]
   },
@@ -740,7 +756,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "f2f049297454806522722b3bbe2b7ebb10811a0b",
-      "CLAUDE.md": "d5649ac50594fb5f3e8597d630fd2d6c72bd4a8f"
+      "CLAUDE.md": "f514243e4b43d3a2394c80f9e22eda206c6823b0"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -757,6 +773,14 @@
         "vibe_shift": "Shifted towards broader language and domain coverage while maintaining existing principles.",
         "summary": "The new version expands the plugin's capabilities by adding three new agents (bengali-reviewer, and two others not fully shown) and increasing the counts of skills and commands. The core principles and existing agent list remain unchanged, indicating a focus on growth and specialization rather than altering fundamental guidelines.",
         "timestamp": "2026-10-16T06:33:22.642627+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "d5649ac50594fb5f3e8597d630fd2d6c72bd4a8f",
+        "new_sha": "f514243e4b43d3a2394c80f9e22eda206c6823b0",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-27T07:00:10.321807+00:00"
       }
     ]
   },
@@ -769,7 +793,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "810d26e31341319155253aeb6a5e804e5ff94c12",
+      "AGENTS.md": "5124fc4e78001a975a4cceb2fafe3118120b9a05",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -795,6 +819,14 @@
         "vibe_shift": "No shift in prompt engineering taste or constraints; only a factual update.",
         "summary": "The only change between the two versions is the user count in the 'What makes T3 Code special?' section, which increased from 400,000 to 500,000. This update reflects the project's growth and ensures the documentation remains accurate. No other rules or constraints were added or removed.",
         "timestamp": "2026-10-17T06:22:29.319992+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "810d26e31341319155253aeb6a5e804e5ff94c12",
+        "new_sha": "5124fc4e78001a975a4cceb2fafe3118120b9a05",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-27T07:00:45.289222+00:00"
       }
     ]
   },
@@ -1647,7 +1679,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "3515958311534096178caf18173faee47b3a532b"
+      "CLAUDE.md": "d3112bd3df062cab38fb9810343769c4e54a21f2"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1655,7 +1687,17 @@
     "discovered_at": "2026-10-11T08:00:14.546403+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/72",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "3515958311534096178caf18173faee47b3a532b",
+        "new_sha": "d3112bd3df062cab38fb9810343769c4e54a21f2",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-27T07:00:55.603726+00:00"
+      }
+    ]
   },
   "huggingface/transformers": {
     "stars": 167415,
@@ -2255,7 +2297,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2c09e49042ac1cb1bfb55902f1691299c7e7dfd1"
+      "AGENTS.md": "7d9bb784146ebd28a3a6697906c02f0fe4c61d9f"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -2263,7 +2305,17 @@
     "discovered_at": "2026-10-17T06:22:56.888151+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/113",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2c09e49042ac1cb1bfb55902f1691299c7e7dfd1",
+        "new_sha": "7d9bb784146ebd28a3a6697906c02f0fe4c61d9f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-27T07:00:37.273507+00:00"
+      }
+    ]
   },
   "HeyPuter/puter": {
     "stars": 43773,
@@ -3202,6 +3254,100 @@
     "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
     "discovered_at": "2026-10-26T07:13:35.292291+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/179",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "nightly-labs/openbot": {
+    "stars": 1696,
+    "language": "TypeScript",
+    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2233b833611c71c2c78a10941a349ecf56f20ebd"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-27T07:01:02.972548+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/186",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "gitroomhq/postiz-app": {
+    "stars": 38679,
+    "language": "TypeScript",
+    "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "9c89fb7f7e623f6fc92f55560b7a99c4cd7d91b8"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-27T07:01:09.050615+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/187",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "alchaincyf/huashu-design": {
+    "stars": 27285,
+    "language": "HTML",
+    "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
+    "files": [
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "SKILL.md": "9d12d2702091ac5f8bda1464cb4146724c83930f"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-10-27T07:01:16.457721+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/188",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Kopuz-org/kopuz": {
+    "stars": 1952,
+    "language": "Rust",
+    "description": "Your next music player",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9a86dcccc3d886441abaf4da9c948786a8c1d4e8",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-27T07:01:24.313897+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/189",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "web-infra-dev/rspack": {
+    "stars": 12957,
+    "language": "Rust",
+    "description": "Fast Rust-based bundler for the web with a modernized webpack API 🦀",
+    "files": [
+      "AGENTS.md",
+      ".agents/SKILLS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "549127fc33a024b423b89c8f861e4d332ab6a1ac",
+      ".agents/SKILLS.md": "200e64d7121e142ea859fcf91be92d6f158dad0d"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-27T07:01:31.271064+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/190",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,25 @@
+{
+  "stars": 1952,
+  "language": "Rust",
+  "description": "Your next music player",
+  "url": "https://github.com/Kopuz-org/kopuz",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agent Development Guide",
+    "A file for [guiding coding agents](https://agents.md/). Kopuz is a Rust + Dioxus",
+    "music player; one Cargo workspace holds the daemon and its frontends, laid out by",
+    "layer under `shared/`, `daemon/` and `apps/` (see Directory Structure). See"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9a86dcccc3d886441abaf4da9c948786a8c1d4e8",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-27T07:01:23.636993+00:00",
+  "repo": "Kopuz-org/kopuz"
+}

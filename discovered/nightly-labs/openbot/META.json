@@ -1,0 +1,23 @@
+{
+  "stars": 1696,
+  "language": "TypeScript",
+  "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+  "url": "https://github.com/nightly-labs/openbot",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository guidance",
+    "Communication",
+    "Use ASD-STE100 Simplified Technical English for all text you write: questions, updates,",
+    "explanations, final answers, commit messages, PR descriptions, and review comments. Be as concise as"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2233b833611c71c2c78a10941a349ecf56f20ebd"
+  },
+  "discovered_at": "2026-10-27T07:01:02.128128+00:00",
+  "repo": "nightly-labs/openbot"
+}

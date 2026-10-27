@@ -1,0 +1,23 @@
+{
+  "stars": 38679,
+  "language": "TypeScript",
+  "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+  "url": "https://github.com/gitroomhq/postiz-app",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "This project is Postiz, a tool to schedule social media and chat posts to 28+ channels.",
+    "You can add posts to the calendar, they will be added into a workflow and posted at the right time.",
+    "You can find things like:",
+    "Schedule posts"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "9c89fb7f7e623f6fc92f55560b7a99c4cd7d91b8"
+  },
+  "discovered_at": "2026-10-27T07:01:08.498062+00:00",
+  "repo": "gitroomhq/postiz-app"
+}
