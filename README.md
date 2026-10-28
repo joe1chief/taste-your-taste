@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**162 tracked projects** | **26 curated** | **136 pending review**
+**167 tracked projects** | **26 curated** | **141 pending review**
 
-Last completed scan: [2026-10-27 07:01:31 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/40464424842).
+Last completed scan: [2026-10-28 07:43:11 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/40651777263).
 
-Latest content activity: **2026-10-27 07:01:31 UTC**.
+Latest content activity: **2026-10-28 07:43:11 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-28 07:43:11 | [spacering-net/codeg](https://github.com/spacering-net/codeg) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/197) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spacering-net/codeg) |
+| 2026-10-28 07:43:05 | [databendlabs/databend](https://github.com/databendlabs/databend) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/196) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/databendlabs/databend) |
+| 2026-10-28 07:42:59 | [skypilot-org/skypilot](https://github.com/skypilot-org/skypilot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/195) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/skypilot-org/skypilot) |
+| 2026-10-28 07:42:53 | [slint-ui/slint](https://github.com/slint-ui/slint) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/194) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/slint-ui/slint) |
+| 2026-10-28 07:42:46 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/193) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hkuds/deeptutor) |
+| 2026-10-28 07:42:33 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-10-28 07:42:22 | [obra/superpowers](https://github.com/obra/superpowers) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/9) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/obra/superpowers) |
 | 2026-10-27 07:01:31 | [web-infra-dev/rspack](https://github.com/web-infra-dev/rspack) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/190) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/web-infra-dev/rspack) |
 | 2026-10-27 07:01:24 | [Kopuz-org/kopuz](https://github.com/Kopuz-org/kopuz) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/189) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kopuz-org/kopuz) |
 | 2026-10-27 07:01:16 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/188) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/alchaincyf/huashu-design) |
-| 2026-10-27 07:01:09 | [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/187) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/gitroomhq/postiz-app) |
-| 2026-10-27 07:01:02 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/186) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot) |
-| 2026-10-27 07:00:55 | [pytorch/pytorch](https://github.com/pytorch/pytorch) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/72) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pytorch/pytorch) |
-| 2026-10-27 07:00:45 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
-| 2026-10-27 07:00:37 | [koala73/worldmonitor](https://github.com/koala73/worldmonitor) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/113) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/koala73/worldmonitor) |
-| 2026-10-27 07:00:23 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/debpalash/voicestudio) |
-| 2026-10-27 07:00:16 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/11) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pbakaus/impeccable) |
 <!-- TASTE:LATEST:END -->
 
 ---

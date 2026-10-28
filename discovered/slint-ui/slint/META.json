@@ -1,0 +1,25 @@
+{
+  "stars": 24302,
+  "language": "Rust",
+  "description": "Slint is an open-source declarative GUI toolkit to build native user interfaces for Rust, C++, JavaScript, or Python apps.",
+  "url": "https://github.com/slint-ui/slint",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Instructions",
+    "Follow [the writing style guide](docs/internal/writing-style-guide.md) for new comments, documentation, Markdown, and commit messages.",
+    "Don't reformat unrelated prose.",
+    "Don't edit `CHANGELOG.md`; use a `ChangeLog:` commit trailer for noteworthy changes only as explained in the writing style guide"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8bac163766bab6bcbcaaa75d7907cecb852a13c4",
+    "CLAUDE.md": "4e1b4aa8cf2a4bbb8b6bf2298341d4fd3c3dcbbd"
+  },
+  "discovered_at": "2026-10-28T07:42:52.807083+00:00",
+  "repo": "slint-ui/slint"
+}

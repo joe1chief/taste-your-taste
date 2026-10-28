@@ -1,0 +1,25 @@
+{
+  "stars": 10759,
+  "language": "Python",
+  "description": "The AI Compute Platform for frontier teams. SkyPilot turns fragmented AI compute into one AI supercomputer, so frontier AI teams build custom intelligence faster.",
+  "url": "https://github.com/skypilot-org/skypilot",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md - SkyPilot Development Guide",
+    "This document provides guidance for AI assistants working with the SkyPilot codebase.",
+    "Project Overview",
+    "SkyPilot is a system to run, manage, and scale AI workloads on any AI infrastructure. It provides a unified interface across 25+ cloud providers (AWS, GCP, Azure, Kubernetes, Slurm, and many others), enabling users to launch compute resources, run jobs, and serve models without vendor lock-in."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e3d180bbaf5ade3cf318908201d30161cd6ee89d",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-28T07:42:59.083134+00:00",
+  "repo": "skypilot-org/skypilot"
+}

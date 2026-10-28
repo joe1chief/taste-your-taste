@@ -524,7 +524,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9587a6836b1419138e082a93d2a52850d9476626"
+      "AGENTS.md": "2828661a9909d8b3a9e0ba82380294bf10b9f0da"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -532,7 +532,17 @@
     "discovered_at": "2026-10-02T07:43:33.712527+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/9",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9587a6836b1419138e082a93d2a52850d9476626",
+        "new_sha": "2828661a9909d8b3a9e0ba82380294bf10b9f0da",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-28T07:42:22.604446+00:00"
+      }
+    ]
   },
   "earendil-works/pi": {
     "stars": 111438,
@@ -1461,7 +1471,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2901079247cfdcdd2bbe7e5d517a3173f6c6fb3e"
+      "AGENTS.md": "30482aa1a88494a170d1f743317bffd8250080f1"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1502,6 +1512,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-24T06:40:03.644579+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2901079247cfdcdd2bbe7e5d517a3173f6c6fb3e",
+        "new_sha": "30482aa1a88494a170d1f743317bffd8250080f1",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-28T07:42:33.266142+00:00"
       }
     ]
   },
@@ -3348,6 +3366,104 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-10-27T07:01:31.271064+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/190",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "HKUDS/DeepTutor": {
+    "stars": 46693,
+    "language": "Python",
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "files": [
+      "AGENTS.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "682fb49cf1725119e08b1c0d7c2d932139c41e38",
+      "SKILL.md": "f93dd83cf8e9f52c4ca0b5dc6ab707ef6a1bcf14"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-28T07:42:46.751832+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/193",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "slint-ui/slint": {
+    "stars": 24302,
+    "language": "Rust",
+    "description": "Slint is an open-source declarative GUI toolkit to build native user interfaces for Rust, C++, JavaScript, or Python apps.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8bac163766bab6bcbcaaa75d7907cecb852a13c4",
+      "CLAUDE.md": "4e1b4aa8cf2a4bbb8b6bf2298341d4fd3c3dcbbd"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-28T07:42:53.395175+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/194",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "skypilot-org/skypilot": {
+    "stars": 10759,
+    "language": "Python",
+    "description": "The AI Compute Platform for frontier teams. SkyPilot turns fragmented AI compute into one AI supercomputer, so frontier AI teams build custom intelligence faster.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e3d180bbaf5ade3cf318908201d30161cd6ee89d",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-28T07:42:59.569161+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/195",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "databendlabs/databend": {
+    "stars": 9485,
+    "language": "Rust",
+    "description": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  — rebuilt from scratch. Unified architecture on your S3.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e8fca3a6c447842b2377c11fdbdac447d87b6eb4"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-28T07:43:05.407880+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/196",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "spacering-net/codeg": {
+    "stars": 4173,
+    "language": "Rust",
+    "description": "Collaborative multi-agent AI coding workspace: aggregate sessions from Claude Code, Codex, OpenCode, Pi, Grok Build, etc. Desktop app, self-hosted server, or Docker.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "52d68d42361b1167386d903063fba91f9415c616",
+      "CLAUDE.md": "88a47ef52cf6d732d70eb4786ccd0ec8170a8338"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-28T07:43:11.423359+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/197",
     "pr_url": null,
     "status": "pending_review"
   }

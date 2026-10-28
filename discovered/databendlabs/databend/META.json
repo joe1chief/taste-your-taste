@@ -1,0 +1,23 @@
+{
+  "stars": 9485,
+  "language": "Rust",
+  "description": "Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  — rebuilt from scratch. Unified architecture on your S3.",
+  "url": "https://github.com/databendlabs/databend",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Guidelines",
+    "This file is the top-level guide for repository-specific working rules. Start by confirming the target area and what outputs are expected to remain in the branch. Prefer a closer `AGENTS.md` when one exists, then read the matching detail documents in `agents/`. If maintainer guidance conflicts with repository docs or current practice, treat the maintainer's explicit guidance as the primary source of intent.",
+    "Core Workflow",
+    "Build context from the codebase first. Databend is a multi-crate Rust workspace, so understand the affected module boundaries before editing."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e8fca3a6c447842b2377c11fdbdac447d87b6eb4"
+  },
+  "discovered_at": "2026-10-28T07:43:04.685968+00:00",
+  "repo": "databendlabs/databend"
+}
