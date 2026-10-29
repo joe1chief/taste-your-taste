@@ -1,0 +1,25 @@
+{
+  "stars": 3684,
+  "language": "Shell",
+  "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+  "url": "https://github.com/expo/skills",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Expo Skills Repository",
+    "This repository contains official Expo AI agent skills. Codex and other Agent Plugins clients load each plugin from a root `plugin.json` ([Agent Plugins](https://agent-plugins.org/) 1.0.0). Grok uses that root manifest when it is present. Claude Code and Cursor read `.claude-plugin/plugin.json`. The skills should stay useful to any agent that can consume `SKILL.md` files.",
+    "Repository Structure",
+    ".claude-plugin/"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "52795ac2fe3d4cb390eba107467365159c6ed6ee",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-10-29T07:46:48.085252+00:00",
+  "repo": "expo/skills"
+}

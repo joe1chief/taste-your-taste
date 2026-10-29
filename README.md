@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**167 tracked projects** | **26 curated** | **141 pending review**
+**172 tracked projects** | **26 curated** | **146 pending review**
 
-Last completed scan: [2026-10-28 07:43:11 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/40651777263).
+Last completed scan: [2026-10-29 07:47:13 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/40837518708).
 
-Latest content activity: **2026-10-28 07:43:11 UTC**.
+Latest content activity: **2026-10-29 07:47:13 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-29 07:47:13 | [langwatch/langwatch](https://github.com/langwatch/langwatch) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/204) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/langwatch/langwatch) |
+| 2026-10-29 07:47:07 | [erigontech/erigon](https://github.com/erigontech/erigon) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/203) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/erigontech/erigon) |
+| 2026-10-29 07:46:55 | [ruvnet/RuView](https://github.com/ruvnet/RuView) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/202) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ruvnet/ruview) |
+| 2026-10-29 07:46:48 | [expo/skills](https://github.com/expo/skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/201) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/expo/skills) |
+| 2026-10-29 07:46:39 | [macro-inc/macro](https://github.com/macro-inc/macro) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/200) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/macro-inc/macro) |
+| 2026-10-29 07:46:15 | [makecindy/cindy](https://github.com/makecindy/cindy) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/170) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/makecindy/cindy) |
+| 2026-10-29 07:46:07 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/193) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hkuds/deeptutor) |
 | 2026-10-28 07:43:11 | [spacering-net/codeg](https://github.com/spacering-net/codeg) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/197) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spacering-net/codeg) |
 | 2026-10-28 07:43:05 | [databendlabs/databend](https://github.com/databendlabs/databend) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/196) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/databendlabs/databend) |
 | 2026-10-28 07:42:59 | [skypilot-org/skypilot](https://github.com/skypilot-org/skypilot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/195) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/skypilot-org/skypilot) |
-| 2026-10-28 07:42:53 | [slint-ui/slint](https://github.com/slint-ui/slint) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/194) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/slint-ui/slint) |
-| 2026-10-28 07:42:46 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/193) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hkuds/deeptutor) |
-| 2026-10-28 07:42:33 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
-| 2026-10-28 07:42:22 | [obra/superpowers](https://github.com/obra/superpowers) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/9) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/obra/superpowers) |
-| 2026-10-27 07:01:31 | [web-infra-dev/rspack](https://github.com/web-infra-dev/rspack) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/190) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/web-infra-dev/rspack) |
-| 2026-10-27 07:01:24 | [Kopuz-org/kopuz](https://github.com/Kopuz-org/kopuz) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/189) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kopuz-org/kopuz) |
-| 2026-10-27 07:01:16 | [alchaincyf/huashu-design](https://github.com/alchaincyf/huashu-design) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/188) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/alchaincyf/huashu-design) |
 <!-- TASTE:LATEST:END -->
 
 ---

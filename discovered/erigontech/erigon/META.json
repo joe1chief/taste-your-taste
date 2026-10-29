@@ -1,0 +1,25 @@
+{
+  "stars": 3593,
+  "language": "Go",
+  "description": "Ethereum implementation on the efficiency frontier ",
+  "url": "https://github.com/erigontech/erigon",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Erigon Agent Guidelines",
+    "Use B2-level English in code, code-comments, github. Use programming terminology freely and exactly",
+    "Ponytail",
+    "Use [Ponytail](https://github.com/DietrichGebert/ponytail) for coding tasks to keep changes simple."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7f71ff3d7a62679b04f480af2c6120cb49282c06",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-29T07:47:06.527750+00:00",
+  "repo": "erigontech/erigon"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 5576,
+  "language": "Rust",
+  "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+  "url": "https://github.com/macro-inc/macro",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository guide for coding agents",
+    "Macro is a document and collaboration app with a Rust backend and a web frontend.",
+    "This file is the shared entry point: `AGENTS.md` symlinks to `CLAUDE.md`. Edit",
+    "`CLAUDE.md` and preserve the symlink; do not maintain two copies."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "af0cc0e15945abe0b2d8e37f8e429927c886041d"
+  },
+  "discovered_at": "2026-10-29T07:46:38.921183+00:00",
+  "repo": "macro-inc/macro"
+}

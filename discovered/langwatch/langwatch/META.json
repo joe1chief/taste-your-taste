@@ -1,0 +1,25 @@
+{
+  "stars": 4997,
+  "language": "TypeScript",
+  "description": "Open-Source Agent Observability & Evals for AI Platform teams. Trace, test, route and govern every agent & coding assistant in the company.",
+  "url": "https://github.com/langwatch/langwatch",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "LangWatch agent contract",
+    "This file is the short operating contract for repository work. Accepted ADRs",
+    "remain authoritative; do not copy them into local docs. Read the nearest",
+    "`AGENTS.md`, the owning feature ADR/spec, and the relevant source before editing."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e6d2923c39cc939c4206aa051e6705a900d850e3",
+    "CLAUDE.md": "22efc8c0609ba97fce0ac3e022c50809c1010b5c"
+  },
+  "discovered_at": "2026-10-29T07:47:13.010745+00:00",
+  "repo": "langwatch/langwatch"
+}

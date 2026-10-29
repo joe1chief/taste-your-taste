@@ -1,0 +1,25 @@
+{
+  "stars": 101318,
+  "language": "Rust",
+  "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+  "url": "https://github.com/ruvnet/RuView",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "RuView repository instructions for Codex",
+    "This file is the root Codex contract for `ruvnet/RuView`. It complements",
+    "`CLAUDE.md`; scoped `AGENTS.md` files may add local rules but must not weaken the",
+    "security, evidence, or release requirements here."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "838f2c12f9a1a6b990af0a49d4c2f2c40d9f7745",
+    "CLAUDE.md": "b4980e08ad5b11c34fb3a4071d91b387f1f204e1"
+  },
+  "discovered_at": "2026-10-29T07:46:55.014349+00:00",
+  "repo": "ruvnet/RuView"
+}
