@@ -1,0 +1,23 @@
+{
+  "stars": 7748,
+  "language": "TypeScript",
+  "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+  "url": "https://github.com/milind-soni/OpenMausBot",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "OpenMausBot agent notes",
+    "Before claiming a server or conversation change works, follow",
+    "[`docs/verification/README.md`](docs/verification/README.md). Always launch an",
+    "isolated fixture; never verify mutations against the user's live app or data."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e2628897ff775764c86d19a68663143772c17c8d"
+  },
+  "discovered_at": "2026-10-30T07:52:50.748341+00:00",
+  "repo": "milind-soni/OpenMausBot"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 33399,
+  "language": "C++",
+  "description": "Telegram Desktop messaging app",
+  "url": "https://github.com/telegramdesktop/tdesktop",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Agent Guide for Telegram Desktop",
+    "This guide defines repository-wide instructions for coding agents working with the Telegram Desktop codebase.",
+    "AI Tasks",
+    "In this repository \"task\" is a specific term. It always means one work record in"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d8037e756b96a464db95f523bb2203d207613ccb",
+    "CLAUDE.md": "f8564d18cef4b9c545767025995d31deb3fa7155"
+  },
+  "discovered_at": "2026-10-30T07:53:17.509757+00:00",
+  "repo": "telegramdesktop/tdesktop"
+}

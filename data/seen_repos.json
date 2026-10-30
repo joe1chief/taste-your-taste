@@ -1178,7 +1178,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "8b6846ea64011b944dcf3344e266410227f3b933"
+      "AGENTS.md": "b701e8d65d52e5f02db2e3041bac5b4c06755c0d"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1251,6 +1251,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-23T06:42:31.522346+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8b6846ea64011b944dcf3344e266410227f3b933",
+        "new_sha": "b701e8d65d52e5f02db2e3041bac5b4c06755c0d",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-30T07:52:38.250352+00:00"
       }
     ]
   },
@@ -3584,6 +3592,100 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-10-29T07:47:13.559244+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/204",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "milind-soni/OpenMausBot": {
+    "stars": 7748,
+    "language": "TypeScript",
+    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e2628897ff775764c86d19a68663143772c17c8d"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-10-30T07:52:51.408758+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/206",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Donchitos/Claude-Code-Game-Studios": {
+    "stars": 29669,
+    "language": "Shell",
+    "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "d9292fbd59f8dc5ad5efa0d3c3a93998c601201c"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-10-30T07:52:56.282035+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/207",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "xLLM-AI/xllm": {
+    "stars": 1613,
+    "language": "C++",
+    "description": "A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators. It is hosted in OpenAtom Foundation.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5c3f3f68fb664cf284b72da4a3304ab3d32d10c8",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-30T07:53:02.849611+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/208",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "maziyarpanahi/openmed": {
+    "stars": 5724,
+    "language": "Python",
+    "description": "Local-first healthcare AI: clinical NER and HIPAA PII de-identification on hardware you control. 2,200+ medical models, 35 model-backed PII languages, and Python, MLX, Android and browser runtimes. Apache-2.0 SDK.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "aca90987c3a244b3236c1a69abc5328a3e16fb55"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-30T07:53:10.176510+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/209",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "telegramdesktop/tdesktop": {
+    "stars": 33399,
+    "language": "C++",
+    "description": "Telegram Desktop messaging app",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d8037e756b96a464db95f523bb2203d207613ccb",
+      "CLAUDE.md": "f8564d18cef4b9c545767025995d31deb3fa7155"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-30T07:53:18.117474+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/210",
     "pr_url": null,
     "status": "pending_review"
   }

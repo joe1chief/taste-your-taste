@@ -1,0 +1,23 @@
+{
+  "stars": 29669,
+  "language": "Shell",
+  "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+  "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "Claude Code Game Studios -- Game Studio Agent Architecture",
+    "Indie game development managed through 49 coordinated Claude Code subagents.",
+    "Each agent owns a specific domain, enforcing separation of concerns and quality.",
+    "Technology Stack"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "d9292fbd59f8dc5ad5efa0d3c3a93998c601201c"
+  },
+  "discovered_at": "2026-10-30T07:52:55.568962+00:00",
+  "repo": "Donchitos/Claude-Code-Game-Studios"
+}
