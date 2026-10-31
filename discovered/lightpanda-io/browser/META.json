@@ -1,0 +1,25 @@
+{
+  "stars": 38652,
+  "language": "Zig",
+  "description": "Lightpanda: the headless browser designed for AI and automation",
+  "url": "https://github.com/lightpanda-io/browser",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "AGENTS.md",
+    "See [CONTRIBUTING.md](CONTRIBUTING.md) for how to open a pull request (CLA, dev setup, pre-PR checks).",
+    "Build and tests",
+    "Run `make download-v8` once first: it fetches the prebuilt V8 archive into `.lp-cache/`, which `build.zig` picks up automatically. Without it every build compiles V8 from source (10+ minutes)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0ae2d4aab94f6e1f6686580f7006d9bb15a4b406",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-10-31T07:42:52.326786+00:00",
+  "repo": "lightpanda-io/browser"
+}

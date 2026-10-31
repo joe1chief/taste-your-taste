@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**177 tracked projects** | **26 curated** | **151 pending review**
+**182 tracked projects** | **26 curated** | **156 pending review**
 
-Last completed scan: [2026-10-30 07:53:18 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41022732635).
+Last completed scan: [2026-10-31 07:43:14 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41181625413).
 
-Latest content activity: **2026-10-30 07:53:18 UTC**.
+Latest content activity: **2026-10-31 07:43:14 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026-10-30 07:53:18 | [telegramdesktop/tdesktop](https://github.com/telegramdesktop/tdesktop) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/210) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/telegramdesktop/tdesktop) |
-| 2026-10-30 07:53:10 | [maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/209) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/maziyarpanahi/openmed) |
-| 2026-10-30 07:53:02 | [xLLM-AI/xllm](https://github.com/xLLM-AI/xllm) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/208) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/xllm-ai/xllm) |
-| 2026-10-30 07:52:56 | [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/207) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/donchitos/claude-code-game-studios) |
-| 2026-10-30 07:52:51 | [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/206) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/milind-soni/openmausbot) |
-| 2026-10-30 07:52:38 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
-| 2026-10-29 07:47:13 | [langwatch/langwatch](https://github.com/langwatch/langwatch) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/204) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/langwatch/langwatch) |
-| 2026-10-29 07:47:07 | [erigontech/erigon](https://github.com/erigontech/erigon) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/203) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/erigontech/erigon) |
-| 2026-10-29 07:46:55 | [ruvnet/RuView](https://github.com/ruvnet/RuView) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/202) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ruvnet/ruview) |
-| 2026-10-29 07:46:48 | [expo/skills](https://github.com/expo/skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/201) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/expo/skills) |
+| 2026-10-31 07:43:14 | [cabinpkg/cabin](https://github.com/cabinpkg/cabin) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/222) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/cabinpkg/cabin) |
+| 2026-10-31 07:43:08 | [containers/crun](https://github.com/containers/crun) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/221) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/containers/crun) |
+| 2026-10-31 07:43:03 | [sqlite/sqlite](https://github.com/sqlite/sqlite) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/220) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sqlite/sqlite) |
+| 2026-10-31 07:42:58 | [MervinPraison/PraisonAI](https://github.com/MervinPraison/PraisonAI) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/219) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mervinpraison/praisonai) |
+| 2026-10-31 07:42:52 | [lightpanda-io/browser](https://github.com/lightpanda-io/browser) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/218) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lightpanda-io/browser) |
+| 2026-10-31 07:42:42 | [twentyhq/twenty](https://github.com/twentyhq/twenty) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/149) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/twentyhq/twenty) |
+| 2026-10-31 07:42:37 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
+| 2026-10-31 07:42:28 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
+| 2026-10-31 07:42:25 | [mattpocock/skills](https://github.com/mattpocock/skills) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/2) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mattpocock/skills) |
+| 2026-10-31 07:42:22 | [macro-inc/macro](https://github.com/macro-inc/macro) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/200) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/macro-inc/macro) |
 <!-- TASTE:LATEST:END -->
 
 ---

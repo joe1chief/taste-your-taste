@@ -297,7 +297,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "4fcbdd72bdb9c45e0a43846bfe501121b72d80a8"
+      "AGENTS.md": "6eedd536b6f5145d5d158a48415a8c0e1cd8db7e"
     },
     "evolution_history": [
       {
@@ -331,6 +331,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-24T06:39:52.899174+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "4fcbdd72bdb9c45e0a43846bfe501121b72d80a8",
+        "new_sha": "6eedd536b6f5145d5d158a48415a8c0e1cd8db7e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-31T07:42:37.006768+00:00"
       }
     ]
   },
@@ -392,7 +400,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "fc5db874293f5e307ebee3f8ca5bd5409d5ea329"
+      "CLAUDE.md": "cc3dbb34289bc045a896675bc71cca7bd8613c5b"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -417,6 +425,14 @@
         "vibe_shift": "Shifted towards clearer separation of installation channels for different agent ecosystems.",
         "summary": "The author refined the plugin distribution strategy, shifting from a single-plugin marketplace fallback to a dual-channel approach where non-Claude agents use the repo's marketplace for automatic updates while Claude Code relies on the official marketplace. The ADR reference was also simplified to a direct link, and the rationale for the plugin choice was condensed.",
         "timestamp": "2026-10-09T08:08:50.369133+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "fc5db874293f5e307ebee3f8ca5bd5409d5ea329",
+        "new_sha": "cc3dbb34289bc045a896675bc71cca7bd8613c5b",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-31T07:42:25.348589+00:00"
       }
     ]
   },
@@ -582,7 +598,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "9a3e46f2dafeb28e60d57beb85efbb3dbcc6f6ba",
-      "CLAUDE.md": "7c30d3c9670aa0ebe649676a0e44becbaefbf8b6"
+      "CLAUDE.md": "4b0785032f1190b28a376e22ac9af8740a60fa12"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -607,6 +623,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-27T07:00:16.714991+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "7c30d3c9670aa0ebe649676a0e44becbaefbf8b6",
+        "new_sha": "4b0785032f1190b28a376e22ac9af8740a60fa12",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-31T07:42:16.222179+00:00"
       }
     ]
   },
@@ -803,7 +827,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "5124fc4e78001a975a4cceb2fafe3118120b9a05",
+      "AGENTS.md": "d99f1b5fa96a74df6d21b61d8bf1cada6172f64c",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -837,6 +861,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-27T07:00:45.289222+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "5124fc4e78001a975a4cceb2fafe3118120b9a05",
+        "new_sha": "d99f1b5fa96a74df6d21b61d8bf1cada6172f64c",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-10-31T07:42:28.806414+00:00"
       }
     ]
   },
@@ -848,7 +880,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "CLAUDE.md": "a1ec3df9a7addc68319ad5b869cab0cdd7b5d38b"
+      "CLAUDE.md": "427f734093b37c1b2be14eecf8aea1dca3d89158"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -865,6 +897,14 @@
         "vibe_shift": "Shifted towards stricter infrastructure cost governance and deployment constraints.",
         "summary": "The author added a new 'Hosting' section that imposes explicit infrastructure constraints, specifically prohibiting metered Cloudflare compute and requiring cost comparison approval for certain Cloudflare services. This change reflects a shift from purely functional build and documentation instructions to also governing deployment and cost decisions.",
         "timestamp": "2026-10-19T07:05:54.695200+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "a1ec3df9a7addc68319ad5b869cab0cdd7b5d38b",
+        "new_sha": "427f734093b37c1b2be14eecf8aea1dca3d89158",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-31T07:42:10.849836+00:00"
       }
     ]
   },
@@ -2833,7 +2873,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "e2a9a4e6a4bc8b677c88df243544acd98e9e5941"
+      "CLAUDE.md": "ddde57ff59e364a2d759be9fe33fa9ad00e3eede"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -2841,7 +2881,17 @@
     "discovered_at": "2026-10-22T06:48:57.769878+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/149",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "e2a9a4e6a4bc8b677c88df243544acd98e9e5941",
+        "new_sha": "ddde57ff59e364a2d759be9fe33fa9ad00e3eede",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-31T07:42:42.384691+00:00"
+      }
+    ]
   },
   "Comfy-Org/ComfyUI_frontend": {
     "stars": 2081,
@@ -3505,7 +3555,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "af0cc0e15945abe0b2d8e37f8e429927c886041d"
+      "CLAUDE.md": "4eb65897bdcaffad1043a797052ff89001309f94"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -3513,7 +3563,17 @@
     "discovered_at": "2026-10-29T07:46:39.545233+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/200",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "af0cc0e15945abe0b2d8e37f8e429927c886041d",
+        "new_sha": "4eb65897bdcaffad1043a797052ff89001309f94",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-10-31T07:42:22.023824+00:00"
+      }
+    ]
   },
   "expo/skills": {
     "stars": 3684,
@@ -3686,6 +3746,98 @@
     "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
     "discovered_at": "2026-10-30T07:53:18.117474+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/210",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "lightpanda-io/browser": {
+    "stars": 38652,
+    "language": "Zig",
+    "description": "Lightpanda: the headless browser designed for AI and automation",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0ae2d4aab94f6e1f6686580f7006d9bb15a4b406",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-10-31T07:42:52.816544+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/218",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "MervinPraison/PraisonAI": {
+    "stars": 9309,
+    "language": "Python",
+    "description": "PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-improving agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ec38f42231fc6652f0ba159f3366d164d59aeb56"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-31T07:42:58.102544+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/219",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "sqlite/sqlite": {
+    "stars": 10865,
+    "language": "C",
+    "description": "Official Git mirror of the SQLite source tree",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d8446ebeb52414363fed35abae12a5ae772a5dd6"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-31T07:43:03.187679+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/220",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "containers/crun": {
+    "stars": 4193,
+    "language": "C",
+    "description": "A fast and lightweight fully featured OCI runtime and C library for running containers",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "657de1b30605ee3ad6d897d26160b94ac4eb58dd"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-10-31T07:43:08.583401+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/221",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "cabinpkg/cabin": {
+    "stars": 1515,
+    "language": "Rust",
+    "description": "C/C++ package manager and build system, inspired by Cargo",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "326de417e2101ddb7e6ca057c99f385db682f743"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-10-31T07:43:14.149013+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/222",
     "pr_url": null,
     "status": "pending_review"
   }

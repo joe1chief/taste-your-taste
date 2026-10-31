@@ -1,0 +1,23 @@
+{
+  "stars": 1515,
+  "language": "Rust",
+  "description": "C/C++ package manager and build system, inspired by Cargo",
+  "url": "https://github.com/cabinpkg/cabin",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "AGENTS.md",
+    "Cabin is a pre-1.0, Cargo-inspired, but not Cargo-compatible, package manager",
+    "and build system for C/C++, implemented in Rust. Use Cargo vocabulary only",
+    "when the C/C++ semantics match."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "326de417e2101ddb7e6ca057c99f385db682f743"
+  },
+  "discovered_at": "2026-10-31T07:43:13.742486+00:00",
+  "repo": "cabinpkg/cabin"
+}

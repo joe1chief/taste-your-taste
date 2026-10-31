@@ -1,0 +1,23 @@
+{
+  "stars": 4193,
+  "language": "C",
+  "description": "A fast and lightweight fully featured OCI runtime and C library for running containers",
+  "url": "https://github.com/containers/crun",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "Code Style",
+    "Always preserve existing indentation style in each file, and validate it with",
+    "`make clang-format`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "657de1b30605ee3ad6d897d26160b94ac4eb58dd"
+  },
+  "discovered_at": "2026-10-31T07:43:08.152497+00:00",
+  "repo": "containers/crun"
+}

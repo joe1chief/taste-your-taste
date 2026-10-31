@@ -1,0 +1,23 @@
+{
+  "stars": 10865,
+  "language": "C",
+  "description": "Official Git mirror of the SQLite source tree",
+  "url": "https://github.com/sqlite/sqlite",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "AGENTS.md",
+    "Guidance for AI coding agents working in this repository.",
+    "Project nature",
+    "SQLite is a self-contained, serverless SQL database engine written in C. The"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d8446ebeb52414363fed35abae12a5ae772a5dd6"
+  },
+  "discovered_at": "2026-10-31T07:43:02.648373+00:00",
+  "repo": "sqlite/sqlite"
+}
