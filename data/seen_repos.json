@@ -3446,7 +3446,7 @@
       "SKILL.md"
     ],
     "file_shas": {
-      "AGENTS.md": "829994a787605a0f6029d0c19814652a70f1efaf",
+      "AGENTS.md": "8148ac8fa9f3ded962096059fb0e02f7cba01cf7",
       "SKILL.md": "51ee9fe1fd3c6c252c2f2755c4e0abe7749d2e0c"
     },
     "source": "trending",
@@ -3464,6 +3464,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-29T07:46:07.860355+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "829994a787605a0f6029d0c19814652a70f1efaf",
+        "new_sha": "8148ac8fa9f3ded962096059fb0e02f7cba01cf7",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-01T08:22:23.032113+00:00"
       }
     ]
   },
@@ -3838,6 +3846,98 @@
     "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
     "discovered_at": "2026-10-31T07:43:14.149013+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/222",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "THU-MAIC/OpenMAIC": {
+    "stars": 42309,
+    "language": "TypeScript",
+    "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "408b399b8db1b524f77100daf0ed6047584e4375"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-01T08:22:32.492962+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/224",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "okou-ai/okou": {
+    "stars": 1162,
+    "language": "TypeScript",
+    "description": "Okou connects to the tools your team already uses and does the work — across marketing, sales, engineering, and operations, under your control.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "72b1463e500b69fd99d0abb7243ef63d17bb7f49"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-01T08:22:37.944732+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/225",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "rails/rails": {
+    "stars": 58853,
+    "language": "Ruby",
+    "description": "Ruby on Rails",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6fb1d5c1ff9b0347dc66c74442af89a9c4fbad1f"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-01T08:22:43.238993+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/226",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anomalyco/models.dev": {
+    "stars": 7463,
+    "language": "TypeScript",
+    "description": "An open-source database of AI models.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c78b88cc1a9bb455b738e319ed3bf93c3ede049e"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-01T08:22:49.051320+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/227",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "openinterpreter/openinterpreter": {
+    "stars": 68768,
+    "language": "Rust",
+    "description": "A coding agent for open models like Kimi K3 and GLM 5.3",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fd0b9ed9e781bdb29bb11a8f62b777ad773fec81"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-01T08:22:54.874828+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/228",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,25 @@
+{
+  "stars": 1162,
+  "language": "TypeScript",
+  "description": "Okou connects to the tools your team already uses and does the work — across marketing, sales, engineering, and operations, under your control.",
+  "url": "https://github.com/okou-ai/okou",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Project Guidelines",
+    "`AGENTS.md` links to this file. Keep shared instructions here and load detailed",
+    "guidance only for the surface being changed.",
+    "Project Boundaries"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "72b1463e500b69fd99d0abb7243ef63d17bb7f49"
+  },
+  "discovered_at": "2026-11-01T08:22:37.597241+00:00",
+  "repo": "okou-ai/okou"
+}

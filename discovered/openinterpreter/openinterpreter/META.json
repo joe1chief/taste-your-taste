@@ -1,0 +1,23 @@
+{
+  "stars": 68768,
+  "language": "Rust",
+  "description": "A coding agent for open models like Kimi K3 and GLM 5.3",
+  "url": "https://github.com/openinterpreter/openinterpreter",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Rust/codex-rs",
+    "In the codex-rs folder where the rust code lives:",
+    "Crate names are prefixed with `codex-`. For example, the `core` folder's crate is named `codex-core`",
+    "When using format! and you can inline variables into {}, always do that."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fd0b9ed9e781bdb29bb11a8f62b777ad773fec81"
+  },
+  "discovered_at": "2026-11-01T08:22:54.462042+00:00",
+  "repo": "openinterpreter/openinterpreter"
+}

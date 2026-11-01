@@ -1,0 +1,23 @@
+{
+  "stars": 7463,
+  "language": "TypeScript",
+  "description": "An open-source database of AI models.",
+  "url": "https://github.com/anomalyco/models.dev",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent Guidelines for models.dev",
+    "Catalog-only. This file is how to add and maintain **models** and **providers**. Nothing else.",
+    "Validate",
+    "bun validate"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c78b88cc1a9bb455b738e319ed3bf93c3ede049e"
+  },
+  "discovered_at": "2026-11-01T08:22:48.507371+00:00",
+  "repo": "anomalyco/models.dev"
+}
