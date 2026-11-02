@@ -1,0 +1,25 @@
+{
+  "stars": 36912,
+  "language": "Rust",
+  "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+  "url": "https://github.com/cjpais/Handy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "This file provides guidance to AI coding assistants working with code in this repository.",
+    "Development Commands",
+    "Prerequisites:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f0af1173b8d7539e57bcd428b1cb0cd03d54fa72",
+    "CLAUDE.md": "8d770e2555cb47855b4b23d3eca501f2c971bb6f"
+  },
+  "discovered_at": "2026-11-02T08:36:08.023696+00:00",
+  "repo": "cjpais/Handy"
+}

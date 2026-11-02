@@ -1,0 +1,25 @@
+{
+  "stars": 11935,
+  "language": "Python",
+  "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+  "url": "https://github.com/kornia/kornia",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent guide for kornia",
+    "This file gives coding agents practical context for working in this repository.",
+    "Project shape",
+    "kornia is a differentiable computer vision library built on PyTorch. Most code lives in subpackages under `kornia/`; reusable test support lives in `testing/`, not under `tests/`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7edf2d906800d12089261e566091c0e4cc3d8b81",
+    "CLAUDE.md": "ee0aa9cefb11ee1cf4afc17196431cae89b6f039"
+  },
+  "discovered_at": "2026-11-02T08:36:16.281742+00:00",
+  "repo": "kornia/kornia"
+}

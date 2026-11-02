@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**187 tracked projects** | **26 curated** | **161 pending review**
+**192 tracked projects** | **26 curated** | **166 pending review**
 
-Last completed scan: [2026-11-01 08:22:54 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41288569794).
+Last completed scan: [2026-11-02 08:36:40 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41414212411).
 
-Latest content activity: **2026-11-01 08:22:54 UTC**.
+Latest content activity: **2026-11-02 08:36:40 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-02 08:36:40 | [FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/233) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/flashml-org/freetoken) |
+| 2026-11-02 08:36:32 | [anomalyco/hex](https://github.com/anomalyco/hex) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/232) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/hex) |
+| 2026-11-02 08:36:22 | [beenuar/AiSOC](https://github.com/beenuar/AiSOC) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/231) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/beenuar/aisoc) |
+| 2026-11-02 08:36:16 | [kornia/kornia](https://github.com/kornia/kornia) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/230) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kornia/kornia) |
+| 2026-11-02 08:36:08 | [cjpais/Handy](https://github.com/cjpais/Handy) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/229) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/cjpais/handy) |
 | 2026-11-01 08:22:54 | [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/228) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openinterpreter/openinterpreter) |
 | 2026-11-01 08:22:49 | [anomalyco/models.dev](https://github.com/anomalyco/models.dev) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/227) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/models.dev) |
 | 2026-11-01 08:22:43 | [rails/rails](https://github.com/rails/rails) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/226) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rails/rails) |
 | 2026-11-01 08:22:37 | [okou-ai/okou](https://github.com/okou-ai/okou) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/225) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/okou-ai/okou) |
 | 2026-11-01 08:22:32 | [THU-MAIC/OpenMAIC](https://github.com/THU-MAIC/OpenMAIC) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/224) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/thu-maic/openmaic) |
-| 2026-11-01 08:22:23 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/193) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hkuds/deeptutor) |
-| 2026-10-31 07:43:14 | [cabinpkg/cabin](https://github.com/cabinpkg/cabin) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/222) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/cabinpkg/cabin) |
-| 2026-10-31 07:43:08 | [containers/crun](https://github.com/containers/crun) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/221) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/containers/crun) |
-| 2026-10-31 07:43:03 | [sqlite/sqlite](https://github.com/sqlite/sqlite) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/220) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sqlite/sqlite) |
-| 2026-10-31 07:42:58 | [MervinPraison/PraisonAI](https://github.com/MervinPraison/PraisonAI) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/219) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mervinpraison/praisonai) |
 <!-- TASTE:LATEST:END -->
 
 ---

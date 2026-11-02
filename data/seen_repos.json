@@ -3940,5 +3940,101 @@
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/228",
     "pr_url": null,
     "status": "pending_review"
+  },
+  "cjpais/Handy": {
+    "stars": 36912,
+    "language": "Rust",
+    "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f0af1173b8d7539e57bcd428b1cb0cd03d54fa72",
+      "CLAUDE.md": "8d770e2555cb47855b4b23d3eca501f2c971bb6f"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-02T08:36:08.750854+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/229",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "kornia/kornia": {
+    "stars": 11935,
+    "language": "Python",
+    "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7edf2d906800d12089261e566091c0e4cc3d8b81",
+      "CLAUDE.md": "ee0aa9cefb11ee1cf4afc17196431cae89b6f039"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-02T08:36:16.921417+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/230",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "beenuar/AiSOC": {
+    "stars": 6467,
+    "language": "Python",
+    "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0ad08eec9c3f22cfff9e1a4726cd19c563b96e7a"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-02T08:36:22.883547+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/231",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anomalyco/hex": {
+    "stars": 3676,
+    "language": "Rust",
+    "description": "Local voice dictation for mac, windows and linux",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "cc1019fd774978b4c4b6251773996f18a8b7d37f"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-02T08:36:32.035376+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/232",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "FlashML-org/FreeToken": {
+    "stars": 15644,
+    "language": "Python",
+    "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "15d2e57a6cb11735e985a4349d33a5b0f4f9da0b",
+      "CLAUDE.md": "01a8e315aa0333e1836f98830c6455929c25b3e9"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-02T08:36:40.657727+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/233",
+    "pr_url": null,
+    "status": "pending_review"
   }
 }

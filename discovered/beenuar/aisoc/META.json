@@ -1,0 +1,23 @@
+{
+  "stars": 6467,
+  "language": "Python",
+  "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
+  "url": "https://github.com/beenuar/AiSOC",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Working in this repository",
+    "AiSOC is an open-source, AI-assisted Security Operations Center: telemetry comes",
+    "in from your own security tools, gets normalized, matched against a detection",
+    "corpus, correlated into alerts, triaged by an agent, and acted on through"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0ad08eec9c3f22cfff9e1a4726cd19c563b96e7a"
+  },
+  "discovered_at": "2026-11-02T08:36:22.399901+00:00",
+  "repo": "beenuar/AiSOC"
+}
