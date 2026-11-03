@@ -1,0 +1,25 @@
+{
+  "stars": 1690,
+  "language": "Python",
+  "description": "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
+  "url": "https://github.com/eatmoreduck/boss-zhipin-scraper",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "指引给未来的 ZCode agent。先读这份，再动代码。",
+    "`boss-zhipin-scraper` —— 通过 Chrome CDP（远程调试端口）连接**用户本人已登录的 Chrome**，抓取 BOSS直聘的公开职位数据（列表 + 详情），并可生成求职分析摘要。仅用于个人求职分析，非大规模爬虫（见 `CONTRIBUTING.md` 的合规一节）。",
+    "scripts/boss_cdp_raw.py   # 核心：抓取 + CLI 主入口（长单文件，行数以实际为准）"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "33d5725c01b4f77a9eef9d2c842423a286e8b243",
+    "SKILL.md": "bc2bbc7df6abc358cc1de27b54645d616f7e6f2a"
+  },
+  "discovered_at": "2026-11-03T08:49:21.531980+00:00",
+  "repo": "eatmoreduck/boss-zhipin-scraper"
+}

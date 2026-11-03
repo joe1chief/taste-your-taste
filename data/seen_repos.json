@@ -827,7 +827,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d99f1b5fa96a74df6d21b61d8bf1cada6172f64c",
+      "AGENTS.md": "be566b9822055bd92d47f84755525ecad56147ca",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -869,6 +869,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-31T07:42:28.806414+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d99f1b5fa96a74df6d21b61d8bf1cada6172f64c",
+        "new_sha": "be566b9822055bd92d47f84755525ecad56147ca",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-03T08:48:29.598353+00:00"
       }
     ]
   },
@@ -1372,7 +1380,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "f1b061369059e3c39ba7b46f47edfc8c92e60205"
+      "CLAUDE.md": "0635076c2f6e7d0a8a2a5e2115296a80dd247f55"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1380,7 +1388,17 @@
     "discovered_at": "2026-10-08T08:09:30.158914+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/51",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "f1b061369059e3c39ba7b46f47edfc8c92e60205",
+        "new_sha": "0635076c2f6e7d0a8a2a5e2115296a80dd247f55",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-03T08:48:50.838880+00:00"
+      }
+    ]
   },
   "trycua/cua": {
     "stars": 28915,
@@ -2689,7 +2707,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "CLAUDE.md": "6f1012ade6d3092cda56d6c5f7a22081da8508ef"
+      "CLAUDE.md": "e01fcdf78d18f3368e1e1b250cb39b650faf005f"
     },
     "source": "popular_stars",
     "archetype": "Engineering Craft",
@@ -2697,7 +2715,17 @@
     "discovered_at": "2026-10-20T06:50:43.560512+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/133",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "6f1012ade6d3092cda56d6c5f7a22081da8508ef",
+        "new_sha": "e01fcdf78d18f3368e1e1b250cb39b650faf005f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-03T08:48:57.532779+00:00"
+      }
+    ]
   },
   "ggml-org/llama.cpp": {
     "stars": 131761,
@@ -4034,6 +4062,100 @@
     "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
     "discovered_at": "2026-11-02T08:36:40.657727+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/233",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vercel-labs/agent-desktop": {
+    "stars": 11122,
+    "language": "Rust",
+    "description": "Computer use CLI for AI agents",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d10a22f5bbe1b64e0d0cdd89973d0eee67068131"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-03T08:49:07.807096+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/237",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "hyprwm/Hyprland": {
+    "stars": 40121,
+    "language": "C++",
+    "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.MD"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f4c23a6da624ca1395926c8fd012352122ea3847",
+      "CLAUDE.MD": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-03T08:49:15.628070+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/238",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "max-sixty/worktrunk": {
+    "stars": 10186,
+    "language": "Rust",
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2265f1717a49cd4a3501176deea66e5564f7d521"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-03T08:49:17.642399+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/239",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "paperclipai/paperclip": {
+    "stars": 110622,
+    "language": "TypeScript",
+    "description": "The open-source app everyone uses to manage agents at work",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8a7d54e19f22a501c8598ca33774e5d15261cb2a"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-03T08:49:19.694856+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/240",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "eatmoreduck/boss-zhipin-scraper": {
+    "stars": 1690,
+    "language": "Python",
+    "description": "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
+    "files": [
+      "AGENTS.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "33d5725c01b4f77a9eef9d2c842423a286e8b243",
+      "SKILL.md": "bc2bbc7df6abc358cc1de27b54645d616f7e6f2a"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-03T08:49:22.275109+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/241",
     "pr_url": null,
     "status": "pending_review"
   }

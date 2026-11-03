@@ -1,0 +1,25 @@
+{
+  "stars": 40121,
+  "language": "C++",
+  "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+  "url": "https://github.com/hyprwm/Hyprland",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Review guidelines",
+    "Prioritize correctness, lack of regressions, performance, API stability, and code clarity and readability.",
+    "For performance-sensitive paths, flag obvious algorithmic regressions or slow paths."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.MD"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f4c23a6da624ca1395926c8fd012352122ea3847",
+    "CLAUDE.MD": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-03T08:49:14.915070+00:00",
+  "repo": "hyprwm/Hyprland"
+}

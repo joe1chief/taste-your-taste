@@ -1,0 +1,23 @@
+{
+  "stars": 11122,
+  "language": "Rust",
+  "description": "Computer use CLI for AI agents",
+  "url": "https://github.com/vercel-labs/agent-desktop",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Guidance for AI coding agents working in this repository.",
+    "agent-desktop is a tool that AI agents invoke, not an agent. It is a Rust CLI and C library that reads native",
+    "accessibility trees and returns structured JSON with ref-based element ids. The observe-act loop lives in the"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d10a22f5bbe1b64e0d0cdd89973d0eee67068131"
+  },
+  "discovered_at": "2026-11-03T08:49:07.338034+00:00",
+  "repo": "vercel-labs/agent-desktop"
+}

@@ -1,0 +1,23 @@
+{
+  "stars": 110622,
+  "language": "TypeScript",
+  "description": "The open-source app everyone uses to manage agents at work",
+  "url": "https://github.com/paperclipai/paperclip",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Guidance for human and AI contributors working in this repository.",
+    "1. Purpose",
+    "Paperclip is a control plane for AI-agent companies."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8a7d54e19f22a501c8598ca33774e5d15261cb2a"
+  },
+  "discovered_at": "2026-11-03T08:49:19.145074+00:00",
+  "repo": "paperclipai/paperclip"
+}

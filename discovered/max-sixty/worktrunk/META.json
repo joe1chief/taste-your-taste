@@ -1,0 +1,23 @@
+{
+  "stars": 10186,
+  "language": "Rust",
+  "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+  "url": "https://github.com/max-sixty/worktrunk",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Worktrunk development guidelines",
+    "Quick start",
+    "Run cargo run -- hook pre-merge --yes for the project test and lint gate. Claude Code web first runs task setup-web; Codex Cloud uses .codex/cloud.sh. Test and coverage recipes live in tests/AGENTS.md.",
+    "Project Status"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2265f1717a49cd4a3501176deea66e5564f7d521"
+  },
+  "discovered_at": "2026-11-03T08:49:17.096181+00:00",
+  "repo": "max-sixty/worktrunk"
+}
