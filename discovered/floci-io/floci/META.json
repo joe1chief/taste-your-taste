@@ -1,0 +1,23 @@
+{
+  "stars": 29096,
+  "language": "Java",
+  "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+  "url": "https://github.com/floci-io/floci",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Guidance for AI coding agents working in the Floci repository.",
+    "This file defines repository-specific operating rules for autonomous or semi-autonomous coding agents. Follow these instructions unless a maintainer explicitly tells you otherwise.",
+    "Project Overview",
+    "Floci is a Java-based local AWS emulator built on Quarkus."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d10a5c190abcc10522683d54a51bbe1f235ca194"
+  },
+  "discovered_at": "2026-11-04T08:17:38.111823+00:00",
+  "repo": "floci-io/floci"
+}

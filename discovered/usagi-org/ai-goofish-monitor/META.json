@@ -1,0 +1,25 @@
+{
+  "stars": 16884,
+  "language": "Python",
+  "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+  "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Guidelines",
+    "项目结构与模块组织",
+    "后端位于 `src/`，入口 `src/app.py`，API 路由在 `src/api/routes/`，服务层在 `src/services/`，领域模型在 `src/domain/`，基础设施在 `src/infrastructure/`。",
+    "前端在 `web-ui/`（Vue 3 + Vite），视图放于 `web-ui/src/views/`，组件在 `web-ui/src/components/`，构建产物会复制到根目录 `dist/`。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5bae24d1aa48b7b8ee4441a2ff286363006c23f1",
+    "CLAUDE.md": "45d92ad474fd6306e25109155c348c214f08b5a8"
+  },
+  "discovered_at": "2026-11-04T08:17:40.600230+00:00",
+  "repo": "Usagi-org/ai-goofish-monitor"
+}

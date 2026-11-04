@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**197 tracked projects** | **26 curated** | **171 pending review**
+**202 tracked projects** | **26 curated** | **176 pending review**
 
-Last completed scan: [2026-11-03 08:49:22 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41605989799).
+Last completed scan: [2026-11-04 08:17:45 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41798307817).
 
-Latest content activity: **2026-11-03 08:49:22 UTC**.
+Latest content activity: **2026-11-04 08:17:45 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-04 08:17:45 | [comet-ml/opik](https://github.com/comet-ml/opik) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/249) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comet-ml/opik) |
+| 2026-11-04 08:17:43 | [PostHog/posthog](https://github.com/PostHog/posthog) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/248) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/posthog/posthog) |
+| 2026-11-04 08:17:41 | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/247) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/usagi-org/ai-goofish-monitor) |
+| 2026-11-04 08:17:38 | [floci-io/floci](https://github.com/floci-io/floci) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/246) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/floci-io/floci) |
+| 2026-11-04 08:17:36 | [spotify/portal-ai-plugins](https://github.com/spotify/portal-ai-plugins) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/245) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spotify/portal-ai-plugins) |
+| 2026-11-04 08:17:33 | [tursodatabase/turso](https://github.com/tursodatabase/turso) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/178) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tursodatabase/turso) |
+| 2026-11-04 08:17:19 | [anomalyco/hex](https://github.com/anomalyco/hex) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/232) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/hex) |
+| 2026-11-04 08:17:13 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/237) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-desktop) |
 | 2026-11-03 08:49:22 | [eatmoreduck/boss-zhipin-scraper](https://github.com/eatmoreduck/boss-zhipin-scraper) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/241) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/eatmoreduck/boss-zhipin-scraper) |
 | 2026-11-03 08:49:19 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/240) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/paperclipai/paperclip) |
-| 2026-11-03 08:49:17 | [max-sixty/worktrunk](https://github.com/max-sixty/worktrunk) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/239) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/max-sixty/worktrunk) |
-| 2026-11-03 08:49:15 | [hyprwm/Hyprland](https://github.com/hyprwm/Hyprland) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/238) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/hyprwm/hyprland) |
-| 2026-11-03 08:49:07 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/237) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-desktop) |
-| 2026-11-03 08:48:57 | [surveyjs/survey-library](https://github.com/surveyjs/survey-library) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/133) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/surveyjs/survey-library) |
-| 2026-11-03 08:48:50 | [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/51) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/manaflow-ai/cmux) |
-| 2026-11-03 08:48:29 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
-| 2026-11-02 08:36:40 | [FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/233) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/flashml-org/freetoken) |
-| 2026-11-02 08:36:32 | [anomalyco/hex](https://github.com/anomalyco/hex) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/232) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/hex) |
 <!-- TASTE:LATEST:END -->
 
 ---

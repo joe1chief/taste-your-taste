@@ -1,0 +1,23 @@
+{
+  "stars": 23159,
+  "language": "Python",
+  "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+  "url": "https://github.com/comet-ml/opik",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Guidelines",
+    "Scope & Inheritance",
+    "This is the canonical monorepo guide for shared contribution policy.",
+    "Module-level `AGENTS.md` files should keep only module-specific guidance and reference this file for shared rules."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "bc11eff2cfc3f9f4ee1b676554e3592bbaf607a5"
+  },
+  "discovered_at": "2026-11-04T08:17:45.210531+00:00",
+  "repo": "comet-ml/opik"
+}

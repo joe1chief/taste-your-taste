@@ -1,0 +1,25 @@
+{
+  "stars": 3108,
+  "language": "TypeScript",
+  "description": "No description provided.",
+  "url": "https://github.com/spotify/portal-ai-plugins",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Spotify Portal AI Plugin",
+    "This repository packages Spotify Portal workflows for Claude Code, Codex, Cursor, and pi.",
+    "Repository structure",
+    "`skills/` contains the canonical Portal workflow instructions. Fleetshift workflows live there as `fleetshift-<workflow>` because hosts only discover skills one level deep (`skills/<name>/SKILL.md`), so they can't be grouped in a subfolder."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c0c5340736d0d48c3430d03bd345fbf67e45b0a6",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-04T08:17:35.812258+00:00",
+  "repo": "spotify/portal-ai-plugins"
+}

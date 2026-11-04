@@ -3340,7 +3340,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "024eae7ea0c5d6b53f98a9547b1d92bd81ad2846",
+      "AGENTS.md": "c77354eb0601565ffb065f6de40a38cbce98a586",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
     },
     "source": "popular_stars",
@@ -3349,7 +3349,17 @@
     "discovered_at": "2026-10-26T07:13:28.692557+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/178",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "024eae7ea0c5d6b53f98a9547b1d92bd81ad2846",
+        "new_sha": "c77354eb0601565ffb065f6de40a38cbce98a586",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-04T08:17:33.226137+00:00"
+      }
+    ]
   },
   "supabase-community/postgres-language-server": {
     "stars": 5262,
@@ -4035,7 +4045,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "cc1019fd774978b4c4b6251773996f18a8b7d37f"
+      "AGENTS.md": "ff608de69bcccd231ccf1850bfe3be7ef97722cd"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4043,7 +4053,17 @@
     "discovered_at": "2026-11-02T08:36:32.035376+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/232",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "cc1019fd774978b4c4b6251773996f18a8b7d37f",
+        "new_sha": "ff608de69bcccd231ccf1850bfe3be7ef97722cd",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-04T08:17:19.370638+00:00"
+      }
+    ]
   },
   "FlashML-org/FreeToken": {
     "stars": 15644,
@@ -4073,7 +4093,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d10a22f5bbe1b64e0d0cdd89973d0eee67068131"
+      "AGENTS.md": "608c87a60ddbf296f41b5a4550374fb055be77fe"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4081,7 +4101,17 @@
     "discovered_at": "2026-11-03T08:49:07.807096+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/237",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d10a22f5bbe1b64e0d0cdd89973d0eee67068131",
+        "new_sha": "608c87a60ddbf296f41b5a4550374fb055be77fe",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-04T08:17:13.239824+00:00"
+      }
+    ]
   },
   "hyprwm/Hyprland": {
     "stars": 40121,
@@ -4156,6 +4186,104 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-03T08:49:22.275109+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/241",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "spotify/portal-ai-plugins": {
+    "stars": 3108,
+    "language": "TypeScript",
+    "description": "No description provided.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c0c5340736d0d48c3430d03bd345fbf67e45b0a6",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-04T08:17:36.564972+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/245",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "floci-io/floci": {
+    "stars": 29096,
+    "language": "Java",
+    "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d10a5c190abcc10522683d54a51bbe1f235ca194"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-04T08:17:38.739676+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/246",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Usagi-org/ai-goofish-monitor": {
+    "stars": 16884,
+    "language": "Python",
+    "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5bae24d1aa48b7b8ee4441a2ff286363006c23f1",
+      "CLAUDE.md": "45d92ad474fd6306e25109155c348c214f08b5a8"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-04T08:17:41.224147+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/247",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "PostHog/posthog": {
+    "stars": 40632,
+    "language": "Python",
+    "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+    "files": [
+      ".cursorrules",
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      ".cursorrules": "55efbc77b085369c75feb30e36675bd4c0bb6f73",
+      "AGENTS.md": "bbd38bba6357198a607ebe6cecaee443b5ab3051",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-04T08:17:43.938461+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/248",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "comet-ml/opik": {
+    "stars": 23159,
+    "language": "Python",
+    "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "bc11eff2cfc3f9f4ee1b676554e3592bbaf607a5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-04T08:17:45.755996+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/249",
     "pr_url": null,
     "status": "pending_review"
   }
