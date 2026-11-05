@@ -1,0 +1,23 @@
+{
+  "stars": 147545,
+  "language": "Python",
+  "description": "💫 Toolkit to help you get started with SDD or any other process!",
+  "url": "https://github.com/github/spec-kit",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "About Spec Kit and Specify",
+    "GitHub Spec Kit** is a comprehensive toolkit for implementing Spec-Driven Development (SDD) - a methodology that emphasizes creating clear specifications before implementation. The toolkit includes templates, scripts, and workflows that guide development teams through a structured approach to building software.",
+    "Specify CLI** is the command-line interface that bootstraps projects with the Spec Kit framework. It sets up the necessary directory structures, templates, and AI agent integrations to support the Spec-Driven Development workflow."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1ab4e0aa5437537bb2e53da614d6eeef87c67e30"
+  },
+  "discovered_at": "2026-11-05T08:42:16.123565+00:00",
+  "repo": "github/spec-kit"
+}

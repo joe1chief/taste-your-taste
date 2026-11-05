@@ -19,9 +19,9 @@
     "SKILL.md"
   ],
   "file_shas": {
-    "AGENTS.md": "d2d545325e838b3f9b67794f4b8154e8ea99d6ee",
-    "CLAUDE.md": "1ec9d299c9a1844990afffdd33a487551eca7583",
-    "SKILL.md": "635cf5ef93d1a95de9ab70b97c79fdf23a27f07c"
+    "AGENTS.md": "52065c769f284ee1cf6bfa74b84bb653c4a6a69e",
+    "CLAUDE.md": "37fb8db4dc245355bc19ef3f52d0218048e554af",
+    "SKILL.md": "19892de7007d75a9f2c11ed678f566ff6d406944"
   },
   "discovered_at": "2026-10-05T07:53:52.270321+00:00",
   "repo": "garrytan/gstack"

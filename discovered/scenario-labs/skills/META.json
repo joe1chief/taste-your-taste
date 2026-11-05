@@ -1,0 +1,27 @@
+{
+  "stars": 2654,
+  "language": "Python",
+  "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+  "url": "https://github.com/scenario-labs/skills",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Guidance for AI agents (and humans) working in this repository. The history and evidence behind its",
+    "rules live in [docs/decisions.md](docs/decisions.md).",
+    "What this repo is"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    ".claude/CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "07c1e4274d069e9bcf9707acee5e6127d04544f5",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+    ".claude/CLAUDE.md": "7fe663b0f013dab2b25026b7eb1689cf43dbc76a"
+  },
+  "discovered_at": "2026-11-05T08:42:20.436671+00:00",
+  "repo": "scenario-labs/skills"
+}

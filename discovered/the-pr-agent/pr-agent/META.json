@@ -1,0 +1,23 @@
+{
+  "stars": 14941,
+  "language": "Python",
+  "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+  "url": "https://github.com/The-PR-Agent/pr-agent",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository Guidelines",
+    "This file is the shared source of repository guidance for coding agents. Tool-specific instruction files should import it instead of repeating repository-wide rules.",
+    "Dos and Don’ts",
+    "Do** match the interpreter requirement declared in `pyproject.toml` (Python ≥ 3.12) and install dependencies with `uv sync` (runtime + dev, from `uv.lock`) before running tools."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "dec3e43568b8f119af999a67cbd62667a2f1ffb9"
+  },
+  "discovered_at": "2026-11-05T08:42:18.129060+00:00",
+  "repo": "The-PR-Agent/pr-agent"
+}

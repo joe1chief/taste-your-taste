@@ -1094,9 +1094,9 @@
       "SKILL.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d2d545325e838b3f9b67794f4b8154e8ea99d6ee",
-      "CLAUDE.md": "1ec9d299c9a1844990afffdd33a487551eca7583",
-      "SKILL.md": "635cf5ef93d1a95de9ab70b97c79fdf23a27f07c"
+      "AGENTS.md": "52065c769f284ee1cf6bfa74b84bb653c4a6a69e",
+      "CLAUDE.md": "37fb8db4dc245355bc19ef3f52d0218048e554af",
+      "SKILL.md": "19892de7007d75a9f2c11ed678f566ff6d406944"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -1104,7 +1104,17 @@
     "discovered_at": "2026-10-05T07:53:52.657004+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/31",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d2d545325e838b3f9b67794f4b8154e8ea99d6ee",
+        "new_sha": "52065c769f284ee1cf6bfa74b84bb653c4a6a69e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-05T08:42:03.193436+00:00"
+      }
+    ]
   },
   "DuarteSantos8/openGym": {
     "stars": 4643,
@@ -2620,7 +2630,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "5893dd64de59c14747c45bf0293453f6f5f229ab",
+      "AGENTS.md": "c24a5e7242a31a59a94fea3bb38947e046fb5676",
       "CLAUDE.md": "df25292eb1e951374aba704bce3c2831104670f0"
     },
     "source": "popular_stars",
@@ -2638,6 +2648,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-24T06:39:59.874672+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "5893dd64de59c14747c45bf0293453f6f5f229ab",
+        "new_sha": "c24a5e7242a31a59a94fea3bb38947e046fb5676",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-05T08:42:07.788756+00:00"
       }
     ]
   },
@@ -4093,7 +4111,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "608c87a60ddbf296f41b5a4550374fb055be77fe"
+      "AGENTS.md": "21b6223d1f03c1e9d0987a6b2e2a01abcbe4bd8d"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4110,6 +4128,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-04T08:17:13.239824+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "608c87a60ddbf296f41b5a4550374fb055be77fe",
+        "new_sha": "21b6223d1f03c1e9d0987a6b2e2a01abcbe4bd8d",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-05T08:42:00.868803+00:00"
       }
     ]
   },
@@ -4284,6 +4310,104 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-04T08:17:45.755996+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/249",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "NVIDIA/auto-ontology": {
+    "stars": 5982,
+    "language": "Python",
+    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5b148439259097d6e3a308e801bb4f083db801a7",
+      "CLAUDE.md": "fb909c122e9c486fd168cbbff8321ae7058bb47b"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-05T08:42:14.794468+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/253",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "github/spec-kit": {
+    "stars": 147545,
+    "language": "Python",
+    "description": "💫 Toolkit to help you get started with SDD or any other process!",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "1ab4e0aa5437537bb2e53da614d6eeef87c67e30"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-05T08:42:16.560513+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/254",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "The-PR-Agent/pr-agent": {
+    "stars": 14941,
+    "language": "Python",
+    "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "dec3e43568b8f119af999a67cbd62667a2f1ffb9"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-05T08:42:18.591215+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/255",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "scenario-labs/skills": {
+    "stars": 2654,
+    "language": "Python",
+    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      ".claude/CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "07c1e4274d069e9bcf9707acee5e6127d04544f5",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      ".claude/CLAUDE.md": "7fe663b0f013dab2b25026b7eb1689cf43dbc76a"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-05T08:42:20.856581+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/256",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "DataDog/integrations-core": {
+    "stars": 1153,
+    "language": "Python",
+    "description": "Core integrations of the Datadog Agent",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "af72148fbb5b0549caccbe001d7b9917d71e72d6",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-05T08:42:22.966188+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/257",
     "pr_url": null,
     "status": "pending_review"
   }

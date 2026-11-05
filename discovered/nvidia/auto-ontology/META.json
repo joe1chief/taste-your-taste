@@ -1,0 +1,25 @@
+{
+  "stars": 5982,
+  "language": "Python",
+  "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+  "url": "https://github.com/NVIDIA/auto-ontology",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "SPDX-FileCopyrightText: Copyright (c) 2026, NVIDIA CORPORATION & AFFILIATES.",
+    "All rights reserved.",
+    "SPDX-License-Identifier: Apache-2.0",
+    "AGENTS.md — Auto-Ontology agent entry point"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5b148439259097d6e3a308e801bb4f083db801a7",
+    "CLAUDE.md": "fb909c122e9c486fd168cbbff8321ae7058bb47b"
+  },
+  "discovered_at": "2026-11-05T08:42:14.274368+00:00",
+  "repo": "NVIDIA/auto-ontology"
+}

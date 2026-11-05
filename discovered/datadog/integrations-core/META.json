@@ -1,0 +1,25 @@
+{
+  "stars": 1153,
+  "language": "Python",
+  "description": "Core integrations of the Datadog Agent",
+  "url": "https://github.com/DataDog/integrations-core",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Development Guidelines",
+    "These are the binding conventions for any change made in this repository, whether by a human or an AI agent. When one of these rules conflicts with your own default instincts (for example, general Python style conventions you'd normally apply), follow the rule below instead — it exists because the default produced a problem here before. Where a rule doesn't cover your situation, prefer the narrowest, most focused change that accomplishes the task.",
+    "Some directories have their own `AGENTS.md`/`CLAUDE.md` with narrower, directory-specific guidance (for example `clickhouse/AGENTS.md`, which covers the ClickHouse `advanced_queries` pipeline, or `ddev/src/ddev/utils/github_async/AGENTS.md`). Those files *supplement* this one — read both. Where a nested file's guidance conflicts with this one, the narrower, more specific file takes precedence for the code it covers.",
+    "Contents"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "af72148fbb5b0549caccbe001d7b9917d71e72d6",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-05T08:42:22.505717+00:00",
+  "repo": "DataDog/integrations-core"
+}

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**202 tracked projects** | **26 curated** | **176 pending review**
+**207 tracked projects** | **26 curated** | **181 pending review**
 
-Last completed scan: [2026-11-04 08:17:45 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41798307817).
+Last completed scan: [2026-11-05 08:42:23 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41996463010).
 
-Latest content activity: **2026-11-04 08:17:45 UTC**.
+Latest content activity: **2026-11-05 08:42:22 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-05 08:42:22 | [DataDog/integrations-core](https://github.com/DataDog/integrations-core) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/257) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/datadog/integrations-core) |
+| 2026-11-05 08:42:20 | [scenario-labs/skills](https://github.com/scenario-labs/skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/256) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/scenario-labs/skills) |
+| 2026-11-05 08:42:18 | [The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/255) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/the-pr-agent/pr-agent) |
+| 2026-11-05 08:42:16 | [github/spec-kit](https://github.com/github/spec-kit) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/254) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/github/spec-kit) |
+| 2026-11-05 08:42:14 | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/253) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvidia/auto-ontology) |
+| 2026-11-05 08:42:07 | [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/127) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kirodotdev/kirocrew) |
+| 2026-11-05 08:42:03 | [garrytan/gstack](https://github.com/garrytan/gstack) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/31) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/garrytan/gstack) |
+| 2026-11-05 08:42:00 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/237) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-desktop) |
 | 2026-11-04 08:17:45 | [comet-ml/opik](https://github.com/comet-ml/opik) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/249) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comet-ml/opik) |
 | 2026-11-04 08:17:43 | [PostHog/posthog](https://github.com/PostHog/posthog) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/248) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/posthog/posthog) |
-| 2026-11-04 08:17:41 | [Usagi-org/ai-goofish-monitor](https://github.com/Usagi-org/ai-goofish-monitor) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/247) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/usagi-org/ai-goofish-monitor) |
-| 2026-11-04 08:17:38 | [floci-io/floci](https://github.com/floci-io/floci) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/246) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/floci-io/floci) |
-| 2026-11-04 08:17:36 | [spotify/portal-ai-plugins](https://github.com/spotify/portal-ai-plugins) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/245) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spotify/portal-ai-plugins) |
-| 2026-11-04 08:17:33 | [tursodatabase/turso](https://github.com/tursodatabase/turso) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/178) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tursodatabase/turso) |
-| 2026-11-04 08:17:19 | [anomalyco/hex](https://github.com/anomalyco/hex) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/232) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/hex) |
-| 2026-11-04 08:17:13 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/237) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-desktop) |
-| 2026-11-03 08:49:22 | [eatmoreduck/boss-zhipin-scraper](https://github.com/eatmoreduck/boss-zhipin-scraper) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/241) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/eatmoreduck/boss-zhipin-scraper) |
-| 2026-11-03 08:49:19 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/240) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/paperclipai/paperclip) |
 <!-- TASTE:LATEST:END -->
 
 ---
