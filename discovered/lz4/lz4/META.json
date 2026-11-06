@@ -1,0 +1,23 @@
+{
+  "stars": 12487,
+  "language": "C",
+  "description": "Extremely Fast Compression algorithm",
+  "url": "https://github.com/lz4/lz4",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "Notes for coding agents",
+    "LZ4 is a lossless compression library (`lib/`, BSD-2) with a command line tool (`programs/`, GPLv2+).",
+    "Pull requests target the `dev` branch.",
+    "`lib/` : the library : `lz4.c` (block format, fast levels), `lz4hc.c` (high compression levels),"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c5ac3ebd8fbc81a6a55fe771290637962f52a0db"
+  },
+  "discovered_at": "2026-11-06T08:43:42.404245+00:00",
+  "repo": "lz4/lz4"
+}

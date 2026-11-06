@@ -1,0 +1,23 @@
+{
+  "stars": 46149,
+  "language": "Rust",
+  "description": "Browser automation CLI for AI agents",
+  "url": "https://github.com/vercel-labs/agent-browser",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "AGENTS.md",
+    "Instructions for AI coding agents working with this codebase.",
+    "Package Manager",
+    "This project uses **pnpm**. Always use `pnpm` instead of `npm` or `yarn` for installing dependencies, running scripts, etc. (e.g., `pnpm install`, `pnpm run build`)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "fe3e0f124b3dc65c9126d594499a1c9814c3dcbb"
+  },
+  "discovered_at": "2026-11-06T08:43:43.975177+00:00",
+  "repo": "vercel-labs/agent-browser"
+}

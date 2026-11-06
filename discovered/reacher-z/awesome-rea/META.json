@@ -1,0 +1,23 @@
+{
+  "stars": 1038,
+  "language": "Python",
+  "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+  "url": "https://github.com/reacher-z/Awesome-REA",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Working on Awesome REA",
+    "Awesome Reverse Engineering Anything is an independent resource catalog, not the upstream REA CLI/MCP project. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [agent contribution guide](docs/agent-contributing.md) before changing records or submitting a contribution. The [catalog format](data/README.md) defines the accepted fields and vocabulary.",
+    "Find the right task",
+    "Suggest a resource, case, paper or correction through the existing [GitHub issue forms](https://github.com/reacher-z/Awesome-REA/issues/new/choose), or prepare a focused pull request. Do not create a second submission for an existing issue or PR."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9000ae2850c3252885751bbd6a4852b4cd34494d"
+  },
+  "discovered_at": "2026-11-06T08:43:45.499735+00:00",
+  "repo": "reacher-z/Awesome-REA"
+}

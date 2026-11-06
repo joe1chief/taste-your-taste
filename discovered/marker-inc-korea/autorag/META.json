@@ -1,0 +1,23 @@
+{
+  "stars": 5348,
+  "language": "TypeScript",
+  "description": "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
+  "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "AutoRAG — Pi-Powered Personal Librarian Agent",
+    "Guardrails",
+    "These bind every agent and human working in this checkout. Force is CI, CODEOWNERS, and the `main` rulesets; this file is the instruction. Do not flatten the rest of this map into these four boxes.",
+    "Allowed"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "79e8aeb5881d73b7f2341fe65de2038fd0a1612e"
+  },
+  "discovered_at": "2026-11-06T08:43:49.610105+00:00",
+  "repo": "Marker-Inc-Korea/AutoRAG"
+}

@@ -1094,7 +1094,7 @@
       "SKILL.md"
     ],
     "file_shas": {
-      "AGENTS.md": "52065c769f284ee1cf6bfa74b84bb653c4a6a69e",
+      "AGENTS.md": "a572ea7333d197f0f94e1db7a2351ff07dcbe123",
       "CLAUDE.md": "37fb8db4dc245355bc19ef3f52d0218048e554af",
       "SKILL.md": "19892de7007d75a9f2c11ed678f566ff6d406944"
     },
@@ -1113,6 +1113,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-05T08:42:03.193436+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "52065c769f284ee1cf6bfa74b84bb653c4a6a69e",
+        "new_sha": "a572ea7333d197f0f94e1db7a2351ff07dcbe123",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-06T08:43:29.637456+00:00"
       }
     ]
   },
@@ -4243,7 +4251,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d10a5c190abcc10522683d54a51bbe1f235ca194"
+      "AGENTS.md": "7071571cfe1a3adffd8faa4aab771b1c95b64b13"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4251,7 +4259,17 @@
     "discovered_at": "2026-11-04T08:17:38.739676+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/246",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d10a5c190abcc10522683d54a51bbe1f235ca194",
+        "new_sha": "7071571cfe1a3adffd8faa4aab771b1c95b64b13",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-06T08:43:35.873888+00:00"
+      }
+    ]
   },
   "Usagi-org/ai-goofish-monitor": {
     "stars": 16884,
@@ -4379,7 +4397,7 @@
       ".claude/CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "07c1e4274d069e9bcf9707acee5e6127d04544f5",
+      "AGENTS.md": "d6662e170e3a92f7b1bf28a828c244b03ec7855f",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
       ".claude/CLAUDE.md": "7fe663b0f013dab2b25026b7eb1689cf43dbc76a"
     },
@@ -4389,7 +4407,17 @@
     "discovered_at": "2026-11-05T08:42:20.856581+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/256",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "07c1e4274d069e9bcf9707acee5e6127d04544f5",
+        "new_sha": "d6662e170e3a92f7b1bf28a828c244b03ec7855f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-06T08:43:33.768083+00:00"
+      }
+    ]
   },
   "DataDog/integrations-core": {
     "stars": 1153,
@@ -4408,6 +4436,98 @@
     "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
     "discovered_at": "2026-11-05T08:42:22.966188+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/257",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "lz4/lz4": {
+    "stars": 12487,
+    "language": "C",
+    "description": "Extremely Fast Compression algorithm",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c5ac3ebd8fbc81a6a55fe771290637962f52a0db"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-06T08:43:42.798078+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/261",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "vercel-labs/agent-browser": {
+    "stars": 46149,
+    "language": "Rust",
+    "description": "Browser automation CLI for AI agents",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "fe3e0f124b3dc65c9126d594499a1c9814c3dcbb"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-06T08:43:44.359927+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/262",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "reacher-z/Awesome-REA": {
+    "stars": 1038,
+    "language": "Python",
+    "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9000ae2850c3252885751bbd6a4852b4cd34494d"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-06T08:43:46.013710+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/263",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "supabase/cli": {
+    "stars": 2455,
+    "language": "TypeScript",
+    "description": "Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ad5787f49394e44919c121260c230de53c141895",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-06T08:43:48.146449+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/264",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Marker-Inc-Korea/AutoRAG": {
+    "stars": 5348,
+    "language": "TypeScript",
+    "description": "Your Personal Librarian Agent. Ask anything on your computer, organize files, remember important info and files.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "79e8aeb5881d73b7f2341fe65de2038fd0a1612e"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-06T08:43:50.179978+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/265",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**207 tracked projects** | **26 curated** | **181 pending review**
+**212 tracked projects** | **26 curated** | **186 pending review**
 
-Last completed scan: [2026-11-05 08:42:23 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/41996463010).
+Last completed scan: [2026-11-06 08:43:50 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/42189704037).
 
-Latest content activity: **2026-11-05 08:42:22 UTC**.
+Latest content activity: **2026-11-06 08:43:50 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-06 08:43:50 | [Marker-Inc-Korea/AutoRAG](https://github.com/Marker-Inc-Korea/AutoRAG) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/265) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/marker-inc-korea/autorag) |
+| 2026-11-06 08:43:48 | [supabase/cli](https://github.com/supabase/cli) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/264) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/supabase/cli) |
+| 2026-11-06 08:43:46 | [reacher-z/Awesome-REA](https://github.com/reacher-z/Awesome-REA) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/263) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/reacher-z/awesome-rea) |
+| 2026-11-06 08:43:44 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/262) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-browser) |
+| 2026-11-06 08:43:42 | [lz4/lz4](https://github.com/lz4/lz4) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/261) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lz4/lz4) |
+| 2026-11-06 08:43:35 | [floci-io/floci](https://github.com/floci-io/floci) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/246) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/floci-io/floci) |
+| 2026-11-06 08:43:33 | [scenario-labs/skills](https://github.com/scenario-labs/skills) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/256) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/scenario-labs/skills) |
+| 2026-11-06 08:43:29 | [garrytan/gstack](https://github.com/garrytan/gstack) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/31) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/garrytan/gstack) |
 | 2026-11-05 08:42:22 | [DataDog/integrations-core](https://github.com/DataDog/integrations-core) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/257) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/datadog/integrations-core) |
-| 2026-11-05 08:42:20 | [scenario-labs/skills](https://github.com/scenario-labs/skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/256) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/scenario-labs/skills) |
 | 2026-11-05 08:42:18 | [The-PR-Agent/pr-agent](https://github.com/The-PR-Agent/pr-agent) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/255) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/the-pr-agent/pr-agent) |
-| 2026-11-05 08:42:16 | [github/spec-kit](https://github.com/github/spec-kit) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/254) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/github/spec-kit) |
-| 2026-11-05 08:42:14 | [NVIDIA/auto-ontology](https://github.com/NVIDIA/auto-ontology) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/253) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvidia/auto-ontology) |
-| 2026-11-05 08:42:07 | [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/127) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kirodotdev/kirocrew) |
-| 2026-11-05 08:42:03 | [garrytan/gstack](https://github.com/garrytan/gstack) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/31) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/garrytan/gstack) |
-| 2026-11-05 08:42:00 | [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/237) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vercel-labs/agent-desktop) |
-| 2026-11-04 08:17:45 | [comet-ml/opik](https://github.com/comet-ml/opik) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/249) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comet-ml/opik) |
-| 2026-11-04 08:17:43 | [PostHog/posthog](https://github.com/PostHog/posthog) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/248) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/posthog/posthog) |
 <!-- TASTE:LATEST:END -->
 
 ---
