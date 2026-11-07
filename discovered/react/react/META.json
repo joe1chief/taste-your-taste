@@ -1,0 +1,23 @@
+{
+  "stars": 252318,
+  "language": "JavaScript",
+  "description": "The library for web and native user interfaces.",
+  "url": "https://github.com/react/react",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "React is a JavaScript library for building user interfaces.",
+    "Monorepo Overview",
+    "React**: All files outside `/compiler/`",
+    "React Compiler**: `/compiler/` directory (has its own instructions)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "863aaab66c523299eae4a1781169929701ed67c6"
+  },
+  "discovered_at": "2026-11-07T07:58:32.185809+00:00",
+  "repo": "react/react"
+}

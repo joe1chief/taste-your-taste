@@ -1,0 +1,23 @@
+{
+  "stars": 101435,
+  "language": "TypeScript",
+  "description": "Deliver web apps with confidence 🚀",
+  "url": "https://github.com/angular/angular",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "trigger: always_on",
+    "This is the source code for the Angular framework. This guide outlines standard practices for AI agents working in this repository.",
+    "Environment",
+    "Use `pnpm` for package management."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d120951b52cb938e44433568cebdd6f4cb7fd308"
+  },
+  "discovered_at": "2026-11-07T07:58:34.011712+00:00",
+  "repo": "angular/angular"
+}

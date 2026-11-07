@@ -1,0 +1,25 @@
+{
+  "stars": 67254,
+  "language": "Go",
+  "description": "The Prometheus monitoring system and time series database.",
+  "url": "https://github.com/prometheus/prometheus",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agents Guide for Prometheus",
+    "This document captures patterns and preferences observed from maintainer reviews",
+    "of recently merged pull requests. Use it to align your contributions with what",
+    "maintainers expect."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d700183b6eae7da378eb15dde74bac7dd689938f",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-07T07:58:36.002864+00:00",
+  "repo": "prometheus/prometheus"
+}

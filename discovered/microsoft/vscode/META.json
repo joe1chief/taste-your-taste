@@ -1,0 +1,22 @@
+{
+  "stars": 195091,
+  "language": "TypeScript",
+  "description": "Visual Studio Code",
+  "url": "https://github.com/microsoft/vscode",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "VS Code Agents Instructions",
+    "This file provides instructions for AI coding agents working with the VS Code codebase.",
+    "For detailed project overview, architecture, coding guidelines, and validation steps, see the [Copilot Instructions](.github/copilot-instructions.md)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d6abb76ab8384fb7b391b551b159002657c218c1"
+  },
+  "discovered_at": "2026-11-07T07:58:37.892400+00:00",
+  "repo": "microsoft/vscode"
+}

@@ -2207,7 +2207,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ce36bada00558382adec44b3bbec402c5e96de45"
+      "AGENTS.md": "151f892d6319a4170a6cfac2a222e46ef0f14982"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -2215,7 +2215,17 @@
     "discovered_at": "2026-10-15T06:42:24.347128+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/99",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ce36bada00558382adec44b3bbec402c5e96de45",
+        "new_sha": "151f892d6319a4170a6cfac2a222e46ef0f14982",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-07T07:58:19.064495+00:00"
+      }
+    ]
   },
   "zerx-lab/FluxDown": {
     "stars": 4490,
@@ -4528,6 +4538,100 @@
     "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
     "discovered_at": "2026-11-06T08:43:50.179978+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/265",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "zed-industries/zed": {
+    "stars": 93894,
+    "language": "Rust",
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8a63b64bdb0afcda986ba715cb39849ac574e096",
+      "CLAUDE.md": "8a63b64bdb0afcda986ba715cb39849ac574e096"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-07T07:58:27.849764+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/267",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "react/react": {
+    "stars": 252318,
+    "language": "JavaScript",
+    "description": "The library for web and native user interfaces.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "863aaab66c523299eae4a1781169929701ed67c6"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-07T07:58:32.668927+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/268",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "angular/angular": {
+    "stars": 101435,
+    "language": "TypeScript",
+    "description": "Deliver web apps with confidence 🚀",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d120951b52cb938e44433568cebdd6f4cb7fd308"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-07T07:58:34.469814+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/269",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "prometheus/prometheus": {
+    "stars": 67254,
+    "language": "Go",
+    "description": "The Prometheus monitoring system and time series database.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d700183b6eae7da378eb15dde74bac7dd689938f",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-07T07:58:36.516106+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/270",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "microsoft/vscode": {
+    "stars": 195091,
+    "language": "TypeScript",
+    "description": "Visual Studio Code",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d6abb76ab8384fb7b391b551b159002657c218c1"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-07T07:58:38.420618+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/271",
     "pr_url": null,
     "status": "pending_review"
   }

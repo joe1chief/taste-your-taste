@@ -17,7 +17,7 @@
     "AGENTS.md"
   ],
   "file_shas": {
-    "AGENTS.md": "ce36bada00558382adec44b3bbec402c5e96de45"
+    "AGENTS.md": "151f892d6319a4170a6cfac2a222e46ef0f14982"
   },
   "discovered_at": "2026-10-15T06:42:23.825573+00:00",
   "repo": "rust-lang/rust"

@@ -1,0 +1,25 @@
+{
+  "stars": 93894,
+  "language": "Rust",
+  "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+  "url": "https://github.com/zed-industries/zed",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Rust coding guidelines",
+    "Prioritize code correctness and clarity. Speed and efficiency are secondary priorities unless otherwise specified.",
+    "Do not write organizational or comments that summarize the code. Comments should only be written in order to explain \"why\" the code is written in some way in the case there is a reason that is tricky / non-obvious.",
+    "Prefer implementing functionality in existing files unless it is a new logical component. Avoid creating many small files."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8a63b64bdb0afcda986ba715cb39849ac574e096",
+    "CLAUDE.md": "8a63b64bdb0afcda986ba715cb39849ac574e096"
+  },
+  "discovered_at": "2026-11-07T07:58:27.097717+00:00",
+  "repo": "zed-industries/zed"
+}
