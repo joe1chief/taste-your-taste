@@ -1,0 +1,25 @@
+{
+  "stars": 14825,
+  "language": "TypeScript",
+  "description": "An open source design system that's fully customizable and agent ready",
+  "url": "https://github.com/meta/astryx",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Astryx repository guidance",
+    "Astryx is a public design-system repository. Never commit internal links,",
+    "identifiers, service names, private operational instructions, or other",
+    "Meta-only context."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "89f0960fe2308f718ec4d557bde12e4b8725f631",
+    "CLAUDE.md": "65bc7681b0eaff166889df7319c75558e77e4961"
+  },
+  "discovered_at": "2026-11-08T08:16:21.900140+00:00",
+  "repo": "meta/astryx"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 633,
+  "language": "Go",
+  "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+  "url": "https://github.com/dsx-ai-factory/nvke",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent guide — NVIDIA Kubernetes Engine (NVKE)",
+    "Guidance for AI coding agents (Claude Code, Codex, Copilot Workspace, Cursor)",
+    "working in this repository. Humans should read [CONTRIBUTING.md](CONTRIBUTING.md);",
+    "this file adds the constraints an agent needs before it starts editing."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6cf1ed80432734c9ca97ccedf543634fc8bc1137",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-08T08:16:30.535808+00:00",
+  "repo": "dsx-ai-factory/nvke"
+}

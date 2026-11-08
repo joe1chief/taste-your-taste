@@ -1,0 +1,23 @@
+{
+  "stars": 1110,
+  "language": "Python",
+  "description": "Control your Samsung appliances from Home Assistant over your home network, with no cloud account.",
+  "url": "https://github.com/mbillow/localthings",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "AGENTS.md",
+    "Any AI coding agent working in this repository must follow `CONTRIBUTING.md`",
+    "in full — it is not optional guidance. In particular, its commit rules",
+    "(author and committer set to the accountable human, no AI co-author"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a40d29062996d06878f12b9f5a4ee0e98cfa1cda"
+  },
+  "discovered_at": "2026-11-08T08:16:26.024150+00:00",
+  "repo": "mbillow/localthings"
+}

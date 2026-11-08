@@ -1,0 +1,25 @@
+{
+  "stars": 51049,
+  "language": "Rust",
+  "description": "An extremely fast Python linter and code formatter, written in Rust.",
+  "url": "https://github.com/astral-sh/ruff",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Ruff Repository",
+    "This repository contains both Ruff (a Python linter and formatter) and ty (a Python type checker). The crates follow a naming convention: `ruff_*` for Ruff-specific code and `ty_*` for ty-specific code. ty reuses several Ruff crates, including the Python parser (`ruff_python_parser`) and AST definitions (`ruff_python_ast`).",
+    "Before contributing",
+    "Before starting work on an issue and again before opening a pull request, follow the"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a1e41b2e2828ec47bda70347430df971b66164e0",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-08T08:16:24.181426+00:00",
+  "repo": "astral-sh/ruff"
+}
