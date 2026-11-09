@@ -1,0 +1,23 @@
+{
+  "stars": 19646,
+  "language": "Python",
+  "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+  "url": "https://github.com/anthropics/claude-quickstarts",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Claude Quickstarts Development Guide",
+    "Conventions (all quickstarts)",
+    "Name Anthropic SDK client instances `client` — e.g. `const client = new Anthropic();` in TypeScript, `client = Anthropic()` in Python. This applies to source files and code snippets in READMEs and guides alike.",
+    "Never use the \"CMA\" acronym. Write \"Managed Agents\" or \"Claude Managed Agents\" in prose and comments, and spell it out in identifiers, file names, and log prefixes (e.g. `managed-agents.ts`, not `cma.ts`; `[managed-agent]`, not `[cma]`)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "f033272b73ca3f1927934d13c5bdffdbae67a126"
+  },
+  "discovered_at": "2026-11-09T08:50:34.265088+00:00",
+  "repo": "anthropics/claude-quickstarts"
+}

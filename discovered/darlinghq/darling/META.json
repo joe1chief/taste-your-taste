@@ -1,0 +1,23 @@
+{
+  "stars": 13712,
+  "language": "Objective-C",
+  "description": "Darwin/macOS emulation layer for Linux",
+  "url": "https://github.com/darlinghq/darling",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "> **Note to human contributors and reviewers.** This document tells an AI",
+    "> agent how to behave *if* you use one. It is not permission to submit code",
+    "> you do not understand. You are responsible for every line in a PR you open,"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "98ee8e8c95ff43a4d8dff071ed1473e091bd927a"
+  },
+  "discovered_at": "2026-11-09T08:50:36.277439+00:00",
+  "repo": "darlinghq/darling"
+}

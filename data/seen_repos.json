@@ -1555,7 +1555,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "30482aa1a88494a170d1f743317bffd8250080f1"
+      "AGENTS.md": "40cc387546bfecd3d19c8067315ecf2b529d14fc"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1604,6 +1604,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-28T07:42:33.266142+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "30482aa1a88494a170d1f743317bffd8250080f1",
+        "new_sha": "40cc387546bfecd3d19c8067315ecf2b529d14fc",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-09T08:50:31.842143+00:00"
       }
     ]
   },
@@ -4701,7 +4709,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "107f6a73e5f73a0aa19e820a8e99c9ad494d03ba"
+      "AGENTS.md": "c591ef80c93ee79aa121faad6604a56b708ac241"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4709,7 +4717,17 @@
     "discovered_at": "2026-11-08T08:16:28.774055+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/275",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "107f6a73e5f73a0aa19e820a8e99c9ad494d03ba",
+        "new_sha": "c591ef80c93ee79aa121faad6604a56b708ac241",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-09T08:50:23.276509+00:00"
+      }
+    ]
   },
   "dsx-ai-factory/nvke": {
     "stars": 633,
@@ -4728,6 +4746,102 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-08T08:16:31.054284+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/276",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anthropics/claude-quickstarts": {
+    "stars": 19646,
+    "language": "Python",
+    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "f033272b73ca3f1927934d13c5bdffdbae67a126"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-09T08:50:34.731108+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/279",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "darlinghq/darling": {
+    "stars": 13712,
+    "language": "Objective-C",
+    "description": "Darwin/macOS emulation layer for Linux",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "98ee8e8c95ff43a4d8dff071ed1473e091bd927a"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-09T08:50:36.757948+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/280",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Lodestone-Team/lodestone": {
+    "stars": 1315,
+    "language": "Rust",
+    "description": "A free, open source server hosting tool for Minecraft and other multiplayer games",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "994d897639ea12267fdf21bb5c96a651ffbd9a9a",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-09T08:50:38.634518+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/281",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "dataease/SQLBot": {
+    "stars": 7131,
+    "language": "JavaScript",
+    "description": "🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b416b91ffc022e5f6f25289fb0e8961fcb69d559",
+      "CLAUDE.md": "86154202dc5f0fcf12b1642f2bf08faaa9c0dcc2"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-09T08:50:40.845116+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/282",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ray-project/ray": {
+    "stars": 44241,
+    "language": "Python",
+    "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
+    "files": [
+      "AGENTS.md",
+      ".claude/CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "68ee5159862b525ebb2212873bcd09d41783e119",
+      ".claude/CLAUDE.md": "dba71e970eb2c92987fc36ef572f04cbf9cee4c8"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-09T08:50:42.704196+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/283",
     "pr_url": null,
     "status": "pending_review"
   }

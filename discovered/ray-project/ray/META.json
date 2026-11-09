@@ -1,0 +1,25 @@
+{
+  "stars": 44241,
+  "language": "Python",
+  "description": "Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
+  "url": "https://github.com/ray-project/ray",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agent Instructions for Ray",
+    "> These instructions apply to **all** AI-assisted contributions to `ray-project/ray`.",
+    "> PRs that ignore this policy may be closed without review.",
+    "Ray is a high-traffic repository. Every PR notifies CODEOWNERS, triggers CI, and"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    ".claude/CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "68ee5159862b525ebb2212873bcd09d41783e119",
+    ".claude/CLAUDE.md": "dba71e970eb2c92987fc36ef572f04cbf9cee4c8"
+  },
+  "discovered_at": "2026-11-09T08:50:42.248931+00:00",
+  "repo": "ray-project/ray"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 7131,
+  "language": "JavaScript",
+  "description": "🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.",
+  "url": "https://github.com/dataease/SQLBot",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "SQLBot Agent 指南",
+    "SQLBot 让业务用户用自然语言提问，基于已配置的数据源生成并安全执行 SQL，返回数据、图表、分析和后续问题建议。领域词汇表见 `CONTEXT.md`。",
+    "开始前确认目标仓库、分支、HEAD 和已有改动；需要其他版本时优先用独立 worktree，不覆盖、清理或提交用户已有无关改动。验证 PR 或最新代码时，开始和交付前都核对远端目标 SHA；远端变化后评估影响，必要时更新并重测，不把旧版本结果标成最新验证。",
+    "根据任务定义可观察的验收条件，再阅读相关入口、调用方和测试；只加载下表中与任务有关的文档，不以消除报错代替满足验收条件。评审不等于授权修复或合并，已授权的动作不重复询问。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b416b91ffc022e5f6f25289fb0e8961fcb69d559",
+    "CLAUDE.md": "86154202dc5f0fcf12b1642f2bf08faaa9c0dcc2"
+  },
+  "discovered_at": "2026-11-09T08:50:40.361104+00:00",
+  "repo": "dataease/SQLBot"
+}

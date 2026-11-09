@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**222 tracked projects** | **26 curated** | **196 pending review**
+**227 tracked projects** | **26 curated** | **201 pending review**
 
-Last completed scan: [2026-11-08 08:16:31 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/42462189741).
+Last completed scan: [2026-11-09 08:50:42 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/42588825558).
 
-Latest content activity: **2026-11-08 08:16:31 UTC**.
+Latest content activity: **2026-11-09 08:50:42 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-09 08:50:42 | [ray-project/ray](https://github.com/ray-project/ray) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/283) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ray-project/ray) |
+| 2026-11-09 08:50:40 | [dataease/SQLBot](https://github.com/dataease/SQLBot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/282) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/dataease/sqlbot) |
+| 2026-11-09 08:50:38 | [Lodestone-Team/lodestone](https://github.com/Lodestone-Team/lodestone) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/281) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lodestone-team/lodestone) |
+| 2026-11-09 08:50:36 | [darlinghq/darling](https://github.com/darlinghq/darling) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/280) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/darlinghq/darling) |
+| 2026-11-09 08:50:34 | [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/279) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anthropics/claude-quickstarts) |
+| 2026-11-09 08:50:31 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-11-09 08:50:23 | [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/275) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ranxianglei/billion-context) |
 | 2026-11-08 08:16:31 | [dsx-ai-factory/nvke](https://github.com/dsx-ai-factory/nvke) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/276) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/dsx-ai-factory/nvke) |
-| 2026-11-08 08:16:28 | [ranxianglei/billion-context](https://github.com/ranxianglei/billion-context) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/275) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ranxianglei/billion-context) |
 | 2026-11-08 08:16:26 | [mbillow/localthings](https://github.com/mbillow/localthings) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/274) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mbillow/localthings) |
 | 2026-11-08 08:16:24 | [astral-sh/ruff](https://github.com/astral-sh/ruff) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/273) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/astral-sh/ruff) |
-| 2026-11-08 08:16:22 | [meta/astryx](https://github.com/meta/astryx) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/272) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/meta/astryx) |
-| 2026-11-07 07:58:38 | [microsoft/vscode](https://github.com/microsoft/vscode) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/271) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/microsoft/vscode) |
-| 2026-11-07 07:58:36 | [prometheus/prometheus](https://github.com/prometheus/prometheus) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/270) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/prometheus/prometheus) |
-| 2026-11-07 07:58:34 | [angular/angular](https://github.com/angular/angular) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/269) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/angular/angular) |
-| 2026-11-07 07:58:32 | [react/react](https://github.com/react/react) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/268) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/react/react) |
-| 2026-11-07 07:58:27 | [zed-industries/zed](https://github.com/zed-industries/zed) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/267) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/zed-industries/zed) |
 <!-- TASTE:LATEST:END -->
 
 ---
