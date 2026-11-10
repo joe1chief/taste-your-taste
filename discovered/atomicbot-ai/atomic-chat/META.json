@@ -1,0 +1,23 @@
+{
+  "stars": 1972,
+  "language": "TypeScript",
+  "description": "Local AI app and inference engine for agents. Run open-weight LLMs locally — private, 100% offline on your computer. Join our Discord: https://discord.com/invite/8wGSsvmg4V",
+  "url": "https://github.com/AtomicBot-ai/Atomic-Chat",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md — Atomic Chat",
+    "Operating instructions for AI coding agents in this repository.",
+    "Everything here applies to **every** task. Anything that applies only sometimes",
+    "lives behind a link — follow the link when the task needs it."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "12641030d5f56f2d8179edaf24281badcfadcfc8"
+  },
+  "discovered_at": "2026-11-10T08:56:30.906165+00:00",
+  "repo": "AtomicBot-ai/Atomic-Chat"
+}

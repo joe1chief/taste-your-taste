@@ -1,0 +1,25 @@
+{
+  "stars": 4086,
+  "language": "Python",
+  "description": "Open-source framework for the research and development of foundation models.",
+  "url": "https://github.com/marin-community/marin",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Agent Guidelines for Marin",
+    "Start with the shared practices below. Consult subproject manuals for directory-specific guidance:",
+    "`lib/levanter/AGENTS.md` — Levanter (JAX training library)",
+    "`lib/marin/AGENTS.md` — Marin (pipeline framework)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8f67472bdd68d31bbc14d79d2dd1899c1e40ef81",
+    "CLAUDE.md": "eef4bd20cf972fc2f3c7405fdae3fdcff80e59d4"
+  },
+  "discovered_at": "2026-11-10T08:56:33.073547+00:00",
+  "repo": "marin-community/marin"
+}

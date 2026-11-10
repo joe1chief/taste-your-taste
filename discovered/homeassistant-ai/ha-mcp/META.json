@@ -1,0 +1,25 @@
+{
+  "stars": 6239,
+  "language": "Python",
+  "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+  "url": "https://github.com/homeassistant-ai/ha-mcp",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Canonical agent guidance for HA-MCP.",
+    "Instruction structure",
+    "`AGENTS.md` is the canonical source. `CLAUDE.md` is a symlink to it; edit `AGENTS.md` only."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ac160d0890d5ae9ca66cef88833ad1fa629d5d47",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-10T08:56:28.880073+00:00",
+  "repo": "homeassistant-ai/ha-mcp"
+}

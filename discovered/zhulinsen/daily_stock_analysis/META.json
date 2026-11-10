@@ -1,0 +1,27 @@
+{
+  "stars": 69348,
+  "language": "Python",
+  "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+  "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "AGENTS.md",
+    "本文件用于约束本仓库的默认开发流程，目标是减少重复沟通、减少返工，并让改动和当前项目结构保持一致。",
+    "如果本文件与仓库中的脚本、工作流、代码现状不一致，以实际可执行内容为准，并在相关改动中顺手修正文档，避免规则继续漂移。",
+    "遵循现有目录边界："
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6c90718d4aec85e4763f009ce46dc4f654cd16e2",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+    "SKILL.md": "405e9fb25389c5044c32f712fb76fe7ede4bfca8"
+  },
+  "discovered_at": "2026-11-10T08:56:26.525594+00:00",
+  "repo": "ZhuLinsen/daily_stock_analysis"
+}

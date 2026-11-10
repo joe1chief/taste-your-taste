@@ -1,0 +1,25 @@
+{
+  "stars": 32352,
+  "language": "TypeScript",
+  "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+  "url": "https://github.com/garrytan/gbrain",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agents working on GBrain",
+    "This is your install + operating protocol. Claude Code reads `./CLAUDE.md` automatically.",
+    "Everyone else (Codex, Cursor, OpenClaw, Aider, Continue, or an LLM fetching via URL):",
+    "start here."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b782a3c6aa40a2b37bb11b2bc4a05456fac6473b",
+    "CLAUDE.md": "7751dfc9e817d67b43160943e6003b3f376a23d0"
+  },
+  "discovered_at": "2026-11-10T08:56:23.870383+00:00",
+  "repo": "garrytan/gbrain"
+}

@@ -1427,7 +1427,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "29ff06ccf8f005e9df37368aad3076b6524089c9",
+      "AGENTS.md": "6dc38f94b807d6e87abf22409263f58a61a4e165",
       "CLAUDE.md": "894bdde5391a6e3369bb0d5403ff9a51f6675397"
     },
     "source": "trending",
@@ -1436,7 +1436,17 @@
     "discovered_at": "2026-10-08T08:09:36.737716+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/52",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "29ff06ccf8f005e9df37368aad3076b6524089c9",
+        "new_sha": "6dc38f94b807d6e87abf22409263f58a61a4e165",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-10T08:56:21.829274+00:00"
+      }
+    ]
   },
   "modular/modular": {
     "stars": 29933,
@@ -2945,7 +2955,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "ddde57ff59e364a2d759be9fe33fa9ad00e3eede"
+      "CLAUDE.md": "a0326ce72fd474938a153527e42ac809cb739a91"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -2962,6 +2972,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated CLAUDE.md instructions.",
         "timestamp": "2026-10-31T07:42:42.384691+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "ddde57ff59e364a2d759be9fe33fa9ad00e3eede",
+        "new_sha": "a0326ce72fd474938a153527e42ac809cb739a91",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-10T08:56:17.963744+00:00"
       }
     ]
   },
@@ -4211,7 +4229,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "8a7d54e19f22a501c8598ca33774e5d15261cb2a"
+      "AGENTS.md": "ee5b95591d2af2f96c1292e0ff890eac9a2bbe8d"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4219,7 +4237,17 @@
     "discovered_at": "2026-11-03T08:49:19.694856+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/240",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8a7d54e19f22a501c8598ca33774e5d15261cb2a",
+        "new_sha": "ee5b95591d2af2f96c1292e0ff890eac9a2bbe8d",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-10T08:56:11.147243+00:00"
+      }
+    ]
   },
   "eatmoreduck/boss-zhipin-scraper": {
     "stars": 1690,
@@ -4652,7 +4680,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "89f0960fe2308f718ec4d557bde12e4b8725f631",
+      "AGENTS.md": "0e894098f06b802aaafa2f6102790d154f10c0bd",
       "CLAUDE.md": "65bc7681b0eaff166889df7319c75558e77e4961"
     },
     "source": "trending",
@@ -4661,7 +4689,17 @@
     "discovered_at": "2026-11-08T08:16:22.460614+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/272",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "89f0960fe2308f718ec4d557bde12e4b8725f631",
+        "new_sha": "0e894098f06b802aaafa2f6102790d154f10c0bd",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-10T08:55:58.645091+00:00"
+      }
+    ]
   },
   "astral-sh/ruff": {
     "stars": 51049,
@@ -4842,6 +4880,106 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-09T08:50:42.704196+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/283",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "garrytan/gbrain": {
+    "stars": 32352,
+    "language": "TypeScript",
+    "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b782a3c6aa40a2b37bb11b2bc4a05456fac6473b",
+      "CLAUDE.md": "7751dfc9e817d67b43160943e6003b3f376a23d0"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-10T08:56:24.492617+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/288",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ZhuLinsen/daily_stock_analysis": {
+    "stars": 69348,
+    "language": "Python",
+    "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6c90718d4aec85e4763f009ce46dc4f654cd16e2",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
+      "SKILL.md": "405e9fb25389c5044c32f712fb76fe7ede4bfca8"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-10T08:56:27.085345+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/289",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "homeassistant-ai/ha-mcp": {
+    "stars": 6239,
+    "language": "Python",
+    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ac160d0890d5ae9ca66cef88833ad1fa629d5d47",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-10T08:56:29.452914+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/290",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "AtomicBot-ai/Atomic-Chat": {
+    "stars": 1972,
+    "language": "TypeScript",
+    "description": "Local AI app and inference engine for agents. Run open-weight LLMs locally — private, 100% offline on your computer. Join our Discord: https://discord.com/invite/8wGSsvmg4V",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "12641030d5f56f2d8179edaf24281badcfadcfc8"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-10T08:56:31.402597+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/291",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "marin-community/marin": {
+    "stars": 4086,
+    "language": "Python",
+    "description": "Open-source framework for the research and development of foundation models.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8f67472bdd68d31bbc14d79d2dd1899c1e40ef81",
+      "CLAUDE.md": "eef4bd20cf972fc2f3c7405fdae3fdcff80e59d4"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-10T08:56:33.606927+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/292",
     "pr_url": null,
     "status": "pending_review"
   }
