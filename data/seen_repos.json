@@ -827,7 +827,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "be566b9822055bd92d47f84755525ecad56147ca",
+      "AGENTS.md": "87f21a8a0a2f69195f9612adee90e21841b48231",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -877,6 +877,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-03T08:48:29.598353+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "be566b9822055bd92d47f84755525ecad56147ca",
+        "new_sha": "87f21a8a0a2f69195f9612adee90e21841b48231",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-11T08:37:05.093379+00:00"
       }
     ]
   },
@@ -1244,7 +1252,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "b701e8d65d52e5f02db2e3041bac5b4c06755c0d"
+      "AGENTS.md": "2af483be32f38eec95e7abe5cf2f65c6bc9c464f"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1325,6 +1333,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-30T07:52:38.250352+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "b701e8d65d52e5f02db2e3041bac5b4c06755c0d",
+        "new_sha": "2af483be32f38eec95e7abe5cf2f65c6bc9c464f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-11T08:37:07.919433+00:00"
       }
     ]
   },
@@ -4680,7 +4696,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "0e894098f06b802aaafa2f6102790d154f10c0bd",
+      "AGENTS.md": "98353884990d0436548e4fa2b2f944cc127a32a3",
       "CLAUDE.md": "65bc7681b0eaff166889df7319c75558e77e4961"
     },
     "source": "trending",
@@ -4698,6 +4714,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-10T08:55:58.645091+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "0e894098f06b802aaafa2f6102790d154f10c0bd",
+        "new_sha": "98353884990d0436548e4fa2b2f944cc127a32a3",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-11T08:36:55.492778+00:00"
       }
     ]
   },
@@ -4980,6 +5004,104 @@
     "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
     "discovered_at": "2026-11-10T08:56:33.606927+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/292",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "we-promise/sure": {
+    "stars": 12329,
+    "language": "Ruby",
+    "description": "The personal finance app for everyone (by everyone)",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f83a670eeb676d29a3d5bf26eeb7c0d16b2068f1",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-11T08:37:22.783840+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/296",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "tokio-rs/topcoat": {
+    "stars": 7000,
+    "language": "Rust",
+    "description": "A batteries-included framework for building web apps",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f545d58296845039230523b51e906347719e67d9",
+      "CLAUDE.md": "55bf822df991111924389294c8fd4c6583bd7449"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-11T08:37:24.913853+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/297",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Tencent/AI-Infra-Guard": {
+    "stars": 7463,
+    "language": "Python",
+    "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "bbbba87b205dd92e4bd7439eda737316a7bb3381",
+      "CLAUDE.md": "94f32668e8a81e230fcc6670798226cc5a85239a"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-11T08:37:27.158738+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/298",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "anomalyco/rune": {
+    "stars": 6426,
+    "language": "Rust",
+    "description": "Rune: Native UI framework",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "26be6d90dd1f2cdb7ad015936bb8c337587d0b65",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-11T08:37:29.276268+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/299",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Akkudoktor-EOS/EOS": {
+    "stars": 1728,
+    "language": "Python",
+    "description": "This repository features an Energy Optimization System (EOS) that optimizes energy distribution, usage for batteries, heat pumps& household devices. It includes predictive models for electricity prices (planned), load forecasting& dynamic optimization to maximize energy efficiency & minimize costs. Founder Dr. Andreas Schmitz (YouTube @akkudoktor)",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e74f31eb91da2ae48aefd407486dc65429022e33"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-11T08:37:31.601106+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/300",
     "pr_url": null,
     "status": "pending_review"
   }

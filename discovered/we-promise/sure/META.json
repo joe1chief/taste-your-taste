@@ -1,0 +1,25 @@
+{
+  "stars": 12329,
+  "language": "Ruby",
+  "description": "The personal finance app for everyone (by everyone)",
+  "url": "https://github.com/we-promise/sure",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository guidance",
+    "Working in the repository",
+    "Read [architecture and conventions](docs/llm-guides/architecture.md) before changing code, and the relevant [task guides](docs/llm-guides/README.md).",
+    "Rails code lives in `app/`; keep business logic in models, concerns and POROs, with thin controllers. JavaScript is in `app/javascript/`, components in `app/components/`, assets in `app/assets/`, and configuration in `config/`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f83a670eeb676d29a3d5bf26eeb7c0d16b2068f1",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-11T08:37:22.105861+00:00",
+  "repo": "we-promise/sure"
+}

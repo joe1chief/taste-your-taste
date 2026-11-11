@@ -1,0 +1,25 @@
+{
+  "stars": 7000,
+  "language": "Rust",
+  "description": "A batteries-included framework for building web apps",
+  "url": "https://github.com/tokio-rs/topcoat",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Agent instructions",
+    "Read [`llms.txt`](llms.txt) for Topcoat's APIs and application conventions. Consult the relevant linked guide before changing a feature, and update `llms.txt` when its guidance is affected.",
+    "Unsafe code is not allowed.",
+    "Macro-body formatters live behind each grammar crate's `pretty` feature and are used by `topcoat fmt`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f545d58296845039230523b51e906347719e67d9",
+    "CLAUDE.md": "55bf822df991111924389294c8fd4c6583bd7449"
+  },
+  "discovered_at": "2026-11-11T08:37:24.342740+00:00",
+  "repo": "tokio-rs/topcoat"
+}

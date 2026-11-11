@@ -1,0 +1,23 @@
+{
+  "stars": 1728,
+  "language": "Python",
+  "description": "This repository features an Energy Optimization System (EOS) that optimizes energy distribution, usage for batteries, heat pumps& household devices. It includes predictive models for electricity prices (planned), load forecasting& dynamic optimization to maximize energy efficiency & minimize costs. Founder Dr. Andreas Schmitz (YouTube @akkudoktor)",
+  "url": "https://github.com/Akkudoktor-EOS/EOS",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md — Akkudoktor-EOS",
+    "Akkudoktor-EOS is a Python-based energy management and optimization system. It",
+    "provides energy forecasts, optimization, energy management plans, and",
+    "integrations with local energy devices and controllers."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e74f31eb91da2ae48aefd407486dc65429022e33"
+  },
+  "discovered_at": "2026-11-11T08:37:30.800103+00:00",
+  "repo": "Akkudoktor-EOS/EOS"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 6426,
+  "language": "Rust",
+  "description": "Rune: Native UI framework",
+  "url": "https://github.com/anomalyco/rune",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "<!-- tallow -->",
+    "A Rust GPU UI framework (wgpu, winit) for apps that feel like SwiftUI on iOS at 120 Hz on Mac, Windows, Linux, web and iOS. Views are plain Rust. Apps pin `dev` revs.",
+    "`crates/rune`: layout, runtime, renderer, windows, overlays, dev tooling. `crates/rune-kit`: components. `crates/rune-mermaid`: Mermaid diagrams (flowcharts, sequence and state diagrams). `crates/rune-i18n`: message catalogs generated from JSON, CLDR plurals and numbers, the system's languages. `crates/rune-motion`: springs and transitions. `crates/rune-fx`, `crates/rune-light`: effects. `crates/rune-ref`: reference renderer. `crates/procwatch`: an app's own memory and CPU (footprint, counting allocator, gauges, warnings, loopback JSON); libc only, no Rune dependency.",
+    "`examples/`: apps and labs. `themes/`: themes. `site/`: the docs site (see `site/README.md`)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "26be6d90dd1f2cdb7ad015936bb8c337587d0b65",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-11T08:37:28.703205+00:00",
+  "repo": "anomalyco/rune"
+}

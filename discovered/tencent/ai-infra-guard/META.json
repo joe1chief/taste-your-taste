@@ -1,0 +1,25 @@
+{
+  "stars": 7463,
+  "language": "Python",
+  "description": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
+  "url": "https://github.com/Tencent/AI-Infra-Guard",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "AI-Infra-Guard 是一个混合技术栈的 AI 安全扫描平台，核心由以下部分组成：",
+    "Go 主应用（Web 服务、CLI、任务管理、规则引擎）",
+    "Python 子模块（`mcp-scan`、`agent-scan`、`AIG-PromptSecurity`）"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "bbbba87b205dd92e4bd7439eda737316a7bb3381",
+    "CLAUDE.md": "94f32668e8a81e230fcc6670798226cc5a85239a"
+  },
+  "discovered_at": "2026-11-11T08:37:26.584391+00:00",
+  "repo": "Tencent/AI-Infra-Guard"
+}
