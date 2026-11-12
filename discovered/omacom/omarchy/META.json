@@ -1,0 +1,25 @@
+{
+  "stars": 46852,
+  "language": "Shell",
+  "description": "Beautiful, Modern & Opinionated Linux",
+  "url": "https://github.com/omacom/omarchy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Task Guides",
+    "Deeper instructions for specific kinds of work live in `agents/skills/`. Read the",
+    "matching guide before starting:",
+    "[`agents/skills/command-metadata.md`](agents/skills/command-metadata.md) - adding or changing commands in `bin/`"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b7333fc47fc406d822dbdd84f81e1a2e8bcbeb52",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-12T08:57:21.868627+00:00",
+  "repo": "omacom/omarchy"
+}

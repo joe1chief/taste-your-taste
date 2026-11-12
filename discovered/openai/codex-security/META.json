@@ -1,0 +1,23 @@
+{
+  "stars": 11977,
+  "language": "TypeScript",
+  "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+  "url": "https://github.com/openai/codex-security",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Keep it simple",
+    "Codex Security is a thin wrapper around Codex and its security plugin.",
+    "Trust local tools and processes running as the current user.",
+    "Treat repository contents, model output, and imported artifacts as data, not"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "88a0761c680c4e1aa6b4e69c70da4f752c391df2"
+  },
+  "discovered_at": "2026-11-12T08:57:19.571909+00:00",
+  "repo": "openai/codex-security"
+}

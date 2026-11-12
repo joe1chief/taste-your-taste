@@ -297,7 +297,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "6eedd536b6f5145d5d158a48415a8c0e1cd8db7e"
+      "AGENTS.md": "cd5ecef4ba045300693cbbb9290fa6767a7e7e9f"
     },
     "evolution_history": [
       {
@@ -339,6 +339,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-31T07:42:37.006768+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6eedd536b6f5145d5d158a48415a8c0e1cd8db7e",
+        "new_sha": "cd5ecef4ba045300693cbbb9290fa6767a7e7e9f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-12T08:57:11.896731+00:00"
       }
     ]
   },
@@ -445,8 +453,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9f2c4245734f0e1751246aea11d092fd4508e429",
-      "CLAUDE.md": "a7c5ef381a4b9b918dd681e3c933ea5282b890e3"
+      "AGENTS.md": "b1b1b6762eda0db68c68d3c47543b4cde02e4ab6",
+      "CLAUDE.md": "479404431e263b103c143e628b554e57faf1e526"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -463,6 +471,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated CLAUDE.md instructions.",
         "timestamp": "2026-10-03T07:16:21.164338+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9f2c4245734f0e1751246aea11d092fd4508e429",
+        "new_sha": "b1b1b6762eda0db68c68d3c47543b4cde02e4ab6",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-12T08:57:08.251331+00:00"
       }
     ]
   },
@@ -827,7 +843,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "87f21a8a0a2f69195f9612adee90e21841b48231",
+      "AGENTS.md": "9073e293deba2b18db2f519156b35500bbf0cc83",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -885,6 +901,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-11T08:37:05.093379+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "87f21a8a0a2f69195f9612adee90e21841b48231",
+        "new_sha": "9073e293deba2b18db2f519156b35500bbf0cc83",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-12T08:57:04.646695+00:00"
       }
     ]
   },
@@ -3178,7 +3202,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9b56ac4aa78f3e78fb721d9f8310746a8ceb9dd5",
+      "AGENTS.md": "6cd92ce632cfc225217a4b6895d32a10fda4c98d",
       "CLAUDE.md": "abed7dc1c45eb8842bedc3262321c9d1ef55e72d"
     },
     "source": "popular_stars",
@@ -3187,7 +3211,17 @@
     "discovered_at": "2026-10-24T06:40:18.195546+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/164",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9b56ac4aa78f3e78fb721d9f8310746a8ceb9dd5",
+        "new_sha": "6cd92ce632cfc225217a4b6895d32a10fda4c98d",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-12T08:57:14.683352+00:00"
+      }
+    ]
   },
   "google/gvisor": {
     "stars": 19764,
@@ -4958,7 +4992,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ac160d0890d5ae9ca66cef88833ad1fa629d5d47",
+      "AGENTS.md": "13b6c5b1a5951c42437118681a6f57b9f15ab7bc",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
     },
     "source": "trending",
@@ -4967,7 +5001,17 @@
     "discovered_at": "2026-11-10T08:56:29.452914+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/290",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ac160d0890d5ae9ca66cef88833ad1fa629d5d47",
+        "new_sha": "13b6c5b1a5951c42437118681a6f57b9f15ab7bc",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-12T08:57:00.993063+00:00"
+      }
+    ]
   },
   "AtomicBot-ai/Atomic-Chat": {
     "stars": 1972,
@@ -5102,6 +5146,102 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-11T08:37:31.601106+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/300",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "GoogleChrome/modern-web-guidance-src": {
+    "stars": 2072,
+    "language": "TypeScript",
+    "description": "No description provided.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ceca88ef31a81c7e217b59b46cc4747b3dbf0e9d"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-12T08:57:18.349958+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/306",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "openai/codex-security": {
+    "stars": 11977,
+    "language": "TypeScript",
+    "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "88a0761c680c4e1aa6b4e69c70da4f752c391df2"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-12T08:57:20.146640+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/307",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "omacom/omarchy": {
+    "stars": 46852,
+    "language": "Shell",
+    "description": "Beautiful, Modern & Opinionated Linux",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b7333fc47fc406d822dbdd84f81e1a2e8bcbeb52",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-12T08:57:22.520870+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/308",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "DIYgod/pinky": {
+    "stars": 1927,
+    "language": "Go",
+    "description": "Let AI agents use your phone, with you in the loop.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "b901984c191351ca63ed0273f94ba3e7c7dfcee2"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-12T08:57:24.433927+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/309",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "OneUptime/oneuptime": {
+    "stars": 7814,
+    "language": "TypeScript",
+    "description": "Complete open-source monitoring and observability platform.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "6c02a8ef4eb3d4b3edbc1676fbc72fbbafdae6a3",
+      "CLAUDE.md": "b90041e3ef5c2c4013fc00ff538e6ca7db78e2b1"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-12T08:57:26.646710+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/310",
     "pr_url": null,
     "status": "pending_review"
   }

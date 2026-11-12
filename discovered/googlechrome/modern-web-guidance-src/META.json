@@ -1,0 +1,23 @@
+{
+  "stars": 2072,
+  "language": "TypeScript",
+  "description": "No description provided.",
+  "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "AGENTS.md",
+    "This repository authors **Modern Web Guidance** for web platform features (`guides/`), standalone skills (`skills-src/`), and the evaluation harness (`src/`). Because `guide.md` is the **only** file retrieved by external coding agents at runtime (`demo.html`, `expectations.md`, and `targets/` are used within this repo for validation and evaluation), all guidance must be self-contained, deterministic, and command-oriented.",
+    "Required Project Skills (Single Source of Truth)",
+    "Always read and follow `.agents/skills/<skill>/SKILL.md` before starting a task:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ceca88ef31a81c7e217b59b46cc4747b3dbf0e9d"
+  },
+  "discovered_at": "2026-11-12T08:57:17.852546+00:00",
+  "repo": "GoogleChrome/modern-web-guidance-src"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 7814,
+  "language": "TypeScript",
+  "description": "Complete open-source monitoring and observability platform.",
+  "url": "https://github.com/OneUptime/oneuptime",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "This is a local development server hosted at HOST env variable (please read config.env file). This project is hosted on docker compose for local development. When you make any changes to the codebase the container hot-reloads. Please make sure you wait for it to restart to test. If you need access to the database during development, credentials are in config.env file.",
+    "Things to keep in mind while developing:",
+    "Do not worry about circular dependencies. All the import should be on the top of the file.",
+    "Keep OneUptime simple to use"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "6c02a8ef4eb3d4b3edbc1676fbc72fbbafdae6a3",
+    "CLAUDE.md": "b90041e3ef5c2c4013fc00ff538e6ca7db78e2b1"
+  },
+  "discovered_at": "2026-11-12T08:57:26.202600+00:00",
+  "repo": "OneUptime/oneuptime"
+}

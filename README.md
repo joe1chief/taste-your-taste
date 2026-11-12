@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**237 tracked projects** | **26 curated** | **211 pending review**
+**242 tracked projects** | **26 curated** | **216 pending review**
 
-Last completed scan: [2026-11-11 08:37:31 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/42988423450).
+Last completed scan: [2026-11-12 08:57:26 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/43187130174).
 
-Latest content activity: **2026-11-11 08:37:31 UTC**.
+Latest content activity: **2026-11-12 08:57:26 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026-11-11 08:37:31 | [Akkudoktor-EOS/EOS](https://github.com/Akkudoktor-EOS/EOS) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/300) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/akkudoktor-eos/eos) |
-| 2026-11-11 08:37:29 | [anomalyco/rune](https://github.com/anomalyco/rune) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/299) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/rune) |
-| 2026-11-11 08:37:27 | [Tencent/AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/298) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tencent/ai-infra-guard) |
-| 2026-11-11 08:37:24 | [tokio-rs/topcoat](https://github.com/tokio-rs/topcoat) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/297) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tokio-rs/topcoat) |
-| 2026-11-11 08:37:22 | [we-promise/sure](https://github.com/we-promise/sure) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/296) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/we-promise/sure) |
-| 2026-11-11 08:37:07 | [morluto/rea](https://github.com/morluto/rea) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/45) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea) |
-| 2026-11-11 08:37:05 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
-| 2026-11-11 08:36:55 | [meta/astryx](https://github.com/meta/astryx) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/272) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/meta/astryx) |
-| 2026-11-10 08:56:33 | [marin-community/marin](https://github.com/marin-community/marin) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/292) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/marin-community/marin) |
-| 2026-11-10 08:56:31 | [AtomicBot-ai/Atomic-Chat](https://github.com/AtomicBot-ai/Atomic-Chat) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/291) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/atomicbot-ai/atomic-chat) |
+| 2026-11-12 08:57:26 | [OneUptime/oneuptime](https://github.com/OneUptime/oneuptime) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/310) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/oneuptime/oneuptime) |
+| 2026-11-12 08:57:24 | [DIYgod/pinky](https://github.com/DIYgod/pinky) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/309) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/diygod/pinky) |
+| 2026-11-12 08:57:22 | [omacom/omarchy](https://github.com/omacom/omarchy) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/308) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/omacom/omarchy) |
+| 2026-11-12 08:57:20 | [openai/codex-security](https://github.com/openai/codex-security) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/307) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openai/codex-security) |
+| 2026-11-12 08:57:18 | [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/306) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/googlechrome/modern-web-guidance-src) |
+| 2026-11-12 08:57:14 | [yetone/magpie](https://github.com/yetone/magpie) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/164) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/yetone/magpie) |
+| 2026-11-12 08:57:11 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
+| 2026-11-12 08:57:08 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/3) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/heygen-com/hyperframes) |
+| 2026-11-12 08:57:04 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
+| 2026-11-12 08:57:00 | [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/290) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/homeassistant-ai/ha-mcp) |
 <!-- TASTE:LATEST:END -->
 
 ---
