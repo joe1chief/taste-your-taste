@@ -1,0 +1,25 @@
+{
+  "stars": 16056,
+  "language": "Rust",
+  "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+  "url": "https://github.com/tangency-labs/solidcraft",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "SolidCraft: instructions for agents",
+    "SolidCraft is a clean-room, pure-Rust parametric 3D CAD app (sketch solver, feature timeline, B-rep kernel, an egui UI that agents drive). This file is a router: the hard rules, then the skill to read for your task. Humans: CONTRIBUTING.md.",
+    "Start here",
+    "Work: ROADMAP.md, \"Where help is wanted most\" in CONTRIBUTING.md, issues labelled `help wanted`, `good first issue`, `needs-triage`; architecture in `docs/architecture.md`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8e584873ee43cd107f9defc6d75a33ad3e9cb970",
+    "CLAUDE.md": "de94a199008955c4d56ea58d0e5f90728cec8b3d"
+  },
+  "discovered_at": "2026-11-13T08:53:27.692838+00:00",
+  "repo": "tangency-labs/solidcraft"
+}

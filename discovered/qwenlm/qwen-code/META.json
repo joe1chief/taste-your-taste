@@ -1,0 +1,25 @@
+{
+  "stars": 30034,
+  "language": "TypeScript",
+  "description": "An open-source AI coding agent that lives in your terminal.",
+  "url": "https://github.com/QwenLM/qwen-code",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Working Principles",
+    "Simplicity First",
+    "Minimum code that solves the problem. Nothing speculative."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "47629a4dd901201e4afe260d3eaf57f55c4c894d",
+    "CLAUDE.md": "0b19a1ea3f3c3515dca743a4338264574e167d8b"
+  },
+  "discovered_at": "2026-11-13T08:53:21.683540+00:00",
+  "repo": "QwenLM/qwen-code"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 12653,
+  "language": "TypeScript",
+  "description": "The JavaScript and API powered WordPress.com",
+  "url": "https://github.com/Automattic/wp-calypso",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Confidentiality",
+    "CRITICAL: This is a **public repository**. Never put an internal link or hostname in a PR description, review comment, commit message, code comment, or any other public-facing text: no wordpress.com URLs (internal sites and P2s), no Slack, Linear, HackerOne, private GitHub repository, or GitHub Enterprise URLs, and no other internal tool URLs. Use shortlinks instead: `PCYsg-hS-p2` for a P2 post, `p<message>-slack-<channel>` for a Slack message (`p<message>/<thread>-slack-<channel>` for a reply in a thread), and the bare issue key (`LIN-123`) for Linear.",
+    "Repository layout"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1fc16d960737436af2cf38991201ecaa465df8e4",
+    "CLAUDE.md": "ae6716cd4b629f2f0183eaea406b7e0a4eaac8c1"
+  },
+  "discovered_at": "2026-11-13T08:53:29.753471+00:00",
+  "repo": "Automattic/wp-calypso"
+}

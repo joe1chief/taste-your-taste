@@ -1946,8 +1946,8 @@
       "skills/AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "4c4ce5c04528945b372af20f4e86970d40a6db6e",
-      "skills/AGENTS.md": "7e71a19a4022acac42e5be5ed305489e91eb32bd"
+      "AGENTS.md": "d408c3b100b5bcd82a967cdb9c23019a845e65a8",
+      "skills/AGENTS.md": "3b6568dd32611076c0934eb3c025f20987c79991"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1955,7 +1955,17 @@
     "discovered_at": "2026-10-12T08:16:33.677640+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/78",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "4c4ce5c04528945b372af20f4e86970d40a6db6e",
+        "new_sha": "d408c3b100b5bcd82a967cdb9c23019a845e65a8",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-13T08:53:10.283785+00:00"
+      }
+    ]
   },
   "NVIDIA/cccl": {
     "stars": 2534,
@@ -5242,6 +5252,104 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-12T08:57:26.646710+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/310",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "QwenLM/qwen-code": {
+    "stars": 30034,
+    "language": "TypeScript",
+    "description": "An open-source AI coding agent that lives in your terminal.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "47629a4dd901201e4afe260d3eaf57f55c4c894d",
+      "CLAUDE.md": "0b19a1ea3f3c3515dca743a4338264574e167d8b"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-13T08:53:22.135873+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/312",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ashhart/TensorFold": {
+    "stars": 2031,
+    "language": "Zig",
+    "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "86907196faadafd37ee0d8c390aacf555dc3c02e"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-13T08:53:23.910054+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/313",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "kortix-ai/CompanyOS": {
+    "stars": 20676,
+    "language": "TypeScript",
+    "description": "Kortix CompanyOS – the open-source operating system for your company. Multiplayer AI agents, your company as code, sovereign on your infrastructure or ours.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9a82321be1b0bb7b138904ed0bf2de93e24d1d8b",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-13T08:53:26.301130+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/314",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "tangency-labs/solidcraft": {
+    "stars": 16056,
+    "language": "Rust",
+    "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8e584873ee43cd107f9defc6d75a33ad3e9cb970",
+      "CLAUDE.md": "de94a199008955c4d56ea58d0e5f90728cec8b3d"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-13T08:53:28.178090+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/315",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Automattic/wp-calypso": {
+    "stars": 12653,
+    "language": "TypeScript",
+    "description": "The JavaScript and API powered WordPress.com",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "1fc16d960737436af2cf38991201ecaa465df8e4",
+      "CLAUDE.md": "ae6716cd4b629f2f0183eaea406b7e0a4eaac8c1"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-13T08:53:30.235863+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/316",
     "pr_url": null,
     "status": "pending_review"
   }

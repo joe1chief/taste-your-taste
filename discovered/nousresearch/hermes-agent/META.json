@@ -17,8 +17,8 @@
     "skills/AGENTS.md"
   ],
   "file_shas": {
-    "AGENTS.md": "4c4ce5c04528945b372af20f4e86970d40a6db6e",
-    "skills/AGENTS.md": "7e71a19a4022acac42e5be5ed305489e91eb32bd"
+    "AGENTS.md": "d408c3b100b5bcd82a967cdb9c23019a845e65a8",
+    "skills/AGENTS.md": "3b6568dd32611076c0934eb3c025f20987c79991"
   },
   "discovered_at": "2026-10-12T08:16:33.187934+00:00",
   "repo": "NousResearch/hermes-agent"

@@ -1,0 +1,25 @@
+{
+  "stars": 20676,
+  "language": "TypeScript",
+  "description": "Kortix CompanyOS – the open-source operating system for your company. Multiplayer AI agents, your company as code, sovereign on your infrastructure or ours.",
+  "url": "https://github.com/kortix-ai/CompanyOS",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Kortix project",
+    "What \"ownership\" means",
+    "The words \"can you own this?\", \"are you on it?\", and \"can you take care of this?\"",
+    "all mean the same thing: you are 100% responsible. The person who handed it to"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9a82321be1b0bb7b138904ed0bf2de93e24d1d8b",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-13T08:53:25.632561+00:00",
+  "repo": "kortix-ai/CompanyOS"
+}
