@@ -1,0 +1,25 @@
+{
+  "stars": 10590,
+  "language": "TypeScript",
+  "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
+  "url": "https://github.com/backnotprop/plannotator",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Plannotator agent guidance",
+    "Plannotator is a plan review UI for Claude Code that intercepts `ExitPlanMode` via hooks, letting users approve or request changes with annotated feedback. It also provides code review for git diffs and annotation of arbitrary Markdown files.",
+    "This file is a map. The full guidance lives in focused guides under [`docs/agent-guides/`](docs/agent-guides/). Read the hard rules below, then the guide for the code or behavior you are changing. `CLAUDE.md` is a symlink to this file; `packages/ui/AGENTS.md` adds guidance scoped to `packages/ui/`.",
+    "Hard rules (read before touching anything)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "91724826994c55db1c51b64a2d585bc076e73644",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-14T08:17:15.732251+00:00",
+  "repo": "backnotprop/plannotator"
+}

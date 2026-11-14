@@ -1,0 +1,25 @@
+{
+  "stars": 93976,
+  "language": "JavaScript",
+  "description": "A fancy self-hosted monitoring tool",
+  "url": "https://github.com/louislam/uptime-kuma",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Consequences of AI Slop",
+    "In your GitHub profile, there will be a pull request with title \"[🚨⚠️AI Slop⚠️🚨] WARNING: THIS GUY CREATED AI SLOP, DO NOT TRUST! \", and you will not able to remove it!",
+    "BANNED to access our GitHUB repos",
+    "If you don't want to, please read the following instructions carefully."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8f4d85a9708e8512c33209cfdacb87b57f7616be",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-14T08:17:17.693083+00:00",
+  "repo": "louislam/uptime-kuma"
+}

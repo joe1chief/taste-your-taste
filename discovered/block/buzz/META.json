@@ -1,0 +1,25 @@
+{
+  "stars": 37372,
+  "language": "Rust",
+  "description": "A hive mind communication platform",
+  "url": "https://github.com/block/buzz",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md — AI Agent Contributor Guide",
+    "This guide is for AI agents contributing to the Buzz codebase. It covers",
+    "agent-specific context and conventions. For general contributor info (setup,",
+    "code style, PR process, architecture), see [CONTRIBUTING.md](CONTRIBUTING.md)."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "feb4104134dbc3787a25832f7d415b09286383c5",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-14T08:17:19.884624+00:00",
+  "repo": "block/buzz"
+}

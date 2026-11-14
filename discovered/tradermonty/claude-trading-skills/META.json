@@ -1,0 +1,23 @@
+{
+  "stars": 4333,
+  "language": "Python",
+  "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+  "url": "https://github.com/tradermonty/claude-trading-skills",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "Repository Purpose",
+    "This repository contains Claude Skills for equity investors and traders. Each skill packages domain-specific prompts, knowledge bases, and helper scripts to assist with market analysis, technical charting, economic calendar monitoring, and trading strategy development. Skills are designed to work in both Claude's web app and Claude Code environments."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "51fd7b8ec8a5fd533279e4b6cc183f3e704e153e"
+  },
+  "discovered_at": "2026-11-14T08:17:21.649437+00:00",
+  "repo": "tradermonty/claude-trading-skills"
+}
