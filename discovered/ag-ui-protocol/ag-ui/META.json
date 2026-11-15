@@ -1,0 +1,25 @@
+{
+  "stars": 17484,
+  "language": "TypeScript",
+  "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+  "url": "https://github.com/ag-ui-protocol/ag-ui",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "<!-- nx configuration start-->",
+    "<!-- Leave the start & end comments to automatically receive updates. -->",
+    "General Guidelines for working with Nx",
+    "For requests to add A2UI rendering to AG-UI applications or to scaffold an"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a786d3f662c0e7395ef7e721debf88cdfa2abb70",
+    "CLAUDE.md": "2fe0d66356b2b531170b8c97f0fa150cb440dff2"
+  },
+  "discovered_at": "2026-11-15T08:37:14.915859+00:00",
+  "repo": "ag-ui-protocol/ag-ui"
+}

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**252 tracked projects** | **26 curated** | **226 pending review**
+**257 tracked projects** | **26 curated** | **231 pending review**
 
-Last completed scan: [2026-11-14 08:17:24 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/43575065442).
+Last completed scan: [2026-11-15 08:37:22 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/43695303779).
 
-Latest content activity: **2026-11-14 08:17:24 UTC**.
+Latest content activity: **2026-11-15 08:37:22 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026-11-14 08:17:24 | [Likely7/Veyra-NRVideo](https://github.com/Likely7/Veyra-NRVideo) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/322) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/likely7/veyra-nrvideo) |
-| 2026-11-14 08:17:22 | [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/321) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tradermonty/claude-trading-skills) |
-| 2026-11-14 08:17:20 | [block/buzz](https://github.com/block/buzz) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/320) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/block/buzz) |
-| 2026-11-14 08:17:18 | [louislam/uptime-kuma](https://github.com/louislam/uptime-kuma) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/319) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/louislam/uptime-kuma) |
-| 2026-11-14 08:17:16 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/318) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/backnotprop/plannotator) |
-| 2026-11-14 08:17:10 | [GoogleChrome/modern-web-guidance-src](https://github.com/GoogleChrome/modern-web-guidance-src) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/306) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/googlechrome/modern-web-guidance-src) |
-| 2026-11-13 08:53:30 | [Automattic/wp-calypso](https://github.com/Automattic/wp-calypso) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/316) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/automattic/wp-calypso) |
-| 2026-11-13 08:53:28 | [tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/315) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tangency-labs/solidcraft) |
-| 2026-11-13 08:53:26 | [kortix-ai/CompanyOS](https://github.com/kortix-ai/CompanyOS) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/314) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kortix-ai/companyos) |
-| 2026-11-13 08:53:23 | [ashhart/TensorFold](https://github.com/ashhart/TensorFold) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/313) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ashhart/tensorfold) |
+| 2026-11-15 08:37:22 | [nexu-io/openmotion](https://github.com/nexu-io/openmotion) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/334) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion) |
+| 2026-11-15 08:37:19 | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/333) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rddmwmddr/android-ad-cleaner) |
+| 2026-11-15 08:37:17 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/332) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tencent/loopforge) |
+| 2026-11-15 08:37:15 | [ag-ui-protocol/ag-ui](https://github.com/ag-ui-protocol/ag-ui) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/331) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ag-ui-protocol/ag-ui) |
+| 2026-11-15 08:37:13 | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/330) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/chromedevtools/chrome-devtools-mcp) |
+| 2026-11-15 08:37:11 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
+| 2026-11-15 08:37:08 | [yetone/magpie](https://github.com/yetone/magpie) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/164) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/yetone/magpie) |
+| 2026-11-15 08:36:57 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
+| 2026-11-15 08:36:54 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/141) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/vllm-project/vllm) |
+| 2026-11-15 08:36:49 | [we-promise/sure](https://github.com/we-promise/sure) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/296) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/we-promise/sure) |
 <!-- TASTE:LATEST:END -->
 
 ---

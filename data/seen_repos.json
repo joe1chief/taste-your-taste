@@ -717,8 +717,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "85943d4d4f945860183d2674b17b05a7941064e7",
-      "CLAUDE.md": "3d97d6acbd854ba3c2bccc0cb8f4f51ae953bf77"
+      "AGENTS.md": "6f7f56b6315c123ffab480c110bfe9be792acfa6",
+      "CLAUDE.md": "6bfe39a82ee949c15f3a0e3f2ae9b0ba54ea9ede"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -735,6 +735,14 @@
         "vibe_shift": "Shifted towards stricter tool-specific configuration boundaries and clearer directory naming.",
         "summary": "The author renamed the installer directory from 'bin/' to 'installer/' for clearer semantics and added explicit Cursor plugin configuration files with a warning against creating a generic hooks.json. These changes reflect a shift toward more precise file ownership and preventing cross-tool hook conflicts.",
         "timestamp": "2026-10-16T06:33:16.806814+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "85943d4d4f945860183d2674b17b05a7941064e7",
+        "new_sha": "6f7f56b6315c123ffab480c110bfe9be792acfa6",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:36:46.627249+00:00"
       }
     ]
   },
@@ -843,7 +851,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9073e293deba2b18db2f519156b35500bbf0cc83",
+      "AGENTS.md": "e5941a175264c9c83789495b403cb2bc1b8422da",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -909,6 +917,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-12T08:57:04.646695+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9073e293deba2b18db2f519156b35500bbf0cc83",
+        "new_sha": "e5941a175264c9c83789495b403cb2bc1b8422da",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:36:57.120521+00:00"
       }
     ]
   },
@@ -1605,7 +1621,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "40cc387546bfecd3d19c8067315ecf2b529d14fc"
+      "AGENTS.md": "ac7b19aa40e05705132e3045d185670513b6a5fc"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1662,6 +1678,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-09T08:50:31.842143+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "40cc387546bfecd3d19c8067315ecf2b529d14fc",
+        "new_sha": "ac7b19aa40e05705132e3045d185670513b6a5fc",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:37:11.216169+00:00"
       }
     ]
   },
@@ -2935,7 +2959,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9b1e26a987ef0eb4e14e41f2d4280042e12a69ca"
+      "AGENTS.md": "3d8659cf18cc3007dd2e5afa2c5e867e2aeb8764"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -2952,6 +2976,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-22T06:48:17.378209+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9b1e26a987ef0eb4e14e41f2d4280042e12a69ca",
+        "new_sha": "3d8659cf18cc3007dd2e5afa2c5e867e2aeb8764",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:36:54.130560+00:00"
       }
     ]
   },
@@ -3212,7 +3244,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6cd92ce632cfc225217a4b6895d32a10fda4c98d",
+      "AGENTS.md": "0de862c250d0096fb5c73f0d4a15801a3e473fb8",
       "CLAUDE.md": "abed7dc1c45eb8842bedc3262321c9d1ef55e72d"
     },
     "source": "popular_stars",
@@ -3230,6 +3262,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-12T08:57:14.683352+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6cd92ce632cfc225217a4b6895d32a10fda4c98d",
+        "new_sha": "0de862c250d0096fb5c73f0d4a15801a3e473fb8",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:37:08.975466+00:00"
       }
     ]
   },
@@ -5070,7 +5110,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "f83a670eeb676d29a3d5bf26eeb7c0d16b2068f1",
+      "AGENTS.md": "1a5dbebdb368031d5feba174c09af65c4f60047b",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -5079,7 +5119,17 @@
     "discovered_at": "2026-11-11T08:37:22.783840+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/296",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "f83a670eeb676d29a3d5bf26eeb7c0d16b2068f1",
+        "new_sha": "1a5dbebdb368031d5feba174c09af65c4f60047b",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-15T08:36:49.097187+00:00"
+      }
+    ]
   },
   "tokio-rs/topcoat": {
     "stars": 7000,
@@ -5431,7 +5481,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "CLAUDE.md": "51fd7b8ec8a5fd533279e4b6cc183f3e704e153e"
+      "CLAUDE.md": "0bd112e2c50025b24b0bc7fefac139b9bd9e6a0c"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -5439,7 +5489,17 @@
     "discovered_at": "2026-11-14T08:17:22.078182+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/321",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "51fd7b8ec8a5fd533279e4b6cc183f3e704e153e",
+        "new_sha": "0bd112e2c50025b24b0bc7fefac139b9bd9e6a0c",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-15T08:36:40.934154+00:00"
+      }
+    ]
   },
   "Likely7/Veyra-NRVideo": {
     "stars": 1744,
@@ -5456,6 +5516,102 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-14T08:17:24.199013+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/322",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "stars": 56506,
+    "language": "TypeScript",
+    "description": "Chrome DevTools for coding agents",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "082f4ffdcd1c406d35f8d514775462b4668a2be6"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-15T08:37:13.328852+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/330",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ag-ui-protocol/ag-ui": {
+    "stars": 17484,
+    "language": "TypeScript",
+    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a786d3f662c0e7395ef7e721debf88cdfa2abb70",
+      "CLAUDE.md": "2fe0d66356b2b531170b8c97f0fa150cb440dff2"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-15T08:37:15.437190+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/331",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Tencent/LoopForge": {
+    "stars": 1046,
+    "language": "Go",
+    "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "66164a328567f0b7ed0cb1c276b44e0582f54f2b"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-15T08:37:17.426596+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/332",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    "stars": 8079,
+    "language": "Python",
+    "description": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "3c0cb143de09da69cff35222431750b4f2a032bb",
+      "CLAUDE.md": "8e46fb73abe45e54d4f03aabc5ccfd7ba2546577"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-15T08:37:19.816612+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/333",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "nexu-io/openmotion": {
+    "stars": 9974,
+    "language": "TypeScript",
+    "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ab711e22236171e292b73f816c339f379f89fc53",
+      "CLAUDE.md": "55639a57883bbe347abab4de66cda09ddfffb3fa"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-15T08:37:22.276514+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/334",
     "pr_url": null,
     "status": "pending_review"
   }

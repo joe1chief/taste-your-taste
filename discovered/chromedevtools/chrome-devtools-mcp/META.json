@@ -1,0 +1,23 @@
+{
+  "stars": 56506,
+  "language": "TypeScript",
+  "description": "Chrome DevTools for coding agents",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "This repository contains an MCP server and CLI for Chrome DevTools.",
+    "Instructions",
+    "Use only scripts from `package.json` to run commands.",
+    "Use `npm run build` to compile the project and tests with GN and Ninja."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "082f4ffdcd1c406d35f8d514775462b4668a2be6"
+  },
+  "discovered_at": "2026-11-15T08:37:12.806135+00:00",
+  "repo": "ChromeDevTools/chrome-devtools-mcp"
+}

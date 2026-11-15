@@ -1,0 +1,25 @@
+{
+  "stars": 9974,
+  "language": "TypeScript",
+  "description": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+  "url": "https://github.com/nexu-io/openmotion",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "OpenMotion repository guidelines",
+    "OpenMotion is a standalone npm application at the repository root. Run commands here with the Node version pinned in `.github/workflows/ci.yml`. Preserve `package-lock.json` and `scripts/runtime-lock.json`; do not introduce workspace-only dependencies. Follow the [migration guide](docs/repository-migration.md), keep user data and credentials outside the checkout, and preserve third-party licenses.",
+    "Local validation",
+    "Before publishing a branch, select local checks for the changed boundary. Run `npm ci` when dependencies or lockfiles change, or installed dependencies are missing or stale; otherwise reuse the existing installation."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ab711e22236171e292b73f816c339f379f89fc53",
+    "CLAUDE.md": "55639a57883bbe347abab4de66cda09ddfffb3fa"
+  },
+  "discovered_at": "2026-11-15T08:37:21.718043+00:00",
+  "repo": "nexu-io/openmotion"
+}

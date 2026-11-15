@@ -16,7 +16,7 @@
     "AGENTS.md"
   ],
   "file_shas": {
-    "AGENTS.md": "9b1e26a987ef0eb4e14e41f2d4280042e12a69ca"
+    "AGENTS.md": "3d8659cf18cc3007dd2e5afa2c5e867e2aeb8764"
   },
   "discovered_at": "2026-10-21T06:46:03.227123+00:00",
   "repo": "vllm-project/vllm"

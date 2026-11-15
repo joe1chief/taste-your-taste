@@ -1,0 +1,23 @@
+{
+  "stars": 1046,
+  "language": "Go",
+  "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+  "url": "https://github.com/Tencent/LoopForge",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "LoopForge platform",
+    "Preserve the platform architecture; keep deployment-specific adapters isolated. Detailed source synchronization records are maintained locally and are not required for community changes. The original local workflow runtime lives in `local/`; follow `local/AGENTS.md` there. Never copy private deployment files, credentials, staff data, or internal infrastructure into this repository.",
+    "AGENTS.md",
+    "本文件面向所有在仓库内工作的 AI agent 与人类贡献者，约定 repo 层与 handler 层的结构规则。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "66164a328567f0b7ed0cb1c276b44e0582f54f2b"
+  },
+  "discovered_at": "2026-11-15T08:37:16.876268+00:00",
+  "repo": "Tencent/LoopForge"
+}
