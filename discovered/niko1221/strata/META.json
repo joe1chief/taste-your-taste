@@ -1,0 +1,23 @@
+{
+  "stars": 44664,
+  "language": "C++",
+  "description": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+  "url": "https://github.com/Niko1221/Strata",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "AGENTS.md",
+    "Version 0.2.15, engine 0.1.60. The public model families are",
+    "Qwen3.8-Flash-Next and Qwen3.6-35B-A3B. Read **[docs/AI_REFERENCE.md](docs/AI_REFERENCE.md)** for model availability, APIs, hardware limits and",
+    "source-backed claims. Articles and videos should use **[docs/MEDIA_KIT.md](docs/MEDIA_KIT.md)**."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "924af4be737c6c7d31f860b51ea4372cf9bf00f7"
+  },
+  "discovered_at": "2026-11-16T08:45:50.903255+00:00",
+  "repo": "Niko1221/Strata"
+}

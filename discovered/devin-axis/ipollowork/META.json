@@ -1,0 +1,23 @@
+{
+  "stars": 7475,
+  "language": "TypeScript",
+  "description": "An enterprise collaboration platform for people and multi-agent teams, built on the open-source DeepSeek Harness. Shared projects, plugins and Skills, integrated messaging, and editable code, documents, presentations, design, websites and video.",
+  "url": "https://github.com/Devin-AXIS/iPolloWork",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "iPolloWork",
+    "This repository owns iPolloWork plugins, services, clients and packaging. DSH is an",
+    "external, version-pinned dependency. Never edit `.upstream/dsh`, copy its Agent loop into this repository, or add product patches to the official runtime.",
+    "Run `npm run setup:build` for a fresh checkout. It verifies the official archive, installs its locked dependencies and creates ignored local resolution links. The exact revision and SHA-256 live in `integrations/runtime/upstream.json`. Upgrades change that pin deliberately, then run the product checks and real-client smoke before adoption."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b28727af0d79eba85bfa4565a2c295f6032d0b03"
+  },
+  "discovered_at": "2026-11-16T08:45:54.425005+00:00",
+  "repo": "Devin-AXIS/iPolloWork"
+}

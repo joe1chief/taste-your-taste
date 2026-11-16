@@ -1,0 +1,25 @@
+{
+  "stars": 5302,
+  "language": "TypeScript",
+  "description": "Your Friendly Open-Source Gen-AI Platform",
+  "url": "https://github.com/pollinations/pollinations",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Agent Guidelines for pollinations.ai",
+    "App Submission Handling",
+    "Two-phase review: AI evidence + human decision via `apps-review-submissions.yml`. Source of truth: `operations/app-management/app.json`.",
+    "Flow: user opens an `APP-SUBMISSION` issue → AI checks the live app and optional repository → `APP-NEEDS-INFO` or `APP-REVIEW` → maintainer adds `APP-APPROVED` → `apps-publish-submissions.yml` validates the issue again, prepends the app to `operations/app-management/app.json`, and opens an auto-merge PR that closes the issue via `Fixes #NNN`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "573964f281f54ebf43d2281ebe283295cc39d91c",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-16T08:45:56.514993+00:00",
+  "repo": "pollinations/pollinations"
+}

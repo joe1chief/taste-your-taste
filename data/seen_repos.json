@@ -1142,9 +1142,9 @@
       "SKILL.md"
     ],
     "file_shas": {
-      "AGENTS.md": "a572ea7333d197f0f94e1db7a2351ff07dcbe123",
-      "CLAUDE.md": "37fb8db4dc245355bc19ef3f52d0218048e554af",
-      "SKILL.md": "19892de7007d75a9f2c11ed678f566ff6d406944"
+      "AGENTS.md": "ab1ff3f3bec9e4ab3ee6d2cb9bca691e27f484d0",
+      "CLAUDE.md": "35db4608f40d6542dcf2a16e4d0c7808da3a421b",
+      "SKILL.md": "300fc282e4f862ff13709d261cbe6be62b31a2b4"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -1169,6 +1169,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-06T08:43:29.637456+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "a572ea7333d197f0f94e1db7a2351ff07dcbe123",
+        "new_sha": "ab1ff3f3bec9e4ab3ee6d2cb9bca691e27f484d0",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-16T08:45:49.836079+00:00"
       }
     ]
   },
@@ -4780,7 +4788,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "98353884990d0436548e4fa2b2f944cc127a32a3",
+      "AGENTS.md": "59f90fd7a2b58c12f16d38564a13d60585c4afbd",
       "CLAUDE.md": "65bc7681b0eaff166889df7319c75558e77e4961"
     },
     "source": "trending",
@@ -4806,6 +4814,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-11T08:36:55.492778+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "98353884990d0436548e4fa2b2f944cc127a32a3",
+        "new_sha": "59f90fd7a2b58c12f16d38564a13d60585c4afbd",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-16T08:45:42.652178+00:00"
       }
     ]
   },
@@ -5604,14 +5620,120 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ab711e22236171e292b73f816c339f379f89fc53",
-      "CLAUDE.md": "55639a57883bbe347abab4de66cda09ddfffb3fa"
+      "AGENTS.md": "d2f8294aeba0b1d19f4529b04e9636a8b98b1f6b",
+      "CLAUDE.md": "0a4ca172fe36f47796e1a0a4b763e5f92898ef92"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-15T08:37:22.276514+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/334",
+    "pr_url": null,
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ab711e22236171e292b73f816c339f379f89fc53",
+        "new_sha": "d2f8294aeba0b1d19f4529b04e9636a8b98b1f6b",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-16T08:45:45.495626+00:00"
+      }
+    ]
+  },
+  "Niko1221/Strata": {
+    "stars": 44664,
+    "language": "C++",
+    "description": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "924af4be737c6c7d31f860b51ea4372cf9bf00f7"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-16T08:45:51.345545+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/338",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "acepanel/panel": {
+    "stars": 3041,
+    "language": "Go",
+    "description": "⚡ AcePanel - Enterprise server operation and maintenance management panel",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "8740800bff298c1c68c34e110f992f5b5ff6387b",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-16T08:45:53.298588+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/339",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Devin-AXIS/iPolloWork": {
+    "stars": 7475,
+    "language": "TypeScript",
+    "description": "An enterprise collaboration platform for people and multi-agent teams, built on the open-source DeepSeek Harness. Shared projects, plugins and Skills, integrated messaging, and editable code, documents, presentations, design, websites and video.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b28727af0d79eba85bfa4565a2c295f6032d0b03"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-16T08:45:54.876861+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/340",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "pollinations/pollinations": {
+    "stars": 5302,
+    "language": "TypeScript",
+    "description": "Your Friendly Open-Source Gen-AI Platform",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "573964f281f54ebf43d2281ebe283295cc39d91c",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-16T08:45:56.949613+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/341",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "career-ops-hq/career-ops": {
+    "stars": 82870,
+    "language": "JavaScript",
+    "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2dfb9ee6748ad3ce627234a85488cea3f5aa0fd2",
+      "CLAUDE.md": "3959513407423e88db72a74fe398c9ff237e67e9"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-16T08:45:58.829995+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/342",
     "pr_url": null,
     "status": "pending_review"
   }

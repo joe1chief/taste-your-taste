@@ -1,0 +1,25 @@
+{
+  "stars": 3041,
+  "language": "Go",
+  "description": "⚡ AcePanel - Enterprise server operation and maintenance management panel",
+  "url": "https://github.com/acepanel/panel",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "本文件为在此仓库工作的编码代理提供指引，`CLAUDE.md` 是指向它的软链接。",
+    "AcePanel 是 Go 写的 Linux 服务器运维面板，前后端分离。后端：Go + go-chi + GORM（SQLite）+ Wire。前端在 `web/`：Vue 3 + Vite + Naive UI + UnoCSS + Alova，构建产物经 `pkg/embed` 嵌进后端二进制。",
+    "注释、提交说明、回复一律用简体中文。"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "8740800bff298c1c68c34e110f992f5b5ff6387b",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-16T08:45:52.847033+00:00",
+  "repo": "acepanel/panel"
+}
