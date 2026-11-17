@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**262 tracked projects** | **26 curated** | **236 pending review**
+**267 tracked projects** | **26 curated** | **241 pending review**
 
-Last completed scan: [2026-11-16 08:45:58 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/43833810047).
+Last completed scan: [2026-11-17 09:53:27 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/44059599372).
 
-Latest content activity: **2026-11-16 08:45:58 UTC**.
+Latest content activity: **2026-11-17 09:53:27 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-17 09:53:27 | [paritytech/polkadot-sdk](https://github.com/paritytech/polkadot-sdk) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/349) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/paritytech/polkadot-sdk) |
+| 2026-11-17 09:53:25 | [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/348) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/kajisho5/ffmpeg-skill) |
+| 2026-11-17 09:53:23 | [sveltejs/svelte](https://github.com/sveltejs/svelte) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/347) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sveltejs/svelte) |
+| 2026-11-17 09:53:22 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/346) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mvanhorn/last30days-skill) |
+| 2026-11-17 09:53:19 | [getarcaneapp/arcane](https://github.com/getarcaneapp/arcane) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/345) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/getarcaneapp/arcane) |
+| 2026-11-17 09:53:12 | [pytorch/pytorch](https://github.com/pytorch/pytorch) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/72) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pytorch/pytorch) |
+| 2026-11-17 09:52:55 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/318) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/backnotprop/plannotator) |
 | 2026-11-16 08:45:58 | [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/342) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/career-ops-hq/career-ops) |
 | 2026-11-16 08:45:56 | [pollinations/pollinations](https://github.com/pollinations/pollinations) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/341) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pollinations/pollinations) |
 | 2026-11-16 08:45:54 | [Devin-AXIS/iPolloWork](https://github.com/Devin-AXIS/iPolloWork) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/340) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/devin-axis/ipollowork) |
-| 2026-11-16 08:45:53 | [acepanel/panel](https://github.com/acepanel/panel) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/339) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/acepanel/panel) |
-| 2026-11-16 08:45:51 | [Niko1221/Strata](https://github.com/Niko1221/Strata) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/338) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/niko1221/strata) |
-| 2026-11-16 08:45:49 | [garrytan/gstack](https://github.com/garrytan/gstack) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/31) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/garrytan/gstack) |
-| 2026-11-16 08:45:45 | [nexu-io/openmotion](https://github.com/nexu-io/openmotion) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/334) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion) |
-| 2026-11-16 08:45:42 | [meta/astryx](https://github.com/meta/astryx) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/272) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/meta/astryx) |
-| 2026-11-15 08:37:19 | [rddmwmddr/android-ad-cleaner](https://github.com/rddmwmddr/android-ad-cleaner) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/333) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rddmwmddr/android-ad-cleaner) |
-| 2026-11-15 08:37:17 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/332) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tencent/loopforge) |
 <!-- TASTE:LATEST:END -->
 
 ---

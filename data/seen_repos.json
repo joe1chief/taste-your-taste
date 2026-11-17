@@ -1871,7 +1871,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
-      "CLAUDE.md": "d3112bd3df062cab38fb9810343769c4e54a21f2"
+      "CLAUDE.md": "72e994a250fb32dd9843646dc6fb597b691e7452"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1888,6 +1888,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated CLAUDE.md instructions.",
         "timestamp": "2026-10-27T07:00:55.603726+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "d3112bd3df062cab38fb9810343769c4e54a21f2",
+        "new_sha": "72e994a250fb32dd9843646dc6fb597b691e7452",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-17T09:53:12.138678+00:00"
       }
     ]
   },
@@ -5438,7 +5446,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "91724826994c55db1c51b64a2d585bc076e73644",
+      "AGENTS.md": "bc6106319b8a54b02ea3c7ee6ccc01e4e60e9fb1",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
     },
     "source": "trending",
@@ -5447,7 +5455,17 @@
     "discovered_at": "2026-11-14T08:17:16.162945+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/318",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "91724826994c55db1c51b64a2d585bc076e73644",
+        "new_sha": "bc6106319b8a54b02ea3c7ee6ccc01e4e60e9fb1",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-17T09:52:55.593035+00:00"
+      }
+    ]
   },
   "louislam/uptime-kuma": {
     "stars": 93976,
@@ -5734,6 +5752,102 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-16T08:45:58.829995+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/342",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "getarcaneapp/arcane": {
+    "stars": 8995,
+    "language": "Go",
+    "description": "Modern Docker Management, Designed for Everyone",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "61654fa5e8af84191908305d791494d1e599e08e"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-17T09:53:19.863623+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/345",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "mvanhorn/last30days-skill": {
+    "stars": 68462,
+    "language": "Python",
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9e1dc831c1537fb1cab6651cc375d7c34ea1e676",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-17T09:53:22.143040+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/346",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "sveltejs/svelte": {
+    "stars": 89164,
+    "language": "JavaScript",
+    "description": "web development for the rest of us",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "76c46102bb82ddc1f70d38ce8523fd2b13f851ae"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-17T09:53:23.757512+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/347",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "kajisho5/ffmpeg-skill": {
+    "stars": 7382,
+    "language": "Python",
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "files": [
+      "AGENTS.md",
+      "SKILL.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "72b216aa2cae4ccaad78e3a6fb6a445b046c6dff",
+      "SKILL.md": "c852c93da85d0e42a984d860134f6a884625eba1"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-17T09:53:25.684355+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/348",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "paritytech/polkadot-sdk": {
+    "stars": 2811,
+    "language": "Rust",
+    "description": "The Parity Polkadot Blockchain SDK",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4969755f400455db5b1076bf306e17175b22a150",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-17T09:53:27.527695+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/349",
     "pr_url": null,
     "status": "pending_review"
   }

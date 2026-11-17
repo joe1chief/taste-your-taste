@@ -1,0 +1,25 @@
+{
+  "stars": 68462,
+  "language": "Python",
+  "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+  "url": "https://github.com/mvanhorn/last30days-skill",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "last30days Skill",
+    "Agent Skills package for researching any topic across Reddit, X, YouTube, and web. Installable across Claude Code (most common host), Codex, Cursor, GitHub Copilot, Gemini CLI, Grok (xAI), and 50+ other [Agent Skills](https://agentskills.io) hosts. Python scripts with multi-source search aggregation.",
+    "Structure",
+    "`skills/last30days/SKILL.md` — canonical skill definition / runtime spec the model reads when the slash command fires; its reference-routing table gates the stage and mode instructions in `skills/last30days/references/`"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9e1dc831c1537fb1cab6651cc375d7c34ea1e676",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-17T09:53:21.651893+00:00",
+  "repo": "mvanhorn/last30days-skill"
+}

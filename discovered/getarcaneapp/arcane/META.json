@@ -1,0 +1,23 @@
+{
+  "stars": 8995,
+  "language": "Go",
+  "description": "Modern Docker Management, Designed for Everyone",
+  "url": "https://github.com/getarcaneapp/arcane",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Arcane agent guide",
+    "Arcane is a Docker management platform.",
+    "Backend:** Go",
+    "Frontend:** SvelteKit"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "61654fa5e8af84191908305d791494d1e599e08e"
+  },
+  "discovered_at": "2026-11-17T09:53:19.335725+00:00",
+  "repo": "getarcaneapp/arcane"
+}

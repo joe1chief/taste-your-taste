@@ -1,0 +1,25 @@
+{
+  "stars": 2811,
+  "language": "Rust",
+  "description": "The Parity Polkadot Blockchain SDK",
+  "url": "https://github.com/paritytech/polkadot-sdk",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Repository guidance",
+    "Before editing or creating a file, read every `AGENTS.md` along its directory path, starting at the",
+    "repository root. Follow each file's instructions within its directory and descendants. More specific",
+    "instructions take precedence within their scope. Do this even when the session starts at the"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4969755f400455db5b1076bf306e17175b22a150",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-17T09:53:26.997603+00:00",
+  "repo": "paritytech/polkadot-sdk"
+}

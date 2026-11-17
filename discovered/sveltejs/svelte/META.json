@@ -1,0 +1,23 @@
+{
+  "stars": 89164,
+  "language": "JavaScript",
+  "description": "web development for the rest of us",
+  "url": "https://github.com/sveltejs/svelte",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Svelte Coding Agent Guide",
+    "This guide is for AI coding agents working in the Svelte monorepo.",
+    "Important:** Read and follow [`CONTRIBUTING.md`](./CONTRIBUTING.md) as well - it contains essential information about testing, code structure, and contribution guidelines that applies here.",
+    "When submitting a PR, you **MUST** read [`PULL_REQUEST_TEMPLATE.md`](./.github/PULL_REQUEST_TEMPLATE.md) and fill it out correctly. **DO NOT** submit a PR without running the full test suite."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "76c46102bb82ddc1f70d38ce8523fd2b13f851ae"
+  },
+  "discovered_at": "2026-11-17T09:53:23.290377+00:00",
+  "repo": "sveltejs/svelte"
+}

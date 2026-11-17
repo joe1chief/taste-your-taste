@@ -1,0 +1,25 @@
+{
+  "stars": 7382,
+  "language": "Python",
+  "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+  "url": "https://github.com/kajisho5/ffmpeg-skill",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "For agents working on this repository",
+    "Runtime use of the skill is documented in `SKILL.md`; this file is for agents that review,",
+    "audit or change the repository itself.",
+    "Before reporting a defect, read `docs/design-decisions.md`.** It lists behaviours that look"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "SKILL.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "72b216aa2cae4ccaad78e3a6fb6a445b046c6dff",
+    "SKILL.md": "c852c93da85d0e42a984d860134f6a884625eba1"
+  },
+  "discovered_at": "2026-11-17T09:53:25.141846+00:00",
+  "repo": "kajisho5/ffmpeg-skill"
+}
