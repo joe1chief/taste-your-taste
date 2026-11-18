@@ -1,0 +1,23 @@
+{
+  "stars": 1293,
+  "language": "Python",
+  "description": "LLM model quantization (compression) toolkit with HW acceleration support for Nvidia CUDA, AMD ROCm, Intel XPU, Tenstorrent, Huawei Ascent NPU, and Intel/AMD/Apple CPU via HF, vLLM, and SGLang.",
+  "url": "https://github.com/ModelCloud/GPTQModel",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "<!-- SPDX-FileCopyrightText: 2026 ModelCloud.ai",
+    "SPDX-License-Identifier: Apache-2.0 -->",
+    "GPT-QModel agent guide",
+    "These rules apply repository-wide alongside parent instructions. Before editing,"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d0c654877f2a736b63ca83ae515221a15e272c1c"
+  },
+  "discovered_at": "2026-11-18T09:28:01.242174+00:00",
+  "repo": "ModelCloud/GPTQModel"
+}

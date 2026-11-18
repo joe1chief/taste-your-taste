@@ -813,7 +813,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "f2f049297454806522722b3bbe2b7ebb10811a0b",
+      "AGENTS.md": "e1640cae57ba4c22fede540577c354589571c14a",
       "CLAUDE.md": "f514243e4b43d3a2394c80f9e22eda206c6823b0"
     },
     "source": "trending",
@@ -839,6 +839,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated CLAUDE.md instructions.",
         "timestamp": "2026-10-27T07:00:10.321807+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "f2f049297454806522722b3bbe2b7ebb10811a0b",
+        "new_sha": "e1640cae57ba4c22fede540577c354589571c14a",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:34.546759+00:00"
       }
     ]
   },
@@ -851,7 +859,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e5941a175264c9c83789495b403cb2bc1b8422da",
+      "AGENTS.md": "12f6c581956cfdb4470b40ad6b45f694d20425ef",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -925,6 +933,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-15T08:36:57.120521+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e5941a175264c9c83789495b403cb2bc1b8422da",
+        "new_sha": "12f6c581956cfdb4470b40ad6b45f694d20425ef",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:53.339700+00:00"
       }
     ]
   },
@@ -2449,7 +2465,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "35b1fa3301e103c39817cac636f42ac4ee819180"
+      "AGENTS.md": "a7e12bf069a94ad00b0e01ada8288bb102e86a1f"
     },
     "source": "popular_stars",
     "archetype": "Pragmatic Systems",
@@ -2457,7 +2473,17 @@
     "discovered_at": "2026-10-16T06:33:59.574756+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/108",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "35b1fa3301e103c39817cac636f42ac4ee819180",
+        "new_sha": "a7e12bf069a94ad00b0e01ada8288bb102e86a1f",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:46.912716+00:00"
+      }
+    ]
   },
   "MadsLorentzen/ai-job-search": {
     "stars": 48814,
@@ -3032,7 +3058,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6b56a9e1e05dc670c95546ee19a35a68d70229e7",
+      "AGENTS.md": "5724e53b240e1e122f53bc6890668acb3d8f67f9",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -3041,7 +3067,17 @@
     "discovered_at": "2026-10-22T06:48:51.380059+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/148",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6b56a9e1e05dc670c95546ee19a35a68d70229e7",
+        "new_sha": "5724e53b240e1e122f53bc6890668acb3d8f67f9",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:50.044603+00:00"
+      }
+    ]
   },
   "twentyhq/twenty": {
     "stars": 59367,
@@ -4464,7 +4500,7 @@
     ],
     "file_shas": {
       ".cursorrules": "55efbc77b085369c75feb30e36675bd4c0bb6f73",
-      "AGENTS.md": "bbd38bba6357198a607ebe6cecaee443b5ab3051",
+      "AGENTS.md": "d3253706a33d7c7bec33c3b67b13728343dfd472",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
     },
     "source": "popular_stars",
@@ -4473,7 +4509,17 @@
     "discovered_at": "2026-11-04T08:17:43.938461+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/248",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bbd38bba6357198a607ebe6cecaee443b5ab3051",
+        "new_sha": "d3253706a33d7c7bec33c3b67b13728343dfd472",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:43.450625+00:00"
+      }
+    ]
   },
   "comet-ml/opik": {
     "stars": 23159,
@@ -5638,8 +5684,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d2f8294aeba0b1d19f4529b04e9636a8b98b1f6b",
-      "CLAUDE.md": "0a4ca172fe36f47796e1a0a4b763e5f92898ef92"
+      "AGENTS.md": "eb2f9356f9e1f8f03691477f3704562c8a02b3ef",
+      "CLAUDE.md": "1c874107ccba0c04d0d39498e50a6eb067a4dd61"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -5656,6 +5702,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-16T08:45:45.495626+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d2f8294aeba0b1d19f4529b04e9636a8b98b1f6b",
+        "new_sha": "eb2f9356f9e1f8f03691477f3704562c8a02b3ef",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:38.400631+00:00"
       }
     ]
   },
@@ -5782,7 +5836,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "9e1dc831c1537fb1cab6651cc375d7c34ea1e676",
+      "AGENTS.md": "fe8b85604f942b603163c4db4ecb09e9b0815ec7",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -5791,7 +5845,17 @@
     "discovered_at": "2026-11-17T09:53:22.143040+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/346",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "9e1dc831c1537fb1cab6651cc375d7c34ea1e676",
+        "new_sha": "fe8b85604f942b603163c4db4ecb09e9b0815ec7",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-18T09:27:27.603379+00:00"
+      }
+    ]
   },
   "sveltejs/svelte": {
     "stars": 89164,
@@ -5848,6 +5912,102 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-17T09:53:27.527695+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/349",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "FujiwaraChoki/supoclip": {
+    "stars": 3479,
+    "language": "Python",
+    "description": "An open-source OpusClip alternative",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e8ea51238942306869750c699ccf8643ba0f5424",
+      "CLAUDE.md": "43c83ac5afb0b73f4bcf8d9dd8bc7439e0e54069"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-18T09:27:55.838474+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/357",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "gmh5225/awesome-game-security": {
+    "stars": 3774,
+    "language": "Python",
+    "description": "awesome game security [Welcome to PR]",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "2f0fab0db3eadc6305a3d4d3dfc0053c799a2d0b"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-18T09:27:57.473212+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/358",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Euro-Office/DocumentServer": {
+    "stars": 1902,
+    "language": "TypeScript",
+    "description": "No description provided.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "856df1cd8193b95a13a8c21e06ecc5afc772ffa7",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-18T09:27:59.868746+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/359",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ModelCloud/GPTQModel": {
+    "stars": 1293,
+    "language": "Python",
+    "description": "LLM model quantization (compression) toolkit with HW acceleration support for Nvidia CUDA, AMD ROCm, Intel XPU, Tenstorrent, Huawei Ascent NPU, and Intel/AMD/Apple CPU via HF, vLLM, and SGLang.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d0c654877f2a736b63ca83ae515221a15e272c1c"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-18T09:28:01.718303+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/360",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "docling-project/docling": {
+    "stars": 70736,
+    "language": "Python",
+    "description": "Get your documents ready for gen AI",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7139365478e4bc0e05f64b9de790eebd5e40a9a7",
+      "CLAUDE.md": "dfd98d2dddb1205cf763a0063d20665f735530f1"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-18T09:28:03.696122+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/361",
     "pr_url": null,
     "status": "pending_review"
   }

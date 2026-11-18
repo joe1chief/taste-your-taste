@@ -1,0 +1,25 @@
+{
+  "stars": 1902,
+  "language": "TypeScript",
+  "description": "No description provided.",
+  "url": "https://github.com/Euro-Office/DocumentServer",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "What this repo is",
+    "DocumentServer is the master orchestrator for the Euro-Office ecosystem. It manages all submodules, docker orchestration, and workspace-level build configurations.",
+    "This repo holds the workspace configuration for the submodules:",
+    "`core`, `core-fonts`, `sdkjs`, `sdkjs-forms`, `server`, `web-apps`, `dictionaries`, `document-formats`, `document-server-integration`, `document-server-package`, `document-templates`."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "856df1cd8193b95a13a8c21e06ecc5afc772ffa7",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-18T09:27:59.230247+00:00",
+  "repo": "Euro-Office/DocumentServer"
+}

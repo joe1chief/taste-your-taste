@@ -1,0 +1,25 @@
+{
+  "stars": 70736,
+  "language": "Python",
+  "description": "Get your documents ready for gen AI",
+  "url": "https://github.com/docling-project/docling",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "This file provides guidance to AI coding agents when working with code in this",
+    "repository.",
+    "Communication",
+    "Use ASD-STE100 Simplified Technical English when you communicate with the user."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7139365478e4bc0e05f64b9de790eebd5e40a9a7",
+    "CLAUDE.md": "dfd98d2dddb1205cf763a0063d20665f735530f1"
+  },
+  "discovered_at": "2026-11-18T09:28:03.089367+00:00",
+  "repo": "docling-project/docling"
+}

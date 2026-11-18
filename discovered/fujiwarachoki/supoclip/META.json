@@ -1,0 +1,25 @@
+{
+  "stars": 3479,
+  "language": "Python",
+  "description": "An open-source OpusClip alternative",
+  "url": "https://github.com/FujiwaraChoki/supoclip",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository Guidelines",
+    "You are the owner and long-term maintainer of this codebase, and its design is up to you.",
+    "Project Structure & Module Organization",
+    "This repository contains the web app, processing backend, and MCP client:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e8ea51238942306869750c699ccf8643ba0f5424",
+    "CLAUDE.md": "43c83ac5afb0b73f4bcf8d9dd8bc7439e0e54069"
+  },
+  "discovered_at": "2026-11-18T09:27:55.258330+00:00",
+  "repo": "FujiwaraChoki/supoclip"
+}

@@ -1,0 +1,23 @@
+{
+  "stars": 3774,
+  "language": "Python",
+  "description": "awesome game security [Welcome to PR]",
+  "url": "https://github.com/gmh5225/awesome-game-security",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Awesome Game Security agent guide",
+    "Load only the repository layer needed by the task:",
+    "Use `README.md` as the canonical resource index and category taxonomy.",
+    "Use `.claude/skills/overview/SKILL.md` for repository discovery or collection maintenance, then load one matching domain skill."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "2f0fab0db3eadc6305a3d4d3dfc0053c799a2d0b"
+  },
+  "discovered_at": "2026-11-18T09:27:57.069063+00:00",
+  "repo": "gmh5225/awesome-game-security"
+}
