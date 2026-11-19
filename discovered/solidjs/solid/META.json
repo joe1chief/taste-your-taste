@@ -1,0 +1,23 @@
+{
+  "stars": 36723,
+  "language": "TypeScript",
+  "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+  "url": "https://github.com/solidjs/solid",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent guide — solidjs/solid",
+    "This file is the one agent instruction file for the repo (Codex, Cursor, Copilot, Gemini CLI and Claude Code all read a root `AGENTS.md`). Package guides with more detail are in `.cursor/rules/`: read `signals.mdc`, `solid-core.mdc`, `web.mdc` or `testing-patterns.mdc` before changing that package or its tests.",
+    "`main` is Solid 2.0. Solid 1.x lives on the `1.x` branch. The `next` branch no longer exists; older docs that say \"on `next`\" mean what is now `main`.",
+    "Which docs are current"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0273420290d947813eae0902c0cd9bd737ffb7f5"
+  },
+  "discovered_at": "2026-11-19T09:39:20.357784+00:00",
+  "repo": "solidjs/solid"
+}

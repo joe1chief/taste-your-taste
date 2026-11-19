@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**272 tracked projects** | **26 curated** | **246 pending review**
+**277 tracked projects** | **26 curated** | **251 pending review**
 
-Last completed scan: [2026-11-18 09:28:03 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/44276055529).
+Last completed scan: [2026-11-19 09:39:22 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/44498306602).
 
-Latest content activity: **2026-11-18 09:28:03 UTC**.
+Latest content activity: **2026-11-19 09:39:22 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026-11-18 09:28:03 | [docling-project/docling](https://github.com/docling-project/docling) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/361) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/docling-project/docling) |
-| 2026-11-18 09:28:01 | [ModelCloud/GPTQModel](https://github.com/ModelCloud/GPTQModel) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/360) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/modelcloud/gptqmodel) |
-| 2026-11-18 09:27:59 | [Euro-Office/DocumentServer](https://github.com/Euro-Office/DocumentServer) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/359) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/euro-office/documentserver) |
-| 2026-11-18 09:27:57 | [gmh5225/awesome-game-security](https://github.com/gmh5225/awesome-game-security) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/358) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/gmh5225/awesome-game-security) |
-| 2026-11-18 09:27:55 | [FujiwaraChoki/supoclip](https://github.com/FujiwaraChoki/supoclip) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/357) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/fujiwarachoki/supoclip) |
-| 2026-11-18 09:27:53 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
-| 2026-11-18 09:27:50 | [supabase/supabase](https://github.com/supabase/supabase) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/148) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/supabase/supabase) |
-| 2026-11-18 09:27:46 | [langgenius/dify](https://github.com/langgenius/dify) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/108) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/langgenius/dify) |
-| 2026-11-18 09:27:43 | [PostHog/posthog](https://github.com/PostHog/posthog) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/248) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/posthog/posthog) |
-| 2026-11-18 09:27:38 | [nexu-io/openmotion](https://github.com/nexu-io/openmotion) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/334) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion) |
+| 2026-11-19 09:39:22 | [spotify-web-api-java/spotify-web-api-java](https://github.com/spotify-web-api-java/spotify-web-api-java) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/373) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spotify-web-api-java/spotify-web-api-java) |
+| 2026-11-19 09:39:20 | [solidjs/solid](https://github.com/solidjs/solid) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/372) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/solidjs/solid) |
+| 2026-11-19 09:39:19 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/371) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n) |
+| 2026-11-19 09:39:17 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/370) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/appwrite/appwrite) |
+| 2026-11-19 09:39:15 | [astral-sh/uv](https://github.com/astral-sh/uv) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/369) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/astral-sh/uv) |
+| 2026-11-19 09:39:13 | [koala73/worldmonitor](https://github.com/koala73/worldmonitor) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/113) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/koala73/worldmonitor) |
+| 2026-11-19 09:39:11 | [microsoft/vscode](https://github.com/microsoft/vscode) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/271) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/microsoft/vscode) |
+| 2026-11-19 09:39:09 | [darlinghq/darling](https://github.com/darlinghq/darling) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/280) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/darlinghq/darling) |
+| 2026-11-19 09:39:07 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/186) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot) |
+| 2026-11-19 09:39:05 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/78) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nousresearch/hermes-agent) |
 <!-- TASTE:LATEST:END -->
 
 ---

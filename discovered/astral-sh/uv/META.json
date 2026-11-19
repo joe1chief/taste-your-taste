@@ -1,0 +1,23 @@
+{
+  "stars": 92360,
+  "language": "Rust",
+  "description": "An extremely fast Python package and project manager, written in Rust.",
+  "url": "https://github.com/astral-sh/uv",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Read CONTRIBUTING.md for guidelines on how to run tools",
+    "ALWAYS ensure that new tests use the same style as existing tests for all parts of the test",
+    "ALWAYS check whether the behavior of a new test is already covered by an existing test",
+    "DO NOT run integration test scenarios in loops or share their snapshots with"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "f6994e01b21a4453bd08a210821cb063d4442b90"
+  },
+  "discovered_at": "2026-11-19T09:39:15.208492+00:00",
+  "repo": "astral-sh/uv"
+}

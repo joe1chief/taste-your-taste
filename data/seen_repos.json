@@ -1645,7 +1645,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ac7b19aa40e05705132e3045d185670513b6a5fc"
+      "AGENTS.md": "4cc0085e34ea62b8aeec3a41dd687d7d02a14184"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1710,6 +1710,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-15T08:37:11.216169+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ac7b19aa40e05705132e3045d185670513b6a5fc",
+        "new_sha": "4cc0085e34ea62b8aeec3a41dd687d7d02a14184",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:02.676125+00:00"
       }
     ]
   },
@@ -2002,7 +2010,7 @@
       "skills/AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d408c3b100b5bcd82a967cdb9c23019a845e65a8",
+      "AGENTS.md": "4da6c2df0097787149ca51c8c290dcdd0d52eb17",
       "skills/AGENTS.md": "3b6568dd32611076c0934eb3c025f20987c79991"
     },
     "source": "popular_stars",
@@ -2020,6 +2028,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-13T08:53:10.283785+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d408c3b100b5bcd82a967cdb9c23019a845e65a8",
+        "new_sha": "4da6c2df0097787149ca51c8c290dcdd0d52eb17",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:05.877238+00:00"
       }
     ]
   },
@@ -2543,7 +2559,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "7d9bb784146ebd28a3a6697906c02f0fe4c61d9f"
+      "AGENTS.md": "c905c4dc789071fbd9f756d787c65e6349eeb5d9"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -2560,6 +2576,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-27T07:00:37.273507+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "7d9bb784146ebd28a3a6697906c02f0fe4c61d9f",
+        "new_sha": "c905c4dc789071fbd9f756d787c65e6349eeb5d9",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:13.067417+00:00"
       }
     ]
   },
@@ -3296,7 +3320,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "0de862c250d0096fb5c73f0d4a15801a3e473fb8",
+      "AGENTS.md": "e32389a3daf501443bf5a66c3636a0da052493c4",
       "CLAUDE.md": "abed7dc1c45eb8842bedc3262321c9d1ef55e72d"
     },
     "source": "popular_stars",
@@ -3322,6 +3346,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-15T08:37:08.975466+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "0de862c250d0096fb5c73f0d4a15801a3e473fb8",
+        "new_sha": "e32389a3daf501443bf5a66c3636a0da052493c4",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:01.179145+00:00"
       }
     ]
   },
@@ -3603,7 +3635,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2233b833611c71c2c78a10941a349ecf56f20ebd"
+      "AGENTS.md": "994d2cb746ee00f1cf444d6c0d418a5492e3d83e"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -3611,7 +3643,17 @@
     "discovered_at": "2026-10-27T07:01:02.972548+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/186",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2233b833611c71c2c78a10941a349ecf56f20ebd",
+        "new_sha": "994d2cb746ee00f1cf444d6c0d418a5492e3d83e",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:07.664395+00:00"
+      }
+    ]
   },
   "gitroomhq/postiz-app": {
     "stars": 38679,
@@ -4823,7 +4865,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "d6abb76ab8384fb7b391b551b159002657c218c1"
+      "AGENTS.md": "60e93c4cc64a5034f05693dffe83739d29e6f4ce"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -4831,7 +4873,17 @@
     "discovered_at": "2026-11-07T07:58:38.420618+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/271",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "d6abb76ab8384fb7b391b551b159002657c218c1",
+        "new_sha": "60e93c4cc64a5034f05693dffe83739d29e6f4ce",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:11.019317+00:00"
+      }
+    ]
   },
   "meta/astryx": {
     "stars": 14825,
@@ -4991,7 +5043,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "98ee8e8c95ff43a4d8dff071ed1473e091bd927a"
+      "AGENTS.md": "8c293a8ef02d6390941665c533f8801af3cb00cd"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -4999,7 +5051,17 @@
     "discovered_at": "2026-11-09T08:50:36.757948+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/280",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "98ee8e8c95ff43a4d8dff071ed1473e091bd927a",
+        "new_sha": "8c293a8ef02d6390941665c533f8801af3cb00cd",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-19T09:39:09.210830+00:00"
+      }
+    ]
   },
   "Lodestone-Team/lodestone": {
     "stars": 1315,
@@ -6008,6 +6070,100 @@
     "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
     "discovered_at": "2026-11-18T09:28:03.696122+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/361",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "astral-sh/uv": {
+    "stars": 92360,
+    "language": "Rust",
+    "description": "An extremely fast Python package and project manager, written in Rust.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "f6994e01b21a4453bd08a210821cb063d4442b90"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-19T09:39:15.599726+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/369",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "appwrite/appwrite": {
+    "stars": 58361,
+    "language": "TypeScript",
+    "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "9cd5f246e721167e8afa3a65d356d04552ef36d1",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-19T09:39:17.367135+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/370",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "n8n-io/n8n": {
+    "stars": 211318,
+    "language": "TypeScript",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0768372a3cf9c719457cabf3bba34629c8003db6",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-19T09:39:19.121091+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/371",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "solidjs/solid": {
+    "stars": 36723,
+    "language": "TypeScript",
+    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0273420290d947813eae0902c0cd9bd737ffb7f5"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-19T09:39:20.758730+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/372",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "spotify-web-api-java/spotify-web-api-java": {
+    "stars": 1076,
+    "language": "HTML",
+    "description": "A Java wrapper for Spotify's Web API.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "0a15b23f44b485a8bcb9aac49fecbea6b0fd98da"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-19T09:39:22.489361+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/373",
     "pr_url": null,
     "status": "pending_review"
   }

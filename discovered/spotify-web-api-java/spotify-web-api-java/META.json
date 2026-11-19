@@ -1,0 +1,23 @@
+{
+  "stars": 1076,
+  "language": "HTML",
+  "description": "A Java wrapper for Spotify's Web API.",
+  "url": "https://github.com/spotify-web-api-java/spotify-web-api-java",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AGENTS.md",
+    "This file provides context for AI coding agents working in this repository.",
+    "Read [CONTRIBUTING.md](CONTRIBUTING.md) first: it carries the rules a contribution is judged against and the release procedure, and it applies to agents exactly as it does to people.",
+    "This file covers the mechanics of the codebase and does not repeat them."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "0a15b23f44b485a8bcb9aac49fecbea6b0fd98da"
+  },
+  "discovered_at": "2026-11-19T09:39:22.109325+00:00",
+  "repo": "spotify-web-api-java/spotify-web-api-java"
+}

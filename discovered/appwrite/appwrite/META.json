@@ -1,0 +1,25 @@
+{
+  "stars": 58361,
+  "language": "TypeScript",
+  "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+  "url": "https://github.com/appwrite/appwrite",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "Self-hosted Backend-as-a-Service. Hybrid monolithic-microservice architecture on PHP 8.5+ and Swoole 6, delivered as Docker containers.",
+    "Commands",
+    "| Command | Purpose |",
+    "|---------|---------|"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "9cd5f246e721167e8afa3a65d356d04552ef36d1",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-19T09:39:16.979961+00:00",
+  "repo": "appwrite/appwrite"
+}
