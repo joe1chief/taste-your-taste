@@ -1,0 +1,25 @@
+{
+  "stars": 68912,
+  "language": "HTML",
+  "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+  "url": "https://github.com/cathrynlavery/diagram-design",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "Notes for coding agents",
+    "Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing anything. It has the gate suite and the rules for each kind of change. This file covers the parts of adding a diagram that agents keep missing.",
+    "Adding a diagram type or variant",
+    "Follow \"Adding a new diagram type\" in CONTRIBUTING.md. The suite fails until these are done:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "137f15f808b8a9f97df1681c5d8f64a804d47ab3",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-20T09:23:27.933564+00:00",
+  "repo": "cathrynlavery/diagram-design"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 13310,
+  "language": "Python",
+  "description": "The open-source agent for CI/CD reliability.",
+  "url": "https://github.com/Tracer-Cloud/opensre",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "OpenSRE agent instructions",
+    "Keep this file to repository-wide rules and task-specific reading directions.",
+    "Before editing, read applicable package `AGENTS.md` files; load linked references",
+    "only for the work they govern. Put explanations and incident history in references,"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "d5090daa6e1a9e3cc760804836e30a7a54fc5f14",
+    "CLAUDE.md": "01675dfa6dd7a8be12385c9be7a0cd00c8edaedc"
+  },
+  "discovered_at": "2026-11-20T09:23:31.790266+00:00",
+  "repo": "Tracer-Cloud/opensre"
+}

@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**277 tracked projects** | **26 curated** | **251 pending review**
+**282 tracked projects** | **26 curated** | **256 pending review**
 
-Last completed scan: [2026-11-19 09:39:22 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/44498306602).
+Last completed scan: [2026-11-20 09:23:34 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/44710256822).
 
-Latest content activity: **2026-11-19 09:39:22 UTC**.
+Latest content activity: **2026-11-20 09:23:34 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-20 09:23:34 | [XiaoYouChR/Ghost-Downloader-3](https://github.com/XiaoYouChR/Ghost-Downloader-3) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/378) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/xiaoyouchr/ghost-downloader-3) |
+| 2026-11-20 09:23:32 | [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/377) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tracer-cloud/opensre) |
+| 2026-11-20 09:23:30 | [mjmirza/app-store-compliance](https://github.com/mjmirza/app-store-compliance) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/376) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mjmirza/app-store-compliance) |
+| 2026-11-20 09:23:28 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/375) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/cathrynlavery/diagram-design) |
+| 2026-11-20 09:23:26 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/374) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/firecrawl/firecrawl) |
 | 2026-11-19 09:39:22 | [spotify-web-api-java/spotify-web-api-java](https://github.com/spotify-web-api-java/spotify-web-api-java) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/373) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spotify-web-api-java/spotify-web-api-java) |
 | 2026-11-19 09:39:20 | [solidjs/solid](https://github.com/solidjs/solid) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/372) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/solidjs/solid) |
 | 2026-11-19 09:39:19 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/371) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n) |
 | 2026-11-19 09:39:17 | [appwrite/appwrite](https://github.com/appwrite/appwrite) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/370) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/appwrite/appwrite) |
 | 2026-11-19 09:39:15 | [astral-sh/uv](https://github.com/astral-sh/uv) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/369) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/astral-sh/uv) |
-| 2026-11-19 09:39:13 | [koala73/worldmonitor](https://github.com/koala73/worldmonitor) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/113) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/koala73/worldmonitor) |
-| 2026-11-19 09:39:11 | [microsoft/vscode](https://github.com/microsoft/vscode) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/271) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/microsoft/vscode) |
-| 2026-11-19 09:39:09 | [darlinghq/darling](https://github.com/darlinghq/darling) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/280) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/darlinghq/darling) |
-| 2026-11-19 09:39:07 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/186) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot) |
-| 2026-11-19 09:39:05 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/78) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nousresearch/hermes-agent) |
 <!-- TASTE:LATEST:END -->
 
 ---

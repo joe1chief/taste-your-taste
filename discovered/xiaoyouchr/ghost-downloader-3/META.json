@@ -1,0 +1,25 @@
+{
+  "stars": 13224,
+  "language": "Python",
+  "description": "The only downloader you need. 下载器的集大成者。",
+  "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "CLAUDE.md",
+    "这是宪法：下面的规则未覆盖的场景，以此判断。",
+    "Simple is better than complex.** (Zen)",
+    "Flat is better than nested.** (Zen)：函数优于类、内联优于跳转、三行重复优于过早抽象"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+    "CLAUDE.md": "934c19473e033ee032326c4a19b45b4692864622"
+  },
+  "discovered_at": "2026-11-20T09:23:33.698645+00:00",
+  "repo": "XiaoYouChR/Ghost-Downloader-3"
+}

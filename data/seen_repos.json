@@ -6166,5 +6166,103 @@
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/373",
     "pr_url": null,
     "status": "pending_review"
+  },
+  "firecrawl/firecrawl": {
+    "stars": 204641,
+    "language": "TypeScript",
+    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "93f2a1d39a7a5eeba69a28a10e7e25433506d3b1",
+      "CLAUDE.md": "1dd8c228191ce5c3880baac0b64d69331f76393f"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-20T09:23:26.587417+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/374",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "cathrynlavery/diagram-design": {
+    "stars": 68912,
+    "language": "HTML",
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "137f15f808b8a9f97df1681c5d8f64a804d47ab3",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-20T09:23:28.474302+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/375",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "mjmirza/app-store-compliance": {
+    "stars": 2261,
+    "language": "Shell",
+    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "76e7dbd65444dfe3c4fa60a5b325106afb5f7b41"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-20T09:23:30.438499+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/376",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Tracer-Cloud/opensre": {
+    "stars": 13310,
+    "language": "Python",
+    "description": "The open-source agent for CI/CD reliability.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "d5090daa6e1a9e3cc760804836e30a7a54fc5f14",
+      "CLAUDE.md": "01675dfa6dd7a8be12385c9be7a0cd00c8edaedc"
+    },
+    "source": "trending",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-20T09:23:32.292991+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/377",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "XiaoYouChR/Ghost-Downloader-3": {
+    "stars": 13224,
+    "language": "Python",
+    "description": "The only downloader you need. 下载器的集大成者。",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "CLAUDE.md": "934c19473e033ee032326c4a19b45b4692864622"
+    },
+    "source": "trending",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-20T09:23:34.352200+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/378",
+    "pr_url": null,
+    "status": "pending_review"
   }
 }

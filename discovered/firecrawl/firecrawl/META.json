@@ -1,0 +1,25 @@
+{
+  "stars": 204641,
+  "language": "TypeScript",
+  "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+  "url": "https://github.com/firecrawl/firecrawl",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Firecrawl is a web scraper API. The directory you have access to is a monorepo:",
+    "`apps/api` has the actual API and worker code",
+    "`apps/*-sdk` are various SDKs",
+    "When making changes to the API, here are the general steps you should take:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "93f2a1d39a7a5eeba69a28a10e7e25433506d3b1",
+    "CLAUDE.md": "1dd8c228191ce5c3880baac0b64d69331f76393f"
+  },
+  "discovered_at": "2026-11-20T09:23:26.034146+00:00",
+  "repo": "firecrawl/firecrawl"
+}
