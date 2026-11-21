@@ -859,7 +859,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "12f6c581956cfdb4470b40ad6b45f694d20425ef",
+      "AGENTS.md": "2ce4be8b77640945f8da73e025248c66ffc80a38",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -941,6 +941,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-18T09:27:53.339700+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "12f6c581956cfdb4470b40ad6b45f694d20425ef",
+        "new_sha": "2ce4be8b77640945f8da73e025248c66ffc80a38",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:59:49.663015+00:00"
       }
     ]
   },
@@ -1316,7 +1324,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2af483be32f38eec95e7abe5cf2f65c6bc9c464f"
+      "AGENTS.md": "8119f534a75c01af1ee0238f4f2a656b48b2466a"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1405,6 +1413,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-11T08:37:07.919433+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2af483be32f38eec95e7abe5cf2f65c6bc9c464f",
+        "new_sha": "8119f534a75c01af1ee0238f4f2a656b48b2466a",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:57:58.391950+00:00"
       }
     ]
   },
@@ -1645,7 +1661,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "4cc0085e34ea62b8aeec3a41dd687d7d02a14184"
+      "AGENTS.md": "23877852dd3eec1787d1a411be782cd354089fff"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1718,6 +1734,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-19T09:39:02.676125+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "4cc0085e34ea62b8aeec3a41dd687d7d02a14184",
+        "new_sha": "23877852dd3eec1787d1a411be782cd354089fff",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:58:36.814826+00:00"
       }
     ]
   },
@@ -2739,7 +2763,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "025b9624a9a6da8d2b23cf7c3ac27333b42809c5"
+      "AGENTS.md": "30c8a17bb8a96999776cee90c6753c337a6474d3"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -2756,6 +2780,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-10-22T06:48:24.600220+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "025b9624a9a6da8d2b23cf7c3ac27333b42809c5",
+        "new_sha": "30c8a17bb8a96999776cee90c6753c337a6474d3",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:59:08.497176+00:00"
       }
     ]
   },
@@ -2863,7 +2895,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "7ded821d2814c6cee751ea55ec87115b70e39f4c"
+      "AGENTS.md": "262153866f09547d88559e055e52ecc5dd72fa90"
     },
     "source": "popular_stars",
     "archetype": "Engineering Craft",
@@ -2871,7 +2903,17 @@
     "discovered_at": "2026-10-20T06:50:32.112991+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/131",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "7ded821d2814c6cee751ea55ec87115b70e39f4c",
+        "new_sha": "262153866f09547d88559e055e52ecc5dd72fa90",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:58:30.338183+00:00"
+      }
+    ]
   },
   "compozy/compozy": {
     "stars": 2810,
@@ -3965,7 +4007,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "e2628897ff775764c86d19a68663143772c17c8d"
+      "AGENTS.md": "ecb48c854d20b03adbc119c327e8d0a19e571479"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -3973,7 +4015,17 @@
     "discovered_at": "2026-10-30T07:52:51.408758+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/206",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "e2628897ff775764c86d19a68663143772c17c8d",
+        "new_sha": "ecb48c854d20b03adbc119c327e8d0a19e571479",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:59:46.454550+00:00"
+      }
+    ]
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "stars": 29669,
@@ -5153,7 +5205,7 @@
       "SKILL.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6c90718d4aec85e4763f009ce46dc4f654cd16e2",
+      "AGENTS.md": "9d54d78f2162b4e8f3540538f5e5722204610648",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
       "SKILL.md": "405e9fb25389c5044c32f712fb76fe7ede4bfca8"
     },
@@ -5163,7 +5215,17 @@
     "discovered_at": "2026-11-10T08:56:27.085345+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/289",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6c90718d4aec85e4763f009ce46dc4f654cd16e2",
+        "new_sha": "9d54d78f2162b4e8f3540538f5e5722204610648",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:59:12.911957+00:00"
+      }
+    ]
   },
   "homeassistant-ai/ha-mcp": {
     "stars": 6239,
@@ -5746,8 +5808,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "eb2f9356f9e1f8f03691477f3704562c8a02b3ef",
-      "CLAUDE.md": "1c874107ccba0c04d0d39498e50a6eb067a4dd61"
+      "AGENTS.md": "bca93926574949c829b53074c6994c196d2eab12",
+      "CLAUDE.md": "facd5d12ebf9389a5fd91248a10c0bbabc45a4e3"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -5772,6 +5834,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-18T09:27:38.400631+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "eb2f9356f9e1f8f03691477f3704562c8a02b3ef",
+        "new_sha": "bca93926574949c829b53074c6994c196d2eab12",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-21T08:58:33.486094+00:00"
       }
     ]
   },
@@ -6262,6 +6332,100 @@
     "vibe": "Clean and practical instructions tailored for real-world development.",
     "discovered_at": "2026-11-20T09:23:34.352200+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/378",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "zhouxiaoka/autoclip": {
+    "stars": 12428,
+    "language": "Python",
+    "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "bdee8ea23a2816ecd2f61ea44120f732ec5240e7",
+      "CLAUDE.md": "4e29f68acfc3122a57a801a621752e18a4942753"
+    },
+    "source": "trending",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-21T08:59:53.191760+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/387",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "azuyalabs/yasumi": {
+    "stars": 1105,
+    "language": "PHP",
+    "description": "The easy PHP Library for calculating holidays",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "1a51ff5aba43abd1be30bbb383c9176b4332dbba"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-21T08:59:55.282084+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/388",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "HD838A/remote-mic-app": {
+    "stars": 3073,
+    "language": "Swift",
+    "description": "无线麦（SayAll.app）：支持小米蓝牙遥控器 2 和 2 Pro，变成 Mac 语音输入设备",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7d79bd2318f76207306784fce27ffee7484365b8"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-21T09:00:27.184151+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/389",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "keploy/keploy": {
+    "stars": 19923,
+    "language": "Go",
+    "description": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "451941ffb7e1b3c0e7459d3a6d5b25259cb33c34"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-21T09:00:29.572537+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/390",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "apache/superset": {
+    "stars": 75601,
+    "language": "Python",
+    "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5215a70bf032e0503c4ea3e8d0ee28f8976c46ef",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-21T09:01:01.589533+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/391",
     "pr_url": null,
     "status": "pending_review"
   }

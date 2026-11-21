@@ -1,0 +1,25 @@
+{
+  "stars": 75601,
+  "language": "Python",
+  "description": "Apache Superset is a Data Visualization and Data Exploration Platform",
+  "url": "https://github.com/apache/superset",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "LLM Context Guide for Apache Superset",
+    "Apache Superset is a data visualization platform with Flask/Python backend and React/TypeScript frontend.",
+    "Run Pre-commit Before Pushing",
+    "Always run pre-commit against the files changed by the current branch before"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5215a70bf032e0503c4ea3e8d0ee28f8976c46ef",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-21T09:01:01.140584+00:00",
+  "repo": "apache/superset"
+}

@@ -1,0 +1,23 @@
+{
+  "stars": 1105,
+  "language": "PHP",
+  "description": "The easy PHP Library for calculating holidays",
+  "url": "https://github.com/azuyalabs/yasumi",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Yasumi — Agent Instructions",
+    "Yasumi is a PHP library for calculating public holidays across countries and regions.",
+    "It is calculation-driven (no database), provider-based (one class per country/region),",
+    "and PSR-12/PSR-4 compliant."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "1a51ff5aba43abd1be30bbb383c9176b4332dbba"
+  },
+  "discovered_at": "2026-11-21T08:59:54.642113+00:00",
+  "repo": "azuyalabs/yasumi"
+}

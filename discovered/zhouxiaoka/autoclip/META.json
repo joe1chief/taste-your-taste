@@ -1,0 +1,25 @@
+{
+  "stars": 12428,
+  "language": "Python",
+  "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+  "url": "https://github.com/zhouxiaoka/autoclip",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "AutoClip quality and release requirements",
+    "Read [docs/TESTING_ACCEPTANCE.md](docs/TESTING_ACCEPTANCE.md) before changing code or preparing a release. Use [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md) for release operations.",
+    "Diagnose the latest report using its version, platform and build. Preserve unrelated work, user data and secrets. Use isolated data directories for every test.",
+    "For a production defect, reproduce the triggering conditions and show the regression fails before the fix and passes afterward. Test boundaries between configuration, requests, persistence, runtime and UI; test count alone is not acceptance."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "bdee8ea23a2816ecd2f61ea44120f732ec5240e7",
+    "CLAUDE.md": "4e29f68acfc3122a57a801a621752e18a4942753"
+  },
+  "discovered_at": "2026-11-21T08:59:52.661191+00:00",
+  "repo": "zhouxiaoka/autoclip"
+}

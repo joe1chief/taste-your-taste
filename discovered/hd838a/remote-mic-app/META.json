@@ -1,0 +1,23 @@
+{
+  "stars": 3073,
+  "language": "Swift",
+  "description": "无线麦（SayAll.app）：支持小米蓝牙遥控器 2 和 2 Pro，变成 Mac 语音输入设备",
+  "url": "https://github.com/HD838A/remote-mic-app",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "规范层级与文档边界",
+    "```governance-policy",
+    "G-DOC.entry=DOCUMENTATION.md",
+    "G-DOC.authority=chinese"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7d79bd2318f76207306784fce27ffee7484365b8"
+  },
+  "discovered_at": "2026-11-21T09:00:26.700503+00:00",
+  "repo": "HD838A/remote-mic-app"
+}

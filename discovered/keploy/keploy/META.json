@@ -1,0 +1,23 @@
+{
+  "stars": 19923,
+  "language": "Go",
+  "description": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
+  "url": "https://github.com/keploy/keploy",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Practical reference for agents working in `keploy/keploy`. Everything here is",
+    "grounded in the current state of the repo — if something below conflicts with",
+    "what you see on disk, trust the disk and update this file."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "451941ffb7e1b3c0e7459d3a6d5b25259cb33c34"
+  },
+  "discovered_at": "2026-11-21T09:00:29.042398+00:00",
+  "repo": "keploy/keploy"
+}
