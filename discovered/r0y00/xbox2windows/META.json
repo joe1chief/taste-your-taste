@@ -1,0 +1,25 @@
+{
+  "stars": 1063,
+  "language": "Python",
+  "description": "GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified.",
+  "url": "https://github.com/R0Y00/Xbox2Windows",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "This file is for coding agents working in Xbox2Windows. Read `CONTRIBUTING.md` and",
+    "`docs/experiments.md` before changing behavior. If this file conflicts with those",
+    "documents, they take precedence."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "bc2823073f3275c2b5895b14ecb20985586f80f1",
+    "CLAUDE.md": "f6aa6c02628c3cda86119f8555a85c0e4040bad2"
+  },
+  "discovered_at": "2026-11-22T09:02:55.183988+00:00",
+  "repo": "R0Y00/Xbox2Windows"
+}

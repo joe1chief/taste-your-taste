@@ -297,7 +297,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "cd5ecef4ba045300693cbbb9290fa6767a7e7e9f"
+      "AGENTS.md": "ab74f3973a99a06e845e81db89c67a7d131a5d99"
     },
     "evolution_history": [
       {
@@ -347,6 +347,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-12T08:57:11.896731+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "cd5ecef4ba045300693cbbb9290fa6767a7e7e9f",
+        "new_sha": "ab74f3973a99a06e845e81db89c67a7d131a5d99",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-22T09:01:42.376396+00:00"
       }
     ]
   },
@@ -1167,8 +1175,8 @@
     ],
     "file_shas": {
       "AGENTS.md": "ab1ff3f3bec9e4ab3ee6d2cb9bca691e27f484d0",
-      "CLAUDE.md": "35db4608f40d6542dcf2a16e4d0c7808da3a421b",
-      "SKILL.md": "300fc282e4f862ff13709d261cbe6be62b31a2b4"
+      "CLAUDE.md": "60bcc507be2619782769bcaa6605763fa985c0ed",
+      "SKILL.md": "faf14f9248297926bf162304d45cc92e928e4b62"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -1201,6 +1209,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-16T08:45:49.836079+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "35db4608f40d6542dcf2a16e4d0c7808da3a421b",
+        "new_sha": "60bcc507be2619782769bcaa6605763fa985c0ed",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated CLAUDE.md instructions.",
+        "timestamp": "2026-11-22T09:00:28.712908+00:00"
       }
     ]
   },
@@ -1661,7 +1677,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "23877852dd3eec1787d1a411be782cd354089fff"
+      "AGENTS.md": "5962125f34847cae04f5425dbee9cc43a1e230cf"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -1742,6 +1758,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-21T08:58:36.814826+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "23877852dd3eec1787d1a411be782cd354089fff",
+        "new_sha": "5962125f34847cae04f5425dbee9cc43a1e230cf",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-22T09:00:38.369809+00:00"
       }
     ]
   },
@@ -4353,7 +4377,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ff608de69bcccd231ccf1850bfe3be7ef97722cd"
+      "AGENTS.md": "17aecbcc4225493061b6b91f3af4b45b56a7f081"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4370,6 +4394,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-04T08:17:19.370638+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ff608de69bcccd231ccf1850bfe3be7ef97722cd",
+        "new_sha": "17aecbcc4225493061b6b91f3af4b45b56a7f081",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-22T09:00:31.821963+00:00"
       }
     ]
   },
@@ -4946,7 +4978,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "59f90fd7a2b58c12f16d38564a13d60585c4afbd",
+      "AGENTS.md": "4c6c953fdfb7eaf6f240836be721b1ed4f8f7366",
       "CLAUDE.md": "65bc7681b0eaff166889df7319c75558e77e4961"
     },
     "source": "trending",
@@ -4980,6 +5012,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-16T08:45:42.652178+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "59f90fd7a2b58c12f16d38564a13d60585c4afbd",
+        "new_sha": "4c6c953fdfb7eaf6f240836be721b1ed4f8f7366",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-22T09:01:10.300215+00:00"
       }
     ]
   },
@@ -5616,7 +5656,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "bc6106319b8a54b02ea3c7ee6ccc01e4e60e9fb1",
+      "AGENTS.md": "8bfbe82d69949ef87a7fc82371b178c97392232a",
       "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
     },
     "source": "trending",
@@ -5634,6 +5674,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-17T09:52:55.593035+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bc6106319b8a54b02ea3c7ee6ccc01e4e60e9fb1",
+        "new_sha": "8bfbe82d69949ef87a7fc82371b178c97392232a",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-22T09:00:35.516162+00:00"
       }
     ]
   },
@@ -6426,6 +6474,102 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-21T09:01:01.589533+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/391",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "JosssphZhou/poki": {
+    "stars": 1775,
+    "language": "Swift",
+    "description": "Poki uses your iPhone like you do. An open-source agent app that runs on your iPhone, reads the screen, and taps, types and swipes in real apps with your own model account.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ed4cf3b008c71039b9d94c2eba61e8c7915dbcba"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-22T09:02:16.513410+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/398",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "loopx-project/loopx": {
+    "stars": 6740,
+    "language": "Python",
+    "description": "The control plane for 24/7 always-on agents. Turn long-horizon goals into verifiable results across Codex, Claude Code, and custom runtimes—from local SQLite to team scale.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7f4891e1d2bbd96d6a84a3ccde1e27a3c756b68d",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-22T09:02:19.212536+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/399",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "marketcalls/openalgo": {
+    "stars": 3031,
+    "language": "Python",
+    "description": "The Open Source Trading Ecosystem for Everyone.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "1e934ac4e3bb31c7a825bbbd6a94cc9e44c137d6"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-22T09:02:21.414319+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/400",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ccch1mneyyy/dsh-Go": {
+    "stars": 29861,
+    "language": "Dart",
+    "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "686a463cc1fd02735683194b97578e60c2810c6c",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-22T09:02:23.772087+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/401",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "R0Y00/Xbox2Windows": {
+    "stars": 1063,
+    "language": "Python",
+    "description": "GTA VI static recompilation research for x64 Windows. Source-built EXEs run on Windows, and two translated pixel shaders match reference outputs on hardware and WARP. Full-game startup is unverified.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "bc2823073f3275c2b5895b14ecb20985586f80f1",
+      "CLAUDE.md": "f6aa6c02628c3cda86119f8555a85c0e4040bad2"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-22T09:02:55.740220+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/402",
     "pr_url": null,
     "status": "pending_review"
   }

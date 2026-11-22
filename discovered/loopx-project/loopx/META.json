@@ -1,0 +1,25 @@
+{
+  "stars": 6740,
+  "language": "Python",
+  "description": "The control plane for 24/7 always-on agents. Turn long-horizon goals into verifiable results across Codex, Claude Code, and custom runtimes—from local SQLite to team scale.",
+  "url": "https://github.com/loopx-project/loopx",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Agent Instructions",
+    "What LoopX Does",
+    "LoopX is a local-first, runtime-neutral control plane for long-horizon agents",
+    "and personal agent teams. The Agent host supplies models and tools; LoopX keeps"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7f4891e1d2bbd96d6a84a3ccde1e27a3c756b68d",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-22T09:02:18.432551+00:00",
+  "repo": "loopx-project/loopx"
+}

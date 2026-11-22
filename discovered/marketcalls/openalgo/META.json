@@ -1,0 +1,23 @@
+{
+  "stars": 3031,
+  "language": "Python",
+  "description": "The Open Source Trading Ecosystem for Everyone.",
+  "url": "https://github.com/marketcalls/openalgo",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "Guidance for Claude Code working in this repository. This file carries what is",
+    "not discoverable by reading the code**: product context, invariants, runtime",
+    "constraints, and conventions. Structure, commands, and config are discoverable —"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "1e934ac4e3bb31c7a825bbbd6a94cc9e44c137d6"
+  },
+  "discovered_at": "2026-11-22T09:02:20.937027+00:00",
+  "repo": "marketcalls/openalgo"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 29861,
+  "language": "Dart",
+  "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+  "url": "https://github.com/ccch1mneyyy/dsh-Go",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "AGENTS.md",
+    "dsh-Go 是 DeepSeek Harness 的手机应用：Flutter 原生界面 + 纯 Dart 客户端 + 打过补丁的 DSH 引擎运行时。Android 版在 PRoot 里运行 `dsh web`；鸿蒙版共用同一套 Dart，宿主是 ArkTS（`app/ohos/`），引擎跑在 App 进程内的 Node 里（`runtime/ohos/`，见 [docs/architecture.md §3B](docs/architecture.md)）。改动前先读 [CONTRIBUTING.md](CONTRIBUTING.md)（贡献与验证契约）与 [docs/architecture.md](docs/architecture.md)。",
+    "app/                         Flutter App：原生界面、Riverpod 状态、l10n、手机操控",
+    "app/lib/l10n/parts/          界面文案的中英文 ARB 输入"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "686a463cc1fd02735683194b97578e60c2810c6c",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-22T09:02:23.284877+00:00",
+  "repo": "ccch1mneyyy/dsh-Go"
+}

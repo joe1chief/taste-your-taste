@@ -20,8 +20,8 @@
   ],
   "file_shas": {
     "AGENTS.md": "ab1ff3f3bec9e4ab3ee6d2cb9bca691e27f484d0",
-    "CLAUDE.md": "35db4608f40d6542dcf2a16e4d0c7808da3a421b",
-    "SKILL.md": "300fc282e4f862ff13709d261cbe6be62b31a2b4"
+    "CLAUDE.md": "60bcc507be2619782769bcaa6605763fa985c0ed",
+    "SKILL.md": "faf14f9248297926bf162304d45cc92e928e4b62"
   },
   "discovered_at": "2026-10-05T07:53:52.270321+00:00",
   "repo": "garrytan/gstack"
