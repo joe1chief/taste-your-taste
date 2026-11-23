@@ -1,0 +1,25 @@
+{
+  "stars": 22317,
+  "language": "Ruby",
+  "description": "🍻 Default casks (upstream binary packages) for the package manager for everywhere",
+  "url": "https://github.com/Homebrew/homebrew-cask",
+  "archetype": "Hacker Velocity",
+  "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+  "highlights": [
+    "Agent Instructions for homebrew-cask",
+    "This document helps coding agents produce high-quality PRs for Homebrew Cask contributions.",
+    "Before Any PR",
+    "1. **Check for existing PRs** for the same cask: [open PRs](https://github.com/Homebrew/homebrew-cask/pulls)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7eded463224f3a84d89f8f777f9287fe9670db77",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-23T09:59:13.322189+00:00",
+  "repo": "Homebrew/homebrew-cask"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 2583,
+  "language": "TypeScript",
+  "description": "An open coding agent for your terminal, built by a community collective rather than a company. Bring your own model, keep your code on your machine, and owe nothing to anyone.",
+  "url": "https://github.com/Nano-Collective/nanocoder",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Instructions for AI coding agents working on **@nanocollective/nanocoder**. `CLAUDE.md` has the full architecture map; this file is the short version.",
+    "Project Overview",
+    "Nanocoder is a local-first CLI coding agent written in TypeScript. The terminal UI is React 19 rendered with Ink. It talks to many LLM providers (Ollama, OpenRouter, Anthropic, Gemini and any OpenAI-compatible API) through the Vercel AI SDK. It is not a web application."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "5814bd2bf2c687f32ae4fce9471a5dc424215335",
+    "CLAUDE.md": "4c636fdbf9d49c2a6c479a5f1514b96b786c7f39"
+  },
+  "discovered_at": "2026-11-23T09:59:20.122943+00:00",
+  "repo": "Nano-Collective/nanocoder"
+}

@@ -90,6 +90,20 @@ Follow [the shared design system](docs/design-system.md#interaction-and-feedback
 - Reserve geometry for slow content with shared Skeletons and poster fallbacks. Resource errors replace their reserved content and provide recovery; do not leave indefinite loading after a known failure. Stop offscreen/background video work.
 - Verify actual opened menus, Toasts, loading/error states and narrow layouts in both themes. A component rendered in source is not evidence that it layers or behaves correctly in the browser.
 
+## Workflows and guided UX
+
+When building **Workflows**, Topic/Campaign/Role hubs, or any multi-step creation flow, make both manual execution and Agent handoff effortless, intuitive and approachable so users can complete the entire production smoothly without guesswork or form fatigue:
+
+1. **Minimize cognitive load and form intimidation.** Never greet users with a tall grid of raw fields. Prefer a single natural-language composer with inline or expandable parameter slots, clear example hints, sensible defaults carried from upstream steps, and one-click example presets (`Try:` / **Clear**). Keep secondary parameters tucked behind progressive disclosure toggles (such as **More parameters** / **Hide parameters** or **All fields**).
+2. **Support dual-mode workspaces cleanly (`Step by step` and `Agent mode`).** In **Step by step** manual mode, keep step navigation non-linear alongside a collapsible **Assets** panel, natural prompt inputs, and one obvious primary action per step. In **Agent mode** (`?mode=agent`), place shared **Assets** inline at the top left above a single **Prompt & parameters** composer (`Prompt` textarea, primary parameters, and expandable secondary fields), and pair it on the right with a concise **Copy for Agent** primary CTA (copying compact workflow/run metadata, attached **Assets** references, and `library:*` / `resource:*` Skills rather than repeating multi-paragraph step manuals), **Preview prompt** / **Hide prompt** toggle, and a grouped **Skills workflow** pipeline showing each step's Skills (`openmotion_get_skill` and `openmotion://workflow/*`) with quick jumps into step-by-step mode.
+3. **Keep templates scenario-relevant and secondary.** Surface only layouts that match the active workflow by default, and place broader template catalogs or link-existing-project pickers behind progressive disclosures (`Or reuse an existing Design page` / `Or link an existing Motion project`) rather than mixing unrelated templates into a workflow.
+4. **Use calm guidance for normal progress.** Unstarted steps and an empty **Assets** panel in a fresh draft are normal states, not errors. Hide empty zero-count filter chips until items exist, and use neutral inline hints with direct jump actions instead of stacked warning or alert banners.
+5. **Speak plain, natural product language.** Keep visible workflow titles, steps, buttons and hints free of technical or engineering jargon (such as "full chain", "pool", "shared pool assets", "handoff", "manifest", "bundle", "revision", "offline" or "downstream"). Name actions and outcomes in clear consumer-product terms (e.g., *Workflows*, *Step by step*, *Agent mode*, *Skills workflow*, *Export*, *Assets*, *Copy for Agent*, *Start workflow*).
+6. **Keep visual hierarchy flat and clean.** Avoid nested boxes inside boxes (`box-in-box`) or repetitive borders on static headers, badges, step counters and checklist items. Group overview cards cleanly on the open canvas, reserve clear single-level borders for primary interactive cards, use subtle tonal fills and semantic step icons/colors, and avoid cluttering unstarted steps with empty status circles.
+7. **Support dual-track direct models and step-bound MCP write-back.** Give every step direct multimodal generation (image, video, and audio via **Generate media** or native step controls) that places results straight into **Assets**, alongside Agent-mode **Copy for Agent** and step-scoped **Copy MCP prompt** (`runId`, `stepId`, `expectedRevision`), a direct link to the **MCP · Connect Agent** guide, and **Sync** / focus-visibility refresh so external Agents can write generated, edited, or linked deliverables directly back into the active step, version history (`recordIteration=true`), and **Assets**.
+
+`AGENTS.md` owns this requirement; `CLAUDE.md` links here. Apply it when designing, implementing and reviewing any workflow-oriented UI.
+
 ## Core capabilities and shared APIs
 
 Every new or extended core product capability must be callable by external Agents through the public MCP contract. This includes asset creation and management, model execution, references and versions, project import and editing, preview and export. Keep operations usable independently so external Agents can compose them into their own workflows.
@@ -100,6 +114,29 @@ Every new or extended core product capability must be callable by external Agent
 4. **Maintain both access paths together.** When adding or changing a capability, update its public schema/discovery, applicable UI consumer, MCP onboarding and documentation in the same change. Verify equivalent results and relevant failure/conflict behavior through the affected adapters. Distinguish implemented coverage from planned capabilities and document any remaining gap explicitly.
 
 `AGENTS.md` owns this requirement; `CLAUDE.md` links here. Apply it when designing, implementing and reviewing product capabilities.
+
+## Studio routing and shell boundaries
+
+Follow [Studio routing and lazy-loading architecture](docs/routing.md) whenever adding, moving or modifying a Studio page or App Shell import.
+
+1. **Keep `WorkspaceFrame.tsx` a pure App Shell.** Register every workspace page and overlay lazily in `studio/src/router/lazyPages.ts` (using `lazyWithChunkReload` and listing its module path in `LAZY_PAGE_MODULE_PATHS`), declare route metadata in `studio/src/router/routeRegistry.ts`, and render it through `RouteViewport.tsx` or `OverlayLayer.tsx`. Never add static imports of feature pages back into `WorkspaceFrame.tsx` or `studio/src/main.tsx`.
+2. **Use canonical semantic path URLs and keep route registries aligned.** Add new destinations as semantic paths across `shared/spa-routes.ts`, `studio/src/router/createAppRouter.tsx`, `studio/src/router/routeRegistry.ts`, and `studio/src/motion/workspacePageRouting.ts` together. Do not introduce new `/?page=...` query routes; keep `LegacyQueryRedirect.tsx` strictly for backward-compatible bookmarks and preserve orthogonal overlay/embed query parameters (`?templates=1`, `?embed=1`, `?hostChrome=1`, `?tracking_context=`).
+3. **Preserve shell dependency isolation.** Never pull `@hyperframes/parsers` (barrel entry), `studio/src/utils/sourcePatcher.ts`, `studio/src/utils/studioHelpers.ts`, lazy page modules, or raw Studio locale JSON into the static import graph of `studio/src/main.tsx`. Extract lightweight shared constants/helpers (such as `settingsMeta.ts`, `regex.ts`, `historyShortcuts.ts`) instead of importing page or editor modules from shell chrome.
+4. **Protect reserved backend and cloud prefixes.** Keep frontend routes away from `/api`, `/motion-api`, `/design-api`, `/mcp`, `/mcp-ui`, `/connect`, `/sessions`, `/editor-assets`, `/guide-assets`, `/design-system`, `/web`, `/.well-known` and `/__hyperframes_config`, and keep asset/API paths root-relative (`/`).
+5. **Verify boundary regressions.** Run `npm run check` (`scripts/check-routing.ts`), `studio/src/shellBoundary.test.ts`, `tests/spa-routes.test.ts`, and `npm run build:studio` when touching routes or shell imports; do not weaken boundary checks to silence a leak.
+
+`AGENTS.md` owns this requirement; `CLAUDE.md` links here. Apply it to all Studio routing and shell work.
+
+## Studio internationalization (i18n)
+
+Follow [Studio internationalization architecture and developer guide](docs/i18n.md) whenever adding or changing Studio copy or localization files.
+
+1. **Author by module, bundle by locale.** Keep translations organized by feature under `studio/src/i18n/*-ui.json` and register every new module file in `studio/src/i18n/manifest.ts` (`I18N_EXTENSION_SOURCES`). `studio/vite-i18n-plugin.ts` transposes them at build time into 10 independent lazy locale chunks (`en` stays 0 KB).
+2. **Never statically import Studio locale JSON in runtime code.** Production modules must consume translations through `useI18n()` or `translate()` and must never statically import `studio/src/i18n/*.json`, `skill-library/*`, or `sourceCatalog.ts`. `studio/src/shellBoundary.test.ts` enforces this boundary.
+3. **Complete translations, exact placeholders, no hardcoded bilingual branches.** Provide all 10 non-English locales for every new UI JSON module, keep `{var}` placeholders intact, avoid redefining existing keys with conflicting translations across files, and do not add new `locale === 'zh-CN'` UI copy branches.
+4. **Verify i18n gates.** Run `npm run check` (`scripts/check-i18n.ts`), `studio/src/shellBoundary.test.ts`, and affected `studio/src/i18n/*.test.*` suites before finishing.
+
+`AGENTS.md` owns this requirement; `CLAUDE.md` links here. Apply it to all Studio localization work.
 
 ## Product architecture review
 

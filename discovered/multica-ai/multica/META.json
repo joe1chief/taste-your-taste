@@ -1,0 +1,25 @@
+{
+  "stars": 57425,
+  "language": "Go",
+  "description": "Make humans and AI agents work as one team — open-source and self-hostable.",
+  "url": "https://github.com/multica-ai/multica",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Repository Instructions",
+    "This codebase is yours: what it's for and how it's built are your call, and you'll keep building on it.",
+    "Multica is a task management platform where people and agents collaborate on issues. These instructions apply to all coding agents working in this repository.",
+    "Scope and Reading Order"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ace6878443ac873f68dac0d27f1d578d48a443e4",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-23T09:59:18.033485+00:00",
+  "repo": "multica-ai/multica"
+}

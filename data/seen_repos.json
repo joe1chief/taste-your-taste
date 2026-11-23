@@ -592,7 +592,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "f10ed3abc55e71d9f4c9ad72fe6580f27f88eb82"
+      "AGENTS.md": "dd66f8afa2f93c583c47a6917b55996487148e3c"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -609,6 +609,14 @@
         "vibe_shift": "Shifted towards updated lockfile terminology while preserving the same strict dependency and git safety constraints.",
         "summary": "The only substantive change is a rename of the generated lockfile artifact from `packages/coding-agent/npm-shrinkwrap.json` to `packages/coding-agent/install-lock/`, with the corresponding regeneration script renamed from `generate-coding-agent-shrinkwrap.mjs` to `generate-coding-agent-install-lock.mjs`. All other rules, including conversational style, code quality, commands, dependency security, git, and issues/PRs guidance, remain identical. This reflects a terminology and tooling update rather than a shift in prompt engineering taste or constraints.",
         "timestamp": "2026-10-04T07:33:54.420887+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "f10ed3abc55e71d9f4c9ad72fe6580f27f88eb82",
+        "new_sha": "dd66f8afa2f93c583c47a6917b55996487148e3c",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-23T09:58:31.550519+00:00"
       }
     ]
   },
@@ -1837,7 +1845,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "7f8e9cedc26be72f85caf31d5afa1dcc35b9908a"
+      "AGENTS.md": "1c48b9ae49c8032b9591ad1a5737321567f5268c"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -1854,6 +1862,14 @@
         "vibe_shift": "No shift; the prompt remains focused on strict code quality, meaningful testing, and realistic proof of fixes.",
         "summary": "The two versions are identical, so no evolution in prompt engineering taste or constraints occurred. The author's rules remain unchanged, indicating a stable and consistent set of guidelines.",
         "timestamp": "2026-10-11T08:00:01.169045+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "7f8e9cedc26be72f85caf31d5afa1dcc35b9908a",
+        "new_sha": "1c48b9ae49c8032b9591ad1a5737321567f5268c",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-23T09:58:28.505389+00:00"
       }
     ]
   },
@@ -5856,8 +5872,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "bca93926574949c829b53074c6994c196d2eab12",
-      "CLAUDE.md": "facd5d12ebf9389a5fd91248a10c0bbabc45a4e3"
+      "AGENTS.md": "99d83824f6e46eaaaf1edbf214be80ef206764a0",
+      "CLAUDE.md": "307d6431516f038eb97636041768f42d6fa61ab4"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -5890,6 +5906,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-21T08:58:33.486094+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bca93926574949c829b53074c6994c196d2eab12",
+        "new_sha": "99d83824f6e46eaaaf1edbf214be80ef206764a0",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-23T09:58:34.912585+00:00"
       }
     ]
   },
@@ -6238,7 +6262,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "0768372a3cf9c719457cabf3bba34629c8003db6",
+      "AGENTS.md": "56029369301ff3291541bce0e08992212af33644",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -6247,7 +6271,17 @@
     "discovered_at": "2026-11-19T09:39:19.121091+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/371",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "0768372a3cf9c719457cabf3bba34629c8003db6",
+        "new_sha": "56029369301ff3291541bce0e08992212af33644",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-23T09:58:26.487361+00:00"
+      }
+    ]
   },
   "solidjs/solid": {
     "stars": 36723,
@@ -6570,6 +6604,86 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-22T09:02:55.740220+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/402",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Homebrew/homebrew-cask": {
+    "stars": 22317,
+    "language": "Ruby",
+    "description": "🍻 Default casks (upstream binary packages) for the package manager for everywhere",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7eded463224f3a84d89f8f777f9287fe9670db77",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Hacker Velocity",
+    "vibe": "Rapid iteration, thin wrappers, and high developer velocity.",
+    "discovered_at": "2026-11-23T09:59:13.834497+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/407",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "NVIDIA/cuda-rust": {
+    "stars": 4083,
+    "language": "Rust",
+    "description": "NVIDIA's CUDA platform for Rust. Host runtime crates plus Tile (cutile-rs) and SIMT (cuda-oxide) kernel programming models in idiomatic Rust.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "eb754a21f93284d521c5e46b5f69006e5b9a795d",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-23T09:59:16.123296+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/408",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "multica-ai/multica": {
+    "stars": 57425,
+    "language": "Go",
+    "description": "Make humans and AI agents work as one team — open-source and self-hostable.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ace6878443ac873f68dac0d27f1d578d48a443e4",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-23T09:59:18.498997+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/409",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Nano-Collective/nanocoder": {
+    "stars": 2583,
+    "language": "TypeScript",
+    "description": "An open coding agent for your terminal, built by a community collective rather than a company. Bring your own model, keep your code on your machine, and owe nothing to anyone.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "5814bd2bf2c687f32ae4fce9471a5dc424215335",
+      "CLAUDE.md": "4c636fdbf9d49c2a6c479a5f1514b96b786c7f39"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-23T09:59:20.595655+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/410",
     "pr_url": null,
     "status": "pending_review"
   }

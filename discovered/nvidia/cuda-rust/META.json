@@ -1,0 +1,25 @@
+{
+  "stars": 4083,
+  "language": "Rust",
+  "description": "NVIDIA's CUDA platform for Rust. Host runtime crates plus Tile (cutile-rs) and SIMT (cuda-oxide) kernel programming models in idiomatic Rust.",
+  "url": "https://github.com/NVIDIA/cuda-rust",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "CUDA Rust agent instructions",
+    "Repository-wide guidance. When a subdirectory has its own `AGENTS.md`, that file",
+    "is the primary guide for the conventions and workflows of that component; this",
+    "one covers what applies everywhere."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "eb754a21f93284d521c5e46b5f69006e5b9a795d",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-23T09:59:15.698292+00:00",
+  "repo": "NVIDIA/cuda-rust"
+}

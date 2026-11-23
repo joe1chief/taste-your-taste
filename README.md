@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**292 tracked projects** | **26 curated** | **266 pending review**
+**296 tracked projects** | **26 curated** | **270 pending review**
 
-Last completed scan: [2026-11-22 09:02:55 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/45005399712).
+Last completed scan: [2026-11-23 09:59:20 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/45151772247).
 
-Latest content activity: **2026-11-22 09:02:55 UTC**.
+Latest content activity: **2026-11-23 09:59:20 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-23 09:59:20 | [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/410) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nano-collective/nanocoder) |
+| 2026-11-23 09:59:18 | [multica-ai/multica](https://github.com/multica-ai/multica) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/409) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/multica-ai/multica) |
+| 2026-11-23 09:59:16 | [NVIDIA/cuda-rust](https://github.com/NVIDIA/cuda-rust) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/408) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nvidia/cuda-rust) |
+| 2026-11-23 09:59:13 | [Homebrew/homebrew-cask](https://github.com/Homebrew/homebrew-cask) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/407) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/homebrew/homebrew-cask) |
+| 2026-11-23 09:58:34 | [nexu-io/openmotion](https://github.com/nexu-io/openmotion) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/334) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion) |
+| 2026-11-23 09:58:31 | [earendil-works/pi](https://github.com/earendil-works/pi) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/10) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/earendil-works/pi) |
+| 2026-11-23 09:58:28 | [BerriAI/litellm](https://github.com/BerriAI/litellm) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/66) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/berriai/litellm) |
+| 2026-11-23 09:58:26 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/371) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n) |
 | 2026-11-22 09:02:55 | [R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/402) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/r0y00/xbox2windows) |
 | 2026-11-22 09:02:23 | [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/401) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ccch1mneyyy/dsh-go) |
-| 2026-11-22 09:02:21 | [marketcalls/openalgo](https://github.com/marketcalls/openalgo) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/400) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/marketcalls/openalgo) |
-| 2026-11-22 09:02:19 | [loopx-project/loopx](https://github.com/loopx-project/loopx) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/399) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/loopx-project/loopx) |
-| 2026-11-22 09:02:16 | [JosssphZhou/poki](https://github.com/JosssphZhou/poki) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/398) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/josssphzhou/poki) |
-| 2026-11-22 09:01:42 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
-| 2026-11-22 09:01:10 | [meta/astryx](https://github.com/meta/astryx) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/272) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/meta/astryx) |
-| 2026-11-22 09:00:38 | [stablyai/orca](https://github.com/stablyai/orca) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/61) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/stablyai/orca) |
-| 2026-11-22 09:00:35 | [backnotprop/plannotator](https://github.com/backnotprop/plannotator) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/318) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/backnotprop/plannotator) |
-| 2026-11-22 09:00:31 | [anomalyco/hex](https://github.com/anomalyco/hex) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/232) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/hex) |
 <!-- TASTE:LATEST:END -->
 
 ---
