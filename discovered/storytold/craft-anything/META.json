@@ -1,0 +1,25 @@
+{
+  "stars": 42524,
+  "language": "Rust",
+  "description": "Craft Anything: understand how any software works, and craft your own.",
+  "url": "https://github.com/storytold/craft-anything",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "<!-- craft-agents:start source=5b1a2b1982fe7c774739d06d4a3818033cf4884c sha256=41dc0e35957946bfe7639237fbf1eca92093fe7f6bd76a778779c359c4e4a82a -->",
+    "Rules for agents in Craft repositories",
+    "Source: `standards/app-agents.md` in storytold/craft-contrib; do not edit this copy. Standards are https://github.com/storytold/craft-contrib/blob/main/standards/<name>.md.",
+    "The key words MUST, MUST NOT, SHOULD, SHOULD NOT and MAY are used as in RFC 2119 and RFC 8174. When you depart from a SHOULD, say so and why in the PR."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "206441fd04a70fc48ce03bffe2edbcd74daf79e2",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-24T11:47:44.294099+00:00",
+  "repo": "storytold/craft-anything"
+}

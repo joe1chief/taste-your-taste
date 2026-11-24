@@ -1,0 +1,23 @@
+{
+  "stars": 4221,
+  "language": "Go",
+  "description": "The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, and cluster audits - all in one Go binary.",
+  "url": "https://github.com/skyhook-io/radar",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "CLAUDE.md",
+    "Project Overview",
+    "Radar is a modern Kubernetes visibility tool — local-first, no account required, no cloud dependency, fast. It provides topology visualization, event timeline, service traffic maps, resource browsing, Helm management, cluster audit (best-practices scanning), and Kubernetes upgrade impact analysis. Runs as a kubectl plugin (`kubectl-radar`) or standalone binary and opens a web UI in the browser. Open source, free forever. Built by Skyhook.",
+    "Code comments"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "CLAUDE.md": "68756e1854d706ee820a7912b26f558773e4b52b"
+  },
+  "discovered_at": "2026-11-24T11:48:04.939834+00:00",
+  "repo": "skyhook-io/radar"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 3357,
+  "language": "Rust",
+  "description": "Native Shell is a native UI framework for iOS, Android, macOS, Windows, Linux and the web, built in Rust.",
+  "url": "https://github.com/longbridge/nsh",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Working on Native Shell",
+    "NSH embeds dynamically delivered native UI in apps and also supports standalone apps.",
+    "Rust owns the runtime, reactive graph, layout and renderer; QuickJS runs app code",
+    "(the browser's JavaScript engine on web). The toolchain is Rust, without Node.js."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "738e0e5d76acb13b883666fe70c309bfb7d6eff1",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-24T11:48:02.834648+00:00",
+  "repo": "longbridge/nsh"
+}

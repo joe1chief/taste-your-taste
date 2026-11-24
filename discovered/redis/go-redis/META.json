@@ -1,0 +1,25 @@
+{
+  "stars": 22290,
+  "language": "Go",
+  "description": "Redis Go client",
+  "url": "https://github.com/redis/go-redis",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md",
+    "Guidance for AI coding agents (and humans) working in this repository. This is",
+    "the shared, tool-agnostic source of truth: Claude Code loads it through",
+    "`CLAUDE.md` (which imports this file), and other agents (Codex, Cursor, Aider,"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "090126192aa20742d530409a4303ea0cfcf1c05e",
+    "CLAUDE.md": "7e9eb08c55dbec1e3ef16d4249ae90414b9c764c"
+  },
+  "discovered_at": "2026-11-24T11:47:42.091246+00:00",
+  "repo": "redis/go-redis"
+}

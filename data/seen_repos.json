@@ -875,7 +875,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "2ce4be8b77640945f8da73e025248c66ffc80a38",
+      "AGENTS.md": "a257e1a84a4f0b6ff6f63307b5be35669eb0f800",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -965,6 +965,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-21T08:59:49.663015+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "2ce4be8b77640945f8da73e025248c66ffc80a38",
+        "new_sha": "a257e1a84a4f0b6ff6f63307b5be35669eb0f800",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:47:03.993392+00:00"
       }
     ]
   },
@@ -2075,7 +2083,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "4da6c2df0097787149ca51c8c290dcdd0d52eb17",
-      "skills/AGENTS.md": "3b6568dd32611076c0934eb3c025f20987c79991"
+      "skills/AGENTS.md": "37301ea64c5ea3f09798d3f7e03a81cccf5bf8da"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -2100,6 +2108,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-19T09:39:05.877238+00:00"
+      },
+      {
+        "file": "skills/AGENTS.md",
+        "old_sha": "3b6568dd32611076c0934eb3c025f20987c79991",
+        "new_sha": "37301ea64c5ea3f09798d3f7e03a81cccf5bf8da",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated skills/AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:47:23.033692+00:00"
       }
     ]
   },
@@ -3231,7 +3247,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "8c3a083cc3d7ded70952cc2ac53b732da06efc82"
+      "AGENTS.md": "dd7ecd712c71efcf4a754b2405181f256955d0b9"
     },
     "source": "popular_stars",
     "archetype": "Anti-Slop Minimalist",
@@ -3239,7 +3255,17 @@
     "discovered_at": "2026-10-22T06:49:04.728418+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/150",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8c3a083cc3d7ded70952cc2ac53b732da06efc82",
+        "new_sha": "dd7ecd712c71efcf4a754b2405181f256955d0b9",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:47:01.730235+00:00"
+      }
+    ]
   },
   "marcinz606/NegPy": {
     "stars": 1100,
@@ -3717,7 +3743,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "994d2cb746ee00f1cf444d6c0d418a5492e3d83e"
+      "AGENTS.md": "ea4567c36da8b6488fc65f49e7dec71d7f4d3da5"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -3734,6 +3760,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-19T09:39:07.664395+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "994d2cb746ee00f1cf444d6c0d418a5492e3d83e",
+        "new_sha": "ea4567c36da8b6488fc65f49e7dec71d7f4d3da5",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:47:20.861695+00:00"
       }
     ]
   },
@@ -6426,8 +6460,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "bdee8ea23a2816ecd2f61ea44120f732ec5240e7",
-      "CLAUDE.md": "4e29f68acfc3122a57a801a621752e18a4942753"
+      "AGENTS.md": "33f977c24b1024e4bfb850bbe9afaf762e21fe7a",
+      "CLAUDE.md": "40906b8ce1eef21c986ad360cbae47cafa0f8c5a"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -6435,7 +6469,17 @@
     "discovered_at": "2026-11-21T08:59:53.191760+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/387",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bdee8ea23a2816ecd2f61ea44120f732ec5240e7",
+        "new_sha": "33f977c24b1024e4bfb850bbe9afaf762e21fe7a",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:46:57.851952+00:00"
+      }
+    ]
   },
   "azuyalabs/yasumi": {
     "stars": 1105,
@@ -6596,7 +6640,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "bc2823073f3275c2b5895b14ecb20985586f80f1",
+      "AGENTS.md": "8123a2110f062e4066b6c0cc6a7664efbe92f323",
       "CLAUDE.md": "f6aa6c02628c3cda86119f8555a85c0e4040bad2"
     },
     "source": "popular_stars",
@@ -6605,7 +6649,17 @@
     "discovered_at": "2026-11-22T09:02:55.740220+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/402",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "bc2823073f3275c2b5895b14ecb20985586f80f1",
+        "new_sha": "8123a2110f062e4066b6c0cc6a7664efbe92f323",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-24T11:47:39.577703+00:00"
+      }
+    ]
   },
   "Homebrew/homebrew-cask": {
     "stars": 22317,
@@ -6684,6 +6738,104 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-23T09:59:20.595655+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/410",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "redis/go-redis": {
+    "stars": 22290,
+    "language": "Go",
+    "description": "Redis Go client",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "090126192aa20742d530409a4303ea0cfcf1c05e",
+      "CLAUDE.md": "7e9eb08c55dbec1e3ef16d4249ae90414b9c764c"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-24T11:47:42.665562+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/417",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "storytold/craft-anything": {
+    "stars": 42524,
+    "language": "Rust",
+    "description": "Craft Anything: understand how any software works, and craft your own.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "206441fd04a70fc48ce03bffe2edbcd74daf79e2",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-24T11:47:45.013489+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/418",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "duckduckgo/Android": {
+    "stars": 4919,
+    "language": "Kotlin",
+    "description": "DuckDuckGo Android App",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "20e5d8b73f3824bcb3d578c598c41e431adf07f8",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-24T11:47:46.938362+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/419",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "longbridge/nsh": {
+    "stars": 3357,
+    "language": "Rust",
+    "description": "Native Shell is a native UI framework for iOS, Android, macOS, Windows, Linux and the web, built in Rust.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "738e0e5d76acb13b883666fe70c309bfb7d6eff1",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-24T11:48:03.438082+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/420",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "skyhook-io/radar": {
+    "stars": 4221,
+    "language": "Go",
+    "description": "The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, and cluster audits - all in one Go binary.",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "CLAUDE.md": "68756e1854d706ee820a7912b26f558773e4b52b"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-24T11:48:05.550805+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/421",
     "pr_url": null,
     "status": "pending_review"
   }

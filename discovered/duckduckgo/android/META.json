@@ -1,0 +1,25 @@
+{
+  "stars": 4919,
+  "language": "Kotlin",
+  "description": "DuckDuckGo Android App",
+  "url": "https://github.com/duckduckgo/Android",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "AGENTS.md — DuckDuckGo Android Browser",
+    "DuckDuckGo Android is a privacy-focused browser built as a large multi-module Gradle project,",
+    "providing built-in search, tracker blocking, HTTPS enforcement and other privacy features.",
+    "Versions** (SDK levels, Kotlin, Gradle, libraries) live in the build files — don't restate them here:"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "20e5d8b73f3824bcb3d578c598c41e431adf07f8",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-24T11:47:46.114588+00:00",
+  "repo": "duckduckgo/Android"
+}
