@@ -11,4 +11,4 @@
 Agentic design skill specification for UI architectures, Design systems, and typography tokens.
 
 ## 📁 Skill Files in This Directory
-- [](./skills/agentic/SKILL.md)
+- [`skills/agentic/SKILL.md`](./skills/agentic/SKILL.md)

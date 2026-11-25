@@ -11,4 +11,4 @@
 Autonomous self-debugging loops, automated verification, diff-first execution.
 
 ## 📁 Rule Files in This Directory
-- [](./.cursorrules)
+- [`.cursorrules`](./.cursorrules)

@@ -11,5 +11,5 @@
 Modern full-stack SaaS boilerplate; strict package boundaries; production-ready TypeScript.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
-- [](./AGENTS.md)
+- [`CLAUDE.md`](./CLAUDE.md)
+- [`AGENTS.md`](./AGENTS.md)

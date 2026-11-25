@@ -11,4 +11,4 @@
 De-AI writing skill for coding agents: strips synthetic AI prose, corporate platitudes, and boilerplate.
 
 ## 📁 Skill Files in This Directory
-- [](./skills/sepia-hemingway/SKILL.md)
+- [`skills/sepia-hemingway/SKILL.md`](./skills/sepia-hemingway/SKILL.md)

@@ -11,4 +11,4 @@
 Spec-driven task proof loop with autonomous subagent spawning and deterministic exit verification.
 
 ## 📁 Skill Files in This Directory
-- [](./SKILL.md)
+- [`SKILL.md`](./SKILL.md)

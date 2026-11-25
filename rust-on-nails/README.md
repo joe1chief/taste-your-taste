@@ -11,4 +11,4 @@
 Multi-agent separation: documentation agent, CLI agent, architecture boundary validation.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

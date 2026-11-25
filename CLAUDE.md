@@ -1,11 +1,11 @@
 # CLAUDE.md — Project Taste & Operating Invariants
 
-This file guides AI agents (Claude Code, Cursor, Windsurf, Antigravity) working on the `taste-your-taste` repository.
+This file guides AI agents (Claude Code, Cursor, Windsurf, Copilot, Codex, Antigravity, Gemini CLI) working on the `taste-your-taste` repository.
 
 ---
 
 ## 🎯 Project Mission
-**Taste Your Taste** is an autonomous developer taste curation and vibe-stacking engine for AI agents. It provides a zero-dependency CLI (`taste`), an LLM-driven Linus Torvalds critic (`taste roast`), a prompt token compactor (`taste prune`), a philosophy comparator (`taste diff`), a dynamic GitHub profile badge generator (`taste card`), and an autonomous trending radar (`scripts/radar.py`).
+**Taste Your Taste (v2.0)** is an autonomous developer taste curation and vibe-stacking engine for AI agents. It provides a zero-dependency CLI (`taste`), a modular `SKILL.md` installer (`taste skill`), a CI prompt quality gate (`taste check`), an LLM-driven Linus Torvalds critic (`taste roast`), a prompt token compactor (`taste prune`), a philosophy comparator (`taste diff`), dynamic SVG badges (`taste card` / `taste badge`), and an autonomous trending radar (`scripts/radar.py`).
 
 ---
 
@@ -22,11 +22,11 @@ This file guides AI agents (Claude Code, Cursor, Windsurf, Antigravity) working 
 
 ### 3. Zero External Runtime Dependencies
 * The core CLI (`taste`) and engines (`src/*.js`) must remain **100% dependency-free**.
-* Use only Node.js built-in standard libraries (`fs`, `path`, `https`, `http`, `crypto`, `child_process`, `url`).
-* Python radar scripts (`scripts/*.py`) must use standard libraries (`urllib.request`, `json`, `os`, `re`, `subprocess`).
+* Use only Node.js built-in standard libraries (`fs`, `path`, `https`, `http`, `crypto`, `child_process`, `url`, `readline`).
+* Python radar and catalog scripts (`scripts/*.py`) must use standard libraries (`urllib`, `difflib`, `json`, `os`, `re`, `subprocess`, `pathlib`, `hashlib`, `datetime`, `argparse`).
 
 ### 4. Deterministic Offline Fallbacks
-* Any feature utilizing LLM reasoning (`roast`, `prune`, `diff`, `radar`) must gracefully fall back to a deterministic offline heuristic when `OPENAI_API_KEY` is absent or network requests time out.
+* Every feature utilizing LLM reasoning (`roast`, `prune`, `diff`, `radar`) must gracefully fall back to a deterministic offline analyzer when `OPENAI_API_KEY` is absent or network requests fail.
 * The toolchain must never crash on network failure.
 
 ---
@@ -34,25 +34,28 @@ This file guides AI agents (Claude Code, Cursor, Windsurf, Antigravity) working 
 ## 🧪 Testing & Verification Commands
 
 ```bash
-# Run full unit and integration test suite (must pass 100%)
+# Run full CLI, Skills, and Quality Gate suite
 npm test
 
-# Test taste CLI locally
-node bin/taste.js --help
-node bin/taste.js list
-node bin/taste.js blend --style antfu --tone karpathy
-node bin/taste.js prune stripe-java/CLAUDE.md
-node bin/taste.js diff antfu karpathy
-node bin/taste.js card --user testuser --output taste-card.svg
+# Run Web Gallery and Radar/Catalog offline regression tests
+node --test test/gallery.test.js
+python3 -m unittest discover -s test -p "test_*.py"
+python3 scripts/build_catalog.py --check
+
+# Self-audit repository agent contracts
+node bin/taste.js check CLAUDE.md --min-score 75
+node bin/taste.js check AGENTS.md --min-score 75
 ```
 
 ---
 
 ## 📁 Repository Organization
-* `openclaw/`, `VoiceStudio/`, `stripe-java/`, ...: Curated open-source projects organized as top-level directories.
+* `openclaw/`, `VoiceStudio/`, `stripe-java/`, ...: 26 curated open-source projects organized as top-level directories.
+* `discovered/<owner>/<repo>/`: Isolated automated Radar archives verified by `META.json`.
 * `registry/`: Modular Lego bricks (`styles/`, `tones/`, `presets/`) for taste stacking.
-* `src/`: Core engines (`stacker.js`, `pruner.js`, `differ.js`, `roaster.js`, `card.js`).
-* `api/`: Serverless HTTP badge API endpoint (`api/card.js`).
-* `scripts/`: Autonomous trending radar and prompt evolution engine (`radar.py`, `llm_client.py`).
-* `docs/`: Interactive Web Gallery and Badge Studio (GitHub Pages).
-* `test/`: Zero-dependency test suites (`test/cli.test.js`).
+* `skills/`: Modular `SKILL.md` agent playbooks installable via `npx taste-code skill add <id>`.
+* `src/`: Core engines (`stacker.js`, `skills.js`, `checker.js`, `pruner.js`, `differ.js`, `roaster.js`, `card.js`).
+* `api/`: Serverless HTTP SVG card & badge endpoints (`api/card.js`, `api/badge.js`).
+* `scripts/`: Autonomous trending radar (`radar.py`), structural diff analyzer (`llm_client.py`), and catalog builder (`build_catalog.py`).
+* `docs/`: Interactive Web Gallery v2.0 with inline rule preview, Skills Explorer, Token Pruner, and Badge Studio.
+* `test/`: Zero-dependency Node.js and Python test suites.

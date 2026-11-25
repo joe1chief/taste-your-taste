@@ -11,4 +11,4 @@
 Autonomous intelligence gathering skill, cloud asset enumeration, and secret reconnaissance.
 
 ## 📁 Skill Files in This Directory
-- [](./skills/run-claude-osint/SKILL.md)
+- [`skills/run-claude-osint/SKILL.md`](./skills/run-claude-osint/SKILL.md)

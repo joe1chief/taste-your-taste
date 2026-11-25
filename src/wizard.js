@@ -5,7 +5,7 @@
 
 const readline = require('readline');
 const path = require('path');
-const { c, banner, box, resolveTargetFile } = require('./utils');
+const { c, banner, box, TARGET_FORMATS, resolveTargetFile } = require('./utils');
 const { getAvailable, getMeta } = require('./registry');
 const { stackFlavor, blendTastes } = require('./stacker');
 
@@ -31,21 +31,14 @@ async function runWizard() {
     // -------------------------------------------------------------
     // Step 1: Select Target File
     // -------------------------------------------------------------
-    const targetChoices = [
-      { label: 'CLAUDE.md (Root Claude Code project rules)', value: 'claude' },
-      { label: '.claude/CLAUDE.md (Nested Claude Code configuration)', value: 'dotclaude' },
-      { label: '.cursor/rules/taste.mdc (Modern Cursor MDC rules)', value: 'mdc' },
-      { label: '.cursorrules (Legacy Cursor single-file rules)', value: 'cursor' },
-      { label: '.agent/rules.md (Google Antigravity / Gemini Agent)', value: 'agent' },
-      { label: 'AGENTS.md (General multi-agent specification)', value: 'agents' },
-    ];
+    const targetChoices = TARGET_FORMATS.map((f) => ({ label: f.label, value: f.key }));
 
     console.log(c.magenta(c.bold('Step 1 of 3: Select Target Rule Format')));
     targetChoices.forEach((tc, idx) => {
       console.log(`  ${c.cyan(`[${idx + 1}]`)} ${tc.label}`);
     });
 
-    const targetAns = await askQuestion(rl, `\n${c.bold('Enter choice (1-6) [default: 1]: ')}`);
+    const targetAns = await askQuestion(rl, `\n${c.bold(`Enter choice (1-${targetChoices.length}) [default: 1]: `)}`);
     const targetIdx = parseInt(targetAns, 10);
     const selectedTargetOption = (!isNaN(targetIdx) && targetIdx >= 1 && targetIdx <= targetChoices.length)
       ? targetChoices[targetIdx - 1].value

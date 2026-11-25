@@ -11,4 +11,4 @@
 Derived from Andrej Karpathy workflow: single-file scripts, standard library first, zero unnecessary dependencies, direct execution.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

@@ -11,4 +11,4 @@
 Exact just test runners, Spotless formatting commands, and HTTP abstraction map.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

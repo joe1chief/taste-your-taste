@@ -11,4 +11,4 @@
 Clean architectural boundary between Edition 2 (lazy parsing) and Edition 1 (eager C++ parser).
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

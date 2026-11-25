@@ -11,4 +11,4 @@
 AST walking rules, rule ID stability, and deterministic test invocation.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

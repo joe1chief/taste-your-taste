@@ -11,4 +11,4 @@
 Curated offensive AI security and red-teaming skills library for AI coding agents.
 
 ## 📁 Skill Files in This Directory
-- [](./skills/offensive-ai-security/SKILL.md)
+- [`skills/offensive-ai-security/SKILL.md`](./skills/offensive-ai-security/SKILL.md)

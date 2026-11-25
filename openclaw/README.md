@@ -11,4 +11,4 @@
 One owner per responsibility, proof scoped, and no blind retries.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

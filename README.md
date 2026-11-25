@@ -3,7 +3,7 @@
 # 🍷 Taste Your Taste
 ### *Autonomous Developer Taste Curation & Vibe Stacking Engine for AI Agents*
 
-**CLAUDE.md • .cursorrules • .cursor/rules/*.mdc • AGENTS.md • .agent/rules.md**
+**CLAUDE.md • AGENTS.md • .cursor/rules/*.mdc • copilot-instructions.md • .windsurfrules • GEMINI.md • SKILL.md**
 
 <p align="center">
   <a href="https://github.com/joe1chief/taste-your-taste/actions/workflows/radar.yml">
@@ -37,8 +37,14 @@
 # 🧙 Interactive 10-Second Setup Wizard:
 npx taste-code init
 
-# 🍸 Instant Vibe Stacking (Lego Bricks):
-npx taste-code blend --style antfu --tone karpathy
+# 🍸 Instant Vibe Stacking (Lego Bricks across 11 agent formats):
+npx taste-code blend --style antfu --tone karpathy --target copilot
+
+# 🧠 One-Command Modular Agent Skill Installer:
+npx taste-code skill add karpathy-guidelines --agent claude
+
+# ✅ CI Quality Gate & Secret-Leak Audit:
+npx taste-code check CLAUDE.md --min-score 75
 
 # 💧 Token Compactor & De-slop Optimizer (Save 30-70% Context Tokens):
 npx taste-code prune CLAUDE.md --write
@@ -126,7 +132,9 @@ taste-your-taste/
 │   ├── bin/taste                  # Executable CLI entrypoint
 │   ├── src/                       # Zero-dependency modular engines
 │   │   ├── registry.js            # Style & tone brick loader
-│   │   ├── stacker.js             # Marker-based non-destructive injector
+│   │   ├── stacker.js             # Marker-based non-destructive injector (11 formats)
+│   │   ├── skills.js              # Modular SKILL.md cross-agent installer
+│   │   ├── checker.js             # Deterministic CI quality gate & secret-leak guard
 │   │   ├── pruner.js              # Token compactor & de-slop optimizer
 │   │   ├── differ.js              # Philosophy & constraint comparator
 │   │   ├── roaster.js             # Linus Torvalds technical audit engine
@@ -217,10 +225,32 @@ The CLI manages rules using non-destructive block boundaries (`<!-- TASTE:STYLE:
 | :--- | :--- | :--- |
 | *(default)* | `CLAUDE.md` | Claude Code (Root) |
 | `--target dotclaude` | `.claude/CLAUDE.md` | Claude Code (Nested) |
+| `--target agents` | `AGENTS.md` | OpenAI Codex / Multi-Agent Standard |
 | `--target mdc` | `.cursor/rules/<name>.mdc` | Modern Cursor (with YAML frontmatter) |
 | `--target cursor` | `.cursorrules` | Legacy Cursor |
-| `--target agent` | `.agent/rules.md` | Google Antigravity / Gemini Agent |
-| `--target agents` | `AGENTS.md` | Multi-Agent Specification standard |
+| `--target copilot` | `.github/copilot-instructions.md` | GitHub Copilot |
+| `--target windsurf` | `.windsurfrules` | Windsurf IDE (Root) |
+| `--target windsurf-rules` | `.windsurf/rules/<name>.md` | Modern Windsurf (with trigger frontmatter) |
+| `--target cline` | `.clinerules` | Cline / Roo Code |
+| `--target agent` | `.agent/rules.md` | Google Antigravity |
+| `--target gemini` | `GEMINI.md` | Gemini CLI |
+
+---
+
+### 2b. 🧠 Agent Skills Installer & CI Quality Gate (`taste skill` & `taste check`)
+Install curated `SKILL.md` playbooks directly into your coding agent's skill folder and enforce prompt hygiene in CI:
+
+```bash
+# List all curated SKILL.md playbooks
+npx taste-code skill list
+
+# Install Karpathy guidelines into Claude Code (.claude/skills/) or Antigravity (.agent/skills/)
+npx taste-code skill add karpathy-guidelines --agent claude
+npx taste-code skill add repo-task-proof-loop --agent agent
+
+# Enforce minimum taste score, token budget, and zero secret leaks in CI (exits 1 on failure)
+npx taste-code check CLAUDE.md --min-score 75 --max-tokens 3500
+```
 
 ---
 

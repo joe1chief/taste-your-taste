@@ -12,6 +12,9 @@ const { analyzeContentDeterministic, roastFile } = require('../src/roaster');
 const { pruneContent, pruneFile, pruneDeterministic } = require('../src/pruner');
 const { diffTastes, diffDeterministic } = require('../src/differ');
 const { generateCardSvg, generateBadgeSvg, renderCardToFile, renderBadgeToFile } = require('../src/card');
+const { listSkills, getSkill, installSkill } = require('../src/skills');
+const { checkContent, checkFile } = require('../src/checker');
+const { execFileSync } = require('child_process');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
 
@@ -238,6 +241,78 @@ function testCardGenerator() {
   console.log('✅ Taste Card & Badge Generator tests passed.');
 }
 
+function testMultiAgentTargets() {
+  console.log('Testing Copilot, Windsurf, Cline, and GEMINI.md targets...');
+  const copilotFile = resolveTargetFile('copilot', TEMP_DIR);
+  assert(copilotFile.endsWith(path.join('.github', 'copilot-instructions.md')), 'Copilot target path mismatch');
+  stackFlavor(copilotFile, 'stripe');
+  assert(fs.existsSync(copilotFile), 'Copilot instructions file must be created');
+
+  const windsurfRule = resolveTargetFile('windsurf-rules', TEMP_DIR);
+  assert(windsurfRule.endsWith(path.join('.windsurf', 'rules', 'taste.md')), 'Windsurf rules path mismatch');
+  blendTastes(windsurfRule, 'minimalist', 'terse');
+  const wsContent = fs.readFileSync(windsurfRule, 'utf-8');
+  assert(wsContent.startsWith('---\ntrigger: always_on'), 'Windsurf rule must carry trigger frontmatter');
+
+  const clineFile = resolveTargetFile('cline', TEMP_DIR);
+  assert(clineFile.endsWith('.clinerules'), 'Cline target path mismatch');
+  const geminiFile = resolveTargetFile('gemini', TEMP_DIR);
+  assert(geminiFile.endsWith('GEMINI.md'), 'Gemini target path mismatch');
+
+  console.log('✅ Multi-agent target format tests passed.');
+}
+
+function testSkillsManager() {
+  console.log('Testing Agent Skills Manager (taste skill)...');
+  const skills = listSkills();
+  assert(skills.length >= 7, `Expected at least 7 curated skills, found ${skills.length}`);
+  assert(skills.some((s) => s.id === 'karpathy-guidelines'), 'Must include karpathy-guidelines');
+
+  const detail = getSkill('karpathy-guidelines');
+  assert(detail.content.length > 100, 'Skill content must be non-empty');
+
+  const installed = installSkill('karpathy-guidelines', { agent: 'agent', cwd: TEMP_DIR });
+  assert(fs.existsSync(installed.destFile), 'Installed SKILL.md must exist in .agent/skills/');
+  assert(!installed.updated, 'First install must report fresh copy');
+
+  const updated = installSkill('karpathy-guidelines', { agent: 'agent', cwd: TEMP_DIR });
+  assert(updated.updated, 'Second install must report idempotent update');
+
+  const cliOut = execFileSync(process.execPath, [path.resolve(__dirname, '../bin/taste.js'), 'skill', 'list', '--json'], {
+    encoding: 'utf-8',
+  });
+  const parsed = JSON.parse(cliOut);
+  assert(Array.isArray(parsed) && parsed.length >= 7, 'CLI skill list --json must return array');
+
+  console.log('✅ Agent Skills Manager tests passed.');
+}
+
+function testQualityChecker() {
+  console.log('Testing Taste Quality Gate (taste check)...');
+  const goodFile = path.join(TEMP_DIR, 'GOOD_CLAUDE.md');
+  fs.writeFileSync(
+    goodFile,
+    '# Rules\n- Run `npm test` and `eslint` before every commit.\n- Never introduce external runtime packages.\n- Do not apologize or add conversational filler.\n',
+    'utf-8'
+  );
+  const passRes = checkFile(goodFile, { minScore: 75 });
+  assert(passRes.passed, 'Disciplined rules must pass checkFile');
+
+  const fakeKey = ['sk', 'proj', '1234567890abcdefghijklmno'].join('-');
+  const leakedRes = checkContent(`# Rules\n- Run pytest\n- Never fail\nKey=${fakeKey}\n`);
+  assert(!leakedRes.passed, 'Hardcoded API key pattern must fail zero-secrets check');
+  assert(!leakedRes.checks.find((c) => c.id === 'zero-secrets').passed, 'zero-secrets check must fail');
+
+  const cliJson = execFileSync(
+    process.execPath,
+    [path.resolve(__dirname, '../bin/taste.js'), 'check', goodFile, '--min-score', '75', '--json'],
+    { encoding: 'utf-8' }
+  );
+  assert(JSON.parse(cliJson).passed === true, 'CLI check --json must exit 0 and return passed:true');
+
+  console.log('✅ Taste Quality Gate tests passed.');
+}
+
 async function runAll() {
   setup();
   try {
@@ -245,11 +320,14 @@ async function runAll() {
     testStacker();
     testBlend();
     testCursorMdc();
+    testMultiAgentTargets();
+    testSkillsManager();
+    testQualityChecker();
     await testRoaster();
     await testPruner();
     await testDiffer();
     testCardGenerator();
-    console.log('\n🎉 ALL CLI, ROASTER, PRUNER, DIFFER & CARD TESTS PASSED SUCCESFULLY!\n');
+    console.log('\n🎉 ALL CLI v2.0, SKILLS, CHECKER, ROASTER, PRUNER, DIFFER & CARD TESTS PASSED!\n');
   } finally {
     teardown();
   }

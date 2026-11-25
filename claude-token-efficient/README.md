@@ -11,4 +11,4 @@
 Extreme token reduction; eliminates all conversational preamble; pure diff responses.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)
