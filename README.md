@@ -28,9 +28,9 @@
 </p>
 
 <p align="center">
-  <img src="./taste-card.svg" alt="Developer Taste HUD Card Preview" width="520">
+  <img src="./taste-card.svg" alt="Developer Taste Telemetry HUD Card Preview" width="540">
   <br><br>
-  <img src="./taste-badge.svg" alt="Developer Taste Micro-Badge Preview">
+  <img src="./taste-badge.svg" alt="Developer Taste Cyber Micro-Badge Preview">
 </p>
 
 ```bash
@@ -353,8 +353,8 @@ npx taste-code roast [path/to/CLAUDE.md]
 ### 6. 🪪 Dynamic Profile Taste HUD Card & Micro-Badge: `taste card` & `taste badge`
 Showcase your developer taste DNA directly on your GitHub Profile README, project documentation, or website with dynamic, dark-mode SVG HUD vector cards and sleek micro-badges.
 
-#### 1. Cyberpunk Profile HUD Card (495x195)
-Features a frosted dark canvas, circular neon radial score gauge, AI Verified live pulse beacon, technical blueprint grid, and multi-theme colorways (`cyber`, `matrix`, `midnight`, `sunset`, `noir`):
+#### 1. Geek Telemetry Terminal HUD Card (540x220)
+Features a Unix terminal chrome bar with blinking cursor, deterministic FNV-1a hex signature (`SIG:0x...`), pure-vector geometric archetype emblems, circuit-linked `--style` / `--tone` pipeline chips, 10-segment telemetry equalizer bars, concentric degree-tick reactor gauge, executable CLI footer, and 7 colorways (`cyber`, `matrix`, `tron`, `dracula`, `midnight`, `sunset`, `noir`):
 
 ```bash
 # Generate local taste-card.svg with default Cyberpunk Rose theme
@@ -395,8 +395,8 @@ Embed real-time SVG cards and badges directly using the serverless API:
 | `tone` | `karpathy` | Active persona / agent tone |
 | `archetype` | `Anti-Slop Minimalist` | Architectural archetype (Defensive Architect, Hacker Velocity, etc.) |
 | `score` | `94` | Taste score (0 - 100) |
-| `theme` | `cyber` | HUD colorway: `cyber`, `matrix`, `midnight`, `sunset`, `noir` |
-| `type` | `card` | Display format: `card` (495x195 HUD) or `badge` (28px pill) |
+| `theme` | `cyber` | HUD colorway: `cyber`, `matrix`, `tron`, `dracula`, `midnight`, `sunset`, `noir` |
+| `type` | `card` | Display format: `card` (540x220 HUD) or `badge` (28px cyber pill) |
 | `badgeType`| `score` | Micro-badge type: `score`, `dna`, `archetype`, `slop`, `roast` |
 
 ---

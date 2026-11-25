@@ -1,5 +1,5 @@
 /**
- * Serverless API handler for dynamic GitHub Profile Taste Badge (Shields style)
+ * Serverless API handler for dynamic GitHub Profile Taste Badge (Geek Telemetry style)
  * Compatible with Vercel / Netlify / Node HTTP functions.
  * Returns image/svg+xml with aggressive caching headers.
  */
@@ -21,6 +21,7 @@ module.exports = (req, res) => {
     tone: query.tone || 'karpathy',
     archetype: query.archetype || 'Anti-Slop Minimalist',
     score: query.score || 94,
+    theme: query.theme || 'cyber',
   });
 
   res.setHeader('Content-Type', 'image/svg+xml');

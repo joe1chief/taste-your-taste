@@ -24,6 +24,7 @@ module.exports = (req, res) => {
         tone: query.tone || 'karpathy',
         archetype: query.archetype || 'Anti-Slop Minimalist',
         score: query.score || 94,
+        theme: query.theme || 'cyber',
       })
     : generateCardSvg({
         user: query.user || 'developer',

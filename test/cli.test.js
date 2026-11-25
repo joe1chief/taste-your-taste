@@ -217,6 +217,11 @@ function testCardGenerator() {
   // Test theme support
   const matrixSvg = generateCardSvg({ user: 'neo', score: 99, theme: 'matrix' });
   assert(matrixSvg.includes('#10b981'), 'Matrix theme must use emerald color');
+  assert(matrixSvg.includes('SIG:0x'), 'Card must include deterministic hex telemetry signature');
+  assert(matrixSvg.includes('npx taste-code blend'), 'Card footer must include executable CLI command');
+
+  const tronSvg = generateCardSvg({ user: 'flynn', score: 96, theme: 'tron' });
+  assert(tronSvg.includes('#00f0ff'), 'Tron theme must use electric cyan');
 
   // Test render to file
   const cardPath = path.join(TEMP_DIR, 'profile-card.svg');
@@ -230,9 +235,10 @@ function testCardGenerator() {
   assert(badgeScore.includes('TASTE'), 'Score badge must contain TASTE label');
   assert(badgeScore.includes("Chef's Taste"), 'Score badge must contain rating label');
 
-  const badgeDna = generateBadgeSvg({ type: 'dna', style: 'antfu', tone: 'karpathy' });
+  const badgeDna = generateBadgeSvg({ type: 'dna', style: 'antfu', tone: 'karpathy', theme: 'dracula' });
   assert(badgeDna.includes('TASTE DNA'), 'DNA badge must contain TASTE DNA label');
   assert(badgeDna.includes('antfu + karpathy'), 'DNA badge must contain style + tone');
+  assert(badgeDna.includes('#ff79c6'), 'Dracula badge theme must apply primary color');
 
   const badgePath = path.join(TEMP_DIR, 'profile-badge.svg');
   renderBadgeToFile(badgePath, { type: 'archetype', archetype: 'Defensive Architect' });

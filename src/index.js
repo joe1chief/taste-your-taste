@@ -48,7 +48,7 @@ ${c.bold('OPTIONS:')}
   ${c.dim('--min-score <0-100>')}                Minimum passing Taste Score for 'taste check' (default: 70)
   ${c.dim('--max-tokens <count>')}               Maximum estimated token budget for 'taste check' (default: 4000)
   ${c.dim('--json')}                             Emit machine-readable JSON output (supported in 'check' and 'skill list')
-  ${c.dim('--theme <name>')}                     Card colorway: ${c.cyan('cyber')}, ${c.cyan('matrix')}, ${c.cyan('midnight')}, ${c.cyan('sunset')}, ${c.cyan('noir')}
+  ${c.dim('--theme <name>')}                     Card/Badge colorway: ${c.cyan('cyber')}, ${c.cyan('matrix')}, ${c.cyan('tron')}, ${c.cyan('dracula')}, ${c.cyan('midnight')}, ${c.cyan('sunset')}, ${c.cyan('noir')}
   ${c.dim('--help, -h')}                         Show this help menu
   ${c.dim('--version, -v')}                      Show version
 
@@ -538,6 +538,7 @@ function handleBadge(args) {
   let style = 'antfu';
   let tone = 'karpathy';
   let type = 'score';
+  let theme = 'cyber';
   let archetype = 'Anti-Slop Minimalist';
   let targetFile = null;
 
@@ -554,6 +555,9 @@ function handleBadge(args) {
       i++;
     } else if (a === '--tone') {
       tone = args[i + 1] || tone;
+      i++;
+    } else if (a === '--theme') {
+      theme = args[i + 1] || theme;
       i++;
     } else if (a === '--user' || a === '-u') {
       user = args[i + 1] || user;
@@ -574,6 +578,7 @@ function handleBadge(args) {
       user,
       style,
       tone,
+      theme,
       archetype,
       file: targetFile,
     });

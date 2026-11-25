@@ -8,12 +8,37 @@ import difflib
 import json
 import os
 import re
+import ssl
+import time
 import urllib.error
 import urllib.request
 from typing import Any, Dict, List, Optional
 
 DEFAULT_BASE_URL = "https://api.openai.com/v1"
 DEFAULT_MODEL = "gpt-4o-mini"
+
+
+def _post_json_with_retry(url: str, payload: Dict[str, Any], headers: Dict[str, str], retries: int = 3) -> Dict[str, Any]:
+    """Send HTTPS JSON POST with OpenSSL 3 unexpected-EOF tolerance and exponential backoff."""
+    ctx = ssl.create_default_context()
+    ctx.options |= getattr(ssl, "OP_IGNORE_UNEXPECTED_EOF", 0)
+    req_headers = {**headers, "Connection": "close"}
+    encoded = json.dumps(payload).encode("utf-8")
+    last_err: Optional[Exception] = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, data=encoded, headers=req_headers)
+            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code in (400, 401, 402, 403, 404):
+                raise
+            last_err = exc
+        except Exception as exc:
+            last_err = exc
+        if attempt < retries - 1:
+            time.sleep(1.2 * (attempt + 1))
+    raise last_err or RuntimeError("LLM request failed")
 
 
 def _clean_json_markdown(text: str) -> str:
@@ -219,26 +244,24 @@ class LLMTasteClient:
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
-            "User-Agent": "Taste-Your-Taste-LLM/2.0",
+            "User-Agent": "OpenAI/Python 1.0",
         }
 
         url = f"{self.base_url}/chat/completions"
-        req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers)
 
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                choice = data.get("choices", [{}])[0]
-                content_text = choice.get("message", {}).get("content", "")
-                parsed = json.loads(_clean_json_markdown(content_text))
-                return {
-                    "archetype": parsed.get("archetype", "Pragmatic Systems"),
-                    "one_line_vibe": parsed.get("one_line_vibe", "Pragmatic developer instructions."),
-                    "highlights": parsed.get("highlights", []),
-                    "engineering_assessment": parsed.get("engineering_assessment", ""),
-                    "key_directives": parsed.get("key_directives", []),
-                    "llm_powered": True,
-                }
+            data = _post_json_with_retry(url, payload, headers)
+            choice = data.get("choices", [{}])[0]
+            content_text = choice.get("message", {}).get("content", "")
+            parsed = json.loads(_clean_json_markdown(content_text))
+            return {
+                "archetype": parsed.get("archetype", "Pragmatic Systems"),
+                "one_line_vibe": parsed.get("one_line_vibe", "Pragmatic developer instructions."),
+                "highlights": parsed.get("highlights", []),
+                "engineering_assessment": parsed.get("engineering_assessment", ""),
+                "key_directives": parsed.get("key_directives", []),
+                "llm_powered": True,
+            }
         except Exception as e:
             print(f"[LLM Warning] LLM analysis failed for {repo}: {e}. Using deterministic fallback.")
             return self._fallback_analysis(filename, content)
@@ -319,25 +342,23 @@ class LLMTasteClient:
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
-            "User-Agent": "Taste-Your-Taste-LLM/2.0",
+            "User-Agent": "OpenAI/Python 1.0",
         }
 
         url = f"{self.base_url}/chat/completions"
-        req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers)
 
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                choice = data.get("choices", [{}])[0]
-                content_text = choice.get("message", {}).get("content", "")
-                parsed = json.loads(_clean_json_markdown(content_text))
-                return {
-                    "evolution_summary": parsed.get("evolution_summary") or deterministic["evolution_summary"],
-                    "key_changes": parsed.get("key_changes") or deterministic["key_changes"],
-                    "vibe_shift": parsed.get("vibe_shift") or deterministic["vibe_shift"],
-                    "trivial": False,
-                    "llm_powered": True,
-                }
+            data = _post_json_with_retry(url, payload, headers)
+            choice = data.get("choices", [{}])[0]
+            content_text = choice.get("message", {}).get("content", "")
+            parsed = json.loads(_clean_json_markdown(content_text))
+            return {
+                "evolution_summary": parsed.get("evolution_summary") or deterministic["evolution_summary"],
+                "key_changes": parsed.get("key_changes") or deterministic["key_changes"],
+                "vibe_shift": parsed.get("vibe_shift") or deterministic["vibe_shift"],
+                "trivial": False,
+                "llm_powered": True,
+            }
         except Exception as e:
             print(f"[LLM Warning] Evolution analysis failed for {repo}: {e}. Falling back to structural diff.")
             return deterministic
