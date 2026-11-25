@@ -1,0 +1,23 @@
+{
+  "stars": 53694,
+  "language": "Kotlin",
+  "description": "The Kotlin Programming Language. ",
+  "url": "https://github.com/JetBrains/kotlin",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "project: Kotlin",
+    "languages: [Kotlin, Java]",
+    "build-system: Gradle",
+    "repository: monorepo"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4294d93020ed1cafd5b4b9fb4b3878a470c9da15"
+  },
+  "discovered_at": "2026-11-25T10:41:54.922297+00:00",
+  "repo": "JetBrains/kotlin"
+}

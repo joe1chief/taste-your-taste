@@ -1,0 +1,23 @@
+{
+  "stars": 3593,
+  "language": "TypeScript",
+  "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
+  "url": "https://github.com/WhiteTowerAI/ohmygame",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Repository instructions",
+    "Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, verification, formatting, and",
+    "the contribution workflow. [docs/README.md](docs/README.md) maps modules to",
+    "their code, documentation, and tests."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "4d69863031e26c935557613dbf8257896bdcf1a6"
+  },
+  "discovered_at": "2026-11-25T10:41:19.722745+00:00",
+  "repo": "WhiteTowerAI/ohmygame"
+}

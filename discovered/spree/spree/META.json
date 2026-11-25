@@ -1,0 +1,23 @@
+{
+  "stars": 15848,
+  "language": "Ruby",
+  "description": "Open Source Platform for DTC, B2B Commerce, Marketplaces & Omnichannel. REST APIs, TypeScript SDKs, and production-ready Next.js storefront. Self-host it. Own your data. No vendor lock-in. Zero platform fees.",
+  "url": "https://github.com/spree/spree",
+  "archetype": "Engineering Craft",
+  "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+  "highlights": [
+    "Spree Commerce — Development Rules",
+    "Area rules live next to the code and load when you work there: `spree/AGENTS.md` (Ruby gems, APIs, RSpec), `packages/AGENTS.md` (TypeScript packages, dashboards, Playwright) and `docs/AGENTS.md` (documentation site). Anything not covered follows standard Ruby on Rails 8.1 and React / TanStack / Vite practice — these files only record what this codebase does differently or what has bitten us before.",
+    "Feature plans live in `docs/plans/`, written from `docs/plans/_template.md` — never anywhere else. Before a significant architectural change, check existing plans for conflicts, including their \"Constraints on Current Work\" sections, which apply even when you aren't implementing that plan. Use `/create-plan`, `/update-plan`, and `/implement-plan <plan>` to deliver one end to end.",
+    "Monorepo structure"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a0a143868f3ca42298a304a09b229ae27b5901c3"
+  },
+  "discovered_at": "2026-11-25T10:41:38.365045+00:00",
+  "repo": "spree/spree"
+}

@@ -1,0 +1,25 @@
+{
+  "stars": 10610,
+  "language": "PHP",
+  "description": "A customizable, open-source ecommerce platform built on WordPress. Build any commerce solution you can imagine.",
+  "url": "https://github.com/woocommerce/woocommerce",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "WooCommerce Monorepo - AI Agents Documentation",
+    "Project Overview",
+    "WooCommerce is a WordPress e-commerce plugin organized as a monorepo with:",
+    "Backend**: PHP in `plugins/woocommerce/` (PSR-4, WordPress standards)"
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b73d3500b446cf7f9688205c765e54f55fe371de",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-25T10:41:36.374590+00:00",
+  "repo": "woocommerce/woocommerce"
+}

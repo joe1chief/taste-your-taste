@@ -1,0 +1,18 @@
+{
+  "stars": 4815,
+  "language": "Kotlin",
+  "description": "Optimized UI components for Firebase",
+  "url": "https://github.com/firebase/FirebaseUI-Android",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Clean and practical instructions tailored for real-world development.",
+  "highlights": [
+    "Read [AGENTS.md](AGENTS.md) first. Follow it for this repository."
+  ],
+  "assessment": "Standard operational configuration for agentic pair programming.",
+  "files": [
+    "CLAUDE.md"
+  ],
+  "file_shas": {},
+  "discovered_at": "2026-11-25T10:42:11.606719+00:00",
+  "repo": "firebase/FirebaseUI-Android"
+}

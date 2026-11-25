@@ -65,26 +65,26 @@ npx taste-code badge --type score --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**301 tracked projects** | **26 curated** | **275 pending review**
+**306 tracked projects** | **26 curated** | **280 pending review**
 
-Last completed scan: [2026-11-24 11:48:05 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/45387229588).
+Last completed scan: [2026-11-25 10:42:12 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/45597153979).
 
-Latest content activity: **2026-11-24 11:48:05 UTC**.
+Latest content activity: **2026-11-25 10:42:12 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-25 10:42:12 | [firebase/FirebaseUI-Android](https://github.com/firebase/FirebaseUI-Android) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/430) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/firebase/firebaseui-android) |
+| 2026-11-25 10:41:55 | [JetBrains/kotlin](https://github.com/JetBrains/kotlin) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/429) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/jetbrains/kotlin) |
+| 2026-11-25 10:41:39 | [spree/spree](https://github.com/spree/spree) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/428) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/spree/spree) |
+| 2026-11-25 10:41:37 | [woocommerce/woocommerce](https://github.com/woocommerce/woocommerce) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/427) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/woocommerce/woocommerce) |
+| 2026-11-25 10:41:20 | [WhiteTowerAI/ohmygame](https://github.com/WhiteTowerAI/ohmygame) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/426) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/whitetowerai/ohmygame) |
+| 2026-11-25 10:40:52 | [Tencent/LoopForge](https://github.com/Tencent/LoopForge) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/332) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tencent/loopforge) |
+| 2026-11-25 10:40:35 | [beenuar/AiSOC](https://github.com/beenuar/AiSOC) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/231) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/beenuar/aisoc) |
+| 2026-11-25 10:40:32 | [anomalyco/rune](https://github.com/anomalyco/rune) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/299) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/anomalyco/rune) |
+| 2026-11-25 10:40:13 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/346) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mvanhorn/last30days-skill) |
 | 2026-11-24 11:48:05 | [skyhook-io/radar](https://github.com/skyhook-io/radar) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/421) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/skyhook-io/radar) |
-| 2026-11-24 11:48:03 | [longbridge/nsh](https://github.com/longbridge/nsh) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/420) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/longbridge/nsh) |
-| 2026-11-24 11:47:46 | [duckduckgo/Android](https://github.com/duckduckgo/Android) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/419) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/duckduckgo/android) |
-| 2026-11-24 11:47:45 | [storytold/craft-anything](https://github.com/storytold/craft-anything) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/418) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/storytold/craft-anything) |
-| 2026-11-24 11:47:42 | [redis/go-redis](https://github.com/redis/go-redis) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/417) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/redis/go-redis) |
-| 2026-11-24 11:47:39 | [R0Y00/Xbox2Windows](https://github.com/R0Y00/Xbox2Windows) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/402) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/r0y00/xbox2windows) |
-| 2026-11-24 11:47:23 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/78) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nousresearch/hermes-agent) |
-| 2026-11-24 11:47:20 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/186) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot) |
-| 2026-11-24 11:47:03 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/23) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/pingdotgg/t3code) |
-| 2026-11-24 11:47:01 | [Comfy-Org/ComfyUI_frontend](https://github.com/Comfy-Org/ComfyUI_frontend) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/150) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/comfy-org/comfyui_frontend) |
 <!-- TASTE:LATEST:END -->
 
 ---

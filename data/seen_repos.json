@@ -4409,7 +4409,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "0ad08eec9c3f22cfff9e1a4726cd19c563b96e7a"
+      "AGENTS.md": "2cf1c7d655a48ca96db25f35189f85a13c40c952"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -4417,7 +4417,17 @@
     "discovered_at": "2026-11-02T08:36:22.883547+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/231",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "0ad08eec9c3f22cfff9e1a4726cd19c563b96e7a",
+        "new_sha": "2cf1c7d655a48ca96db25f35189f85a13c40c952",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-25T10:40:35.317562+00:00"
+      }
+    ]
   },
   "anomalyco/hex": {
     "stars": 3676,
@@ -5464,7 +5474,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "26be6d90dd1f2cdb7ad015936bb8c337587d0b65",
+      "AGENTS.md": "5f5334dd3a64068384559d7f973b67b8b87fad86",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "popular_stars",
@@ -5473,7 +5483,17 @@
     "discovered_at": "2026-11-11T08:37:29.276268+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/299",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "26be6d90dd1f2cdb7ad015936bb8c337587d0b65",
+        "new_sha": "5f5334dd3a64068384559d7f973b67b8b87fad86",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-25T10:40:32.270740+00:00"
+      }
+    ]
   },
   "Akkudoktor-EOS/EOS": {
     "stars": 1728,
@@ -5867,7 +5887,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "66164a328567f0b7ed0cb1c276b44e0582f54f2b"
+      "AGENTS.md": "5e264d609a2c683667d903064c6dfd458246b446"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -5875,7 +5895,17 @@
     "discovered_at": "2026-11-15T08:37:17.426596+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/332",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "66164a328567f0b7ed0cb1c276b44e0582f54f2b",
+        "new_sha": "5e264d609a2c683667d903064c6dfd458246b446",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-25T10:40:52.619911+00:00"
+      }
+    ]
   },
   "rddmwmddr/android-ad-cleaner": {
     "stars": 8079,
@@ -6074,7 +6104,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "fe8b85604f942b603163c4db4ecb09e9b0815ec7",
+      "AGENTS.md": "8b9ce4ab4a119aad47964183a4c0a6863ecad721",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -6092,6 +6122,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-18T09:27:27.603379+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "fe8b85604f942b603163c4db4ecb09e9b0815ec7",
+        "new_sha": "8b9ce4ab4a119aad47964183a4c0a6863ecad721",
+        "vibe_shift": "Iterative refinements.",
+        "summary": "Updated AGENTS.md instructions.",
+        "timestamp": "2026-11-25T10:40:13.747727+00:00"
       }
     ]
   },
@@ -6836,6 +6874,96 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-24T11:48:05.550805+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/421",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "WhiteTowerAI/ohmygame": {
+    "stars": 3593,
+    "language": "TypeScript",
+    "description": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to make games with AI, in one app. Game canvas.  Bring your own key.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4d69863031e26c935557613dbf8257896bdcf1a6"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-25T10:41:20.379626+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/426",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "woocommerce/woocommerce": {
+    "stars": 10610,
+    "language": "PHP",
+    "description": "A customizable, open-source ecommerce platform built on WordPress. Build any commerce solution you can imagine.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b73d3500b446cf7f9688205c765e54f55fe371de",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-25T10:41:37.284421+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/427",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "spree/spree": {
+    "stars": 15848,
+    "language": "Ruby",
+    "description": "Open Source Platform for DTC, B2B Commerce, Marketplaces & Omnichannel. REST APIs, TypeScript SDKs, and production-ready Next.js storefront. Self-host it. Own your data. No vendor lock-in. Zero platform fees.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a0a143868f3ca42298a304a09b229ae27b5901c3"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-25T10:41:39.089815+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/428",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "JetBrains/kotlin": {
+    "stars": 53694,
+    "language": "Kotlin",
+    "description": "The Kotlin Programming Language. ",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "4294d93020ed1cafd5b4b9fb4b3878a470c9da15"
+    },
+    "source": "popular_stars",
+    "archetype": "Engineering Craft",
+    "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+    "discovered_at": "2026-11-25T10:41:55.539926+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/429",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "firebase/FirebaseUI-Android": {
+    "stars": 4815,
+    "language": "Kotlin",
+    "description": "Optimized UI components for Firebase",
+    "files": [
+      "CLAUDE.md"
+    ],
+    "file_shas": {},
+    "source": "code_search",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Clean and practical instructions tailored for real-world development.",
+    "discovered_at": "2026-11-25T10:42:12.257771+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/430",
     "pr_url": null,
     "status": "pending_review"
   }
