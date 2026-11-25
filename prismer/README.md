@@ -11,4 +11,4 @@
 Multi-modal vision-language architecture, PyTorch distributed training guardrails.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

@@ -11,4 +11,4 @@
 Injected into context on every prompt; strictly prohibits unsolicited restructuring or stylistic churn.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

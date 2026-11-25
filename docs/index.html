@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taste Your Taste — Developer Taste & Vibe Stacking Engine</title>
-  <meta name="description" content="Curating CLAUDE.md, .cursorrules, and .agent rules from star GitHub repositories. Blend master engineering tastes and roast AI agent prompts.">
+  <title>Taste Your Taste v2.0 — Developer Taste &amp; Vibe Stacking Engine</title>
+  <meta name="description" content="Curating CLAUDE.md, AGENTS.md, .cursorrules, Copilot instructions, and SKILL.md playbooks from star GitHub repositories.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,13 +29,16 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;600;700;800&display=swap');
     body { font-family: 'Inter', sans-serif; }
     pre, code, .font-mono { font-family: 'JetBrains Mono', monospace; }
-    .glass { background: rgba(17, 24, 39, 0.75); backdrop-filter: blur(12px); }
+    .glass { background: rgba(17, 24, 39, 0.78); backdrop-filter: blur(12px); }
   </style>
 </head>
 <body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col selection:bg-pink-600 selection:text-white">
 
+  <!-- Toast Banner -->
+  <div id="global-toast" class="fixed bottom-5 right-5 z-50 px-4 py-2.5 rounded-xl bg-gray-900 border border-pink-500/70 text-xs font-mono text-pink-200 shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200"></div>
+
   <!-- Navigation Header -->
-  <header class="border-b border-gray-800 glass sticky top-0 z-50">
+  <header class="border-b border-gray-800 glass sticky top-0 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <span class="text-2xl">🍷</span>
@@ -43,14 +46,14 @@
           taste-your-taste
         </span>
         <span class="hidden sm:inline-block text-xs uppercase px-2 py-0.5 rounded-full bg-pink-950 border border-pink-700 text-pink-300 font-semibold tracking-wide">
-          v1.0.0
+          v2.0.0
         </span>
       </div>
-      <div class="flex items-center space-x-4">
-        <a href="https://www.npmjs.com/package/taste-code" target="_blank" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-700 hover:border-pink-500 text-gray-300 transition">
+      <div class="flex items-center space-x-3 sm:space-x-4">
+        <a href="https://www.npmjs.com/package/taste-code" target="_blank" rel="noopener noreferrer" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-900 border border-gray-700 hover:border-pink-500 text-gray-300 transition">
           npx taste-code
         </a>
-        <a href="https://github.com/joe1chief/taste-your-taste" target="_blank" class="flex items-center space-x-2 text-sm font-medium px-4 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white transition shadow-lg shadow-pink-900/30">
+        <a href="https://github.com/joe1chief/taste-your-taste" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-sm font-medium px-4 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white transition shadow-lg shadow-pink-900/30">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           <span>GitHub</span>
         </a>
@@ -59,43 +62,47 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 text-center border-b border-gray-800">
+  <section class="relative overflow-hidden py-14 px-4 sm:px-6 lg:px-8 text-center border-b border-gray-800">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-900/20 via-transparent to-transparent pointer-events-none"></div>
     <div class="max-w-4xl mx-auto relative z-10">
-      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-5">
         Code generation is cheap.<br>
         <span class="bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 bg-clip-text text-transparent">Taste is rare.</span>
       </h1>
-      <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-8 font-normal leading-relaxed">
-        The developer taste stacking engine for <code class="text-pink-300 bg-pink-950/60 px-2 py-0.5 rounded border border-pink-900 font-mono text-sm">CLAUDE.md</code>, <code class="text-indigo-300 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-900 font-mono text-sm">.cursorrules</code>, and <code class="text-purple-300 bg-purple-950/60 px-2 py-0.5 rounded border border-purple-900 font-mono text-sm">.agent</code> rules.
+      <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto mb-7 leading-relaxed">
+        Autonomous taste curation, Lego vibe stacking, modular <code class="text-indigo-300 bg-indigo-950/60 px-1.5 py-0.5 rounded border border-indigo-900 font-mono text-xs">SKILL.md</code> playbooks, and prompt compaction across <code class="text-pink-300 bg-pink-950/60 px-1.5 py-0.5 rounded border border-pink-900 font-mono text-xs">CLAUDE.md</code>, <code class="text-purple-300 bg-purple-950/60 px-1.5 py-0.5 rounded border border-purple-900 font-mono text-xs">AGENTS.md</code>, Cursor, Copilot, Windsurf, and Gemini.
       </p>
 
-      <!-- Quick Command Copy -->
       <div class="inline-flex items-center space-x-3 bg-gray-900 border border-gray-700 hover:border-pink-500 rounded-xl px-5 py-3 font-mono text-sm text-pink-300 shadow-2xl transition cursor-pointer" onclick="copyHeroCmd()">
         <span class="text-gray-500">$</span>
         <span id="hero-cmd-text">npx taste-code blend --style antfu --tone karpathy</span>
-        <button class="text-gray-400 hover:text-white pl-2" title="Copy to clipboard">
+        <button class="text-gray-400 hover:text-white pl-2" title="Copy to clipboard" type="button">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
         </button>
       </div>
-      <div id="copy-toast" class="text-xs text-green-400 font-mono mt-2 opacity-0 transition-opacity">✔ Copied to clipboard!</div>
     </div>
   </section>
 
   <!-- Interactive Section Tabs -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow w-full">
-    <div class="flex justify-center border-b border-gray-800 mb-8 space-x-2 sm:space-x-8">
-      <button onclick="switchTab('hall-of-fame')" id="tab-hall-of-fame" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-pink-500 text-pink-400 flex items-center space-x-2">
+    <div class="flex flex-wrap justify-center border-b border-gray-800 mb-8 gap-1 sm:gap-6">
+      <button type="button" onclick="switchTab('hall-of-fame')" id="tab-hall-of-fame" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-pink-500 text-pink-400 flex items-center space-x-1.5">
         <span>🏛️</span><span>Taste Gallery</span>
       </button>
-      <button onclick="switchTab('blender')" id="tab-blender" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
+      <button type="button" onclick="switchTab('skills')" id="tab-skills" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-1.5">
+        <span>🧠</span><span>Agent Skills</span>
+      </button>
+      <button type="button" onclick="switchTab('blender')" id="tab-blender" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-1.5">
         <span>🍸</span><span>Taste Blender</span>
       </button>
-      <button onclick="switchTab('roast-playground')" id="tab-roast-playground" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
-        <span>🌶️</span><span>Taste Roast Sandbox</span>
+      <button type="button" onclick="switchTab('pruner')" id="tab-pruner" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-1.5">
+        <span>💧</span><span>Token Pruner</span>
       </button>
-      <button onclick="switchTab('card-generator')" id="tab-card-generator" class="tab-btn px-4 py-3 font-medium text-sm sm:text-base border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-2">
-        <span>🎨</span><span>Taste Card Badge</span>
+      <button type="button" onclick="switchTab('roast-playground')" id="tab-roast-playground" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-1.5">
+        <span>🌶️</span><span>Linus Roast</span>
+      </button>
+      <button type="button" onclick="switchTab('card-generator')" id="tab-card-generator" class="tab-btn px-3 sm:px-4 py-3 font-medium text-xs sm:text-sm border-b-2 border-transparent text-gray-400 hover:text-gray-200 flex items-center space-x-1.5">
+        <span>🎨</span><span>Badge Studio</span>
       </button>
     </div>
 
@@ -103,52 +110,80 @@
     <div id="view-hall-of-fame" class="tab-view block">
       <div class="mb-6">
         <h2 class="text-2xl font-bold mb-2">Daily discoveries &amp; curated projects</h2>
-        <p class="text-sm text-gray-400 mb-3">New discoveries and rule changes appear after each daily scan. Radar observations await review; curated labels refer to project selection.</p>
-        <p id="catalog-status" role="status" aria-live="polite" class="text-sm text-pink-300">Loading project catalog...</p>
-        <p id="scan-status" class="text-xs text-gray-400 mt-2"></p>
+        <p class="text-sm text-gray-400 mb-3">Inspect authentic agent instructions captured by Taste Radar. Click <span class="text-pink-300 font-mono text-xs">Preview rules</span> on any project to read, copy, prune, or roast its prompt directly in your browser.</p>
+        <p id="catalog-status" role="status" aria-live="polite" class="text-sm text-pink-300 font-medium">Loading project catalog...</p>
+        <p id="scan-status" class="text-xs text-gray-400 mt-1.5"></p>
         <p id="content-status" class="text-xs text-gray-400 mt-1"></p>
       </div>
-      <div class="flex flex-wrap gap-4 mb-5">
+
+      <div class="flex flex-wrap gap-3 sm:gap-4 mb-5 items-center">
         <label class="text-xs text-gray-400">Collection
-          <select id="collection-filter" onchange="filterRepos()" class="ml-2 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
+          <select id="collection-filter" onchange="filterRepos()" class="ml-1.5 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
             <option value="all">All projects</option>
-            <option value="pending_review">New discoveries (pending review)</option>
-            <option value="curated">Curated projects</option>
+            <option value="curated">Curated Hall of Fame</option>
+            <option value="pending_review">Radar discoveries (pending)</option>
+          </select>
+        </label>
+        <label class="text-xs text-gray-400">Language
+          <select id="language-filter" onchange="filterRepos()" class="ml-1.5 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
+            <option value="all">All languages</option>
           </select>
         </label>
         <label class="text-xs text-gray-400">Sort
-          <select id="sort-order" onchange="filterRepos()" class="ml-2 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
+          <select id="sort-order" onchange="filterRepos()" class="ml-1.5 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200">
             <option value="latest">Latest activity</option>
             <option value="stars">Most stars</option>
             <option value="name">Project name</option>
           </select>
         </label>
-        <p id="result-count" aria-live="polite" class="text-xs text-gray-400 self-center"></p>
+        <p id="result-count" aria-live="polite" class="text-xs text-gray-400 font-mono ml-auto"></p>
       </div>
-      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
-        <!-- Search -->
-        <div class="relative w-full sm:w-96">
-          <input type="text" id="search-input" aria-label="Search projects" oninput="filterRepos()" placeholder="Search repositories, languages, or vibes..." class="w-full bg-gray-900 border border-gray-800 focus:border-pink-500 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none transition">
-        </div>
 
-        <!-- Archetype filter badges -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
+        <div class="relative w-full sm:w-96">
+          <input type="text" id="search-input" aria-label="Search projects" oninput="filterRepos()" placeholder="Search repositories, languages, files, or vibes..." class="w-full bg-gray-900 border border-gray-800 focus:border-pink-500 rounded-xl px-4 py-2.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none transition">
+        </div>
         <div class="flex flex-wrap gap-2 justify-center" id="archetype-filters"></div>
       </div>
 
-      <!-- Repo Cards Grid -->
-      <div id="repo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Rendered via JavaScript -->
+      <div id="repo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <div id="load-more-wrap" class="mt-8 text-center hidden">
+        <button id="load-more-btn" type="button" class="px-6 py-2.5 rounded-xl bg-gray-900 border border-gray-700 hover:border-pink-500 text-sm font-mono text-pink-300 hover:text-white transition">
+          Load more projects
+        </button>
       </div>
     </div>
 
-    <!-- TAB 2: Taste Blender -->
+    <!-- TAB 2: Modular Agent Skills Library -->
+    <div id="view-skills" class="tab-view hidden">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <h2 class="text-2xl font-bold mb-2 text-white">🧠 Modular Agent Skills Library</h2>
+          <p class="text-sm text-gray-400 max-w-2xl">Self-contained <code class="font-mono text-xs text-indigo-300">SKILL.md</code> behavioral playbooks ready for one-command installation into Claude Code, Google Antigravity, Gemini CLI, Codex, Cursor, or Windsurf.</p>
+        </div>
+        <label class="text-xs text-gray-400 font-mono">Target Agent Directory
+          <select id="skill-target-agent" onchange="renderSkillsCatalog()" class="ml-2 bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-gray-200 font-mono text-xs">
+            <option value="claude">claude (.claude/skills/)</option>
+            <option value="agent">agent (.agent/skills/)</option>
+            <option value="gemini">gemini (.gemini/skills/)</option>
+            <option value="agents">agents / codex (.agents/skills/)</option>
+            <option value="cursor">cursor (.cursor/skills/)</option>
+            <option value="windsurf">windsurf (.windsurf/skills/)</option>
+          </select>
+        </label>
+      </div>
+      <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+
+    <!-- TAB 3: Taste Blender -->
     <div id="view-blender" class="tab-view hidden">
       <div class="max-w-3xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
         <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
           <span>🍸</span><span>The Taste Blender Studio</span>
         </h2>
         <p class="text-sm text-gray-400 mb-6">
-          Stack modular engineering Lego bricks into an unshakeable agent personality.
+          Stack modular engineering Lego bricks into an unshakeable agent personality across 11 rule formats.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -179,10 +214,15 @@
             <select id="blend-target" onchange="updateBlendCommand()" class="w-full bg-gray-950 border border-gray-700 rounded-xl px-3 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-indigo-500 font-mono">
               <option value="claude">CLAUDE.md (Root)</option>
               <option value="dotclaude">.claude/CLAUDE.md</option>
+              <option value="agents">AGENTS.md (Codex / Universal)</option>
               <option value="mdc">Cursor MDC (.cursor/rules/*.mdc)</option>
               <option value="cursor">.cursorrules (Legacy)</option>
-              <option value="agent">.agent/rules.md (Gemini)</option>
-              <option value="agents">AGENTS.md</option>
+              <option value="copilot">.github/copilot-instructions.md</option>
+              <option value="windsurf">.windsurfrules</option>
+              <option value="windsurf-rules">.windsurf/rules/taste.md</option>
+              <option value="cline">.clinerules (Cline / Roo)</option>
+              <option value="agent">.agent/rules.md (Antigravity)</option>
+              <option value="gemini">GEMINI.md (Gemini CLI)</option>
             </select>
           </div>
         </div>
@@ -190,77 +230,119 @@
         <div class="bg-gray-950 border border-gray-800 rounded-xl p-4 mb-6">
           <div class="flex justify-between items-center mb-2">
             <span class="text-xs uppercase font-mono text-gray-500">Executable Command:</span>
-            <button onclick="copyBlendCommand()" class="text-xs text-pink-400 hover:text-pink-300 font-mono flex items-center space-x-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-              <span>Copy</span>
+            <button type="button" onclick="copyBlendCommand()" class="text-xs text-pink-400 hover:text-pink-300 font-mono flex items-center space-x-1">
+              <span>Copy Command</span>
             </button>
           </div>
           <p id="blend-cmd-output" class="font-mono text-sm text-pink-300 break-all select-all">npx taste-code blend --style minimalist --tone karpathy</p>
         </div>
 
-        <div id="blend-description" class="p-4 rounded-xl bg-gray-950/60 border border-gray-800 text-sm text-gray-300">
-          <!-- Dynamic Description -->
+        <div id="blend-description" class="p-4 rounded-xl bg-gray-950/60 border border-gray-800 text-sm text-gray-300"></div>
+      </div>
+    </div>
+
+    <!-- TAB 4: Token Pruner Sandbox -->
+    <div id="view-pruner" class="tab-view hidden">
+      <div class="max-w-5xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white flex items-center space-x-2">
+              <span>💧</span><span>Prompt Token Compactor &amp; De-slop Preview</span>
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">Strip polite filler and corporate platitudes while preserving 100% of test runners, linters, and negative invariants.</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="loadPrunerSample()" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-indigo-950/50 border border-indigo-700 text-indigo-300 hover:bg-indigo-900/60 transition">
+              Load Bloated Sample
+            </button>
+            <select id="pruner-level" onchange="runClientPruner()" class="bg-gray-950 border border-gray-700 rounded-lg px-3 py-1.5 text-xs font-mono text-gray-200">
+              <option value="balanced" selected>Balanced</option>
+              <option value="aggressive">Aggressive</option>
+              <option value="minimal">Minimal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label class="block text-xs font-mono uppercase text-gray-400 mb-2">Original Agent Instructions</label>
+            <textarea id="pruner-input" rows="11" oninput="runClientPruner()" placeholder="Paste bloated CLAUDE.md or .cursorrules here..." class="w-full bg-gray-950 border border-gray-800 focus:border-pink-500 rounded-xl p-4 font-mono text-xs text-gray-200 focus:outline-none"></textarea>
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono uppercase text-emerald-400">Distilled Operational Contract</span>
+              <button type="button" onclick="copyPrunedOutput()" class="text-xs font-mono text-pink-400 hover:text-pink-300">Copy Distilled</button>
+            </div>
+            <pre id="pruner-output" class="w-full h-[254px] overflow-auto bg-gray-950 border border-emerald-900/60 rounded-xl p-4 font-mono text-xs text-emerald-200 whitespace-pre-wrap"></pre>
+          </div>
+        </div>
+
+        <div id="pruner-metrics" class="grid grid-cols-3 gap-4 bg-gray-950 border border-gray-800 rounded-xl p-4 text-center font-mono">
+          <div>
+            <div class="text-xs text-gray-500">Original Est. Tokens</div>
+            <div id="pruner-orig-tokens" class="text-lg font-bold text-gray-200">0</div>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500">Distilled Est. Tokens</div>
+            <div id="pruner-new-tokens" class="text-lg font-bold text-emerald-400">0</div>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500">Context Saved</div>
+            <div id="pruner-saved-pct" class="text-lg font-bold text-pink-400">0%</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- TAB 3: Roast Playground -->
+    <!-- TAB 5: Roast Playground -->
     <div id="view-roast-playground" class="tab-view hidden">
       <div class="max-w-4xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
         <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
           <span>🌶️</span><span>Linus Torvalds Taste Roast Playground</span>
         </h2>
         <p class="text-sm text-gray-400 mb-6">
-          Test your agent prompt rules for fluff, corporate platitudes, and zero-specificity sins.
+          Audit your agent prompt rules for fluff, corporate platitudes, missing negative armor, and missing test runners.
         </p>
 
         <div class="flex space-x-3 mb-4">
-          <button onclick="loadSample('slop')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-red-950/40 border border-red-800 text-red-300 hover:bg-red-900/60 transition">
+          <button type="button" onclick="loadSample('slop')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-red-950/40 border border-red-800 text-red-300 hover:bg-red-900/60 transition">
             Load Slop Prompt (Score: ~15)
           </button>
-          <button onclick="loadSample('taste')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-green-950/40 border border-green-800 text-green-300 hover:bg-green-900/60 transition">
-            Load Master Taste Prompt (Score: ~90)
+          <button type="button" onclick="loadSample('taste')" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-green-950/40 border border-green-800 text-green-300 hover:bg-green-900/60 transition">
+            Load Master Taste Prompt (Score: ~95)
           </button>
         </div>
 
-        <textarea id="roast-input" rows="8" placeholder="Paste your CLAUDE.md or .cursorrules content here..." class="w-full bg-gray-950 border border-gray-800 focus:border-red-500 rounded-xl p-4 font-mono text-sm text-gray-200 focus:outline-none transition mb-4"></textarea>
+        <textarea id="roast-input" rows="8" placeholder="Paste your CLAUDE.md, AGENTS.md, or .cursorrules content here..." class="w-full bg-gray-950 border border-gray-800 focus:border-red-500 rounded-xl p-4 font-mono text-sm text-gray-200 focus:outline-none transition mb-4"></textarea>
 
-        <button onclick="runRoast()" class="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-red-900/30 transition flex items-center justify-center space-x-2">
+        <button type="button" onclick="runRoast()" class="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-red-900/30 transition flex items-center justify-center space-x-2">
           <span>🔥</span><span>Roast My Taste Now</span>
         </button>
 
-        <!-- Roast Output Card -->
         <div id="roast-results" class="mt-8 hidden">
           <div class="border border-red-800/60 rounded-xl bg-gray-950 p-6 font-mono text-sm shadow-2xl">
             <div class="flex justify-between items-center border-b border-gray-800 pb-3 mb-4">
               <span class="text-red-400 font-bold">🌶️ TASTE ROAST REPORT</span>
               <span id="roast-score-badge" class="px-3 py-0.5 rounded font-bold text-xs bg-red-950 border border-red-600 text-red-300">SCORE: 15/100</span>
             </div>
-
             <div class="mb-4">
               <span class="text-gray-400">Verdict:</span>
               <span id="roast-verdict" class="text-red-400 font-bold ml-2">CRIMINAL TOXIC WASTE</span>
             </div>
-
             <div class="mb-4">
-              <div class="text-gray-400 font-bold mb-2">🔥 Sins & Pathology:</div>
-              <ul id="roast-sins" class="space-y-1 text-red-300 text-xs pl-2">
-                <!-- Sins list -->
-              </ul>
+              <div class="text-gray-400 font-bold mb-2">🔥 Sins &amp; Pathology:</div>
+              <ul id="roast-sins" class="space-y-1 text-red-300 text-xs pl-2"></ul>
             </div>
-
             <div class="border-t border-gray-800 pt-3">
               <div class="text-yellow-400 font-bold mb-2">🎙️ Linus Torvalds Savage Critique:</div>
-              <p id="roast-quote" class="text-gray-300 italic text-xs leading-relaxed bg-gray-900 p-3 rounded border border-gray-800">
-                <!-- Linus Quote -->
-              </p>
+              <p id="roast-quote" class="text-gray-300 italic text-xs leading-relaxed bg-gray-900 p-3 rounded border border-gray-800"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- TAB 4: Profile Taste Card Studio -->
+    <!-- TAB 6: Profile Taste Card Studio -->
     <div id="view-card-generator" class="tab-view hidden">
       <div class="max-w-4xl mx-auto bg-gray-900 border border-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
         <h2 class="text-2xl font-bold mb-2 text-white flex items-center space-x-2">
@@ -271,7 +353,6 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
-          <!-- Control Panel -->
           <div class="space-y-4">
             <div>
               <label class="block text-xs font-semibold uppercase tracking-wider text-pink-400 mb-1">GitHub Username</label>
@@ -348,22 +429,17 @@
             </div>
           </div>
 
-          <!-- Card Live Preview -->
           <div class="flex flex-col items-center justify-center p-4 bg-gray-950 border border-gray-800 rounded-2xl">
             <div class="text-xs uppercase font-mono text-gray-500 mb-2">Live Preview</div>
-            <div id="live-card-container" class="w-full overflow-hidden flex justify-center">
-              <!-- Rendered SVG dynamically -->
-            </div>
+            <div id="live-card-container" class="w-full overflow-hidden flex justify-center"></div>
           </div>
         </div>
 
-        <!-- Markdown Embed Code Box -->
         <div class="bg-gray-950 border border-gray-800 rounded-xl p-4 mb-4">
           <div class="flex justify-between items-center mb-2">
             <span class="text-xs uppercase font-mono text-gray-400 font-bold">GitHub Profile README Markdown:</span>
-            <button onclick="copyCardMarkdown()" class="text-xs text-pink-400 hover:text-pink-300 font-mono flex items-center space-x-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
-              <span>Copy Markdown</span>
+            <button type="button" onclick="copyCardMarkdown()" class="text-xs text-pink-400 hover:text-pink-300 font-mono">
+              Copy Markdown
             </button>
           </div>
           <pre id="card-markdown-output" class="font-mono text-xs text-pink-300 select-all overflow-x-auto whitespace-pre-wrap"></pre>
@@ -377,14 +453,54 @@
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Inline Raw Rule Preview Modal -->
+  <div id="rule-preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-repo-title" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="if (event.target === this) closeRuleModal()">
+    <div class="bg-gray-900 border border-gray-700 rounded-2xl max-w-4xl w-full max-h-[88vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-gray-800 flex items-center justify-between gap-4">
+        <div>
+          <h3 id="modal-repo-title" class="text-lg font-bold text-white font-mono"></h3>
+          <p id="modal-rule-meta" class="text-xs text-gray-400 font-mono mt-0.5"></p>
+        </div>
+        <button type="button" onclick="closeRuleModal()" class="text-gray-400 hover:text-white text-xl leading-none px-2 py-1" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="px-6 py-3 bg-gray-950/80 border-b border-gray-800 flex flex-wrap items-center justify-between gap-3">
+        <div id="modal-file-tabs" class="flex flex-wrap gap-2"></div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" onclick="copyModalContent()" class="px-3 py-1.5 rounded-lg bg-pink-600 hover:bg-pink-500 text-white text-xs font-mono">Copy Prompt</button>
+          <button type="button" onclick="sendModalToSandbox('pruner')" class="px-3 py-1.5 rounded-lg bg-emerald-950 border border-emerald-700 text-emerald-300 hover:bg-emerald-900/60 text-xs font-mono">Send to Pruner</button>
+          <button type="button" onclick="sendModalToSandbox('roast')" class="px-3 py-1.5 rounded-lg bg-red-950 border border-red-700 text-red-300 hover:bg-red-900/60 text-xs font-mono">Roast Prompt</button>
+        </div>
+      </div>
+      <pre id="modal-rule-content" class="p-6 overflow-auto text-xs font-mono text-gray-200 leading-relaxed whitespace-pre-wrap flex-grow bg-gray-950"></pre>
+    </div>
+  </div>
+
   <footer class="border-t border-gray-800 py-8 px-4 text-center text-xs text-gray-500">
-    <p>Taste Your Taste • Built for the Vibe Coding Era • Zero External Dependencies</p>
-    <p class="mt-1">Maintained by <a href="https://github.com/joe1chief" target="_blank" class="text-pink-400 hover:underline">@joe1chief</a></p>
+    <p>Taste Your Taste v2.0 • Built for the Vibe Coding Era • Zero External Dependencies</p>
+    <p class="mt-1">Maintained by <a href="https://github.com/joe1chief" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:underline">@joe1chief</a></p>
   </footer>
 
   <script src="gallery.js"></script>
   <script>
+    let toastTimer = null;
+    function showToast(msg) {
+      const el = document.getElementById('global-toast');
+      if (!el) return;
+      el.textContent = `✔ ${msg}`;
+      el.classList.remove('opacity-0');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.add('opacity-0'), 2200);
+    }
+
+    function escapeXmlText(val) {
+      return String(val)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+    }
+
     function switchTab(tabId) {
       document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -392,10 +508,12 @@
         btn.classList.add('border-transparent', 'text-gray-400');
       });
 
-      document.getElementById(`view-${tabId}`).classList.remove('hidden');
+      document.getElementById(`view-${tabId}`)?.classList.remove('hidden');
       const activeBtn = document.getElementById(`tab-${tabId}`);
-      activeBtn.classList.remove('border-transparent', 'text-gray-400');
-      activeBtn.classList.add('border-pink-500', 'text-pink-400');
+      if (activeBtn) {
+        activeBtn.classList.remove('border-transparent', 'text-gray-400');
+        activeBtn.classList.add('border-pink-500', 'text-pink-400');
+      }
     }
 
     function updateBlendCommand() {
@@ -410,19 +528,19 @@
       document.getElementById('blend-cmd-output').textContent = cmd;
 
       const descMap = {
-        antfu: "Strict TypeScript hygiene, zero-any policy, and modern ESM configuration.",
-        karpathy: "Radical simplicity, raw single-file execution, and zero unnecessary dependencies.",
-        stripe: "Defensive API contracts, explicit HTTP boundaries, and robust idempotency.",
-        minimalist: "Zero-dependency philosophy, vanilla primitives, and zero bloat.",
-        defensive: "Strict boundary assertions, invariant verification, and static checking.",
-        hacker: "Rapid execution, 160-char lines, and thin wrapper patterns."
+        antfu: 'Strict TypeScript hygiene, zero-any policy, and modern ESM configuration.',
+        karpathy: 'Radical simplicity, raw single-file execution, and zero unnecessary dependencies.',
+        stripe: 'Defensive API contracts, explicit HTTP boundaries, and robust idempotency.',
+        minimalist: 'Zero-dependency philosophy, vanilla primitives, and zero bloat.',
+        defensive: 'Strict boundary assertions, invariant verification, and static checking.',
+        hacker: 'Rapid execution, 160-char lines, and thin wrapper patterns.'
       };
 
       const toneMap = {
-        karpathy: "Diff-first, outcome-driven responses with zero conversational filler.",
-        linus: "Brutally honest, zero fluff, intolerant of over-engineered boilerplate.",
-        terse: "Ultra-compact code-only responses with fewer than 5 lines of commentary.",
-        teacher: "Pedagogical Socratic dialogue explaining invariant trade-offs."
+        karpathy: 'Diff-first, outcome-driven responses with zero conversational filler.',
+        linus: 'Brutally honest, zero fluff, intolerant of over-engineered boilerplate.',
+        terse: 'Ultra-compact code-only responses with fewer than 5 lines of commentary.',
+        teacher: 'Pedagogical Socratic dialogue explaining invariant trade-offs.'
       };
 
       document.getElementById('blend-description').innerHTML = `
@@ -434,73 +552,114 @@
     function copyHeroCmd() {
       const text = document.getElementById('hero-cmd-text').textContent;
       navigator.clipboard.writeText(text);
-      const toast = document.getElementById('copy-toast');
-      toast.classList.remove('opacity-0');
-      setTimeout(() => toast.classList.add('opacity-0'), 2000);
+      showToast('Command copied to clipboard!');
     }
 
     function copyBlendCommand() {
       const text = document.getElementById('blend-cmd-output').textContent;
       navigator.clipboard.writeText(text);
-      alert('Command copied to clipboard: ' + text);
+      showToast(`Copied: ${text}`);
     }
 
-    // Client-side Roast Engine
+    function loadPrunerSample() {
+      document.getElementById('pruner-input').value =
+`# Project Agent Guidelines
+Here are the project guidelines:
+Please be very helpful, polite, and friendly to every developer.
+Always write clean, readable code and follow all industry best practices.
+We strive for excellence and we value collaboration and empathy.
+As an AI assistant, if you make a mistake, kindly apologize immediately.
+
+## Engineering Rules
+- Please run \`npm test\` and \`eslint --fix\` before concluding any task.
+- Kindly ensure that you never introduce \`any\` types or external runtime dependencies.
+- Deliver minimal surgical diffs without restating unchanged code.
+
+Thank you!`;
+      runClientPruner();
+    }
+
+    function runClientPruner() {
+      const raw = document.getElementById('pruner-input')?.value || '';
+      const level = document.getElementById('pruner-level')?.value || 'balanced';
+      if (typeof window.prunePromptClient !== 'function') return;
+      const res = window.prunePromptClient(raw, level);
+      document.getElementById('pruner-output').textContent = res.prunedContent || '(Paste instructions on the left to preview distilled output)';
+      document.getElementById('pruner-orig-tokens').textContent = `~${res.originalTokens}`;
+      document.getElementById('pruner-new-tokens').textContent = `~${res.prunedTokens}`;
+      document.getElementById('pruner-saved-pct').textContent = `${res.percentSaved}% (~${res.tokensSaved} tok)`;
+    }
+
+    function copyPrunedOutput() {
+      const text = document.getElementById('pruner-output')?.textContent || '';
+      if (!text) return;
+      navigator.clipboard.writeText(text);
+      showToast('Copied distilled prompt!');
+    }
+
     function loadSample(type) {
       if (type === 'slop') {
         document.getElementById('roast-input').value = `# General Rules\nPlease be helpful, polite, and friendly to the user.\nAlways write clean, readable code and follow all industry best practices.\nWe strive for excellence. If you make a mistake, apologize immediately.\nThank you!`;
       } else {
-        document.getElementById('roast-input').value = `# Repository Operational Contract\n- Test command: pytest -v tests/\n- Formatter: ruff check --fix\n- Zero fluff. Never apologize, never say 'Certainly!'.\n- Deliver git patch immediately.\n- Reject third-party packages for utilities under 20 lines.`;
+        document.getElementById('roast-input').value = `# Repository Operational Contract\n- Test command: pytest -v tests/\n- Formatter: ruff check --fix\n- Zero fluff. Never apologize, never say 'Certainly!'.\n- Deliver git patch immediately.\n- Do not add third-party packages for utilities under 20 lines.`;
       }
     }
 
     function runRoast() {
       const text = document.getElementById('roast-input').value.trim();
       if (!text) {
-        alert('Please enter or paste your agent instructions first.');
+        showToast('Paste agent instructions first.');
         return;
       }
 
       const lower = text.toLowerCase();
-      let score = 100;
+      let score = 85;
       const sins = [];
 
-      const politeness = ['please', 'thank you', 'thanks', 'kindly', 'sorry', 'apologize'];
-      let politeCount = 0;
-      politeness.forEach(w => {
-        if (lower.includes(w)) politeCount++;
-      });
-      if (politeCount > 0) {
-        score -= politeCount * 15;
-        sins.push(`Politeness Tax: Found ${politeCount} polite/apologetic words wasting token budget.`);
+      const politeHits = text.match(/\b(please|thank you|thanks|kindly|sorry|apologize)\b/gi) || [];
+      if (politeHits.length > 0) {
+        score -= Math.min(30, politeHits.length * 10);
+        sins.push(`Politeness Tax: Found ${politeHits.length} polite/apologetic words wasting context tokens.`);
       }
 
-      if (lower.includes('clean code') || lower.includes('best practice') || lower.includes('excellence')) {
+      if (/clean code|best practice|strive for excellence/i.test(text)) {
         score -= 25;
         sins.push("Platitude Sin: 'Clean code' and 'best practices' are unmeasurable corporate fluff.");
       }
 
-      if (lower.includes('be helpful') || lower.includes('friendly')) {
+      if (/be helpful|friendly/i.test(text)) {
         score -= 20;
-        sins.push("Ambiguity Sin: 'Be helpful' is a vague vibe, not an operational instruction.");
+        sins.push("Ambiguity Sin: 'Be helpful' is a vague vibe, not an operational constraint.");
       }
 
-      if (!lower.includes('run') && !lower.includes('test') && !lower.includes('npm') && !lower.includes('pytest')) {
+      if (!/\b(never|do not|don't|must not|forbid|prohibit)\b/i.test(text)) {
         score -= 20;
-        sins.push("Zero Verification: No executable test or lint command provided.");
+        sins.push('Zero Negative Armor: No explicit forbidden boundaries (never / do not).');
+      } else {
+        score += 8;
       }
 
-      score = Math.max(5, Math.min(100, score));
+      if (!/\b(pytest|npm|pnpm|cargo|go test|ruff|eslint|vitest|make|just|gradle)\b/i.test(text)) {
+        score -= 15;
+        sins.push('Zero Verification: No executable test or lint runner command provided.');
+      } else {
+        score += 7;
+      }
 
-      let verdict = 'CHEF\'S TASTE';
-      let quote = '"Now this is how you write instructions. Short, actionable, and doesn\'t waste my afternoon reading apologies."';
+      score = Math.max(5, Math.min(99, score));
+
+      let verdict = "CHEF'S TASTE";
+      let quote = '"Now this is how you write instructions. Short, actionable, and zero wasted afternoon reading apologies."';
 
       if (score < 40) {
         verdict = 'CRIMINAL TOXIC WASTE';
-        quote = '"This isn\'t an engineering document, it\'s a corporate greeting card. If I wanted an AI to apologize, I\'d hire a PR firm."';
+        quote = '"This is not an engineering specification, it is a corporate greeting card. Strip the manners and add a test runner."';
       } else if (score < 70) {
         verdict = 'SLOPPY AMATEUR';
-        quote = '"You have some reasonable ideas buried under useless waffle. Trim the fat before Claude chokes on it."';
+        quote = '"You have reasonable ideas buried under waffle. Run taste prune before your model chokes on filler."';
+      } else if (score < 88) {
+        verdict = 'ACCEPTABLE CRAFT';
+        quote = '"Solid operational rules. Tighten negative boundaries and keep token count lean."';
       }
 
       document.getElementById('roast-score-badge').textContent = `SCORE: ${score}/100`;
@@ -508,9 +667,12 @@
       document.getElementById('roast-quote').textContent = quote;
 
       const sinsList = document.getElementById('roast-sins');
-      sinsList.innerHTML = '';
+      sinsList.replaceChildren();
       if (sins.length === 0) {
-        sinsList.innerHTML = '<li class="text-green-400">✔ Zero conversational fluff detected! Exceptional engineering discipline.</li>';
+        const ok = document.createElement('li');
+        ok.className = 'text-green-400';
+        ok.textContent = '✔ Zero conversational fluff detected! Exceptional engineering discipline.';
+        sinsList.appendChild(ok);
       } else {
         sins.forEach(s => {
           const li = document.createElement('li');
@@ -522,7 +684,6 @@
       document.getElementById('roast-results').classList.remove('hidden');
     }
 
-    // Card & Badge Studio
     const STUDIO_THEMES = {
       cyber: { primary: '#f43f5e', secondary: '#8b5cf6', accent: '#06b6d4', bg1: '#090d16', bg2: '#0f1422', bg3: '#06080d' },
       matrix: { primary: '#10b981', secondary: '#059669', accent: '#34d399', bg1: '#05110a', bg2: '#0b1f14', bg3: '#030a06' },
@@ -551,7 +712,11 @@
       }
     }
 
-    function generateSvgString(user, style, tone, archetype, score, themeKey = 'cyber') {
+    function generateSvgString(rawUser, rawStyle, rawTone, rawArchetype, score, themeKey = 'cyber') {
+      const user = escapeXmlText(rawUser);
+      const style = escapeXmlText(rawStyle);
+      const tone = escapeXmlText(rawTone);
+      const archetype = escapeXmlText(rawArchetype);
       const th = STUDIO_THEMES[themeKey] || STUDIO_THEMES.cyber;
       let ratingLabel = "CHEF'S TASTE";
       let ratingColor = '#10b981';
@@ -578,17 +743,16 @@
       const gaugeR = 33;
       const circumference = 2 * Math.PI * gaugeR;
       const strokeOffset = (circumference * (1 - score / 100)).toFixed(1);
-
-      const archConfig = STUDIO_ARCHETYPE_MAP[archetype] || {
+      const archConfig = STUDIO_ARCHETYPE_MAP[rawArchetype] || {
         icon: '✨',
         color: th.primary,
         bg: 'rgba(244, 63, 94, 0.12)',
         border: 'rgba(244, 63, 94, 0.4)',
       };
 
-      const archWidth = Math.max(150, archetype.length * 7.2 + 34);
-      const styleWidth = Math.max(62, style.length * 7.5 + 26);
-      const toneWidth = Math.max(62, tone.length * 7.5 + 26);
+      const archWidth = Math.max(150, rawArchetype.length * 7.2 + 34);
+      const styleWidth = Math.max(62, rawStyle.length * 7.5 + 26);
+      const toneWidth = Math.max(62, rawTone.length * 7.5 + 26);
 
       return `<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
         <defs>
@@ -602,36 +766,12 @@
             <stop offset="50%" stop-color="${th.secondary}" stop-opacity="0.35"/>
             <stop offset="100%" stop-color="${th.accent}" stop-opacity="0.8"/>
           </linearGradient>
-          <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="${th.primary}"/>
-            <stop offset="100%" stop-color="#fb7185"/>
-          </linearGradient>
           <linearGradient id="scoreRingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
             <stop offset="0%" stop-color="${th.secondary}"/>
             <stop offset="50%" stop-color="${th.primary}"/>
             <stop offset="100%" stop-color="${ratingColor}"/>
           </linearGradient>
-          <radialGradient id="glowTopRight" cx="88%" cy="12%" r="55%">
-            <stop offset="0%" stop-color="${th.primary}" stop-opacity="0.18"/>
-            <stop offset="100%" stop-color="${th.primary}" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="glowBottomLeft" cx="12%" cy="88%" r="45%">
-            <stop offset="0%" stop-color="${th.secondary}" stop-opacity="0.15"/>
-            <stop offset="100%" stop-color="${th.secondary}" stop-opacity="0"/>
-          </radialGradient>
-          <pattern id="techGrid" width="22" height="22" patternUnits="userSpaceOnUse">
-            <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.035"/>
-            <circle cx="22" cy="0" r="0.8" fill="#ffffff" fill-opacity="0.08"/>
-          </pattern>
-          <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feMerge>
-              <feMergeNode in="blur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
         </defs>
-
         <style>
           .brand { font: 800 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: ${th.primary}; letter-spacing: 1.5px; }
           .user { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #94a3b8; }
@@ -645,42 +785,24 @@
           .score-denom { font: 600 10px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #64748b; }
           .verdict-txt { font: 800 10px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: ${ratingColor}; letter-spacing: 0.6px; }
         </style>
-
         <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.2"/>
-        <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#glowTopRight)"/>
-        <rect x="0.5" y="0.5" width="494" height="194" rx="16" fill="url(#glowBottomLeft)"/>
-        <rect x="1" y="1" width="493" height="193" rx="15" fill="url(#techGrid)"/>
-
-        <path d="M 8 16 L 8 8 L 16 8" stroke="${th.primary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
-        <path d="M 487 16 L 487 8 L 479 8" stroke="${th.accent}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
-        <path d="M 8 179 L 8 187 L 16 187" stroke="${th.secondary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
-        <path d="M 487 179 L 487 187 L 479 187" stroke="${th.primary}" stroke-opacity="0.4" stroke-width="1.2" fill="none"/>
-        <path d="M 28 1 L 180 1" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
-
         <g transform="translate(24, 18)">
           <rect x="0" y="0" width="22" height="22" rx="6" fill="${th.primary}" fill-opacity="0.12" stroke="${th.primary}" stroke-opacity="0.3"/>
           <text x="4" y="15" font-size="13">🍷</text>
-          <text x="30" y="16">
-            <tspan class="brand">TASTE YOUR TASTE</tspan>
-            <tspan class="user"> • @${user}</tspan>
-          </text>
+          <text x="30" y="16"><tspan class="brand">TASTE YOUR TASTE</tspan><tspan class="user"> • @${user}</tspan></text>
         </g>
-
         <g transform="translate(366, 17)">
           <rect x="0" y="0" width="105" height="22" rx="11" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.3)"/>
           <circle cx="12" cy="11" r="3" fill="#10b981"/>
           <text x="23" y="14" class="status-lbl">AI VERIFIED</text>
         </g>
-
         <g transform="translate(24, 48)">
           <rect x="0" y="0" width="${archWidth}" height="24" rx="7" fill="${archConfig.bg}" stroke="${archConfig.border}"/>
           <text x="8" y="16" font-size="12">${archConfig.icon}</text>
           <text x="26" y="16" class="archetype-txt">${archetype}</text>
           <text x="${archWidth + 12}" y="16" class="sec-title">SPEC: AGENTS.MD • ZERO SLOP</text>
         </g>
-
         <line x1="24" y1="81" x2="471" y2="81" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" stroke-dasharray="3 3"/>
-
         <g transform="translate(24, 94)">
           <text x="0" y="0" class="sec-title">TASTE STACKING DNA</text>
           <g transform="translate(0, 8)">
@@ -693,7 +815,6 @@
             <text x="8" y="15" class="chip-txt" fill="#c084fc">🎯 ${tone}</text>
           </g>
         </g>
-
         <g transform="translate(24, 142)">
           <text x="0" y="0" class="sec-title">CONTEXT POLICING</text>
           <g transform="translate(0, 8)">
@@ -701,19 +822,16 @@
             <text x="126" y="14" class="metric-sub">• ⚡ Pure surgical diffs</text>
           </g>
         </g>
-
         <line x1="268" y1="92" x2="268" y2="175" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-
         <g transform="translate(288, 92)">
           <g transform="translate(34, 42)">
             <circle cx="0" cy="0" r="${gaugeR}" fill="none" stroke="#1e293b" stroke-width="6"/>
-            <circle cx="0" cy="0" r="${gaugeR}" fill="none" stroke="url(#scoreRingGrad)" stroke-width="6" 
+            <circle cx="0" cy="0" r="${gaugeR}" fill="none" stroke="url(#scoreRingGrad)" stroke-width="6"
                     stroke-linecap="round" stroke-dasharray="${circumference.toFixed(1)}" stroke-dashoffset="${strokeOffset}"
-                    transform="rotate(-90)" filter="url(#neonGlow)"/>
+                    transform="rotate(-90)"/>
             <text x="0" y="2" text-anchor="middle" class="score-txt">${score}</text>
             <text x="0" y="15" text-anchor="middle" class="score-denom">/100</text>
           </g>
-
           <g transform="translate(86, 12)">
             <text x="0" y="0" class="sec-title">LINUS AUDIT</text>
             <g transform="translate(0, 8)">
@@ -726,20 +844,12 @@
       </svg>`;
     }
 
-    function generateBadgeSvgString(type, style, tone, archetype, score) {
+    function generateBadgeSvgString(type, rawStyle, rawTone, rawArchetype, score) {
       let ratingLabel = "Chef's Taste";
       let ratingColor = '#10b981';
-
-      if (score < 40) {
-        ratingLabel = 'Criminal Waste';
-        ratingColor = '#ef4444';
-      } else if (score < 70) {
-        ratingLabel = 'Sloppy Amateur';
-        ratingColor = '#f59e0b';
-      } else if (score < 88) {
-        ratingLabel = 'Acceptable Craft';
-        ratingColor = '#06b6d4';
-      }
+      if (score < 40) { ratingLabel = 'Criminal Waste'; ratingColor = '#ef4444'; }
+      else if (score < 70) { ratingLabel = 'Sloppy Amateur'; ratingColor = '#f59e0b'; }
+      else if (score < 88) { ratingLabel = 'Acceptable Craft'; ratingColor = '#06b6d4'; }
 
       let label = 'taste';
       let value = `${score} / 100 • ${ratingLabel}`;
@@ -748,67 +858,26 @@
       let valBorder = ratingColor;
 
       if (type === 'dna') {
-        label = 'taste dna';
-        value = `${style} + ${tone}`;
-        valColor = '#c084fc';
-        valBg = 'rgba(192, 132, 252, 0.12)';
-        valBorder = '#a855f7';
+        label = 'taste dna'; value = `${rawStyle} + ${rawTone}`; valColor = '#c084fc'; valBg = 'rgba(192, 132, 252, 0.12)'; valBorder = '#a855f7';
       } else if (type === 'archetype') {
-        label = 'archetype';
-        value = archetype;
-        valColor = '#38bdf8';
-        valBg = 'rgba(56, 189, 248, 0.12)';
-        valBorder = '#0284c7';
+        label = 'archetype'; value = rawArchetype; valColor = '#38bdf8'; valBg = 'rgba(56, 189, 248, 0.12)'; valBorder = '#0284c7';
       } else if (type === 'slop') {
-        label = 'politeness tax';
-        value = '0% • Pure Diff';
-        valColor = '#34d399';
-        valBg = 'rgba(52, 211, 153, 0.12)';
-        valBorder = '#10b981';
+        label = 'politeness tax'; value = '0% • Pure Diff'; valColor = '#34d399'; valBg = 'rgba(52, 211, 153, 0.12)'; valBorder = '#10b981';
       } else if (type === 'roast') {
-        label = 'linus roast';
-        value = `${ratingLabel} 🔥`;
-        valColor = ratingColor;
-        valBg = 'rgba(244, 63, 94, 0.12)';
-        valBorder = ratingColor;
+        label = 'linus roast'; value = `${ratingLabel} 🔥`; valColor = ratingColor; valBg = 'rgba(244, 63, 94, 0.12)'; valBorder = ratingColor;
       }
 
-      const labelTextWidth = Math.round(label.length * 6.8 + 26);
-      const labelWidth = labelTextWidth + 16;
-      const valueTextWidth = Math.round(value.length * 6.8);
-      const valueWidth = valueTextWidth + 24;
+      const labelWidth = Math.round(label.length * 6.8 + 42);
+      const valueWidth = Math.round(value.length * 6.8 + 24);
       const totalWidth = labelWidth + valueWidth;
 
       return `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="28" viewBox="0 0 ${totalWidth} 28" fill="none">
-        <defs>
-          <linearGradient id="badgeBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.85"/>
-            <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="${valBorder}" stop-opacity="0.85"/>
-          </linearGradient>
-          <linearGradient id="labelBg" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#090d16"/>
-            <stop offset="100%" stop-color="#111827"/>
-          </linearGradient>
-        </defs>
-
-        <style>
-          .badge-label { font: 700 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; letter-spacing: 0.5px; }
-          .badge-val { font: 700 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; fill: ${valColor}; }
-        </style>
-
-        <rect x="0.5" y="0.5" width="${totalWidth - 1}" height="27" rx="6" fill="#090d16" stroke="url(#badgeBorderGrad)"/>
-        <path d="M 1 6.5 C 1 3.5 3.5 1 6.5 1 L ${labelWidth} 1 L ${labelWidth} 27 L 6.5 27 C 3.5 27 1 24.5 1 21.5 Z" fill="url(#labelBg)"/>
+        <rect x="0.5" y="0.5" width="${totalWidth - 1}" height="27" rx="6" fill="#090d16" stroke="${valBorder}" stroke-opacity="0.7"/>
         <line x1="${labelWidth}" y1="1" x2="${labelWidth}" y2="27" stroke="#334155" stroke-width="1"/>
-        <path d="M ${labelWidth} 1 L ${totalWidth - 6.5} 1 C ${totalWidth - 3.5} 1 ${totalWidth - 1} 3.5 ${totalWidth - 1} 6.5 L ${totalWidth - 1} 21.5 C ${totalWidth - 1} 24.5 ${totalWidth - 3.5} 27 ${totalWidth - 6.5} 27 L ${labelWidth} 27 Z" fill="${valBg}"/>
-
-        <g transform="translate(10, 18)">
-          <text x="0" y="0" font-size="12">🍷</text>
-          <text x="18" y="-1" class="badge-label">${label.toUpperCase()}</text>
-        </g>
-        <g transform="translate(${labelWidth + 12}, 17)">
-          <text x="0" y="0" class="badge-val">${value}</text>
-        </g>
+        <rect x="${labelWidth}" y="1" width="${valueWidth - 1}" height="26" rx="5" fill="${valBg}"/>
+        <text x="10" y="18" font-size="12">🍷</text>
+        <text x="28" y="17" font-family="sans-serif" font-weight="700" font-size="11" fill="#cbd5e1">${escapeXmlText(label.toUpperCase())}</text>
+        <text x="${labelWidth + 12}" y="17" font-family="monospace" font-weight="700" font-size="11" fill="${valColor}">${escapeXmlText(value)}</text>
       </svg>`;
     }
 
@@ -828,30 +897,32 @@
         : generateSvgString(user, style, tone, archetype, score, theme);
 
       const container = document.getElementById('live-card-container');
-      if (container) {
-        container.innerHTML = svgString;
-      }
+      if (container) container.innerHTML = svgString;
 
-      const md = isBadge
-        ? `[![My AI Developer Taste Badge](https://joe1chief.github.io/taste-your-taste/taste-badge.svg)](https://github.com/joe1chief/taste-your-taste)`
-        : `[![My AI Developer Taste](https://joe1chief.github.io/taste-your-taste/taste-card.svg)](https://github.com/joe1chief/taste-your-taste)`;
+      const params = isBadge
+        ? new URLSearchParams({ type: badgeType, style, tone, archetype, score: String(score) })
+        : new URLSearchParams({ user, style, tone, archetype, score: String(score), theme });
+      const endpoint = isBadge ? 'badge' : 'card';
+      const md = `[![My Developer Taste](https://taste-your-taste.vercel.app/api/${endpoint}?${params.toString()})](https://github.com/joe1chief/taste-your-taste)`;
 
       const mdOut = document.getElementById('card-markdown-output');
-      if (mdOut) {
-        mdOut.textContent = md;
-      }
+      if (mdOut) mdOut.textContent = md;
     }
 
     function copyCardMarkdown() {
       const md = document.getElementById('card-markdown-output')?.textContent;
       if (md) {
         navigator.clipboard.writeText(md);
-        alert('Markdown embed snippet copied to clipboard!');
+        showToast('Markdown embed snippet copied!');
       }
     }
 
-    // Init
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && typeof closeRuleModal === 'function') closeRuleModal();
+    });
+
     updateBlendCommand();
+    loadPrunerSample();
     updateLiveCard();
   </script>
 </body>

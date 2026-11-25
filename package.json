@@ -1,7 +1,7 @@
 {
   "name": "taste-code",
-  "version": "1.0.0",
-  "description": "Stack and blend developer taste for CLAUDE.md, .cursorrules & .agent files, with Linus-style taste roasting.",
+  "version": "2.0.0",
+  "description": "Autonomous developer taste curation, vibe stacking, agent skills installer, and prompt quality gate for CLAUDE.md, AGENTS.md, Cursor, Copilot, Windsurf, and Gemini.",
   "main": "src/index.js",
   "bin": {
     "taste": "./bin/taste.js",
@@ -22,9 +22,13 @@
     "taste",
     "claude",
     "claude-code",
+    "agents-md",
     "cursor",
     "cursorrules",
-    "agent",
+    "copilot-instructions",
+    "windsurf",
+    "agent-skills",
+    "gemini",
     "vibe-coding",
     "developer-taste",
     "anti-slop"
@@ -38,8 +42,8 @@
   "bugs": {
     "url": "https://github.com/joe1chief/taste-your-taste/issues"
   },
-  "homepage": "https://github.com/joe1chief/taste-your-taste#readme",
+  "homepage": "https://joe1chief.github.io/taste-your-taste/",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   }
 }

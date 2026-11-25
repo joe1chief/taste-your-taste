@@ -11,4 +11,4 @@
 Headless browser control invariants, DOM extraction resilience, zero flakiness.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

@@ -9,7 +9,8 @@ import tempfile
 import unittest
 from unittest.mock import Mock, patch
 
-from scripts.radar import TasteRadar, resolve_archive_dir, write_archive
+from scripts.llm_client import analyze_evolution_deterministic
+from scripts.radar import TasteRadar, extract_issue_number, resolve_archive_dir, write_archive
 
 
 class RadarArchivesTest(unittest.TestCase):
@@ -157,6 +158,47 @@ class RadarArchivesTest(unittest.TestCase):
         self.write_via("intake")
         self.write_via("evolution")
         self.assertFalse(Path("discovered").exists())
+
+    def test_evolution_reuses_existing_issue_via_comment_and_skips_curated_issues(self):
+        self.api.create_issue_comment.return_value = "https://github.com/test/archive/issues/42#issuecomment-1"
+        write_archive("alice/skills", {"AGENTS.md": "Old rule line one\n"}, {"stars": 2000})
+        self.radar.db["alice/skills"] = {
+            "status": "pending_review",
+            "issue_url": "https://github.com/test/archive/issues/42",
+            "file_shas": {"AGENTS.md": "old"},
+        }
+        self.assertTrue(self.radar.check_and_handle_evolution("alice/skills", {"AGENTS.md": "new"}))
+        self.api.create_issue_comment.assert_called_once()
+        self.assertEqual(self.api.create_issue_comment.call_args.args[1], 42)
+        self.api.create_issue.assert_not_called()
+
+        # Curated repositories still refresh local archives and history without issue noise
+        self.api.create_issue_comment.reset_mock()
+        write_archive("bob/curated", {"AGENTS.md": "Initial curated rule\n"}, {"stars": 5000})
+        self.radar.db["bob/curated"] = {
+            "status": "curated",
+            "dir": "curated-bob",
+            "file_shas": {"AGENTS.md": "old"},
+        }
+        self.assertTrue(self.radar.check_and_handle_evolution("bob/curated", {"AGENTS.md": "new"}))
+        self.api.create_issue.assert_not_called()
+        self.api.create_issue_comment.assert_not_called()
+        self.assertEqual(len(self.radar.db["bob/curated"]["evolution_history"]), 1)
+
+    def test_deterministic_evolution_diff_and_trivial_whitespace_skip(self):
+        trivial = analyze_evolution_deterministic("AGENTS.md", "# Rules\n- Run pytest  \n", "# Rules\n\n- Run pytest\n")
+        self.assertTrue(trivial["trivial"])
+
+        meaningful = analyze_evolution_deterministic(
+            "AGENTS.md",
+            "# Rules\n- Old lint rule\n",
+            "# Rules\n## Token economy\n- Never include conversational preamble; run pytest -q before commit.\n",
+        )
+        self.assertFalse(meaningful["trivial"])
+        self.assertIn("Added", " ".join(meaningful["key_changes"]))
+        self.assertIn("token", meaningful["vibe_shift"].lower())
+        self.assertEqual(extract_issue_number("https://github.com/joe1chief/taste-your-taste/issues/1"), 1)
+        self.assertIsNone(extract_issue_number("https://github.com/joe1chief/taste-your-taste/pull/7"))
 
 
 if __name__ == "__main__":

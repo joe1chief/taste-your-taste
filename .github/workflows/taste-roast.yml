@@ -7,8 +7,13 @@ on:
       - '.claude/**'
       - '.cursorrules'
       - '.cursor/rules/**'
+      - '.github/copilot-instructions.md'
+      - '.windsurfrules'
+      - '.windsurf/rules/**'
+      - '.clinerules'
       - '.agent/**'
       - 'AGENTS.md'
+      - 'GEMINI.md'
   push:
     branches:
       - main
@@ -17,8 +22,13 @@ on:
       - '.claude/**'
       - '.cursorrules'
       - '.cursor/rules/**'
+      - '.github/copilot-instructions.md'
+      - '.windsurfrules'
+      - '.windsurf/rules/**'
+      - '.clinerules'
       - '.agent/**'
       - 'AGENTS.md'
+      - 'GEMINI.md'
   workflow_dispatch:
     inputs:
       target_file:
@@ -46,7 +56,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run Linus Torvalds Taste Roast
+      - name: Run Linus Torvalds Taste Roast & Quality Gate
         id: run_roast
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -59,6 +69,8 @@ jobs:
               TARGET=".cursorrules"
             elif [ -f "AGENTS.md" ]; then
               TARGET="AGENTS.md"
+            elif [ -f ".github/copilot-instructions.md" ]; then
+              TARGET=".github/copilot-instructions.md"
             fi
           fi
 
@@ -66,7 +78,8 @@ jobs:
           if [ -f "$TARGET" ]; then
             ROAST_OUTPUT=$(node bin/taste.js roast "$TARGET")
             echo "$ROAST_OUTPUT"
-            
+            node bin/taste.js check "$TARGET" --min-score 70
+
             echo "## 🌶️ Taste Roast by Linus Torvalds" >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
             echo "$ROAST_OUTPUT" >> $GITHUB_STEP_SUMMARY

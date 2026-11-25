@@ -11,4 +11,4 @@
 Mission-critical Apache Spark codebase rules: strict backward compatibility, zero regressions, DataFrame API stability.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

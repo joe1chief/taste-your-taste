@@ -12,6 +12,7 @@ from urllib.parse import quote
 
 REPOSITORY = "joe1chief/taste-your-taste"
 GITHUB = f"https://github.com/{REPOSITORY}"
+RAW_GITHUB = f"https://raw.githubusercontent.com/{REPOSITORY}/main"
 START = "<!-- TASTE:LATEST:START -->"
 END = "<!-- TASTE:LATEST:END -->"
 IDENTITY = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\Z")
@@ -44,6 +45,62 @@ def local_directory(root, relative):
 
 def archive_url(directory, root):
     return f"{GITHUB}/tree/main/{quote(directory.relative_to(root).as_posix(), safe='/')}" if directory else None
+
+
+def raw_file_entries(directory, root):
+    """Collect relative raw URLs for non-metadata rule files in an archive or curated folder."""
+    if not directory or not directory.is_dir():
+        return []
+    entries = []
+    for item in sorted(directory.rglob("*")):
+        if not item.is_file() or item.is_symlink():
+            continue
+        rel_inside = item.relative_to(directory).as_posix()
+        if rel_inside.upper() in {"META.JSON", "README.MD"}:
+            continue
+        rel_repo = item.relative_to(root).as_posix()
+        entries.append({
+            "name": rel_inside,
+            "path": rel_repo,
+            "raw_url": f"{RAW_GITHUB}/{quote(rel_repo, safe='/')}",
+        })
+    return entries[:6]
+
+
+def load_skills_catalog(root):
+    """Build catalog metadata for modular skills under skills/*/SKILL.md when present."""
+    skills_dir = root / "skills"
+    if not skills_dir.is_dir():
+        return []
+    skills = []
+    for child in sorted(skills_dir.iterdir()):
+        if not child.is_dir() or child.is_symlink():
+            continue
+        skill_file = child / "SKILL.md"
+        if not skill_file.is_file():
+            continue
+        text = skill_file.read_text(encoding="utf-8", errors="replace")
+        name = child.name
+        description = "Modular agent skill playbook."
+        fm_match = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
+        if fm_match:
+            fm = fm_match.group(1)
+            m_name = re.search(r"^name:\s*(.+)$", fm, re.MULTILINE)
+            m_desc = re.search(r"^description:\s*(.+)$", fm, re.MULTILINE)
+            if m_name:
+                name = m_name.group(1).strip().strip("\"'")
+            if m_desc:
+                description = m_desc.group(1).strip().strip("\"'")
+        rel_repo = skill_file.relative_to(root).as_posix()
+        skills.append({
+            "id": child.name,
+            "name": name,
+            "description": description[:240],
+            "path": rel_repo,
+            "url": f"{GITHUB}/blob/main/{quote(rel_repo, safe='/')}",
+            "raw_url": f"{RAW_GITHUB}/{quote(rel_repo, safe='/')}",
+        })
+    return skills
 
 
 def issue_url(value):
@@ -79,6 +136,7 @@ def build_catalog(root, scan=None):
         evolved = bool(evolution_at and evolution_at == updated_at)
         files = row.get("files", [])
         highlights = meta.get("highlights") or []
+        primary_dir = curated if (status == "curated" and curated) else (discovered or curated)
         projects.append({
             "repo": name,
             "status": status,
@@ -88,6 +146,9 @@ def build_catalog(root, scan=None):
             "vibe": row.get("vibe") or row.get("description") or "Maintainer-curated agent instructions.",
             "file": ", ".join(files) or "Agent skills",
             "highlight": highlights[0] if highlights else "Explore the source instructions and their review status.",
+            "highlights": highlights[:3],
+            "evolution_count": len(history),
+            "raw_files": raw_file_entries(primary_dir, root),
             "source_url": f"https://github.com/{name}",
             "archive_url": archive_url(discovered or curated, root),
             "curated_url": archive_url(curated, root),
@@ -100,7 +161,7 @@ def build_catalog(root, scan=None):
     projects.sort(key=lambda p: p["updated_at"] or "", reverse=True)
     counts = {"total": len(projects)}
     counts.update({status: sum(p["status"] == status for p in projects) for status in ("curated", "pending_review")})
-    return {
+    catalog = {
         "schema_version": 1,
         "source_sha256": hashlib.sha256(raw).hexdigest(),
         "last_scan": scan,
@@ -108,6 +169,10 @@ def build_catalog(root, scan=None):
         "counts": counts,
         "projects": projects,
     }
+    skills = load_skills_catalog(root)
+    if skills:
+        catalog["skills"] = skills
+    return catalog
 
 
 def render_readme(catalog):
@@ -133,7 +198,7 @@ def render_readme(catalog):
     latest = [p for p in catalog["projects"] if p["updated_at"]][:10]
     for project in latest:
         status = "Curated project" if project["status"] == "curated" else "Pending review"
-        if project["issue_url"]:
+        if project["issue_url"] and project["status"] != "curated":
             status = f"[{status}]({project['issue_url']})"
         rules = f"[Archive]({project['archive_url']})" if project["archive_url"] else f"[Source]({project['source_url']})"
         date = project["updated_at"].replace("T", " ").removesuffix("Z")

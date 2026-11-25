@@ -11,4 +11,4 @@
 Memory safety invariants in C, zero memory leak tolerance, strict Valgrind testing.
 
 ## 📁 Rule Files in This Directory
-- [](./CLAUDE.md)
+- [`CLAUDE.md`](./CLAUDE.md)

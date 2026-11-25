@@ -11,4 +11,4 @@
 Comprehensive 27k-character architectural guide for AI coding assistants: SAT/SMT verification invariants, GOTO program pipeline.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

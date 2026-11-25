@@ -11,4 +11,4 @@
 Converts web pages, PDFs, and rich media into clean markdown tailored for LLM reasoning.
 
 ## 📁 Skill Files in This Directory
-- [](./SKILL.md)
+- [`SKILL.md`](./SKILL.md)

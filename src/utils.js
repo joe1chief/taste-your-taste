@@ -47,8 +47,8 @@ const c = {
 
 function banner() {
   console.log(`
-${c.magenta(c.bold('  🍷 TASTE YOUR TASTE'))} ${c.dim('— Developer Taste & Vibe Stacking Engine')}
-${c.gray('  ──────────────────────────────────────────────────────────')}
+${c.magenta(c.bold('  🍷 TASTE YOUR TASTE v2.0'))} ${c.dim('— Developer Taste & Vibe Stacking Engine')}
+${c.gray('  ────────────────────────────────────────────────────────────────')}
 `);
 }
 
@@ -69,6 +69,20 @@ function box(title, content, borderColor = colors.magenta) {
   return `${top}\n${body}\n${bottom}`;
 }
 
+const TARGET_FORMATS = [
+  { key: 'claude', path: 'CLAUDE.md', label: 'CLAUDE.md (Claude Code root)' },
+  { key: 'dotclaude', path: '.claude/CLAUDE.md', label: '.claude/CLAUDE.md (Claude Code nested)' },
+  { key: 'agents', path: 'AGENTS.md', label: 'AGENTS.md (OpenAI Codex / Universal multi-agent)' },
+  { key: 'mdc', path: '.cursor/rules/taste.mdc', label: '.cursor/rules/taste.mdc (Modern Cursor MDC)' },
+  { key: 'cursor', path: '.cursorrules', label: '.cursorrules (Legacy Cursor)' },
+  { key: 'copilot', path: '.github/copilot-instructions.md', label: '.github/copilot-instructions.md (GitHub Copilot)' },
+  { key: 'windsurf', path: '.windsurfrules', label: '.windsurfrules (Windsurf IDE)' },
+  { key: 'windsurf-rules', path: '.windsurf/rules/taste.md', label: '.windsurf/rules/taste.md (Modern Windsurf rules)' },
+  { key: 'cline', path: '.clinerules', label: '.clinerules (Cline / Roo Code)' },
+  { key: 'agent', path: '.agent/rules.md', label: '.agent/rules.md (Google Antigravity)' },
+  { key: 'gemini', path: 'GEMINI.md', label: 'GEMINI.md (Gemini CLI)' },
+];
+
 /**
  * Determine the destination file path based on user target option or auto-detection.
  */
@@ -81,19 +95,31 @@ function resolveTargetFile(targetOption, cwd = process.cwd(), defaultMdcName = '
     if (t === 'mdc' || t === 'cursor-mdc' || t === '.cursor/rules' || t === 'cursor/rules') {
       return path.join(cwd, '.cursor', 'rules', `${defaultMdcName}.mdc`);
     }
-    if (t === 'agent' || t === '.agent') return path.join(cwd, '.agent', 'rules.md');
-    if (t === 'agents' || t === 'agentsmd' || t === 'agents.md') return path.join(cwd, 'AGENTS.md');
+    if (t === 'copilot' || t === 'github' || t === 'copilot-instructions') {
+      return path.join(cwd, '.github', 'copilot-instructions.md');
+    }
+    if (t === 'windsurf' || t === 'windsurfrules' || t === '.windsurfrules') {
+      return path.join(cwd, '.windsurfrules');
+    }
+    if (t === 'windsurf-rules' || t === '.windsurf/rules') {
+      return path.join(cwd, '.windsurf', 'rules', `${defaultMdcName}.md`);
+    }
+    if (t === 'cline' || t === 'clinerules' || t === '.clinerules') {
+      return path.join(cwd, '.clinerules');
+    }
+    if (t === 'gemini' || t === 'geminimd' || t === 'gemini.md') {
+      return path.join(cwd, 'GEMINI.md');
+    }
+    if (t === 'agent' || t === '.agent' || t === 'antigravity') {
+      return path.join(cwd, '.agent', 'rules.md');
+    }
+    if (t === 'agents' || t === 'agentsmd' || t === 'agents.md' || t === 'codex') {
+      return path.join(cwd, 'AGENTS.md');
+    }
     return path.isAbsolute(targetOption) ? targetOption : path.join(cwd, targetOption);
   }
 
   // Auto-detect priority in cwd:
-  // 1. CLAUDE.md
-  // 2. .claude/CLAUDE.md
-  // 3. .cursor/rules/*.mdc (Modern Cursor)
-  // 4. .cursorrules (Legacy Cursor)
-  // 5. AGENTS.md
-  // 6. .agent/rules.md
-  // 7. Default to CLAUDE.md
   if (fs.existsSync(path.join(cwd, 'CLAUDE.md'))) return path.join(cwd, 'CLAUDE.md');
   if (fs.existsSync(path.join(cwd, '.claude', 'CLAUDE.md'))) return path.join(cwd, '.claude', 'CLAUDE.md');
 
@@ -108,6 +134,12 @@ function resolveTargetFile(targetOption, cwd = process.cwd(), defaultMdcName = '
 
   if (fs.existsSync(path.join(cwd, '.cursorrules'))) return path.join(cwd, '.cursorrules');
   if (fs.existsSync(path.join(cwd, 'AGENTS.md'))) return path.join(cwd, 'AGENTS.md');
+  if (fs.existsSync(path.join(cwd, '.github', 'copilot-instructions.md'))) {
+    return path.join(cwd, '.github', 'copilot-instructions.md');
+  }
+  if (fs.existsSync(path.join(cwd, '.windsurfrules'))) return path.join(cwd, '.windsurfrules');
+  if (fs.existsSync(path.join(cwd, '.clinerules'))) return path.join(cwd, '.clinerules');
+  if (fs.existsSync(path.join(cwd, 'GEMINI.md'))) return path.join(cwd, 'GEMINI.md');
   if (fs.existsSync(path.join(cwd, '.agent', 'rules.md'))) return path.join(cwd, '.agent', 'rules.md');
 
   return path.join(cwd, 'CLAUDE.md');
@@ -117,5 +149,6 @@ module.exports = {
   c,
   banner,
   box,
+  TARGET_FORMATS,
   resolveTargetFile,
 };

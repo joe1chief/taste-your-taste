@@ -11,4 +11,4 @@
 Lazy senior dev mode: the best code is the code you never wrote. Small surface area, no redundant abstractions.
 
 ## 📁 Rule Files in This Directory
-- [](./AGENTS.md)
+- [`AGENTS.md`](./AGENTS.md)

@@ -132,6 +132,18 @@ class CatalogTests(unittest.TestCase):
         self.assertIsNone(catalog["latest_update"])
         self.assertIn("No discoveries", (self.root / "README.md").read_text())
 
+    def test_raw_files_and_skills_catalog_metadata(self):
+        skill_dir = self.root / "skills/sample-skill"
+        skill_dir.mkdir(parents=True)
+        (skill_dir / "SKILL.md").write_text("---\nname: sample-skill\ndescription: Surgical test skill\n---\n# Body\n")
+        catalog = generate(self.root)
+        by_repo = {p["repo"]: p for p in catalog["projects"]}
+        self.assertEqual(by_repo["alice/new"]["raw_files"][0]["name"], ".agents/AGENTS.md")
+        self.assertTrue(by_repo["alice/new"]["raw_files"][0]["raw_url"].endswith("/discovered/alice/new/.agents/AGENTS.md"))
+        self.assertEqual(len(catalog["skills"]), 1)
+        self.assertEqual(catalog["skills"][0]["id"], "sample-skill")
+        self.assertEqual(catalog["skills"][0]["description"], "Surgical test skill")
+
 
 if __name__ == "__main__":
     unittest.main()

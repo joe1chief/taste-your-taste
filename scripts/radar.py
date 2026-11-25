@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Taste Radar - Autonomous LLM-powered discovery & curation of developer taste files
-(CLAUDE.md, .agent, .cursorrules, AGENTS.md) across GitHub Trending and high-star repos.
+(CLAUDE.md, .agent, .cursorrules, AGENTS.md, copilot-instructions.md, SKILL.md)
+across GitHub Trending and high-star repos.
 
 Part of: taste-your-taste (https://github.com/joe1chief/taste-your-taste)
 """
@@ -18,7 +19,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set
 
 # Try importing LLMTasteClient from local directory
 try:
@@ -32,6 +33,8 @@ INTERESTING_ROOT_FILES = {
     ".cursorrules",
     "agents.md",
     ".windsurfrules",
+    ".clinerules",
+    "gemini.md",
     "skill.md",
 }
 
@@ -40,6 +43,9 @@ INTERESTING_DIRS = {
     ".agent",
     ".agents",
     ".cursor",
+    ".windsurf",
+    ".cline",
+    ".github",
     ".skills",
     "skills",
 }
@@ -50,9 +56,18 @@ SEARCH_QUERIES = [
     "filename:AGENTS.md",
     "filename:SKILL.md",
     "path:.claude/ filename:CLAUDE.md",
+    "path:.github/ filename:copilot-instructions.md",
     "path:.agent/ rules",
     "filename:.cursorrules",
 ]
+
+
+def extract_issue_number(issue_url: Optional[str]) -> Optional[int]:
+    """Extract numeric GitHub issue number from a canonical issue URL."""
+    if not issue_url:
+        return None
+    match = re.search(r"/issues/(\d+)(?:$|[/?#])", str(issue_url))
+    return int(match.group(1)) if match else None
 
 
 class GitHubAPI:
@@ -62,7 +77,7 @@ class GitHubAPI:
         self.token = token or self._detect_token()
         self.headers = {
             "Accept": "application/vnd.github+json",
-            "User-Agent": "Taste-Your-Taste-Radar/1.0",
+            "User-Agent": "Taste-Your-Taste-Radar/2.0",
         }
         if self.token:
             self.headers["Authorization"] = f"Bearer {self.token}"
@@ -172,6 +187,15 @@ class GitHubAPI:
             print(f"[Issue Error] Failed to create issue in {repo}: {e}", file=sys.stderr)
             return None
 
+    def create_issue_comment(self, repo: str, issue_number: int, body: str) -> Optional[str]:
+        """Append an evolution comment onto an existing tracking issue instead of opening duplicates."""
+        try:
+            res = self.request(f"/repos/{repo}/issues/{issue_number}/comments", data={"body": body})
+            return res.get("html_url")
+        except Exception as e:
+            print(f"[Issue Comment Error] Failed commenting on #{issue_number} in {repo}: {e}", file=sys.stderr)
+            return None
+
 
 def fetch_trending_repos(since: str = "daily") -> List[str]:
     """Scrape GitHub trending page for trending repositories."""
@@ -276,6 +300,7 @@ class TasteRadar:
         dry_run: bool = False,
         save_tastes: bool = True,
         create_pr: bool = False,
+        evolution_issues_for_curated: bool = False,
     ):
         self.api = api
         self.target_repo = target_repo
@@ -284,6 +309,7 @@ class TasteRadar:
         self.dry_run = dry_run
         self.save_tastes = save_tastes
         self.create_pr = create_pr
+        self.evolution_issues_for_curated = evolution_issues_for_curated
         self.db: Dict[str, Any] = self._load_db()
         self.llm = LLMTasteClient()
 
@@ -328,23 +354,28 @@ class TasteRadar:
         # Inspect subdirectories only if found
         for d in dirs_to_check:
             sub_items = self.api.get_contents(full_name, d)
-            if sub_items:
-                for sub in sub_items:
-                    if sub.get("type") == "file":
-                        sub_name = sub.get("name", "")
-                        sub_path = f"{d}/{sub_name}"
-                        sub_sha = sub.get("sha", "")
-                        sub_lower = sub_name.lower()
-                        # Strictly match actual Agent instruction and Skill files
-                        if (
-                            sub_lower in {"claude.md", "agents.md", "rules.md", "skill.md"}
-                            or "cursor" in sub_lower
-                            or sub_lower.endswith(".mdc")
-                            or sub_name.startswith("CLAUDE")
-                            or sub_name.startswith("AGENTS")
-                            or sub_name.startswith("SKILL")
-                        ):
-                            found_files[sub_path] = sub_sha
+            if not sub_items:
+                continue
+            for sub in sub_items:
+                if sub.get("type") != "file":
+                    continue
+                sub_name = sub.get("name", "")
+                sub_path = f"{d}/{sub_name}"
+                sub_sha = sub.get("sha", "")
+                sub_lower = sub_name.lower()
+
+                if d == ".github":
+                    if sub_lower == "copilot-instructions.md":
+                        found_files[sub_path] = sub_sha
+                    continue
+
+                if (
+                    sub_lower in {"claude.md", "agents.md", "rules.md", "skill.md", "gemini.md"}
+                    or "cursor" in sub_lower
+                    or sub_lower.endswith(".mdc")
+                    or sub_name.startswith(("CLAUDE", "AGENTS", "SKILL"))
+                ):
+                    found_files[sub_path] = sub_sha
 
         return found_files
 
@@ -356,7 +387,6 @@ class TasteRadar:
 
         old_shas = existing.get("file_shas", {})
         if not old_shas:
-            # If repo was tracked before SHA tracking was introduced, populate current shas
             existing["file_shas"] = current_files
             self._save_db()
             return False
@@ -372,11 +402,10 @@ class TasteRadar:
 
         print(f"[Radar] ⚡ Taste Evolution detected in {full_name}! Changed: {[f[0] for f in changed_files]}")
 
-        # Process primary changed file
         fpath, old_sha, new_sha = changed_files[0]
         archive_dir = resolve_archive_dir(full_name)
         old_file = archive_file(archive_dir, fpath)
-        archive_meta = {}
+        archive_meta: Dict[str, Any] = {}
         if (archive_dir / "META.json").exists():
             archive_meta = read_archive_metadata(archive_dir, full_name)
         elif not archive_dir.exists():
@@ -388,31 +417,47 @@ class TasteRadar:
                     old_file = archive_file(legacy_dir, os.path.basename(fpath))
                 except ValueError:
                     pass
+            elif existing.get("dir"):
+                curated_dir = Path(str(existing["dir"]))
+                candidate = curated_dir / os.path.basename(fpath)
+                if curated_dir.is_dir() and not curated_dir.is_symlink() and candidate.is_file():
+                    old_file = candidate
+
         old_content = old_file.read_text(encoding="utf-8") if old_file.exists() else ""
         new_content = self.api.get_file_content(full_name, fpath) or ""
 
         if not new_content:
             return False
 
-        # Run LLM evolution analysis
         print(f"[Radar] 🧠 Analyzing prompt evolution for {full_name} ({fpath})...")
         evo_analysis = self.llm.analyze_evolution(full_name, fpath, old_content, new_content)
-        summary = evo_analysis.get("evolution_summary", "Updated instructions.")
-        vibe_shift = evo_analysis.get("vibe_shift", "Iterative prompt evolution.")
-        key_changes = evo_analysis.get("key_changes", [])
-        changes_md = "\n".join(f"- {c}" for c in key_changes) if key_changes else "- Rules modified."
 
-        # Save new content locally
+        # Save new content locally regardless so archive stays fresh
         if self.save_tastes and not self.dry_run:
             archive_meta["file_shas"] = current_files
             write_archive(full_name, {fpath: new_content}, archive_meta)
 
-        # Open GitHub Issue
-        if self.target_repo and not self.dry_run:
-            issue_title = f"[Taste Evolution] ⚡ {full_name} updated `{fpath}`"
-            issue_body = f"""### ⚡ Developer Taste Evolution Detected!
+        if evo_analysis.get("trivial"):
+            print(f"[Radar] ⏩ Skipping notification for {full_name}: whitespace/formatting-only change.")
+            if not self.dry_run:
+                existing["file_shas"] = current_files
+                self._save_db()
+            return True
 
-[{full_name}](https://github.com/{full_name}) has updated their agent instructions (`{fpath}`).
+        summary = evo_analysis.get("evolution_summary", "Updated instructions.")
+        vibe_shift = evo_analysis.get("vibe_shift", "Surgical rule refinement.")
+        key_changes = evo_analysis.get("key_changes", [])
+        changes_md = "\n".join(f"- {c}" for c in key_changes) if key_changes else "- Rules modified."
+
+        is_curated = existing.get("status") == "curated"
+        existing_issue_no = extract_issue_number(existing.get("issue_url"))
+
+        # Notify on GitHub without issue spam:
+        # - Curated repos record evolution in catalog/README without opening new issues by default.
+        # - Pending repos with an existing tracking issue receive a timeline comment on that issue.
+        # - Only repos with no tracking issue fall back to creating one issue (and storing its URL).
+        if self.target_repo and not self.dry_run and (not is_curated or self.evolution_issues_for_curated):
+            evolution_report = f"""### ⚡ Taste Evolution Update (`{fpath}`)
 
 | Attribute | Details |
 | :--- | :--- |
@@ -422,41 +467,47 @@ class TasteRadar:
 | **New Blob SHA** | `{new_sha[:10] if new_sha else 'unknown'}` |
 | **Vibe Shift** | **{vibe_shift}** |
 
----
-
-### 🧠 LLM Evolution Analysis
+#### 🧠 Evolution Analysis
 {summary}
 
-### 🔄 Key Directives Changed / Added
+#### 🔄 Key Directives Changed
 {changes_md}
 
----
-
-### 📋 Maintainer Action
-- Review updated prompt in `{archive_dir.as_posix()}/{fpath}`.
-- Sync latest insights into modular Lego bricks.
+> Archived snapshot updated in `{archive_dir.as_posix()}/{fpath}`.
 """
-            issue_url = self.api.create_issue(
-                self.target_repo,
-                issue_title,
-                issue_body,
-                labels=["taste-evolution", "prompt-iteration"],
-            )
-            print(f"[Radar] ✅ Created Evolution Issue: {issue_url}")
+            if existing_issue_no:
+                comment_url = self.api.create_issue_comment(
+                    self.target_repo,
+                    existing_issue_no,
+                    evolution_report,
+                )
+                if comment_url:
+                    print(f"[Radar] 💬 Appended Evolution Comment on #{existing_issue_no}: {comment_url}")
+            else:
+                issue_title = f"[Taste Evolution] ⚡ {full_name} updated `{fpath}`"
+                issue_url = self.api.create_issue(
+                    self.target_repo,
+                    issue_title,
+                    evolution_report,
+                    labels=["taste-evolution", "prompt-iteration"],
+                )
+                if issue_url:
+                    existing["issue_url"] = issue_url
+                print(f"[Radar] ✅ Created Evolution Issue: {issue_url}")
 
-        # Update DB
-        existing["file_shas"] = current_files
-        if "evolution_history" not in existing:
-            existing["evolution_history"] = []
-        existing["evolution_history"].append({
-            "file": fpath,
-            "old_sha": old_sha,
-            "new_sha": new_sha,
-            "vibe_shift": vibe_shift,
-            "summary": summary,
-            "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        })
-        self._save_db()
+        if not self.dry_run:
+            existing["file_shas"] = current_files
+            if "evolution_history" not in existing:
+                existing["evolution_history"] = []
+            existing["evolution_history"].append({
+                "file": fpath,
+                "old_sha": old_sha,
+                "new_sha": new_sha,
+                "vibe_shift": vibe_shift,
+                "summary": summary,
+                "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            })
+            self._save_db()
         return True
 
     def scan_trending(self) -> List[Dict[str, Any]]:
@@ -488,7 +539,6 @@ class TasteRadar:
         print(f"[Radar] ⭐ Scanning recently active high-star repositories (stars >= {self.min_stars})...")
         candidates: List[Dict[str, Any]] = []
 
-        # Find recently pushed repos with high stars
         pushed_since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=14)).strftime("%Y-%m-%d")
         query = f"stars:>={self.min_stars} pushed:>={pushed_since}"
 
@@ -535,7 +585,6 @@ class TasteRadar:
                 if not full_name or full_name in self.db or full_name in candidates:
                     continue
 
-                # Query repo metadata to verify star threshold before admitting
                 repo_meta = self.api.get_repo(full_name)
                 if not repo_meta:
                     continue
@@ -651,7 +700,6 @@ All raw rule files and metadata have been staged under `{target_dir.as_posix()}/
             print(f"[Radar] ⏩ Skipping {full_name}: {stars} stars < minimum {self.min_stars} (only trending or stars >= {self.min_stars} allowed)")
             return False
 
-        # Fetch contents of the taste files (strictly requiring non-empty Agent rules)
         file_contents: Dict[str, str] = {}
         for fpath in files:
             content = self.api.get_file_content(full_name, fpath)
@@ -662,11 +710,11 @@ All raw rule files and metadata have been staged under `{target_dir.as_posix()}/
             print(f"[Radar] ⚠️ No valid Agent rule file contents (>= 50 chars) found for {full_name}, strictly skipping.")
             return False
 
-        primary_file = files[0]
+        valid_files = list(file_contents.keys())
+        primary_file = valid_files[0]
         primary_content = file_contents[primary_file]
         snippet = extract_highlights(primary_content)
 
-        # Run LLM-driven taste analysis (no hardcoded heuristics!)
         print(f"[Radar] 🧠 Running LLM analysis on {full_name}...")
         analysis = self.llm.analyze_taste(
             repo=full_name,
@@ -692,7 +740,7 @@ All raw rule files and metadata have been staged under `{target_dir.as_posix()}/
                 "vibe": vibe,
                 "highlights": highlights,
                 "assessment": assessment,
-                "files": files,
+                "files": valid_files,
                 "file_shas": file_shas,
                 "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             })
@@ -717,14 +765,14 @@ A high-profile repository configuration has been captured and evaluated by **Tas
 | **Stars** | ⭐️ **{stars:,}** |
 | **Language** | `{lang}` |
 | **Discovery Source** | `{source.upper()}` |
-| **Detected Files** | {', '.join(f'`{f}`' for f in files)} |
+| **Detected Files** | {', '.join(f'`{f}`' for f in valid_files)} |
 | **Taste Archetype** | **{archetype}** |
 
 > **Vibe:** *{vibe}*
 
 ---
 
-### 🧠 LLM Architectural Assessment
+### 🧠 Architectural Assessment
 {assessment}
 
 ### ⚡ Taste Highlights
@@ -742,7 +790,7 @@ A high-profile repository configuration has been captured and evaluated by **Tas
 
 ### 📋 Maintainer Review Checklist
 - [ ] Verify rule files in `{archive_dir.as_posix()}/`.
-- [ ] Add an entry into the main `README.md` Hall of Fame!
+- [ ] Promote standout projects into a curated top-level directory and `README.md` Hall of Fame!
 """
             issue_url = self.api.create_issue(
                 self.target_repo,
@@ -757,27 +805,27 @@ A high-profile repository configuration has been captured and evaluated by **Tas
             print(f"      Vibe: {vibe}")
             print(f"      Preview:\n{snippet[:200]}...\n")
 
-        # Record in DB
-        self.db[full_name] = {
-            "stars": stars,
-            "language": lang,
-            "description": desc,
-            "files": files,
-            "file_shas": file_shas,
-            "source": source,
-            "archetype": archetype,
-            "vibe": vibe,
-            "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-            "issue_url": issue_url,
-            "pr_url": pr_url,
-            "status": "pending_review",
-        }
-        self._save_db()
+        if not self.dry_run:
+            self.db[full_name] = {
+                "stars": stars,
+                "language": lang,
+                "description": desc,
+                "files": valid_files,
+                "file_shas": file_shas,
+                "source": source,
+                "archetype": archetype,
+                "vibe": vibe,
+                "discovered_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "issue_url": issue_url,
+                "pr_url": pr_url,
+                "status": "pending_review",
+            }
+            self._save_db()
         return True
 
     def run(self, max_new: int = 5) -> None:
         print("=" * 60)
-        print(" Taste Your Taste - LLM Radar Engine Launching ")
+        print(" Taste Your Taste - LLM Radar Engine v2.0 Launching ")
         print(f" Time: {datetime.datetime.now(datetime.timezone.utc).isoformat()}")
         print(f" Target Repo: {self.target_repo or '(None / Dry Run)'}")
         print(f" Min Stars: {self.min_stars} | Dry Run: {self.dry_run}")
@@ -820,6 +868,11 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Print candidates without modifying state or creating issues")
     parser.add_argument("--no-save", action="store_true", help="Do not save raw files into discovered/")
     parser.add_argument("--create-pr", action="store_true", help="Automatically create git branch and PR for discovered tastes")
+    parser.add_argument(
+        "--evolution-issues-for-curated",
+        action="store_true",
+        help="Also post GitHub evolution notifications for already curated repositories",
+    )
 
     args = parser.parse_args()
 
@@ -832,6 +885,7 @@ def main():
         dry_run=args.dry_run,
         save_tastes=not args.no_save,
         create_pr=args.create_pr,
+        evolution_issues_for_curated=args.evolution_issues_for_curated,
     )
     radar.run(max_new=args.limit)
 
