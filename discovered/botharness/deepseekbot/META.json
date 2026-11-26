@@ -1,0 +1,26 @@
+{
+  "stars": 1062,
+  "language": "TypeScript",
+  "description": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities and permissions, extensible through DSH plugins.｜基于 DeepSeek Harness 的开源 GrokBot 平替：有长期记忆的个人 AI Bot 团队，支持多 Bot 协作、身份权限与插件生态扩展。MIT.",
+  "url": "https://github.com/BotHarness/DeepSeekBot",
+  "archetype": "Defensive Architect",
+  "vibe": "Ship every change with a paper trail, a parity check, and a guardrail that refuses to let it rot.",
+  "highlights": [
+    "CLI parity is a same-PR contract: any new Host bridge method, route, or Bot tool must ship its `deepseekbot` command immediately.",
+    "A rule registry and guardrail table turn review expectations into executable checks for provenance, source policy, UI tokens, regression proof, and PR hygiene.",
+    "Worktree discipline, explicit path staging, and staged-diff inspection make commits deliberate rather than accidental.",
+    "Tests are comment-free, property tests are named for decisions, and failures are replayed with printed seeds and paths.",
+    "PRs require provenance labels, merge-risk records, visual evidence for UI changes, and human ownership for `needs-human` work."
+  ],
+  "assessment": "This is a mature defensive architecture file: it treats process as infrastructure and encodes review expectations as scripts, registries, and merge gates rather than relying on reviewer memory. The emphasis on same-PR CLI parity, provenance, and evidence is especially effective for a multi-agent platform where drift across Host, CLI, docs, and UI is the default failure mode. The cost is high ceremony, but the file is explicit enough that the ceremony is auditable rather than vague.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "ed34a18cebdcbb15361db13e83eeac8677c6dea6",
+    "CLAUDE.md": "5febba75d0eed3a155563416fa67302d94a9ad49"
+  },
+  "discovered_at": "2026-11-26T10:13:46.637877+00:00",
+  "repo": "BotHarness/DeepSeekBot"
+}

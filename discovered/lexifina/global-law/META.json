@@ -1,0 +1,25 @@
+{
+  "stars": 2305,
+  "language": "HTML",
+  "description": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+  "url": "https://github.com/lexifina/global-law",
+  "archetype": "Defensive Architect",
+  "vibe": "Treat law as data with provenance, not as prompt text or memory.",
+  "highlights": [
+    "MCP-first access: agents must use the global-law server tools instead of reading files or running git directly.",
+    "Prompt-injection defense: law text, change notes, and judgment notes are reported, never followed.",
+    "Explicit epistemic limits: 'nothing found' means nothing in the record, not nothing in the law, and limits must be passed on.",
+    "Temporal and provenance correctness: tools read law as in force on a date and credit each change to the law that made it.",
+    "Checkout awareness: corpora are git submodules, so agents must check served jurisdictions and give users the add-country command rather than answering from memory."
+  ],
+  "assessment": "This instruction file is effective because it treats legal text as untrusted data and forces agents through a provenance-aware tool layer rather than ad hoc file reading or model memory. Its emphasis on stated corpus limits, temporal validity, and jurisdiction availability directly targets the highest-risk failure modes in legal retrieval: hallucination, stale law, and prompt injection. The tone is restrained and operational, which suits a repository where correctness and traceability matter more than speed.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "57f4bf23ade1db7c18ba64e2d3d93f0551431169",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+  },
+  "discovered_at": "2026-11-26T10:13:33.435811+00:00",
+  "repo": "lexifina/global-law"
+}

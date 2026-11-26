@@ -1,0 +1,26 @@
+{
+  "stars": 5719,
+  "language": "TypeScript",
+  "description": "Snyk CLI scans and monitors your projects for security vulnerabilities.",
+  "url": "https://github.com/snyk/cli",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Map the binary first, then chase the bug to the repo that actually owns it.",
+  "highlights": [
+    "Treats the CLI as a binary container composed from external extension repos, making ownership boundaries explicit before any debugging or coding begins.",
+    "Documents command routing and the legacy TypeScript fallback so agents understand why some commands work without a Go workflow.",
+    "Defines a strict environment-variable allowlist and prefix contract, preventing invisible config reads and accidental public API changes.",
+    "Requires local multi-repo development through go mod replace and restricts builds to make build to avoid error-prone build paths.",
+    "Layers testing by unit, integration, and acceptance scope, with a pre-commit format/lint/no-drift gate that mirrors CI."
+  ],
+  "assessment": "This is effective because it attacks the highest-risk failure mode in a multi-repo CLI: agents editing the wrong repository or misdiagnosing product behavior as host plumbing. The env-var allowlist and prefix table turn configuration into an explicit contract rather than a pile of ambient process state. The build and pre-commit rules are pragmatic guardrails that keep local work aligned with CI without overprescribing implementation details.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "e99b3840db837dc940b86322192867ca8b0cc19d",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-26T10:13:41.108291+00:00",
+  "repo": "snyk/cli"
+}

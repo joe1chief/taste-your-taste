@@ -297,7 +297,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "ab74f3973a99a06e845e81db89c67a7d131a5d99"
+      "AGENTS.md": "fc573037b020b05ae1ea5fc97755a0067cf52f86"
     },
     "evolution_history": [
       {
@@ -355,6 +355,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-22T09:01:42.376396+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ab74f3973a99a06e845e81db89c67a7d131a5d99",
+        "new_sha": "fc573037b020b05ae1ea5fc97755a0067cf52f86",
+        "vibe_shift": "Shifted toward clearer ownership of instruction-writing guidance through documentation reference relocation, without changing the prompt's operational strictness.",
+        "summary": "The rule file remains substantively unchanged in its constraints and working agreements. The only visible evolution is that the pointer for instruction rules now targets the openclaw-writing reference instead of the technical-documentation skill. This suggests a documentation-ownership cleanup rather than a behavioral policy shift.",
+        "timestamp": "2026-11-26T10:12:33.314333+00:00"
       }
     ]
   },
@@ -1356,7 +1364,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "8119f534a75c01af1ee0238f4f2a656b48b2466a"
+      "AGENTS.md": "2dd0369df69b5e0e160212512a86b1b588b80857"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -1453,6 +1461,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-21T08:57:58.391950+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8119f534a75c01af1ee0238f4f2a656b48b2466a",
+        "new_sha": "2dd0369df69b5e0e160212512a86b1b588b80857",
+        "vibe_shift": "Strengthened negative guardrails and architectural invariants.",
+        "summary": "Updated `AGENTS.md` with 20 added and 76 removed non-empty lines (net -61 lines, -199 est. tokens).",
+        "timestamp": "2026-11-26T10:12:59.342803+00:00"
       }
     ]
   },
@@ -5936,8 +5952,8 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "99d83824f6e46eaaaf1edbf214be80ef206764a0",
-      "CLAUDE.md": "307d6431516f038eb97636041768f42d6fa61ab4"
+      "AGENTS.md": "9fbffd30bc7ebd5892dc4a6202f7bbc43bf3ee7c",
+      "CLAUDE.md": "381de074d63a982d936e3cdcb3f03634acf94ef5"
     },
     "source": "popular_stars",
     "archetype": "Defensive Architect",
@@ -5978,6 +5994,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-23T09:58:34.912585+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "99d83824f6e46eaaaf1edbf214be80ef206764a0",
+        "new_sha": "9fbffd30bc7ebd5892dc4a6202f7bbc43bf3ee7c",
+        "vibe_shift": "Shifted from generic npm-repo hygiene toward architecture-aware, contract-bound editing discipline with explicit data-integrity verification",
+        "summary": "The author replaced the vague 'standalone npm application' framing with a precise container-first architecture map naming the API entrypoint, workload-split services, and backing stores. A new 'Project editing' section was inserted to bind agents to the edit-core contract and the ordered project queue, extending the file's scope from build/PR hygiene into product-level data-integrity rules. The rest of the document (validation, collaboration, PR follow-up, waiting) is carried over unchanged, so the shift is additive rather than a rewrite.",
+        "timestamp": "2026-11-26T10:11:31.750211+00:00"
       }
     ]
   },
@@ -6964,6 +6988,101 @@
     "vibe": "Clean and practical instructions tailored for real-world development.",
     "discovered_at": "2026-11-25T10:42:12.257771+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/430",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "openvinotoolkit/openvino": {
+    "stars": 12725,
+    "language": "C++",
+    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "files": [
+      ".github/copilot-instructions.md"
+    ],
+    "file_shas": {
+      ".github/copilot-instructions.md": "46895e80901cbc473e72ed069c23d70644d7b20c"
+    },
+    "source": "trending",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-26T10:13:24.868229+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/432",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "lexifina/global-law": {
+    "stars": 2305,
+    "language": "HTML",
+    "description": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "57f4bf23ade1db7c18ba64e2d3d93f0551431169",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Treat law as data with provenance, not as prompt text or memory.",
+    "discovered_at": "2026-11-26T10:13:34.147960+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/433",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "snyk/cli": {
+    "stars": 5719,
+    "language": "TypeScript",
+    "description": "Snyk CLI scans and monitors your projects for security vulnerabilities.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "e99b3840db837dc940b86322192867ca8b0cc19d",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Map the binary first, then chase the bug to the repo that actually owns it.",
+    "discovered_at": "2026-11-26T10:13:41.912893+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/434",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "BotHarness/DeepSeekBot": {
+    "stars": 1062,
+    "language": "TypeScript",
+    "description": "Open-source GrokBot alternative built on DeepSeek Harness. Build your personal bot team: multiple personal agents with persistent memory, identities and permissions, extensible through DSH plugins.｜基于 DeepSeek Harness 的开源 GrokBot 平替：有长期记忆的个人 AI Bot 团队，支持多 Bot 协作、身份权限与插件生态扩展。MIT.",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "ed34a18cebdcbb15361db13e83eeac8677c6dea6",
+      "CLAUDE.md": "5febba75d0eed3a155563416fa67302d94a9ad49"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Ship every change with a paper trail, a parity check, and a guardrail that refuses to let it rot.",
+    "discovered_at": "2026-11-26T10:13:47.370327+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/435",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "ytsaurus/ytsaurus": {
+    "stars": 2327,
+    "language": "C++",
+    "description": "YTsaurus is a scalable and fault-tolerant open-source big data platform.",
+    "files": [
+      ".github/copilot-instructions.md"
+    ],
+    "file_shas": {
+      ".github/copilot-instructions.md": "3e829238272ff45b2a88ed8b61bf7fa969c8b590"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Map the monorepo, enforce branch hygiene, and let the style guides do the talking.",
+    "discovered_at": "2026-11-26T10:13:53.630435+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/436",
     "pr_url": null,
     "status": "pending_review"
   }

@@ -1,0 +1,23 @@
+{
+  "stars": 12725,
+  "language": "C++",
+  "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+  "url": "https://github.com/openvinotoolkit/openvino",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "OpenVINO Copilot Instructions",
+    "These instructions apply to changes in this repository. Follow more specific",
+    "instructions and skills when they are available for the files being changed.",
+    "Skills are available through `.agents/skills/` (a symlink to `.claude/skills/`)"
+  ],
+  "assessment": "Structured `.github/copilot-instructions.md` specification (~946 est. tokens) codifying defensive architect guardrails and repository conventions.",
+  "files": [
+    ".github/copilot-instructions.md"
+  ],
+  "file_shas": {
+    ".github/copilot-instructions.md": "46895e80901cbc473e72ed069c23d70644d7b20c"
+  },
+  "discovered_at": "2026-11-26T10:13:24.072478+00:00",
+  "repo": "openvinotoolkit/openvino"
+}

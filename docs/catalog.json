@@ -1,17 +1,268 @@
 {
   "schema_version": 1,
-  "source_sha256": "8bf14454c3711952bc45d86cb7e0538c29e73d473d242feb519eb2fc27e5a589",
+  "source_sha256": "aee1d477e743375018883d2adb9d7b670afecdb1dfc56b6ae79f200b2f953412",
   "last_scan": {
-    "completed_at": "2026-11-25T10:42:12Z",
-    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/45597153979"
+    "completed_at": "2026-11-26T10:13:53Z",
+    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/45798917642"
   },
-  "latest_update": "2026-11-25T10:42:12Z",
+  "latest_update": "2026-11-26T10:13:53Z",
   "counts": {
-    "total": 306,
+    "total": 311,
     "curated": 26,
-    "pending_review": 280
+    "pending_review": 285
   },
   "projects": [
+    {
+      "repo": "ytsaurus/ytsaurus",
+      "status": "pending_review",
+      "stars": 2327,
+      "language": "C++",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Map the monorepo, enforce branch hygiene, and let the style guides do the talking.",
+      "file": ".github/copilot-instructions.md",
+      "highlight": "Branch naming is treated as a hard upstream contract enforced by branch protection.",
+      "highlights": [
+        "Branch naming is treated as a hard upstream contract enforced by branch protection.",
+        "The repository is mapped at a granular level, especially the many server components under `yt/yt/server/`.",
+        "Third-party code is explicitly separated into `contrib/` and `vendor/` to keep ownership boundaries clear."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": ".github/copilot-instructions.md",
+          "path": "discovered/ytsaurus/ytsaurus/.github/copilot-instructions.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/ytsaurus/ytsaurus/.github/copilot-instructions.md"
+        }
+      ],
+      "source_url": "https://github.com/ytsaurus/ytsaurus",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ytsaurus/ytsaurus",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/436",
+      "discovered_at": "2026-11-26T10:13:53Z",
+      "updated_at": "2026-11-26T10:13:53Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "BotHarness/DeepSeekBot",
+      "status": "pending_review",
+      "stars": 1062,
+      "language": "TypeScript",
+      "archetype": "Defensive Architect",
+      "vibe": "Ship every change with a paper trail, a parity check, and a guardrail that refuses to let it rot.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "CLI parity is a same-PR contract: any new Host bridge method, route, or Bot tool must ship its `deepseekbot` command immediately.",
+      "highlights": [
+        "CLI parity is a same-PR contract: any new Host bridge method, route, or Bot tool must ship its `deepseekbot` command immediately.",
+        "A rule registry and guardrail table turn review expectations into executable checks for provenance, source policy, UI tokens, regression proof, and PR hygiene.",
+        "Worktree discipline, explicit path staging, and staged-diff inspection make commits deliberate rather than accidental."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/botharness/deepseekbot/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/botharness/deepseekbot/AGENTS.md"
+        },
+        {
+          "name": "CLAUDE.md",
+          "path": "discovered/botharness/deepseekbot/CLAUDE.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/botharness/deepseekbot/CLAUDE.md"
+        }
+      ],
+      "source_url": "https://github.com/BotHarness/DeepSeekBot",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/botharness/deepseekbot",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/435",
+      "discovered_at": "2026-11-26T10:13:47Z",
+      "updated_at": "2026-11-26T10:13:47Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "snyk/cli",
+      "status": "pending_review",
+      "stars": 5719,
+      "language": "TypeScript",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Map the binary first, then chase the bug to the repo that actually owns it.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "Treats the CLI as a binary container composed from external extension repos, making ownership boundaries explicit before any debugging or coding begins.",
+      "highlights": [
+        "Treats the CLI as a binary container composed from external extension repos, making ownership boundaries explicit before any debugging or coding begins.",
+        "Documents command routing and the legacy TypeScript fallback so agents understand why some commands work without a Go workflow.",
+        "Defines a strict environment-variable allowlist and prefix contract, preventing invisible config reads and accidental public API changes."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/snyk/cli/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/snyk/cli/AGENTS.md"
+        },
+        {
+          "name": "CLAUDE.md",
+          "path": "discovered/snyk/cli/CLAUDE.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/snyk/cli/CLAUDE.md"
+        }
+      ],
+      "source_url": "https://github.com/snyk/cli",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/snyk/cli",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/434",
+      "discovered_at": "2026-11-26T10:13:41Z",
+      "updated_at": "2026-11-26T10:13:41Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "lexifina/global-law",
+      "status": "pending_review",
+      "stars": 2305,
+      "language": "HTML",
+      "archetype": "Defensive Architect",
+      "vibe": "Treat law as data with provenance, not as prompt text or memory.",
+      "file": "AGENTS.md",
+      "highlight": "MCP-first access: agents must use the global-law server tools instead of reading files or running git directly.",
+      "highlights": [
+        "MCP-first access: agents must use the global-law server tools instead of reading files or running git directly.",
+        "Prompt-injection defense: law text, change notes, and judgment notes are reported, never followed.",
+        "Explicit epistemic limits: 'nothing found' means nothing in the record, not nothing in the law, and limits must be passed on."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/lexifina/global-law/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/lexifina/global-law/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/lexifina/global-law",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lexifina/global-law",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/433",
+      "discovered_at": "2026-11-26T10:13:34Z",
+      "updated_at": "2026-11-26T10:13:34Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "openvinotoolkit/openvino",
+      "status": "pending_review",
+      "stars": 12725,
+      "language": "C++",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": ".github/copilot-instructions.md",
+      "highlight": "OpenVINO Copilot Instructions",
+      "highlights": [
+        "OpenVINO Copilot Instructions",
+        "These instructions apply to changes in this repository. Follow more specific",
+        "instructions and skills when they are available for the files being changed."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": ".github/copilot-instructions.md",
+          "path": "discovered/openvinotoolkit/openvino/.github/copilot-instructions.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/openvinotoolkit/openvino/.github/copilot-instructions.md"
+        }
+      ],
+      "source_url": "https://github.com/openvinotoolkit/openvino",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openvinotoolkit/openvino",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/432",
+      "discovered_at": "2026-11-26T10:13:24Z",
+      "updated_at": "2026-11-26T10:13:24Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "morluto/rea",
+      "status": "pending_review",
+      "stars": 10787,
+      "language": "TypeScript",
+      "archetype": "Defensive Architect",
+      "vibe": "Treat every boundary as a contract, every failure as a signal, and every guess as a bug.",
+      "file": "AGENTS.md",
+      "highlight": "Layered ESM TypeScript with strict inward-only dependency flow; provider protocols are forbidden in domain and application layers.",
+      "highlights": [
+        "Layered ESM TypeScript with strict inward-only dependency flow; provider protocols are forbidden in domain and application layers.",
+        "Boundary contracts must trace values through parsing, normalization, authorization, serialization, and CLI/MCP result, preserving meaningful failure reasons.",
+        "MCP tools start from the analyst question, not the provider API; prefer reusable inspect/search/trace/compare primitives over custom orchestration languages."
+      ],
+      "evolution_count": 12,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/morluto/rea/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/morluto/rea/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/morluto/rea",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/45",
+      "discovered_at": "2026-10-07T07:53:49Z",
+      "updated_at": "2026-11-26T10:12:59Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "status": "curated",
+      "stars": 390800,
+      "language": "Rust / C",
+      "archetype": "Defensive Architect",
+      "vibe": "Maintainer-curated agent instructions.",
+      "file": "AGENTS.md",
+      "highlight": "Explore the source instructions and their review status.",
+      "highlights": [],
+      "evolution_count": 8,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "openclaw/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/openclaw/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/openclaw/openclaw",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw",
+      "curated_url": "https://github.com/joe1chief/taste-your-taste/tree/main/openclaw",
+      "issue_url": null,
+      "discovered_at": null,
+      "updated_at": "2026-11-26T10:12:33Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "nexu-io/openmotion",
+      "status": "pending_review",
+      "stars": 9974,
+      "language": "TypeScript",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "OpenMotion repository guidelines",
+      "highlights": [
+        "OpenMotion repository guidelines",
+        "OpenMotion is a standalone npm application at the repository root. Run commands here with the Node version pinned in `.github/workflows/ci.yml`. Preserve `package-lock.json` and `scripts/runtime-lock.json`; do not introduce workspace-only dependencies. Follow the [migration guide](docs/repository-migration.md), keep user data and credentials outside the checkout, and preserve third-party licenses.",
+        "Local validation"
+      ],
+      "evolution_count": 5,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/nexu-io/openmotion/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nexu-io/openmotion/AGENTS.md"
+        },
+        {
+          "name": "CLAUDE.md",
+          "path": "discovered/nexu-io/openmotion/CLAUDE.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nexu-io/openmotion/CLAUDE.md"
+        }
+      ],
+      "source_url": "https://github.com/nexu-io/openmotion",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/334",
+      "discovered_at": "2026-11-15T08:37:22Z",
+      "updated_at": "2026-11-26T10:11:31Z",
+      "latest_change": "Rules updated"
+    },
     {
       "repo": "firebase/FirebaseUI-Android",
       "status": "pending_review",
@@ -756,41 +1007,6 @@
       "latest_change": "New discovery"
     },
     {
-      "repo": "nexu-io/openmotion",
-      "status": "pending_review",
-      "stars": 9974,
-      "language": "TypeScript",
-      "archetype": "Defensive Architect",
-      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
-      "file": "AGENTS.md, CLAUDE.md",
-      "highlight": "OpenMotion repository guidelines",
-      "highlights": [
-        "OpenMotion repository guidelines",
-        "OpenMotion is a standalone npm application at the repository root. Run commands here with the Node version pinned in `.github/workflows/ci.yml`. Preserve `package-lock.json` and `scripts/runtime-lock.json`; do not introduce workspace-only dependencies. Follow the [migration guide](docs/repository-migration.md), keep user data and credentials outside the checkout, and preserve third-party licenses.",
-        "Local validation"
-      ],
-      "evolution_count": 4,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/nexu-io/openmotion/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nexu-io/openmotion/AGENTS.md"
-        },
-        {
-          "name": "CLAUDE.md",
-          "path": "discovered/nexu-io/openmotion/CLAUDE.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nexu-io/openmotion/CLAUDE.md"
-        }
-      ],
-      "source_url": "https://github.com/nexu-io/openmotion",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nexu-io/openmotion",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/334",
-      "discovered_at": "2026-11-15T08:37:22Z",
-      "updated_at": "2026-11-23T09:58:34Z",
-      "latest_change": "Rules updated"
-    },
-    {
       "repo": "earendil-works/pi",
       "status": "pending_review",
       "stars": 111438,
@@ -1004,32 +1220,6 @@
       "discovered_at": "2026-11-22T09:02:16Z",
       "updated_at": "2026-11-22T09:02:16Z",
       "latest_change": "New discovery"
-    },
-    {
-      "repo": "openclaw/openclaw",
-      "status": "curated",
-      "stars": 390800,
-      "language": "Rust / C",
-      "archetype": "Defensive Architect",
-      "vibe": "Maintainer-curated agent instructions.",
-      "file": "AGENTS.md",
-      "highlight": "Explore the source instructions and their review status.",
-      "highlights": [],
-      "evolution_count": 7,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "openclaw/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/openclaw/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/openclaw/openclaw",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw",
-      "curated_url": "https://github.com/joe1chief/taste-your-taste/tree/main/openclaw",
-      "issue_url": null,
-      "discovered_at": null,
-      "updated_at": "2026-11-22T09:01:42Z",
-      "latest_change": "Rules updated"
     },
     {
       "repo": "meta/astryx",
@@ -1454,36 +1644,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/131",
       "discovered_at": "2026-10-20T06:50:32Z",
       "updated_at": "2026-11-21T08:58:30Z",
-      "latest_change": "Rules updated"
-    },
-    {
-      "repo": "morluto/rea",
-      "status": "pending_review",
-      "stars": 10787,
-      "language": "TypeScript",
-      "archetype": "Defensive Architect",
-      "vibe": "Treat every boundary as a contract, every failure as a signal, and every guess as a bug.",
-      "file": "AGENTS.md",
-      "highlight": "Layered ESM TypeScript with strict inward-only dependency flow; provider protocols are forbidden in domain and application layers.",
-      "highlights": [
-        "Layered ESM TypeScript with strict inward-only dependency flow; provider protocols are forbidden in domain and application layers.",
-        "Boundary contracts must trace values through parsing, normalization, authorization, serialization, and CLI/MCP result, preserving meaningful failure reasons.",
-        "MCP tools start from the analyst question, not the provider API; prefer reusable inspect/search/trace/compare primitives over custom orchestration languages."
-      ],
-      "evolution_count": 11,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/morluto/rea/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/morluto/rea/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/morluto/rea",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/morluto/rea",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/45",
-      "discovered_at": "2026-10-07T07:53:49Z",
-      "updated_at": "2026-11-21T08:57:58Z",
       "latest_change": "Rules updated"
     },
     {

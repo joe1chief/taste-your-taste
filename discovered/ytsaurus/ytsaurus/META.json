@@ -1,0 +1,24 @@
+{
+  "stars": 2327,
+  "language": "C++",
+  "description": "YTsaurus is a scalable and fault-tolerant open-source big data platform.",
+  "url": "https://github.com/ytsaurus/ytsaurus",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Map the monorepo, enforce branch hygiene, and let the style guides do the talking.",
+  "highlights": [
+    "Branch naming is treated as a hard upstream contract enforced by branch protection.",
+    "The repository is mapped at a granular level, especially the many server components under `yt/yt/server/`.",
+    "Third-party code is explicitly separated into `contrib/` and `vendor/` to keep ownership boundaries clear.",
+    "Language-specific style guides are delegated to `yt/styleguide/cpp.md` and `yt/styleguide/python.md` rather than duplicated.",
+    "The file prioritizes navigability and onboarding over prescribing implementation details."
+  ],
+  "assessment": "This is a pragmatic navigation and convention file for a very large monorepo. Its strength is reducing ambiguity around branch naming and repository layout, which matters when many contributors and Copilot suggestions touch different subsystems. It is less an engineering-taste manifesto and more a map plus hard branch-hygiene rule, so it avoids over-prescribing code patterns while still enforcing one critical workflow constraint.",
+  "files": [
+    ".github/copilot-instructions.md"
+  ],
+  "file_shas": {
+    ".github/copilot-instructions.md": "3e829238272ff45b2a88ed8b61bf7fa969c8b590"
+  },
+  "discovered_at": "2026-11-26T10:13:52.932328+00:00",
+  "repo": "ytsaurus/ytsaurus"
+}
