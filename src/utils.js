@@ -47,8 +47,8 @@ const c = {
 
 function banner() {
   console.log(`
-${c.magenta(c.bold('  🍷 TASTE YOUR TASTE v2.0'))} ${c.dim('— Developer Taste & Vibe Stacking Engine')}
-${c.gray('  ────────────────────────────────────────────────────────────────')}
+${c.magenta(c.bold('  🍷 TASTE YOUR TASTE v2.2'))} ${c.dim('— Code DNA, Slop Tax & Vibe Stacking Engine')}
+${c.gray('  ──────────────────────────────────────────────────────────────────────')}
 `);
 }
 

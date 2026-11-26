@@ -5,17 +5,19 @@ This specification defines constraints and behavioral expectations for autonomou
 ---
 
 ## 🏛️ Project Architecture
-- **Package**: `taste-code` v2.0.0 (CLI: `taste` / `taste-code`)
+- **Package**: `taste-code` v2.2.0 (CLI: `taste` / `taste-code`)
 - **Runtime**: Node.js >= 18 and Python >= 3.9 (Standard Library Only, Zero external runtime packages)
 - **Engines**:
+  - `src/dna.js` & `api/dna.js`: Offline Git history & codebase genome scanner, 100% Master Similarity Wrapped SVG generator, and personal `CLAUDE.md` synthesizer (`taste dna`)
+  - `src/tax.js` & `api/tax.js`: Itemized Annual AI Slop Tax calculator (USD/yr + Iced Americanos) and serrated Cyber/Paper Thermal Receipt SVG generator (`taste tax`)
   - `src/registry.js`: Modular flavor, style, tone, and preset brick loader
   - `src/stacker.js`: Non-destructive marker-based injector across 11 agent formats (`CLAUDE.md`, `AGENTS.md`, Cursor MDC, Copilot, Windsurf, Cline, Antigravity, Gemini)
   - `src/skills.js`: Modular `SKILL.md` playbook browser and cross-agent installer (`taste skill`)
   - `src/checker.js`: Deterministic CI prompt quality gate & secret-leak guard (`taste check`)
-  - `src/pruner.js`: Token compactor & de-slop optimizer (saves 30-70% tokens)
+  - `src/pruner.js`: Token compactor & Slop Tax eliminator (saves 30-70% tokens)
   - `src/differ.js`: Architectural philosophy and constraints comparator
   - `src/roaster.js`: Linus Torvalds-inspired technical audit & scoring engine
-  - `src/card.js` & `api/`: Dark-mode SVG profile card (495x195) and micro-badge generator
+  - `src/card.js`, `api/card.js` & `api/badge.js`: Geek Telemetry HUD profile card (540x220) and cyber micro-badge generator (28px)
 
 ---
 

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="514" viewBox="0 0 440 514" fill="none" role="img" aria-label="AI Slop Tax Receipt: $153.70 per year">
+  <defs>
+    <filter id="paperShadow" x="-10%" y="-5%" width="120%" height="112%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Backdrop -->
+  <rect width="440" height="514" rx="16" fill="#05070e"/>
+
+  <!-- Serrated Thermal Paper Body -->
+  <polygon points="22.0,18 38.5,25 55.0,18 71.5,25 88.0,18 104.5,25 121.0,18 137.5,25 154.0,18 170.5,25 187.0,18 203.5,25 220.0,18 236.5,25 253.0,18 269.5,25 286.0,18 302.5,25 319.0,18 335.5,25 352.0,18 368.5,25 385.0,18 401.5,25 418.0,18 418.0,496 401.5,489 385.0,496 368.5,489 352.0,496 335.5,489 319.0,496 302.5,489 286.0,496 269.5,489 253.0,496 236.5,489 220.0,496 203.5,489 187.0,496 170.5,489 154.0,496 137.5,489 121.0,496 104.5,489 88.0,496 71.5,489 55.0,496 38.5,489 22.0,496" fill="#0a0f1d" stroke="#f43f5e" stroke-opacity="0.45" stroke-width="1.2" filter="url(#paperShadow)"/>
+
+  <!-- Receipt Header -->
+  <g transform="translate(220, 52)">
+    <text x="0" y="0" text-anchor="middle" class="mono" font-size="13.5" font-weight="800" fill="#f8fafc" letter-spacing="1.2">AI SLOP TAX RECEIPT</text>
+    <text x="0" y="17" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#94a3b8">BUREAU OF CONTEXT WINDOW ECONOMICS</text>
+    <text x="0" y="33" text-anchor="middle" class="mono" font-size="9" fill="#22d3ee">FILE: CLAUDE.md  •  #TX-7FA7AA</text>
+    <text x="0" y="47" text-anchor="middle" class="mono" font-size="8.5" fill="#94a3b8">150 TURNS/DAY x 3 STEPS (OPUS)</text>
+  </g>
+
+  <line x1="42" y1="112" x2="398" y2="112" stroke="#334155" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="44" y="128" class="mono" font-size="9" font-weight="700" fill="#94a3b8">QTY  TAXABLE PROMPT OFFENSE</text>
+  <text x="396" y="128" text-anchor="end" class="mono" font-size="9" font-weight="700" fill="#94a3b8">USD / YR</text>
+  <line x1="42" y1="136" x2="398" y2="136" stroke="#334155" stroke-width="1" stroke-dasharray="2 3"/>
+
+  <!-- Line Items -->
+  <g transform="translate(44, 148)">
+      <text x="0" y="13" class="mono" font-size="11" font-weight="800" fill="#f43f5e">06x</text>
+      <text x="32" y="13" class="mono" font-size="11" font-weight="700" fill="#f8fafc">POLITENESS TAX</text>
+      <text x="352" y="13" text-anchor="end" class="mono" font-size="11.5" font-weight="800" fill="#f8fafc">$48.20</text>
+      <text x="32" y="27" class="mono" font-size="9" fill="#94a3b8">&quot;please / kindly&quot; x6 (~20 tok/turn)</text>
+    </g>
+  <g transform="translate(44, 186)">
+      <text x="0" y="13" class="mono" font-size="11" font-weight="800" fill="#f43f5e">03x</text>
+      <text x="32" y="13" class="mono" font-size="11" font-weight="700" fill="#f8fafc">PLATITUDE FLUFF</text>
+      <text x="352" y="13" text-anchor="end" class="mono" font-size="11.5" font-weight="800" fill="#f8fafc">$71.50</text>
+      <text x="32" y="27" class="mono" font-size="9" fill="#94a3b8">&quot;write clean code&quot; x3 (~29 tok/turn)</text>
+    </g>
+  <g transform="translate(44, 224)">
+      <text x="0" y="13" class="mono" font-size="11" font-weight="800" fill="#f43f5e">02x</text>
+      <text x="32" y="13" class="mono" font-size="11" font-weight="700" fill="#f8fafc">APOLOGY &amp; MANNERS TAX</text>
+      <text x="352" y="13" text-anchor="end" class="mono" font-size="11.5" font-weight="800" fill="#f8fafc">$34.00</text>
+      <text x="32" y="27" class="mono" font-size="9" fill="#94a3b8">&quot;apologize / friendly&quot; x2 (~13 tok/turn)</text>
+    </g>
+
+  <!-- Totals Section -->
+  <g transform="translate(42, 272)">
+    <line x1="0" y1="0" x2="356" y2="0" stroke="#334155" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+    <text x="2" y="19" class="mono" font-size="9.5" font-weight="600" fill="#94a3b8">PROMPT CONTEXT OVERHEAD</text>
+    <text x="354" y="19" text-anchor="end" class="mono" font-size="9.5" font-weight="700" fill="#f8fafc">62 / 168 TOK (36.9%)</text>
+
+    <text x="2" y="35" class="mono" font-size="9.5" font-weight="600" fill="#94a3b8">ANNUAL CONTEXT INJECTIONS</text>
+    <text x="354" y="35" text-anchor="end" class="mono" font-size="9.5" font-weight="700" fill="#f8fafc">164,250x / YR</text>
+
+    <!-- Grand Total Highlight Box -->
+    <rect x="0" y="48" width="356" height="58" rx="7" fill="rgba(244, 63, 94, 0.14)" stroke="#f43f5e" stroke-width="1.5"/>
+    <text x="14" y="71" class="mono" font-size="10.5" font-weight="800" fill="#f43f5e">ANNUAL SLOP TAX</text>
+    <text x="342" y="75" text-anchor="end" class="mono" font-size="22" font-weight="800" fill="#f43f5e">$153.70<tspan font-size="10.5">/YR</tspan></text>
+    <text x="14" y="94" class="mono" font-size="9.5" font-weight="700" fill="#f8fafc">ENOUGH FOR 31 ICED AMERICANOS ($5/CUP)</text>
+
+    <!-- Remedy Stamp -->
+    <rect x="0" y="118" width="356" height="26" rx="5" fill="#0c1324" stroke="#22d3ee" stroke-opacity="0.55"/>
+    <text x="178" y="135" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#22d3ee">EVADE TAX: npx taste-code prune -w</text>
+
+    <!-- Deterministic 1D Barcode -->
+    <g transform="translate(28, 156)">
+      <rect x="0.0" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="4.0" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="8.0" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="12.6" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="18.5" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="24.7" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="29.3" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="32.7" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="37.3" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="41.3" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="45.3" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="49.9" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="55.8" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="62.0" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="66.6" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="70.0" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="74.6" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="78.6" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="82.6" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="87.2" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="93.1" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="99.3" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="103.9" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="107.3" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="111.9" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="115.9" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="119.9" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="124.5" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="130.4" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="136.6" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="141.2" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="144.6" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="149.2" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="153.2" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="157.2" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="161.8" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="167.7" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="173.9" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="178.5" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="181.9" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="186.5" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="190.5" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="194.5" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="199.1" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="205.0" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="211.2" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="215.8" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="219.2" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="223.8" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="227.8" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="231.8" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="236.4" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="242.3" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="248.5" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="253.1" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="256.5" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="261.1" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="265.1" y="0" width="1.5" height="30" fill="#cbd5e1"/><rect x="269.1" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="273.7" y="0" width="3.4" height="30" fill="#cbd5e1"/><rect x="279.6" y="0" width="2.8" height="30" fill="#cbd5e1"/><rect x="285.8" y="0" width="1.2" height="30" fill="#cbd5e1"/><rect x="290.4" y="0" width="1.8" height="30" fill="#cbd5e1"/><rect x="293.8" y="0" width="1.2" height="30" fill="#cbd5e1"/>
+      <text x="150" y="42" text-anchor="middle" class="mono" font-size="8.5" letter-spacing="2" fill="#94a3b8">TASTE-YOUR-TASTE // 7FA7AA</text>
+    </g>
+  </g>
+</svg>

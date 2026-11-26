@@ -1,6 +1,14 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { selectProjects, paginateProjects, githubLink, rawGithubLink, prunePromptClient } = require('../docs/gallery.js');
+const {
+  selectProjects,
+  paginateProjects,
+  githubLink,
+  rawGithubLink,
+  prunePromptClient,
+  calculateSlopTaxClient,
+  computeDnaClient,
+} = require('../docs/gallery.js');
 
 const projects = [
   { repo: 'team/curated', status: 'curated', stars: 5000, language: 'Rust', vibe: 'Careful rules', archetype: 'Defensive Architect', updated_at: null },
@@ -54,4 +62,45 @@ test('client pruner strips politeness fluff while preserving commands and invari
   assert.ok(result.prunedContent.includes('run pytest -q'));
   assert.ok(result.prunedContent.includes('Never commit secrets'));
   assert.ok(result.tokensSaved > 0);
+});
+
+test('client slop tax calculator itemizes annual USD waste and certifies tax-free rules', () => {
+  const bloated = [
+    'You are a world-class expert assistant.',
+    'Please be very helpful and friendly.',
+    'Please always write clean, readable code and follow all best practices.',
+    'If you make a mistake, kindly apologize immediately.',
+    'Thank you!',
+  ].join('\n');
+
+  const report = calculateSlopTaxClient(bloated, { turnsPerDay: 150, model: 'opus', teamSize: 1 });
+  assert.equal(report.taxFree, false);
+  assert.ok(report.totalAnnualUsd > 50, `Expected > $50/yr slop tax, got ${report.totalAnnualUsd}`);
+  assert.ok(report.icedAmericanos >= 10, `Expected >= 10 Iced Americanos, got ${report.icedAmericanos}`);
+  assert.ok(report.items.some(i => i.label === 'POLITENESS TAX'));
+  assert.ok(report.items.some(i => i.label === 'PLATITUDE FLUFF'));
+
+  const clean = '- Run `npm test` before commit.\n- Never introduce external dependencies.\n';
+  const cleanReport = calculateSlopTaxClient(clean, { turnsPerDay: 150, model: 'opus' });
+  assert.equal(cleanReport.taxFree, true);
+  assert.equal(cleanReport.totalAnnualUsd, 0);
+});
+
+test('client DNA sequencer computes 100% normalized master mix and personal CLAUDE.md', () => {
+  const dna = computeDnaClient({
+    user: 'joe1chief',
+    repo: 'micro-llm',
+    language: 'Python',
+    deps: 0,
+    fnLoc: 18,
+    depth: 1,
+    testPct: 25,
+    strictTypes: true,
+    gitLog: 'a12b34c feat: pure tensor loop\nb23c45d test: verify gradients',
+  });
+  const sum = dna.genes.reduce((acc, g) => acc + g.percent, 0);
+  assert.equal(sum, 100);
+  assert.equal(dna.genotype.length, 4);
+  assert.ok(dna.synthesizedRules.includes('TASTE:DNA:'));
+  assert.ok(dna.synthesizedRules.includes('pytest -q'));
 });

@@ -163,6 +163,10 @@ async function pruneContent(content, options = {}) {
   const tokensSaved = Math.max(0, originalStats.tokens - prunedStats.tokens);
   const percentSaved = originalStats.tokens > 0 ? ((tokensSaved / originalStats.tokens) * 100).toFixed(1) : 0;
 
+  // Annualized Slop Tax savings (@ 150 turns/day x 3 agent steps x 365 days on Frontier $15/1M)
+  const annualUsdSaved = Number((tokensSaved * 0.16425 * 15.0).toFixed(2));
+  const coffeesSaved = Math.round(annualUsdSaved / 5.0);
+
   return {
     originalContent: content,
     prunedContent: prunedText,
@@ -170,6 +174,8 @@ async function pruneContent(content, options = {}) {
     prunedStats,
     tokensSaved,
     percentSaved: parseFloat(percentSaved),
+    annualUsdSaved,
+    coffeesSaved,
     llmPowered,
   };
 }

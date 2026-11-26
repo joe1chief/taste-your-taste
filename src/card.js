@@ -265,6 +265,12 @@ function generateCardSvg(options = {}) {
 
   const signalBars = Math.max(1, Math.min(10, Math.round((score / 100) * 10)));
   const armorBars = score >= 85 ? 10 : score >= 70 ? 8 : score >= 50 ? 6 : 3;
+  const rawTaxLabel = String(options.taxLabel || '$0.00/YR SLOP TAX').slice(0, 19);
+  const dot1X = Math.max(106, Math.round(rawTaxLabel.length * 5.85 + 6));
+  const diffX = dot1X + 9;
+  const contractLabel = diffX > 126 ? 'DIFF-FIRST' : 'DIFF-FIRST CONTRACT';
+  const dot2X = diffX + Math.round(contractLabel.length * 5.85 + 6);
+  const tierX = dot2X + 9;
   const cliCmd = `npx taste-code blend --style ${rawStyle} --tone ${rawTone}`;
   const escapedCmd = escapeXml(cliCmd.length > 54 ? `${cliCmd.slice(0, 51)}...` : cliCmd);
 
@@ -462,11 +468,11 @@ function generateCardSvg(options = {}) {
     ${renderMiniSegBar(200, 2.5, armorBars, 10, th.accent)}
     <text x="278" y="9" class="mono metric-val">ON</text>
 
-    <text x="0" y="25" class="mono" font-size="9.5" font-weight="600" fill="#10b981">0% POLITENESS TAX</text>
-    <text x="112" y="25" class="mono" font-size="9.5" fill="#64748b">•</text>
-    <text x="122" y="25" class="mono" font-size="9.5" font-weight="600" fill="#94a3b8">DIFF-FIRST CONTRACT</text>
-    <text x="242" y="25" class="mono" font-size="9.5" fill="#64748b">•</text>
-    <text x="252" y="25" class="mono" font-size="9.5" font-weight="700" fill="${th.primary}">${rating.tier}</text>
+    <text x="0" y="25" class="mono" font-size="9.5" font-weight="600" fill="${options.taxColor || '#10b981'}">${escapeXml(rawTaxLabel)}</text>
+    <text x="${dot1X}" y="25" class="mono" font-size="9.5" fill="#64748b">•</text>
+    <text x="${diffX}" y="25" class="mono" font-size="9.5" font-weight="600" fill="#94a3b8">${contractLabel}</text>
+    <text x="${dot2X}" y="25" class="mono" font-size="9.5" fill="#64748b">•</text>
+    <text x="${tierX}" y="25" class="mono" font-size="9.5" font-weight="700" fill="${th.primary}">${rating.tier}</text>
   </g>
 
   <!-- Vertical Telemetry Bus Divider -->
@@ -524,16 +530,17 @@ function generateBadgeSvg(options = {}) {
 
   if (type === 'dna') {
     label = 'TASTE DNA';
-    value = `${rawStyle} + ${rawTone}`;
+    value = options.dnaSummary ? String(options.dnaSummary).slice(0, 34) : `${rawStyle} + ${rawTone}`;
     accentColor = th.accent;
   } else if (type === 'archetype') {
     label = 'ARCHETYPE';
     value = rawArchetype;
     accentColor = (ARCHETYPE_CONFIG[rawArchetype] && ARCHETYPE_CONFIG[rawArchetype].color) || th.primary;
-  } else if (type === 'slop') {
-    label = 'POLITENESS TAX';
-    value = '0% · PURE DIFF';
-    accentColor = '#10b981';
+  } else if (type === 'slop' || type === 'tax') {
+    label = 'SLOP TAX';
+    const taxUsd = options.taxUsd !== undefined ? Number(options.taxUsd) : 0;
+    value = taxUsd >= 0.5 ? `$${taxUsd.toFixed(2)}/yr · ${Math.round(taxUsd / 5)} Coffees` : '$0.00/yr · Tax-Free';
+    accentColor = taxUsd >= 0.5 ? '#f43f5e' : '#10b981';
   } else if (type === 'roast') {
     label = 'LINUS ROAST';
     value = `${rating.title} [${rating.tier.replace('TIER::', '')}]`;
@@ -548,9 +555,11 @@ function generateBadgeSvg(options = {}) {
   const meterWidth = 28;
   const valueWidth = Math.round(value.length * 6.85 + 24 + meterWidth);
   const totalWidth = labelWidth + valueWidth;
-  const activeBars = type === 'dna' || type === 'archetype' || type === 'slop'
+  const activeBars = type === 'dna' || type === 'archetype'
     ? 5
-    : Math.max(1, Math.min(5, Math.round((score / 100) * 5)));
+    : type === 'slop' || type === 'tax'
+      ? (options.taxUsd !== undefined && Number(options.taxUsd) >= 0.5 ? 2 : 5)
+      : Math.max(1, Math.min(5, Math.round((score / 100) * 5)));
 
   const barsSvg = [];
   for (let i = 0; i < 5; i++) {

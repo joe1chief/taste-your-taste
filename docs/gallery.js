@@ -116,8 +116,207 @@
     };
   }
 
+  function calculateSlopTaxClient(text, options = {}) {
+    const raw = String(text || '');
+    const turnsPerDay = Math.max(1, Number(options.turnsPerDay) || 150);
+    const stepsPerTurn = Math.max(1, Number(options.stepsPerTurn) || 3);
+    const teamSize = Math.max(1, Number(options.teamSize) || 1);
+    const modelRates = { opus: 15.0, sonnet: 3.0, gpt4o: 2.5, deepseek: 0.27 };
+    const modelId = modelRates[options.model] ? options.model : 'opus';
+    const ratePerMillion = modelRates[modelId];
+    const annualInjections = turnsPerDay * stepsPerTurn * 365 * teamSize;
+    const usdPerTokenYear = (annualInjections / 1000000) * ratePerMillion;
+
+    const categories = [
+      { id: 'politeness', code: 'TAX-01', label: 'POLITENESS TAX', hint: '"please / kindly / thank you"', regex: /\b(please|kindly|thank\s+you|thanks\s+in\s+advance|thanks|gratefully|if\s+you\s+don't\s+mind)\b/gi, tok: 3.4 },
+      { id: 'platitudes', code: 'TAX-02', label: 'PLATITUDE FLUFF', hint: '"write clean code / best practices"', regex: /(write\s+clean(?:,\s*readable)?\s+code|clean\s+and\s+readable\s+code|follow\s+(?:all\s+)?(?:industry\s+)?best\s+practices|strive\s+for\s+excellence|high[- ]quality\s+code|maintainable\s+and\s+scalable)/gi, tok: 8.5 },
+      { id: 'apologies', code: 'TAX-03', label: 'APOLOGY & MANNERS TAX', hint: '"apologize / be helpful & friendly"', regex: /(apologize(?:\s+immediately)?|\bsorry\b|helpful\s+and\s+friendly|be\s+(?:very\s+)?(?:helpful|polite|friendly|courteous)|value\s+collaboration\s+and\s+empathy)/gi, tok: 6.8 },
+      { id: 'roleplay', code: 'TAX-04', label: 'ROLEPLAY PREAMBLE TAX', hint: '"you are a world-class expert..."', regex: /(you\s+are\s+an?\s+(?:world-class|expert|helpful|senior)|as\s+an\s+ai\s+(?:assistant|agent)|here\s+are\s+the\s+project\s+guidelines)/gi, tok: 8.2 },
+      { id: 'hedging', code: 'TAX-05', label: 'HEDGING & WAFFLE TAX', hint: '"feel free to / try your best"', regex: /(feel\s+free\s+to|try\s+your\s+best\s+to|whenever\s+possible|make\s+sure\s+that\s+you\s+always|ensure\s+that\s+you\s+always)/gi, tok: 5.5 },
+    ];
+
+    const prunedRes = prunePromptClient(raw, 'balanced');
+    const items = [];
+    let regexTok = 0;
+    for (const cat of categories) {
+      const hits = raw.match(cat.regex) || [];
+      if (hits.length > 0) {
+        const wastedTokens = Math.max(2, Math.round(hits.length * cat.tok));
+        regexTok += wastedTokens;
+        items.push({
+          code: cat.code,
+          label: cat.label,
+          hint: cat.hint,
+          count: hits.length,
+          wastedTokens,
+          annualUsd: Number((wastedTokens * usdPerTokenYear).toFixed(2)),
+        });
+      }
+    }
+
+    if (prunedRes.tokensSaved > regexTok + 4) {
+      const extra = prunedRes.tokensSaved - regexTok;
+      items.push({
+        code: 'TAX-06',
+        label: 'VERBOSE PROSE OVERHEAD',
+        hint: 'redundant filler lines & spacing',
+        count: 1,
+        wastedTokens: extra,
+        annualUsd: Number((extra * usdPerTokenYear).toFixed(2)),
+      });
+    }
+
+    const totalWastedTokens = items.reduce((s, it) => s + it.wastedTokens, 0);
+    const totalAnnualUsd = Number(items.reduce((s, it) => s + it.annualUsd, 0).toFixed(2));
+    const originalTokens = prunedRes.originalTokens;
+    const wastePercent = originalTokens > 0 ? Number(Math.min(95, (totalWastedTokens / originalTokens) * 100).toFixed(1)) : 0;
+    const icedAmericanos = totalAnnualUsd >= 5 ? Math.round(totalAnnualUsd / 5) : Number((totalAnnualUsd / 5).toFixed(1));
+
+    return {
+      targetName: options.targetName || 'CLAUDE.md',
+      modelId,
+      turnsPerDay,
+      stepsPerTurn,
+      teamSize,
+      annualInjections,
+      originalTokens,
+      totalWastedTokens,
+      wastePercent,
+      totalAnnualUsd,
+      icedAmericanos,
+      taxFree: items.length === 0 || totalAnnualUsd < 0.5,
+      items,
+      prunedContent: prunedRes.prunedContent,
+    };
+  }
+
+  function computeDnaClient(input = {}) {
+    const personas = {
+      karpathy: { id: 'karpathy', name: 'Karpathy', tagline: 'Single-File Minimalist', color: '#38bdf8' },
+      antfu: { id: 'antfu', name: 'Antfu', tagline: 'Strict Type Purist', color: '#10b981' },
+      linus: { id: 'linus', name: 'Linus', tagline: 'Kernel Pragmatist', color: '#f59e0b' },
+      stripe: { id: 'stripe', name: 'Stripe', tagline: 'Industrial Architect', color: '#a855f7' },
+      goblin: { id: 'goblin', name: 'Night Owl', tagline: '2AM Velocity Hacker', color: '#f43f5e' },
+    };
+
+    const logLines = String(input.gitLog || '').split('\n').map(l => l.trim()).filter(Boolean);
+    const convRegex = /^(?:[0-9a-f]{6,12}\s+)?(feat|fix|chore|refactor|docs|test|perf|ci|build|style)(\([^)]+\))?!?:\s+/i;
+    let convHits = 0;
+    let nightHits = 0;
+    let terseHits = 0;
+    for (const l of logLines) {
+      if (convRegex.test(l)) convHits++;
+      if (/\b(22|23|00|01|02|03|04):\d{2}/.test(l) || /\b(wip|hotfix|midnight|2am|3am)\b/i.test(l)) nightHits++;
+      const cleaned = l.replace(/^[0-9a-f]{6,12}\s+/i, '');
+      if (cleaned.split(/\s+/).length <= 5) terseHits++;
+    }
+    const commitCount = Math.max(1, logLines.length || Number(input.commits) || 64);
+    const convRatio = logLines.length ? convHits / logLines.length : (input.strictTypes ? 0.55 : 0.2);
+    const nightRatio = Number(input.nightPct !== undefined ? input.nightPct / 100 : (logLines.length ? nightHits / logLines.length : 0.08));
+
+    const deps = Math.max(0, Number(input.deps ?? 0));
+    const fnLoc = Math.max(5, Number(input.fnLoc ?? 20));
+    const depth = Math.max(1, Number(input.depth ?? 2));
+    const testPct = Math.max(0, Math.min(100, Number(input.testPct ?? 26)));
+    const strictTypes = Boolean(input.strictTypes);
+    const defensive = Boolean(input.defensive);
+    const lang = String(input.language || 'TypeScript');
+
+    const w = { karpathy: 18, antfu: 14, linus: 14, stripe: 12, goblin: 8 };
+    if (deps === 0) w.karpathy += 34; else if (deps <= 3) w.karpathy += 16;
+    if (depth <= 2) w.karpathy += 18;
+    if (fnLoc <= 28) w.karpathy += 14;
+
+    if (strictTypes) w.antfu += 30;
+    if (lang === 'TypeScript') w.antfu += 18;
+    if (convRatio >= 0.35) w.antfu += 20;
+
+    if (defensive) w.linus += 28;
+    if (['Rust', 'C / C++', 'Go'].includes(lang)) w.linus += 24;
+
+    if (testPct >= 24) w.stripe += 28; else if (testPct >= 12) w.stripe += 14;
+    if (depth >= 3) w.stripe += 12;
+
+    if (nightRatio >= 0.25) w.goblin += 36; else if (nightRatio >= 0.12) w.goblin += 16;
+    if (terseHits / commitCount >= 0.6 && convRatio < 0.25) w.goblin += 12;
+
+    const top = Object.entries(w).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    const sum = top.reduce((s, [, v]) => s + v, 0) || 1;
+    const p0 = Math.round((top[0][1] / sum) * 100);
+    const p1 = Math.round((top[1][1] / sum) * 100);
+    const p2 = Math.max(1, 100 - p0 - p1);
+    const genes = [
+      { ...personas[top[0][0]], percent: 100 - p1 - p2 },
+      { ...personas[top[1][0]], percent: p1 },
+      { ...personas[top[2][0]], percent: p2 },
+    ];
+
+    const genotype = `${depth <= 2 ? 'S' : 'A'}${strictTypes || defensive ? 'T' : 'D'}${testPct >= 15 ? 'P' : 'V'}${deps <= 2 ? 'Z' : 'E'}`;
+    const mbtiMap = {
+      STPZ: 'INTJ-A // Surgical Stdlib Purist',
+      STPE: 'ISTJ-A // Ironclad Type Architect',
+      SDPZ: 'INTP-A // Minimalist Systems Hacker',
+      SDVZ: 'ISTP-A // Raw Velocity Lone Wolf',
+      ATPZ: 'ENTJ-A // Zero-Bloat Sovereign',
+      ATPE: 'ENTJ-T // Industrial Platform Builder',
+      STVZ: 'INTJ-T // Sharp-Edged Prototyper',
+      SDPE: 'ENTP-A // Pragmatic Feature Alchemist',
+    };
+    const mbtiTitle = mbtiMap[genotype] || 'INTJ-A // Pragmatic Code Craftsman';
+    const chronotype = nightRatio >= 0.25
+      ? `NIGHT OWL (${Math.round(nightRatio * 100)}% late-night commits)`
+      : 'DAYLIGHT BUILDER (peak 14:00)';
+    const repoName = String(input.repo || 'my-project').slice(0, 24);
+    const author = String(input.user || 'developer').replace(/^@/, '').slice(0, 22);
+    const summary = `${genes[0].percent}% ${genes[0].name} (${genes[0].tagline}) + ${genes[1].percent}% ${genes[1].name} (${genes[1].tagline}) + ${genes[2].percent}% ${genes[2].name} (${genes[2].tagline})`;
+
+    const testCmd = lang === 'Python' ? 'pytest -q' : lang === 'Rust' ? 'cargo test' : lang === 'Go' ? 'go test ./...' : 'npm test';
+    const rules = [
+      `# Operational Agent Contract — ${repoName}`,
+      '',
+      `<!-- TASTE:DNA:${genotype}:START -->`,
+      `> **Code DNA Profile**: \`${genotype}\` (${mbtiTitle}) — ${summary}`,
+      '',
+      '## 1. Architecture & Dependency Invariants',
+      deps === 0
+        ? '- **Zero External Runtime Dependencies**: Strictly use native standard library modules only; never add third-party packages without explicit owner approval.'
+        : `- **Dependency Restraint**: Keep runtime dependencies lean (${deps} active). Prefer standard library helpers for utilities under 30 lines.`,
+      `- **Directory Topology**: Match existing hierarchy (median depth: ${depth}). Never invent speculative wrapper folders.`,
+      `- **Focused Functions**: Keep functions surgical (target ~${fnLoc} lines) with explicit inputs and outputs.`,
+      strictTypes
+        ? '- **Strict Type Hygiene**: Enforce strict static typing; never introduce `any`, unchecked casts, or silent catch blocks.'
+        : '- **Boundary Guards**: Validate external inputs explicitly at module boundaries.',
+      '',
+      '## 2. Verification & Commit Protocol',
+      `- **Mandatory Test Gate**: Run \`${testCmd}\` before concluding any modification; all suites must exit \`0\`.`,
+      convRatio >= 0.3
+        ? '- **Commit Hygiene**: Format commit subjects using Conventional Commits (`feat:`, `fix:`, `refactor:`) with minimal surgical diffs.'
+        : '- **Surgical Diffs**: Touch only lines strictly required by the task; never reformat unrelated files.',
+      '',
+      `## 3. Response & Token Economy (${genes[0].name} x ${genes[1].name} Blend)`,
+      '- **Lead With the Outcome**: Output minimal diffs and concrete findings immediately; zero conversational preamble, apologies, or filler praise.',
+      `<!-- TASTE:DNA:${genotype}:END -->`,
+      '',
+    ].join('\n');
+
+    return {
+      author,
+      repoName,
+      genotype,
+      mbtiTitle,
+      chronotype,
+      genes,
+      commits: commitCount,
+      deps,
+      fnLoc,
+      testPct,
+      summary,
+      synthesizedRules: rules,
+    };
+  }
+
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { selectProjects, paginateProjects, githubLink, rawGithubLink, prunePromptClient };
+    module.exports = { selectProjects, paginateProjects, githubLink, rawGithubLink, prunePromptClient, calculateSlopTaxClient, computeDnaClient };
   }
   if (typeof document === 'undefined') return;
 
@@ -222,11 +421,11 @@
       if (input) input.value = activeModalContent;
       if (typeof root.switchTab === 'function') root.switchTab('roast-playground');
       if (typeof root.runRoast === 'function') root.runRoast();
-    } else if (target === 'pruner') {
-      const input = document.getElementById('pruner-input');
+    } else if (target === 'tax' || target === 'pruner') {
+      const input = document.getElementById('tax-input');
       if (input) input.value = activeModalContent;
-      if (typeof root.switchTab === 'function') root.switchTab('pruner');
-      if (typeof root.runClientPruner === 'function') root.runClientPruner();
+      if (typeof root.switchTab === 'function') root.switchTab('tax');
+      if (typeof root.runClientTax === 'function') root.runClientTax();
     }
   }
 
@@ -430,5 +629,7 @@
   root.copyModalContent = copyModalContent;
   root.sendModalToSandbox = sendModalToSandbox;
   root.prunePromptClient = prunePromptClient;
+  root.calculateSlopTaxClient = calculateSlopTaxClient;
+  root.computeDnaClient = computeDnaClient;
   loadCatalog();
 })(typeof window === 'undefined' ? globalThis : window);

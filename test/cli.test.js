@@ -14,6 +14,10 @@ const { diffTastes, diffDeterministic } = require('../src/differ');
 const { generateCardSvg, generateBadgeSvg, renderCardToFile, renderBadgeToFile } = require('../src/card');
 const { listSkills, getSkill, installSkill } = require('../src/skills');
 const { checkContent, checkFile } = require('../src/checker');
+const { parseGitLogText, analyzeRepoDna, generateDnaCardSvg, renderDnaCardToFile } = require('../src/dna');
+const { calculateSlopTax, generateTaxReceiptSvg, taxFile, renderTaxReceiptToFile } = require('../src/tax');
+const apiDna = require('../api/dna');
+const apiTax = require('../api/tax');
 const { execFileSync } = require('child_process');
 
 const TEMP_DIR = path.join(__dirname, 'tmp');
@@ -319,6 +323,128 @@ function testQualityChecker() {
   console.log('✅ Taste Quality Gate tests passed.');
 }
 
+function testDnaEngine() {
+  console.log('Testing Developer Code DNA Engine (taste dna)...');
+
+  // 1. Verify bot author filtering prioritizes human commits over CI bots
+  const rawGitLog = [
+    'COMMIT|2026-11-25 08:00:00 +0000|github-actions[bot]|chore: daily radar snapshot',
+    ' 12 files changed, 1800 insertions(+), 10 deletions(-)',
+    'COMMIT|2026-11-25 08:01:00 +0000|github-actions[bot]|chore: rebuild catalog',
+    ' 2 files changed, 900 insertions(+), 5 deletions(-)',
+    'COMMIT|2026-11-25 23:30:00 +0800|joe1chief|feat: add zero-dep dna sequencer',
+    ' 3 files changed, 48 insertions(+), 6 deletions(-)',
+  ].join('\n');
+  const parsedGit = parseGitLogText(rawGitLog);
+  assert.strictEqual(parsedGit.topAuthor, 'joe1chief', 'Must prefer human author over github-actions[bot]');
+  assert.strictEqual(parsedGit.medianChangedLines, 54, 'Must compute median LOC from human commits');
+  assert(parsedGit.nightCommitRatio > 0.9, '23:30 commit must register as night commit');
+
+  // 2. Analyze current repository DNA offline
+  const repoRoot = path.resolve(__dirname, '..');
+  const profile = analyzeRepoDna(repoRoot, { maxCommits: 30 });
+  const totalPct = profile.genes.reduce((acc, g) => acc + g.percent, 0);
+  assert.strictEqual(totalPct, 100, `DNA gene percentages must sum to 100, got ${totalPct}`);
+  assert.strictEqual(profile.genes.length, 3, 'Must return top 3 developer archetypes');
+  assert.strictEqual(profile.genotype.length, 4, 'Genotype must be 4-letter code');
+  assert(profile.synthesizedRules.includes(`<!-- TASTE:DNA:${profile.genotype}:START -->`), 'Synthesized rules must include DNA marker');
+
+  // Verify synthesized CLAUDE.md passes our own strict quality gate (>= 80 score, $0 slop tax!)
+  const gate = checkContent(profile.synthesizedRules, { minScore: 80 });
+  assert(gate.passed, `Reverse-engineered CLAUDE.md must pass quality gate, got score ${gate.score}`);
+  const selfTax = calculateSlopTax(profile.synthesizedRules);
+  assert(selfTax.taxFree, 'Reverse-engineered CLAUDE.md must be 100% Slop-Tax-Free');
+
+  // 3. Render DNA SVG Card & Serverless API
+  const dnaSvgPath = path.join(TEMP_DIR, 'taste-dna.svg');
+  const { svg } = renderDnaCardToFile(dnaSvgPath, profile, { theme: 'cyber' });
+  assert(fs.existsSync(dnaSvgPath), 'DNA SVG file must be written');
+  assert(svg.includes('CODE GENOME WRAPPED'), 'DNA SVG must contain Wrapped footer');
+  assert(svg.includes(profile.genotype), 'DNA SVG must display 4-letter genotype');
+
+  let apiSvg = '';
+  apiDna({ url: '/api/dna?user=karpathy&g1=karpathy&p1=74&g2=antfu&p2=19&g3=goblin&theme=matrix' }, {
+    setHeader() {},
+    end(body) { apiSvg = body; },
+  });
+  assert(apiSvg.includes('@karpathy') && apiSvg.includes('74%'), 'API /api/dna must render custom query SVG');
+
+  // 4. CLI `taste dna --write --svg --json`
+  const sampleRepo = path.join(TEMP_DIR, 'dna-sample');
+  fs.mkdirSync(sampleRepo, { recursive: true });
+  fs.writeFileSync(path.join(sampleRepo, 'package.json'), JSON.stringify({ name: 'mini-lib', scripts: { test: 'node test.js' } }), 'utf-8');
+  fs.writeFileSync(path.join(sampleRepo, 'index.js'), 'function add(a, b) {\n  if (typeof a !== "number") throw new Error("bad");\n  return a + b;\n}\nmodule.exports = { add };\n', 'utf-8');
+  const outSvg = path.join(TEMP_DIR, 'cli-dna.svg');
+  const cliOut = execFileSync(
+    process.execPath,
+    [path.resolve(__dirname, '../bin/taste.js'), 'dna', sampleRepo, '--write', '--svg', outSvg, '--json'],
+    { encoding: 'utf-8' }
+  );
+  const cliData = JSON.parse(cliOut);
+  assert(fs.existsSync(path.join(sampleRepo, 'CLAUDE.md')), 'taste dna --write must create CLAUDE.md');
+  assert(fs.existsSync(outSvg), 'taste dna --svg must export SVG');
+  assert.strictEqual(cliData.genes.reduce((s, g) => s + g.percent, 0), 100);
+
+  console.log('✅ Developer Code DNA Engine tests passed.');
+}
+
+function testTaxEngine() {
+  console.log('Testing Cyber AI Slop Tax Engine (taste tax)...');
+
+  const bloatedRules = [
+    '# Guidelines',
+    'You are a world-class expert software engineer. Here are the project guidelines:',
+    'Please be very helpful, polite, and friendly.',
+    'Please always write clean, readable code and follow all industry best practices.',
+    'Kindly ensure that you strive for excellence. Please thank you!',
+    'As an AI assistant, if you make a mistake, kindly apologize immediately.',
+    '- Please run `npm test` before committing.',
+  ].join('\n');
+
+  const report = calculateSlopTax(bloatedRules, { turnsPerDay: 150, model: 'opus', teamSize: 1 });
+  assert(!report.taxFree, 'Bloated rules must be taxable');
+  assert(report.totalAnnualUsd > 60, `Expected significant annual USD waste, got $${report.totalAnnualUsd}`);
+  assert(report.icedAmericanos >= 12, `Expected >= 12 Iced Americanos, got ${report.icedAmericanos}`);
+  assert(report.items.some((i) => i.id === 'politeness'), 'Must itemize POLITENESS TAX');
+  assert(report.items.some((i) => i.id === 'platitudes'), 'Must itemize PLATITUDE FLUFF');
+  assert(report.items.some((i) => i.id === 'apologies'), 'Must itemize APOLOGY & MANNERS TAX');
+
+  // Verify Cyber & Paper SVG Receipt rendering
+  const cyberReceipt = generateTaxReceiptSvg(report, { theme: 'cyber' });
+  const paperReceipt = generateTaxReceiptSvg(report, { theme: 'paper' });
+  assert(cyberReceipt.includes('AI SLOP TAX RECEIPT') && cyberReceipt.includes('ICED AMERICANOS'), 'Cyber receipt SVG must render items & coffees');
+  assert(paperReceipt.includes('#f7f6ef'), 'Paper receipt theme must use thermal paper fill');
+
+  // Verify Tax-Free repository contract
+  const cleanReport = taxFile(path.resolve(__dirname, '../CLAUDE.md'), { turnsPerDay: 150 });
+  assert(cleanReport.taxFree, 'Repository CLAUDE.md must be certified tax-exempt ($0 slop tax)');
+
+  // Verify Serverless API `/api/tax` & updated `tax` micro-badge
+  let apiReceipt = '';
+  apiTax({ url: '/api/tax?turns=150&polite=48.20&fluff=71.50&apology=34.00&theme=paper' }, {
+    setHeader() {},
+    end(body) { apiReceipt = body; },
+  });
+  assert(apiReceipt.includes('$153.70'), 'API /api/tax must render $153.70 receipt total');
+
+  const taxBadge = generateBadgeSvg({ type: 'tax', taxUsd: 153.7 });
+  assert(taxBadge.includes('SLOP TAX') && taxBadge.includes('$153.70/yr'), 'Tax badge must display annualized USD');
+
+  // CLI `taste tax <file> --svg --json`
+  const slopFile = path.join(TEMP_DIR, 'BLOATED_CLAUDE.md');
+  const receiptSvgPath = path.join(TEMP_DIR, 'cli-tax.svg');
+  fs.writeFileSync(slopFile, bloatedRules, 'utf-8');
+  const cliTaxJson = execFileSync(
+    process.execPath,
+    [path.resolve(__dirname, '../bin/taste.js'), 'tax', slopFile, '--turns', '150', '--svg', receiptSvgPath, '--json'],
+    { encoding: 'utf-8' }
+  );
+  const parsedTax = JSON.parse(cliTaxJson);
+  assert(parsedTax.totalAnnualUsd > 60 && fs.existsSync(receiptSvgPath), 'CLI taste tax --svg --json must succeed');
+
+  console.log('✅ Cyber AI Slop Tax Engine tests passed.');
+}
+
 async function runAll() {
   setup();
   try {
@@ -329,11 +455,13 @@ async function runAll() {
     testMultiAgentTargets();
     testSkillsManager();
     testQualityChecker();
+    testDnaEngine();
+    testTaxEngine();
     await testRoaster();
     await testPruner();
     await testDiffer();
     testCardGenerator();
-    console.log('\n🎉 ALL CLI v2.0, SKILLS, CHECKER, ROASTER, PRUNER, DIFFER & CARD TESTS PASSED!\n');
+    console.log('\n🎉 ALL CLI v2.2, DNA, SLOP TAX, SKILLS, CHECKER, ROASTER, PRUNER, DIFFER & CARD TESTS PASSED!\n');
   } finally {
     teardown();
   }

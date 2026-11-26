@@ -28,13 +28,27 @@
 </p>
 
 <p align="center">
+  <img src="./taste-dna.svg" alt="Developer Code DNA Wrapped Card Preview" width="540">
+</p>
+
+<p align="center">
+  <img src="./taste-tax.svg" alt="Cyber AI Slop Tax Receipt Preview" width="420">
+</p>
+
+<p align="center">
   <img src="./taste-card.svg" alt="Developer Taste Telemetry HUD Card Preview" width="540">
   <br><br>
   <img src="./taste-badge.svg" alt="Developer Taste Cyber Micro-Badge Preview">
 </p>
 
 ```bash
-# 🧙 Interactive 10-Second Setup Wizard:
+# 🧬 Code DNA Wrapped: Scan local Git history -> Master Similarity + personal CLAUDE.md:
+npx taste-code dna --write --svg taste-dna.svg
+
+# 🧾 Cyber AI Slop Tax Receipt: Itemize annual wasted USD & Iced Americanos:
+npx taste-code tax CLAUDE.md --turns 150 --svg taste-tax.svg
+
+# 🧙 Interactive 10-Second Setup Wizard (DNA Auto-Scan or Manual):
 npx taste-code init
 
 # 🍸 Instant Vibe Stacking (Lego Bricks across 11 agent formats):
@@ -46,7 +60,7 @@ npx taste-code skill add karpathy-guidelines --agent claude
 # ✅ CI Quality Gate & Secret-Leak Audit:
 npx taste-code check CLAUDE.md --min-score 75
 
-# 💧 Token Compactor & De-slop Optimizer (Save 30-70% Context Tokens):
+# 💧 Slop Tax Evader & Token Compactor (Zero Rule Loss):
 npx taste-code prune CLAUDE.md --write
 
 # ⚖️ Engineering Philosophy Comparator (Antfu vs Karpathy):
@@ -55,11 +69,9 @@ npx taste-code diff antfu karpathy
 # 🌶️ Savage Linus Torvalds Taste Roast Critic:
 npx taste-code roast CLAUDE.md
 
-# 🪪 Dynamic GitHub Profile Taste HUD Card Generator:
+# 🪪 Dynamic GitHub Profile Taste HUD Card & Cyber Badge:
 npx taste-code card --user yourname --theme cyber --output taste-card.svg
-
-# 🛡️ Sleek Vector Micro-Badge Generator (Shields style):
-npx taste-code badge --type score --output taste-badge.svg
+npx taste-code badge --type tax --output taste-badge.svg
 ```
 
 </div>
@@ -106,16 +118,15 @@ In the **Vibe Coding** era, human programmers don't write every line of syntax b
 * How do infrastructure projects like NVIDIA, Stripe, and tidyverse instruct Claude Code and Cursor?
 
 **`taste-your-taste`** is an end-to-end, LLM-first developer ecosystem:
-1. 🛠️ **`taste` CLI**: A zero-dependency Lego-brick stacking tool to blend master developer tastes into your repository.
-2. 🧙 **`taste init` Wizard**: Interactive 10-second TUI to configure CLAUDE.md, Cursor MDC, or Antigravity rules.
-3. 💧 **`taste prune` (De-slop Compactor)**: Strips out polite conversational filler and tautological fluff while preserving 100% of technical rules, reducing context window tax by 30-70%.
-4. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
-5. 🌶️ **Taste Roast Critic**: Linus Torvalds-inspired LLM critic that audits your agent instructions with brutal technical honesty.
-6. 🪪 **`taste card` & `taste badge`**: Generates aesthetic cyberpunk HUD profile cards (495x195) and sleek vector micro-badges (28px pill) with custom themes and radial gauges.
-7. 🏛️ **Top-Level Open-Source Directories**: Authentic, battle-tested configs from 26+ star projects organized directly as first-level directories.
-8. 🧠 **Curated Agent Skills Library ([`skills/`](./skills))**: Modular SKILL.md playbooks (Andrej Karpathy guidelines, offensive AI security, de-AI writing, design tokens, etc.).
-9. 📡 **Autonomous LLM Radar**: GitHub Action engine that monitors GitHub Trending and tracks Prompt Evolution via Git Blob SHAs.
-10. 🌐 **[Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste)**: Daily-updated explorer, Taste Blender, Pruner preview, and live Badge Studio.
+1. 🧬 **`taste dna` (Code Genome & Wrapped Sequencer)**: Offline local scanner inspecting your recent 100 Git commits, function lengths, type strictness, dependency count, and test ratio to output a Spotify-Wrapped style Master Similarity report (`74% Karpathy + 19% Antfu + 7% Night Owl`), 4-axis Code Genotype (`STPZ`), SVG card, and a reverse-engineered `CLAUDE.md` tailored to your own coding habits.
+2. 🧾 **`taste tax` (Cyber AI Slop Tax Receipt)**: Converts abstract prompt bloat into a serrated Cyber Supermarket Thermal Receipt SVG (CLI & Web) itemizing annual USD wasted on `"Please / Kindly"`, `"Write clean code"` platitudes, and apologies across 150 daily turns — complete with an Iced Americano index (`$5/cup`).
+3. 🛠️ **`taste` CLI & `taste init` Wizard**: Zero-dependency Lego-brick stacking tool across 11 agent formats, with DNA auto-scan built directly into `taste init`.
+4. 💧 **`taste prune` (Slop Tax Evader)**: Eliminates polite filler and corporate platitudes while preserving 100% of test runners and invariants, reporting exact annual USD and coffees saved.
+5. ⚖️ **`taste diff` (Philosophy Comparator)**: Side-by-side comparative analysis contrasting conflicting engineering temperaments (e.g., Antfu vs Karpathy).
+6. 🌶️ **Taste Roast Critic & `taste check` Gate**: Linus Torvalds-inspired critic plus deterministic CI quality & secret-leak gate.
+7. 🪪 **`taste card` & `taste badge`**: Geek Telemetry HUD profile cards (`540x220`) and cyber micro-badges (`28px` pill) with deterministic hex signatures.
+8. 🏛️ **Top-Level Open-Source Directories & `skills/`**: Authentic configs from 26+ star projects plus 7 installable `SKILL.md` playbooks.
+9. 📡 **Autonomous LLM Radar & [Interactive Web Gallery](https://joe1chief.github.io/taste-your-taste/)**: Daily GitHub Trending monitor plus browser-based Code DNA Wrapped Sequencer, Cyber Slop Tax Receipt Studio, and 300+ indexed repositories.
 
 ---
 
@@ -187,6 +198,43 @@ taste-your-taste/
 ---
 
 ## 🚀 Key Features
+
+### 0a. 🧬 Developer Code DNA & Wrapped Sequencer (`taste dna`)
+Most repositories do not yet have a `CLAUDE.md` — or copy-paste generic templates that fight the author's real coding habits. **`taste dna`** scans your repository **100% locally with zero network calls** (up to 100 recent Git commits, median function length, runtime dependency count, type strictness, test ratio, and directory depth):
+
+```bash
+# Scan your current repo and print your Wrapped Code DNA + MBTI report
+npx taste-code dna
+
+# Reverse-engineer a personalized CLAUDE.md AND export your Wrapped DNA SVG card
+npx taste-code dna --write --svg taste-dna.svg
+```
+
+* **Master Similarity Mix (100% Normalized)**: Computes your top 3 developer archetypes — e.g. `74% Karpathy (Single-File Minimalist) + 19% Antfu (Strict Type Purist) + 7% Night Owl (2AM Velocity Hacker)`.
+* **4-Axis Code Genotype (MBTI)**: Assigns a deterministic 4-letter genotype (`STPZ`, `ATPE`, `SDVZ`, etc.) across *Surgical vs Architectural*, *Type/Invariant-Strict vs Dynamic*, *Proof-Driven vs Velocity*, and *Zero-Dep Stdlib vs Ecosystem*.
+* **Personal `CLAUDE.md` Synthesis**: Generates a zero-slop operational contract matching your exact language, naming convention, median function length, and test runner so AI agents write code indistinguishable from yours.
+* **Serverless Embed API**: `https://taste-your-taste.vercel.app/api/dna?user=yourname&g1=karpathy&p1=74&g2=antfu&p2=19&g3=goblin&theme=cyber`
+
+---
+
+### 0b. 🧾 Cyber Supermarket AI Slop Tax Receipt (`taste tax`)
+Agent rule files are re-injected into the LLM context window on **every turn and tool step**. Abstract "token savings percentages" don't hurt — an itemized **Annual AI Slop Tax Receipt** does.
+
+```bash
+# Audit CLAUDE.md at 150 agent turns/day and print terminal receipt
+npx taste-code tax CLAUDE.md --turns 150
+
+# Export serrated Cyber Neon or Classic Thermal Paper Receipt SVG
+npx taste-code tax CLAUDE.md --turns 150 --svg taste-tax.svg
+npx taste-code tax CLAUDE.md --turns 150 --theme paper --svg taste-tax-paper.svg
+```
+
+* **Itemized Prompt Offenses**: Breaks down annual wasted USD across `POLITENESS TAX` (`Please / Kindly`), `PLATITUDE FLUFF` (`"Write clean code"`), `APOLOGY & MANNERS TAX`, `ROLEPLAY PREAMBLE TAX`, and `HEDGING & WAFFLE TAX`.
+* **Iced Americano Index**: Converts wasted context budget into cups of `$5.00` Iced Americanos (`$153.70/yr = 31 Iced Americanos`) across `opus`, `sonnet`, `gpt4o`, or `deepseek` pricing and `--devs <teamSize>`.
+* **1-Click Tax Evasion**: Run `npx taste-code prune CLAUDE.md --write` (or click **⚡ 1-Click Evade Tax** in the Web Gallery) to drop your annual Slop Tax to `$0.00/yr` (`CERTIFIED TAX-EXEMPT`).
+* **Serverless Embed API**: `https://taste-your-taste.vercel.app/api/tax?turns=150&polite=48.20&fluff=71.50&apology=34.00&theme=cyber`
+
+---
 
 ### 1. 🧙 Interactive Setup Wizard (`taste init`)
 Configure your project in 10 seconds through an interactive terminal interface:

@@ -1,7 +1,7 @@
 {
   "name": "taste-code",
-  "version": "2.0.0",
-  "description": "Autonomous developer taste curation, vibe stacking, agent skills installer, and prompt quality gate for CLAUDE.md, AGENTS.md, Cursor, Copilot, Windsurf, and Gemini.",
+  "version": "2.2.0",
+  "description": "Developer Code DNA scanner, Cyber AI Slop Tax receipt generator, vibe stacking, agent skills installer, and prompt quality gate for CLAUDE.md, AGENTS.md, Cursor, Copilot, Windsurf, and Gemini.",
   "main": "src/index.js",
   "bin": {
     "taste": "./bin/taste.js",

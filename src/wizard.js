@@ -1,13 +1,17 @@
 /**
  * Interactive Setup Wizard for taste-code (taste init)
- * Zero external dependencies, built using Node.js readline.
+ * Integrates Auto-Scan Code DNA (`taste dna`) as the default intelligent setup path,
+ * replacing blind cold-start guessing while retaining manual Lego brick selection.
+ * Zero external dependencies.
  */
 
+const fs = require('fs');
 const readline = require('readline');
 const path = require('path');
 const { c, banner, box, TARGET_FORMATS, resolveTargetFile } = require('./utils');
 const { getAvailable, getMeta } = require('./registry');
 const { stackFlavor, blendTastes } = require('./stacker');
+const { analyzeRepoDna } = require('./dna');
 
 function askQuestion(rl, query) {
   return new Promise((resolve) => {
@@ -20,7 +24,7 @@ function askQuestion(rl, query) {
 async function runWizard() {
   banner();
   console.log(`  ${c.bold('🧙 Welcome to the Taste Initialization Wizard')}`);
-  console.log(`  ${c.dim('Configure your agent guidelines with world-class engineering taste.')}\n`);
+  console.log(`  ${c.dim('Reverse-engineer your Git DNA or stack master Lego bricks in 10 seconds.')}\n`);
 
   const rl = readline.createInterface({
     input: process.stdin,
@@ -28,29 +32,56 @@ async function runWizard() {
   });
 
   try {
-    // -------------------------------------------------------------
-    // Step 1: Select Target File
-    // -------------------------------------------------------------
+    // Step 1: Select Target Format
     const targetChoices = TARGET_FORMATS.map((f) => ({ label: f.label, value: f.key }));
-
-    console.log(c.magenta(c.bold('Step 1 of 3: Select Target Rule Format')));
+    console.log(c.magenta(c.bold('Step 1: Select Target Rule Format')));
     targetChoices.forEach((tc, idx) => {
       console.log(`  ${c.cyan(`[${idx + 1}]`)} ${tc.label}`);
     });
 
     const targetAns = await askQuestion(rl, `\n${c.bold(`Enter choice (1-${targetChoices.length}) [default: 1]: `)}`);
     const targetIdx = parseInt(targetAns, 10);
-    const selectedTargetOption = (!isNaN(targetIdx) && targetIdx >= 1 && targetIdx <= targetChoices.length)
+    const selectedTargetOption = !isNaN(targetIdx) && targetIdx >= 1 && targetIdx <= targetChoices.length
       ? targetChoices[targetIdx - 1].value
       : 'claude';
     const targetFile = resolveTargetFile(selectedTargetOption);
     console.log(`  ${c.green('✔')} Target selected: ${c.cyan(path.relative(process.cwd(), targetFile) || targetFile)}\n`);
 
-    // -------------------------------------------------------------
-    // Step 2: Select Engineering Style
-    // -------------------------------------------------------------
+    // Step 2: Mode Selection (DNA Auto-Scan vs Manual Lego Selection)
+    console.log(c.magenta(c.bold('Step 2: Choose Initialization Mode')));
+    console.log(`  ${c.green('[1]')} ${c.bold('🧬 Auto-Scan Git & Codebase DNA (Recommended)')} — Reverse-engineer your own coding style`);
+    console.log(`  ${c.cyan('[2]')} ${c.bold('🍸 Manual Lego Brick Picker')} — Pick master style & tone manually`);
+
+    const modeAns = await askQuestion(rl, `\n${c.bold('Enter mode (1-2) [default: 1]: ')}`);
+
+    if (modeAns !== '2') {
+      rl.close();
+      const profile = analyzeRepoDna(process.cwd());
+      const dir = path.dirname(targetFile);
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(targetFile, profile.synthesizedRules, 'utf-8');
+
+      console.log(
+        box(
+          '🧬 Code DNA Synthesized & Initialized!',
+          [
+            `${c.bold('Code Genotype:')} ${c.magenta(profile.genotype)} (${profile.mbtiTitle})`,
+            `${c.bold('Your DNA Mix:')}  ${c.cyan(profile.oneLineSummary)}`,
+            `${c.bold('Target File:')}   ${c.green(path.relative(process.cwd(), targetFile) || targetFile)}`,
+            '',
+            `${c.dim('Next steps:')}`,
+            `  1. Export Wrapped SVG: ${c.cyan('npx taste-code dna --svg taste-dna.svg')}`,
+            `  2. Audit Slop Tax:     ${c.yellow('npx taste-code tax')}`,
+          ].join('\n'),
+          '\x1b[32m'
+        )
+      );
+      return;
+    }
+
+    // Manual Style & Tone Selection
     const styles = getAvailable('styles');
-    console.log(c.magenta(c.bold('Step 2 of 3: Select Core Engineering Style')));
+    console.log(`\n${c.magenta(c.bold('Step 3: Select Core Engineering Style'))}`);
     styles.forEach((s, idx) => {
       const meta = getMeta('styles', s);
       console.log(`  ${c.cyan(`[${idx + 1}]`)} ${c.bold(s.padEnd(12))} — ${meta.description}`);
@@ -59,25 +90,14 @@ async function runWizard() {
 
     const styleAns = await askQuestion(rl, `\n${c.bold(`Enter choice (0-${styles.length}) [default: 1 (${styles[0]})]: `)}`);
     let selectedStyle = styles[0];
-    if (styleAns === '0') {
-      selectedStyle = null;
-    } else if (styleAns) {
+    if (styleAns === '0') selectedStyle = null;
+    else if (styleAns) {
       const sIdx = parseInt(styleAns, 10);
-      if (!isNaN(sIdx) && sIdx >= 1 && sIdx <= styles.length) {
-        selectedStyle = styles[sIdx - 1];
-      }
-    }
-    if (selectedStyle) {
-      console.log(`  ${c.green('✔')} Style selected: ${c.cyan(selectedStyle)}\n`);
-    } else {
-      console.log(`  ${c.dim('⏩ Skipped style selection.')}\n`);
+      if (!isNaN(sIdx) && sIdx >= 1 && sIdx <= styles.length) selectedStyle = styles[sIdx - 1];
     }
 
-    // -------------------------------------------------------------
-    // Step 3: Select Tone Persona
-    // -------------------------------------------------------------
     const tones = getAvailable('tones');
-    console.log(c.magenta(c.bold('Step 3 of 3: Select Agent Tone & Persona')));
+    console.log(`\n${c.magenta(c.bold('Step 4: Select Agent Tone & Persona'))}`);
     tones.forEach((t, idx) => {
       const meta = getMeta('tones', t);
       console.log(`  ${c.yellow(`[${idx + 1}]`)} ${c.bold(t.padEnd(12))} — ${meta.description}`);
@@ -86,27 +106,15 @@ async function runWizard() {
 
     const toneAns = await askQuestion(rl, `\n${c.bold(`Enter choice (0-${tones.length}) [default: 1 (${tones[0]})]: `)}`);
     let selectedTone = tones[0];
-    if (toneAns === '0') {
-      selectedTone = null;
-    } else if (toneAns) {
+    if (toneAns === '0') selectedTone = null;
+    else if (toneAns) {
       const tIdx = parseInt(toneAns, 10);
-      if (!isNaN(tIdx) && tIdx >= 1 && tIdx <= tones.length) {
-        selectedTone = tones[tIdx - 1];
-      }
-    }
-    if (selectedTone) {
-      console.log(`  ${c.green('✔')} Tone selected: ${c.yellow(selectedTone)}\n`);
-    } else {
-      console.log(`  ${c.dim('⏩ Skipped tone selection.')}\n`);
+      if (!isNaN(tIdx) && tIdx >= 1 && tIdx <= tones.length) selectedTone = tones[tIdx - 1];
     }
 
-    // -------------------------------------------------------------
-    // Execute Taste Application
-    // -------------------------------------------------------------
     rl.close();
 
     if (!selectedStyle && !selectedTone) {
-      console.log(c.yellow('No style or tone selected. Creating clean starter rule file...'));
       stackFlavor(targetFile, 'minimalist');
     } else if (selectedStyle && selectedTone) {
       blendTastes(targetFile, selectedStyle, selectedTone);
@@ -123,11 +131,6 @@ async function runWizard() {
           `${c.bold('Target File:')}   ${c.green(path.relative(process.cwd(), targetFile) || targetFile)}`,
           `${c.bold('Style Applied:')} ${selectedStyle ? c.cyan(selectedStyle) : c.dim('(none)')}`,
           `${c.bold('Tone Applied:')}  ${selectedTone ? c.yellow(selectedTone) : c.dim('(none)')}`,
-          '',
-          `${c.dim('Next steps:')}`,
-          `  1. Inspect your file: ${c.cyan(`cat ${path.relative(process.cwd(), targetFile) || targetFile}`)}`,
-          `  2. Roast your setup:  ${c.yellow('npx taste-code roast')}`,
-          `  3. Stack more bricks: ${c.magenta('npx taste-code add <flavor>')}`,
         ].join('\n'),
         '\x1b[32m'
       )

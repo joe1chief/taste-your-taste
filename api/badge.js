@@ -22,6 +22,8 @@ module.exports = (req, res) => {
     archetype: query.archetype || 'Anti-Slop Minimalist',
     score: query.score || 94,
     theme: query.theme || 'cyber',
+    dnaSummary: query.dna,
+    taxUsd: query.tax,
   });
 
   res.setHeader('Content-Type', 'image/svg+xml');

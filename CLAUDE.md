@@ -5,7 +5,7 @@ This file guides AI agents (Claude Code, Cursor, Windsurf, Copilot, Codex, Antig
 ---
 
 ## 🎯 Project Mission
-**Taste Your Taste (v2.0)** is an autonomous developer taste curation and vibe-stacking engine for AI agents. It provides a zero-dependency CLI (`taste`), a modular `SKILL.md` installer (`taste skill`), a CI prompt quality gate (`taste check`), an LLM-driven Linus Torvalds critic (`taste roast`), a prompt token compactor (`taste prune`), a philosophy comparator (`taste diff`), dynamic SVG badges (`taste card` / `taste badge`), and an autonomous trending radar (`scripts/radar.py`).
+**Taste Your Taste (v2.2)** is an autonomous developer taste curation, Code DNA genome scanner, Cyber AI Slop Tax auditor, and vibe-stacking engine for AI agents. It provides a zero-dependency CLI (`taste`), an offline Git history & codebase DNA sequencer (`taste dna`), a Cyber Supermarket Slop Tax Receipt generator (`taste tax`), a modular `SKILL.md` installer (`taste skill`), a CI prompt quality gate (`taste check`), an LLM-driven Linus Torvalds critic (`taste roast`), a prompt token compactor (`taste prune`), a philosophy comparator (`taste diff`), dynamic SVG badges (`taste card` / `taste badge`), and an autonomous trending radar (`scripts/radar.py`).
 
 ---
 
@@ -54,8 +54,8 @@ node bin/taste.js check AGENTS.md --min-score 75
 * `discovered/<owner>/<repo>/`: Isolated automated Radar archives verified by `META.json`.
 * `registry/`: Modular Lego bricks (`styles/`, `tones/`, `presets/`) for taste stacking.
 * `skills/`: Modular `SKILL.md` agent playbooks installable via `npx taste-code skill add <id>`.
-* `src/`: Core engines (`stacker.js`, `skills.js`, `checker.js`, `pruner.js`, `differ.js`, `roaster.js`, `card.js`).
-* `api/`: Serverless HTTP SVG card & badge endpoints (`api/card.js`, `api/badge.js`).
+* `src/`: Core engines (`dna.js`, `tax.js`, `stacker.js`, `skills.js`, `checker.js`, `pruner.js`, `differ.js`, `roaster.js`, `card.js`).
+* `api/`: Serverless HTTP SVG endpoints (`api/dna.js`, `api/tax.js`, `api/card.js`, `api/badge.js`).
 * `scripts/`: Autonomous trending radar (`radar.py`), structural diff analyzer (`llm_client.py`), and catalog builder (`build_catalog.py`).
-* `docs/`: Interactive Web Gallery v2.0 with inline rule preview, Skills Explorer, Token Pruner, and Badge Studio.
+* `docs/`: Interactive Web Gallery v2.2 with Code DNA Wrapped Sequencer, Cyber Slop Tax Receipt Studio, Skills Explorer, and Badge Studio.
 * `test/`: Zero-dependency Node.js and Python test suites.
