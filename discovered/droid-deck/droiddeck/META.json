@@ -1,0 +1,23 @@
+{
+  "stars": 22242,
+  "language": "Kotlin",
+  "description": "DroidDeck brings the SteamOS experience to Android",
+  "url": "https://github.com/Droid-Deck/DroidDeck",
+  "archetype": "Defensive Architect",
+  "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+  "highlights": [
+    "Comments should be rare, factual, and explain only non-obvious external constraints or business invariants.",
+    "Building and testing",
+    "For an install-and-look iteration, use `tools/quick_deploy.sh` (build without lint, sign, install, about 30 s). Run `tools/build_local.sh` once to prepare the runtime and again onl",
+    "`tools/build_local.sh` reuses the components a main CI run prepared when every recipe identity matches the local tree (it prints `components: … reusing`). It builds them locally wh"
+  ],
+  "assessment": "Structured `AGENTS.md` specification (~1738 est. tokens) codifying defensive architect guardrails and repository conventions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "97930d65639e76d3b64f79fded3554f124f3d10b"
+  },
+  "discovered_at": "2026-11-27T10:20:25.765099+00:00",
+  "repo": "Droid-Deck/DroidDeck"
+}

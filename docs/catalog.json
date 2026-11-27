@@ -1,17 +1,197 @@
 {
   "schema_version": 1,
-  "source_sha256": "aee1d477e743375018883d2adb9d7b670afecdb1dfc56b6ae79f200b2f953412",
+  "source_sha256": "8729d956f91ae0a76cdd5e8459384641c006c5fea68239ab5c91453f0a1a55d0",
   "last_scan": {
-    "completed_at": "2026-11-26T10:13:53Z",
-    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/45798917642"
+    "completed_at": "2026-11-27T10:20:26Z",
+    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/45980734595"
   },
-  "latest_update": "2026-11-26T10:13:53Z",
+  "latest_update": "2026-11-27T10:20:26Z",
   "counts": {
-    "total": 311,
+    "total": 314,
     "curated": 26,
-    "pending_review": 285
+    "pending_review": 288
   },
   "projects": [
+    {
+      "repo": "Droid-Deck/DroidDeck",
+      "status": "pending_review",
+      "stars": 22242,
+      "language": "Kotlin",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": "AGENTS.md",
+      "highlight": "Comments should be rare, factual, and explain only non-obvious external constraints or business invariants.",
+      "highlights": [
+        "Comments should be rare, factual, and explain only non-obvious external constraints or business invariants.",
+        "Building and testing",
+        "For an install-and-look iteration, use `tools/quick_deploy.sh` (build without lint, sign, install, about 30 s). Run `tools/build_local.sh` once to prepare the runtime and again onl"
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/droid-deck/droiddeck/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/droid-deck/droiddeck/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/Droid-Deck/DroidDeck",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/droid-deck/droiddeck",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/439",
+      "discovered_at": "2026-11-27T10:20:26Z",
+      "updated_at": "2026-11-27T10:20:26Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "tw93/Mole",
+      "status": "pending_review",
+      "stars": 76389,
+      "language": "Shell",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": "AGENTS.md",
+      "highlight": "Mole Agent Guide",
+      "highlights": [
+        "Mole Agent Guide",
+        "This file is the shared source of truth for any AI agent working on this repo (Claude Code, Codex, etc.). Claude Code reads it directly, so there is no `CLAUDE.md`; do not add one ",
+        "Layout: this file is always loaded and holds the cross-cutting contract. Area rules live in `.claude/rules/<area>.md`; each starts with `paths:` frontmatter, and Claude Code inject"
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/tw93/mole/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/tw93/mole/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/tw93/Mole",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tw93/mole",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/438",
+      "discovered_at": "2026-11-27T10:20:20Z",
+      "updated_at": "2026-11-27T10:20:20Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "apify/mcpc",
+      "status": "pending_review",
+      "stars": 1119,
+      "language": "TypeScript",
+      "archetype": "Anti-Slop Minimalist",
+      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+      "file": "AGENTS.md",
+      "highlight": "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+      "highlights": [
+        "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+        "Project Overview",
+        "`mcpc` is a universal command-line client for the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/),"
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/apify/mcpc/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/apify/mcpc/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/apify/mcpc",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/apify/mcpc",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/437",
+      "discovered_at": "2026-11-27T10:19:41Z",
+      "updated_at": "2026-11-27T10:19:41Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "Effect-TS/effect",
+      "status": "pending_review",
+      "stars": 16625,
+      "language": "TypeScript",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Precision over brute force: run the narrowest test that proves your change, never the whole suite.",
+      "file": ".agents/AGENTS.md",
+      "highlight": "Validation is mapped to change type via a table, enforcing the narrowest possible test scope.",
+      "highlights": [
+        "Validation is mapped to change type via a table, enforcing the narrowest possible test scope.",
+        "Bare `pnpm test` and `pnpm doctest` are explicitly forbidden because they start watch mode.",
+        "Generated files (barrel `index.ts`, `LLMS.md`, migration docs) must be regenerated, never hand-edited."
+      ],
+      "evolution_count": 1,
+      "raw_files": [
+        {
+          "name": ".agents/AGENTS.md",
+          "path": "discovered/effect-ts/effect/.agents/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/effect-ts/effect/.agents/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/Effect-TS/effect",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/effect-ts/effect",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/20",
+      "discovered_at": "2026-10-03T07:17:24Z",
+      "updated_at": "2026-11-27T10:18:50Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "status": "pending_review",
+      "stars": 211318,
+      "language": "TypeScript",
+      "archetype": "Anti-Slop Minimalist",
+      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "AGENTS.md",
+      "highlights": [
+        "AGENTS.md",
+        "This file provides guidance on how to work with the n8n repository.",
+        "Project Overview"
+      ],
+      "evolution_count": 2,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/n8n-io/n8n/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/n8n-io/n8n/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/n8n-io/n8n",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/371",
+      "discovered_at": "2026-11-19T09:39:19Z",
+      "updated_at": "2026-11-27T10:17:41Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "mvanhorn/last30days-skill",
+      "status": "pending_review",
+      "stars": 68462,
+      "language": "Python",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "last30days Skill",
+      "highlights": [
+        "last30days Skill",
+        "Agent Skills package for researching any topic across Reddit, X, YouTube, and web. Installable across Claude Code (most common host), Codex, Cursor, GitHub Copilot, Gemini CLI, Grok (xAI), and 50+ other [Agent Skills](https://agentskills.io) hosts. Python scripts with multi-source search aggregation.",
+        "Structure"
+      ],
+      "evolution_count": 3,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/mvanhorn/last30days-skill/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/mvanhorn/last30days-skill/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/mvanhorn/last30days-skill",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mvanhorn/last30days-skill",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/346",
+      "discovered_at": "2026-11-17T09:53:22Z",
+      "updated_at": "2026-11-27T10:17:34Z",
+      "latest_change": "Rules updated"
+    },
     {
       "repo": "ytsaurus/ytsaurus",
       "status": "pending_review",
@@ -499,36 +679,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/299",
       "discovered_at": "2026-11-11T08:37:29Z",
       "updated_at": "2026-11-25T10:40:32Z",
-      "latest_change": "Rules updated"
-    },
-    {
-      "repo": "mvanhorn/last30days-skill",
-      "status": "pending_review",
-      "stars": 68462,
-      "language": "Python",
-      "archetype": "Defensive Architect",
-      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
-      "file": "AGENTS.md, CLAUDE.md",
-      "highlight": "last30days Skill",
-      "highlights": [
-        "last30days Skill",
-        "Agent Skills package for researching any topic across Reddit, X, YouTube, and web. Installable across Claude Code (most common host), Codex, Cursor, GitHub Copilot, Gemini CLI, Grok (xAI), and 50+ other [Agent Skills](https://agentskills.io) hosts. Python scripts with multi-source search aggregation.",
-        "Structure"
-      ],
-      "evolution_count": 2,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/mvanhorn/last30days-skill/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/mvanhorn/last30days-skill/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/mvanhorn/last30days-skill",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mvanhorn/last30days-skill",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/346",
-      "discovered_at": "2026-11-17T09:53:22Z",
-      "updated_at": "2026-11-25T10:40:13Z",
       "latest_change": "Rules updated"
     },
     {
@@ -1064,36 +1214,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/66",
       "discovered_at": "2026-10-10T07:53:54Z",
       "updated_at": "2026-11-23T09:58:28Z",
-      "latest_change": "Rules updated"
-    },
-    {
-      "repo": "n8n-io/n8n",
-      "status": "pending_review",
-      "stars": 211318,
-      "language": "TypeScript",
-      "archetype": "Anti-Slop Minimalist",
-      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
-      "file": "AGENTS.md, CLAUDE.md",
-      "highlight": "AGENTS.md",
-      "highlights": [
-        "AGENTS.md",
-        "This file provides guidance on how to work with the n8n repository.",
-        "Project Overview"
-      ],
-      "evolution_count": 1,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/n8n-io/n8n/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/n8n-io/n8n/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/n8n-io/n8n",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/371",
-      "discovered_at": "2026-11-19T09:39:19Z",
-      "updated_at": "2026-11-23T09:58:26Z",
       "latest_change": "Rules updated"
     },
     {
@@ -8910,36 +9030,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/26",
       "discovered_at": "2026-10-04T07:34:21Z",
       "updated_at": "2026-10-04T07:34:21Z",
-      "latest_change": "New discovery"
-    },
-    {
-      "repo": "Effect-TS/effect",
-      "status": "pending_review",
-      "stars": 16625,
-      "language": "TypeScript",
-      "archetype": "Pragmatic Systems",
-      "vibe": "Precision over brute force: run the narrowest test that proves your change, never the whole suite.",
-      "file": ".agents/AGENTS.md",
-      "highlight": "Validation is mapped to change type via a table, enforcing the narrowest possible test scope.",
-      "highlights": [
-        "Validation is mapped to change type via a table, enforcing the narrowest possible test scope.",
-        "Bare `pnpm test` and `pnpm doctest` are explicitly forbidden because they start watch mode.",
-        "Generated files (barrel `index.ts`, `LLMS.md`, migration docs) must be regenerated, never hand-edited."
-      ],
-      "evolution_count": 0,
-      "raw_files": [
-        {
-          "name": ".agents/AGENTS.md",
-          "path": "discovered/effect-ts/effect/.agents/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/effect-ts/effect/.agents/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/Effect-TS/effect",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/effect-ts/effect",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/20",
-      "discovered_at": "2026-10-03T07:17:24Z",
-      "updated_at": "2026-10-03T07:17:24Z",
       "latest_change": "New discovery"
     },
     {

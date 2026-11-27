@@ -818,7 +818,7 @@
       ".agents/AGENTS.md"
     ],
     "file_shas": {
-      ".agents/AGENTS.md": "e6450c28e1d6d7002e46500f243c2fd06e6f0e52"
+      ".agents/AGENTS.md": "0e0ba683112086df005aa61456beab8e1fb30f00"
     },
     "source": "trending",
     "archetype": "Pragmatic Systems",
@@ -826,7 +826,17 @@
     "discovered_at": "2026-10-03T07:17:24.112971+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/20",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": ".agents/AGENTS.md",
+        "old_sha": "e6450c28e1d6d7002e46500f243c2fd06e6f0e52",
+        "new_sha": "0e0ba683112086df005aa61456beab8e1fb30f00",
+        "vibe_shift": "Shifted toward stricter tooling boundaries and explicit command authority for agents.",
+        "summary": "The rule file is largely unchanged, but the new version adds an explicit command-boundary rule for type checking. It clarifies that agents must use `pnpm check` and must not run `pnpm check-tsc`, tying that restriction to CI ownership and the tsrs/TypeScript 7.1 toolchain.",
+        "timestamp": "2026-11-27T10:18:50.720158+00:00"
+      }
+    ]
   },
   "affaan-m/ECC": {
     "stars": 272444,
@@ -6128,8 +6138,9 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "8b9ce4ab4a119aad47964183a4c0a6863ecad721",
-      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+      "AGENTS.md": "0d39e31d526a7649a7e81ad21344719468d25c36",
+      "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+      ".github/copilot-instructions.md": "4f34898ff22c32c541cc1b4d929a83fe439d2f0e"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -6154,6 +6165,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-25T10:40:13.747727+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "8b9ce4ab4a119aad47964183a4c0a6863ecad721",
+        "new_sha": "0d39e31d526a7649a7e81ad21344719468d25c36",
+        "vibe_shift": "No shift detected; the prompt remains anchored on slash-command-first UX, cross-harness portability, and strict changelog/version lockstep discipline.",
+        "summary": "The two versions are byte-for-byte identical in the provided content, including the same truncation point mid-sentence in the release section. No rules, structure entries, commands, or constraints were added, removed, or reworded. The author's prompt engineering taste and constraint set appear unchanged between these snapshots.",
+        "timestamp": "2026-11-27T10:17:34.268248+00:00"
       }
     ]
   },
@@ -6358,7 +6377,7 @@
       "CLAUDE.md"
     ],
     "file_shas": {
-      "AGENTS.md": "56029369301ff3291541bce0e08992212af33644",
+      "AGENTS.md": "c77f19300a0b19f1473ee4bd4071904624a28762",
       "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
     },
     "source": "trending",
@@ -6376,6 +6395,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-23T09:58:26.487361+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "56029369301ff3291541bce0e08992212af33644",
+        "new_sha": "c77f19300a0b19f1473ee4bd4071904624a28762",
+        "vibe_shift": "No shift; the prompt remains unchanged in tone, scope, and constraints.",
+        "summary": "The two versions are identical in the provided content; no rule additions, deletions, or rewordings are detectable. The file remains a comprehensive guide covering project overview, general guidelines, agent skills, and essential commands. No evolution in prompt engineering taste or constraints can be observed from this comparison.",
+        "timestamp": "2026-11-27T10:17:41.047614+00:00"
       }
     ]
   },
@@ -7083,6 +7110,60 @@
     "vibe": "Map the monorepo, enforce branch hygiene, and let the style guides do the talking.",
     "discovered_at": "2026-11-26T10:13:53.630435+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/436",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "apify/mcpc": {
+    "stars": 1119,
+    "language": "TypeScript",
+    "description": "The most compatible MCP CLI client. Supports: Tools, Resources, Prompts, Completions, Tasks, Skills, stdio and streamable HTTP, MCP versions 2024-10-07 through 2026-07-28, persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep for tool discovery, proxy for AI sandboxes, x402, and more.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "7aaf0bcafa65f4169d82099ddc61896472d24049"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-27T10:19:41.381816+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/437",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "tw93/Mole": {
+    "stars": 76389,
+    "language": "Shell",
+    "description": "🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, and running like new. Fast CLI, plus native Mac and Windows apps.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "49a726d09bccb0c7b4fd85bd8ed3fcd8052153b8"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-27T10:20:20.174436+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/438",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Droid-Deck/DroidDeck": {
+    "stars": 22242,
+    "language": "Kotlin",
+    "description": "DroidDeck brings the SteamOS experience to Android",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "97930d65639e76d3b64f79fded3554f124f3d10b"
+    },
+    "source": "popular_stars",
+    "archetype": "Defensive Architect",
+    "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+    "discovered_at": "2026-11-27T10:20:26.411481+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/439",
     "pr_url": null,
     "status": "pending_review"
   }

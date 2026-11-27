@@ -17,8 +17,9 @@
     "CLAUDE.md"
   ],
   "file_shas": {
-    "AGENTS.md": "8b9ce4ab4a119aad47964183a4c0a6863ecad721",
-    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5"
+    "AGENTS.md": "0d39e31d526a7649a7e81ad21344719468d25c36",
+    "CLAUDE.md": "43c994c2d3617f947bcb5adf1933e21dabe46bb5",
+    ".github/copilot-instructions.md": "4f34898ff22c32c541cc1b4d929a83fe439d2f0e"
   },
   "discovered_at": "2026-11-17T09:53:21.651893+00:00",
   "repo": "mvanhorn/last30days-skill"

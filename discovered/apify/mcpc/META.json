@@ -1,0 +1,23 @@
+{
+  "stars": 1119,
+  "language": "TypeScript",
+  "description": "The most compatible MCP CLI client. Supports: Tools, Resources, Prompts, Completions, Tasks, Skills, stdio and streamable HTTP, MCP versions 2024-10-07 through 2026-07-28, persistent sessions, OAuth 2.1 with DCR, CIMD, client credentials, and ID-JAG, OS keychain, --json for code mode, grep for tool discovery, proxy for AI sandboxes, x402, and more.",
+  "url": "https://github.com/apify/mcpc",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.",
+    "Project Overview",
+    "`mcpc` is a universal command-line client for the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/),",
+    "which maps MCP to intuitive CLI commands for shell access, scripts, and AI coding agents."
+  ],
+  "assessment": "Structured `AGENTS.md` specification (~16469 est. tokens) codifying anti-slop minimalist guardrails and repository conventions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "7aaf0bcafa65f4169d82099ddc61896472d24049"
+  },
+  "discovered_at": "2026-11-27T10:19:40.756376+00:00",
+  "repo": "apify/mcpc"
+}
