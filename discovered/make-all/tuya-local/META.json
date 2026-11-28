@@ -1,0 +1,23 @@
+{
+  "stars": 3781,
+  "language": "Python",
+  "description": "Local support for Tuya devices in Home Assistant",
+  "url": "https://github.com/make-all/tuya-local",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Instructions for autonomous agents",
+    "Development environment",
+    "This project is a Home Assistant integration.",
+    "The source languages are Python, YAML and JSON"
+  ],
+  "assessment": "Structured `AGENTS.md` specification (~2516 est. tokens) codifying anti-slop minimalist guardrails and repository conventions.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c8c8bbc474482110adf06271d9eeccc97f0fe916"
+  },
+  "discovered_at": "2026-11-28T09:36:22.386389+00:00",
+  "repo": "make-all/tuya-local"
+}

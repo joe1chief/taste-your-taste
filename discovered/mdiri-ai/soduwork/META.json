@@ -1,0 +1,24 @@
+{
+  "stars": 8877,
+  "language": "JavaScript",
+  "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+  "url": "https://github.com/mdiri-ai/SoduWork",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship through the right checks, keep public source clean, and never surprise the data.",
+  "highlights": [
+    "Component-specific verification commands instead of a vague 'run tests' instruction",
+    "Explicit data-safety rule: preserve user changes and require Alembic migrations for schema changes",
+    "Strong public-source hygiene: secrets, private addresses, logs, screenshots, build outputs and caches stay out of commits",
+    "Mandatory Git naming rule banning `Codex/` prefixes on branches and PR titles",
+    "Bilingual documentation sync and DCO sign-off treated as first-class contribution requirements"
+  ],
+  "assessment": "This guide is effective because it maps repository topology directly to verification commands, reducing the chance that contributors run the wrong checks or skip them entirely. It also treats data preservation, public-source boundaries, and documentation parity as engineering constraints rather than afterthoughts. The result is a pragmatic systems document that protects users and release integrity without overprescribing implementation details.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "a3faade2a746620e8d28714549758504779d8e3f"
+  },
+  "discovered_at": "2026-11-28T09:37:10.434266+00:00",
+  "repo": "mdiri-ai/SoduWork"
+}

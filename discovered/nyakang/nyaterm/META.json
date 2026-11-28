@@ -1,0 +1,25 @@
+{
+  "stars": 2687,
+  "language": "Rust",
+  "description": "A modern remote terminal workspace",
+  "url": "https://github.com/nyakang/nyaterm",
+  "archetype": "Anti-Slop Minimalist",
+  "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+  "highlights": [
+    "Repository Guidelines",
+    "Project Overview",
+    "NyaTerm is a native GPUI desktop application written in Rust. It provides SSH,",
+    "local shell, Telnet, Serial, RDP, VNC, SFTP, tunnels, OTP, AI assistance, and"
+  ],
+  "assessment": "Structured `AGENTS.md` specification (~7157 est. tokens) codifying anti-slop minimalist guardrails and repository conventions.",
+  "files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b5514ccbb1264f73c7981eb6e9dfeeb5e565b59e",
+    "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+  },
+  "discovered_at": "2026-11-28T09:36:27.950798+00:00",
+  "repo": "nyakang/nyaterm"
+}

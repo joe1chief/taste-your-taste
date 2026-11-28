@@ -1,0 +1,24 @@
+{
+  "stars": 1543,
+  "language": "Go",
+  "description": "把腾讯WorkBuddy账号变成 OpenAI 兼容 API 的多账号网关，同时自动完成任务中心全部任务，附 Web 管理面板（账号池可视化 / 积分任务 / 配置热更新）。基于 Sliverkiss/workbuddy2api 的增强分支",
+  "url": "https://github.com/misakano7545/workbuddy2api-panel",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Time-tag it once in Shanghai time, and let the workflow do the rest.",
+  "highlights": [
+    "Uses a date-and-time version scheme instead of upstream semver, with a strict vYYYY.M.D.HMM format.",
+    "Documents a silent timezone failure mode: TZ=Asia/Shanghai can fall back to UTC on machines without tzdata, producing tags 8 hours early.",
+    "Enforces one version number across tag, Release, and binary, with the binary omitting the v prefix.",
+    "Ties release creation to the v* tag trigger rather than manual release steps.",
+    "Explicitly forbids v1.x tags and manual appVersion edits to prevent version drift."
+  ],
+  "assessment": "This is a tight release contract rather than a broad coding manifesto. Its strength is encoding a real, silent failure mode directly beside the exact shell workaround, turning tribal knowledge into executable procedure. The single-version rule across tag, Release, and binary prevents drift and keeps the panel's display logic simple.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "b972521af3023084c327ba709fb1dc99adc9850a"
+  },
+  "discovered_at": "2026-11-28T09:36:16.787748+00:00",
+  "repo": "misakano7545/workbuddy2api-panel"
+}

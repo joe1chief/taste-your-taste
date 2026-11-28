@@ -297,7 +297,7 @@
     "archetype": "Defensive Architect",
     "status": "curated",
     "file_shas": {
-      "AGENTS.md": "fc573037b020b05ae1ea5fc97755a0067cf52f86"
+      "AGENTS.md": "9fb21d4193183787ff5d2d6e97bcfed6d24f6712"
     },
     "evolution_history": [
       {
@@ -363,6 +363,14 @@
         "vibe_shift": "Shifted toward clearer ownership of instruction-writing guidance through documentation reference relocation, without changing the prompt's operational strictness.",
         "summary": "The rule file remains substantively unchanged in its constraints and working agreements. The only visible evolution is that the pointer for instruction rules now targets the openclaw-writing reference instead of the technical-documentation skill. This suggests a documentation-ownership cleanup rather than a behavioral policy shift.",
         "timestamp": "2026-11-26T10:12:33.314333+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "fc573037b020b05ae1ea5fc97755a0067cf52f86",
+        "new_sha": "9fb21d4193183787ff5d2d6e97bcfed6d24f6712",
+        "vibe_shift": "Strengthened negative guardrails and architectural invariants.",
+        "summary": "Updated `AGENTS.md` with 11 added and 8 removed non-empty lines (net +6 lines, +76 est. tokens).",
+        "timestamp": "2026-11-28T09:35:59.789918+00:00"
       }
     ]
   },
@@ -470,7 +478,7 @@
     ],
     "file_shas": {
       "AGENTS.md": "b1b1b6762eda0db68c68d3c47543b4cde02e4ab6",
-      "CLAUDE.md": "479404431e263b103c143e628b554e57faf1e526"
+      "CLAUDE.md": "834c8cc8dc41b223133526ddae39c446186a004f"
     },
     "source": "trending",
     "archetype": "Engineering Craft",
@@ -495,6 +503,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-12T08:57:08.251331+00:00"
+      },
+      {
+        "file": "CLAUDE.md",
+        "old_sha": "479404431e263b103c143e628b554e57faf1e526",
+        "new_sha": "834c8cc8dc41b223133526ddae39c446186a004f",
+        "vibe_shift": "Expanded deterministic test, lint, and verification gates.",
+        "summary": "Updated `CLAUDE.md` with 22 added and 34 removed non-empty lines (net -16 lines, -685 est. tokens).",
+        "timestamp": "2026-11-28T09:35:46.655393+00:00"
       }
     ]
   },
@@ -3131,7 +3147,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "443dfed383a76b42aea747634eb729086bdadc11"
+      "AGENTS.md": "7209601868749f8a5834dc440d2b72f08896848a"
     },
     "source": "trending",
     "archetype": "Defensive Architect",
@@ -3139,7 +3155,17 @@
     "discovered_at": "2026-10-21T06:45:58.089907+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/140",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "443dfed383a76b42aea747634eb729086bdadc11",
+        "new_sha": "7209601868749f8a5834dc440d2b72f08896848a",
+        "vibe_shift": "Strengthened negative guardrails and architectural invariants.",
+        "summary": "Updated `AGENTS.md` with 31 added and 2 removed non-empty lines (net +41 lines, +946 est. tokens).",
+        "timestamp": "2026-11-28T09:36:10.110736+00:00"
+      }
+    ]
   },
   "vllm-project/vllm": {
     "stars": 94551,
@@ -3769,7 +3795,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "ea4567c36da8b6488fc65f49e7dec71d7f4d3da5"
+      "AGENTS.md": "5d7c7e3d9900b7e15af13a5faa5580e38e5c51bb"
     },
     "source": "trending",
     "archetype": "Anti-Slop Minimalist",
@@ -3794,6 +3820,14 @@
         "vibe_shift": "Iterative refinements.",
         "summary": "Updated AGENTS.md instructions.",
         "timestamp": "2026-11-24T11:47:20.861695+00:00"
+      },
+      {
+        "file": "AGENTS.md",
+        "old_sha": "ea4567c36da8b6488fc65f49e7dec71d7f4d3da5",
+        "new_sha": "5d7c7e3d9900b7e15af13a5faa5580e38e5c51bb",
+        "vibe_shift": "Shifted towards a dated, exception-by-exception ledger of data-flow boundaries, with every new surface named, scoped, and tied to a developer decision.",
+        "summary": "The author kept the same structure and tone but tightened the data-flow boundaries by naming new surfaces that touch user data: the Apple Watch cache, the watch server-picture cache, the agent instruction file sent to the model, Pi agent reply and thinking text, and the private media gateway Worker. Each new exception is pinned to a dated developer decision, so the file reads less like a general policy and more like a dated ledger of approved trust-boundary exceptions.",
+        "timestamp": "2026-11-28T09:36:04.703725+00:00"
       }
     ]
   },
@@ -4341,7 +4375,7 @@
       "AGENTS.md"
     ],
     "file_shas": {
-      "AGENTS.md": "6fb1d5c1ff9b0347dc66c74442af89a9c4fbad1f"
+      "AGENTS.md": "133c9c7ccac86527602a4eb8c8108b45eb941f5d"
     },
     "source": "popular_stars",
     "archetype": "Engineering Craft",
@@ -4349,7 +4383,17 @@
     "discovered_at": "2026-11-01T08:22:43.238993+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/226",
     "pr_url": null,
-    "status": "pending_review"
+    "status": "pending_review",
+    "evolution_history": [
+      {
+        "file": "AGENTS.md",
+        "old_sha": "6fb1d5c1ff9b0347dc66c74442af89a9c4fbad1f",
+        "new_sha": "133c9c7ccac86527602a4eb8c8108b45eb941f5d",
+        "vibe_shift": "Shifted towards slightly less prescriptive implementation details while preserving the same overall structure and guidance.",
+        "summary": "The prompt underwent a minor refinement, primarily removing a specific implementation detail about requiring `active_support/core_ext/object/with` in test files. The overall structure, architecture overview, testing commands, and code conventions remain largely unchanged, indicating a small cleanup rather than a structural overhaul. The new version also appears to include slightly more content at the end of the 'Working with Forms and Helpers' section, though this may be a truncation artifact.",
+        "timestamp": "2026-11-28T09:35:50.956535+00:00"
+      }
+    ]
   },
   "anomalyco/models.dev": {
     "stars": 7463,
@@ -7164,6 +7208,98 @@
     "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
     "discovered_at": "2026-11-27T10:20:26.411481+00:00",
     "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/439",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "misakano7545/workbuddy2api-panel": {
+    "stars": 1543,
+    "language": "Go",
+    "description": "把腾讯WorkBuddy账号变成 OpenAI 兼容 API 的多账号网关，同时自动完成任务中心全部任务，附 Web 管理面板（账号池可视化 / 积分任务 / 配置热更新）。基于 Sliverkiss/workbuddy2api 的增强分支",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b972521af3023084c327ba709fb1dc99adc9850a"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Time-tag it once in Shanghai time, and let the workflow do the rest.",
+    "discovered_at": "2026-11-28T09:36:17.348564+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/440",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "make-all/tuya-local": {
+    "stars": 3781,
+    "language": "Python",
+    "description": "Local support for Tuya devices in Home Assistant",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c8c8bbc474482110adf06271d9eeccc97f0fe916"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-28T09:36:23.213909+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/441",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "nyakang/nyaterm": {
+    "stars": 2687,
+    "language": "Rust",
+    "description": "A modern remote terminal workspace",
+    "files": [
+      "AGENTS.md",
+      "CLAUDE.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "b5514ccbb1264f73c7981eb6e9dfeeb5e565b59e",
+      "CLAUDE.md": "47dc3e3d863cfb5727b87d785d09abf9743c0a72"
+    },
+    "source": "popular_stars",
+    "archetype": "Anti-Slop Minimalist",
+    "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+    "discovered_at": "2026-11-28T09:36:28.729626+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/442",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "Ebony-Vinyl/dsh-our-free-model": {
+    "stars": 89508,
+    "language": "JavaScript",
+    "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "c40095abfea176f697c690348345e5a40afa079b"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship reviewed code now; let CI sign on main, and never cut a release without an explicit ask.",
+    "discovered_at": "2026-11-28T09:36:49.453018+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/443",
+    "pr_url": null,
+    "status": "pending_review"
+  },
+  "mdiri-ai/SoduWork": {
+    "stars": 8877,
+    "language": "JavaScript",
+    "description": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+    "files": [
+      "AGENTS.md"
+    ],
+    "file_shas": {
+      "AGENTS.md": "a3faade2a746620e8d28714549758504779d8e3f"
+    },
+    "source": "popular_stars",
+    "archetype": "Pragmatic Systems",
+    "vibe": "Ship through the right checks, keep public source clean, and never surprise the data.",
+    "discovered_at": "2026-11-28T09:37:11.024704+00:00",
+    "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/444",
     "pr_url": null,
     "status": "pending_review"
   }

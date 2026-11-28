@@ -83,26 +83,26 @@ npx taste-code badge --type tax --output taste-badge.svg
 
 Updated after each completed daily scan. Discoveries and rule changes are automated observations awaiting review; curated labels refer to project selection.
 
-**314 tracked projects** | **26 curated** | **288 pending review**
+**319 tracked projects** | **26 curated** | **293 pending review**
 
-Last completed scan: [2026-11-27 10:20:26 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/45980734595).
+Last completed scan: [2026-11-28 09:37:11 UTC](https://github.com/joe1chief/taste-your-taste/actions/runs/46131174437).
 
-Latest content activity: **2026-11-27 10:20:26 UTC**.
+Latest content activity: **2026-11-28 09:37:11 UTC**.
 
 [Browse all projects in the gallery](https://joe1chief.github.io/taste-your-taste/) | [Review discoveries](https://github.com/joe1chief/taste-your-taste/issues?q=is%3Aissue+is%3Aopen+label%3Ataste-discovery)
 
 | Updated (UTC) | Project | Activity | Review status | Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| 2026-11-27 10:20:26 | [Droid-Deck/DroidDeck](https://github.com/Droid-Deck/DroidDeck) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/439) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/droid-deck/droiddeck) |
-| 2026-11-27 10:20:20 | [tw93/Mole](https://github.com/tw93/Mole) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/438) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/tw93/mole) |
-| 2026-11-27 10:19:41 | [apify/mcpc](https://github.com/apify/mcpc) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/437) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/apify/mcpc) |
-| 2026-11-27 10:18:50 | [Effect-TS/effect](https://github.com/Effect-TS/effect) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/20) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/effect-ts/effect) |
-| 2026-11-27 10:17:41 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/371) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/n8n-io/n8n) |
-| 2026-11-27 10:17:34 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/346) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mvanhorn/last30days-skill) |
-| 2026-11-26 10:13:53 | [ytsaurus/ytsaurus](https://github.com/ytsaurus/ytsaurus) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/436) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ytsaurus/ytsaurus) |
-| 2026-11-26 10:13:47 | [BotHarness/DeepSeekBot](https://github.com/BotHarness/DeepSeekBot) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/435) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/botharness/deepseekbot) |
-| 2026-11-26 10:13:41 | [snyk/cli](https://github.com/snyk/cli) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/434) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/snyk/cli) |
-| 2026-11-26 10:13:34 | [lexifina/global-law](https://github.com/lexifina/global-law) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/433) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/lexifina/global-law) |
+| 2026-11-28 09:37:11 | [mdiri-ai/SoduWork](https://github.com/mdiri-ai/SoduWork) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/444) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mdiri-ai/soduwork) |
+| 2026-11-28 09:36:49 | [Ebony-Vinyl/dsh-our-free-model](https://github.com/Ebony-Vinyl/dsh-our-free-model) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/443) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ebony-vinyl/dsh-our-free-model) |
+| 2026-11-28 09:36:28 | [nyakang/nyaterm](https://github.com/nyakang/nyaterm) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/442) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nyakang/nyaterm) |
+| 2026-11-28 09:36:23 | [make-all/tuya-local](https://github.com/make-all/tuya-local) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/441) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/make-all/tuya-local) |
+| 2026-11-28 09:36:17 | [misakano7545/workbuddy2api-panel](https://github.com/misakano7545/workbuddy2api-panel) | New discovery | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/440) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/misakano7545/workbuddy2api-panel) |
+| 2026-11-28 09:36:10 | [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/140) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sickn33/agentic-awesome-skills) |
+| 2026-11-28 09:36:04 | [nightly-labs/openbot](https://github.com/nightly-labs/openbot) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/186) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot) |
+| 2026-11-28 09:35:59 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Rules updated | Curated project | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw) |
+| 2026-11-28 09:35:50 | [rails/rails](https://github.com/rails/rails) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/226) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rails/rails) |
+| 2026-11-28 09:35:46 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Rules updated | [Pending review](https://github.com/joe1chief/taste-your-taste/issues/3) | [Archive](https://github.com/joe1chief/taste-your-taste/tree/main/discovered/heygen-com/hyperframes) |
 <!-- TASTE:LATEST:END -->
 
 ---

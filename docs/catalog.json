@@ -1,17 +1,323 @@
 {
   "schema_version": 1,
-  "source_sha256": "8729d956f91ae0a76cdd5e8459384641c006c5fea68239ab5c91453f0a1a55d0",
+  "source_sha256": "a3d27f65512a15eae18a4680d1064e85bb86e28df195bb29bcfcbd03a6673021",
   "last_scan": {
-    "completed_at": "2026-11-27T10:20:26Z",
-    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/45980734595"
+    "completed_at": "2026-11-28T09:37:11Z",
+    "run_url": "https://github.com/joe1chief/taste-your-taste/actions/runs/46131174437"
   },
-  "latest_update": "2026-11-27T10:20:26Z",
+  "latest_update": "2026-11-28T09:37:11Z",
   "counts": {
-    "total": 314,
+    "total": 319,
     "curated": 26,
-    "pending_review": 288
+    "pending_review": 293
   },
   "projects": [
+    {
+      "repo": "mdiri-ai/SoduWork",
+      "status": "pending_review",
+      "stars": 8877,
+      "language": "JavaScript",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Ship through the right checks, keep public source clean, and never surprise the data.",
+      "file": "AGENTS.md",
+      "highlight": "Component-specific verification commands instead of a vague 'run tests' instruction",
+      "highlights": [
+        "Component-specific verification commands instead of a vague 'run tests' instruction",
+        "Explicit data-safety rule: preserve user changes and require Alembic migrations for schema changes",
+        "Strong public-source hygiene: secrets, private addresses, logs, screenshots, build outputs and caches stay out of commits"
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/mdiri-ai/soduwork/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/mdiri-ai/soduwork/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/mdiri-ai/SoduWork",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/mdiri-ai/soduwork",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/444",
+      "discovered_at": "2026-11-28T09:37:11Z",
+      "updated_at": "2026-11-28T09:37:11Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "Ebony-Vinyl/dsh-our-free-model",
+      "status": "pending_review",
+      "stars": 89508,
+      "language": "JavaScript",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Ship reviewed code now; let CI sign on main, and never cut a release without an explicit ask.",
+      "file": "AGENTS.md",
+      "highlight": "Reviewed pull requests must not be blocked by candidate-bound release records or pre-merge signatures.",
+      "highlights": [
+        "Reviewed pull requests must not be blocked by candidate-bound release records or pre-merge signatures.",
+        "Code checks are the merge gate; release signing is delegated to the GitHub Actions release-sign workflow after merge.",
+        "The release-sign workflow on main is the source of truth for rebuilt and signed release records."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/ebony-vinyl/dsh-our-free-model/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/ebony-vinyl/dsh-our-free-model/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/ebony-vinyl/dsh-our-free-model",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/443",
+      "discovered_at": "2026-11-28T09:36:49Z",
+      "updated_at": "2026-11-28T09:36:49Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "nyakang/nyaterm",
+      "status": "pending_review",
+      "stars": 2687,
+      "language": "Rust",
+      "archetype": "Anti-Slop Minimalist",
+      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "Repository Guidelines",
+      "highlights": [
+        "Repository Guidelines",
+        "Project Overview",
+        "NyaTerm is a native GPUI desktop application written in Rust. It provides SSH,"
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/nyakang/nyaterm/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nyakang/nyaterm/AGENTS.md"
+        },
+        {
+          "name": "CLAUDE.md",
+          "path": "discovered/nyakang/nyaterm/CLAUDE.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nyakang/nyaterm/CLAUDE.md"
+        }
+      ],
+      "source_url": "https://github.com/nyakang/nyaterm",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nyakang/nyaterm",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/442",
+      "discovered_at": "2026-11-28T09:36:28Z",
+      "updated_at": "2026-11-28T09:36:28Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "make-all/tuya-local",
+      "status": "pending_review",
+      "stars": 3781,
+      "language": "Python",
+      "archetype": "Anti-Slop Minimalist",
+      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+      "file": "AGENTS.md",
+      "highlight": "Instructions for autonomous agents",
+      "highlights": [
+        "Instructions for autonomous agents",
+        "Development environment",
+        "This project is a Home Assistant integration."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/make-all/tuya-local/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/make-all/tuya-local/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/make-all/tuya-local",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/make-all/tuya-local",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/441",
+      "discovered_at": "2026-11-28T09:36:23Z",
+      "updated_at": "2026-11-28T09:36:23Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "misakano7545/workbuddy2api-panel",
+      "status": "pending_review",
+      "stars": 1543,
+      "language": "Go",
+      "archetype": "Pragmatic Systems",
+      "vibe": "Time-tag it once in Shanghai time, and let the workflow do the rest.",
+      "file": "AGENTS.md",
+      "highlight": "Uses a date-and-time version scheme instead of upstream semver, with a strict vYYYY.M.D.HMM format.",
+      "highlights": [
+        "Uses a date-and-time version scheme instead of upstream semver, with a strict vYYYY.M.D.HMM format.",
+        "Documents a silent timezone failure mode: TZ=Asia/Shanghai can fall back to UTC on machines without tzdata, producing tags 8 hours early.",
+        "Enforces one version number across tag, Release, and binary, with the binary omitting the v prefix."
+      ],
+      "evolution_count": 0,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/misakano7545/workbuddy2api-panel/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/misakano7545/workbuddy2api-panel/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/misakano7545/workbuddy2api-panel",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/misakano7545/workbuddy2api-panel",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/440",
+      "discovered_at": "2026-11-28T09:36:17Z",
+      "updated_at": "2026-11-28T09:36:17Z",
+      "latest_change": "New discovery"
+    },
+    {
+      "repo": "sickn33/agentic-awesome-skills",
+      "status": "pending_review",
+      "stars": 48212,
+      "language": "Python",
+      "archetype": "Defensive Architect",
+      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
+      "file": "AGENTS.md",
+      "highlight": "Repository Guidelines",
+      "highlights": [
+        "Repository Guidelines",
+        "Project Structure & Module Organization",
+        "This repository publishes an installable library of agent skills and plugin bundles. Canonical skill sources live in `skills/<skill-id>/SKILL.md`; use lowercase, hyphenated skill IDs. Mirrored plugin distributions live under `plugins/`. Contributor and user docs live in `docs/`; localized docs live in `docs_zh-CN/` and `docs/vietnamese/`. Maintenance scripts and tests are in `tools/scripts/` and `tools/scripts/tests/`. The hosted catalog app is in `apps/web-app/`. Registry outputs such as `CATALOG.md`, `skills_index.json`, and `data/catalog.json` are generated artifacts. Editorial inputs in `data/` remain source files; use `tools/scripts/generated_files.js` for the exact generated-file classification."
+      ],
+      "evolution_count": 1,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/sickn33/agentic-awesome-skills/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/sickn33/agentic-awesome-skills/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/sickn33/agentic-awesome-skills",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sickn33/agentic-awesome-skills",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/140",
+      "discovered_at": "2026-10-21T06:45:58Z",
+      "updated_at": "2026-11-28T09:36:10Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "nightly-labs/openbot",
+      "status": "pending_review",
+      "stars": 1696,
+      "language": "TypeScript",
+      "archetype": "Anti-Slop Minimalist",
+      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
+      "file": "AGENTS.md",
+      "highlight": "Repository guidance",
+      "highlights": [
+        "Repository guidance",
+        "Communication",
+        "Use ASD-STE100 Simplified Technical English for all text you write: questions, updates,"
+      ],
+      "evolution_count": 3,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/nightly-labs/openbot/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nightly-labs/openbot/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/nightly-labs/openbot",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/186",
+      "discovered_at": "2026-10-27T07:01:02Z",
+      "updated_at": "2026-11-28T09:36:04Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "openclaw/openclaw",
+      "status": "curated",
+      "stars": 390800,
+      "language": "Rust / C",
+      "archetype": "Defensive Architect",
+      "vibe": "Maintainer-curated agent instructions.",
+      "file": "AGENTS.md",
+      "highlight": "Explore the source instructions and their review status.",
+      "highlights": [],
+      "evolution_count": 9,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "openclaw/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/openclaw/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/openclaw/openclaw",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw",
+      "curated_url": "https://github.com/joe1chief/taste-your-taste/tree/main/openclaw",
+      "issue_url": null,
+      "discovered_at": null,
+      "updated_at": "2026-11-28T09:35:59Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "rails/rails",
+      "status": "pending_review",
+      "stars": 58853,
+      "language": "Ruby",
+      "archetype": "Engineering Craft",
+      "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+      "file": "AGENTS.md",
+      "highlight": "Ruby on Rails Codebase Guide for AI Coding Agents",
+      "highlights": [
+        "Ruby on Rails Codebase Guide for AI Coding Agents",
+        "This is the code base of the Ruby on Rails web framework.",
+        "Architecture Overview"
+      ],
+      "evolution_count": 1,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/rails/rails/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/rails/rails/AGENTS.md"
+        }
+      ],
+      "source_url": "https://github.com/rails/rails",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rails/rails",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/226",
+      "discovered_at": "2026-11-01T08:22:43Z",
+      "updated_at": "2026-11-28T09:35:50Z",
+      "latest_change": "Rules updated"
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "status": "pending_review",
+      "stars": 54916,
+      "language": "TypeScript",
+      "archetype": "Engineering Craft",
+      "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
+      "file": "AGENTS.md, CLAUDE.md",
+      "highlight": "Hyperframes",
+      "highlights": [
+        "Hyperframes",
+        "Open-source video rendering framework: write HTML, render video.",
+        "This repo ships AI agent skills via [vercel-labs/skills](https://github.com/vercel-labs/skills). Install them before writing compositions \u2014 they encode framework-specific patterns that generic docs don't cover. **Default to the core set** \u2014 the `/hyperframes` router installs each creation workflow on demand; install everything only when the user explicitly asks for the full set."
+      ],
+      "evolution_count": 3,
+      "raw_files": [
+        {
+          "name": "AGENTS.md",
+          "path": "discovered/heygen-com/hyperframes/AGENTS.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/heygen-com/hyperframes/AGENTS.md"
+        },
+        {
+          "name": "CLAUDE.md",
+          "path": "discovered/heygen-com/hyperframes/CLAUDE.md",
+          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/heygen-com/hyperframes/CLAUDE.md"
+        }
+      ],
+      "source_url": "https://github.com/heygen-com/hyperframes",
+      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/heygen-com/hyperframes",
+      "curated_url": null,
+      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/3",
+      "discovered_at": "2026-10-01T07:59:00Z",
+      "updated_at": "2026-11-28T09:35:46Z",
+      "latest_change": "Rules updated"
+    },
     {
       "repo": "Droid-Deck/DroidDeck",
       "status": "pending_review",
@@ -380,32 +686,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/45",
       "discovered_at": "2026-10-07T07:53:49Z",
       "updated_at": "2026-11-26T10:12:59Z",
-      "latest_change": "Rules updated"
-    },
-    {
-      "repo": "openclaw/openclaw",
-      "status": "curated",
-      "stars": 390800,
-      "language": "Rust / C",
-      "archetype": "Defensive Architect",
-      "vibe": "Maintainer-curated agent instructions.",
-      "file": "AGENTS.md",
-      "highlight": "Explore the source instructions and their review status.",
-      "highlights": [],
-      "evolution_count": 8,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "openclaw/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/openclaw/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/openclaw/openclaw",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/openclaw/openclaw",
-      "curated_url": "https://github.com/joe1chief/taste-your-taste/tree/main/openclaw",
-      "issue_url": null,
-      "discovered_at": null,
-      "updated_at": "2026-11-26T10:12:33Z",
       "latest_change": "Rules updated"
     },
     {
@@ -899,36 +1179,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/78",
       "discovered_at": "2026-10-12T08:16:33Z",
       "updated_at": "2026-11-24T11:47:23Z",
-      "latest_change": "Rules updated"
-    },
-    {
-      "repo": "nightly-labs/openbot",
-      "status": "pending_review",
-      "stars": 1696,
-      "language": "TypeScript",
-      "archetype": "Anti-Slop Minimalist",
-      "vibe": "Ruthless conciseness, outcome-first execution, and zero conversational waste.",
-      "file": "AGENTS.md",
-      "highlight": "Repository guidance",
-      "highlights": [
-        "Repository guidance",
-        "Communication",
-        "Use ASD-STE100 Simplified Technical English for all text you write: questions, updates,"
-      ],
-      "evolution_count": 2,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/nightly-labs/openbot/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/nightly-labs/openbot/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/nightly-labs/openbot",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/nightly-labs/openbot",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/186",
-      "discovered_at": "2026-10-27T07:01:02Z",
-      "updated_at": "2026-11-24T11:47:20Z",
       "latest_change": "Rules updated"
     },
     {
@@ -3432,41 +3682,6 @@
       "latest_change": "New discovery"
     },
     {
-      "repo": "heygen-com/hyperframes",
-      "status": "pending_review",
-      "stars": 54916,
-      "language": "TypeScript",
-      "archetype": "Engineering Craft",
-      "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
-      "file": "AGENTS.md, CLAUDE.md",
-      "highlight": "Hyperframes",
-      "highlights": [
-        "Hyperframes",
-        "Open-source video rendering framework: write HTML, render video.",
-        "This repo ships AI agent skills via [vercel-labs/skills](https://github.com/vercel-labs/skills). Install them before writing compositions \u2014 they encode framework-specific patterns that generic docs don't cover. **Default to the core set** \u2014 the `/hyperframes` router installs each creation workflow on demand; install everything only when the user explicitly asks for the full set."
-      ],
-      "evolution_count": 2,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/heygen-com/hyperframes/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/heygen-com/hyperframes/AGENTS.md"
-        },
-        {
-          "name": "CLAUDE.md",
-          "path": "discovered/heygen-com/hyperframes/CLAUDE.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/heygen-com/hyperframes/CLAUDE.md"
-        }
-      ],
-      "source_url": "https://github.com/heygen-com/hyperframes",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/heygen-com/hyperframes",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/3",
-      "discovered_at": "2026-10-01T07:59:00Z",
-      "updated_at": "2026-11-12T08:57:08Z",
-      "latest_change": "Rules updated"
-    },
-    {
       "repo": "homeassistant-ai/ha-mcp",
       "status": "pending_review",
       "stars": 6239,
@@ -5064,36 +5279,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/227",
       "discovered_at": "2026-11-01T08:22:49Z",
       "updated_at": "2026-11-01T08:22:49Z",
-      "latest_change": "New discovery"
-    },
-    {
-      "repo": "rails/rails",
-      "status": "pending_review",
-      "stars": 58853,
-      "language": "Ruby",
-      "archetype": "Engineering Craft",
-      "vibe": "Deterministic task runners, disciplined formatting, and modular consistency.",
-      "file": "AGENTS.md",
-      "highlight": "Ruby on Rails Codebase Guide for AI Coding Agents",
-      "highlights": [
-        "Ruby on Rails Codebase Guide for AI Coding Agents",
-        "This is the code base of the Ruby on Rails web framework.",
-        "Architecture Overview"
-      ],
-      "evolution_count": 0,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/rails/rails/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/rails/rails/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/rails/rails",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/rails/rails",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/226",
-      "discovered_at": "2026-11-01T08:22:43Z",
-      "updated_at": "2026-11-01T08:22:43Z",
       "latest_change": "New discovery"
     },
     {
@@ -6789,36 +6974,6 @@
       "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/142",
       "discovered_at": "2026-10-21T06:46:09Z",
       "updated_at": "2026-10-21T06:46:09Z",
-      "latest_change": "New discovery"
-    },
-    {
-      "repo": "sickn33/agentic-awesome-skills",
-      "status": "pending_review",
-      "stars": 48212,
-      "language": "Python",
-      "archetype": "Defensive Architect",
-      "vibe": "Deep invariant verification, strict typing, and defensive boundary guarantees.",
-      "file": "AGENTS.md",
-      "highlight": "Repository Guidelines",
-      "highlights": [
-        "Repository Guidelines",
-        "Project Structure & Module Organization",
-        "This repository publishes an installable library of agent skills and plugin bundles. Canonical skill sources live in `skills/<skill-id>/SKILL.md`; use lowercase, hyphenated skill IDs. Mirrored plugin distributions live under `plugins/`. Contributor and user docs live in `docs/`; localized docs live in `docs_zh-CN/` and `docs/vietnamese/`. Maintenance scripts and tests are in `tools/scripts/` and `tools/scripts/tests/`. The hosted catalog app is in `apps/web-app/`. Registry outputs such as `CATALOG.md`, `skills_index.json`, and `data/catalog.json` are generated artifacts. Editorial inputs in `data/` remain source files; use `tools/scripts/generated_files.js` for the exact generated-file classification."
-      ],
-      "evolution_count": 0,
-      "raw_files": [
-        {
-          "name": "AGENTS.md",
-          "path": "discovered/sickn33/agentic-awesome-skills/AGENTS.md",
-          "raw_url": "https://raw.githubusercontent.com/joe1chief/taste-your-taste/main/discovered/sickn33/agentic-awesome-skills/AGENTS.md"
-        }
-      ],
-      "source_url": "https://github.com/sickn33/agentic-awesome-skills",
-      "archive_url": "https://github.com/joe1chief/taste-your-taste/tree/main/discovered/sickn33/agentic-awesome-skills",
-      "curated_url": null,
-      "issue_url": "https://github.com/joe1chief/taste-your-taste/issues/140",
-      "discovered_at": "2026-10-21T06:45:58Z",
-      "updated_at": "2026-10-21T06:45:58Z",
       "latest_change": "New discovery"
     },
     {

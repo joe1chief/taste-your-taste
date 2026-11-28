@@ -1,0 +1,24 @@
+{
+  "stars": 89508,
+  "language": "JavaScript",
+  "description": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+  "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+  "archetype": "Pragmatic Systems",
+  "vibe": "Ship reviewed code now; let CI sign on main, and never cut a release without an explicit ask.",
+  "highlights": [
+    "Reviewed pull requests must not be blocked by candidate-bound release records or pre-merge signatures.",
+    "Code checks are the merge gate; release signing is delegated to the GitHub Actions release-sign workflow after merge.",
+    "The release-sign workflow on main is the source of truth for rebuilt and signed release records.",
+    "Tags, GitHub Releases, installers, and version bumps require explicit user approval.",
+    "Release provenance is separated from code review velocity without weakening release authorization."
+  ],
+  "assessment": "This file shows strong release-process taste: it removes manual signing from the critical path of code review while preserving a verifiable CI-based signing step on main. The explicit prohibition on tags, releases, installers, and version bumps unless requested is a crisp safety boundary that prevents accidental publication. The result is a pragmatic separation between merge velocity and release authority.",
+  "files": [
+    "AGENTS.md"
+  ],
+  "file_shas": {
+    "AGENTS.md": "c40095abfea176f697c690348345e5a40afa079b"
+  },
+  "discovered_at": "2026-11-28T09:36:48.419710+00:00",
+  "repo": "Ebony-Vinyl/dsh-our-free-model"
+}
